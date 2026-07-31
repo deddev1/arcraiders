@@ -418,7 +418,7 @@ export const enPages = {
 		],
 	},
 	'cheat-download': {
-		title: 'Fortnite Cheat Download 2026 | Instantinstant digital delivery.',
+		title: 'Fortnite Cheat Download 2026 | Instant Digital Delivery',
 		description: 'Fortnite cheat download for Fortnite. Instant digital license delivery — ESP wallhack, radar hack, and Aimbot for Windows PC.',
 		h1: 'Fortnite Cheat Download — Instant License Delivery',
 		intro: 'How Fortnite cheat download works for Fortnite — digital license delivery after Zadeyo payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
