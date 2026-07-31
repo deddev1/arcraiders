@@ -90,10 +90,10 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 </PageLayout>
 
 <style is:global>
-	html[dir='rtl'] .article li {
+	html[dir='rtl'] .article :global(li) {
 		padding: 0.55rem 2rem 0.55rem 0.75rem;
 	}
-	html[dir='rtl'] .article li::before {
+	html[dir='rtl'] .article :global(li::before) {
 		left: auto;
 		right: 0.8rem;
 	}

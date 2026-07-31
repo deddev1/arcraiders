@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import syneLatin from '@fontsource-variable/syne/files/syne-latin-wght-normal.woff2?url';
 import { productInfo, siteConfig } from '../data/site';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
@@ -138,7 +137,6 @@ if (softwareNode) {
 <html lang={locale} dir={localeMeta.dir}>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="preload" href={syneLatin} as="font" type="font/woff2" crossorigin="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="theme-color" content="#0a0612" />

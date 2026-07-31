@@ -32,7 +32,8 @@ export const heroResponsive: ResponsiveWidth[] = [
 	{ src: '/images/fortnite-cheats-hero-1400w.webp', width: 1400 },
 ];
 
-export const heroSrc = '/images/fortnite-cheats-hero.webp';
+/** Mobile-first fallback `src` — matches smallest srcset variant for faster LCP. */
+export const heroSrc = heroResponsive[0].src;
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
