@@ -1,4 +1,4 @@
-import { HERO_IMAGES, clampTitle, clampDesc, section } from './constants.mjs';
+import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta } from './constants.mjs';
 
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
@@ -116,7 +116,7 @@ export const enPages = {
 		intro: 'Choose monthly or lifetime access to undetected Fortnite Cheats — ESP wallhack, radar hack, and Aimbot for Fortnite on Windows PC. Checkout via Zadeyo with instant digital delivery.',
 		imageAlt: 'Fortnite cheats pricing cover — fortnite-cheats package ESP and Aimbot',
 		galleryTitle: 'Fortnite Cheats package visuals',
-		ctaPrimary: 'Buy on Zadeyo',
+		ctaPrimary: 'Buy Fortnite Cheats',
 		ctaSecondary: 'Read setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -424,7 +424,7 @@ export const enPages = {
 		intro: 'How Fortnite cheat download works for Fortnite — digital license delivery after Zadeyo payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
 		imageAlt: 'Fortnite cheat download package — fortnite-cheats ESP wallhack Aimbot license',
 		galleryTitle: 'Fortnite cheat download visuals',
-		ctaPrimary: 'Buy on Zadeyo',
+		ctaPrimary: 'Buy Fortnite Cheats',
 		ctaSecondary: 'Setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -704,8 +704,8 @@ export const enPages = {
 export function finalizePage(pageId, page) {
 	return {
 		...page,
-		title: clampTitle(page.title),
-		description: clampDesc(page.description),
+		title: clampTitle(stripZadeyoFromMeta(page.title)),
+		description: clampDesc(stripZadeyoFromMeta(page.description)),
 		heroImage: HERO_IMAGES[pageId],
 	};
 }

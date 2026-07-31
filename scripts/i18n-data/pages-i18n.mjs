@@ -1,4 +1,4 @@
-import { HERO_IMAGES, clampTitle, clampDesc, section } from './constants.mjs';
+import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta } from './constants.mjs';
 import { phrases } from './phrases.mjs';
 
 /** Page-specific translated meta for home across locales. */
@@ -30,8 +30,8 @@ function buildHome(locale) {
 	const p = phrases[locale];
 	const m = PAGE_META_HOME[locale];
 	return {
-		title: clampTitle(m.title),
-		description: clampDesc(m.desc),
+		title: clampTitle(stripZadeyoFromMeta(m.title)),
+		description: clampDesc(stripZadeyoFromMeta(m.desc)),
 		h1: m.h1,
 		intro: m.intro,
 		imageAlt: m.imageAlt,
@@ -54,8 +54,8 @@ function productPage(locale, pageKey, topicName, cta2href) {
 		? `${topicName} | ESP wallhack & Aimbot`
 		: `${topicName} 2026 | ESP wallhack & Aimbot`;
 	return {
-		title: clampTitle(titleBase),
-		description: clampDesc(`${topicName} — undetected ESP wallhack, radar hack, Aimbot for Fortnite. ${p.delivery}. EAC maintenance.`),
+		title: clampTitle(stripZadeyoFromMeta(titleBase)),
+		description: clampDesc(stripZadeyoFromMeta(`${topicName} — undetected ESP wallhack, radar hack, Aimbot for Fortnite. ${p.delivery}. EAC maintenance.`)),
 		h1: `${topicName} — ESP wallhack & Aimbot`,
 		intro: p.s1(`${topicName} for ${p.maps}.`),
 		imageAlt: `fortnite-cheats ${pageKey} ESP wallhack Aimbot undetected preview`,
@@ -129,8 +129,8 @@ function buildLegal(locale, pageKey, kind) {
 	};
 	const h1 = titles[kind][locale] ?? (kind === 'privacy' ? 'Privacy Policy' : kind === 'refund' ? 'Refund Policy' : 'Terms of Use');
 	return {
-		title: clampTitle(`${h1} | Fortnite Cheats`),
-		description: clampDesc(`${h1} for Fortnite Cheats — ESP wallhack, Aimbot, ${p.win}.`),
+		title: clampTitle(stripZadeyoFromMeta(`${h1} | Fortnite Cheats`)),
+		description: clampDesc(stripZadeyoFromMeta(`${h1} for Fortnite Cheats — ESP wallhack, Aimbot, ${p.win}.`)),
 		h1,
 		intro: p.s1(`${h1} for fortnitecheats.net and Fortnite licenses.`),
 		imageAlt: `fortnite-cheats ${kind} ESP wallhack Aimbot legal page`,

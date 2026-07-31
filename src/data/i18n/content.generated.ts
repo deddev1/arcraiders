@@ -235,7 +235,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					intro: "Choose monthly or lifetime access to undetected Fortnite Cheats — ESP wallhack, radar hack, and Aimbot for Fortnite on Windows PC. Checkout via Zadeyo with instant digital delivery.",
 					imageAlt: "Fortnite cheats pricing cover — fortnite-cheats package ESP and Aimbot",
 					galleryTitle: "Fortnite Cheats package visuals",
-					ctaPrimary: "Buy on Zadeyo",
+					ctaPrimary: "Buy Fortnite Cheats",
 					ctaSecondary: "Read setup guide",
 					ctaSecondaryHref: "/setup/",
 					sections: [
@@ -620,7 +620,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					intro: "How Fortnite cheat download works for Fortnite — digital license delivery after Zadeyo payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.",
 					imageAlt: "Fortnite cheat download package — fortnite-cheats ESP wallhack Aimbot license",
 					galleryTitle: "Fortnite cheat download visuals",
-					ctaPrimary: "Buy on Zadeyo",
+					ctaPrimary: "Buy Fortnite Cheats",
 					ctaSecondary: "Setup guide",
 					ctaSecondaryHref: "/setup/",
 					sections: [

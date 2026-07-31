@@ -1,7 +1,7 @@
 import type { PageId } from './i18n/routing';
 
 /** Shared lastmod for all sitemaps (YYYY-MM-DD). Update when content changes. */
-export const SITEMAP_LASTMOD = '2026-07-31';
+export const SITEMAP_LASTMOD = '2026-08-01';
 
 export type SitemapFreq = 'daily' | 'weekly' | 'monthly' | 'yearly';
 

@@ -358,8 +358,8 @@ export const localizedSlugs: Record<PageId, Record<LocaleCode, string>> = {
 	},
 	'eac-bypass': {
 		en: 'eac-bypass-fortnite',
-		es: 'eac-bypass-fortnite-trucos-fortnite',
-		fr: 'eac-bypass-fortnite-triche-fortnite',
+		es: 'eac-bypass-fortnite-trucos',
+		fr: 'eac-bypass-fortnite-triche',
 		de: 'eac-bypass-fortnite',
 		pt: 'eac-bypass-fortnite-cheats',
 		it: 'eac-bypass-fortnite-trucchi',

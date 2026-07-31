@@ -87,6 +87,24 @@ export function clampDesc(s) {
 	return lastSpace > 130 ? trimmed.slice(0, lastSpace) : trimmed.slice(0, 160);
 }
 
+/** Remove Zadeyo from meta title/description strings only. */
+export function stripZadeyoFromMeta(text) {
+	return text
+		.replace(/\s*[—–-]\s*checkout via Zadeyo\.?/gi, '.')
+		.replace(/\s*[—–-]\s*checkout en Zadeyo\.?/gi, '.')
+		.replace(/\s*[—–-]\s*checkout über Zadeyo\.?/gi, '.')
+		.replace(/\s*with Zadeyo checkout\.?/gi, '.')
+		.replace(/\s*via Zadeyo checkout\.?/gi, '.')
+		.replace(/\s*Checkout via Zadeyo\.?/gi, '')
+		.replace(/\s*Zadeyo checkout,?\s*/gi, ' ')
+		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
+		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
+		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
+		.replace(/Buy on Zadeyo/g, 'Buy Fortnite Cheats')
+		.replace(/\s{2,}/g, ' ')
+		.trim();
+}
+
 export function section(h2, p1, p2, list) {
 	const sec = { h2, paragraphs: [p1, p2] };
 	if (list?.length) sec.list = list;
