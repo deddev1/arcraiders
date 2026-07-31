@@ -42,7 +42,7 @@ const {
 	extraGraph = [],
 	lcpImage,
 	lcpImageSrcSet,
-	lcpImageSizes = '100vw',
+	lcpImageSizes = '(max-width: 760px) 100vw, 100vw',
 } = Astro.props;
 
 const path = canonicalPath.endsWith('/') || canonicalPath.includes('.') ? canonicalPath : `${canonicalPath}/`;
@@ -144,7 +144,6 @@ if (softwareNode) {
 		<meta name="googlebot" content={robots} />
 		<meta name="description" content={description} />
 		<meta name="author" content={siteConfig.name} />
-		<script is:inline src="/trusted-types-policy.js"></script>
 		<link rel="canonical" href={canonicalURL} />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}
 		<link rel="icon" href="/favicon.ico" sizes="any" />
@@ -198,6 +197,7 @@ if (softwareNode) {
 		<title>{title}</title>
 	</head>
 	<body>
+		<script is:inline defer src="/trusted-types-policy.js"></script>
 		{pageId && <LocaleSuggest currentLocale={locale} pageId={pageId} />}
 		<slot />
 	</body>

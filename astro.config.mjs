@@ -11,16 +11,21 @@ export default defineConfig({
 	compressHTML: true,
 	devToolbar: { enabled: false },
 	build: {
-		inlineStylesheets: 'auto',
+		inlineStylesheets: 'always',
 		format: 'directory',
 	},
 	vite: {
 		plugins: [tailwindcss()],
 		build: {
 			cssMinify: true,
-			minify: 'esbuild',
+			minify: 'terser',
 			assetsInlineLimit: 4096,
 			target: 'es2022',
+			rollupOptions: {
+				output: {
+					manualChunks: undefined,
+				},
+			},
 		},
 	},
 });

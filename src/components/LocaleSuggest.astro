@@ -31,54 +31,62 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 
 <script define:vars={{ localeList, pathMap, defaultLocale, pageId }}>
 	(function () {
-		const bar = document.querySelector('.locale-suggest');
-		const textEl = bar?.querySelector('.locale-suggest__text');
-		const dismiss = bar?.querySelector('.locale-suggest__dismiss');
-		const storageKey = 'fc_locale_dismissed';
-		const cookieName = 'fc_locale';
+		const run = () => {
+			const bar = document.querySelector('.locale-suggest');
+			const textEl = bar?.querySelector('.locale-suggest__text');
+			const dismiss = bar?.querySelector('.locale-suggest__dismiss');
+			const storageKey = 'fc_locale_dismissed';
+			const cookieName = 'fc_locale';
 
-		if (!bar || sessionStorage.getItem(storageKey)) return;
+			if (!bar || sessionStorage.getItem(storageKey)) return;
 
-		const locales = JSON.parse(localeList);
-		const { en: englishPaths, slugs: localizedSlugs } = JSON.parse(pathMap);
+			const locales = JSON.parse(localeList);
+			const { en: englishPaths, slugs: localizedSlugs } = JSON.parse(pathMap);
 
-		function getLocalizedPath(id, locale) {
-			if (locale === defaultLocale) return englishPaths[id];
-			const slug = localizedSlugs[id]?.[locale];
-			return slug ? `/${locale}/${slug}/` : `/${locale}/`;
-		}
-
-		function localeFromNavigator() {
-			const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
-			if (cookie && locales.some((l) => l.code === cookie)) return cookie;
-
-			const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
-			for (const tag of langs) {
-				const primary = tag.toLowerCase().split('-')[0];
-				if (locales.some((l) => l.code === primary)) return primary;
+			function getLocalizedPath(id, locale) {
+				if (locale === defaultLocale) return englishPaths[id];
+				const slug = localizedSlugs[id]?.[locale];
+				return slug ? `/${locale}/${slug}/` : `/${locale}/`;
 			}
-			return defaultLocale;
+
+			function localeFromNavigator() {
+				const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
+				if (cookie && locales.some((l) => l.code === cookie)) return cookie;
+
+				const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+				for (const tag of langs) {
+					const primary = tag.toLowerCase().split('-')[0];
+					if (locales.some((l) => l.code === primary)) return primary;
+				}
+				return defaultLocale;
+			}
+
+			const preferred = localeFromNavigator();
+			if (preferred === defaultLocale) return;
+
+			const target = locales.find((l) => l.code === preferred);
+			if (!target || !textEl) return;
+
+			const href = getLocalizedPath(pageId, preferred);
+			textEl.innerHTML = `${target.nativeName} (${target.region}) — <a href="${href}">${target.name} version</a>`;
+			bar.hidden = false;
+			bar.classList.remove('is-hidden');
+
+			dismiss?.addEventListener('click', () => {
+				sessionStorage.setItem(storageKey, '1');
+				bar.hidden = true;
+			});
+
+			bar.querySelector('a')?.addEventListener('click', () => {
+				document.cookie = `${cookieName}=${preferred};path=/;max-age=31536000;SameSite=Lax`;
+			});
+		};
+
+		if ('requestIdleCallback' in window) {
+			requestIdleCallback(run, { timeout: 3000 });
+		} else {
+			setTimeout(run, 1);
 		}
-
-		const preferred = localeFromNavigator();
-		if (preferred === defaultLocale) return;
-
-		const target = locales.find((l) => l.code === preferred);
-		if (!target || !textEl) return;
-
-		const href = getLocalizedPath(pageId, preferred);
-		textEl.innerHTML = `${target.nativeName} (${target.region}) — <a href="${href}">${target.name} version</a>`;
-		bar.hidden = false;
-		bar.classList.remove('is-hidden');
-
-		dismiss?.addEventListener('click', () => {
-			sessionStorage.setItem(storageKey, '1');
-			bar.hidden = true;
-		});
-
-		bar.querySelector('a')?.addEventListener('click', () => {
-			document.cookie = `${cookieName}=${preferred};path=/;max-age=31536000;SameSite=Lax`;
-		});
 	})();
 </script>
 

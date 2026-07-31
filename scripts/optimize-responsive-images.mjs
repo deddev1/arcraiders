@@ -5,7 +5,7 @@ import sharp from 'sharp';
 const imagesDir = path.resolve('public/images');
 
 /** Hero LCP asset — responsive widths for srcset */
-const HERO_WIDTHS = [640, 960, 1400];
+const HERO_WIDTHS = [480, 640, 960, 1400];
 
 /** Below-fold content images — smaller variants for gallery/product cards */
 const CONTENT_WIDTHS = [480, 960];
@@ -25,9 +25,10 @@ async function optimizeHero() {
 		if (meta.width && width > meta.width) continue;
 		const file = `fortnite-cheats-hero-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
+		const quality = width <= 480 ? 68 : 78;
 		const buffer = await sharp(source)
 			.resize({ width, withoutEnlargement: true })
-			.webp({ quality: 78, effort: 6 })
+			.webp({ quality, effort: 6 })
 			.toBuffer();
 		await writeFile(dest, buffer);
 		results.push({ file, width, bytes: buffer.length });

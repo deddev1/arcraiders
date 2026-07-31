@@ -301,10 +301,17 @@ const featuresUrl = getLocalizedPath('features', locale);
 		.hero__bg {
 			object-position: center 32%;
 			animation: none;
-			transform: scale(1.05);
+			transform: none;
+			will-change: auto;
 		}
 
 		.hero__splash {
+			display: none;
+		}
+
+		.hero__copy,
+		.hero__subtitle,
+		.hero__cta {
 			animation: none;
 		}
 

@@ -27,6 +27,7 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 export const heroResponsive: ResponsiveWidth[] = [
+	{ src: '/images/fortnite-cheats-hero-480w.webp', width: 480 },
 	{ src: '/images/fortnite-cheats-hero-640w.webp', width: 640 },
 	{ src: '/images/fortnite-cheats-hero-960w.webp', width: 960 },
 	{ src: '/images/fortnite-cheats-hero-1400w.webp', width: 1400 },
@@ -35,7 +36,7 @@ export const heroResponsive: ResponsiveWidth[] = [
 /** Mobile-first fallback `src` — matches smallest srcset variant for faster LCP. */
 export const heroSrc = heroResponsive[0].src;
 export const heroSrcSet = buildSrcSet(heroResponsive);
-export const heroSizes = '100vw';
+export const heroSizes = '(max-width: 760px) 100vw, 100vw';
 
 /** Smallest variant for `<link rel="preload">` on mobile-first LCP. */
 export const heroPreloadSrc = heroResponsive[0].src;
