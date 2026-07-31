@@ -107,18 +107,38 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	<main class="page">
 		<section class="banner">
 			<div class="banner__media">
-				<img
-					src={isHeroLcp ? heroPreloadSrc : heroImage}
-					srcset={isHeroLcp ? heroSrcSet : undefined}
-					sizes={isHeroLcp ? heroSizes : undefined}
-					alt={heroAlt}
-					width="1600"
-					height="900"
-					class="banner__img"
-					fetchpriority={isHeroLcp ? 'high' : undefined}
-					loading={isHeroLcp ? undefined : 'lazy'}
-					decoding="async"
-				/>
+				{
+					isHeroLcp ? (
+						<picture>
+							<source media="(max-width: 760px)" srcset={heroPreloadSrc} type="image/webp" />
+							<source
+								media="(min-width: 761px)"
+								srcset={heroSrcSet}
+								sizes={heroSizes}
+								type="image/webp"
+							/>
+							<img
+								src={heroPreloadSrc}
+								alt={heroAlt}
+								width="1600"
+								height="900"
+								class="banner__img"
+								fetchpriority="high"
+								decoding="async"
+							/>
+						</picture>
+					) : (
+						<img
+							src={heroImage}
+							alt={heroAlt}
+							width="1600"
+							height="900"
+							class="banner__img"
+							loading="lazy"
+							decoding="async"
+						/>
+					)
+				}
 				<div class="banner__scrim" aria-hidden="true"></div>
 			</div>
 			<div class="shell banner__content">

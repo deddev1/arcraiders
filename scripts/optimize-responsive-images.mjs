@@ -25,7 +25,7 @@ async function optimizeHero() {
 		if (meta.width && width > meta.width) continue;
 		const file = `fortnite-cheats-hero-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
-		const quality = width <= 480 ? 68 : 78;
+		const quality = width <= 480 ? 56 : width <= 640 ? 70 : 78;
 		const buffer = await sharp(source)
 			.resize({ width, withoutEnlargement: true })
 			.webp({ quality, effort: 6 })

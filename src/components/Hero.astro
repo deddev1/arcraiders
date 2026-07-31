@@ -29,17 +29,34 @@ const featuresUrl = getLocalizedPath('features', locale);
 
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
-		<img
-			src={heroSrc}
-			srcset={heroSrcSet}
-			sizes={heroSizes}
-			alt={ui.images.hero}
-			class="hero__bg"
-			width="1400"
-			height="788"
-			fetchpriority="high"
-			decoding="async"
-		/>
+		{/*
+		  Mobile: single 480w candidate (ignores DPR upscaling that would pull 960/1400).
+		  Desktop: full responsive srcset.
+		*/}
+		<picture>
+			<source
+				media="(max-width: 760px)"
+				srcset={heroSrc}
+				type="image/webp"
+				width="480"
+				height="270"
+			/>
+			<source
+				media="(min-width: 761px)"
+				srcset={heroSrcSet}
+				sizes={heroSizes}
+				type="image/webp"
+			/>
+			<img
+				src={heroSrc}
+				alt={ui.images.hero}
+				class="hero__bg"
+				width="1400"
+				height="788"
+				fetchpriority="high"
+				decoding="async"
+			/>
+		</picture>
 		<div class="hero__splash" aria-hidden="true"></div>
 		<div class="hero__veil" aria-hidden="true"></div>
 	</div>
@@ -198,7 +215,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 		max-width: 28rem;
 		font-size: clamp(0.95rem, 1.5vw, 1.05rem);
 		line-height: 1.65;
-		color: #c8bdd8;
+		color: #d4cae6;
 		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 	}
 
@@ -228,9 +245,15 @@ const featuresUrl = getLocalizedPath('features', locale);
 
 	.hero__btn--ghost {
 		border: 1px solid rgba(192, 132, 252, 0.35);
-		background: rgba(18, 16, 26, 0.55);
+		background: rgba(18, 16, 26, 0.82);
 		color: var(--color-ink);
-		backdrop-filter: blur(8px);
+	}
+
+	@media (min-width: 761px) {
+		.hero__btn--ghost {
+			background: rgba(18, 16, 26, 0.55);
+			backdrop-filter: blur(8px);
+		}
 	}
 
 	.hero__btn--ghost:hover {
@@ -334,7 +357,9 @@ const featuresUrl = getLocalizedPath('features', locale);
 		}
 
 		.hero__title {
+			font-family: var(--font-sans);
 			font-size: clamp(1.65rem, 8vw, 2.15rem);
+			font-weight: 800;
 			line-height: 1.18;
 			letter-spacing: -0.025em;
 			gap: 0.22rem;

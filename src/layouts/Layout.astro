@@ -42,7 +42,7 @@ const {
 	extraGraph = [],
 	lcpImage,
 	lcpImageSrcSet,
-	lcpImageSizes = '(max-width: 760px) 100vw, 100vw',
+	lcpImageSizes = '100vw',
 } = Astro.props;
 
 const path = canonicalPath.endsWith('/') || canonicalPath.includes('.') ? canonicalPath : `${canonicalPath}/`;
@@ -162,8 +162,20 @@ if (softwareNode) {
 					href={lcpImage}
 					type="image/webp"
 					fetchpriority="high"
+					media="(max-width: 760px)"
+				/>
+			)
+		}
+		{
+			lcpImageSrcSet && (
+				<link
+					rel="preload"
+					as="image"
+					href={lcpImageSrcSet.split(' ')[0]}
+					type="image/webp"
 					imagesrcset={lcpImageSrcSet}
 					imagesizes={lcpImageSizes}
+					media="(min-width: 761px)"
 				/>
 			)
 		}

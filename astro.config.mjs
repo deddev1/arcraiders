@@ -11,6 +11,7 @@ export default defineConfig({
 	compressHTML: true,
 	devToolbar: { enabled: false },
 	build: {
+		// Inline CSS to eliminate render-blocking stylesheets (validated higher than 'auto' on mobile)
 		inlineStylesheets: 'always',
 		format: 'directory',
 	},

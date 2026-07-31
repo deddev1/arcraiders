@@ -33,12 +33,15 @@ export const heroResponsive: ResponsiveWidth[] = [
 	{ src: '/images/fortnite-cheats-hero-1400w.webp', width: 1400 },
 ];
 
-/** Mobile-first fallback `src` — matches smallest srcset variant for faster LCP. */
-export const heroSrc = heroResponsive[0].src;
-export const heroSrcSet = buildSrcSet(heroResponsive);
-export const heroSizes = '(max-width: 760px) 100vw, 100vw';
+/** Desktop srcset (mobile uses a dedicated `<picture>` source — see Hero.astro). */
+export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive.filter((v) => v.width >= 640);
 
-/** Smallest variant for `<link rel="preload">` on mobile-first LCP. */
+/** Mobile-first fallback `src` — forced via `<picture>` so DPR cannot pull 960/1400. */
+export const heroSrc = heroResponsive[0].src;
+export const heroSrcSet = buildSrcSet(heroDesktopResponsive);
+export const heroSizes = '100vw';
+
+/** Mobile LCP preload — only the 480w file (no imagesrcset upscaling). */
 export const heroPreloadSrc = heroResponsive[0].src;
 
 /** Responsive widths for below-fold content images. */

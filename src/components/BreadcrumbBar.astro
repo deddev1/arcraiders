@@ -70,8 +70,16 @@ const updatesHref = getLocalizedPath('updates', locale);
 <style>
 	.crumb-bar {
 		border-block: 1px solid rgba(168, 85, 247, 0.12);
-		background: rgba(14, 10, 22, 0.85);
-		backdrop-filter: blur(12px);
+		background: rgba(14, 10, 22, 0.94);
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 64px;
+	}
+
+	@media (min-width: 761px) {
+		.crumb-bar {
+			background: rgba(14, 10, 22, 0.85);
+			backdrop-filter: blur(12px);
+		}
 	}
 
 	.crumb-bar__inner {
