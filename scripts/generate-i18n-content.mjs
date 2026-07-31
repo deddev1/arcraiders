@@ -102,7 +102,7 @@ async function main() {
 	console.log('✓ Wrote', OUT_FILE);
 	console.log(`✓ File size: ${size.toLocaleString()} bytes (${sizeKb} KB / ${sizeMb} MB)`);
 	console.log(`✓ Locales: ${LOCALES.join(', ')}`);
-	console.log(`✓ Pages per locale: 17`);
+	console.log(`✓ Pages per locale: 25`);
 	console.log('Success.');
 }
 

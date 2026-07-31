@@ -19,7 +19,7 @@ const KEYWORD_ASSETS = [
 	{ file: 'fortnite-cheats-aimbot-combat.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
 	{ file: 'fortnite-squad-fight.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
 	{ file: 'fortnite-cheats-esp-wallhack.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
-	{ file: 'fortnite-cheats-package.webp', url: `${IGN_BASE}/fortnite-chapter-5-underground-images_5h3j.1400.jpg` },
+	{ file: 'fortnite-cheats-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/fortnite-c/fortnite-chapter-5-underground-images_5h3j.1400.jpg' },
 	{ file: 'fortnite-header-art.webp', url: 'https://sm.ign.com/t/ign_in/screenshot/default/fortnite-unreal-engine-5-1-scree-3_bcxh.1400.jpg' },
 	{ file: 'fortnite-battle-royale-combat.webp', url: `${IGN_PK}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
 	{ file: 'fortnite-gulag-fight.webp', url: `${IGN_PK}/screenshot-6960-1725916496015_vbtg.1400.jpg` },

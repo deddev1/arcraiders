@@ -115,7 +115,8 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 					width="1600"
 					height="900"
 					class="banner__img"
-					fetchpriority="high"
+					fetchpriority={isHeroLcp ? 'high' : undefined}
+					loading={isHeroLcp ? 'eager' : 'lazy'}
 					decoding="async"
 				/>
 				<div class="banner__scrim" aria-hidden="true"></div>
