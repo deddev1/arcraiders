@@ -4,6 +4,11 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
+import {
+	contentSrcSet,
+	productMainSizes,
+	productThumbSizes,
+} from '../lib/responsive-images';
 
 interface Plan {
 	id: string;
@@ -45,6 +50,8 @@ const active = plans.find((plan) => plan.id === defaultPlan) ?? plans[0];
 		<figure class="product__figure media-frame">
 			<img
 				src={main.src}
+				srcset={contentSrcSet(main.src)}
+				sizes={productMainSizes}
 				alt={main.alt}
 				width="1280"
 				height="720"
@@ -67,7 +74,16 @@ const active = plans.find((plan) => plan.id === defaultPlan) ?? plans[0];
 						data-src={image.src}
 						data-alt={image.alt}
 					>
-						<img src={image.src} alt="" width="320" height="200" loading="lazy" decoding="async" />
+						<img
+							src={image.src}
+							srcset={contentSrcSet(image.src)}
+							sizes={productThumbSizes}
+							alt=""
+							width="320"
+							height="200"
+							loading="lazy"
+							decoding="async"
+						/>
 					</button>
 				))
 			}

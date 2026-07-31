@@ -144,6 +144,15 @@
 		text-decoration: none;
 	}
 
+	:focus-visible {
+		outline: 2px solid var(--color-orchid);
+		outline-offset: 2px;
+	}
+
+	:focus:not(:focus-visible) {
+		outline: none;
+	}
+
 	@media (max-width: 560px) {
 		:root {
 			--page-gutter: 0.85rem;

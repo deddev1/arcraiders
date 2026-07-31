@@ -34,8 +34,8 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 		const bar = document.querySelector('.locale-suggest');
 		const textEl = bar?.querySelector('.locale-suggest__text');
 		const dismiss = bar?.querySelector('.locale-suggest__dismiss');
-		const storageKey = 'wc_locale_dismissed';
-		const cookieName = 'wc_locale';
+		const storageKey = 'fc_locale_dismissed';
+		const cookieName = 'fc_locale';
 
 		if (!bar || sessionStorage.getItem(storageKey)) return;
 
@@ -49,7 +49,7 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 		}
 
 		function localeFromNavigator() {
-			const cookie = document.cookie.match(/(?:^|;\s*)wc_locale=([^;]+)/)?.[1];
+			const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
 			if (cookie && locales.some((l) => l.code === cookie)) return cookie;
 
 			const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
