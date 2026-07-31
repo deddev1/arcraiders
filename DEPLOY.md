@@ -1,11 +1,11 @@
-# Deploy fortnitecheats.net
+# Deploy fortnitecheats.xyz
 
-Step-by-step guide to deploy the Fortnite Cheats static site to **fortnitecheats.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Fortnite Cheats static site to **fortnitecheats.xyz** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **fortnitecheats.net** DNS
+- Cloudflare account with access to **fortnitecheats.xyz** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -46,9 +46,9 @@ This runs `wrangler pages deploy dist --project-name=fortnitecheats` (see `wrang
 
 ## 3. Custom domain and DNS
 
-Add **fortnitecheats.net** as the primary custom domain on the Pages project.
+Add **fortnitecheats.xyz** as the primary custom domain on the Pages project.
 
-### Apex (fortnitecheats.net)
+### Apex (fortnitecheats.xyz)
 
 In **Cloudflare DNS** for the zone:
 
@@ -62,8 +62,8 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.fortnitecheats.net/*`
-   - **Target:** `https://fortnitecheats.net/${1}`
+   - **Source:** `www.fortnitecheats.xyz/*`
+   - **Target:** `https://fortnitecheats.xyz/${1}`
    - **Status:** 301
 
 The deployed `functions/_middleware.js` also enforces apex canonical host and legacy path redirects.
@@ -78,26 +78,26 @@ The deployed `functions/_middleware.js` also enforces apex canonical host and le
 
 Verify these URLs return **200** with correct content:
 
-- `https://fortnitecheats.net/`
-- `https://fortnitecheats.net/es/`
-- `https://fortnitecheats.net/fortnite-aimbot/`
-- `https://fortnitecheats.net/sitemap-index.xml`
-- `https://fortnitecheats.net/robots.txt`
+- `https://fortnitecheats.xyz/`
+- `https://fortnitecheats.xyz/es/`
+- `https://fortnitecheats.xyz/fortnite-aimbot/`
+- `https://fortnitecheats.xyz/sitemap-index.xml`
+- `https://fortnitecheats.xyz/robots.txt`
 
 Verify redirects:
 
-- `http://fortnitecheats.net` → `https://fortnitecheats.net` (301)
-- `https://www.fortnitecheats.net` → `https://fortnitecheats.net` (301)
+- `http://fortnitecheats.xyz` → `https://fortnitecheats.xyz` (301)
+- `https://www.fortnitecheats.xyz` → `https://fortnitecheats.xyz` (301)
 - Legacy paths (e.g. `/warzone-aimbot/`) → Fortnite equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `fortnitecheats.net`.
+2. **Add property** → choose **Domain** → enter `fortnitecheats.xyz`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://fortnitecheats.net/sitemap-index.xml
+   https://fortnitecheats.xyz/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
@@ -118,10 +118,10 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project `fortnitecheats` created
-- [ ] Custom domain `fortnitecheats.net` attached and active
+- [ ] Custom domain `fortnitecheats.xyz` attached and active
 - [ ] `www` redirects to apex
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://fortnitecheats.net`
+- [ ] `robots.txt` and sitemaps serve from `https://fortnitecheats.xyz`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
 - [ ] Homepage and key pages requested for indexing

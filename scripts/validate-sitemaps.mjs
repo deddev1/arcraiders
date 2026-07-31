@@ -28,7 +28,7 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://fortnitecheats.net';
+const SITE = 'https://fortnitecheats.xyz';
 
 const ENGLISH_PAGES = 25;
 const I18N_LOCALES = 21;

@@ -1,6 +1,6 @@
 # Fortnite Cheats — Marketing Site
 
-Static Astro 7 site for [fortnitecheats.net](https://fortnitecheats.net), adapted from the Warzone Cheats template.
+Static Astro 7 site for [fortnitecheats.xyz](https://fortnitecheats.xyz), adapted from the Warzone Cheats template.
 
 ## Stack
 
@@ -35,7 +35,7 @@ npm run optimize:images
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Add custom domain **fortnitecheats.net** (apex) and redirect **www** → apex
+5. Add custom domain **fortnitecheats.xyz** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 7. DNS: proxied A/AAAA or CNAME for apex + www
 
@@ -72,17 +72,17 @@ Requires `wrangler` auth (`wrangler login`).
 - JSON-LD: FAQPage, SoftwareApplication, Organization, WebPage (via layouts)
 - hreflang on all 22 locales + x-default
 - Sitemaps: index, English, per-locale, images
-- Canonical URLs on `https://fortnitecheats.net`
+- Canonical URLs on `https://fortnitecheats.xyz`
 
 ## Google Search Console
 
 After deploy:
 
-1. Verify domain property for `fortnitecheats.net`
-2. Submit `https://fortnitecheats.net/sitemap-index.xml`
+1. Verify domain property for `fortnitecheats.xyz`
+2. Submit `https://fortnitecheats.xyz/sitemap-index.xml`
 3. Request indexing for homepage and key landing pages
 4. Monitor Coverage and Core Web Vitals
 
 ## License
 
-Private — for fortnitecheats.net deployment only.
+Private — for fortnitecheats.xyz deployment only.

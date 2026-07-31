@@ -1,9 +1,9 @@
 export const siteConfig = {
 	name: 'Fortnite Cheats',
-	url: 'https://fortnitecheats.net',
+	url: 'https://fortnitecheats.xyz',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@fortnitecheats.net',
+	supportEmail: 'support@fortnitecheats.xyz',
 	logo: '/images/zadeyo-logo.webp',
 	logoAlt: 'Zadeyo',
 	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Ffortnite',
@@ -143,7 +143,7 @@ export const homeFaqs = [
 	{
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email support@fortnitecheats.net. Include your order details, package length, and a clear description of the Fortnite setup issue so replies can be faster.',
+			'Use the Support page or email support@fortnitecheats.xyz. Include your order details, package length, and a clear description of the Fortnite setup issue so replies can be faster.',
 	},
 ] as const;
 

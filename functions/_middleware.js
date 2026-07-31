@@ -1,9 +1,10 @@
-﻿const CANONICAL_ORIGIN = 'https://fortnitecheats.net';
-const APEX_HOST = 'fortnitecheats.net';
-const WWW_HOST = 'www.fortnitecheats.net';
+﻿const CANONICAL_ORIGIN = 'https://fortnitecheats.xyz';
+const APEX_HOST = 'fortnitecheats.xyz';
+const WWW_HOST = 'www.fortnitecheats.xyz';
 
 /** Legacy domains → canonical apex (301). */
 const LEGACY_HOSTS = new Set([
+	'fortnitecheats.net',
 	'www.fortnitecheats.net',
 	'fortnitecheats.com',
 	'www.fortnitecheats.com',

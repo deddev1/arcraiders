@@ -105,7 +105,7 @@ export const enPages = {
 			section(
 				'Licensing, delivery, and EAC maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery through Zadeyo. EAC maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
-				'Setup and billing support is available through the <a href="/support/">Support page</a> and support@fortnitecheats.net.',
+				'Setup and billing support is available through the <a href="/support/">Support page</a> and support@fortnitecheats.xyz.',
 			),
 		],
 	},
@@ -217,7 +217,7 @@ export const enPages = {
 			section(
 				'Delivery, pricing, and support',
 				'Licenses deliver digitally through Zadeyo after payment confirmation. Monthly is $35; lifetime is $150 USD.',
-				'Contact support@fortnitecheats.net or the Support page with order details for setup or billing help.',
+				'Contact support@fortnitecheats.xyz or the Support page with order details for setup or billing help.',
 			),
 		],
 	},
@@ -245,7 +245,7 @@ export const enPages = {
 			section(
 				'Self-service resources',
 				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated Easy Anti-Cheat (EAC) page.',
-				'Email: support@fortnitecheats.net',
+				'Email: support@fortnitecheats.xyz',
 			),
 		],
 	},
@@ -385,7 +385,7 @@ export const enPages = {
 			section(
 				'Before you buy',
 				'Read Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
-				'Support is available at support@fortnitecheats.net for license questions.',
+				'Support is available at support@fortnitecheats.xyz for license questions.',
 			),
 		],
 	},
@@ -615,9 +615,9 @@ export const enPages = {
 	},
 	privacy: {
 		title: 'Privacy Policy | Fortnite Cheats',
-		description: 'Privacy policy for Fortnite Cheats. How we handle support emails, order data, site usage, and checkout for Fortnite licenses on fortnitecheats.net.',
+		description: 'Privacy policy for Fortnite Cheats. How we handle support emails, order data, site usage, and checkout for Fortnite licenses on fortnitecheats.xyz.',
 		h1: 'Privacy Policy',
-		intro: 'How Fortnite Cheats handles information when you browse fortnitecheats.net or contact support about a Fortnite license.',
+		intro: 'How Fortnite Cheats handles information when you browse fortnitecheats.xyz or contact support about a Fortnite license.',
 		imageAlt: 'Fortnite cheats privacy policy — fortnite-cheats legal page',
 		galleryTitle: 'Fortnite Cheats legal resources',
 		ctaPrimary: 'Email support',
@@ -637,8 +637,8 @@ export const enPages = {
 			),
 			section(
 				'Your choices and contact',
-				'You may request correction or deletion of support email data by contacting support@fortnitecheats.net with your request details.',
-				'Policy updates publish on this page. Continued use of fortnitecheats.net after updates means you accept the revised policy.',
+				'You may request correction or deletion of support email data by contacting support@fortnitecheats.xyz with your request details.',
+				'Policy updates publish on this page. Continued use of fortnitecheats.xyz after updates means you accept the revised policy.',
 			),
 		],
 	},
@@ -665,7 +665,7 @@ export const enPages = {
 			),
 			section(
 				'How to request a refund',
-				'Email support@fortnitecheats.net with subject "Refund Request", your order ID, purchase date, and issue summary.',
+				'Email support@fortnitecheats.xyz with subject "Refund Request", your order ID, purchase date, and issue summary.',
 				'Approved refunds process back to the original Zadeyo payment method when possible.',
 			),
 		],
@@ -674,7 +674,7 @@ export const enPages = {
 		title: 'Terms of Use | Fortnite Cheats',
 		description: 'Terms of use for Fortnite Cheats website and Fortnite cheat licenses. Usage rules, checkout terms, anti-cheat risk, and liability limits.',
 		h1: 'Terms of Use',
-		intro: 'Terms governing use of fortnitecheats.net and Fortnite Cheats licenses for Fortnite on Windows PC.',
+		intro: 'Terms governing use of fortnitecheats.xyz and Fortnite Cheats licenses for Fortnite on Windows PC.',
 		imageAlt: 'Fortnite cheats terms of use — fortnite-cheats legal agreement',
 		galleryTitle: 'Fortnite Cheats legal pages',
 		ctaPrimary: 'Email support',
@@ -694,7 +694,7 @@ export const enPages = {
 			section(
 				'Changes and governing law',
 				'We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.',
-				'Contact support@fortnitecheats.net for questions. Disputes are handled under applicable consumer law in your jurisdiction where required.',
+				'Contact support@fortnitecheats.xyz for questions. Disputes are handled under applicable consumer law in your jurisdiction where required.',
 			),
 		],
 	},

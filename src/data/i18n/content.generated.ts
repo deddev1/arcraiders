@@ -222,7 +222,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Licensing, delivery, and EAC maintenance",
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery through Zadeyo. EAC maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
-								"Setup and billing support is available through the <a href=\"/support/\">Support page</a> and support@fortnitecheats.net.",
+								"Setup and billing support is available through the <a href=\"/support/\">Support page</a> and support@fortnitecheats.xyz.",
 							],
 						},
 					],
@@ -362,7 +362,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Delivery, pricing, and support",
 							paragraphs: [
 								"Licenses deliver digitally through Zadeyo after payment confirmation. Monthly is $35; lifetime is $150 USD.",
-								"Contact support@fortnitecheats.net or the Support page with order details for setup or billing help.",
+								"Contact support@fortnitecheats.xyz or the Support page with order details for setup or billing help.",
 							],
 						},
 					],
@@ -397,7 +397,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Self-service resources",
 							paragraphs: [
 								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated Easy Anti-Cheat (EAC) page.",
-								"Email: support@fortnitecheats.net",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -572,7 +572,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Before you buy",
 							paragraphs: [
 								"Read Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
-								"Support is available at support@fortnitecheats.net for license questions.",
+								"Support is available at support@fortnitecheats.xyz for license questions.",
 							],
 						},
 					],
@@ -860,9 +860,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				privacy: {
 					title: "Privacy Policy | Fortnite Cheats",
-					description: "Privacy policy for Fortnite Cheats. How we handle support emails, order data, site usage, and checkout for Fortnite licenses on fortnitecheats.net.",
+					description: "Privacy policy for Fortnite Cheats. How we handle support emails, order data, site usage, and checkout for Fortnite licenses on fortnitecheats.xyz.",
 					h1: "Privacy Policy",
-					intro: "How Fortnite Cheats handles information when you browse fortnitecheats.net or contact support about a Fortnite license.",
+					intro: "How Fortnite Cheats handles information when you browse fortnitecheats.xyz or contact support about a Fortnite license.",
 					imageAlt: "Fortnite cheats privacy policy — fortnite-cheats legal page",
 					galleryTitle: "Fortnite Cheats legal resources",
 					ctaPrimary: "Email support",
@@ -891,8 +891,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your choices and contact",
 							paragraphs: [
-								"You may request correction or deletion of support email data by contacting support@fortnitecheats.net with your request details.",
-								"Policy updates publish on this page. Continued use of fortnitecheats.net after updates means you accept the revised policy.",
+								"You may request correction or deletion of support email data by contacting support@fortnitecheats.xyz with your request details.",
+								"Policy updates publish on this page. Continued use of fortnitecheats.xyz after updates means you accept the revised policy.",
 							],
 						},
 					],
@@ -926,7 +926,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request a refund",
 							paragraphs: [
-								"Email support@fortnitecheats.net with subject \"Refund Request\", your order ID, purchase date, and issue summary.",
+								"Email support@fortnitecheats.xyz with subject \"Refund Request\", your order ID, purchase date, and issue summary.",
 								"Approved refunds process back to the original Zadeyo payment method when possible.",
 							],
 						},
@@ -937,7 +937,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Terms of Use | Fortnite Cheats",
 					description: "Terms of use for Fortnite Cheats website and Fortnite cheat licenses. Usage rules, checkout terms, anti-cheat risk, and liability limits.",
 					h1: "Terms of Use",
-					intro: "Terms governing use of fortnitecheats.net and Fortnite Cheats licenses for Fortnite on Windows PC.",
+					intro: "Terms governing use of fortnitecheats.xyz and Fortnite Cheats licenses for Fortnite on Windows PC.",
 					imageAlt: "Fortnite cheats terms of use — fortnite-cheats legal agreement",
 					galleryTitle: "Fortnite Cheats legal pages",
 					ctaPrimary: "Email support",
@@ -962,7 +962,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Changes and governing law",
 							paragraphs: [
 								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
-								"Contact support@fortnitecheats.net for questions. Disputes are handled under applicable consumer law in your jurisdiction where required.",
+								"Contact support@fortnitecheats.xyz for questions. Disputes are handled under applicable consumer law in your jurisdiction where required.",
 							],
 						},
 					],
@@ -1803,7 +1803,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidad | Fortnite Cheats",
 					description: "Política de privacidad for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de privacidad",
-					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Política de privacidad for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Política de privacidad for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -1815,7 +1815,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Información que recopilamos",
 							paragraphs: [
 								"Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -1828,8 +1828,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tus derechos",
 							paragraphs: [
-								"Contacta support@fortnitecheats.net para solicitudes legales o de soporte.",
-								"Email: support@fortnitecheats.net",
+								"Contacta support@fortnitecheats.xyz para solicitudes legales o de soporte.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -1838,7 +1838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | Fortnite Cheats",
 					description: "Política de reembolso for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de reembolso",
-					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Política de reembolso for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Política de reembolso for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -1863,8 +1863,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cómo solicitar",
 							paragraphs: [
-								"Contacta support@fortnitecheats.net para solicitudes legales o de soporte.",
-								"Email: support@fortnitecheats.net",
+								"Contacta support@fortnitecheats.xyz para solicitudes legales o de soporte.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -1873,7 +1873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Términos de uso | Fortnite Cheats",
 					description: "Términos de uso for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Términos de uso",
-					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Términos de uso for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Fortnite en Windows PC. Términos de uso for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -1898,8 +1898,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cambios",
 							paragraphs: [
-								"Contacta support@fortnitecheats.net para solicitudes legales o de soporte.",
-								"Email: support@fortnitecheats.net",
+								"Contacta support@fortnitecheats.xyz para solicitudes legales o de soporte.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -2739,7 +2739,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de confidentialité | Fortnite Cheats",
 					description: "Politique de confidentialité for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de confidentialité",
-					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Politique de confidentialité for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Politique de confidentialité for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -2751,7 +2751,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informations collectées",
 							paragraphs: [
 								"Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -2764,8 +2764,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vos droits",
 							paragraphs: [
-								"Contactez support@fortnitecheats.net pour le support ou les demandes légales.",
-								"Email: support@fortnitecheats.net",
+								"Contactez support@fortnitecheats.xyz pour le support ou les demandes légales.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -2774,7 +2774,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de remboursement | Fortnite Cheats",
 					description: "Politique de remboursement for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de remboursement",
-					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Politique de remboursement for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Politique de remboursement for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -2799,8 +2799,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Comment demander",
 							paragraphs: [
-								"Contactez support@fortnitecheats.net pour le support ou les demandes légales.",
-								"Email: support@fortnitecheats.net",
+								"Contactez support@fortnitecheats.xyz pour le support ou les demandes légales.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -2809,7 +2809,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Conditions d'utilisation | Fortnite Cheats",
 					description: "Conditions d'utilisation for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Conditions d'utilisation",
-					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Conditions d'utilisation for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Fortnite sur PC Windows. Conditions d'utilisation for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -2834,8 +2834,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modifications",
 							paragraphs: [
-								"Contactez support@fortnitecheats.net pour le support ou les demandes légales.",
-								"Email: support@fortnitecheats.net",
+								"Contactez support@fortnitecheats.xyz pour le support ou les demandes légales.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -3675,7 +3675,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Datenschutz | Fortnite Cheats",
 					description: "Datenschutz for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Datenschutz",
-					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Datenschutz for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Datenschutz for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -3687,7 +3687,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Erhobene Daten",
 							paragraphs: [
 								"Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -3700,8 +3700,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ihre Rechte",
 							paragraphs: [
-								"support@fortnitecheats.net für Support und rechtliche Anfragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz für Support und rechtliche Anfragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -3710,7 +3710,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Rückerstattung | Fortnite Cheats",
 					description: "Rückerstattung for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Rückerstattung",
-					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Rückerstattung for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Rückerstattung for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -3735,8 +3735,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anfrage stellen",
 							paragraphs: [
-								"support@fortnitecheats.net für Support und rechtliche Anfragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz für Support und rechtliche Anfragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -3745,7 +3745,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Nutzungsbedingungen | Fortnite Cheats",
 					description: "Nutzungsbedingungen for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Nutzungsbedingungen",
-					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Nutzungsbedingungen for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Fortnite auf Windows PC. Nutzungsbedingungen for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -3770,8 +3770,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Änderungen",
 							paragraphs: [
-								"support@fortnitecheats.net für Support und rechtliche Anfragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz für Support und rechtliche Anfragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -4611,7 +4611,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidade | Fortnite Cheats",
 					description: "Política de privacidade for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de privacidade",
-					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Política de privacidade for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Política de privacidade for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -4623,7 +4623,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -4636,8 +4636,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contacte support@fortnitecheats.net para suporte ou questões legais.",
-								"Email: support@fortnitecheats.net",
+								"Contacte support@fortnitecheats.xyz para suporte ou questões legais.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -4646,7 +4646,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | Fortnite Cheats",
 					description: "Política de reembolso for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de reembolso",
-					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Política de reembolso for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Política de reembolso for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -4671,8 +4671,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contacte support@fortnitecheats.net para suporte ou questões legais.",
-								"Email: support@fortnitecheats.net",
+								"Contacte support@fortnitecheats.xyz para suporte ou questões legais.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -4681,7 +4681,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termos de uso | Fortnite Cheats",
 					description: "Termos de uso for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termos de uso",
-					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Termos de uso for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Fortnite no PC Windows. Termos de uso for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -4706,8 +4706,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contacte support@fortnitecheats.net para suporte ou questões legais.",
-								"Email: support@fortnitecheats.net",
+								"Contacte support@fortnitecheats.xyz para suporte ou questões legais.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -5547,7 +5547,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Informativa privacy | Fortnite Cheats",
 					description: "Informativa privacy for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Informativa privacy",
-					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Informativa privacy for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Informativa privacy for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -5559,7 +5559,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -5572,8 +5572,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contatta support@fortnitecheats.net per supporto o richieste legali.",
-								"Email: support@fortnitecheats.net",
+								"Contatta support@fortnitecheats.xyz per supporto o richieste legali.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -5582,7 +5582,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica di rimborso | Fortnite Cheats",
 					description: "Politica di rimborso for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica di rimborso",
-					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Politica di rimborso for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Politica di rimborso for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -5607,8 +5607,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contatta support@fortnitecheats.net per supporto o richieste legali.",
-								"Email: support@fortnitecheats.net",
+								"Contatta support@fortnitecheats.xyz per supporto o richieste legali.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -5617,7 +5617,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termini di utilizzo | Fortnite Cheats",
 					description: "Termini di utilizzo for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termini di utilizzo",
-					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Termini di utilizzo for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Fortnite su PC Windows. Termini di utilizzo for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -5642,8 +5642,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contatta support@fortnitecheats.net per supporto o richieste legali.",
-								"Email: support@fortnitecheats.net",
+								"Contatta support@fortnitecheats.xyz per supporto o richieste legali.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -6483,7 +6483,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Privacybeleid | Fortnite Cheats",
 					description: "Privacybeleid for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Privacybeleid",
-					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Privacybeleid for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Privacybeleid for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -6495,7 +6495,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -6508,8 +6508,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net voor support en juridische vragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz voor support en juridische vragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -6518,7 +6518,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Restitutiebeleid | Fortnite Cheats",
 					description: "Restitutiebeleid for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Restitutiebeleid",
-					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Restitutiebeleid for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Restitutiebeleid for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -6543,8 +6543,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net voor support en juridische vragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz voor support en juridische vragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -6553,7 +6553,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gebruiksvoorwaarden | Fortnite Cheats",
 					description: "Gebruiksvoorwaarden for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gebruiksvoorwaarden",
-					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Gebruiksvoorwaarden for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Fortnite op Windows PC. Gebruiksvoorwaarden for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -6578,8 +6578,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net voor support en juridische vragen.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz voor support en juridische vragen.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -7419,7 +7419,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka prywatności | Fortnite Cheats",
 					description: "Polityka prywatności for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka prywatności",
-					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Polityka prywatności for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Polityka prywatności for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -7431,7 +7431,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -7444,8 +7444,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net w sprawach wsparcia i prawnych.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz w sprawach wsparcia i prawnych.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -7454,7 +7454,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka zwrotów | Fortnite Cheats",
 					description: "Polityka zwrotów for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka zwrotów",
-					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Polityka zwrotów for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Polityka zwrotów for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -7479,8 +7479,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net w sprawach wsparcia i prawnych.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz w sprawach wsparcia i prawnych.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -7489,7 +7489,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warunki użytkowania | Fortnite Cheats",
 					description: "Warunki użytkowania for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Warunki użytkowania",
-					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Warunki użytkowania for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Fortnite na PC Windows. Warunki użytkowania for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -7514,8 +7514,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net w sprawach wsparcia i prawnych.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz w sprawach wsparcia i prawnych.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -8355,7 +8355,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика конфиденциальности | Fortnite Cheats",
 					description: "Политика конфиденциальности for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика конфиденциальности",
-					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Политика конфиденциальности for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Политика конфиденциальности for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -8367,7 +8367,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -8380,8 +8380,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net для поддержки и юридических вопросов.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для поддержки и юридических вопросов.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -8390,7 +8390,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика возврата | Fortnite Cheats",
 					description: "Политика возврата for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика возврата",
-					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Политика возврата for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Политика возврата for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -8415,8 +8415,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net для поддержки и юридических вопросов.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для поддержки и юридических вопросов.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -8425,7 +8425,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Условия использования | Fortnite Cheats",
 					description: "Условия использования for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Условия использования",
-					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Условия использования for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Fortnite на Windows PC. Условия использования for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -8450,8 +8450,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net для поддержки и юридических вопросов.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для поддержки и юридических вопросов.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -9291,7 +9291,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gizlilik politikası | Fortnite Cheats",
 					description: "Gizlilik politikası for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gizlilik politikası",
-					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Gizlilik politikası for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Gizlilik politikası for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -9303,7 +9303,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -9316,8 +9316,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Destek ve yasal sorular için support@fortnitecheats.net.",
-								"Email: support@fortnitecheats.net",
+								"Destek ve yasal sorular için support@fortnitecheats.xyz.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -9326,7 +9326,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "İade politikası | Fortnite Cheats",
 					description: "İade politikası for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "İade politikası",
-					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. İade politikası for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. İade politikası for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -9351,8 +9351,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Destek ve yasal sorular için support@fortnitecheats.net.",
-								"Email: support@fortnitecheats.net",
+								"Destek ve yasal sorular için support@fortnitecheats.xyz.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -9361,7 +9361,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kullanım şartları | Fortnite Cheats",
 					description: "Kullanım şartları for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Kullanım şartları",
-					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Kullanım şartları for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats, Fortnite için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Kullanım şartları for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -9386,8 +9386,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Destek ve yasal sorular için support@fortnitecheats.net.",
-								"Email: support@fortnitecheats.net",
+								"Destek ve yasal sorular için support@fortnitecheats.xyz.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -10227,7 +10227,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الخصوصية | Fortnite Cheats",
 					description: "سياسة الخصوصية for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الخصوصية",
-					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. سياسة الخصوصية for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. سياسة الخصوصية for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -10239,7 +10239,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "المعلومات التي نجمعها",
 							paragraphs: [
 								"Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -10252,8 +10252,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "حقوقك",
 							paragraphs: [
-								"support@fortnitecheats.net للدعم والطلبات القانونية.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz للدعم والطلبات القانونية.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -10262,7 +10262,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الاسترداد | Fortnite Cheats",
 					description: "سياسة الاسترداد for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الاسترداد",
-					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. سياسة الاسترداد for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. سياسة الاسترداد for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -10287,8 +10287,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "كيفية الطلب",
 							paragraphs: [
-								"support@fortnitecheats.net للدعم والطلبات القانونية.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz للدعم والطلبات القانونية.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -10297,7 +10297,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "شروط الاستخدام | Fortnite Cheats",
 					description: "شروط الاستخدام for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "شروط الاستخدام",
-					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. شروط الاستخدام for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Fortnite على Windows PC. شروط الاستخدام for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -10322,8 +10322,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التغييرات",
 							paragraphs: [
-								"support@fortnitecheats.net للدعم والطلبات القانونية.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz للدعم والطلبات القانونية.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -11163,7 +11163,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "プライバシーポリシー | Fortnite Cheats",
 					description: "プライバシーポリシー for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "プライバシーポリシー",
-					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。プライバシーポリシー for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。プライバシーポリシー for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -11175,7 +11175,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "収集する情報",
 							paragraphs: [
 								"Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -11188,8 +11188,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "あなたの権利",
 							paragraphs: [
-								"サポート・法務: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"サポート・法務: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -11198,7 +11198,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "返金ポリシー | Fortnite Cheats",
 					description: "返金ポリシー for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "返金ポリシー",
-					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。返金ポリシー for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。返金ポリシー for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -11223,8 +11223,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "申請方法",
 							paragraphs: [
-								"サポート・法務: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"サポート・法務: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -11233,7 +11233,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "利用規約 | Fortnite Cheats",
 					description: "利用規約 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "利用規約",
-					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。利用規約 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite CheatsはFortnite向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。利用規約 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -11258,8 +11258,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "変更",
 							paragraphs: [
-								"サポート・法務: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"サポート・法務: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -12099,7 +12099,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "개인정보 처리방침 | Fortnite Cheats",
 					description: "개인정보 처리방침 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "개인정보 처리방침",
-					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 개인정보 처리방침 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 개인정보 처리방침 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -12111,7 +12111,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -12124,8 +12124,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"지원 및 법무: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"지원 및 법무: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -12134,7 +12134,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "환불 정책 | Fortnite Cheats",
 					description: "환불 정책 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "환불 정책",
-					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 환불 정책 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 환불 정책 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -12159,8 +12159,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"지원 및 법무: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"지원 및 법무: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -12169,7 +12169,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "이용 약관 | Fortnite Cheats",
 					description: "이용 약관 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "이용 약관",
-					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 이용 약관 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats는 Fortnite Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 이용 약관 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -12194,8 +12194,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"지원 및 법무: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"지원 및 법무: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -13035,7 +13035,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "隐私政策 | Fortnite Cheats",
 					description: "隐私政策 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "隐私政策",
-					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。隐私政策 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。隐私政策 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -13047,7 +13047,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -13060,8 +13060,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"支持与法务：support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"支持与法务：support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -13070,7 +13070,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "退款政策 | Fortnite Cheats",
 					description: "退款政策 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "退款政策",
-					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。退款政策 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。退款政策 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -13095,8 +13095,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"支持与法务：support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"支持与法务：support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -13105,7 +13105,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "使用条款 | Fortnite Cheats",
 					description: "使用条款 for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "使用条款",
-					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。使用条款 for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats为FortniteWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。使用条款 for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -13130,8 +13130,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"支持与法务：support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"支持与法务：support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -13971,7 +13971,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "गोपनीयता नीति | Fortnite Cheats",
 					description: "गोपनीयता नीति for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "गोपनीयता नीति",
-					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। गोपनीयता नीति for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। गोपनीयता नीति for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -13983,7 +13983,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -13996,8 +13996,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"सहायता: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"सहायता: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -14006,7 +14006,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "रिफंड नीति | Fortnite Cheats",
 					description: "रिफंड नीति for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "रिफंड नीति",
-					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। रिफंड नीति for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। रिफंड नीति for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -14031,8 +14031,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"सहायता: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"सहायता: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -14041,7 +14041,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "उपयोग की शर्तें | Fortnite Cheats",
 					description: "उपयोग की शर्तें for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "उपयोग की शर्तें",
-					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। उपयोग की शर्तें for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats Fortnite के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। उपयोग की शर्तें for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -14066,8 +14066,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"सहायता: support@fortnitecheats.net",
-								"Email: support@fortnitecheats.net",
+								"सहायता: support@fortnitecheats.xyz",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -14907,7 +14907,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan privasi | Fortnite Cheats",
 					description: "Kebijakan privasi for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan privasi",
-					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Kebijakan privasi for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Kebijakan privasi for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -14919,7 +14919,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -14932,8 +14932,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net untuk dukungan dan legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz untuk dukungan dan legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -14942,7 +14942,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan refund | Fortnite Cheats",
 					description: "Kebijakan refund for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan refund",
-					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Kebijakan refund for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Kebijakan refund for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -14967,8 +14967,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net untuk dukungan dan legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz untuk dukungan dan legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -14977,7 +14977,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Syarat penggunaan | Fortnite Cheats",
 					description: "Syarat penggunaan for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Syarat penggunaan",
-					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Syarat penggunaan for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Fortnite di PC Windows. Syarat penggunaan for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -15002,8 +15002,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net untuk dukungan dan legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz untuk dukungan dan legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -15843,7 +15843,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายความเป็นส่วนตัว | Fortnite Cheats",
 					description: "นโยบายความเป็นส่วนตัว for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายความเป็นส่วนตัว",
-					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC นโยบายความเป็นส่วนตัว for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC นโยบายความเป็นส่วนตัว for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -15855,7 +15855,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -15868,8 +15868,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net สำหรับการสนับสนุน",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz สำหรับการสนับสนุน",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -15878,7 +15878,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายการคืนเงิน | Fortnite Cheats",
 					description: "นโยบายการคืนเงิน for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายการคืนเงิน",
-					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC นโยบายการคืนเงิน for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC นโยบายการคืนเงิน for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -15903,8 +15903,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net สำหรับการสนับสนุน",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz สำหรับการสนับสนุน",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -15913,7 +15913,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "ข้อกำหนดการใช้งาน | Fortnite Cheats",
 					description: "ข้อกำหนดการใช้งาน for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "ข้อกำหนดการใช้งาน",
-					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC ข้อกำหนดการใช้งาน for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Fortnite บน Windows PC ข้อกำหนดการใช้งาน for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -15938,8 +15938,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net สำหรับการสนับสนุน",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz สำหรับการสนับสนุน",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -16779,7 +16779,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách bảo mật | Fortnite Cheats",
 					description: "Chính sách bảo mật for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách bảo mật",
-					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Chính sách bảo mật for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Chính sách bảo mật for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -16791,7 +16791,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -16804,8 +16804,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net cho hỗ trợ và pháp lý.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz cho hỗ trợ và pháp lý.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -16814,7 +16814,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách hoàn tiền | Fortnite Cheats",
 					description: "Chính sách hoàn tiền for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách hoàn tiền",
-					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Chính sách hoàn tiền for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Chính sách hoàn tiền for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -16839,8 +16839,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net cho hỗ trợ và pháp lý.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz cho hỗ trợ và pháp lý.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -16849,7 +16849,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Điều khoản sử dụng | Fortnite Cheats",
 					description: "Điều khoản sử dụng for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Điều khoản sử dụng",
-					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Điều khoản sử dụng for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Fortnite trên PC Windows. Điều khoản sử dụng for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -16874,8 +16874,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net cho hỗ trợ và pháp lý.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz cho hỗ trợ và pháp lý.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -17715,7 +17715,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика конфіденційності | Fortnite Cheats",
 					description: "Політика конфіденційності for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика конфіденційності",
-					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Політика конфіденційності for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Політика конфіденційності for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -17727,7 +17727,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -17740,8 +17740,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net для підтримки та правових питань.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для підтримки та правових питань.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -17750,7 +17750,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика повернення | Fortnite Cheats",
 					description: "Політика повернення for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика повернення",
-					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Політика повернення for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Політика повернення for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -17775,8 +17775,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net для підтримки та правових питань.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для підтримки та правових питань.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -17785,7 +17785,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Умови використання | Fortnite Cheats",
 					description: "Умови використання for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Умови використання",
-					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Умови використання for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Fortnite на Windows PC. Умови використання for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -17810,8 +17810,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net для підтримки та правових питань.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz для підтримки та правових питань.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -18651,7 +18651,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady ochrany soukromí | Fortnite Cheats",
 					description: "Zásady ochrany soukromí for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady ochrany soukromí",
-					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Zásady ochrany soukromí for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Zásady ochrany soukromí for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -18663,7 +18663,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -18676,8 +18676,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net pro podporu a právní dotazy.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pro podporu a právní dotazy.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -18686,7 +18686,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady vrácení peněz | Fortnite Cheats",
 					description: "Zásady vrácení peněz for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady vrácení peněz",
-					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Zásady vrácení peněz for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Zásady vrácení peněz for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -18711,8 +18711,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net pro podporu a právní dotazy.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pro podporu a právní dotazy.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -18721,7 +18721,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Podmínky použití | Fortnite Cheats",
 					description: "Podmínky použití for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Podmínky použití",
-					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Podmínky použití for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Fortnite na Windows PC. Podmínky použití for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -18746,8 +18746,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net pro podporu a právní dotazy.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pro podporu a právní dotazy.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -19587,7 +19587,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de confidențialitate | Fortnite Cheats",
 					description: "Politica de confidențialitate for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de confidențialitate",
-					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Politica de confidențialitate for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Politica de confidențialitate for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -19599,7 +19599,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -19612,8 +19612,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net pentru suport și legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pentru suport și legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -19622,7 +19622,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de rambursare | Fortnite Cheats",
 					description: "Politica de rambursare for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de rambursare",
-					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Politica de rambursare for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Politica de rambursare for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -19647,8 +19647,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net pentru suport și legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pentru suport și legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -19657,7 +19657,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termeni de utilizare | Fortnite Cheats",
 					description: "Termeni de utilizare for Fortnite Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termeni de utilizare",
-					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Termeni de utilizare for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Fortnite pe PC Windows. Termeni de utilizare for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -19682,8 +19682,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net pentru suport și legal.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz pentru suport și legal.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -20523,7 +20523,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Integritetspolicy | Fortnite Cheats",
 					description: "Integritetspolicy for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Integritetspolicy",
-					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Integritetspolicy for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Integritetspolicy for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats privacy resources",
 					heroImage: "/images/fortnite-cheats-aimbot-combat.webp",
@@ -20535,7 +20535,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on fortnitecheats.xyz.",
 							],
 						},
 						{
@@ -20548,8 +20548,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@fortnitecheats.net för support och juridik.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz för support och juridik.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -20558,7 +20558,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Återbetalningspolicy | Fortnite Cheats",
 					description: "Återbetalningspolicy for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Återbetalningspolicy",
-					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Återbetalningspolicy for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Återbetalningspolicy for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats refund ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats refund resources",
 					heroImage: "/images/fortnite-cheats-cover.webp",
@@ -20583,8 +20583,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@fortnitecheats.net för support och juridik.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz för support och juridik.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
@@ -20593,7 +20593,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Användarvillkor | Fortnite Cheats",
 					description: "Användarvillkor for Fortnite Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Användarvillkor",
-					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Användarvillkor for fortnitecheats.net and Fortnite licenses.",
+					intro: "Fortnite Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Fortnite på Windows PC. Användarvillkor for fortnitecheats.xyz and Fortnite licenses.",
 					imageAlt: "fortnite-cheats terms ESP wallhack Aimbot legal page",
 					galleryTitle: "Fortnite Cheats terms resources",
 					heroImage: "/images/fortnite-cheats-package.webp",
@@ -20618,8 +20618,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@fortnitecheats.net för support och juridik.",
-								"Email: support@fortnitecheats.net",
+								"support@fortnitecheats.xyz för support och juridik.",
+								"Email: support@fortnitecheats.xyz",
 							],
 						},
 					],
