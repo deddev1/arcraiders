@@ -1,0 +1,305 @@
+#!/usr/bin/env node
+/**
+ * Validates built sitemaps match all routable pages.
+ * Run after `npm run build`: node scripts/validate-sitemaps.mjs
+ */
+import { access, readFile, readdir } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
+
+/** dist/ for static builds; dist/client/ when a Cloudflare adapter rearranges assets. */
+async function resolveDistRoot() {
+	const candidates = [
+		path.join(ROOT, 'dist'),
+		path.join(ROOT, 'dist', 'client'),
+	];
+	for (const dir of candidates) {
+		try {
+			await access(path.join(dir, 'sitemap.xml'));
+			return dir;
+		} catch {
+			// try next candidate
+		}
+	}
+	throw new Error(
+		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
+	);
+}
+const SITE = 'https://fortnitecheats.net';
+
+const ENGLISH_PAGES = 25;
+const I18N_LOCALES = 21;
+const PAGES_PER_LOCALE = 25;
+const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
+const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
+const HREFLANG_PER_URL = 23;
+const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
+
+const ENGLISH_PATHS = [
+	'/',
+	'/fortnite-esp/',
+	'/fortnite-aimbot/',
+	'/features/',
+	'/pricing/',
+	'/setup/',
+	'/updates/',
+	'/faq/',
+	'/support/',
+	'/undetected-fortnite-cheats/',
+	'/fortnite-wallhack/',
+	'/fortnite-radar-hack/',
+	'/eac-bypass-fortnite/',
+	'/fortnite-cheats-2026/',
+	'/fortnite-hacks/',
+	'/fortnite-cheat-download/',
+	'/fortnite-mod-menu/',
+	'/fortnite-soft-aim/',
+	'/best-fortnite-cheats/',
+	'/fortnite-aimbot-hack/',
+	'/fortnite-esp-hack/',
+	'/fortnite-unlock-all/',
+	'/privacy-policy/',
+	'/refund-policy/',
+	'/terms/',
+];
+
+const LOCALE_CODES = [
+	'en', 'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr',
+	'ar', 'ja', 'ko', 'zh', 'hi', 'id', 'th', 'vi', 'uk', 'cs', 'ro', 'sv',
+];
+
+const I18N_LOCALE_CODES = LOCALE_CODES.filter((code) => code !== 'en');
+
+function extractLocs(xml) {
+	return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+}
+
+function extractHreflangCount(xml, url) {
+	const block = xml.split('<loc>').find((part) => part.startsWith(url.replace(/&/g, '&amp;')));
+	if (!block) return 0;
+	return (block.match(/hreflang="/g) ?? []).length;
+}
+
+async function collectHtmlPaths(dir, base = '') {
+	const entries = await readdir(dir, { withFileTypes: true });
+	const paths = [];
+	for (const entry of entries) {
+		const rel = `${base}/${entry.name}`.replace(/\\/g, '/');
+		if (entry.isDirectory()) {
+			paths.push(...(await collectHtmlPaths(path.join(dir, entry.name), rel)));
+		} else if (entry.name === 'index.html') {
+			const urlPath = rel.replace(/\/index\.html$/, '/') || '/';
+			paths.push(urlPath === '' ? '/' : urlPath);
+		}
+	}
+	return paths;
+}
+
+function fail(msg) {
+	console.error(`✗ ${msg}`);
+	process.exitCode = 1;
+}
+
+function ok(msg) {
+	console.log(`✓ ${msg}`);
+}
+
+async function main() {
+	console.log('Validating sitemaps…\n');
+	let errors = 0;
+	const bump = () => {
+		errors += 1;
+	};
+
+	const DIST = await resolveDistRoot();
+	if (DIST !== path.join(ROOT, 'dist')) {
+		console.log(`Using build output at ${path.relative(ROOT, DIST)}/\n`);
+	}
+
+	const sitemapEn = await readFile(path.join(DIST, 'sitemap.xml'), 'utf8');
+	const sitemapI18n = await readFile(path.join(DIST, 'sitemap-i18n.xml'), 'utf8');
+	const sitemapIndex = await readFile(path.join(DIST, 'sitemap-index.xml'), 'utf8');
+	const sitemapImages = await readFile(path.join(DIST, 'sitemap-images.xml'), 'utf8');
+	const robots = await readFile(path.join(ROOT, 'public', 'robots.txt'), 'utf8');
+
+	const enLocs = extractLocs(sitemapEn);
+	const i18nLocs = extractLocs(sitemapI18n);
+	const imageLocs = extractLocs(sitemapImages);
+	const indexLocs = extractLocs(sitemapIndex);
+
+	// Per-locale sitemap files
+	const localeSitemapLocs = {};
+	let localeUrlTotal = 0;
+	for (const locale of I18N_LOCALE_CODES) {
+		const file = path.join(DIST, `sitemap-${locale}.xml`);
+		const xml = await readFile(file, 'utf8');
+		const locs = extractLocs(xml);
+		localeSitemapLocs[locale] = locs;
+		localeUrlTotal += locs.length;
+
+		if (locs.length !== PAGES_PER_LOCALE) {
+			fail(`sitemap-${locale}.xml: expected ${PAGES_PER_LOCALE} URLs, got ${locs.length}`);
+			bump();
+		}
+	}
+	if (errors === 0) {
+		ok(`All 21 locale sitemaps have ${PAGES_PER_LOCALE} URLs each (${localeUrlTotal} total)`);
+	}
+
+	// Count checks
+	if (enLocs.length !== ENGLISH_PAGES) {
+		fail(`sitemap.xml: expected ${ENGLISH_PAGES} URLs, got ${enLocs.length}`);
+		bump();
+	} else ok(`sitemap.xml has ${ENGLISH_PAGES} English URLs`);
+
+	if (i18nLocs.length !== I18N_URLS) {
+		fail(`sitemap-i18n.xml: expected ${I18N_URLS} URLs, got ${i18nLocs.length}`);
+		bump();
+	} else ok(`sitemap-i18n.xml has ${I18N_URLS} localized URLs (backward-compat aggregate)`);
+
+	if (localeUrlTotal !== I18N_URLS) {
+		fail(`Per-locale sitemaps total: expected ${I18N_URLS}, got ${localeUrlTotal}`);
+		bump();
+	}
+
+	if (imageLocs.length !== 14) {
+		fail(`sitemap-images.xml: expected 14 image host URLs, got ${imageLocs.length}`);
+		bump();
+	} else ok('sitemap-images.xml has 14 image entries');
+
+	// English path coverage
+	for (const p of ENGLISH_PATHS) {
+		const full = `${SITE}${p === '/' ? '/' : p}`;
+		if (!enLocs.includes(full)) {
+			fail(`Missing English URL in sitemap.xml: ${full}`);
+			bump();
+		}
+	}
+	if (errors === 0) ok(`All ${ENGLISH_PAGES} English canonical paths present in sitemap.xml`);
+
+	// No overlap between EN and i18n sitemaps
+	const overlap = enLocs.filter((u) => i18nLocs.includes(u));
+	if (overlap.length > 0) {
+		fail(`Duplicate URLs in both sitemaps: ${overlap.join(', ')}`);
+		bump();
+	} else ok('No duplicate URLs between sitemap.xml and sitemap-i18n.xml');
+
+	// Per-locale sitemaps match combined i18n sitemap
+	const perLocaleSet = new Set(Object.values(localeSitemapLocs).flat());
+	const i18nSet = new Set(i18nLocs);
+	const missingInAggregate = [...perLocaleSet].filter((u) => !i18nSet.has(u));
+	const extraInAggregate = [...i18nSet].filter((u) => !perLocaleSet.has(u));
+	if (missingInAggregate.length > 0 || extraInAggregate.length > 0) {
+		fail('Per-locale sitemaps and sitemap-i18n.xml URL sets differ');
+		bump();
+	} else ok('Per-locale sitemaps match sitemap-i18n.xml URL set');
+
+	// HTTPS + trailing slash
+	for (const loc of [...enLocs, ...i18nLocs]) {
+		if (!loc.startsWith('https://')) {
+			fail(`Non-HTTPS URL: ${loc}`);
+			bump();
+		}
+		if (!loc.endsWith('/')) {
+			fail(`URL missing trailing slash: ${loc}`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('All sitemap URLs use HTTPS with trailing slashes');
+
+	// hreflang on homepage
+	const homeHreflang = extractHreflangCount(sitemapEn, `${SITE}/`);
+	if (homeHreflang !== HREFLANG_PER_URL) {
+		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL}, got ${homeHreflang}`);
+		bump();
+	} else ok(`Homepage has ${HREFLANG_PER_URL} hreflang alternates (22 locales + x-default)`);
+
+	// sitemap index — EN + 21 locale sitemaps + images
+	if (indexLocs.length !== SITEMAP_INDEX_ENTRIES) {
+		fail(`sitemap-index.xml: expected ${SITEMAP_INDEX_ENTRIES} sub-sitemaps, got ${indexLocs.length}`);
+		bump();
+	} else ok(`sitemap-index.xml lists ${SITEMAP_INDEX_ENTRIES} sub-sitemaps`);
+
+	if (!indexLocs.includes(`${SITE}/sitemap.xml`)) {
+		fail('sitemap-index.xml missing sitemap.xml');
+		bump();
+	}
+	if (!indexLocs.includes(`${SITE}/sitemap-images.xml`)) {
+		fail('sitemap-index.xml missing sitemap-images.xml');
+		bump();
+	}
+	for (const locale of I18N_LOCALE_CODES) {
+		const loc = `${SITE}/sitemap-${locale}.xml`;
+		if (!indexLocs.includes(loc)) {
+			fail(`sitemap-index.xml missing sitemap-${locale}.xml`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('sitemap-index.xml lists English, all 21 locale, and image sitemaps');
+
+	// robots.txt — index is primary; legacy aggregate kept for crawlers already using it
+	for (const sub of ['sitemap-index.xml', 'sitemap.xml', 'sitemap-i18n.xml', 'sitemap-images.xml']) {
+		if (!robots.includes(`${SITE}/${sub}`)) {
+			fail(`robots.txt missing Sitemap: ${sub}`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('robots.txt lists primary sitemap URLs');
+
+	// Built HTML vs sitemap total
+	const htmlPaths = await collectHtmlPaths(DIST);
+	const sitemapPaths = new Set([
+		...enLocs.map((u) => u.replace(SITE, '') || '/'),
+		...i18nLocs.map((u) => u.replace(SITE, '')),
+	]);
+
+	const htmlSet = new Set(htmlPaths);
+	const missingFromSitemap = [...htmlSet].filter((p) => !sitemapPaths.has(p));
+	const extraInSitemap = [...sitemapPaths].filter((p) => !htmlSet.has(p));
+
+	if (htmlSet.size !== TOTAL_PAGES) {
+		fail(`Built HTML pages: expected ${TOTAL_PAGES}, got ${htmlSet.size}`);
+		bump();
+	} else ok(`${TOTAL_PAGES} indexable HTML pages built`);
+
+	if (missingFromSitemap.length > 0) {
+		fail(`HTML pages missing from sitemaps: ${missingFromSitemap.slice(0, 5).join(', ')}${missingFromSitemap.length > 5 ? '…' : ''}`);
+		bump();
+	} else ok('Every built HTML page is listed in a sitemap');
+
+	if (extraInSitemap.length > 0) {
+		fail(`Sitemap URLs without HTML: ${extraInSitemap.slice(0, 5).join(', ')}`);
+		bump();
+	} else ok('Every sitemap URL has a matching HTML page');
+
+	// Locale homepages in per-locale sitemaps
+	for (const locale of I18N_LOCALE_CODES) {
+		const home = `${SITE}/${locale}/`;
+		if (!localeSitemapLocs[locale].includes(home)) {
+			fail(`Missing locale homepage in sitemap-${locale}.xml: ${home}`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('All 21 non-English locale homepages in per-locale sitemaps');
+
+	// Locale URL count summary
+	console.log('\nLocale URL counts (per-locale sitemaps):');
+	for (const locale of I18N_LOCALE_CODES) {
+		console.log(`  ${locale}: ${localeSitemapLocs[locale].length}`);
+	}
+
+	console.log('');
+	if (errors > 0) {
+		console.error(`Validation failed with ${errors} error(s).`);
+		process.exit(1);
+	}
+	console.log('All sitemap checks passed.');
+}
+
+main().catch((err) => {
+	console.error(err);
+	process.exit(1);
+});

@@ -1,0 +1,158 @@
+---
+import { getUi, getPageContent } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { siteConfig } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+
+const exploreLinks = [
+	{ label: ui.nav.home, href: getLocalizedPath('home', locale) },
+	{ label: getPageContent(locale, 'undetected').h1.split('—')[0].trim(), href: getLocalizedPath('undetected', locale) },
+	{ label: getPageContent(locale, 'wallhack').h1.split('—')[0].trim(), href: getLocalizedPath('wallhack', locale) },
+	{ label: getPageContent(locale, 'radar').h1.split('—')[0].trim(), href: getLocalizedPath('radar', locale) },
+	{ label: getPageContent(locale, 'eac-bypass').h1.split('—')[0].trim(), href: getLocalizedPath('eac-bypass', locale) },
+	{ label: getPageContent(locale, 'cheats-2026').h1.split('—')[0].trim(), href: getLocalizedPath('cheats-2026', locale) },
+	{ label: ui.nav.aimbot, href: getLocalizedPath('fortnite-aimbot', locale) },
+	{ label: ui.nav.esp, href: getLocalizedPath('fortnite-esp', locale) },
+	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
+	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
+	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
+	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
+];
+
+const helpLinks = [
+	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
+	{ label: getPageContent(locale, 'support').h1.split('—')[0].trim(), href: getLocalizedPath('support', locale) },
+	{ label: getPageContent(locale, 'refund').h1.split('—')[0].trim(), href: getLocalizedPath('refund', locale) },
+	{ label: getPageContent(locale, 'privacy').h1.split('—')[0].trim(), href: getLocalizedPath('privacy', locale) },
+	{ label: getPageContent(locale, 'terms').h1.split('—')[0].trim(), href: getLocalizedPath('terms', locale) },
+];
+---
+
+<footer class="footer" id="support-footer">
+	<div class="shell footer__inner">
+		<div class="footer__brand">
+			<p class="footer__name">{ui.product.title}</p>
+			<p class="footer__text">{ui.footer.tagline}</p>
+			<p class="footer__official">{ui.common.officialLanguageNote}</p>
+		</div>
+		<nav class="footer__cols" aria-label="Footer">
+			<div>
+				<p class="footer__label">{ui.footer.explore}</p>
+				<ul>
+					{exploreLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+				</ul>
+			</div>
+			<div>
+				<p class="footer__label">{ui.footer.help}</p>
+				<ul>
+					{helpLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+					<li><a href={`mailto:${siteConfig.supportEmail}`}>Email support</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		border-top: 1px solid rgba(168, 85, 247, 0.12);
+		padding-block: 2rem;
+		padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+	}
+
+	.footer__inner {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 2rem;
+	}
+
+	.footer__name {
+		margin: 0;
+		font-family: var(--font-display);
+		font-weight: 800;
+		letter-spacing: 0.04em;
+	}
+
+	.footer__text {
+		margin: 0.55rem 0 0;
+		color: var(--color-faint);
+		font-size: 0.9rem;
+		line-height: 1.55;
+		max-width: 28rem;
+	}
+
+	.footer__official {
+		margin: 0.65rem 0 0;
+		color: var(--color-orchid);
+		font-size: 0.78rem;
+		line-height: 1.45;
+		max-width: 28rem;
+	}
+
+	.footer__cols {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.25rem;
+	}
+
+	.footer__label {
+		margin: 0 0 0.65rem;
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.footer ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.45rem;
+	}
+
+	.footer a {
+		color: var(--color-muted);
+		font-size: 0.92rem;
+		font-weight: 600;
+	}
+
+	.footer a:hover {
+		color: var(--color-ink);
+	}
+
+	@media (max-width: 760px) {
+		.footer {
+			padding-block: 1.5rem;
+		}
+
+		.footer__inner {
+			grid-template-columns: 1fr;
+			gap: 1.35rem;
+		}
+
+		.footer__cols {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.footer__cols {
+			grid-template-columns: 1fr;
+		}
+
+		.footer__cols > div:first-child ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 0.75rem;
+		}
+	}
+</style>

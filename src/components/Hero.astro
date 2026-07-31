@@ -1,0 +1,380 @@
+---
+import { heroSizes, heroSrc, heroSrcSet } from '../lib/responsive-images';
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { siteConfig } from '../data/site';
+
+interface Props {
+	accent?: string;
+	accentShort?: string;
+	subtitle?: string;
+	subtitleShort?: string;
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+
+const {
+	accent = ui.hero.accent,
+	accentShort = ui.hero.accentShort,
+	subtitle = ui.hero.subtitle,
+	subtitleShort = ui.hero.subtitleShort,
+} = Astro.props;
+
+const buyUrl = siteConfig.checkoutUrl;
+const featuresUrl = getLocalizedPath('features', locale);
+---
+
+<section class="hero" aria-label="Hero">
+	<div class="hero__media">
+		<img
+			src={heroSrc}
+			srcset={heroSrcSet}
+			sizes={heroSizes}
+			alt={ui.images.hero}
+			class="hero__bg"
+			width="1400"
+			height="788"
+			fetchpriority="high"
+			decoding="async"
+		/>
+		<div class="hero__splash" aria-hidden="true"></div>
+		<div class="hero__veil" aria-hidden="true"></div>
+	</div>
+
+	<div class="hero__inner">
+		<div class="hero__copy">
+			<h1 class="hero__title">
+				<span class="hero__line">
+					<span class="hero__word">Fortnite</span>
+					<span class="hero__word">Cheats</span>
+				</span>
+				<span class="text-gradient hero__accent hero__accent--full">{accent}</span>
+				<span class="text-gradient hero__accent hero__accent--short">{accentShort}</span>
+			</h1>
+			<p class="hero__subtitle hero__subtitle--full">{subtitle}</p>
+			<p class="hero__subtitle hero__subtitle--short">{subtitleShort}</p>
+			<div class="hero__cta">
+				<a href={buyUrl} class="btn-buy" rel="noopener noreferrer" aria-label={ui.hero.buyNow}>
+					{ui.hero.buyNow}
+				</a>
+				<a href={featuresUrl} class="hero__btn hero__btn--ghost">
+					{ui.hero.seeFeatures}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		overflow: hidden;
+		isolation: isolate;
+		min-height: clamp(380px, 52vw, 520px);
+	}
+
+	.hero__media {
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+	}
+
+	.hero__bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 70% 40%;
+		transform: translateZ(0) scale(1.03);
+		backface-visibility: hidden;
+	}
+
+	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+		.hero__bg {
+			will-change: transform;
+			animation: kenburns 18s ease-in-out infinite alternate;
+		}
+	}
+
+	.hero__splash {
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(ellipse 55% 80% at 78% 45%, rgba(168, 85, 247, 0.55), transparent 70%),
+			radial-gradient(ellipse 40% 60% at 92% 70%, rgba(217, 70, 239, 0.35), transparent 65%),
+			radial-gradient(ellipse 35% 50% at 60% 20%, rgba(124, 58, 237, 0.4), transparent 70%);
+		pointer-events: none;
+		opacity: 0.9;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.hero__splash {
+			animation: pulse-glow 7s ease-in-out infinite;
+		}
+	}
+
+	.hero__veil {
+		position: absolute;
+		inset: 0;
+		background:
+			linear-gradient(90deg, #0a0612 0%, rgba(10, 6, 18, 0.92) 34%, rgba(10, 6, 18, 0.35) 62%, rgba(10, 6, 18, 0.55) 100%),
+			linear-gradient(180deg, rgba(10, 6, 18, 0.35) 0%, transparent 40%, rgba(10, 6, 18, 0.75) 100%);
+		pointer-events: none;
+	}
+
+	.hero__inner {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		width: min(100% - (var(--page-gutter) * 2), var(--page-max));
+		margin: 0 auto;
+		padding: 4.25rem 0 3.5rem;
+		min-height: inherit;
+	}
+
+	.hero__copy {
+		max-width: min(42rem, 100%);
+		min-width: 0;
+		animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+	}
+
+	.hero__eyebrow {
+		margin: 0 0 0.85rem;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.hero__title {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.85rem, 4.6vw, 3.75rem);
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.03em;
+		display: flex;
+		flex-direction: column;
+		gap: 0.18em;
+		text-shadow: 0 8px 32px rgba(10, 6, 18, 0.65);
+		text-wrap: balance;
+		overflow-wrap: break-word;
+		word-break: normal;
+		hyphens: none;
+	}
+
+	.hero__line {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 0.28em;
+		row-gap: 0.02em;
+		max-width: 100%;
+	}
+
+	.hero__word {
+		display: inline-block;
+	}
+
+	.hero__word--for {
+		font-weight: 700;
+		opacity: 0.9;
+	}
+
+	.hero__accent {
+		display: block;
+		max-width: 100%;
+		width: fit-content;
+		padding-bottom: 0.06em;
+	}
+
+	.hero__subtitle {
+		margin: 1.2rem 0 0;
+		max-width: 28rem;
+		font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+		line-height: 1.65;
+		color: #c8bdd8;
+		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+	}
+
+	.hero__cta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 1.6rem;
+		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+	}
+
+	.hero__btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.85rem 1.25rem;
+		border-radius: 0.8rem;
+		font-size: 0.95rem;
+		font-weight: 700;
+		text-align: center;
+		transition:
+			transform 0.2s ease,
+			filter 0.2s ease,
+			background 0.2s ease,
+			border-color 0.2s ease;
+	}
+
+	.hero__btn--ghost {
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		background: rgba(18, 16, 26, 0.55);
+		color: var(--color-ink);
+		backdrop-filter: blur(8px);
+	}
+
+	.hero__btn--ghost:hover {
+		border-color: rgba(192, 132, 252, 0.6);
+		background: rgba(48, 36, 72, 0.65);
+	}
+
+	@keyframes rise-in {
+		from {
+			opacity: 0;
+			transform: translateY(18px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes kenburns {
+		from {
+			transform: translateZ(0) scale(1.04) translate3d(0, 0, 0);
+		}
+		to {
+			transform: translateZ(0) scale(1.1) translate3d(-1.5%, 1%, 0);
+		}
+	}
+
+	@keyframes pulse-glow {
+		0%,
+		100% {
+			opacity: 0.82;
+		}
+		50% {
+			opacity: 0.95;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.hero__copy,
+		.hero__subtitle,
+		.hero__cta {
+			animation: none;
+		}
+	}
+
+	.hero__accent--short,
+	.hero__subtitle--short {
+		display: none;
+	}
+
+	@media (max-width: 760px) {
+		.hero {
+			min-height: min(68svh, 520px);
+		}
+
+		.hero__accent--full,
+		.hero__subtitle--full {
+			display: none;
+		}
+
+		.hero__accent--short,
+		.hero__subtitle--short {
+			display: block;
+		}
+
+		.hero__bg {
+			object-position: center 32%;
+			animation: none;
+			transform: scale(1.05);
+		}
+
+		.hero__splash {
+			animation: none;
+		}
+
+		.hero__veil {
+			background:
+				linear-gradient(180deg, rgba(10, 6, 18, 0.55) 0%, rgba(10, 6, 18, 0.35) 42%, rgba(10, 6, 18, 0.96) 100%),
+				linear-gradient(90deg, rgba(10, 6, 18, 0.72), rgba(10, 6, 18, 0.35) 80%);
+		}
+
+		.hero__inner {
+			align-items: flex-end;
+			padding-top: calc(4.75rem + env(safe-area-inset-top, 0px));
+			padding-bottom: 1.35rem;
+			min-height: inherit;
+		}
+
+		.hero__copy {
+			max-width: none;
+			width: 100%;
+		}
+
+		.hero__title {
+			font-size: clamp(1.65rem, 8vw, 2.15rem);
+			line-height: 1.18;
+			letter-spacing: -0.025em;
+			gap: 0.22rem;
+		}
+
+		.hero__line {
+			flex-direction: row;
+			flex-wrap: wrap;
+			column-gap: 0.28em;
+			width: 100%;
+		}
+
+		.hero__accent--short {
+			width: 100%;
+			font-size: 0.92em;
+			line-height: 1.25;
+			padding-bottom: 0.08em;
+		}
+
+		.hero__subtitle--short {
+			margin-top: 0.75rem;
+			max-width: none;
+			font-size: 0.92rem;
+			line-height: 1.55;
+		}
+
+		.hero__cta {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0.6rem;
+			margin-top: 1.1rem;
+			width: 100%;
+		}
+
+		.hero__btn {
+			width: 100%;
+			min-height: var(--touch-min);
+			padding: 0.8rem 1rem;
+			font-size: 0.92rem;
+		}
+	}
+
+	@media (max-width: 380px) {
+		.hero__title {
+			font-size: 1.5rem;
+		}
+
+		.hero__subtitle--short {
+			font-size: 0.88rem;
+		}
+	}
+</style>

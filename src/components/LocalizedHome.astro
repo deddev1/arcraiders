@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import BreadcrumbBar from '../components/BreadcrumbBar.astro';
+import ProductCard from '../components/ProductCard.astro';
+import Gallery from '../components/Gallery.astro';
+import HomeSeo from '../components/HomeSeo.astro';
+import TrustBar from '../components/TrustBar.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { getLocaleContent, getPageContent } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import type { LocaleCode } from '../data/i18n/locales';
+import { homeFaqs, productInfo, siteConfig } from '../data/site';
+import { fortniteImages } from '../data/fortnite';
+import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
+
+interface Props {
+	locale: LocaleCode;
+}
+
+const { locale } = Astro.props;
+const { ui } = getLocaleContent(locale);
+const home = getPageContent(locale, 'home');
+
+const title = home.title;
+const description = home.description;
+const canonicalPath = getLocalizedPath('home', locale);
+const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
+const heroImage = new URL(fortniteImages.hero, siteConfig.url).href;
+const priceValidUntil = '2027-12-31';
+
+const extraGraph: Record<string, unknown>[] = [
+	{
+		'@type': 'SoftwareApplication',
+		'@id': `${canonicalURL}#software`,
+		name: productInfo.name,
+		applicationCategory: 'GameApplication',
+		operatingSystem: 'Windows',
+		description: productInfo.summary,
+		url: canonicalURL,
+		image: heroImage,
+		brand: { '@type': 'Brand', name: productInfo.brand },
+		offers: {
+			'@type': 'AggregateOffer',
+			lowPrice: Math.min(...productInfo.plans.map((p) => p.price)).toFixed(2),
+			highPrice: Math.max(...productInfo.plans.map((p) => p.price)).toFixed(2),
+			priceCurrency: productInfo.currency,
+			offerCount: productInfo.plans.length,
+			offers: productInfo.plans.map((plan) => ({
+				'@type': 'Offer',
+				name: `${productInfo.name} ${plan.label}`,
+				price: plan.price.toFixed(2),
+				priceCurrency: productInfo.currency,
+				priceValidUntil,
+				availability: 'https://schema.org/InStock',
+				url: siteConfig.checkoutUrl,
+				seller: { '@id': `${siteConfig.url}/#organization` },
+			})),
+		},
+	},
+	{
+		'@type': 'FAQPage',
+		'@id': `${canonicalURL}#faq`,
+		mainEntity: homeFaqs.map((item) => ({
+			'@type': 'Question',
+			name: item.question,
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: item.answer,
+			},
+		})),
+	},
+];
+---
+
+<Layout
+	title={title}
+	description={description}
+	canonicalPath={canonicalPath}
+	ogImage={siteConfig.defaultOgImage}
+	ogImageAlt={siteConfig.logoAlt}
+	locale={locale}
+	pageId="home"
+	breadcrumbs={[{ label: ui.nav.home }]}
+	extraGraph={locale === 'en' ? extraGraph : extraGraph.filter((n) => n['@type'] !== 'FAQPage')}
+	lcpImage={heroPreloadSrc}
+	lcpImageSrcSet={heroSrcSet}
+	lcpImageSizes={heroSizes}
+>
+	<Navbar locale={locale} pageId="home" />
+	<main class="site">
+		<Hero
+			locale={locale}
+			accent={ui.hero.accent}
+			accentShort={ui.hero.accentShort}
+			subtitle={ui.hero.subtitle}
+			subtitleShort={ui.hero.subtitleShort}
+		/>
+		<TrustBar locale={locale} />
+		<BreadcrumbBar
+			locale={locale}
+			items={[
+				{ label: ui.nav.home, href: getLocalizedPath('home', locale) },
+				{ label: ui.product.title },
+			]}
+		/>
+		<section class="site__section site__section--store" id="store" aria-label={ui.product.title}>
+			<div class="shell">
+				<ProductCard locale={locale} />
+			</div>
+		</section>
+		<section class="site__section site__section--seo">
+			{
+				locale === 'en' ? (
+					<HomeSeo />
+				) : (
+					<div class="shell home-seo-intro">
+						<h2>{home.h1}</h2>
+						<p>{home.intro}</p>
+						{
+							home.sections.map((section) => (
+								<div class="home-seo-block">
+									<h3>{section.h2}</h3>
+									{section.paragraphs.map((p) => (
+										<p>{p}</p>
+									))}
+								</div>
+							))
+						}
+					</div>
+				)
+			}
+		</section>
+		<section class="site__section site__section--gallery">
+			<div class="shell">
+				<Gallery locale={locale} />
+			</div>
+		</section>
+		<SiteFooter locale={locale} />
+	</main>
+</Layout>
+
+<style>
+	.site {
+		overflow-x: clip;
+	}
+
+	.site__section--store,
+	.site__section--seo,
+	.site__section--gallery {
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 720px;
+	}
+
+	.site__section {
+		padding-block: var(--section-space);
+	}
+
+	.site__section--seo {
+		padding-top: 0.15rem;
+	}
+
+	.site__section--gallery {
+		padding-top: 0.35rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.home-seo-intro {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.home-seo-intro h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.35rem, 3vw, 1.75rem);
+		font-weight: 800;
+	}
+
+	.home-seo-intro p {
+		margin: 0;
+		color: var(--color-muted);
+		line-height: 1.65;
+	}
+
+	.home-seo-block {
+		padding: 1rem 1.1rem;
+		border-radius: 0.9rem;
+		border: 1px solid rgba(168, 85, 247, 0.14);
+		background: rgba(26, 22, 38, 0.72);
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.home-seo-block h3 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 750;
+	}
+
+	@media (max-width: 768px) {
+		.site__section--gallery {
+			padding-bottom: 1rem;
+		}
+	}
+</style>

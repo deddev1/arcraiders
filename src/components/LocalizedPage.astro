@@ -1,0 +1,100 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { getPageContent, type PageId } from '../data/i18n';
+import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
+import type { LocaleCode } from '../data/i18n/locales';
+import { seoFaqs, siteConfig } from '../data/site';
+import { fortniteImages } from '../data/fortnite';
+
+interface Props {
+	locale: LocaleCode;
+	pageId: PageId;
+}
+
+const { locale, pageId } = Astro.props;
+const page = getPageContent(locale, pageId);
+
+function localizeParagraphHtml(html: string): string {
+	return html
+		.replace(/\{checkout\}/g, siteConfig.checkoutUrl)
+		.replace(/href="(\/[^"]+)"/g, (_, path: string) => `href="${localizeInternalHref(path, locale)}"`);
+}
+
+const galleryPool = [
+	fortniteImages.product[0],
+	fortniteImages.product[1],
+	fortniteImages.product[2],
+];
+
+const faqSchema =
+	pageId === 'faq' && locale === 'en'
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'FAQPage',
+				'@id': `${new URL(getLocalizedPath('faq', locale), siteConfig.url).href}#faq`,
+				mainEntity: seoFaqs.map((item) => ({
+					'@type': 'Question',
+					name: item.question,
+					acceptedAnswer: { '@type': 'Answer', text: item.answer },
+				})),
+			}
+		: null;
+
+const ctaSecondaryHref = page.ctaSecondaryHref
+	? localizeInternalHref(page.ctaSecondaryHref, locale)
+	: page.ctaSecondary
+		? siteConfig.checkoutUrl
+		: getLocalizedPath('features', locale);
+---
+
+<PageLayout
+	title={page.title}
+	description={page.description}
+	canonicalPath={getLocalizedPath(pageId, locale)}
+	heading={page.h1}
+	intro={page.intro}
+	heroImage={page.heroImage}
+	heroAlt={page.imageAlt}
+	gallery={galleryPool.map((img) => ({
+		src: typeof img === 'string' ? img : img.src,
+		alt: typeof img === 'string' ? page.imageAlt : img.alt,
+	}))}
+	galleryTitle={page.galleryTitle}
+	locale={locale}
+	pageId={pageId}
+	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
+	ctaSecondary={
+		page.ctaSecondary
+			? { href: ctaSecondaryHref, label: page.ctaSecondary }
+			: undefined
+	}
+>
+	{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+	{
+		page.sections.map((section) => (
+			<section class="card-panel">
+				<h2>{section.h2}</h2>
+				{section.paragraphs.map((p) => (
+					<p set:html={localizeParagraphHtml(p)} />
+				))}
+				{section.list && (
+					<ul>
+						{section.list.map((item) => (
+							<li set:html={item} />
+						))}
+					</ul>
+				)}
+			</section>
+		))
+	}
+</PageLayout>
+
+<style is:global>
+	html[dir='rtl'] .article :global(li) {
+		padding: 0.55rem 2rem 0.55rem 0.75rem;
+	}
+	html[dir='rtl'] .article :global(li::before) {
+		left: auto;
+		right: 0.8rem;
+	}
+</style>

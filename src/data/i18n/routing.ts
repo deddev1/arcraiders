@@ -1,0 +1,775 @@
+import { siteConfig } from '../site';
+import {
+	defaultLocale,
+	localeCodes,
+	type LocaleCode,
+	locales,
+} from './locales';
+
+/** Canonical page identifiers shared across all locales. */
+export type PageId =
+	| 'home'
+	| 'fortnite-esp'
+	| 'fortnite-aimbot'
+	| 'features'
+	| 'pricing'
+	| 'setup'
+	| 'updates'
+	| 'faq'
+	| 'support'
+	| 'undetected'
+	| 'wallhack'
+	| 'radar'
+	| 'eac-bypass'
+	| 'cheats-2026'
+	| 'hacks'
+	| 'cheat-download'
+	| 'mod-menu'
+	| 'soft-aim'
+	| 'best-cheats'
+	| 'aimbot-hack'
+	| 'esp-hack'
+	| 'unlock-all'
+	| 'privacy'
+	| 'refund'
+	| 'terms';
+
+/** English (official) paths — served at site root without /en/ prefix. */
+export const englishPaths: Record<PageId, string> = {
+	home: '/',
+	'fortnite-esp': '/fortnite-esp/',
+	'fortnite-aimbot': '/fortnite-aimbot/',
+	features: '/features/',
+	pricing: '/pricing/',
+	setup: '/setup/',
+	updates: '/updates/',
+	faq: '/faq/',
+	support: '/support/',
+	undetected: '/undetected-fortnite-cheats/',
+	wallhack: '/fortnite-wallhack/',
+	radar: '/fortnite-radar-hack/',
+	'eac-bypass': '/eac-bypass-fortnite/',
+	'cheats-2026': '/fortnite-cheats-2026/',
+	hacks: '/fortnite-hacks/',
+	'cheat-download': '/fortnite-cheat-download/',
+	'mod-menu': '/fortnite-mod-menu/',
+	'soft-aim': '/fortnite-soft-aim/',
+	'best-cheats': '/best-fortnite-cheats/',
+	'aimbot-hack': '/fortnite-aimbot-hack/',
+	'esp-hack': '/fortnite-esp-hack/',
+	'unlock-all': '/fortnite-unlock-all/',
+	privacy: '/privacy-policy/',
+	refund: '/refund-policy/',
+	terms: '/terms/',
+};
+
+/**
+ * Localized URL slugs (path after /{lang}/).
+ * English uses englishPaths at root; other locales use these slugs under /{lang}/.
+ */
+export const localizedSlugs: Record<PageId, Record<LocaleCode, string>> = {
+	home: {
+		en: '',
+		es: '',
+		fr: '',
+		de: '',
+		pt: '',
+		it: '',
+		nl: '',
+		pl: '',
+		ru: '',
+		tr: '',
+		ar: '',
+		ja: '',
+		ko: '',
+		zh: '',
+		hi: '',
+		id: '',
+		th: '',
+		vi: '',
+		uk: '',
+		cs: '',
+		ro: '',
+		sv: '',
+	},
+	'fortnite-esp': {
+		en: 'fortnite-esp',
+		es: 'trucos-fortnite-esp',
+		fr: 'triche-fortnite-esp',
+		de: 'fortnite-esp-wallhack',
+		pt: 'cheats-fortnite-esp',
+		it: 'trucchi-fortnite-esp',
+		nl: 'fortnite-esp-wallhack',
+		pl: 'cheaty-fortnite-esp',
+		ru: 'fortnite-esp-chity',
+		tr: 'fortnite-esp-hile',
+		ar: 'fortnite-esp-wallhack',
+		ja: 'fortnite-esp-wallhack',
+		ko: 'fortnite-esp-wallhack',
+		zh: 'fortnite-esp-wallhack',
+		hi: 'fortnite-esp-wallhack',
+		id: 'fortnite-esp-wallhack',
+		th: 'fortnite-esp-wallhack',
+		vi: 'fortnite-esp-wallhack',
+		uk: 'fortnite-esp-chity',
+		cs: 'fortnite-esp-wallhack',
+		ro: 'fortnite-esp-wallhack',
+		sv: 'fortnite-esp-wallhack',
+	},
+	'fortnite-aimbot': {
+		en: 'fortnite-aimbot',
+		es: 'trucos-fortnite-aimbot',
+		fr: 'triche-fortnite-aimbot',
+		de: 'fortnite-aimbot',
+		pt: 'cheats-fortnite-aimbot',
+		it: 'trucchi-fortnite-aimbot',
+		nl: 'fortnite-aimbot',
+		pl: 'cheaty-fortnite-aimbot',
+		ru: 'fortnite-aimbot-chity',
+		tr: 'fortnite-aimbot-hile',
+		ar: 'fortnite-aimbot',
+		ja: 'fortnite-aimbot',
+		ko: 'fortnite-aimbot',
+		zh: 'fortnite-aimbot',
+		hi: 'fortnite-aimbot',
+		id: 'fortnite-aimbot',
+		th: 'fortnite-aimbot',
+		vi: 'fortnite-aimbot',
+		uk: 'fortnite-aimbot-chity',
+		cs: 'fortnite-aimbot',
+		ro: 'fortnite-aimbot',
+		sv: 'fortnite-aimbot',
+	},
+	features: {
+		en: 'features',
+		es: 'caracteristicas-trucos-fortnite',
+		fr: 'fonctionnalites-triche-fortnite',
+		de: 'fortnite-cheats-funktionen',
+		pt: 'recursos-cheats-fortnite',
+		it: 'funzioni-trucchi-fortnite',
+		nl: 'fortnite-cheats-functies',
+		pl: 'funkcje-cheatow-fortnite',
+		ru: 'funkcii-chitov-fortnite',
+		tr: 'fortnite-hile-ozellikleri',
+		ar: 'fortnite-cheats-features',
+		ja: 'fortnite-cheats-features',
+		ko: 'fortnite-cheats-features',
+		zh: 'fortnite-cheats-features',
+		hi: 'fortnite-cheats-features',
+		id: 'fortnite-cheats-features',
+		th: 'fortnite-cheats-features',
+		vi: 'fortnite-cheats-features',
+		uk: 'funkcii-chitiv-fortnite',
+		cs: 'fortnite-cheats-funkce',
+		ro: 'functii-cheats-fortnite',
+		sv: 'fortnite-cheats-funktioner',
+	},
+	pricing: {
+		en: 'pricing',
+		es: 'precios-trucos-fortnite',
+		fr: 'prix-triche-fortnite',
+		de: 'fortnite-cheats-preise',
+		pt: 'precos-cheats-fortnite',
+		it: 'prezzi-trucchi-fortnite',
+		nl: 'fortnite-cheats-prijzen',
+		pl: 'ceny-cheatow-fortnite',
+		ru: 'ceny-chitov-fortnite',
+		tr: 'fortnite-hile-fiyatlari',
+		ar: 'fortnite-cheats-pricing',
+		ja: 'fortnite-cheats-pricing',
+		ko: 'fortnite-cheats-pricing',
+		zh: 'fortnite-cheats-pricing',
+		hi: 'fortnite-cheats-pricing',
+		id: 'fortnite-cheats-pricing',
+		th: 'fortnite-cheats-pricing',
+		vi: 'fortnite-cheats-pricing',
+		uk: 'ciny-chitiv-fortnite',
+		cs: 'fortnite-cheats-ceny',
+		ro: 'preturi-cheats-fortnite',
+		sv: 'fortnite-cheats-priser',
+	},
+	setup: {
+		en: 'setup',
+		es: 'instalacion-trucos-fortnite',
+		fr: 'installation-triche-fortnite',
+		de: 'fortnite-cheats-installation',
+		pt: 'instalacao-cheats-fortnite',
+		it: 'installazione-trucchi-fortnite',
+		nl: 'fortnite-cheats-installatie',
+		pl: 'instalacja-cheatow-fortnite',
+		ru: 'ustanovka-chitov-fortnite',
+		tr: 'fortnite-hile-kurulum',
+		ar: 'fortnite-cheats-setup',
+		ja: 'fortnite-cheats-setup',
+		ko: 'fortnite-cheats-setup',
+		zh: 'fortnite-cheats-setup',
+		hi: 'fortnite-cheats-setup',
+		id: 'fortnite-cheats-setup',
+		th: 'fortnite-cheats-setup',
+		vi: 'fortnite-cheats-setup',
+		uk: 'vstanovka-chitiv-fortnite',
+		cs: 'fortnite-cheats-instalace',
+		ro: 'instalare-cheats-fortnite',
+		sv: 'fortnite-cheats-installation',
+	},
+	updates: {
+		en: 'updates',
+		es: 'actualizaciones-trucos-fortnite',
+		fr: 'mises-a-jour-triche-fortnite',
+		de: 'fortnite-cheats-updates',
+		pt: 'atualizacoes-cheats-fortnite',
+		it: 'aggiornamenti-trucchi-fortnite',
+		nl: 'fortnite-cheats-updates',
+		pl: 'aktualizacje-cheatow-fortnite',
+		ru: 'obnovleniya-chitov-fortnite',
+		tr: 'fortnite-hile-guncellemeleri',
+		ar: 'fortnite-cheats-updates',
+		ja: 'fortnite-cheats-updates',
+		ko: 'fortnite-cheats-updates',
+		zh: 'fortnite-cheats-updates',
+		hi: 'fortnite-cheats-updates',
+		id: 'fortnite-cheats-updates',
+		th: 'fortnite-cheats-updates',
+		vi: 'fortnite-cheats-updates',
+		uk: 'onovlennya-chitiv-fortnite',
+		cs: 'fortnite-cheats-aktualizace',
+		ro: 'actualizari-cheats-fortnite',
+		sv: 'fortnite-cheats-uppdateringar',
+	},
+	faq: {
+		en: 'faq',
+		es: 'preguntas-trucos-fortnite',
+		fr: 'faq-triche-fortnite',
+		de: 'fortnite-cheats-faq',
+		pt: 'faq-cheats-fortnite',
+		it: 'faq-trucchi-fortnite',
+		nl: 'fortnite-cheats-faq',
+		pl: 'faq-cheatow-fortnite',
+		ru: 'faq-chitov-fortnite',
+		tr: 'fortnite-hile-sss',
+		ar: 'fortnite-cheats-faq',
+		ja: 'fortnite-cheats-faq',
+		ko: 'fortnite-cheats-faq',
+		zh: 'fortnite-cheats-faq',
+		hi: 'fortnite-cheats-faq',
+		id: 'fortnite-cheats-faq',
+		th: 'fortnite-cheats-faq',
+		vi: 'fortnite-cheats-faq',
+		uk: 'faq-chitiv-fortnite',
+		cs: 'fortnite-cheats-faq',
+		ro: 'faq-cheats-fortnite',
+		sv: 'fortnite-cheats-faq',
+	},
+	support: {
+		en: 'support',
+		es: 'soporte-trucos-fortnite',
+		fr: 'support-triche-fortnite',
+		de: 'fortnite-cheats-support',
+		pt: 'suporte-cheats-fortnite',
+		it: 'supporto-trucchi-fortnite',
+		nl: 'fortnite-cheats-support',
+		pl: 'wsparcie-cheatow-fortnite',
+		ru: 'podderzhka-chitov-fortnite',
+		tr: 'fortnite-hile-destek',
+		ar: 'fortnite-cheats-support',
+		ja: 'fortnite-cheats-support',
+		ko: 'fortnite-cheats-support',
+		zh: 'fortnite-cheats-support',
+		hi: 'fortnite-cheats-support',
+		id: 'fortnite-cheats-support',
+		th: 'fortnite-cheats-support',
+		vi: 'fortnite-cheats-support',
+		uk: 'pidtrymka-chitiv-fortnite',
+		cs: 'fortnite-cheats-podpora',
+		ro: 'suport-cheats-fortnite',
+		sv: 'fortnite-cheats-support',
+	},
+	undetected: {
+		en: 'undetected-fortnite-cheats',
+		es: 'trucos-fortnite-indetectables',
+		fr: 'triche-fortnite-indetectable',
+		de: 'unentdeckte-fortnite-cheats',
+		pt: 'cheats-fortnite-indetectaveis',
+		it: 'trucchi-fortnite-indetectabili',
+		nl: 'undetected-fortnite-cheats',
+		pl: 'niewykrywalne-cheats-fortnite',
+		ru: 'nedecektiruemye-chity-fortnite',
+		tr: 'tespit-edilemeyen-fortnite-hileleri',
+		ar: 'undetected-fortnite-cheats',
+		ja: 'undetected-fortnite-cheats',
+		ko: 'undetected-fortnite-cheats',
+		zh: 'undetected-fortnite-cheats',
+		hi: 'undetected-fortnite-cheats',
+		id: 'undetected-fortnite-cheats',
+		th: 'undetected-fortnite-cheats',
+		vi: 'undetected-fortnite-cheats',
+		uk: 'nedecektovani-chity-fortnite',
+		cs: 'undetected-fortnite-cheats',
+		ro: 'cheats-fortnite-nedetectabile',
+		sv: 'undetected-fortnite-cheats',
+	},
+	wallhack: {
+		en: 'fortnite-wallhack',
+		es: 'wallhack-trucos-fortnite',
+		fr: 'wallhack-triche-fortnite',
+		de: 'fortnite-wallhack',
+		pt: 'wallhack-cheats-fortnite',
+		it: 'wallhack-trucchi-fortnite',
+		nl: 'fortnite-wallhack',
+		pl: 'wallhack-cheatow-fortnite',
+		ru: 'wallhack-chity-fortnite',
+		tr: 'fortnite-wallhack-hile',
+		ar: 'fortnite-wallhack',
+		ja: 'fortnite-wallhack',
+		ko: 'fortnite-wallhack',
+		zh: 'fortnite-wallhack',
+		hi: 'fortnite-wallhack',
+		id: 'fortnite-wallhack',
+		th: 'fortnite-wallhack',
+		vi: 'fortnite-wallhack',
+		uk: 'wallhack-chity-fortnite',
+		cs: 'fortnite-wallhack',
+		ro: 'wallhack-cheats-fortnite',
+		sv: 'fortnite-wallhack',
+	},
+	radar: {
+		en: 'fortnite-radar-hack',
+		es: 'radar-hack-trucos-fortnite',
+		fr: 'radar-hack-triche-fortnite',
+		de: 'fortnite-radar-hack',
+		pt: 'radar-hack-cheats-fortnite',
+		it: 'radar-hack-trucchi-fortnite',
+		nl: 'fortnite-radar-hack',
+		pl: 'radar-hack-cheatow-fortnite',
+		ru: 'radar-hack-chity-fortnite',
+		tr: 'fortnite-radar-hack',
+		ar: 'fortnite-radar-hack',
+		ja: 'fortnite-radar-hack',
+		ko: 'fortnite-radar-hack',
+		zh: 'fortnite-radar-hack',
+		hi: 'fortnite-radar-hack',
+		id: 'fortnite-radar-hack',
+		th: 'fortnite-radar-hack',
+		vi: 'fortnite-radar-hack',
+		uk: 'radar-hack-chity-fortnite',
+		cs: 'fortnite-radar-hack',
+		ro: 'radar-hack-cheats-fortnite',
+		sv: 'fortnite-radar-hack',
+	},
+	'eac-bypass': {
+		en: 'eac-bypass-fortnite',
+		es: 'eac-bypass-fortnite-trucos-fortnite',
+		fr: 'eac-bypass-fortnite-triche-fortnite',
+		de: 'eac-bypass-fortnite',
+		pt: 'eac-bypass-fortnite-cheats',
+		it: 'eac-bypass-fortnite-trucchi',
+		nl: 'eac-bypass-fortnite',
+		pl: 'eac-bypass-fortnite-cheatow',
+		ru: 'eac-bypass-fortnite-chity',
+		tr: 'eac-bypass-fortnite',
+		ar: 'eac-bypass-fortnite',
+		ja: 'eac-bypass-fortnite',
+		ko: 'eac-bypass-fortnite',
+		zh: 'eac-bypass-fortnite',
+		hi: 'eac-bypass-fortnite',
+		id: 'eac-bypass-fortnite',
+		th: 'eac-bypass-fortnite',
+		vi: 'eac-bypass-fortnite',
+		uk: 'eac-bypass-fortnite-chity',
+		cs: 'eac-bypass-fortnite',
+		ro: 'eac-bypass-fortnite-cheats',
+		sv: 'eac-bypass-fortnite',
+	},
+	'cheats-2026': {
+		en: 'fortnite-cheats-2026',
+		es: 'trucos-fortnite-2026',
+		fr: 'triche-fortnite-2026',
+		de: 'fortnite-cheats-2026',
+		pt: 'cheats-fortnite-2026',
+		it: 'trucchi-fortnite-2026',
+		nl: 'fortnite-cheats-2026',
+		pl: 'cheaty-fortnite-2026',
+		ru: 'chity-fortnite-2026',
+		tr: 'fortnite-hileleri-2026',
+		ar: 'fortnite-cheats-2026',
+		ja: 'fortnite-cheats-2026',
+		ko: 'fortnite-cheats-2026',
+		zh: 'fortnite-cheats-2026',
+		hi: 'fortnite-cheats-2026',
+		id: 'fortnite-cheats-2026',
+		th: 'fortnite-cheats-2026',
+		vi: 'fortnite-cheats-2026',
+		uk: 'chity-fortnite-2026',
+		cs: 'fortnite-cheats-2026',
+		ro: 'cheats-fortnite-2026',
+		sv: 'fortnite-cheats-2026',
+	},
+	hacks: {
+		en: 'fortnite-hacks',
+		es: 'hacks-trucos-fortnite',
+		fr: 'hacks-triche-fortnite',
+		de: 'fortnite-hacks',
+		pt: 'hacks-cheats-fortnite',
+		it: 'hacks-trucchi-fortnite',
+		nl: 'fortnite-hacks',
+		pl: 'hacks-cheatow-fortnite',
+		ru: 'haksy-chity-fortnite',
+		tr: 'fortnite-hile-hacks',
+		ar: 'fortnite-hacks',
+		ja: 'fortnite-hacks',
+		ko: 'fortnite-hacks',
+		zh: 'fortnite-hacks',
+		hi: 'fortnite-hacks',
+		id: 'fortnite-hacks',
+		th: 'fortnite-hacks',
+		vi: 'fortnite-hacks',
+		uk: 'haksy-chity-fortnite',
+		cs: 'fortnite-hacks',
+		ro: 'hacks-cheats-fortnite',
+		sv: 'fortnite-hacks',
+	},
+	'cheat-download': {
+		en: 'fortnite-cheat-download',
+		es: 'descarga-trucos-fortnite',
+		fr: 'telechargement-triche-fortnite',
+		de: 'fortnite-cheat-download',
+		pt: 'download-cheats-fortnite',
+		it: 'download-trucchi-fortnite',
+		nl: 'fortnite-cheat-download',
+		pl: 'pobieranie-cheatow-fortnite',
+		ru: 'skachat-chity-fortnite',
+		tr: 'fortnite-hile-indir',
+		ar: 'fortnite-cheat-download',
+		ja: 'fortnite-cheat-download',
+		ko: 'fortnite-cheat-download',
+		zh: 'fortnite-cheat-download',
+		hi: 'fortnite-cheat-download',
+		id: 'fortnite-cheat-download',
+		th: 'fortnite-cheat-download',
+		vi: 'fortnite-cheat-download',
+		uk: 'zavantazhennya-chitiv-fortnite',
+		cs: 'fortnite-cheat-download',
+		ro: 'descarcare-cheats-fortnite',
+		sv: 'fortnite-cheat-download',
+	},
+	'mod-menu': {
+		en: 'fortnite-mod-menu',
+		es: 'menu-mod-trucos-fortnite',
+		fr: 'menu-mod-triche-fortnite',
+		de: 'fortnite-mod-menu',
+		pt: 'menu-mod-cheats-fortnite',
+		it: 'menu-mod-trucchi-fortnite',
+		nl: 'fortnite-mod-menu',
+		pl: 'menu-mod-cheatow-fortnite',
+		ru: 'mod-menu-chity-fortnite',
+		tr: 'fortnite-mod-menu',
+		ar: 'fortnite-mod-menu',
+		ja: 'fortnite-mod-menu',
+		ko: 'fortnite-mod-menu',
+		zh: 'fortnite-mod-menu',
+		hi: 'fortnite-mod-menu',
+		id: 'fortnite-mod-menu',
+		th: 'fortnite-mod-menu',
+		vi: 'fortnite-mod-menu',
+		uk: 'mod-menu-chity-fortnite',
+		cs: 'fortnite-mod-menu',
+		ro: 'meniu-mod-cheats-fortnite',
+		sv: 'fortnite-mod-menu',
+	},
+	'soft-aim': {
+		en: 'fortnite-soft-aim',
+		es: 'soft-aim-trucos-fortnite',
+		fr: 'soft-aim-triche-fortnite',
+		de: 'fortnite-soft-aim',
+		pt: 'soft-aim-cheats-fortnite',
+		it: 'soft-aim-trucchi-fortnite',
+		nl: 'fortnite-soft-aim',
+		pl: 'soft-aim-cheatow-fortnite',
+		ru: 'soft-aim-chity-fortnite',
+		tr: 'fortnite-soft-aim',
+		ar: 'fortnite-soft-aim',
+		ja: 'fortnite-soft-aim',
+		ko: 'fortnite-soft-aim',
+		zh: 'fortnite-soft-aim',
+		hi: 'fortnite-soft-aim',
+		id: 'fortnite-soft-aim',
+		th: 'fortnite-soft-aim',
+		vi: 'fortnite-soft-aim',
+		uk: 'soft-aim-chity-fortnite',
+		cs: 'fortnite-soft-aim',
+		ro: 'soft-aim-cheats-fortnite',
+		sv: 'fortnite-soft-aim',
+	},
+	'best-cheats': {
+		en: 'best-fortnite-cheats',
+		es: 'mejores-trucos-fortnite',
+		fr: 'meilleures-triches-fortnite',
+		de: 'beste-fortnite-cheats',
+		pt: 'melhores-cheats-fortnite',
+		it: 'migliori-trucchi-fortnite',
+		nl: 'beste-fortnite-cheats',
+		pl: 'najlepsze-cheats-fortnite',
+		ru: 'luchshie-chity-fortnite',
+		tr: 'en-iyi-fortnite-hileleri',
+		ar: 'best-fortnite-cheats',
+		ja: 'best-fortnite-cheats',
+		ko: 'best-fortnite-cheats',
+		zh: 'best-fortnite-cheats',
+		hi: 'best-fortnite-cheats',
+		id: 'best-fortnite-cheats',
+		th: 'best-fortnite-cheats',
+		vi: 'best-fortnite-cheats',
+		uk: 'naykrashchi-chity-fortnite',
+		cs: 'nejlepsi-fortnite-cheats',
+		ro: 'cele-mai-bune-cheats-fortnite',
+		sv: 'basta-fortnite-cheats',
+	},
+	'aimbot-hack': {
+		en: 'fortnite-aimbot-hack',
+		es: 'aimbot-hack-trucos-fortnite',
+		fr: 'aimbot-hack-triche-fortnite',
+		de: 'fortnite-aimbot-hack',
+		pt: 'aimbot-hack-cheats-fortnite',
+		it: 'aimbot-hack-trucchi-fortnite',
+		nl: 'fortnite-aimbot-hack',
+		pl: 'aimbot-hack-cheatow-fortnite',
+		ru: 'aimbot-hack-chity-fortnite',
+		tr: 'fortnite-aimbot-hack',
+		ar: 'fortnite-aimbot-hack',
+		ja: 'fortnite-aimbot-hack',
+		ko: 'fortnite-aimbot-hack',
+		zh: 'fortnite-aimbot-hack',
+		hi: 'fortnite-aimbot-hack',
+		id: 'fortnite-aimbot-hack',
+		th: 'fortnite-aimbot-hack',
+		vi: 'fortnite-aimbot-hack',
+		uk: 'aimbot-hack-chity-fortnite',
+		cs: 'fortnite-aimbot-hack',
+		ro: 'aimbot-hack-cheats-fortnite',
+		sv: 'fortnite-aimbot-hack',
+	},
+	'esp-hack': {
+		en: 'fortnite-esp-hack',
+		es: 'esp-hack-trucos-fortnite',
+		fr: 'esp-hack-triche-fortnite',
+		de: 'fortnite-esp-hack',
+		pt: 'esp-hack-cheats-fortnite',
+		it: 'esp-hack-trucchi-fortnite',
+		nl: 'fortnite-esp-hack',
+		pl: 'esp-hack-cheatow-fortnite',
+		ru: 'esp-hack-chity-fortnite',
+		tr: 'fortnite-esp-hack',
+		ar: 'fortnite-esp-hack',
+		ja: 'fortnite-esp-hack',
+		ko: 'fortnite-esp-hack',
+		zh: 'fortnite-esp-hack',
+		hi: 'fortnite-esp-hack',
+		id: 'fortnite-esp-hack',
+		th: 'fortnite-esp-hack',
+		vi: 'fortnite-esp-hack',
+		uk: 'esp-hack-chity-fortnite',
+		cs: 'fortnite-esp-hack',
+		ro: 'esp-hack-cheats-fortnite',
+		sv: 'fortnite-esp-hack',
+	},
+	'unlock-all': {
+		en: 'fortnite-unlock-all',
+		es: 'unlock-all-trucos-fortnite',
+		fr: 'unlock-all-triche-fortnite',
+		de: 'fortnite-unlock-all',
+		pt: 'unlock-all-cheats-fortnite',
+		it: 'unlock-all-trucchi-fortnite',
+		nl: 'fortnite-unlock-all',
+		pl: 'unlock-all-cheatow-fortnite',
+		ru: 'unlock-all-chity-fortnite',
+		tr: 'fortnite-unlock-all',
+		ar: 'fortnite-unlock-all',
+		ja: 'fortnite-unlock-all',
+		ko: 'fortnite-unlock-all',
+		zh: 'fortnite-unlock-all',
+		hi: 'fortnite-unlock-all',
+		id: 'fortnite-unlock-all',
+		th: 'fortnite-unlock-all',
+		vi: 'fortnite-unlock-all',
+		uk: 'unlock-all-chity-fortnite',
+		cs: 'fortnite-unlock-all',
+		ro: 'unlock-all-cheats-fortnite',
+		sv: 'fortnite-unlock-all',
+	},
+	privacy: {
+		en: 'privacy-policy',
+		es: 'politica-privacidad',
+		fr: 'politique-confidentialite',
+		de: 'datenschutz',
+		pt: 'politica-privacidade',
+		it: 'privacy-policy',
+		nl: 'privacybeleid',
+		pl: 'polityka-prywatnosci',
+		ru: 'politika-konfidencialnosti',
+		tr: 'gizlilik-politikasi',
+		ar: 'privacy-policy',
+		ja: 'privacy-policy',
+		ko: 'privacy-policy',
+		zh: 'privacy-policy',
+		hi: 'privacy-policy',
+		id: 'privacy-policy',
+		th: 'privacy-policy',
+		vi: 'privacy-policy',
+		uk: 'polityka-konfidentsijnosti',
+		cs: 'ochrana-osobnich-udaju',
+		ro: 'politica-confidentialitate',
+		sv: 'integritetspolicy',
+	},
+	refund: {
+		en: 'refund-policy',
+		es: 'politica-reembolso',
+		fr: 'politique-remboursement',
+		de: 'rueckerstattung',
+		pt: 'politica-reembolso',
+		it: 'politica-rimborso',
+		nl: 'terugbetalingsbeleid',
+		pl: 'polityka-zwrotow',
+		ru: 'politika-vozvrata',
+		tr: 'iade-politikasi',
+		ar: 'refund-policy',
+		ja: 'refund-policy',
+		ko: 'refund-policy',
+		zh: 'refund-policy',
+		hi: 'refund-policy',
+		id: 'refund-policy',
+		th: 'refund-policy',
+		vi: 'refund-policy',
+		uk: 'polityka-povorennya',
+		cs: 'refund-policy',
+		ro: 'politica-rambursare',
+		sv: 'aterbetalningspolicy',
+	},
+	terms: {
+		en: 'terms',
+		es: 'terminos-uso',
+		fr: 'conditions-utilisation',
+		de: 'nutzungsbedingungen',
+		pt: 'termos-uso',
+		it: 'termini-uso',
+		nl: 'gebruiksvoorwaarden',
+		pl: 'regulamin',
+		ru: 'usloviya-ispolzovaniya',
+		tr: 'kullanim-kosullari',
+		ar: 'terms',
+		ja: 'terms',
+		ko: 'terms',
+		zh: 'terms',
+		hi: 'terms',
+		id: 'terms',
+		th: 'terms',
+		vi: 'terms',
+		uk: 'umovy-vykorystannya',
+		cs: 'podminky-uziti',
+		ro: 'termeni-utilizare',
+		sv: 'anvandarvillkor',
+	},
+};
+
+export const pageIds = Object.keys(englishPaths) as PageId[];
+
+export function getLocalizedPath(pageId: PageId, locale: LocaleCode): string {
+	if (locale === defaultLocale) {
+		return englishPaths[pageId];
+	}
+	const slug = localizedSlugs[pageId][locale];
+	return slug ? `/${locale}/${slug}/` : `/${locale}/`;
+}
+
+/** Map English root paths to the correct locale URL (for CTAs and inline links). */
+export function localizeInternalHref(href: string, locale: LocaleCode): string {
+	if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')) {
+		return href;
+	}
+	const trimmed = href.replace(/\/+$/, '') || '/';
+	const withSlash = trimmed === '/' ? '/' : `${trimmed}/`;
+	for (const pageId of pageIds) {
+		const english = englishPaths[pageId];
+		if (english === withSlash || english.replace(/\/+$/, '') === trimmed) {
+			return getLocalizedPath(pageId, locale);
+		}
+	}
+	return href;
+}
+
+export function absoluteLocalizedUrl(pageId: PageId, locale: LocaleCode): string {
+	return new URL(getLocalizedPath(pageId, locale), siteConfig.url).href;
+}
+
+export function getHreflangAlternates(pageId: PageId) {
+	return [
+		...localeCodes.map((code) => ({
+			hreflang: locales.find((l) => l.code === code)!.hreflang,
+			href: absoluteLocalizedUrl(pageId, code),
+		})),
+		{
+			hreflang: 'x-default' as const,
+			href: absoluteLocalizedUrl(pageId, defaultLocale),
+		},
+	];
+}
+
+export function resolvePageIdFromPath(path: string): PageId | undefined {
+	const normalized = path.endsWith('/') ? path : `${path}/`;
+	for (const id of pageIds) {
+		if (englishPaths[id] === normalized) return id;
+	}
+	return undefined;
+}
+
+export function hreflangLinksXml(pageId: PageId, escapeXml: (v: string) => string): string {
+	return getHreflangAlternates(pageId)
+		.map(
+			(alt) =>
+				`    <xhtml:link rel="alternate" hreflang="${escapeXml(alt.hreflang)}" href="${escapeXml(alt.href)}"/>`,
+		)
+		.join('\n');
+}
+
+export function resolvePageFromLocalizedPath(
+	locale: LocaleCode,
+	slug: string | undefined,
+): PageId | undefined {
+	if (!slug) return 'home';
+	for (const pageId of pageIds) {
+		if (localizedSlugs[pageId][locale] === slug) return pageId;
+	}
+	return undefined;
+}
+
+/** Map Accept-Language header to preferred locale (region-aware). */
+export function localeFromAcceptLanguage(header: string | null): LocaleCode {
+	if (!header) return defaultLocale;
+	const prefs = header
+		.split(',')
+		.map((part) => {
+			const [tag, qPart] = part.trim().split(';');
+			const q = qPart?.startsWith('q=') ? Number.parseFloat(qPart.slice(2)) : 1;
+			return { tag: tag.toLowerCase(), q };
+		})
+		.sort((a, b) => b.q - a.q);
+
+	for (const { tag } of prefs) {
+		const primary = tag.split('-')[0];
+		if (localeCodes.includes(primary as LocaleCode)) return primary as LocaleCode;
+	}
+	return defaultLocale;
+}
+
+export function getNavForLocale(locale: LocaleCode, labels: Record<string, string>) {
+	const items: { label: string; href: string; pageId: PageId }[] = [
+		{ label: labels.home, href: getLocalizedPath('home', locale), pageId: 'home' },
+		{ label: labels.aimbot, href: getLocalizedPath('fortnite-aimbot', locale), pageId: 'fortnite-aimbot' },
+		{ label: labels.esp, href: getLocalizedPath('fortnite-esp', locale), pageId: 'fortnite-esp' },
+		{ label: labels.features, href: getLocalizedPath('features', locale), pageId: 'features' },
+		{ label: labels.pricing, href: getLocalizedPath('pricing', locale), pageId: 'pricing' },
+		{ label: labels.setup, href: getLocalizedPath('setup', locale), pageId: 'setup' },
+		{ label: labels.updates, href: getLocalizedPath('updates', locale), pageId: 'updates' },
+		{ label: labels.faq, href: getLocalizedPath('faq', locale), pageId: 'faq' },
+	];
+	return items;
+}

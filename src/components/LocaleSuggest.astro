@@ -1,0 +1,122 @@
+---
+import { locales, defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { englishPaths, localizedSlugs, type PageId } from '../data/i18n/routing';
+
+interface Props {
+	currentLocale: LocaleCode;
+	pageId?: PageId;
+}
+
+const { currentLocale, pageId = 'home' } = Astro.props;
+
+if (currentLocale !== defaultLocale) {
+	return null;
+}
+
+const localeList = JSON.stringify(
+	locales.map((l) => ({
+		code: l.code,
+		nativeName: l.nativeName,
+		region: l.region,
+		name: l.name,
+	})),
+);
+const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId });
+---
+
+<div class="locale-suggest is-hidden" role="region" aria-label="Language suggestion" hidden>
+	<p class="locale-suggest__text"></p>
+	<button type="button" class="locale-suggest__dismiss" aria-label="Dismiss">×</button>
+</div>
+
+<script define:vars={{ localeList, pathMap, defaultLocale, pageId }}>
+	(function () {
+		const bar = document.querySelector('.locale-suggest');
+		const textEl = bar?.querySelector('.locale-suggest__text');
+		const dismiss = bar?.querySelector('.locale-suggest__dismiss');
+		const storageKey = 'wc_locale_dismissed';
+		const cookieName = 'wc_locale';
+
+		if (!bar || sessionStorage.getItem(storageKey)) return;
+
+		const locales = JSON.parse(localeList);
+		const { en: englishPaths, slugs: localizedSlugs } = JSON.parse(pathMap);
+
+		function getLocalizedPath(id, locale) {
+			if (locale === defaultLocale) return englishPaths[id];
+			const slug = localizedSlugs[id]?.[locale];
+			return slug ? `/${locale}/${slug}/` : `/${locale}/`;
+		}
+
+		function localeFromNavigator() {
+			const cookie = document.cookie.match(/(?:^|;\s*)wc_locale=([^;]+)/)?.[1];
+			if (cookie && locales.some((l) => l.code === cookie)) return cookie;
+
+			const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+			for (const tag of langs) {
+				const primary = tag.toLowerCase().split('-')[0];
+				if (locales.some((l) => l.code === primary)) return primary;
+			}
+			return defaultLocale;
+		}
+
+		const preferred = localeFromNavigator();
+		if (preferred === defaultLocale) return;
+
+		const target = locales.find((l) => l.code === preferred);
+		if (!target || !textEl) return;
+
+		const href = getLocalizedPath(pageId, preferred);
+		textEl.innerHTML = `${target.nativeName} (${target.region}) — <a href="${href}">${target.name} version</a>`;
+		bar.hidden = false;
+		bar.classList.remove('is-hidden');
+
+		dismiss?.addEventListener('click', () => {
+			sessionStorage.setItem(storageKey, '1');
+			bar.hidden = true;
+		});
+
+		bar.querySelector('a')?.addEventListener('click', () => {
+			document.cookie = `${cookieName}=${preferred};path=/;max-age=31536000;SameSite=Lax`;
+		});
+	})();
+</script>
+
+<style>
+	.locale-suggest {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		padding: 0.55rem 1rem;
+		background: rgba(109, 40, 217, 0.18);
+		border-bottom: 1px solid rgba(168, 85, 247, 0.22);
+		font-size: 0.82rem;
+		color: #e2d9ef;
+		text-align: center;
+	}
+
+	.locale-suggest.is-hidden {
+		display: none;
+	}
+
+	.locale-suggest__text {
+		margin: 0;
+	}
+
+	.locale-suggest :global(a) {
+		color: #e9d5ff;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	.locale-suggest__dismiss {
+		border: none;
+		background: transparent;
+		color: #c4b5fd;
+		font-size: 1.2rem;
+		line-height: 1;
+		cursor: pointer;
+		padding: 0.15rem 0.35rem;
+	}
+</style>

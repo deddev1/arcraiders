@@ -1,0 +1,433 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getUi } from '../data/i18n';
+import { getLocalizedPath, getNavForLocale, type PageId } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { mainNav, siteConfig } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+	pageId?: PageId;
+}
+
+const { locale = defaultLocale, pageId = 'home' } = Astro.props;
+const ui = getUi(locale);
+const navLinks = getNavForLocale(locale, ui.nav);
+const current = Astro.url.pathname;
+
+const isActive = (href: string) => {
+	if (href === getLocalizedPath('home', locale)) {
+		return current === href || current === `/${locale}/` || current === '/';
+	}
+	return current === href || current.startsWith(href);
+};
+---
+
+<header class="nav" data-nav>
+	<div class="nav__backdrop" data-nav-backdrop hidden aria-hidden="true"></div>
+	<div class="nav__bar">
+		<a href={getLocalizedPath('home', locale)} class="nav__brand" aria-label="Fortnite Cheats home page">
+			<img
+				src={siteConfig.logo}
+				alt={siteConfig.logoAlt}
+				width="40"
+				height="40"
+				class="nav__logo"
+				decoding="async"
+			/>
+			<span class="nav__name">Fortnite</span>
+			<span class="sr-only">Fortnite Cheats home</span>
+		</a>
+
+		<nav class="nav__links" id="nav-panel" data-nav-panel aria-label="Primary">
+			{
+				navLinks.map((link) => (
+					<a href={link.href} class:list={['nav__link', { 'is-active': isActive(link.href) }]}>
+						{link.label}
+					</a>
+				))
+			}
+			<a href={siteConfig.checkoutUrl} class="nav__cta" rel="noopener noreferrer">
+				{ui.nav.buyNow}
+			</a>
+		</nav>
+
+		<div class="nav__actions">
+			<LanguageSwitcher pageId={pageId} currentLocale={locale} />
+			<button
+			type="button"
+			class="nav__toggle"
+			aria-label="Open menu"
+			aria-expanded="false"
+			aria-controls="nav-panel"
+			data-nav-toggle
+		>
+			<span class="nav__toggle-icon" aria-hidden="true"></span>
+		</button>
+		</div>
+	</div>
+</header>
+
+<script>
+	const nav = document.querySelector('[data-nav]');
+	if (nav) {
+		const toggle = nav.querySelector('[data-nav-toggle]');
+		const panel = nav.querySelector('[data-nav-panel]');
+
+		const setOpen = (open: boolean) => {
+			toggle?.setAttribute('aria-expanded', String(open));
+			toggle?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+			nav.classList.toggle('is-open', open);
+			document.body.classList.toggle('nav-open', open);
+			const backdrop = nav.querySelector('[data-nav-backdrop]') as HTMLElement | null;
+			if (backdrop) backdrop.hidden = !open;
+		};
+
+		toggle?.addEventListener('click', () => {
+			setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+		});
+
+		panel?.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => setOpen(false));
+		});
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+				setOpen(false);
+			}
+		});
+
+		nav.addEventListener('click', (event) => {
+			const target = event.target as Element;
+			if (nav.classList.contains('is-open') && target.hasAttribute('data-nav-backdrop')) {
+				setOpen(false);
+			}
+		});
+
+		const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+		onScroll();
+		window.addEventListener('scroll', onScroll, { passive: true });
+	}
+</script>
+
+<style is:global>
+	body.nav-open {
+		overflow: hidden;
+	}
+</style>
+
+<style>
+	.nav {
+		position: sticky;
+		top: 0;
+		z-index: 80;
+		padding: 0.65rem var(--page-gutter) 0;
+		padding-top: calc(0.65rem + env(safe-area-inset-top, 0px));
+		pointer-events: none;
+	}
+
+	.nav__bar {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		width: min(100%, var(--page-max));
+		margin: 0 auto;
+		padding: 0.55rem 0.85rem;
+		border-radius: 999px;
+		border: 1px solid rgba(168, 85, 247, 0.12);
+		background: rgba(10, 6, 18, 0.72);
+		backdrop-filter: blur(16px) saturate(1.15);
+		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+		pointer-events: auto;
+		transition:
+			background 0.25s ease,
+			border-color 0.25s ease,
+			box-shadow 0.25s ease;
+	}
+
+	.nav.is-scrolled .nav__bar {
+		background: rgba(10, 6, 18, 0.94);
+		border-color: rgba(168, 85, 247, 0.2);
+		box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
+	}
+
+	.nav__brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+		flex-shrink: 0;
+		color: var(--color-ink);
+		transition: opacity 0.2s ease;
+	}
+
+	.nav__brand:hover {
+		opacity: 0.9;
+	}
+
+	.nav__logo {
+		display: block;
+		width: 2rem;
+		height: 2rem;
+		object-fit: contain;
+	}
+
+	.nav__name {
+		font-family: var(--font-display);
+		font-size: 0.95rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		white-space: nowrap;
+	}
+
+	.nav__links {
+		display: flex;
+		align-items: center;
+		gap: 0.15rem;
+		flex: 1;
+		min-width: 0;
+	}
+
+	.nav__link {
+		position: relative;
+		padding: 0.45rem 0.7rem;
+		border-radius: 0.5rem;
+		color: var(--color-muted);
+		font-size: 0.84rem;
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		white-space: nowrap;
+		transition: color 0.2s ease;
+	}
+
+	.nav__link::after {
+		content: '';
+		position: absolute;
+		left: 0.7rem;
+		right: 0.7rem;
+		bottom: 0.3rem;
+		height: 1px;
+		border-radius: 1px;
+		background: var(--color-orchid);
+		transform: scaleX(0);
+		transform-origin: center;
+		transition: transform 0.2s ease;
+	}
+
+	.nav__link:hover {
+		color: var(--color-ink);
+	}
+
+	.nav__link.is-active {
+		color: var(--color-ink);
+		font-weight: 600;
+	}
+
+	.nav__link.is-active::after {
+		transform: scaleX(1);
+	}
+
+	.nav__cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 2.15rem;
+		margin-left: auto;
+		padding: 0 1rem;
+		border-radius: 999px;
+		background: var(--color-ink);
+		color: var(--color-midnight);
+		font-size: 0.82rem;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+		transition:
+			transform 0.2s ease,
+			opacity 0.2s ease;
+	}
+
+	.nav__cta:hover {
+		transform: translateY(-1px);
+		opacity: 0.92;
+		color: var(--color-midnight);
+	}
+
+	.nav__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		margin-left: auto;
+	}
+
+	.nav__toggle {
+		display: none;
+		place-items: center;
+		width: 2.15rem;
+		height: 2.15rem;
+		flex-shrink: 0;
+		border: 0;
+		border-radius: 999px;
+		background: rgba(168, 85, 247, 0.12);
+		color: var(--color-ink);
+		cursor: pointer;
+		transition: background 0.2s ease;
+	}
+
+	.nav__toggle:hover {
+		background: rgba(168, 85, 247, 0.22);
+	}
+
+	.nav__toggle-icon,
+	.nav__toggle-icon::before,
+	.nav__toggle-icon::after {
+		display: block;
+		width: 16px;
+		height: 2px;
+		border-radius: 2px;
+		background: currentColor;
+		transition:
+			transform 0.25s ease,
+			opacity 0.2s ease;
+	}
+
+	.nav__toggle-icon {
+		position: relative;
+	}
+
+	.nav__toggle-icon::before,
+	.nav__toggle-icon::after {
+		content: '';
+		position: absolute;
+		left: 0;
+	}
+
+	.nav__toggle-icon::before {
+		top: -5px;
+	}
+
+	.nav__toggle-icon::after {
+		top: 5px;
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon {
+		background: transparent;
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon::before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+
+	.nav__toggle[aria-expanded='true'] .nav__toggle-icon::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+
+	.nav__backdrop {
+		display: none;
+	}
+
+	@media (max-width: 960px) {
+		.nav__backdrop {
+			display: block;
+			position: fixed;
+			inset: 0;
+			z-index: 0;
+			border: 0;
+			padding: 0;
+			margin: 0;
+			background: rgba(10, 6, 18, 0.62);
+			backdrop-filter: blur(6px);
+			cursor: pointer;
+		}
+
+		.nav__backdrop[hidden] {
+			display: none;
+		}
+
+		.nav__bar {
+			position: relative;
+			z-index: 2;
+			gap: 0.75rem;
+			padding: 0.5rem 0.7rem;
+		}
+
+		.nav__links {
+			position: fixed;
+			inset: 0;
+			z-index: 1;
+			display: grid;
+			align-content: start;
+			gap: 0.25rem;
+			width: min(calc(100% - (var(--page-gutter) * 2)), 22rem);
+			max-height: calc(100dvh - 5.5rem - env(safe-area-inset-top, 0px));
+			height: fit-content;
+			margin: calc(4.25rem + env(safe-area-inset-top, 0px)) auto 1.5rem;
+			padding: 0.75rem;
+			border-radius: 1rem;
+			border: 1px solid rgba(168, 85, 247, 0.16);
+			background: rgba(16, 12, 26, 0.98);
+			box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+			overflow-y: auto;
+			overscroll-behavior: contain;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transform: translateY(-8px);
+			transition:
+				opacity 0.2s ease,
+				transform 0.2s ease,
+				visibility 0.2s ease;
+		}
+
+		.nav.is-open .nav__links {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+			transform: translateY(0);
+		}
+
+		.nav__link {
+			padding: 0.9rem 1rem;
+			border-radius: 0.65rem;
+			font-size: 1rem;
+			min-height: var(--touch-min);
+			display: flex;
+			align-items: center;
+		}
+
+		.nav__link::after {
+			display: none;
+		}
+
+		.nav__link.is-active,
+		.nav__link:hover {
+			background: rgba(168, 85, 247, 0.1);
+		}
+
+		.nav__cta {
+			width: 100%;
+			height: auto;
+			margin: 0.35rem 0 0;
+			padding: 0.95rem 1rem;
+			border-radius: 0.65rem;
+			font-size: 1rem;
+			min-height: var(--touch-min);
+		}
+
+		.nav__toggle {
+			display: grid;
+			margin-left: auto;
+			min-width: var(--touch-min);
+			min-height: var(--touch-min);
+		}
+	}
+
+	@media (max-width: 420px) {
+		.nav {
+			padding-inline: 0.65rem;
+		}
+
+		.nav__name {
+			display: none;
+		}
+	}
+</style>

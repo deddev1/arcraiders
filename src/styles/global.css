@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* Latin subset only — skips latin-ext for faster first paint on EN-first site */
+@font-face {
+	font-family: "Outfit Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url("@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2") format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Syne Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400 800;
+	src: url("@fontsource-variable/syne/files/syne-latin-wght-normal.woff2") format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+	--font-display: "Syne Variable", "Syne", sans-serif;
+	--font-sans: "Outfit Variable", "Outfit", sans-serif;
+
+	--color-midnight: #0a0612;
+	--color-surface: #12101a;
+	--color-surface-raised: #1a1626;
+	--color-surface-muted: #221c30;
+	--color-border: rgba(168, 85, 247, 0.14);
+	--color-border-strong: rgba(192, 132, 252, 0.35);
+
+	--color-violet: #a855f7;
+	--color-fuchsia: #d946ef;
+	--color-orchid: #c084fc;
+	--color-plum: #7c3aed;
+	--color-mint: #34d399;
+
+	--color-ink: #f5f3ff;
+	--color-muted: #a89bb8;
+	--color-faint: #6e627f;
+
+	--shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.28);
+	--gradient-brand: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
+	--gradient-brand-x: linear-gradient(90deg, #8b5cf6 0%, #c026d3 100%);
+
+	--page-max: 1180px;
+	--page-gutter: 1.5rem;
+	--section-space: 2rem;
+	--radius-media: 1rem;
+	--radius-card: 1.25rem;
+	--touch-min: 2.75rem;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--page-gutter: 1rem;
+		--section-space: 1.35rem;
+		--radius-card: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--page-gutter: 0.85rem;
+		--section-space: 1.1rem;
+	}
+}
+
+@layer base {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
+	html::-webkit-scrollbar {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	body {
+		margin: 0;
+		min-height: 100vh;
+		min-height: 100dvh;
+		font-family: var(--font-sans);
+		color: var(--color-ink);
+		background:
+			radial-gradient(ellipse 80% 50% at 80% -10%, rgba(124, 58, 237, 0.22), transparent 55%),
+			radial-gradient(ellipse 50% 40% at 10% 20%, rgba(217, 70, 239, 0.08), transparent 50%),
+			var(--color-midnight);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		overflow-x: hidden;
+		padding-left: env(safe-area-inset-left);
+		padding-right: env(safe-area-inset-right);
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	::selection {
+		background: rgba(168, 85, 247, 0.45);
+		color: white;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	button,
+	a {
+		-webkit-tap-highlight-color: transparent;
+		touch-action: manipulation;
+	}
+
+	button {
+		font-family: inherit;
+		cursor: pointer;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	@media (max-width: 560px) {
+		:root {
+			--page-gutter: 0.85rem;
+		}
+	}
+}
+
+@layer utilities {
+	.text-gradient {
+		background: var(--gradient-brand-x);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.bg-brand {
+		background: var(--gradient-brand);
+	}
+
+	.btn-buy {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: var(--touch-min);
+		padding: 0.85rem 1.85rem;
+		border-radius: 0.95rem;
+		border: 1px solid rgba(233, 213, 255, 0.55);
+		background: linear-gradient(180deg, #c084fc 0%, #a855f7 42%, #7c3aed 100%);
+		color: #fff;
+		font-size: 1rem;
+		font-weight: 800;
+		letter-spacing: 0.01em;
+		box-shadow:
+			0 0 0 1px rgba(168, 85, 247, 0.25),
+			0 10px 28px rgba(124, 58, 237, 0.45),
+			0 0 36px rgba(168, 85, 247, 0.35),
+			inset 0 1px 0 rgba(255, 255, 255, 0.35);
+		transition:
+			transform 0.2s ease,
+			filter 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+
+	@media (max-width: 768px) {
+		.btn-buy {
+			width: 100%;
+			padding-inline: 1.25rem;
+		}
+	}
+
+	.btn-buy:hover {
+		color: #fff;
+		transform: translateY(-1px);
+		filter: brightness(1.06);
+		box-shadow:
+			0 0 0 1px rgba(168, 85, 247, 0.35),
+			0 14px 34px rgba(124, 58, 237, 0.55),
+			0 0 44px rgba(192, 132, 252, 0.4),
+			inset 0 1px 0 rgba(255, 255, 255, 0.4);
+	}
+
+	.surface-card {
+		background: linear-gradient(180deg, rgba(34, 28, 48, 0.95) 0%, rgba(18, 16, 26, 0.98) 100%);
+		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-soft);
+	}
+
+	.shell {
+		width: min(100% - (var(--page-gutter) * 2), var(--page-max));
+		margin-inline: auto;
+	}
+
+	.media-frame {
+		position: relative;
+		overflow: hidden;
+		border-radius: var(--radius-media);
+		background: #12081f;
+		isolation: isolate;
+	}
+
+	.media-frame img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.media-frame::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background: linear-gradient(
+			180deg,
+			rgba(124, 58, 237, 0.08) 0%,
+			transparent 36%,
+			rgba(10, 6, 18, 0.18) 100%
+		);
+		mix-blend-mode: soft-light;
+	}
+}
