@@ -48,7 +48,7 @@ const {
 const path = canonicalPath.endsWith('/') || canonicalPath.includes('.') ? canonicalPath : `${canonicalPath}/`;
 const canonicalURL = new URL(path === '//' ? '/' : path, siteConfig.url).href;
 const ogImageURL = new URL(ogImage, siteConfig.url).href;
-const logoURL = new URL(siteConfig.logo, siteConfig.url).href;
+const logoURL = new URL(siteConfig.logoRaster, siteConfig.url).href;
 const ogImageIsLogo = ogImage === siteConfig.logo;
 const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
@@ -92,8 +92,8 @@ const graph: Record<string, unknown>[] = [
 		logo: {
 			'@type': 'ImageObject',
 			url: logoURL,
-			width: 512,
-			height: 512,
+			width: siteConfig.logoRasterWidth,
+			height: siteConfig.logoRasterHeight,
 		},
 		image: logoURL,
 		contactPoint: {

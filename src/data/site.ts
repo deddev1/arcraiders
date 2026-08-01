@@ -5,6 +5,10 @@ export const siteConfig = {
 	market: 'Worldwide',
 	supportEmail: 'support@fortnitehack.net',
 	logo: '/images/zadeyo-logo.webp',
+	// Raster logo for Google/schema.org (min 112x112 required; the webp is only 64x77)
+	logoRaster: '/images/zadeyo-logo.png',
+	logoRasterWidth: 453,
+	logoRasterHeight: 551,
 	logoAlt: 'Zadeyo',
 	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Ffortnite',
 	defaultOgImage: '/images/fortnite-cheats-cover.webp',
