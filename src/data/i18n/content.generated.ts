@@ -19,6 +19,7 @@ export type LocaleUi = {
 	hero: { accent: string; accentShort: string; subtitle: string; subtitleShort: string; buyNow: string; seeFeatures: string };
 	trust: { status: string; statusNote: string; statusShort: string; delivery: string; platform: string; antiCheat: string; antiCheatShort: string };
 	product: { title: string; addToCart: string; monthly: string; lifetime: string; available: string; gameBadge: string; platformBadge: string; statusBadge: string };
+	reviews: { title: string; subtitle: string; outOf: string; countLabel: string };
 	common: { buyNow: string; readGuide: string; language: string; officialLanguageNote: string; relatedPages: string };
 	footer: { explore: string; help: string; tagline: string };
 	images: {
@@ -68,6 +69,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected package",
+				},
+				reviews: {
+					title: "What players say",
+					subtitle: "Recent feedback from Fortnite Hacks buyers",
+					outOf: "out of 5",
+					countLabel: "reviews",
 				},
 				common: {
 					buyNow: "Buy Now",
@@ -1113,6 +1120,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "PC Windows",
 					statusBadge: "Paquete indetectable",
 				},
+				reviews: {
+					title: "Lo que dicen los jugadores",
+					subtitle: "Comentarios recientes de compradores de Fortnite Hacks",
+					outOf: "de 5",
+					countLabel: "reseñas",
+				},
 				common: {
 					buyNow: "Comprar ahora",
 					readGuide: "Leer guía",
@@ -2048,6 +2061,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "PC Windows",
 					statusBadge: "Pack indétectable",
+				},
+				reviews: {
+					title: "Ce que disent les joueurs",
+					subtitle: "Avis récents des acheteurs Fortnite Hacks",
+					outOf: "sur 5",
+					countLabel: "avis",
 				},
 				common: {
 					buyNow: "Acheter",
@@ -2985,6 +3004,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected Paket",
 				},
+				reviews: {
+					title: "Was Spieler sagen",
+					subtitle: "Aktuelles Feedback von Fortnite Hacks Käufern",
+					outOf: "von 5",
+					countLabel: "Bewertungen",
+				},
 				common: {
 					buyNow: "Jetzt kaufen",
 					readGuide: "Guide lesen",
@@ -3920,6 +3945,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "PC Windows",
 					statusBadge: "Pacote indetectável",
+				},
+				reviews: {
+					title: "O que os jogadores dizem",
+					subtitle: "Feedback recente de compradores Fortnite Hacks",
+					outOf: "de 5",
+					countLabel: "avaliações",
 				},
 				common: {
 					buyNow: "Comprar agora",
@@ -4857,6 +4888,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "PC Windows",
 					statusBadge: "Pacchetto indetectable",
 				},
+				reviews: {
+					title: "Cosa dicono i giocatori",
+					subtitle: "Feedback recente dagli acquirenti Fortnite Hacks",
+					outOf: "su 5",
+					countLabel: "recensioni",
+				},
 				common: {
 					buyNow: "Acquista ora",
 					readGuide: "Leggi guida",
@@ -5792,6 +5829,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected pakket",
+				},
+				reviews: {
+					title: "Wat spelers zeggen",
+					subtitle: "Recente feedback van Fortnite Hacks kopers",
+					outOf: "van 5",
+					countLabel: "reviews",
 				},
 				common: {
 					buyNow: "Nu kopen",
@@ -6729,6 +6772,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "PC Windows",
 					statusBadge: "Pakiet undetected",
 				},
+				reviews: {
+					title: "Co mówią gracze",
+					subtitle: "Ostatnie opinie kupujących Fortnite Hacks",
+					outOf: "na 5",
+					countLabel: "opinii",
+				},
 				common: {
 					buyNow: "Kup teraz",
 					readGuide: "Czytaj poradnik",
@@ -7664,6 +7713,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected пакет",
+				},
+				reviews: {
+					title: "Что говорят игроки",
+					subtitle: "Недавние отзывы покупателей Fortnite Hacks",
+					outOf: "из 5",
+					countLabel: "отзывов",
 				},
 				common: {
 					buyNow: "Купить",
@@ -8601,6 +8656,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected paket",
 				},
+				reviews: {
+					title: "Oyuncular ne diyor",
+					subtitle: "Fortnite Hacks alıcılarından son geri bildirimler",
+					outOf: "/5",
+					countLabel: "yorum",
+				},
 				common: {
 					buyNow: "Satın al",
 					readGuide: "Rehberi oku",
@@ -9536,6 +9597,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "حزمة غير مكتشفة",
+				},
+				reviews: {
+					title: "ماذا يقول اللاعبون",
+					subtitle: "آراء حديثة من مشتري Fortnite Hacks",
+					outOf: "من 5",
+					countLabel: "مراجعات",
 				},
 				common: {
 					buyNow: "اشترِ الآن",
@@ -10473,6 +10540,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Undetectedパッケージ",
 				},
+				reviews: {
+					title: "プレイヤーの声",
+					subtitle: "Fortnite Hacks購入者からの最近のフィードバック",
+					outOf: "/5",
+					countLabel: "件のレビュー",
+				},
 				common: {
 					buyNow: "今すぐ購入",
 					readGuide: "ガイドを読む",
@@ -11408,6 +11481,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected 패키지",
+				},
+				reviews: {
+					title: "플레이어 후기",
+					subtitle: "Fortnite Hacks 구매자 최근 피드백",
+					outOf: "/5",
+					countLabel: "리뷰",
 				},
 				common: {
 					buyNow: "지금 구매",
@@ -12345,6 +12424,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected套餐",
 				},
+				reviews: {
+					title: "玩家评价",
+					subtitle: "Fortnite Hacks 买家近期反馈",
+					outOf: "/5",
+					countLabel: "条评价",
+				},
 				common: {
 					buyNow: "立即购买",
 					readGuide: "阅读指南",
@@ -13280,6 +13365,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected पैकेज",
+				},
+				reviews: {
+					title: "खिलाड़ी क्या कहते हैं",
+					subtitle: "Fortnite Hacks खरीदारों की हाल की प्रतिक्रिया",
+					outOf: "/5",
+					countLabel: "समीक्षाएँ",
 				},
 				common: {
 					buyNow: "अभी खरीदें",
@@ -14217,6 +14308,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Paket undetected",
 				},
+				reviews: {
+					title: "Apa kata pemain",
+					subtitle: "Umpan balik terbaru dari pembeli Fortnite Hacks",
+					outOf: "dari 5",
+					countLabel: "ulasan",
+				},
 				common: {
 					buyNow: "Beli sekarang",
 					readGuide: "Baca panduan",
@@ -15152,6 +15249,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "แพ็กเกจ undetected",
+				},
+				reviews: {
+					title: "ผู้เล่นพูดว่าอย่างไร",
+					subtitle: "ความคิดเห็นล่าสุดจากผู้ซื้อ Fortnite Hacks",
+					outOf: "จาก 5",
+					countLabel: "รีวิว",
 				},
 				common: {
 					buyNow: "ซื้อเลย",
@@ -16089,6 +16192,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Gói undetected",
 				},
+				reviews: {
+					title: "Người chơi nói gì",
+					subtitle: "Phản hồi gần đây từ người mua Fortnite Hacks",
+					outOf: "/5",
+					countLabel: "đánh giá",
+				},
 				common: {
 					buyNow: "Mua ngay",
 					readGuide: "Đọc hướng dẫn",
@@ -17024,6 +17133,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected пакет",
+				},
+				reviews: {
+					title: "Що кажуть гравці",
+					subtitle: "Останні відгуки покупців Fortnite Hacks",
+					outOf: "з 5",
+					countLabel: "відгуків",
 				},
 				common: {
 					buyNow: "Купити",
@@ -17961,6 +18076,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected balíček",
 				},
+				reviews: {
+					title: "Co říkají hráči",
+					subtitle: "Nedávná zpětná vazba od kupujících Fortnite Hacks",
+					outOf: "z 5",
+					countLabel: "recenzí",
+				},
 				common: {
 					buyNow: "Koupit",
 					readGuide: "Číst průvodce",
@@ -18897,6 +19018,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					platformBadge: "Windows PC",
 					statusBadge: "Pachet undetected",
 				},
+				reviews: {
+					title: "Ce spun jucătorii",
+					subtitle: "Feedback recent de la cumpărătorii Fortnite Hacks",
+					outOf: "din 5",
+					countLabel: "recenzii",
+				},
 				common: {
 					buyNow: "Cumpără acum",
 					readGuide: "Citește ghidul",
@@ -19832,6 +19959,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					gameBadge: "Fortnite",
 					platformBadge: "Windows PC",
 					statusBadge: "Undetected paket",
+				},
+				reviews: {
+					title: "Vad spelare säger",
+					subtitle: "Senaste feedback från Fortnite Hacks-köpare",
+					outOf: "av 5",
+					countLabel: "recensioner",
 				},
 				common: {
 					buyNow: "Köp nu",

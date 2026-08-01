@@ -30,7 +30,7 @@ async function resolveDistRoot() {
 }
 const SITE = 'https://fortnitehack.net';
 
-const BLOG_PAGES = 15; // /blog/ index + 14 posts
+const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const ENGLISH_PAGES = 25 + BLOG_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;

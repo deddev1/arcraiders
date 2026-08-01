@@ -6,12 +6,13 @@ import BreadcrumbBar from '../components/BreadcrumbBar.astro';
 import ProductCard from '../components/ProductCard.astro';
 import Gallery from '../components/Gallery.astro';
 import HomeSeo from '../components/HomeSeo.astro';
+import CustomerReviews from '../components/CustomerReviews.astro';
 import TrustBar from '../components/TrustBar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getLocaleContent, getPageContent } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
-import { homeFaqs, productInfo, siteConfig } from '../data/site';
+import { homeFaqs, productInfo, siteConfig, customerReviewStats, customerReviews } from '../data/site';
 import { fortniteImages } from '../data/fortnite';
 import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
 
@@ -31,6 +32,32 @@ const heroImage = new URL(fortniteImages.hero, siteConfig.url).href;
 const priceValidUntil = '2027-12-31';
 
 const extraGraph: Record<string, unknown>[] = [
+	{
+		'@type': 'Product',
+		'@id': `${canonicalURL}#product`,
+		name: productInfo.name,
+		description: productInfo.summary,
+		brand: { '@type': 'Brand', name: productInfo.brand },
+		aggregateRating: {
+			'@type': 'AggregateRating',
+			ratingValue: customerReviewStats.averageRating.toFixed(1),
+			reviewCount: customerReviewStats.totalCount,
+			bestRating: '5',
+			worstRating: '3',
+		},
+		review: customerReviews.map((review) => ({
+			'@type': 'Review',
+			author: { '@type': 'Person', name: review.handle },
+			datePublished: review.date,
+			reviewRating: {
+				'@type': 'Rating',
+				ratingValue: String(review.rating),
+				bestRating: '5',
+				worstRating: '1',
+			},
+			reviewBody: review.text,
+		})),
+	},
 	{
 		'@type': 'SoftwareApplication',
 		'@id': `${canonicalURL}#software`,
@@ -98,6 +125,9 @@ const extraGraph: Record<string, unknown>[] = [
 			subtitleShort={ui.hero.subtitleShort}
 		/>
 		<TrustBar locale={locale} />
+		<section class="site__section site__section--reviews">
+			<CustomerReviews locale={locale} />
+		</section>
 		<BreadcrumbBar
 			locale={locale}
 			items={[
@@ -146,7 +176,15 @@ const extraGraph: Record<string, unknown>[] = [
 		overflow-x: clip;
 	}
 
+	.site__section--reviews {
+		padding-top: 0.25rem;
+		padding-bottom: 0.5rem;
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 640px;
+	}
+
 	.site__section--store,
+	.site__section--reviews,
 	.site__section--seo,
 	.site__section--gallery {
 		content-visibility: auto;

@@ -1,0 +1,181 @@
+---
+import { getUi } from '../data/i18n';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { customerReviewStats, customerReviews } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const reviewsUi = ui.reviews;
+
+function stars(rating: number): string {
+	return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+}
+---
+
+<section class="reviews shell" aria-labelledby="reviews-title">
+	<header class="reviews__header">
+		<div>
+			<h2 id="reviews-title">{reviewsUi.title}</h2>
+			<p class="reviews__subtitle">{reviewsUi.subtitle}</p>
+		</div>
+		<div class="reviews__summary" aria-label={`${customerReviewStats.averageRating} out of 5 average rating`}>
+			<p class="reviews__avg">{customerReviewStats.averageRating.toFixed(1)}</p>
+			<p class="reviews__avg-label">{reviewsUi.outOf}</p>
+			<p class="reviews__count">{customerReviewStats.totalCount} {reviewsUi.countLabel}</p>
+		</div>
+	</header>
+
+	<div class="reviews__grid">
+		{
+			customerReviews.map((review) => (
+				<article class="reviews__card">
+					<div class="reviews__card-top">
+						<p class="reviews__handle">@{review.handle}</p>
+						<p class="reviews__stars" aria-label={`${review.rating} out of 5 stars`}>
+							{stars(review.rating)}
+						</p>
+					</div>
+					{review.tag ? <p class="reviews__tag">{review.tag}</p> : null}
+					<p class="reviews__text">{review.text}</p>
+					<p class="reviews__date">{review.date}</p>
+				</article>
+			))
+		}
+	</div>
+</section>
+
+<style>
+	.reviews {
+		padding-block: var(--section-space);
+	}
+
+	.reviews__header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		gap: 1rem 1.5rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.reviews h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+		font-weight: 800;
+	}
+
+	.reviews__subtitle {
+		margin: 0.45rem 0 0;
+		color: var(--color-muted);
+		font-size: 0.94rem;
+		line-height: 1.55;
+		max-width: 38rem;
+	}
+
+	.reviews__summary {
+		display: grid;
+		gap: 0.1rem;
+		text-align: right;
+		padding: 0.75rem 1rem;
+		border-radius: 0.85rem;
+		border: 1px solid rgba(168, 85, 247, 0.18);
+		background: rgba(26, 22, 38, 0.72);
+	}
+
+	.reviews__avg {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: 1.75rem;
+		font-weight: 800;
+		line-height: 1;
+		color: var(--color-orchid);
+	}
+
+	.reviews__avg-label,
+	.reviews__count {
+		margin: 0;
+		font-size: 0.78rem;
+		color: var(--color-faint);
+	}
+
+	.reviews__grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.85rem;
+	}
+
+	.reviews__card {
+		display: grid;
+		gap: 0.45rem;
+		padding: 1rem 1.05rem;
+		border-radius: 0.9rem;
+		border: 1px solid rgba(168, 85, 247, 0.14);
+		background: rgba(26, 22, 38, 0.72);
+	}
+
+	.reviews__card-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.reviews__handle {
+		margin: 0;
+		font-size: 0.88rem;
+		font-weight: 700;
+		color: var(--color-ink);
+	}
+
+	.reviews__stars {
+		margin: 0;
+		font-size: 0.82rem;
+		letter-spacing: 0.04em;
+		color: #fbbf24;
+		white-space: nowrap;
+	}
+
+	.reviews__tag {
+		margin: 0;
+		display: inline-flex;
+		align-self: start;
+		padding: 0.2rem 0.55rem;
+		border-radius: 999px;
+		border: 1px solid rgba(192, 132, 252, 0.22);
+		background: rgba(10, 6, 18, 0.45);
+		color: var(--color-orchid);
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	.reviews__text {
+		margin: 0;
+		color: #d4cae6;
+		font-size: 0.92rem;
+		line-height: 1.6;
+	}
+
+	.reviews__date {
+		margin: 0;
+		font-size: 0.75rem;
+		color: var(--color-faint);
+	}
+
+	@media (max-width: 820px) {
+		.reviews__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.reviews__summary {
+			text-align: left;
+			width: 100%;
+		}
+	}
+</style>
