@@ -415,7 +415,7 @@ const sources = [
 			{
 				h2: 'Next steps — pricing, setup, and cheats pages',
 				paragraphs: [
-					'Ready to buy? Start at <a href="/fortnite-hacks/">/fortnite-hacks/</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/fortnite-cheats-2026/">fortnite cheats 2026</a> and <a href="/blog/fortnite-cheats-buyers-guide/">cheats buyers guide</a>.',
+					'Ready to buy? Start at the <a href="/fortnite-hacks/">Fortnite hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/fortnite-cheats-2026/">fortnite cheats 2026</a> and <a href="/blog/fortnite-cheats-buyers-guide/">cheats buyers guide</a>.',
 					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
 				],
 			},
@@ -489,7 +489,7 @@ const sources = [
 			{
 				h2: 'Keyword map: cheats 2026 ↔ hacks',
 				paragraphs: [
-					'Use <a href="/fortnite-cheats-2026/">/fortnite-cheats-2026/</a> for cheats-year intent and <a href="/fortnite-hacks/">/fortnite-hacks/</a> for the primary hacks pillar. Both point to the same ESP + Aimbot + radar stack.',
+					'Use the <a href="/fortnite-cheats-2026/">Fortnite cheats 2026 guide</a> for cheats-year intent and the <a href="/fortnite-hacks/">Fortnite hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
 					'Also see <a href="/blog/fortnite-hacks-complete-guide-2026/">hacks guide</a> and <a href="/undetected-fortnite-cheats/">undetected status</a>.',
 				],
 			},
@@ -784,7 +784,7 @@ const sources = [
 			{
 				h2: 'Feature and pricing comparison table',
 				paragraphs: [
-					'<table><thead><tr><th></th><th>Fortnite Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes</a></td><td>Discord only</td></tr></tbody></table>',
+					'<table><thead><tr><th></th><th>Fortnite Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
 					'GhostWare is cheaper on sticker price. Fortnite Hacks includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
 					'Lifetime math: GhostWare $120 vs Fortnite Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
 				],

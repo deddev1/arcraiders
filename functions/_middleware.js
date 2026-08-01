@@ -12,7 +12,8 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.com',
 ]);
 
-// Keep in sync with public/_redirects. All targets are final canonical URLs — no chains/loops.
+// Keep in sync with public/_redirects (which preserves query strings by default, as we do below).
+// All targets are final canonical URLs — no chains/loops (no target is also a key).
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
 	'/fortnite-cheats': '/',
@@ -102,7 +103,9 @@ export async function onRequest(context) {
 	const needsHttpsRedirect = isProductionHost && proto === 'http';
 
 	if (needsHostRedirect || needsHttpsRedirect) {
-		const target = new URL(url.pathname + url.search, CANONICAL_ORIGIN);
+		// Map legacy paths here too so www/legacy-host + legacy-path resolves in ONE hop.
+		const mappedPath = PATH_REDIRECTS[url.pathname] ?? url.pathname;
+		const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
 		const headers = new Headers({
 			Location: target.toString(),
 			'Cache-Control': 'no-store',
@@ -116,7 +119,8 @@ export async function onRequest(context) {
 	const pathRedirect = PATH_REDIRECTS[url.pathname];
 	if (pathRedirect) {
 		const headers = new Headers({
-			Location: new URL(pathRedirect, CANONICAL_ORIGIN).toString(),
+			// Preserve query string, matching public/_redirects behavior.
+			Location: new URL(pathRedirect + url.search, CANONICAL_ORIGIN).toString(),
 			'Cache-Control': 'no-store',
 		});
 		applySecurityHeaders(headers);

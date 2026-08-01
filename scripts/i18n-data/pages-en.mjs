@@ -5,7 +5,7 @@ export const enPages = {
 	home: {
 		title: 'Fortnite Hacks 2026 | Undetected ESP & Aimbot',
 		description:
-			'Buy undetected Fortnite hacks for PC: ESP wallhack, radar, and Aimbot with EAC maintenance. Also covers fortnite cheats 2026 — compare plans and start today.',
+			'Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and maintenance updates for 2026.',
 		h1: 'Fortnite Hacks — Undetected ESP, Wallhack & Aimbot',
 		intro:
 			'Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.',

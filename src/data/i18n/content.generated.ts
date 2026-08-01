@@ -89,9 +89,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Undetected Fortnite hacks — ESP, wallhack, radar and Aimbot for Fortnite.",
 				},
 				images: {
-					hero: "Fortnite Fortnite cheats hero art with ESP and Aimbot",
+					hero: "Fortnite cheats hero art with ESP and Aimbot overlays",
 					espWallhack: "Fortnite cheats ESP wallhack player overlay on Battle Royale island",
-					aimbotCombat: "Fortnite Fortnite cheats Aimbot combat firefight",
+					aimbotCombat: "Fortnite Aimbot combat firefight preview",
 					squadFight: "Fortnite cheats squad fight preview for Aimbot targeting",
 					playerEsp: "Fortnite player ESP wallhack overlay for Fortnite",
 					headerArt: "Fortnite header art for Fortnite cheats pages",
@@ -104,7 +104,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			pages: {
 				home: {
 					title: "Fortnite Hacks 2026 | Undetected ESP & Aimbot",
-					description: "Buy undetected Fortnite hacks for PC: ESP wallhack, radar, and Aimbot with EAC maintenance. Also covers fortnite cheats 2026 — compare plans and start today.",
+					description: "Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and maintenance updates for 2026.",
 					h1: "Fortnite Hacks — Undetected ESP, Wallhack & Aimbot",
 					intro: "Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.",
 					imageAlt: "Fortnite hacks hero showing ESP wallhack and Aimbot overlays for undetected PC play",
@@ -3023,9 +3023,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Undetected ESP, Wallhack, Radar und Aimbot für Fortnite — Checkout über Zadeyo.",
 				},
 				images: {
-					hero: "Fortnite Fortnite Cheats Hero mit ESP und Aimbot",
+					hero: "Fortnite Cheats Hero mit ESP und Aimbot",
 					espWallhack: "Fortnite Cheats ESP Wallhack Player-Overlay auf Battle Royale island",
-					aimbotCombat: "Fortnite Fortnite Cheats Aimbot Gefecht",
+					aimbotCombat: "Fortnite Aimbot Gefecht Vorschau",
 					squadFight: "Fortnite Cheats Squad Fight Vorschau für Aimbot",
 					playerEsp: "Fortnite Player ESP Wallhack Overlay für Fortnite",
 					headerArt: "Fortnite Header-Art für Fortnite Cheats Seiten",
@@ -5849,9 +5849,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Undetected ESP, wallhack, radar en Aimbot voor Fortnite — checkout via Zadeyo.",
 				},
 				images: {
-					hero: "Fortnite Fortnite cheats hero met ESP en Aimbot",
+					hero: "Fortnite cheats hero met ESP en Aimbot",
 					espWallhack: "Fortnite cheats ESP wallhack overlay op Battle Royale island",
-					aimbotCombat: "Fortnite Fortnite cheats Aimbot gevecht",
+					aimbotCombat: "Fortnite Aimbot gevecht preview",
 					squadFight: "Fortnite cheats squad fight preview voor Aimbot",
 					playerEsp: "Fortnite player ESP wallhack overlay voor Fortnite",
 					headerArt: "Fortnite header art voor Fortnite Cheats pagina's",
@@ -13385,9 +13385,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Fortnite के लिए undetected ESP, wallhack, radar और Aimbot — Zadeyo checkout।",
 				},
 				images: {
-					hero: "ESP और Aimbot के साथ Fortnite Fortnite cheats hero art",
+					hero: "ESP और Aimbot के साथ Fortnite cheats hero art",
 					espWallhack: "Battle Royale island पर Fortnite cheats ESP wallhack ओवरले",
-					aimbotCombat: "Fortnite Fortnite cheats Aimbot combat",
+					aimbotCombat: "Fortnite Aimbot combat preview",
 					squadFight: "Fortnite cheats Aimbot squad fight preview",
 					playerEsp: "Fortnite के लिए Fortnite player ESP wallhack",
 					headerArt: "Fortnite Cheats पेज के लिए Fortnite header art",
@@ -19979,9 +19979,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Undetected ESP, wallhack, radar och Aimbot för Fortnite — checkout via Zadeyo.",
 				},
 				images: {
-					hero: "Fortnite Fortnite cheats hero med ESP och Aimbot",
+					hero: "Fortnite cheats hero med ESP och Aimbot",
 					espWallhack: "Fortnite cheats ESP wallhack overlay på Battle Royale island",
-					aimbotCombat: "Fortnite Fortnite cheats Aimbot strid",
+					aimbotCombat: "Fortnite Aimbot strid preview",
 					squadFight: "Fortnite cheats squad fight preview för Aimbot",
 					playerEsp: "Fortnite player ESP wallhack overlay för Fortnite",
 					headerArt: "Fortnite header art för Fortnite Cheats sidor",

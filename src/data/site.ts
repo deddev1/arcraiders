@@ -9,7 +9,7 @@ export const siteConfig = {
 	logoRaster: '/images/zadeyo-logo.png',
 	logoRasterWidth: 453,
 	logoRasterHeight: 551,
-	logoAlt: 'Zadeyo',
+	logoAlt: 'Fortnite Hacks logo',
 	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Ffortnite',
 	defaultOgImage: '/images/fortnite-cheats-cover.webp',
 } as const;
