@@ -17,14 +17,14 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
+// Only images NOT already shown in the hero or product card — the gallery must not
+// repeat visuals from earlier homepage sections.
 const galleryImages = [
-	{ src: fortniteImages.gallery[0].src, alt: ui.images.hero, featured: true },
-	{ src: fortniteImages.aimbotCombat, alt: ui.images.aimbotCombat },
-	{ src: fortniteImages.squadFight, alt: ui.images.squadFight },
-	{ src: fortniteImages.espWallhack, alt: ui.images.espWallhack },
+	{ src: fortniteImages.battleRoyaleCombat, alt: ui.images.battleRoyale, featured: true },
 	{ src: fortniteImages.rebootFight, alt: ui.images.rebootFight },
 	{ src: fortniteImages.playerEsp, alt: ui.images.playerEsp },
-	{ src: fortniteImages.battleRoyaleCombat, alt: ui.images.battleRoyale },
+	{ src: fortniteImages.cheatsPackage, alt: ui.images.cheatsPackage },
+	{ src: fortniteImages.battleRoyaleIsland, alt: ui.images.battleRoyaleIsland },
 ];
 
 const featured = galleryImages[0];

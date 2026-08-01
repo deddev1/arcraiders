@@ -31,7 +31,8 @@ async function resolveDistRoot() {
 const SITE = 'https://fortnitehack.net';
 
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
-const ENGLISH_PAGES = 25 + BLOG_PAGES;
+const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
+const ENGLISH_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
@@ -80,6 +81,17 @@ const ENGLISH_PATHS = [
 	'/blog/fortnite-aimbot-settings-guide/',
 	'/blog/fortnite-esp-wallhack-explained/',
 	'/blog/undetected-fortnite-hacks-eac/',
+	'/reviews/',
+	'/reviews/fortnite-soft-aim-review-xkrypt0/',
+	'/reviews/fortnite-esp-zero-build-review-buildsr4k/',
+	'/reviews/fortnite-cloud-dma-review-dma-wizard/',
+	'/reviews/fortnite-controller-soft-aim-review-ctrl-player99/',
+	'/reviews/fortnite-hack-setup-review-stormchaser07/',
+	'/reviews/fortnite-loot-esp-review-lootgoblinx/',
+	'/reviews/fortnite-soft-aim-ranked-review-rankedgrind42/',
+	'/reviews/fortnite-radar-hack-review-vanlifefn/',
+	'/reviews/fortnite-eac-update-review-patchdaymike/',
+	'/reviews/fortnite-sniper-soft-aim-review-snipezonly/',
 ];
 
 const LOCALE_CODES = [

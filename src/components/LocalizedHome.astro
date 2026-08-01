@@ -125,9 +125,6 @@ const extraGraph: Record<string, unknown>[] = [
 			subtitleShort={ui.hero.subtitleShort}
 		/>
 		<TrustBar locale={locale} />
-		<section class="site__section site__section--reviews">
-			<CustomerReviews locale={locale} />
-		</section>
 		<BreadcrumbBar
 			locale={locale}
 			items={[
@@ -167,6 +164,9 @@ const extraGraph: Record<string, unknown>[] = [
 				<Gallery locale={locale} />
 			</div>
 		</section>
+		<section class="site__section site__section--reviews">
+			<CustomerReviews locale={locale} />
+		</section>
 		<SiteFooter locale={locale} />
 	</main>
 </Layout>
@@ -178,7 +178,7 @@ const extraGraph: Record<string, unknown>[] = [
 
 	.site__section--reviews {
 		padding-top: 0.25rem;
-		padding-bottom: 0.5rem;
+		padding-bottom: 1.25rem;
 		content-visibility: auto;
 		contain-intrinsic-size: 1px 640px;
 	}
