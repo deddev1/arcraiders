@@ -46,6 +46,13 @@ const articleSchema = {
 	keywords: t.keywords.join(', '),
 	articleSection: post.category,
 };
+
+function localizeParagraphHtml(html: string): string {
+	return html.replace(/href="(\/[^"]+)"/g, (_, path: string) => {
+		if (path.startsWith('/blog')) return `href="${path}"`;
+		return `href="${path}"`;
+	});
+}
 ---
 
 <Layout
@@ -90,14 +97,15 @@ const articleSchema = {
 						{section.paragraphs.map((paragraph) => {
 							const isTip = paragraph.startsWith('Pro Tip');
 							const isTry = paragraph.startsWith('Try This Today');
+							const html = localizeParagraphHtml(paragraph);
 							if (isTip || isTry) {
 								return (
 									<aside class:list={['callout', { 'callout--tip': isTip, 'callout--try': isTry }]}>
-										<p>{paragraph}</p>
+										<p set:html={html} />
 									</aside>
 								);
 							}
-							return <p>{paragraph}</p>;
+							return <p set:html={html} />;
 						})}
 					</section>
 				))

@@ -123,7 +123,7 @@ const extraGraph: Record<string, unknown>[] = [
 								<div class="home-seo-block">
 									<h3>{section.h2}</h3>
 									{section.paragraphs.map((p) => (
-										<p>{p}</p>
+										<p set:html={p} />
 									))}
 								</div>
 							))

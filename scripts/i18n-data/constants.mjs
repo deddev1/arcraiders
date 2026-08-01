@@ -105,8 +105,25 @@ export function stripZadeyoFromMeta(text) {
 		.trim();
 }
 
-export function section(h2, p1, p2, list) {
-	const sec = { h2, paragraphs: [p1, p2] };
+/** Build a page section. Pass 2+ paragraph strings; optional trailing string[] becomes list. */
+export function section(h2, ...args) {
+	let list;
+	const paragraphs = [...args];
+	if (paragraphs.length && Array.isArray(paragraphs[paragraphs.length - 1])) {
+		list = paragraphs.pop();
+	}
+	if (paragraphs.length < 2) {
+		throw new Error(`section "${h2}" needs at least 2 paragraphs`);
+	}
+	const sec = { h2, paragraphs };
 	if (list?.length) sec.list = list;
 	return sec;
 }
+
+/** Authoritative external citation helpers (open in new tab). */
+export const EXT = {
+	epic: '<a href="https://www.epicgames.com/fortnite" target="_blank" rel="noopener noreferrer">Epic Games Fortnite</a>',
+	fortnite: '<a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Fortnite.com</a>',
+	status: '<a href="https://status.epicgames.com/" target="_blank" rel="noopener noreferrer">Epic Games Status</a>',
+	eac: '<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>',
+};
