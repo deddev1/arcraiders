@@ -117,7 +117,7 @@ Verify redirects:
 | Regenerate i18n content | `npm run generate:i18n` (after editing `scripts/i18n-data/*`) |
 | Regenerate blog posts | `node scripts/generate-blog-posts.mjs` |
 | Full build + SEO validation | `npm run build:validate` |
-| Refresh images from IGN | `npm run fetch:images` then `npm run optimize:images` |
+| Refresh gallery images | `npm run fetch:images` then `npm run optimize:images` |
 | Redeploy | Push to Git (auto) or `npm run pages:deploy` |
 
 ## Checklist

@@ -23,7 +23,7 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-Fetch fresh IGN Fortnite WebP images (optional):
+Fetch fresh Fortnite WebP images (optional):
 
 ```bash
 npm run fetch:images
@@ -65,7 +65,7 @@ Requires `wrangler` auth (`wrangler login`).
 | `src/pages/[lang]/` | Localized dynamic routes |
 | `scripts/generate-i18n-content.mjs` | Regenerate `content.generated.ts` |
 | `scripts/generate-blog-posts.mjs` | Regenerate blog posts |
-| `scripts/fetch-ign-fortnite-images.mjs` | IGN → WebP image pipeline |
+| `scripts/fetch-fortnite-images.mjs` | Fortnite WebP image pipeline |
 | `scripts/validate-sitemaps.mjs` | Post-build SEO validation |
 | `functions/_middleware.js` | www/legacy redirects, HTTPS, security headers |
 

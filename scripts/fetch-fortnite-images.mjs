@@ -2,36 +2,39 @@ import { mkdir, readdir, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-const IGN_PK = 'https://sm.ign.com/t/ign_za/photo/default';
-const IGN_BASE = 'https://sm.ign.com/t/ign_latam/photo/default';
-const IGN_GALLERY = 'https://sm.ign.com/t/ign_pk/gallery/f/fortnite-g';
+const CDN_A = 'https://sm.ign.com/t/ign_za/photo/default';
+const CDN_B = 'https://sm.ign.com/t/ign_latam/photo/default';
+const CDN_GALLERY = 'https://sm.ign.com/t/ign_pk/gallery/f/fortnite-g';
 const imagesDir = path.resolve('public/images');
 const publicDir = path.resolve('public');
 
 /**
- * Fortnite IGN gallery shots — filenames include primary SEO keywords
+ * Fortnite gallery shots — filenames include primary SEO keywords
  * (fortnite, cheats, esp, aimbot, wallhack, battle-royale, etc.)
  */
 const KEYWORD_ASSETS = [
-	{ file: 'fortnite-cheats-hero.webp', url: `${IGN_GALLERY}/fortnite-gameplay-screenshots-2024_s2qs.1400.jpg` },
-	{ file: 'fortnite-cheats-cover.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
-	{ file: 'fortnite-loadout-builder.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-b-1920x_8z8k.1400.jpg` },
-	{ file: 'fortnite-cheats-aimbot-combat.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
-	{ file: 'fortnite-squad-fight.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
-	{ file: 'fortnite-cheats-esp-wallhack.webp', url: `${IGN_BASE}/fortnite-battle-royale-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
+	{ file: 'fortnite-cheats-hero.webp', url: `${CDN_GALLERY}/fortnite-gameplay-screenshots-2024_s2qs.1400.jpg` },
+	{ file: 'fortnite-cheats-cover.webp', url: `${CDN_B}/fortnite-battle-royale-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
+	{ file: 'fortnite-loadout-builder.webp', url: `${CDN_B}/fortnite-battle-royale-chapter-5-season-1-screenshot-b-1920x_8z8k.1400.jpg` },
+	{ file: 'fortnite-cheats-aimbot-combat.webp', url: `${CDN_B}/fortnite-battle-royale-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
+	{ file: 'fortnite-squad-fight.webp', url: `${CDN_B}/fortnite-battle-royale-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
+	{ file: 'fortnite-cheats-esp-wallhack.webp', url: `${CDN_B}/fortnite-battle-royale-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
 	{ file: 'fortnite-cheats-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/fortnite-c/fortnite-chapter-5-underground-images_5h3j.1400.jpg' },
 	{ file: 'fortnite-header-art.webp', url: 'https://sm.ign.com/t/ign_in/screenshot/default/fortnite-unreal-engine-5-1-scree-3_bcxh.1400.jpg' },
-	{ file: 'fortnite-battle-royale-combat.webp', url: `${IGN_PK}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
-	{ file: 'fortnite-gulag-fight.webp', url: `${IGN_PK}/screenshot-6960-1725916496015_vbtg.1400.jpg` },
-	{ file: 'fortnite-operator-esp.webp', url: `${IGN_PK}/screenshot-6815-1725916496014_zkpv.1400.jpg` },
-	{ file: 'fortnite-verdansk-combat.webp', url: `${IGN_PK}/screenshot-6670-1725916496013_zv3w.1400.jpg` },
-	{ file: 'fortnite-resurgence-mode.webp', url: `${IGN_PK}/screenshot-6380-1725916496012_gj96.1400.jpg` },
-	{ file: 'fortnite-al-mazrah-map.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/fortnite-c/fortnite-chapter-5-underground-images_5h3j.1400.jpg' },
+	{ file: 'fortnite-battle-royale-combat.webp', url: `${CDN_A}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
+	{ file: 'fortnite-reboot-van-fight.webp', url: `${CDN_A}/screenshot-6960-1725916496015_vbtg.1400.jpg` },
+	{ file: 'fortnite-player-esp.webp', url: `${CDN_A}/screenshot-6815-1725916496014_zkpv.1400.jpg` },
+	{ file: 'fortnite-zero-build-combat.webp', url: `${CDN_A}/screenshot-6670-1725916496013_zv3w.1400.jpg` },
+	{ file: 'fortnite-zero-build-mode.webp', url: `${CDN_A}/screenshot-6380-1725916496012_gj96.1400.jpg` },
+	{ file: 'fortnite-battle-royale-island-map.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/fortnite-c/fortnite-chapter-5-underground-images_5h3j.1400.jpg' },
 ];
 
 const LEGACY_PATTERNS = [
-	/^call-of-duty-warzone-/,
-	/^warzone-/,
+	/^fortnite-gulag-fight/,
+	/^fortnite-operator-esp/,
+	/^fortnite-verdansk-combat/,
+	/^fortnite-resurgence-mode/,
+	/^fortnite-al-mazrah-map/,
 ];
 
 async function fetchWebp(url) {
@@ -84,7 +87,7 @@ await removeLegacyImages();
 let heroBuffer = null;
 
 for (const asset of KEYWORD_ASSETS) {
-	console.log(`Fetching ${asset.url}`);
+	console.log(`Fetching ${asset.file}`);
 	try {
 		const webp = await fetchWebp(asset.url);
 		const dest = path.join(imagesDir, asset.file);
@@ -98,7 +101,7 @@ for (const asset of KEYWORD_ASSETS) {
 
 if (heroBuffer) {
 	await generateBrandAssets(heroBuffer);
-	console.log('Generated keyword logo + favicons from IGN hero art.');
+	console.log('Generated keyword logo + favicons from hero art.');
 }
 
-console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named Fortnite images from IGN.`);
+console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named Fortnite images.`);

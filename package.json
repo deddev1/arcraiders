@@ -10,7 +10,7 @@
     "build": "astro build",
     "build:validate": "astro build && node scripts/validate-sitemaps.mjs",
     "optimize:images": "node scripts/optimize-responsive-images.mjs",
-    "fetch:images": "node scripts/fetch-ign-fortnite-images.mjs",
+    "fetch:images": "node scripts/fetch-fortnite-images.mjs",
     "preview": "astro preview",
     "validate:sitemaps": "node scripts/validate-sitemaps.mjs",
     "generate:i18n": "node scripts/generate-i18n-content.mjs",

@@ -3,7 +3,6 @@ import { siteConfig } from './site';
 /**
  * Keyword-named Fortnite assets for crawlable image SEO.
  * Filenames intentionally include primary search terms (esp, aimbot, wallhack, etc.).
- * Source: IGN Fortnite screenshot gallery.
  */
 export const fortniteImages = {
 	hero: '/images/fortnite-cheats-hero.webp',
@@ -16,11 +15,11 @@ export const fortniteImages = {
 	cheatsPackage: '/images/fortnite-cheats-package.webp',
 	headerArt: '/images/fortnite-header-art.webp',
 	battleRoyaleCombat: '/images/fortnite-battle-royale-combat.webp',
-	rebootFight: '/images/fortnite-gulag-fight.webp',
-	playerEsp: '/images/fortnite-operator-esp.webp',
-	zeroBuildCombat: '/images/fortnite-verdansk-combat.webp',
-	zeroBuildMode: '/images/fortnite-resurgence-mode.webp',
-	battleRoyaleIsland: '/images/fortnite-al-mazrah-map.webp',
+	rebootFight: '/images/fortnite-reboot-van-fight.webp',
+	playerEsp: '/images/fortnite-player-esp.webp',
+	zeroBuildCombat: '/images/fortnite-zero-build-combat.webp',
+	zeroBuildMode: '/images/fortnite-zero-build-mode.webp',
+	battleRoyaleIsland: '/images/fortnite-battle-royale-island-map.webp',
 	product: [
 		{
 			src: '/images/fortnite-cheats-aimbot-combat.webp',
@@ -66,11 +65,11 @@ export const fortniteImages = {
 			alt: 'Fortnite cheats ESP wallhack route preview on Battle Royale island',
 		},
 		{
-			src: '/images/fortnite-gulag-fight.webp',
+			src: '/images/fortnite-reboot-van-fight.webp',
 			alt: 'Fortnite reboot van fight preview for Fortnite cheats Aimbot',
 		},
 		{
-			src: '/images/fortnite-operator-esp.webp',
+			src: '/images/fortnite-player-esp.webp',
 			alt: 'Fortnite player ESP overlay for Fortnite cheats',
 		},
 		{
@@ -125,27 +124,27 @@ export const fortniteImages = {
 			caption: 'Fortnite BR combat preview for Fortnite cheats Aimbot',
 		},
 		{
-			src: '/images/fortnite-gulag-fight.webp',
+			src: '/images/fortnite-reboot-van-fight.webp',
 			title: 'Fortnite reboot van fight | Fortnite Cheats',
 			caption: 'Fortnite reboot van fight still for Fortnite cheats Aimbot',
 		},
 		{
-			src: '/images/fortnite-operator-esp.webp',
+			src: '/images/fortnite-player-esp.webp',
 			title: 'Fortnite player ESP | Fortnite Cheats wallhack',
 			caption: 'Fortnite player ESP overlay for Fortnite cheats',
 		},
 		{
-			src: '/images/fortnite-verdansk-combat.webp',
+			src: '/images/fortnite-zero-build-combat.webp',
 			title: 'Fortnite Zero Build combat | Fortnite Cheats',
 			caption: 'Zero Build combat preview for Fortnite cheats ESP and Aimbot',
 		},
 		{
-			src: '/images/fortnite-resurgence-mode.webp',
+			src: '/images/fortnite-zero-build-mode.webp',
 			title: 'Fortnite Zero Build mode | Fortnite Cheats',
 			caption: 'Fortnite Zero Build mode for Fortnite cheats packages',
 		},
 		{
-			src: '/images/fortnite-al-mazrah-map.webp',
+			src: '/images/fortnite-battle-royale-island-map.webp',
 			title: 'Fortnite Battle Royale island | Fortnite Cheats ESP',
 			caption: 'Battle Royale island overview for Fortnite cheats ESP wallhack routes',
 		},
