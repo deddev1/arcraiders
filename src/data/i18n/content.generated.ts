@@ -44,8 +44,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					buyNow: "Buy Now",
 				},
 				hero: {
-					accent: "Undetected Fortnite Hacks",
-					accentShort: "Fortnite Hacks",
+					accent: "Undetected ESP, Aimbot & Wallhack",
+					accentShort: "Undetected ESP & Aimbot",
 					subtitle: "ESP wallhack, radar hack and Aimbot for Fortnite on Windows PC — EAC maintenance included.",
 					subtitleShort: "ESP, radar & Aimbot for Fortnite PC",
 					buyNow: "Buy Now",
@@ -103,8 +103,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			},
 			pages: {
 				home: {
-					title: "Fortnite Hacks 2026 | Undetected ESP & Aimbot",
-					description: "Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and maintenance updates for 2026.",
+					title: "Fortnite Hacks 2026 | Undetected ESP, Aimbot & Wallhack",
+					description: "Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and anti-cheat maintenance updates for 2026.",
 					h1: "Fortnite Hacks — Undetected ESP, Wallhack & Aimbot",
 					intro: "Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.",
 					imageAlt: "Fortnite hacks hero showing ESP wallhack and Aimbot overlays for undetected PC play",

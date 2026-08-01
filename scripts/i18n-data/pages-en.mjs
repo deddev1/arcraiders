@@ -3,9 +3,9 @@ import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT }
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
 	home: {
-		title: 'Fortnite Hacks 2026 | Undetected ESP & Aimbot',
+		title: 'Fortnite Hacks 2026 | Undetected ESP, Aimbot & Wallhack',
 		description:
-			'Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and maintenance updates for 2026.',
+			'Undetected Fortnite hacks for PC with ESP, wallhack, radar and aimbot. Compare available plans, features and anti-cheat maintenance updates for 2026.',
 		h1: 'Fortnite Hacks — Undetected ESP, Wallhack & Aimbot',
 		intro:
 			'Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.',

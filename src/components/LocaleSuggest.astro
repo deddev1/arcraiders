@@ -1,6 +1,6 @@
 ---
 import { locales, defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { englishPaths, localizedSlugs, type PageId } from '../data/i18n/routing';
+import { localizedSlugs, type PageId } from '../data/i18n/routing';
 
 interface Props {
 	currentLocale: LocaleCode;
@@ -21,7 +21,9 @@ const localeList = JSON.stringify(
 		name: l.name,
 	})),
 );
-const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId });
+// Only ship the slug map for this page — the full map for all pages/locales
+// added ~20KB of inline JSON to every English page.
+const pageSlugs = JSON.stringify(localizedSlugs[pageId] ?? {});
 ---
 
 <div class="locale-suggest is-hidden" role="region" aria-label="Language suggestion" hidden>
@@ -29,7 +31,7 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 	<button type="button" class="locale-suggest__dismiss" aria-label="Dismiss">×</button>
 </div>
 
-<script define:vars={{ localeList, pathMap, defaultLocale, pageId }}>
+<script define:vars={{ localeList, pageSlugs, defaultLocale }}>
 	(function () {
 		const run = () => {
 			const bar = document.querySelector('.locale-suggest');
@@ -41,11 +43,10 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 			if (!bar || sessionStorage.getItem(storageKey)) return;
 
 			const locales = JSON.parse(localeList);
-			const { en: englishPaths, slugs: localizedSlugs } = JSON.parse(pathMap);
+			const slugs = JSON.parse(pageSlugs);
 
-			function getLocalizedPath(id, locale) {
-				if (locale === defaultLocale) return englishPaths[id];
-				const slug = localizedSlugs[id]?.[locale];
+			function getLocalizedPath(locale) {
+				const slug = slugs[locale];
 				return slug ? `/${locale}/${slug}/` : `/${locale}/`;
 			}
 
@@ -67,7 +68,7 @@ const pathMap = JSON.stringify({ en: englishPaths, slugs: localizedSlugs, pageId
 			const target = locales.find((l) => l.code === preferred);
 			if (!target || !textEl) return;
 
-			const href = getLocalizedPath(pageId, preferred);
+			const href = getLocalizedPath(preferred);
 			textEl.innerHTML = `${target.nativeName} (${target.region}) — <a href="${href}">${target.name} version</a>`;
 			bar.hidden = false;
 			bar.classList.remove('is-hidden');

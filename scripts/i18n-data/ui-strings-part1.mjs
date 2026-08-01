@@ -3,7 +3,7 @@
 export const uiStrings = {
 	en: {
 		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', buyNow: 'Buy Now' },
-		hero: { accent: 'Undetected Fortnite Hacks', accentShort: 'Fortnite Hacks', subtitle: 'ESP wallhack, radar hack and Aimbot for Fortnite on Windows PC — EAC maintenance included.', subtitleShort: 'ESP, radar & Aimbot for Fortnite PC', buyNow: 'Buy Now', seeFeatures: 'See Features' },
+		hero: { accent: 'Undetected ESP, Aimbot & Wallhack', accentShort: 'Undetected ESP & Aimbot', subtitle: 'ESP wallhack, radar hack and Aimbot for Fortnite on Windows PC — EAC maintenance included.', subtitleShort: 'ESP, radar & Aimbot for Fortnite PC', buyNow: 'Buy Now', seeFeatures: 'See Features' },
 		trust: { status: 'Online', statusNote: 'Fortnite Hacks package is live for Fortnite on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'EAC maintenance supported', antiCheatShort: 'Easy Anti-Cheat (EAC) supported' },
 		product: { title: 'Fortnite Hacks', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Fortnite', platformBadge: 'Windows PC', statusBadge: 'Undetected package' },
 		reviews: { title: 'What players say', subtitle: 'Recent feedback from Fortnite Hacks buyers', outOf: 'out of 5', countLabel: 'reviews' },
