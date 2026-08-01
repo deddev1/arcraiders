@@ -100,7 +100,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Fortnite Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Fortnite Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }

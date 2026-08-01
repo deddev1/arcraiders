@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['Ricochet Bypass', 'EAC Bypass'],
 	['Ricochet', 'Easy Anti-Cheat (EAC)'],
 	['ricochet', 'eac'],
-	['support@warzonescheats.net', 'support@fortnitecheats.xyz'],
+	['support@warzonescheats.net', 'support@fortnitehack.net'],
 	['Verdansk, Urzikstan, and Rebirth Island', 'Battle Royale island, Zero Build, and competitive lobbies'],
 	['Verdansk, Urzikstan and Rebirth Island', 'Battle Royale island, Zero Build and competitive lobbies'],
 	['gulag fights', 'reboot van rotations'],

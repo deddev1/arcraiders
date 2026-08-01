@@ -37,11 +37,11 @@ const REMOVE_PAGE_IDS = [
 
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
-	['warzonescheats.net', 'fortnitecheats.xyz'],
-	['warzonecheats.net', 'fortnitecheats.xyz'],
-	['warzonecheats.com', 'fortnitecheats.xyz'],
-	['warzonescheats.com', 'fortnitecheats.xyz'],
-	['support@warzonescheats.net', 'support@fortnitecheats.xyz'],
+	['warzonescheats.net', 'fortnitehack.net'],
+	['warzonecheats.net', 'fortnitehack.net'],
+	['warzonecheats.com', 'fortnitehack.net'],
+	['warzonescheats.com', 'fortnitehack.net'],
+	['support@warzonescheats.net', 'support@fortnitehack.net'],
 	['/products/warzone', '/products/fortnite'],
 	['warzone-esp-wallhack', 'fortnite-esp-wallhack'],
 	['warzone-esp-hack', 'fortnite-esp'],
@@ -101,7 +101,7 @@ const REPLACEMENTS = [
 	['warzonescheats', 'fortnitecheats'],
 	['project-name=warzonescheats', 'project-name=fortnitecheats'],
 	['name = "warzonescheats"', 'name = "fortnitecheats"'],
-	['https://warzonescheats.net', 'https://fortnitecheats.xyz'],
+	['https://warzonescheats.net', 'https://fortnitehack.net'],
 ];
 
 const TEXT_EXTENSIONS = new Set([

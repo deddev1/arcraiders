@@ -3,11 +3,11 @@
 export const uiStrings = {
 	en: {
 		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', buyNow: 'Buy Now' },
-		hero: { accent: 'Undetected Fortnite Cheats', accentShort: 'Fortnite Cheats', subtitle: 'ESP wallhack, radar hack and Aimbot for Fortnite on Windows PC — EAC maintenance included.', subtitleShort: 'ESP, radar & Aimbot for Fortnite PC', buyNow: 'Buy Now', seeFeatures: 'See Features' },
-		trust: { status: 'Online', statusNote: 'Fortnite Cheats package is live for Fortnite on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'EAC maintenance supported', antiCheatShort: 'Easy Anti-Cheat (EAC) supported' },
-		product: { title: 'Fortnite Cheats', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Fortnite', platformBadge: 'Windows PC', statusBadge: 'Undetected package' },
+		hero: { accent: 'Undetected Fortnite Hacks', accentShort: 'Fortnite Hacks', subtitle: 'ESP wallhack, radar hack and Aimbot for Fortnite on Windows PC — EAC maintenance included.', subtitleShort: 'ESP, radar & Aimbot for Fortnite PC', buyNow: 'Buy Now', seeFeatures: 'See Features' },
+		trust: { status: 'Online', statusNote: 'Fortnite Hacks package is live for Fortnite on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'EAC maintenance supported', antiCheatShort: 'Easy Anti-Cheat (EAC) supported' },
+		product: { title: 'Fortnite Hacks', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Fortnite', platformBadge: 'Windows PC', statusBadge: 'Undetected package' },
 		common: { buyNow: 'Buy Now', readGuide: 'Read guide', language: 'Language', officialLanguageNote: 'English is the official language. Other locales are translated for global SEO.', relatedPages: 'Related pages' },
-		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'Undetected ESP, wallhack, radar and Aimbot for Fortnite — checkout via Zadeyo.' },
+		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'Undetected Fortnite hacks — ESP, wallhack, radar and Aimbot for Fortnite.' },
 		images: { hero: 'Fortnite Fortnite cheats hero art with ESP and Aimbot', espWallhack: 'Fortnite cheats ESP wallhack player overlay on Battle Royale island', aimbotCombat: 'Fortnite Fortnite cheats Aimbot combat firefight', squadFight: 'Fortnite cheats squad fight preview for Aimbot targeting', playerEsp: 'Fortnite player ESP wallhack overlay for Fortnite', headerArt: 'Fortnite header art for Fortnite cheats pages', cheatsPackage: 'Fortnite cheats package with ESP wallhack and Aimbot', rebootFight: 'Fortnite reboot van fight for Fortnite cheats Aimbot', battleRoyale: 'Fortnite battle royale combat for undetected cheats', battleRoyaleIsland: 'Battle Royale island map overview for Fortnite ESP wallhack routes' },
 	},
 	es: {

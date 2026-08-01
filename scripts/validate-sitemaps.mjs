@@ -28,9 +28,9 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://fortnitecheats.xyz';
+const SITE = 'https://fortnitehack.net';
 
-const BLOG_PAGES = 9; // /blog/ index + 8 posts
+const BLOG_PAGES = 15; // /blog/ index + 14 posts
 const ENGLISH_PAGES = 25 + BLOG_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
@@ -74,6 +74,12 @@ const ENGLISH_PATHS = [
 	'/blog/bugha-settings-pro-setup/',
 	'/blog/creative-warmup-maps-pros-use/',
 	'/blog/patch-notes-buffs-nerfs-vaults/',
+	'/blog/fortnite-hacks-complete-guide-2026/',
+	'/blog/fortnite-cheats-buyers-guide/',
+	'/blog/fortnite-cheats-2026-whats-new/',
+	'/blog/fortnite-aimbot-settings-guide/',
+	'/blog/fortnite-esp-wallhack-explained/',
+	'/blog/undetected-fortnite-hacks-eac/',
 ];
 
 const LOCALE_CODES = [

@@ -1,11 +1,11 @@
-# Deploy fortnitecheats.xyz
+# Deploy fortnitehack.net
 
-Step-by-step guide to deploy the Fortnite Cheats static site to **fortnitecheats.xyz** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Fortnite Hacks static site to **fortnitehack.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **fortnitecheats.xyz** DNS
+- Cloudflare account with access to **fortnitehack.net** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -14,12 +14,14 @@ From the project root:
 
 ```bash
 npm install
+npm run generate:i18n
+node scripts/generate-blog-posts.mjs
 npm run build:validate
 ```
 
 `build:validate` runs `astro build` then `scripts/validate-sitemaps.mjs`. All sitemap checks must pass before deploying.
 
-Expected output: **550** indexable HTML pages (25 English + 21 locales × 25 pages each).
+Expected output: **556** indexable HTML pages (25 English marketing + 15 blog URLs + 21 locales × 25 pages each).
 
 ## 2. Cloudflare Pages project
 
@@ -28,8 +30,8 @@ Expected output: **550** indexable HTML pages (25 English + 21 locales × 25 pag
 1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
 2. Select this repository.
 3. Configure build settings:
-   - **Project name:** `fortnitecheats`
-   - **Production branch:** `master` (or your default branch)
+   - **Project name:** `fortnitecheats` (existing) or create a new project
+   - **Production branch:** `main` (or `master`)
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Node.js version:** 22 (set via environment variable `NODE_VERSION=22` if needed)
@@ -46,9 +48,9 @@ This runs `wrangler pages deploy dist --project-name=fortnitecheats` (see `wrang
 
 ## 3. Custom domain and DNS
 
-Add **fortnitecheats.xyz** as the primary custom domain on the Pages project.
+Add **fortnitehack.net** as the primary custom domain on the Pages project.
 
-### Apex (fortnitecheats.xyz)
+### Apex (fortnitehack.net)
 
 In **Cloudflare DNS** for the zone:
 
@@ -62,11 +64,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.fortnitecheats.xyz/*`
-   - **Target:** `https://fortnitecheats.xyz/${1}`
+   - **Source:** `www.fortnitehack.net/*`
+   - **Target:** `https://fortnitehack.net/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`fortnitecheats.xyz`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -78,30 +80,33 @@ The deployed `functions/_middleware.js` also enforces apex canonical host and le
 
 Verify these URLs return **200** with correct content:
 
-- `https://fortnitecheats.xyz/`
-- `https://fortnitecheats.xyz/es/`
-- `https://fortnitecheats.xyz/fortnite-aimbot/`
-- `https://fortnitecheats.xyz/sitemap-index.xml`
-- `https://fortnitecheats.xyz/robots.txt`
+- `https://fortnitehack.net/`
+- `https://fortnitehack.net/es/`
+- `https://fortnitehack.net/fortnite-hacks/`
+- `https://fortnitehack.net/fortnite-aimbot/`
+- `https://fortnitehack.net/sitemap-index.xml`
+- `https://fortnitehack.net/robots.txt`
 
 Verify redirects:
 
-- `http://fortnitecheats.xyz` → `https://fortnitecheats.xyz` (301)
-- `https://www.fortnitecheats.xyz` → `https://fortnitecheats.xyz` (301)
+- `http://fortnitehack.net` → `https://fortnitehack.net` (301)
+- `https://www.fortnitehack.net` → `https://fortnitehack.net` (301)
+- `https://fortnitecheats.xyz` → `https://fortnitehack.net` (301)
 - Legacy paths (e.g. `/warzone-aimbot/`) → Fortnite equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `fortnitecheats.xyz`.
+2. **Add property** → choose **Domain** → enter `fortnitehack.net`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://fortnitecheats.xyz/sitemap-index.xml
+   https://fortnitehack.net/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
-   - Key landing pages (`/fortnite-aimbot/`, `/fortnite-esp/`, `/best-fortnite-cheats/`, etc.)
+   - Pillar page (`/fortnite-hacks/`)
+   - Key landing pages (`/fortnite-aimbot/`, `/fortnite-esp/`, `/fortnite-cheats-2026/`, etc.)
    - A sample of locale homepages (`/es/`, `/de/`, `/fr/`)
 6. Monitor **Pages** (Coverage), **Core Web Vitals**, and **International targeting** (hreflang) over the following weeks.
 
@@ -110,6 +115,7 @@ Verify redirects:
 | Task | Command / action |
 |------|------------------|
 | Regenerate i18n content | `npm run generate:i18n` (after editing `scripts/i18n-data/*`) |
+| Regenerate blog posts | `node scripts/generate-blog-posts.mjs` |
 | Full build + SEO validation | `npm run build:validate` |
 | Refresh images from IGN | `npm run fetch:images` then `npm run optimize:images` |
 | Redeploy | Push to Git (auto) or `npm run pages:deploy` |
@@ -117,11 +123,12 @@ Verify redirects:
 ## Checklist
 
 - [ ] `npm run build:validate` passes locally
-- [ ] Cloudflare Pages project `fortnitecheats` created
-- [ ] Custom domain `fortnitecheats.xyz` attached and active
+- [ ] Cloudflare Pages project attached to this repo
+- [ ] Custom domain `fortnitehack.net` attached and active
 - [ ] `www` redirects to apex
+- [ ] Legacy domains 301 to `fortnitehack.net`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://fortnitecheats.xyz`
+- [ ] `robots.txt` and sitemaps serve from `https://fortnitehack.net`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
-- [ ] Homepage and key pages requested for indexing
+- [ ] Homepage and `/fortnite-hacks/` requested for indexing

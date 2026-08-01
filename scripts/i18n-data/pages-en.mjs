@@ -3,28 +3,28 @@ import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT }
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
 	home: {
-		title: 'Fortnite Cheats 2026 | Undetected ESP & Aimbot',
+		title: 'Fortnite Hacks 2026 | Undetected ESP & Aimbot',
 		description:
-			'Buy undetected Fortnite cheats for PC: ESP wallhack, radar hack, and Aimbot with EAC maintenance. Instant delivery — compare plans and start today.',
-		h1: 'Fortnite Cheats — Undetected ESP, Wallhack & Aimbot',
+			'Buy undetected Fortnite hacks for PC: ESP wallhack, radar, and Aimbot with EAC maintenance. Also covers fortnite cheats 2026 — compare plans and start today.',
+		h1: 'Fortnite Hacks — Undetected ESP, Wallhack & Aimbot',
 		intro:
-			'Fortnite Cheats is an undetected Windows PC package for Fortnite. ESP wallhack, 2D radar-style awareness, and Aimbot controls — with EAC maintenance after every major patch.',
-		imageAlt: 'Fortnite cheats hero showing ESP wallhack and Aimbot overlays for undetected PC play',
-		galleryTitle: 'Fortnite Cheats gallery — ESP, Aimbot and wallhack visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+			'Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.',
+		imageAlt: 'Fortnite hacks hero showing ESP wallhack and Aimbot overlays for undetected PC play',
+		galleryTitle: 'Fortnite Hacks gallery — ESP, Aimbot and wallhack visuals',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'See all features',
 		ctaSecondaryHref: '/features/',
 		sections: [
 			section(
-				'Why players choose Fortnite Cheats in 2026',
-				'Fortnite rewards map awareness. Fortnite Cheats combines ESP wallhack for enemy players and loot, radar-style threat cues, and configurable Aimbot so you can read fights before committing — on Battle Royale, Zero Build, and competitive lobbies.',
+				'Why players choose Fortnite hacks in 2026',
+				'Fortnite rewards map awareness. Fortnite Hacks combines ESP wallhack for enemy players and loot, radar-style threat cues, and configurable Aimbot so you can read fights before committing — on Battle Royale, Zero Build, and competitive lobbies.',
 				`Official seasons, patches, and anti-cheat updates come from ${EXT.epic} and ${EXT.eac}. We rebuild ESP, radar, and Aimbot modules when those patches require maintenance — then post status on the <a href="/updates/">Updates page</a>.`,
 				'Licenses ship digitally after payment confirmation. Monthly ($35) and lifetime ($150) plans include EAC maintenance rebuilds when anti-cheat or game patches require updates.',
-				'Start with the <a href="/fortnite-esp/">ESP guide</a>, <a href="/fortnite-aimbot/">Aimbot controls</a>, and <a href="/undetected-fortnite-cheats/">undetected status</a> pages if you are comparing tools before checkout.',
+				'Start with the <a href="/fortnite-hacks/">Fortnite hacks pillar</a>, <a href="/fortnite-esp/">ESP guide</a>, <a href="/fortnite-aimbot/">Aimbot controls</a>, and <a href="/undetected-fortnite-cheats/">undetected status</a> pages if you are comparing tools before checkout.',
 			),
 			section(
 				'ESP wallhack, radar hack, and Aimbot in one license',
-				'Instead of stacking separate tools, Fortnite Cheats bundles player ESP wallhack, loot markers, 2D radar overlays, and Aimbot profiles in one undetected package built for BR and Zero Build.',
+				'Instead of stacking separate tools, Fortnite Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and Aimbot profiles in one undetected package built for BR and Zero Build — covering both fortnite hacks and fortnite cheats search intent.',
 				'Browse the <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, <a href="/fortnite-wallhack/">wallhack</a>, and <a href="/fortnite-radar-hack/">radar</a> pages for control details — or jump to <a href="/pricing/">Pricing</a> for monthly and lifetime options.',
 				`Before patch days, check ${EXT.status} for Epic service health, then confirm our maintenance notes so you are not queueing on an outdated build.`,
 				'Ready to buy? Open <a href="/pricing/">Pricing</a>, follow <a href="/setup/">Setup</a> after delivery, and keep <a href="/faq/">FAQ</a> / <a href="/support/">Support</a> bookmarked for license questions.',
@@ -32,15 +32,15 @@ export const enPages = {
 		],
 	},
 	'fortnite-esp': {
-		title: 'Fortnite ESP 2026 | Undetected Player Wallhack',
+		title: 'Fortnite ESP 2026 | Player Boxes & Wallhack',
 		description:
-			'Fortnite ESP wallhack for PC: player outlines, loot markers, distance readouts. Undetected package with EAC maintenance — see overlays and buy now.',
-		h1: 'Fortnite ESP — Undetected Wallhack for Fortnite',
+			'Fortnite ESP for PC and controllers — player boxes, loot markers, and distance readouts. Part of our undetected fortnite hacks with cloud DMA support.',
+		h1: 'Fortnite ESP — Player Boxes & Wallhack',
 		intro:
 			'Visibility tools for Fortnite. Read enemy squads, vehicles, loot, chests, and distance before you commit to a fight — with toggleable ESP wallhack overlays for BR and Zero Build.',
 		imageAlt: 'Fortnite ESP wallhack overlay showing enemy players and loot markers through walls',
 		galleryTitle: 'Fortnite ESP overlay visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Fortnite wallhack guide',
 		ctaSecondaryHref: '/fortnite-wallhack/',
 		sections: [
@@ -77,15 +77,15 @@ export const enPages = {
 		],
 	},
 	'fortnite-aimbot': {
-		title: 'Fortnite Aimbot 2026 | Smooth Undetected Assist',
+		title: 'Fortnite Aimbot 2026 | Soft Aim for PC & Controllers',
 		description:
-			'Fortnite Aimbot for Windows PC: smoothness, FOV, bone priority, and hotkeys. Undetected with EAC maintenance — configure profiles and buy today.',
-		h1: 'Fortnite Aimbot — Undetected Aim Assist Controls',
+			'Fortnite aimbot with soft aim tuning for PC and controllers. FOV, bone priority, and hotkeys bundled with ESP boxes in our fortnite hacks package.',
+		h1: 'Fortnite Aimbot — Soft Aim for PC & Controllers',
 		intro:
 			'Configurable Aimbot tools for Fortnite firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Fortnite Aimbot combat preview with smooth aim assist on Windows PC',
 		galleryTitle: 'Fortnite Aimbot combat previews',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'See ESP wallhack',
 		ctaSecondaryHref: '/fortnite-esp/',
 		sections: [
@@ -122,15 +122,15 @@ export const enPages = {
 		],
 	},
 	features: {
-		title: 'Fortnite Cheats Features | ESP, Radar, Aimbot',
+		title: 'Fortnite Hacks Features | ESP, Soft Aim, Cloud DMA',
 		description:
-			'Full Fortnite Cheats feature list: ESP wallhack, radar hack, Aimbot, loot markers, and toggles. Undetected Windows PC package — review controls now.',
-		h1: 'Fortnite Cheats Features — Full Control List',
+			'Full fortnite hacks feature list: ESP boxes, soft aim, radar, cloud DMA, and toggles for PC and controllers. Review controls before checkout.',
+		h1: 'Fortnite Hacks Features — Full Control List',
 		intro:
 			'Every ESP wallhack, radar hack, and Aimbot control included in the Fortnite Cheats package for Fortnite on Windows PC — with EAC maintenance after major patches.',
 		imageAlt: 'Fortnite Cheats feature package showing ESP wallhack and Aimbot controls',
 		galleryTitle: 'Fortnite Cheats feature gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'View pricing',
 		ctaSecondaryHref: '/pricing/',
 		sections: [
@@ -149,21 +149,21 @@ export const enPages = {
 			section(
 				'Licensing, delivery, and EAC maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery. EAC maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
-				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@fortnitecheats.xyz.`,
+				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@fortnitehack.net.`,
 				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/undetected-fortnite-cheats/">how undetected maintenance works</a>.',
 			),
 		],
 	},
 	pricing: {
-		title: 'Fortnite Cheats Pricing | $35/mo or $150 Life',
+		title: 'Fortnite Hacks Pricing | $35/mo or $150 Life',
 		description:
-			'Fortnite Cheats pricing: $35/month or $150 lifetime for undetected ESP, radar, and Aimbot. Instant PC delivery — pick a plan and checkout now.',
-		h1: 'Fortnite Cheats Pricing — Monthly & Lifetime',
+			'Fortnite hacks pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and cloud DMA on PC and controllers. Instant delivery — pick a plan.',
+		h1: 'Fortnite Hacks Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Fortnite Cheats — ESP wallhack, radar hack, and Aimbot for Fortnite on Windows PC. Instant digital delivery after payment.',
 		imageAlt: 'Fortnite Cheats pricing options for monthly and lifetime ESP Aimbot licenses',
 		galleryTitle: 'Fortnite Cheats package visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Read setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -188,15 +188,15 @@ export const enPages = {
 		],
 	},
 	setup: {
-		title: 'Fortnite Cheats Setup | Windows PC Install Guide',
+		title: 'Fortnite Hacks Setup | PC & Controller Guide',
 		description:
-			'Fortnite Cheats setup on Windows PC: activate your license, load ESP and Aimbot profiles, and check EAC updates before queueing. Start here after buy.',
-		h1: 'Fortnite Cheats Setup — Windows PC Guide',
+			'Set up fortnite hacks on PC and controllers — activate ESP boxes, soft aim profiles, and cloud DMA. Check EAC updates before your first queue.',
+		h1: 'Fortnite Hacks Setup — PC & Controller Guide',
 		intro:
 			'Install and configure Fortnite Cheats for Fortnite on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify EAC maintenance status before queueing.',
 		imageAlt: 'Fortnite Cheats setup guide for Windows PC license activation',
 		galleryTitle: 'Fortnite Cheats setup visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Contact support',
 		ctaSecondaryHref: '/support/',
 		sections: [
@@ -221,15 +221,15 @@ export const enPages = {
 		],
 	},
 	updates: {
-		title: 'Fortnite Cheats Updates | EAC Maintenance Log',
+		title: 'Fortnite Hacks Updates | EAC Maintenance Log',
 		description:
-			'Fortnite Cheats update log: EAC maintenance, ESP wallhack rebuilds, and Aimbot notes for Windows PC. Check status before you queue after patches.',
-		h1: 'Fortnite Cheats Updates — Maintenance Log',
+			'Fortnite hacks update log: EAC rebuilds for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before queueing after patches.',
+		h1: 'Fortnite Hacks Updates — Maintenance Log',
 		intro:
 			'Track EAC maintenance and Fortnite patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
 		imageAlt: 'Fortnite Cheats updates and EAC maintenance log header',
 		galleryTitle: 'Fortnite patch and maintenance visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Undetected status guide',
 		ctaSecondaryHref: '/undetected-fortnite-cheats/',
 		sections: [
@@ -254,15 +254,15 @@ export const enPages = {
 		],
 	},
 	faq: {
-		title: 'Fortnite Cheats FAQ | ESP, Aimbot & EAC Answers',
+		title: 'Fortnite Hacks FAQ | ESP, Soft Aim & EAC Answers',
 		description:
-			'Fortnite Cheats FAQ: undetected ESP wallhack, Aimbot, radar hack, EAC maintenance, pricing, and Windows PC requirements. Get clear answers fast.',
-		h1: 'Fortnite Cheats FAQ — Common Questions',
+			'Fortnite hacks FAQ: ESP boxes, soft aim, cloud DMA, controller support, EAC maintenance, and pricing for PC. Clear answers before you buy.',
+		h1: 'Fortnite Hacks FAQ — Common Questions',
 		intro:
 			'Answers about undetected Fortnite Cheats — ESP wallhack, radar hack, Aimbot, EAC maintenance, checkout, and Fortnite compatibility on Windows PC.',
 		imageAlt: 'Fortnite Cheats FAQ covering ESP Aimbot and EAC questions',
 		galleryTitle: 'Fortnite Cheats FAQ visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Contact support',
 		ctaSecondaryHref: '/support/',
 		sections: [
@@ -281,16 +281,16 @@ export const enPages = {
 			section(
 				'Delivery, pricing, and support',
 				'Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href="/pricing/">Pricing</a>.',
-				'Contact support@fortnitecheats.xyz or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
+				'Contact support@fortnitehack.net or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
 				'Refund eligibility is covered in the <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
 	},
 	support: {
-		title: 'Fortnite Cheats Support | Help & Contact',
+		title: 'Fortnite Hacks Support | Help & Contact',
 		description:
-			'Contact Fortnite Cheats support for licenses, setup, billing, ESP/Aimbot profiles, and EAC maintenance on Windows PC. Include your order ID.',
-		h1: 'Fortnite Cheats Support — Contact Us',
+			'Contact fortnite hacks support for licenses, ESP setup, soft aim profiles, and cloud DMA on PC and controllers. Include your order ID for faster help.',
+		h1: 'Fortnite Hacks Support — Contact Us',
 		intro:
 			'Get help with Fortnite Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and EAC maintenance for Fortnite on Windows PC.',
 		imageAlt: 'Fortnite Cheats support and contact help for license issues',
@@ -314,21 +314,21 @@ export const enPages = {
 			section(
 				'Self-service resources',
 				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href="/eac-bypass-fortnite/">Easy Anti-Cheat page</a>.',
-				'Email: support@fortnitecheats.xyz',
+				'Email: support@fortnitehack.net',
 				'Ready to purchase or renew? Open <a href="/pricing/">Pricing</a>. Need feature detail first? See <a href="/features/">Features</a>.',
 			),
 		],
 	},
 	undetected: {
-		title: 'Undetected Fortnite Cheats 2026 | EAC Safe',
+		title: 'Undetected Fortnite Hacks 2026 | EAC Safe',
 		description:
-			'Undetected Fortnite cheats with EAC maintenance: ESP wallhack, radar, and Aimbot rebuilds for Windows PC. Learn status checks — then buy safely.',
-		h1: 'Undetected Fortnite Cheats — EAC Maintenance',
+			'Undetected fortnite hacks with EAC maintenance for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before you queue.',
+		h1: 'Undetected Fortnite Hacks — EAC Maintenance',
 		intro:
 			'How Fortnite Cheats stays maintained for Fortnite after Easy Anti-Cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
 		imageAlt: 'Undetected Fortnite cheats status with ESP wallhack for Battle Royale',
 		galleryTitle: 'Undetected Fortnite Cheats visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'EAC bypass guide',
 		ctaSecondaryHref: '/eac-bypass-fortnite/',
 		sections: [
@@ -353,15 +353,15 @@ export const enPages = {
 		],
 	},
 	wallhack: {
-		title: 'Fortnite Wallhack 2026 | ESP Visibility Guide',
+		title: 'Fortnite Wallhack 2026 | ESP Boxes & Visibility',
 		description:
-			'Fortnite wallhack ESP for PC: player outlines, loot markers, vehicle cues. Undetected with EAC maintenance — learn overlays and get started.',
-		h1: 'Fortnite Wallhack — ESP Visibility Guide',
+			'Fortnite wallhack ESP with player boxes and loot markers for PC and controllers. Undetected fortnite cheats with cloud DMA — learn overlays and buy.',
+		h1: 'Fortnite Wallhack — ESP Boxes & Visibility',
 		intro:
 			'Fortnite wallhack ESP for Fortnite — see players, loot, vehicles, and chests through toggleable wallhack overlays built for BR and Zero Build.',
 		imageAlt: 'Fortnite wallhack ESP preview with player visibility through terrain',
 		galleryTitle: 'Fortnite wallhack ESP gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Fortnite ESP page',
 		ctaSecondaryHref: '/fortnite-esp/',
 		sections: [
@@ -388,13 +388,13 @@ export const enPages = {
 	radar: {
 		title: 'Fortnite Radar Hack 2026 | 2D Threat Overlay',
 		description:
-			'Fortnite radar hack for PC: 2D overlay, directional cues, configurable range. Bundled with ESP and Aimbot — see how it works, then buy today.',
+			'Fortnite radar hack for flank awareness on PC and controllers. Bundled with ESP boxes, soft aim, and cloud DMA in our fortnite hacks package.',
 		h1: 'Fortnite Radar Hack — 2D Threat Awareness',
 		intro:
 			'2D radar-style overlay for Fortnite — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
 		imageAlt: 'Fortnite radar hack 2D threat overlay showing nearby player directions',
 		galleryTitle: 'Fortnite radar hack visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'See ESP wallhack',
 		ctaSecondaryHref: '/fortnite-esp/',
 		sections: [
@@ -419,15 +419,15 @@ export const enPages = {
 		],
 	},
 	'eac-bypass': {
-		title: 'EAC Bypass Fortnite | Cheat Maintenance Guide',
+		title: 'EAC Bypass Fortnite | Hack Maintenance Guide',
 		description:
-			'EAC bypass explained for Fortnite Cheats: how ESP, radar, and Aimbot rebuild after anti-cheat patches on Windows PC. Check status before queueing.',
-		h1: 'EAC Bypass — Fortnite Cheats Maintenance',
+			'How fortnite hacks rebuild after EAC patches — ESP boxes, soft aim, and cloud DMA maintenance for PC and controllers. Read before queueing.',
+		h1: 'EAC Bypass — Fortnite Hacks Maintenance',
 		intro:
 			'Understand Easy Anti-Cheat maintenance for Fortnite Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Fortnite security updates.',
 		imageAlt: 'EAC bypass Fortnite maintenance guide for ESP and Aimbot rebuilds',
 		galleryTitle: 'EAC maintenance visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Check updates',
 		ctaSecondaryHref: '/updates/',
 		sections: [
@@ -452,15 +452,15 @@ export const enPages = {
 		],
 	},
 	'cheats-2026': {
-		title: 'Fortnite Cheats 2026 | Best Undetected Package',
+		title: 'Fortnite Cheats 2026 | Hacks with ESP & Cloud DMA',
 		description:
-			'Best Fortnite cheats 2026: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance for Windows PC. Compare the package and buy.',
-		h1: 'Fortnite Cheats 2026 — Best Undetected Package',
+			'Best fortnite cheats 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected fortnite hacks with EAC maintenance — compare and buy.',
+		h1: 'Fortnite Cheats 2026 — ESP, Soft Aim & Cloud DMA',
 		intro:
 			'The 2026 Fortnite Cheats package for Fortnite — undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance, instant delivery, and Windows PC support.',
 		imageAlt: 'Fortnite cheats 2026 package with ESP wallhack and Aimbot',
 		galleryTitle: 'Fortnite Cheats 2026 gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Compare features',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -473,60 +473,66 @@ export const enPages = {
 			section(
 				'Full feature stack for 2026 buyers',
 				'Player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.',
-				'Deep links: <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, <a href="/fortnite-wallhack/">wallhack</a>, <a href="/fortnite-radar-hack/">radar</a>, <a href="/undetected-fortnite-cheats/">undetected</a>.',
+				'Deep links: <a href="/fortnite-hacks/">Fortnite hacks pillar</a>, <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, <a href="/fortnite-wallhack/">wallhack</a>, <a href="/fortnite-radar-hack/">radar</a>, <a href="/undetected-fortnite-cheats/">undetected</a>.',
 				'Instant digital delivery after checkout confirmation worldwide.',
 			),
 			section(
 				'Before you buy in 2026',
-				'Read Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
-				'Also compare the <a href="/best-fortnite-cheats/">best Fortnite cheats</a> checklist and <a href="/faq/">FAQ</a>.',
-				'Support is available at support@fortnitecheats.xyz via the <a href="/support/">Support page</a>.',
+				'Read the <a href="/fortnite-hacks/">Fortnite hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
+				'Also compare the <a href="/best-fortnite-cheats/">best Fortnite cheats</a> checklist, <a href="/blog/fortnite-cheats-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
+				'Support is available at support@fortnitehack.net via the <a href="/support/">Support page</a>.',
 			),
 		],
 	},
 	hacks: {
-		title: 'Fortnite Hacks 2026 | Undetected ESP & Aimbot',
+		title: 'Fortnite Hacks 2026 | Undetected ESP Aimbot Guide',
 		description:
-			'Fortnite hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot in one package with EAC maintenance. Compare tools and buy.',
-		h1: 'Fortnite Hacks — Undetected PC Package',
+			'Fortnite hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance. Compare fortnite cheats options and buy the full package.',
+		h1: 'Fortnite Hacks — Undetected ESP, Aimbot & Wallhack',
 		intro:
-			'Fortnite hacks for Fortnite combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches.',
+			'Fortnite hacks for Battle Royale and Zero Build combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for fortnite hacks in 2026.',
 		imageAlt: 'Fortnite hacks package with ESP wallhack and Aimbot for Battle Royale',
-		galleryTitle: 'Fortnite hacks gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		galleryTitle: 'Fortnite hacks gallery — ESP, Aimbot, wallhack',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'See undetected guide',
 		ctaSecondaryHref: '/undetected-fortnite-cheats/',
 		sections: [
 			section(
 				'What Fortnite hacks include in 2026',
-				'Players searching for Fortnite hacks usually want visibility and combat tools without stacking separate downloads. Fortnite Cheats bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package.',
-				'Coverage spans Battle Royale and Zero Build with in-client toggles for live matches.',
-				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>.`,
+				'Players searching for Fortnite hacks usually want visibility and combat tools without stacking separate downloads. Fortnite Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called fortnite cheats.',
+				'Coverage spans Battle Royale and Zero Build with in-client toggles for live matches. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
+				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>. Cross-check platform health on ${EXT.status} before patch-day queues.`,
+			),
+			section(
+				'Fortnite hacks vs fortnite cheats — same stack, clear pages',
+				'Searchers use fortnite hacks and fortnite cheats interchangeably. This pillar focuses on hacks language; the <a href="/fortnite-cheats-2026/">fortnite cheats 2026</a> and <a href="/best-fortnite-cheats/">best Fortnite cheats</a> pages cover buyer comparisons in cheats wording.',
+				'Deep-dive modules: <a href="/fortnite-esp/">Fortnite ESP</a>, <a href="/fortnite-aimbot/">Fortnite Aimbot</a>, <a href="/fortnite-wallhack/">wallhack</a>, <a href="/fortnite-radar-hack/">radar hack</a>, and <a href="/fortnite-soft-aim/">soft aim</a>.',
+				'Blog guides expand each keyword: <a href="/blog/fortnite-hacks-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/fortnite-cheats-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-fortnite-hacks-eac/">undetected EAC notes</a>.',
 			),
 			section(
 				'Fortnite hacks vs single-feature tools',
-				'Standalone hacks often cover only wallhack or only aim assist. Fortnite Cheats maps the full BR loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
-				'Compare the <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly ($35) and lifetime ($150) licenses.',
-				'Related landings: <a href="/fortnite-cheat-download/">cheat download</a>, <a href="/fortnite-mod-menu/">mod menu</a>, <a href="/best-fortnite-cheats/">best cheats</a>.',
+				'Standalone hacks often cover only wallhack or only aim assist. Fortnite Hacks maps the full BR loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
+				'Compare the <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
+				'Related landings: <a href="/fortnite-cheat-download/">cheat download</a>, <a href="/fortnite-mod-menu/">mod menu</a>, <a href="/fortnite-aimbot-hack/">aimbot hack</a>, <a href="/fortnite-esp-hack/">ESP hack</a>.',
 			),
 			section(
 				'Undetected Fortnite hacks with EAC maintenance',
-				'Fortnite hacks require rebuilds after Easy Anti-Cheat and major Fortnite patches. Check Updates before queueing — maintenance notes confirm when a new build is live.',
-				`See ${EXT.eac} for anti-cheat background and our <a href="/eac-bypass-fortnite/">EAC bypass guide</a> for the practical workflow.`,
-				'Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide.',
+				'Undetected Fortnite hacks require rebuilds after Easy Anti-Cheat and major Fortnite patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.',
+				`See ${EXT.eac} for anti-cheat background and our <a href="/eac-bypass-fortnite/">EAC bypass guide</a> for the practical workflow. Pair with <a href="/undetected-fortnite-cheats/">undetected Fortnite cheats</a> for status language buyers expect.`,
+				'Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href="/setup/">Setup</a> and keep <a href="/support/">Support</a> ready with your order ID.',
 			),
 		],
 	},
 	'cheat-download': {
-		title: 'Fortnite Cheat Download 2026 | Instant Access',
+		title: 'Fortnite Hack Download 2026 | Instant Access',
 		description:
-			'Fortnite cheat download with instant digital license delivery — ESP wallhack, radar, and Aimbot for Windows PC. Buy, activate, and play.',
-		h1: 'Fortnite Cheat Download — Instant License Delivery',
+			'Fortnite hack download with instant license delivery — ESP boxes, soft aim, and cloud DMA for PC and controllers. Buy, activate, and play.',
+		h1: 'Fortnite Hack Download — Instant License Delivery',
 		intro:
 			'How Fortnite cheat download works for Fortnite — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
 		imageAlt: 'Fortnite cheat download package for ESP wallhack and Aimbot license',
 		galleryTitle: 'Fortnite cheat download visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -551,15 +557,15 @@ export const enPages = {
 		],
 	},
 	'mod-menu': {
-		title: 'Fortnite Mod Menu 2026 | ESP & Aimbot Toggles',
+		title: 'Fortnite Mod Menu 2026 | ESP & Soft Aim Toggles',
 		description:
-			'Fortnite mod menu for PC: in-client toggles for ESP wallhack, radar, and Aimbot. Undetected package with EAC maintenance — learn controls.',
+			'Fortnite mod menu for in-match toggles — ESP boxes, soft aim, radar, and cloud DMA on PC and controllers. Undetected fortnite hacks package.',
 		h1: 'Fortnite Mod Menu — In-Client Control Panel',
 		intro:
 			'Fortnite mod menu controls for Fortnite — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Fortnite session on Windows PC.',
 		imageAlt: 'Fortnite mod menu in-client toggles for ESP wallhack and Aimbot',
 		galleryTitle: 'Fortnite mod menu gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Full feature list',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -586,13 +592,13 @@ export const enPages = {
 	'soft-aim': {
 		title: 'Fortnite Soft Aim 2026 | Smooth Aimbot Settings',
 		description:
-			'Fortnite soft aim: smooth Aimbot with FOV, bone priority, and hotkeys. Undetected Windows PC package with EAC maintenance — tune and buy.',
-		h1: 'Fortnite Soft Aim — Smooth Aimbot Settings',
+			'Fortnite soft aim settings for natural tracking on PC and controllers. Smoothness, FOV, and bone priority — included in our fortnite hacks with ESP boxes.',
+		h1: 'Fortnite Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Fortnite soft aim settings for Fortnite — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Fortnite soft aim smooth Aimbot settings preview for BR fights',
 		galleryTitle: 'Fortnite soft aim gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Aimbot controls',
 		ctaSecondaryHref: '/fortnite-aimbot/',
 		sections: [
@@ -617,15 +623,15 @@ export const enPages = {
 		],
 	},
 	'best-cheats': {
-		title: 'Best Fortnite Cheats 2026 | Buyer Guide',
+		title: 'Best Fortnite Hacks 2026 | Buyer Guide',
 		description:
-			'Best Fortnite cheats for 2026: undetected ESP wallhack, radar, Aimbot, and EAC maintenance on Windows PC. Use this checklist before you buy.',
-		h1: 'Best Fortnite Cheats — 2026 Buyer Guide',
+			'Best fortnite hacks for 2026: ESP boxes, soft aim, cloud DMA, and EAC maintenance on PC and controllers. Use this checklist before checkout.',
+		h1: 'Best Fortnite Hacks — 2026 Buyer Guide',
 		intro:
 			'Compare the best Fortnite cheats for Fortnite in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Easy Anti-Cheat rebuilds and instant delivery.',
 		imageAlt: 'Best Fortnite cheats 2026 buyer guide for ESP wallhack and Aimbot',
 		galleryTitle: 'Best Fortnite cheats gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Compare pricing',
 		ctaSecondaryHref: '/pricing/',
 		sections: [
@@ -650,15 +656,15 @@ export const enPages = {
 		],
 	},
 	'aimbot-hack': {
-		title: 'Fortnite Aimbot Hack 2026 | Undetected Assist',
+		title: 'Fortnite Aimbot Hack 2026 | Soft Aim Assist',
 		description:
-			'Fortnite aimbot hack for PC: smooth aim assist, FOV, bone priority, and hotkeys. Undetected with EAC maintenance — see settings and buy now.',
-		h1: 'Fortnite Aimbot Hack — Undetected Aim Assist',
+			'Fortnite aimbot hack with soft aim for PC and controllers. FOV, bone priority, and hotkeys — bundled with ESP boxes in our fortnite hacks package.',
+		h1: 'Fortnite Aimbot Hack — Soft Aim Assist',
 		intro:
 			'Fortnite aimbot hack tools for Fortnite — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Fortnite aimbot hack undetected aim assist combat preview',
 		galleryTitle: 'Fortnite aimbot hack gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'Aimbot settings',
 		ctaSecondaryHref: '/fortnite-aimbot/',
 		sections: [
@@ -683,15 +689,15 @@ export const enPages = {
 		],
 	},
 	'esp-hack': {
-		title: 'Fortnite ESP Hack 2026 | Player & Loot Wallhack',
+		title: 'Fortnite ESP Hack 2026 | Player Boxes & Loot',
 		description:
-			'Fortnite ESP hack for PC: player outlines, loot markers, distance readouts. Undetected wallhack with EAC maintenance — learn overlays now.',
-		h1: 'Fortnite ESP Hack — Wallhack Visibility Guide',
+			'Fortnite ESP hack with player boxes and loot markers for PC and controllers. Undetected fortnite cheats with cloud DMA — see overlays and buy.',
+		h1: 'Fortnite ESP Hack — Player Boxes Guide',
 		intro:
 			'Fortnite ESP hack overlays for Fortnite — player outlines, vehicle threat cues, loot and chest markers with distance readouts across Battle Royale and Zero Build.',
 		imageAlt: 'Fortnite ESP hack wallhack showing player and loot visibility',
 		galleryTitle: 'Fortnite ESP hack gallery',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'ESP controls',
 		ctaSecondaryHref: '/fortnite-esp/',
 		sections: [
@@ -718,13 +724,13 @@ export const enPages = {
 	'unlock-all': {
 		title: 'Fortnite Unlock All 2026 | What It Really Means',
 		description:
-			'Fortnite unlock all explained vs real ESP wallhack, radar, and Aimbot tools in Fortnite Cheats. Know what you are buying before checkout.',
+			'Fortnite unlock all explained vs real fortnite hacks — ESP boxes, soft aim, and cloud DMA for PC and controllers. Know what you are buying.',
 		h1: 'Fortnite Unlock All — What Players Search For',
 		intro:
 			'Fortnite unlock all is a common search term for Fortnite — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Fortnite Cheats actually provides on Windows PC.',
 		imageAlt: 'Fortnite unlock all guide clarifying ESP Aimbot tools versus cosmetic unlocks',
 		galleryTitle: 'Fortnite unlock all guide visuals',
-		ctaPrimary: 'Buy Fortnite Cheats',
+		ctaPrimary: 'Buy Fortnite Hacks',
 		ctaSecondary: 'See features',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -749,11 +755,11 @@ export const enPages = {
 		],
 	},
 	privacy: {
-		title: 'Privacy Policy | Fortnite Cheats',
+		title: 'Privacy Policy | Fortnite Hacks',
 		description:
-			'Privacy policy for Fortnite Cheats. How we handle support emails, order data, site usage, and checkout for Fortnite licenses on fortnitecheats.xyz.',
+			'Privacy policy for Fortnite Hacks. How we handle support emails, order data, and checkout for fortnite cheats licenses on fortnitehack.net.',
 		h1: 'Privacy Policy',
-		intro: 'How Fortnite Cheats handles information when you browse fortnitecheats.xyz or contact support about a Fortnite license.',
+		intro: 'How Fortnite Hacks handles information when you browse fortnitehack.net or contact support about a Fortnite license.',
 		imageAlt: 'Fortnite Cheats privacy policy legal page',
 		galleryTitle: 'Fortnite Cheats legal resources',
 		ctaPrimary: 'Email support',
@@ -773,15 +779,15 @@ export const enPages = {
 			),
 			section(
 				'Your choices and contact',
-				'You may request correction or deletion of support email data by contacting support@fortnitecheats.xyz with your request details.',
-				'Policy updates publish on this page. Continued use of fortnitecheats.xyz after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
+				'You may request correction or deletion of support email data by contacting support@fortnitehack.net with your request details.',
+				'Policy updates publish on this page. Continued use of fortnitehack.net after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
 	},
 	refund: {
-		title: 'Refund Policy | Fortnite Cheats',
+		title: 'Refund Policy | Fortnite Hacks',
 		description:
-			'Refund policy for Fortnite Cheats. Digital delivery terms, eligibility rules, and support contacts for Fortnite cheat packages — read before buying.',
+			'Refund policy for Fortnite Hacks. Digital delivery terms and eligibility for fortnite hacks packages with ESP, soft aim, and cloud DMA.',
 		h1: 'Refund Policy',
 		intro:
 			'Refund terms for Fortnite Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Fortnite.',
@@ -803,17 +809,17 @@ export const enPages = {
 			),
 			section(
 				'How to request a refund',
-				'Email support@fortnitecheats.xyz with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
+				'Email support@fortnitehack.net with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
 				'Approved refunds process back to the original payment method when possible. Pricing details live on <a href="/pricing/">Pricing</a>.',
 			),
 		],
 	},
 	terms: {
-		title: 'Terms of Use | Fortnite Cheats',
+		title: 'Terms of Use | Fortnite Hacks',
 		description:
-			'Terms of use for Fortnite Cheats website and Fortnite cheat licenses. Usage rules, checkout terms, anti-cheat risk, and liability limits.',
+			'Terms of use for fortnitehack.net and Fortnite Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
 		h1: 'Terms of Use',
-		intro: 'Terms governing use of fortnitecheats.xyz and Fortnite Cheats licenses for Fortnite on Windows PC.',
+		intro: 'Terms governing use of fortnitehack.net and Fortnite Hacks licenses for Fortnite on Windows PC.',
 		imageAlt: 'Fortnite Cheats terms of use legal agreement',
 		galleryTitle: 'Fortnite Cheats legal pages',
 		ctaPrimary: 'Email support',
@@ -833,7 +839,7 @@ export const enPages = {
 			section(
 				'Changes and governing law',
 				'We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.',
-				'Contact support@fortnitecheats.xyz for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
+				'Contact support@fortnitehack.net for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
 			),
 		],
 	},

@@ -34,7 +34,7 @@ const sources = [
 		slug: 'patch-notes-buffs-nerfs-vaults',
 		title: 'Patch Notes Breakdown: Buffs, Nerfs & Vaults That Matter',
 		metaDescription:
-			'Plain-English Fortnite patch notes guide — how buffs, nerfs, and vaults reshape loadouts in Chapter 7 Season 3. Read, then adapt ranked priorities.',
+			'Fortnite patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check fortnite hacks updates.',
 		h1: 'Patch Notes Breakdown: Buffs, Nerfs, and Vaults',
 		intro:
 			'Stop skimming patch notes. Here is how buffs, nerfs, and vaults actually reshuffle the loot pool and your ranked loadout priorities.',
@@ -67,7 +67,7 @@ const sources = [
 				h2: 'Late-season checklist and next steps',
 				paragraphs: [
 					'Post-patch checklist: skim official notes for vaults first, update your shotgun/AR/mobility/heals spine, play 10 intentional test games, revisit tier-list assumptions, and adjust drop routes if mobility or loot changed.',
-					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use information tools in-match, check <a href="/updates/">Fortnite Cheats Updates</a> after Easy Anti-Cheat patches.`,
+					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use fortnite hacks in-match, check <a href="/updates/">Fortnite Hacks Updates</a> after Easy Anti-Cheat patches.`,
 					'Try This Today: Open the latest official patch notes and highlight vaults. Rewrite your 5-slot priority on paper. Queue a focused 5-game test block and note which fights felt different at 30–60m vs 0–15m.',
 				],
 			},
@@ -366,8 +366,258 @@ const sources = [
 				h2: 'Mistakes that waste warmup time',
 				paragraphs: [
 					'Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.',
-					'After mechanics are hot, information tools like <a href="/fortnite-radar-hack/">radar hack</a> or <a href="/fortnite-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing.',
+					'After mechanics are hot, information tools like <a href="/fortnite-radar-hack/">radar hack</a> or <a href="/fortnite-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/fortnite-hacks/">Fortnite hacks</a>.',
 					'Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.',
+				],
+			},
+		],
+	},
+	{
+		id: 'fortnite-hacks-complete-guide',
+		imageKey: 'battleRoyaleCombat',
+		published: '2026-07-31',
+		updated: '2026-08-01',
+		category: 'Fortnite Hacks',
+		featured: true,
+		slug: 'fortnite-hacks-complete-guide-2026',
+		title: 'Fortnite Hacks 2026: Complete Undetected Guide',
+		metaDescription:
+			'Complete fortnite hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.',
+		h1: 'Fortnite Hacks 2026: The Complete Undetected Guide',
+		intro:
+			'Searching for Fortnite hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how fortnite cheats searchers map to the same Windows PC package.',
+		keywords: ['fortnite hacks', 'undetected fortnite hacks', 'fortnite cheats', 'esp', 'aimbot', 'eac'],
+		imageAlt: 'Fortnite hacks complete guide showing ESP wallhack and Aimbot for 2026',
+		sections: [
+			{
+				h2: 'What Fortnite hacks actually include',
+				paragraphs: [
+					'Fortnite hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type fortnite cheats are looking for the same stack — different wording, same BR loop.',
+					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.fortnite}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/fortnite-hacks/">Fortnite hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
+					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
+				],
+			},
+			{
+				h2: 'ESP, wallhack, Aimbot, and radar roles',
+				paragraphs: [
+					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/fortnite-soft-aim/">soft aim</a> and <a href="/fortnite-aimbot/">Aimbot controls</a>.',
+					'Deep pages: <a href="/fortnite-esp/">Fortnite ESP</a>, <a href="/fortnite-wallhack/">wallhack</a>, <a href="/fortnite-radar-hack/">radar hack</a>, <a href="/fortnite-aimbot-hack/">aimbot hack</a>, and <a href="/fortnite-esp-hack/">ESP hack</a>.',
+				],
+			},
+			{
+				h2: 'Undetected Fortnite hacks and EAC patches',
+				paragraphs: [
+					'Undetected Fortnite hacks require rebuilds after Easy Anti-Cheat and major Fortnite updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
+					`On patch mornings confirm ${EXT.status}, then read our <a href="/eac-bypass-fortnite/">EAC bypass guide</a> and <a href="/blog/undetected-fortnite-hacks-eac/">undetected EAC notes</a>.`,
+					'Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.',
+				],
+			},
+			{
+				h2: 'Next steps — pricing, setup, and cheats pages',
+				paragraphs: [
+					'Ready to buy? Start at <a href="/fortnite-hacks/">/fortnite-hacks/</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/fortnite-cheats-2026/">fortnite cheats 2026</a> and <a href="/blog/fortnite-cheats-buyers-guide/">cheats buyers guide</a>.',
+					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
+				],
+			},
+		],
+	},
+	{
+		id: 'fortnite-cheats-buyers-guide',
+		imageKey: 'cheatsPackage',
+		published: '2026-07-30',
+		updated: '2026-08-01',
+		category: 'Fortnite Cheats',
+		featured: true,
+		slug: 'fortnite-cheats-buyers-guide',
+		title: 'Fortnite Cheats Buyers Guide: What to Check',
+		metaDescription:
+			'Fortnite cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.',
+		h1: 'Fortnite Cheats Buyers Guide: What Matters in 2026',
+		intro:
+			'Shopping for fortnite cheats? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the Fortnite hacks pillar before checkout.',
+		keywords: ['fortnite cheats', 'best fortnite cheats', 'fortnite hacks', 'buyers guide', 'undetected'],
+		imageAlt: 'Fortnite cheats buyers guide checklist for ESP Aimbot and pricing',
+		sections: [
+			{
+				h2: 'Buyer checklist before you pay',
+				paragraphs: [
+					'Confirm Windows PC support, EAC maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
+					'Primary commercial pages: <a href="/best-fortnite-cheats/">best Fortnite cheats</a>, <a href="/fortnite-cheats-2026/">cheats 2026</a>, and <a href="/fortnite-hacks/">Fortnite hacks</a> (hacks is the main brand keyword).',
+				],
+			},
+			{
+				h2: 'Hacks vs cheats wording',
+				paragraphs: [
+					'Fortnite hacks and fortnite cheats describe the same product category for most searchers. We lead with hacks on fortnitehack.net while keeping cheats pages for buyers who use that query.',
+					`Balance and anti-cheat reality still come from ${EXT.epic}. Product rebuild timing is on our <a href="/updates/">Updates</a> page.`,
+				],
+			},
+			{
+				h2: 'Feature pages worth opening',
+				paragraphs: [
+					'Open <a href="/fortnite-esp/">ESP</a>, <a href="/fortnite-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
+					'Related reading: <a href="/blog/fortnite-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/fortnite-cheats-2026-whats-new/">cheats 2026 what\'s new</a>.',
+					'Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.',
+				],
+			},
+		],
+	},
+	{
+		id: 'fortnite-cheats-2026-whats-new',
+		imageKey: 'hero',
+		published: '2026-07-28',
+		updated: '2026-08-01',
+		category: 'Fortnite Cheats',
+		featured: false,
+		slug: 'fortnite-cheats-2026-whats-new',
+		title: 'Fortnite Cheats 2026: What Changed This Year',
+		metaDescription:
+			'Fortnite cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with EAC maintenance. Pair with the hacks pillar before buying.',
+		h1: 'Fortnite Cheats 2026: What Buyers Need Now',
+		intro:
+			'Fortnite cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Easy Anti-Cheat patches.',
+		keywords: ['fortnite cheats 2026', 'fortnite hacks', 'eac', 'esp', 'aimbot'],
+		imageAlt: 'Fortnite cheats 2026 overview for undetected ESP and Aimbot buyers',
+		sections: [
+			{
+				h2: 'Why 2026 buyers still need maintenance',
+				paragraphs: [
+					'Season maps, weapons, and EAC updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.',
+					`Track official messaging on ${EXT.fortnite}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/fortnite-cheats-2026/">the cheats 2026 landing</a>.`,
+				],
+			},
+			{
+				h2: 'Keyword map: cheats 2026 ↔ hacks',
+				paragraphs: [
+					'Use <a href="/fortnite-cheats-2026/">/fortnite-cheats-2026/</a> for cheats-year intent and <a href="/fortnite-hacks/">/fortnite-hacks/</a> for the primary hacks pillar. Both point to the same ESP + Aimbot + radar stack.',
+					'Also see <a href="/blog/fortnite-hacks-complete-guide-2026/">hacks guide</a> and <a href="/undetected-fortnite-cheats/">undetected status</a>.',
+				],
+			},
+			{
+				h2: 'Pricing and setup for new buyers',
+				paragraphs: [
+					'Monthly ($35) and lifetime ($150) plans share features. After checkout, follow <a href="/setup/">Setup</a>. Questions go to <a href="/support/">Support</a> with your order ID.',
+					'Try This Today: Skim Features, open Pricing, and bookmark Updates before the next Epic patch window.',
+				],
+			},
+		],
+	},
+	{
+		id: 'fortnite-aimbot-settings-guide',
+		imageKey: 'aimbotCombat',
+		published: '2026-07-26',
+		updated: '2026-08-01',
+		category: 'Aimbot',
+		featured: false,
+		slug: 'fortnite-aimbot-settings-guide',
+		title: 'Fortnite Aimbot Settings: Smooth FOV Guide',
+		metaDescription:
+			'Fortnite aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.',
+		h1: 'Fortnite Aimbot Settings: Smoothness, FOV & Soft Aim',
+		intro:
+			'Configure Fortnite Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Fortnite hacks packages.',
+		keywords: ['fortnite aimbot', 'aimbot settings', 'soft aim', 'fortnite hacks', 'fov'],
+		imageAlt: 'Fortnite Aimbot settings guide for smoothness FOV and bone priority',
+		sections: [
+			{
+				h2: 'Start conservative, then tune',
+				paragraphs: [
+					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in Zero Build peeks. Hotkeys let you disable Aimbot mid-match.',
+					'Full control list: <a href="/fortnite-aimbot/">Fortnite Aimbot</a>, <a href="/fortnite-aimbot-hack/">aimbot hack</a>, and <a href="/fortnite-soft-aim/">soft aim</a>.',
+				],
+			},
+			{
+				h2: 'Pair Aimbot with ESP and radar',
+				paragraphs: [
+					'Aimbot alone does not solve rotations. Pair with <a href="/fortnite-esp/">ESP</a> and <a href="/fortnite-radar-hack/">radar</a> inside the <a href="/fortnite-hacks/">Fortnite hacks</a> package.',
+					`Weapon balance shifts on ${EXT.fortnite} — revisit FOV after combat patches.`,
+				],
+			},
+			{
+				h2: 'EAC notes and next steps',
+				paragraphs: [
+					'After Easy Anti-Cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/eac-bypass-fortnite/">EAC guide</a>.',
+					'Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.',
+				],
+			},
+		],
+	},
+	{
+		id: 'fortnite-esp-wallhack-explained',
+		imageKey: 'espWallhack',
+		published: '2026-07-24',
+		updated: '2026-08-01',
+		category: 'ESP & Wallhack',
+		featured: false,
+		slug: 'fortnite-esp-wallhack-explained',
+		title: 'Fortnite ESP & Wallhack Explained Clearly',
+		metaDescription:
+			'Fortnite ESP and wallhack explained — player boxes, loot markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
+		h1: 'Fortnite ESP and Wallhack Explained',
+		intro:
+			'Fortnite ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Fortnite hacks and fortnite cheats packages.',
+		keywords: ['fortnite esp', 'fortnite wallhack', 'esp hack', 'fortnite hacks', 'loot esp'],
+		imageAlt: 'Fortnite ESP wallhack explained with player and loot overlays',
+		sections: [
+			{
+				h2: 'ESP categories that matter in BR',
+				paragraphs: [
+					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep BR-critical categories on during rotations.',
+					'Landings: <a href="/fortnite-esp/">Fortnite ESP</a>, <a href="/fortnite-wallhack/">wallhack</a>, <a href="/fortnite-esp-hack/">ESP hack</a>.',
+				],
+			},
+			{
+				h2: 'Wallhack vs radar vs Aimbot',
+				paragraphs: [
+					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/fortnite-hacks/">hacks pillar</a> bundles all three.',
+					`Map and loot systems evolve with ${EXT.epic} seasons — toggleable categories stay useful when POIs rotate.`,
+				],
+			},
+			{
+				h2: 'Undetected ESP maintenance',
+				paragraphs: [
+					'ESP modules rebuild with the package after EAC patches. Check <a href="/updates/">Updates</a> and <a href="/undetected-fortnite-cheats/">undetected status</a> before ranked blocks.',
+					'Try This Today: Enable player + loot ESP only for ten games, then add radar range once your eyes adjust.',
+				],
+			},
+		],
+	},
+	{
+		id: 'undetected-fortnite-hacks-eac',
+		imageKey: 'rebootFight',
+		published: '2026-07-22',
+		updated: '2026-08-01',
+		category: 'Undetected & EAC',
+		featured: true,
+		slug: 'undetected-fortnite-hacks-eac',
+		title: 'Undetected Fortnite Hacks & EAC Reality',
+		metaDescription:
+			'Undetected fortnite hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
+		h1: 'Undetected Fortnite Hacks and Easy Anti-Cheat Reality',
+		intro:
+			'Undetected Fortnite hacks mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
+		keywords: ['undetected fortnite hacks', 'eac', 'fortnite hacks', 'fortnite cheats', 'maintenance'],
+		imageAlt: 'Undetected Fortnite hacks and Easy Anti-Cheat maintenance workflow',
+		sections: [
+			{
+				h2: 'What undetected really means',
+				paragraphs: [
+					'Undetected Fortnite hacks are rebuilt when Easy Anti-Cheat or Fortnite client patches change detection surface. Permanent undetected claims are marketing fiction.',
+					'Status pages: <a href="/updates/">Updates</a>, <a href="/undetected-fortnite-cheats/">undetected guide</a>, <a href="/eac-bypass-fortnite/">EAC bypass</a>.',
+				],
+			},
+			{
+				h2: 'Patch-day workflow',
+				paragraphs: [
+					`Check ${EXT.status} for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.`,
+					'Commercial entry points: <a href="/fortnite-hacks/">Fortnite hacks</a> and <a href="/fortnite-cheats-2026/">fortnite cheats 2026</a>.',
+				],
+			},
+			{
+				h2: 'Responsible use and support',
+				paragraphs: [
+					'Using hacks/cheats can violate Epic terms — you assume ban risk. For license or delivery issues, contact <a href="/support/">Support</a> with your order ID.',
+					'Try This Today: Bookmark Updates and the hacks pillar. Before your next ranked session after a patch, verify build status first.',
 				],
 			},
 		],

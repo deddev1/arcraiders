@@ -21,7 +21,7 @@ const REPLACEMENTS = [
 	['warzone-radar-hack', 'fortnite-radar-hack'],
 	['warzone-cheats-2026', 'fortnite-cheats-2026'],
 	['ricochet-bypass', 'eac-bypass-fortnite'],
-	['warzonescheats.net', 'fortnitecheats.xyz'],
+	['warzonescheats.net', 'fortnitehack.net'],
 	['trucos-warzone', 'trucos-fortnite'],
 	['triche-warzone', 'triche-fortnite'],
 	['warzone-cheats', 'fortnite-cheats'],

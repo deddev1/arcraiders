@@ -93,12 +93,12 @@ export const blogUi: Record<
 	}
 > = {
 	en: {
-		blogTitle: 'Fortnite Intel Blog 2026 | Meta Guides & Pro Tips',
+		blogTitle: 'Fortnite Hacks Blog 2026 | Meta Guides & Tips',
 		blogDescription:
-			'Fortnite Intel blog: Zero Build meta, loot routes, Hammer AR tiers, FNCS drops, Creative warmups, and pro settings — read guides that win ranked.',
-		blogH1: 'Fortnite Intel',
+			'Fortnite hacks blog: ranked meta, loot routes, and pro tips for PC and controllers. Pair guides with our ESP, soft aim, and cloud DMA product pages.',
+		blogH1: 'Fortnite Hacks Intel',
 		blogIntro:
-			'Actionable Fortnite guides for Battle Royale and Zero Build — meta breakdowns, loot routes, weapon tiers, patch reads, and pro warmup routines. Pair these tips with our ESP and Aimbot product pages when you need in-match information tools.',
+			'Actionable Fortnite guides for Battle Royale and Zero Build — meta breakdowns, loot routes, weapon tiers, and pro warmup routines. Pair these tips with our fortnite hacks pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',

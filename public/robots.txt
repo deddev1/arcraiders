@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-Sitemap: https://fortnitecheats.xyz/sitemap-index.xml
-Sitemap: https://fortnitecheats.xyz/sitemap.xml
-Sitemap: https://fortnitecheats.xyz/sitemap-i18n.xml
-Sitemap: https://fortnitecheats.xyz/sitemap-images.xml
+Sitemap: https://fortnitehack.net/sitemap-index.xml
+Sitemap: https://fortnitehack.net/sitemap.xml
+Sitemap: https://fortnitehack.net/sitemap-i18n.xml
+Sitemap: https://fortnitehack.net/sitemap-images.xml
