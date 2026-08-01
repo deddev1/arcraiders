@@ -96,9 +96,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			},
 			pages: {
 				home: {
-					title: "Fortnite Hacks 2026 | PC & Controller ESP, Soft Aim",
-					description: "Fortnite hacks for PC and controllers with ESP, soft aim, player boxes, and cloud DMA. Undetected fortnite cheats 2026 — compare plans and buy today.",
-					h1: "Fortnite Hacks — ESP, Soft Aim & Cloud DMA for PC",
+					title: "Fortnite Hacks 2026 | Undetected ESP & Aimbot",
+					description: "Buy undetected Fortnite hacks for PC: ESP wallhack, radar, and Aimbot with EAC maintenance. Also covers fortnite cheats 2026 — compare plans and start today.",
+					h1: "Fortnite Hacks — Undetected ESP, Wallhack & Aimbot",
 					intro: "Fortnite Hacks is an undetected Windows PC package for Fortnite — the same stack players search as fortnite cheats. ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance after every major patch.",
 					imageAlt: "Fortnite hacks hero showing ESP wallhack and Aimbot overlays for undetected PC play",
 					galleryTitle: "Fortnite Hacks gallery — ESP, Aimbot and wallhack visuals",
