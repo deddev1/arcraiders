@@ -93,12 +93,12 @@ export const blogUi: Record<
 	}
 > = {
 	en: {
-		blogTitle: 'Fortnite Cheats Blog 2026 | Guides in 22 Languages',
+		blogTitle: 'Fortnite Intel Blog 2026 | Meta, Loot Routes & Pro Tips',
 		blogDescription:
-			'Fortnite Cheats blog with undetected ESP, wallhack, radar and Aimbot guides in 22 languages for Fortnite on Windows PC worldwide.',
-		blogH1: 'Fortnite Cheats Blog — Global Guides',
+			'Fortnite Intel blog — Zero Build meta, secret loot routes, weapon tier lists, Creative warmups, and pro settings for Chapter 7 Season 3.',
+		blogH1: 'Fortnite Intel',
 		blogIntro:
-			'SEO guides for undetected Fortnite cheats, ESP wallhack, radar hack, Aimbot, and EAC maintenance — available worldwide in 22 languages.',
+			'Ranked meta breakdowns, loot routes, weapon tiers, leaks, and pro tips for Fortnite Battle Royale and Zero Build.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',

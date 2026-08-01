@@ -761,10 +761,11 @@ export function localeFromAcceptLanguage(header: string | null): LocaleCode {
 }
 
 export function getNavForLocale(locale: LocaleCode, labels: Record<string, string>) {
-	const items: { label: string; href: string; pageId: PageId }[] = [
+	const items: { label: string; href: string; pageId?: PageId }[] = [
 		{ label: labels.home, href: getLocalizedPath('home', locale), pageId: 'home' },
 		{ label: labels.aimbot, href: getLocalizedPath('fortnite-aimbot', locale), pageId: 'fortnite-aimbot' },
 		{ label: labels.esp, href: getLocalizedPath('fortnite-esp', locale), pageId: 'fortnite-esp' },
+		{ label: 'Blog', href: '/blog/' },
 		{ label: labels.features, href: getLocalizedPath('features', locale), pageId: 'features' },
 		{ label: labels.pricing, href: getLocalizedPath('pricing', locale), pageId: 'pricing' },
 		{ label: labels.setup, href: getLocalizedPath('setup', locale), pageId: 'setup' },

@@ -30,7 +30,8 @@ async function resolveDistRoot() {
 }
 const SITE = 'https://fortnitecheats.xyz';
 
-const ENGLISH_PAGES = 25;
+const BLOG_PAGES = 9; // /blog/ index + 8 posts
+const ENGLISH_PAGES = 25 + BLOG_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
@@ -64,6 +65,15 @@ const ENGLISH_PATHS = [
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
+	'/blog/',
+	'/blog/zero-build-meta-broken-aggressive-strategies/',
+	'/blog/secret-loot-routes-full-gold/',
+	'/blog/hammer-ar-s-tier-data-analysis/',
+	'/blog/chapter-7-season-3-skin-leaks-vbucks/',
+	'/blog/fncs-meta-watch-tournament-drops/',
+	'/blog/bugha-settings-pro-setup/',
+	'/blog/creative-warmup-maps-pros-use/',
+	'/blog/patch-notes-buffs-nerfs-vaults/',
 ];
 
 const LOCALE_CODES = [

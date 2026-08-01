@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { absolutePageUrl, pageSitemapEntries } from '../data/page-sitemap';
+import { getBlogSitemapEntries } from '../data/blog/helpers';
 import { hreflangLinksXml, resolvePageIdFromPath } from '../data/i18n/routing';
 import { escapeXml, renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
@@ -7,7 +8,17 @@ export const prerender = true;
 
 /** Primary English page sitemap with Google image extensions and hreflang alternates. */
 export const GET: APIRoute = () => {
-	const urls = pageSitemapEntries.map((entry) => {
+	const blogEntries = getBlogSitemapEntries()
+		.filter((entry) => !entry.path.match(/^\/[a-z]{2}\//))
+		.map((entry) => ({
+			path: entry.path,
+			lastmod: entry.lastmod,
+			changefreq: entry.changefreq,
+			priority: entry.priority,
+			images: entry.images,
+		}));
+
+	const urls = [...pageSitemapEntries, ...blogEntries].map((entry) => {
 		const images = entry.images
 			.map(
 				(image) => `    <image:image>

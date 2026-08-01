@@ -33,7 +33,10 @@ export type BlogPostDefinition = {
 	imageKey: BlogImageKey;
 	published: string;
 	updated: string;
-	translations: Record<LocaleCode, BlogTranslation>;
+	category: string;
+	featured?: boolean;
+	/** Prefer full locale map; helpers clone `en` into any missing locales. */
+	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation };
 };
 
 export type ResolvedBlogPost = BlogPostDefinition & {
