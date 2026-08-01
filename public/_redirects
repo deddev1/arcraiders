@@ -8,6 +8,9 @@
 #    plus a proxied DNS A/AAAA/CNAME record for www
 # 5) Legacy hosts (fortnitecheats.xyz / .net / .com) → fortnitehack.net via middleware
 
+# Keep in sync with PATH_REDIRECTS in functions/_middleware.js.
+# All targets are final canonical URLs — no chains or loops.
+
 /sitemap-0.xml /sitemap.xml 301
 /fortnite-cheats / 301
 /fortnite-cheats/ / 301
@@ -16,5 +19,7 @@
 /warzone-aimbot/ /fortnite-aimbot/ 301
 /warzone-esp /fortnite-esp/ 301
 /warzone-esp/ /fortnite-esp/ 301
+/eac-bypass /eac-bypass-fortnite/ 301
+/eac-bypass/ /eac-bypass-fortnite/ 301
 /ricochet-bypass /eac-bypass-fortnite/ 301
 /ricochet-bypass/ /eac-bypass-fortnite/ 301

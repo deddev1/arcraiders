@@ -2,7 +2,7 @@ import { getPageContent } from './i18n';
 import { getLocalizedPath, hreflangLinksXml, pageIds, type PageId } from './i18n/routing';
 import { defaultLocale, localeCodes, type LocaleCode } from './i18n/locales';
 import { siteConfig } from './site';
-import { SITEMAP_LASTMOD, pageSitemapMeta } from './sitemap-meta';
+import { pageSitemapMeta } from './sitemap-meta';
 import { escapeXml } from './sitemap-xml';
 
 export type LocaleSitemapEntry = {
@@ -38,7 +38,7 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 		return {
 			path: getLocalizedPath(pageId, locale),
 			pageId,
-			lastmod: SITEMAP_LASTMOD,
+			lastmod: meta.lastmod,
 			priority: meta.i18nPriority,
 			changefreq: meta.changefreq,
 			image:

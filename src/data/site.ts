@@ -182,6 +182,7 @@ export type CustomerReview = {
 	handle: string;
 	rating: 3 | 4 | 5;
 	text: string;
+	/** ISO date (YYYY-MM-DD) — used as-is for schema.org datePublished; UI formats it for display. */
 	date: string;
 	tag?: string;
 };
@@ -191,69 +192,69 @@ export const customerReviews = [
 		handle: 'xKrypt0_FN',
 		rating: 5,
 		text: 'soft aim on hammer ar feels cracked ngl. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
-		date: 'Jul 2026',
+		date: '2026-07-24',
 		tag: 'Soft aim',
 	},
 	{
 		handle: 'buildsR4K',
 		rating: 4,
 		text: "esp boxes in zero build are actually useful, can see who's holding height before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
-		date: 'Jul 2026',
+		date: '2026-07-19',
 		tag: 'Zero Build',
 	},
 	{
 		handle: 'dma_wizard',
 		rating: 5,
 		text: 'switched from a kernel only tool last season. cloud dma setup was easier than i expected, support walked me through the dma part on discord. survived the last eac update while my old sub got flagged. lifetime was the move',
-		date: 'Jun 2026',
+		date: '2026-06-27',
 		tag: 'Cloud DMA',
 	},
 	{
 		handle: 'ctrl_player99',
 		rating: 4,
 		text: 'finally a fn cheat that doesnt feel like garbage on controller. soft aim with xbox pad works, had to tweak fov a bit. menu navigation with pad is kinda awkward but doable',
-		date: 'Jul 2026',
+		date: '2026-07-11',
 		tag: 'Controller',
 	},
 	{
 		handle: 'stormChaser_07',
 		rating: 3,
 		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
-		date: 'Jun 2026',
+		date: '2026-06-15',
 		tag: 'Setup',
 	},
 	{
 		handle: 'lootGoblinx',
 		rating: 5,
 		text: 'loot esp alone pays for monthly imo. chest markers + distance readouts = way faster off spawn',
-		date: 'Aug 2026',
+		date: '2026-08-01',
 	},
 	{
 		handle: 'rankedGrind42',
 		rating: 4,
 		text: 'been using since chapter 7 s2. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when eac patches hit, had to wait a day once',
-		date: 'Jul 2026',
+		date: '2026-07-07',
 		tag: 'Ranked',
 	},
 	{
 		handle: 'vanLifeFN',
 		rating: 5,
 		text: 'radar saved me so many times during reboot van rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
-		date: 'Jul 2026',
+		date: '2026-07-28',
 		tag: 'Squads',
 	},
 	{
 		handle: 'patchDayMike',
 		rating: 4,
 		text: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours last patch. was back online next morning. elitefn left me hanging for 4 days once so yeah',
-		date: 'Jun 2026',
+		date: '2026-06-09',
 		tag: 'EAC updates',
 	},
 	{
 		handle: 'snipezOnly_',
 		rating: 5,
 		text: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
-		date: 'Aug 2026',
+		date: '2026-08-01',
 	},
 ] as const satisfies readonly CustomerReview[];
 

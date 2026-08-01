@@ -14,6 +14,17 @@ const reviewsUi = ui.reviews;
 function stars(rating: number): string {
 	return '★'.repeat(rating) + '☆'.repeat(5 - rating);
 }
+
+// Review dates are stored as ISO (for schema.org) — render a friendly "Jul 2026" style label.
+const reviewDateFormatter = new Intl.DateTimeFormat(locale, {
+	month: 'short',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+
+function formatReviewDate(isoDate: string): string {
+	return reviewDateFormatter.format(new Date(`${isoDate}T00:00:00Z`));
+}
 ---
 
 <section class="reviews shell" aria-labelledby="reviews-title">
@@ -41,7 +52,7 @@ function stars(rating: number): string {
 					</div>
 					{review.tag ? <p class="reviews__tag">{review.tag}</p> : null}
 					<p class="reviews__text">{review.text}</p>
-					<p class="reviews__date">{review.date}</p>
+					<p class="reviews__date"><time datetime={review.date}>{formatReviewDate(review.date)}</time></p>
 				</article>
 			))
 		}

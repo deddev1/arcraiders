@@ -1,7 +1,7 @@
 import { siteConfig } from './site';
 import { fortniteImages } from './fortnite';
 import { englishPaths, pageIds, type PageId } from './i18n/routing';
-import { SITEMAP_LASTMOD, pageSitemapMeta } from './sitemap-meta';
+import { pageSitemapMeta } from './sitemap-meta';
 
 export type SitemapImage = {
 	url: string;
@@ -25,20 +25,15 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 	caption,
 });
 
-/** Content refresh date for sitemap lastmod (YYYY-MM-DD). */
-const UPDATED = SITEMAP_LASTMOD;
-
 /**
  * Canonical page → image map for Google page + image discovery.
  * Image titles/captions match on-page SEO language.
+ * Priority/changefreq/lastmod come from pageSitemapMeta — only images live here.
  */
 /** Manual image assignments per English URL — paths must match englishPaths in routing.ts. */
-const manualPageSitemapEntries: PageSitemapEntry[] = [
+const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 	{
 		path: '/',
-		priority: 1.0,
-		changefreq: 'daily',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.hero,
@@ -84,9 +79,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-aimbot/',
-		priority: 0.95,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.aimbotCombat,
@@ -107,9 +99,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-esp/',
-		priority: 0.95,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.espWallhack,
@@ -130,9 +119,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/undetected-fortnite-cheats/',
-		priority: 0.98,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.espWallhack,
@@ -148,9 +134,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-wallhack/',
-		priority: 0.97,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.espWallhack,
@@ -166,9 +149,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-radar-hack/',
-		priority: 0.97,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.squadFight,
@@ -184,9 +164,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/eac-bypass-fortnite/',
-		priority: 0.96,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.headerArt,
@@ -202,9 +179,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-cheats-2026/',
-		priority: 0.98,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.hero,
@@ -220,9 +194,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-hacks/',
-		priority: 0.97,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.battleRoyaleCombat, 'Fortnite Hacks 2026 | ESP & Aimbot', 'Fortnite hacks battle royale combat preview for undetected PC package'),
 			img(fortniteImages.espWallhack, 'Fortnite Hacks ESP | Fortnite Cheats', 'Fortnite hacks ESP wallhack overlay for Fortnite'),
@@ -230,9 +201,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-cheat-download/',
-		priority: 0.96,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.cheatsPackage, 'Fortnite Cheat Download 2026 | Instant Delivery', 'Fortnite cheat download package with ESP wallhack and Aimbot'),
 			img(fortniteImages.cover, 'Fortnite Cheat Download cover | Fortnite', 'Fortnite cheat download license delivery visual'),
@@ -240,9 +208,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-mod-menu/',
-		priority: 0.96,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.loadoutBuilder, 'Fortnite Mod Menu 2026 | In-Client Toggles', 'Fortnite mod menu loadout builder for ESP and Aimbot toggles'),
 			img(fortniteImages.aimbotCombat, 'Fortnite Mod Menu Aimbot | Fortnite Cheats', 'Fortnite mod menu Aimbot controls preview'),
@@ -250,9 +215,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-soft-aim/',
-		priority: 0.95,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.aimbotCombat, 'Fortnite Soft Aim 2026 | Smooth Aimbot', 'Fortnite soft aim combat preview with smooth Aimbot settings'),
 			img(fortniteImages.squadFight, 'Fortnite Soft Aim squad fight | Fortnite', 'Fortnite soft aim squad fight reference'),
@@ -260,9 +222,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/best-fortnite-cheats/',
-		priority: 0.98,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.hero, 'Best Fortnite Cheats 2026 | ESP & Aimbot', 'Best Fortnite cheats 2026 buyer guide hero'),
 			img(fortniteImages.cheatsPackage, 'Best Fortnite Cheats package | Fortnite', 'Best Fortnite cheats package with full feature stack'),
@@ -270,9 +229,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-aimbot-hack/',
-		priority: 0.95,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.aimbotCombat, 'Fortnite Aimbot Hack 2026 | Undetected', 'Fortnite aimbot hack combat preview for undetected aim assist'),
 			img(fortniteImages.headerArt, 'Fortnite Aimbot Hack header | Fortnite Cheats', 'Fortnite aimbot hack supporting visual'),
@@ -280,9 +236,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-esp-hack/',
-		priority: 0.97,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.espWallhack, 'Fortnite ESP Hack 2026 | Player Wallhack', 'Fortnite ESP hack wallhack showing player visibility'),
 			img(fortniteImages.playerEsp, 'Fortnite ESP Hack player overlay | Fortnite', 'Fortnite ESP hack player overlay preview'),
@@ -290,9 +243,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/fortnite-unlock-all/',
-		priority: 0.94,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(fortniteImages.playerEsp, 'Fortnite Unlock All 2026 | Loadout Guide', 'Fortnite unlock all player ESP loadout guide visual'),
 			img(fortniteImages.loadoutBuilder, 'Fortnite Unlock All loadout | Fortnite Cheats', 'Fortnite unlock all loadout builder reference'),
@@ -300,9 +250,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/features/',
-		priority: 0.9,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.hero,
@@ -328,9 +275,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/pricing/',
-		priority: 0.95,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.cover,
@@ -356,9 +300,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/setup/',
-		priority: 0.9,
-		changefreq: 'weekly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.squadFight,
@@ -379,9 +320,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/updates/',
-		priority: 0.9,
-		changefreq: 'daily',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.squadFight,
@@ -402,9 +340,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/faq/',
-		priority: 0.8,
-		changefreq: 'monthly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.loadoutBuilder,
@@ -425,9 +360,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/support/',
-		priority: 0.8,
-		changefreq: 'monthly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.headerArt,
@@ -448,9 +380,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/refund-policy/',
-		priority: 0.4,
-		changefreq: 'yearly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.cover,
@@ -466,9 +395,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/privacy-policy/',
-		priority: 0.4,
-		changefreq: 'yearly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.aimbotCombat,
@@ -484,9 +410,6 @@ const manualPageSitemapEntries: PageSitemapEntry[] = [
 	},
 	{
 		path: '/terms/',
-		priority: 0.4,
-		changefreq: 'yearly',
-		lastmod: UPDATED,
 		images: [
 			img(
 				fortniteImages.squadFight,
@@ -539,7 +462,7 @@ export const pageSitemapEntries: PageSitemapEntry[] = pageIds.map((pageId) => {
 		path: englishPaths[pageId],
 		priority: meta.priority,
 		changefreq: meta.changefreq,
-		lastmod: UPDATED,
+		lastmod: meta.lastmod,
 		images: pageImagesById[pageId],
 	};
 });

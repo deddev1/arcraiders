@@ -256,14 +256,21 @@ async function main() {
 	}
 	if (errors === 0) ok('sitemap-index.xml lists English, all 21 locale, and image sitemaps');
 
-	// robots.txt — index is primary; legacy aggregate kept for crawlers already using it
-	for (const sub of ['sitemap-index.xml', 'sitemap.xml', 'sitemap-i18n.xml', 'sitemap-images.xml']) {
+	// robots.txt — single submission path: index (covers locale + image sitemaps) + English sitemap.
+	for (const sub of ['sitemap-index.xml', 'sitemap.xml']) {
 		if (!robots.includes(`${SITE}/${sub}`)) {
 			fail(`robots.txt missing Sitemap: ${sub}`);
 			bump();
 		}
 	}
-	if (errors === 0) ok('robots.txt lists primary sitemap URLs');
+	// Redundant listings cause double-submission confusion in GSC — must NOT be in robots.txt.
+	for (const sub of ['sitemap-i18n.xml', 'sitemap-images.xml', 'sitemap-blog.xml']) {
+		if (robots.includes(`${SITE}/${sub}`)) {
+			fail(`robots.txt must not list redundant sitemap: ${sub} (already covered by sitemap-index.xml)`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('robots.txt lists primary sitemap URLs only (no redundant listings)');
 
 	// Built HTML vs sitemap total
 	const htmlPaths = await collectHtmlPaths(DIST);

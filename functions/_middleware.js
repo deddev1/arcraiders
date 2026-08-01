@@ -12,14 +12,20 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.com',
 ]);
 
+// Keep in sync with public/_redirects. All targets are final canonical URLs — no chains/loops.
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
+	'/fortnite-cheats': '/',
+	'/fortnite-cheats/': '/',
+	'/fortnite-cheats-2026': '/fortnite-cheats-2026/',
 	'/warzone-aimbot': '/fortnite-aimbot/',
 	'/warzone-aimbot/': '/fortnite-aimbot/',
 	'/warzone-esp': '/fortnite-esp/',
 	'/warzone-esp/': '/fortnite-esp/',
 	'/eac-bypass': '/eac-bypass-fortnite/',
 	'/eac-bypass/': '/eac-bypass-fortnite/',
+	'/ricochet-bypass': '/eac-bypass-fortnite/',
+	'/ricochet-bypass/': '/eac-bypass-fortnite/',
 };
 
 const SECURITY_HEADERS = {

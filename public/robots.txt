@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Allow: /images/
 
+# Single submission path: the index covers per-locale + image sitemaps.
+# sitemap.xml (English pages + blog) kept as an explicit hint for crawlers.
 Sitemap: https://fortnitehack.net/sitemap-index.xml
 Sitemap: https://fortnitehack.net/sitemap.xml
-Sitemap: https://fortnitehack.net/sitemap-i18n.xml
-Sitemap: https://fortnitehack.net/sitemap-images.xml

@@ -84,6 +84,13 @@ export function getPostBySlug(locale: LocaleCode, slug: string): ResolvedBlogPos
 	return post ? resolvePost(post, locale) : undefined;
 }
 
+/**
+ * ⚠️ QUARANTINED — DO NOT USE YET.
+ * Builds hreflang alternates pointing at localized blog URLs (`/{lang}/blog/…`)
+ * that DO NOT EXIST as routes: only English blog pages are built today.
+ * Wiring this into pages would emit hreflang links to 404s (GSC indexing errors).
+ * Keep unused until localized blog routes actually ship.
+ */
 export function getHreflangAlternates(post: BlogPostDefinition) {
 	return [
 		...localeCodes.map((code) => ({
@@ -97,6 +104,13 @@ export function getHreflangAlternates(post: BlogPostDefinition) {
 	];
 }
 
+/**
+ * ⚠️ QUARANTINED — DO NOT USE YET.
+ * Generates static paths for localized blog routes (`/{lang}/blog/{slug}/`)
+ * that are not implemented — no `src/pages/[lang]/blog/` route exists.
+ * Do not wire into getStaticPaths (or sitemaps) until localized blog routes exist,
+ * otherwise sitemaps/links would reference pages that are never built.
+ */
 export function getAllBlogStaticPaths(): { params: { lang?: string; slug: string }; props: { locale: LocaleCode } }[] {
 	const paths: { params: { lang?: string; slug: string }; props: { locale: LocaleCode } }[] = [];
 	for (const post of blogPosts) {
@@ -115,6 +129,14 @@ export function getAllBlogStaticPaths(): { params: { lang?: string; slug: string
 /** English blog routes only (locale blog pages ship later). */
 export function getBlogSitemapEntries() {
 	const locale = defaultLocale;
+
+	// The blog index reflects its newest post, so its lastmod is the max of all
+	// post `updated` dates — never older than any post it links to.
+	const indexLastmod = blogPosts.reduce(
+		(max, post) => (post.updated > max ? post.updated : max),
+		blogPosts[0]?.updated ?? new Date().toISOString().slice(0, 10),
+	);
+
 	const entries: {
 		path: string;
 		lastmod: string;
@@ -124,7 +146,7 @@ export function getBlogSitemapEntries() {
 	}[] = [
 		{
 			path: getBlogBasePath(locale),
-			lastmod: '2026-07-31',
+			lastmod: indexLastmod,
 			priority: 0.92,
 			changefreq: 'daily',
 			images: [],
