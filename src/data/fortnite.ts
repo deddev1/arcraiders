@@ -19,62 +19,58 @@ export const fortniteImages = {
 	playerEsp: '/images/fortnite-player-esp.webp',
 	zeroBuildCombat: '/images/fortnite-zero-build-combat.webp',
 	zeroBuildMode: '/images/fortnite-zero-build-mode.webp',
-	battleRoyaleIsland: '/images/fortnite-battle-royale-island-map.webp',
+	// island-map.webp is a byte-identical copy of cheats-package.webp — point at a
+	// distinct existing asset so named lookups never reintroduce the duplicate.
+	battleRoyaleIsland: '/images/fortnite-cheats-cover.webp',
+	// Product thumbs + main preview share this single list (ProductCard click handler).
+	// Every basename must be unique — never pair package + island-map (identical bytes).
 	product: [
 		{
-			src: '/images/fortnite-cheats-aimbot-combat.webp',
-			alt: 'Fortnite cheats Aimbot combat firefight on Windows PC',
+			src: '/images/fortnite-battle-royale-combat.webp',
+			alt: 'Fortnite Aimbot ADS combat firefight on Windows PC',
 		},
 		{
-			src: '/images/fortnite-squad-fight.webp',
-			alt: 'Fortnite cheats squad fight preview for Fortnite Aimbot targeting',
+			src: '/images/fortnite-reboot-van-fight.webp',
+			alt: 'Fortnite cheats Aimbot targeting during a reboot van fight',
+		},
+		{
+			src: '/images/fortnite-zero-build-mode.webp',
+			alt: 'Fortnite Zero Build Aimbot sight picture at Mount Olympus',
+		},
+		{
+			src: '/images/fortnite-player-esp.webp',
+			alt: 'Fortnite player ESP overlay for Fortnite cheats wallhack',
 		},
 		{
 			src: '/images/fortnite-cheats-esp-wallhack.webp',
-			alt: 'Fortnite cheats ESP wallhack map visibility across Battle Royale island',
+			alt: 'Fortnite cheats ESP wallhack visibility across Battle Royale',
 		},
 		{
-			src: '/images/fortnite-loadout-builder.webp',
-			alt: 'Fortnite loadout builder for Fortnite cheats packages',
+			src: '/images/fortnite-zero-build-combat.webp',
+			alt: 'Fortnite Zero Build combat preview for Fortnite cheats',
+		},
+	],
+	gallery: [
+		{
+			src: '/images/fortnite-cheats-package.webp',
+			alt: 'Fortnite cheats package key art with ESP and Aimbot roster',
+			featured: true,
+		},
+		{
+			src: '/images/fortnite-cheats-cover.webp',
+			alt: 'Fortnite cheats cover showing Battle Royale island terrain',
 		},
 		{
 			src: '/images/fortnite-header-art.webp',
 			alt: 'Fortnite header art for ESP and Aimbot cheat overview',
 		},
 		{
-			src: '/images/fortnite-cheats-cover.webp',
-			alt: 'Fortnite cheats cover showing Fortnite player loadout packaging',
-		},
-	],
-	gallery: [
-		{
-			src: '/images/fortnite-cheats-hero.webp',
-			alt: 'Fortnite cheats hero art for Fortnite ESP and Aimbot',
-			featured: true,
-		},
-		{
-			src: '/images/fortnite-cheats-aimbot-combat.webp',
-			alt: 'Fortnite Aimbot combat for Fortnite cheats',
-		},
-		{
 			src: '/images/fortnite-squad-fight.webp',
-			alt: 'Fortnite ESP squad engagement across Fortnite Battle Royale map',
+			alt: 'Fortnite squad fight preview for Fortnite Aimbot targeting',
 		},
 		{
-			src: '/images/fortnite-cheats-esp-wallhack.webp',
-			alt: 'Fortnite cheats ESP wallhack route preview on Battle Royale island',
-		},
-		{
-			src: '/images/fortnite-reboot-van-fight.webp',
-			alt: 'Fortnite reboot van fight preview for Fortnite cheats Aimbot',
-		},
-		{
-			src: '/images/fortnite-player-esp.webp',
-			alt: 'Fortnite player ESP overlay for Fortnite cheats',
-		},
-		{
-			src: '/images/fortnite-battle-royale-combat.webp',
-			alt: 'Fortnite battle royale combat for Fortnite cheats',
+			src: '/images/fortnite-loadout-builder.webp',
+			alt: 'Fortnite loadout builder for Fortnite cheats packages',
 		},
 	],
 	sitemap: [
@@ -142,11 +138,6 @@ export const fortniteImages = {
 			src: '/images/fortnite-zero-build-mode.webp',
 			title: 'Fortnite Zero Build mode | Fortnite Cheats',
 			caption: 'Fortnite Zero Build mode for Fortnite cheats packages',
-		},
-		{
-			src: '/images/fortnite-battle-royale-island-map.webp',
-			title: 'Fortnite Battle Royale island | Fortnite Cheats ESP',
-			caption: 'Battle Royale island overview for Fortnite cheats ESP wallhack routes',
 		},
 	],
 } as const;

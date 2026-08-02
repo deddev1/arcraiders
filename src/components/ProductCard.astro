@@ -22,7 +22,7 @@ const { name = ui.product.title } = Astro.props;
 
 const images = fortniteImages.product.map((image, index) => ({
 	...image,
-	alt: [ui.images.aimbotCombat, ui.images.squadFight, ui.images.espWallhack, ui.images.hero, ui.images.headerArt, ui.images.cheatsPackage][index] ?? image.alt,
+	alt: [ui.images.battleRoyale, ui.images.rebootFight, ui.images.aimbotCombat, ui.images.playerEsp, ui.images.espWallhack, ui.images.squadFight][index] ?? image.alt,
 }));
 const main = images[0];
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];

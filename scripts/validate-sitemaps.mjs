@@ -39,6 +39,7 @@ const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 const HREFLANG_PER_URL = 23;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
+const IMAGE_SITEMAP_ENTRIES = 13; // unique keyword assets in fortniteImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',
@@ -193,10 +194,10 @@ async function main() {
 		bump();
 	}
 
-	if (imageLocs.length !== 14) {
-		fail(`sitemap-images.xml: expected 14 image host URLs, got ${imageLocs.length}`);
+	if (imageLocs.length !== IMAGE_SITEMAP_ENTRIES) {
+		fail(`sitemap-images.xml: expected ${IMAGE_SITEMAP_ENTRIES} image host URLs, got ${imageLocs.length}`);
 		bump();
-	} else ok('sitemap-images.xml has 14 image entries');
+	} else ok(`sitemap-images.xml has ${IMAGE_SITEMAP_ENTRIES} image entries`);
 
 	// English path coverage
 	for (const p of ENGLISH_PATHS) {
