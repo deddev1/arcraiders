@@ -25,13 +25,13 @@ const canonicalURL = absoluteBlogUrl(locale);
 const homeHref = getLocalizedPath('home', locale);
 
 const articleListSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'CollectionPage',
 	'@id': `${canonicalURL}#collection`,
 	name: ui.blogH1,
 	description: ui.blogDescription,
 	url: canonicalURL,
-	isPartOf: { '@type': 'WebSite', name: siteConfig.name, url: siteConfig.url },
+	inLanguage: locale,
+	isPartOf: { '@id': `${siteConfig.url}/#website` },
 	mainEntity: {
 		'@type': 'ItemList',
 		itemListElement: posts.map((post, i) => ({
@@ -64,15 +64,16 @@ const articleListSchema = {
 			featured.length > 0 && (
 				<section class="blog__featured" aria-label="Featured">
 					{
-						featured.map((post) => (
+						featured.map((post, index) => (
 							<a class="blog__feature-card" href={post.canonicalPath}>
 								<img
 									src={post.imageSrc}
 									alt={post.translation.imageAlt}
 									width="640"
 									height="360"
-									loading="eager"
+									loading={index === 0 ? 'eager' : 'lazy'}
 									decoding="async"
+									fetchpriority={index === 0 ? 'high' : undefined}
 								/>
 								<div>
 									<span class="blog__cat">{post.category}</span>

@@ -26,15 +26,16 @@ const related = getAllPostsForLocale(locale)
 	.filter((p) => p.id !== post.id)
 	.slice(0, 3);
 
+const articleUrl = absoluteBlogUrl(locale, t.slug);
 const articleSchema = {
-	'@context': 'https://schema.org',
 	'@type': 'Article',
-	'@id': `${absoluteBlogUrl(locale, t.slug)}#article`,
+	'@id': `${articleUrl}#article`,
 	headline: t.title,
 	description: t.metaDescription,
 	datePublished: post.published,
 	dateModified: post.updated,
 	image: new URL(post.imageSrc, siteConfig.url).href,
+	inLanguage: locale,
 	author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
 	publisher: {
 		'@type': 'Organization',
@@ -42,7 +43,11 @@ const articleSchema = {
 		url: siteConfig.url,
 		logo: { '@type': 'ImageObject', url: new URL(siteConfig.logoRaster, siteConfig.url).href },
 	},
-	mainEntityOfPage: absoluteBlogUrl(locale, t.slug),
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': `${articleUrl}#webpage`,
+	},
+	isPartOf: { '@id': `${siteConfig.url}/#website` },
 	keywords: t.keywords.join(', '),
 	articleSection: post.category,
 };

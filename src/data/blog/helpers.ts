@@ -149,7 +149,13 @@ export function getBlogSitemapEntries() {
 			lastmod: indexLastmod,
 			priority: 0.92,
 			changefreq: 'daily',
-			images: [],
+			images: [
+				{
+					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
+					title: 'Fortnite Hacks Intel blog',
+					caption: 'Fortnite Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+				},
+			],
 		},
 	];
 

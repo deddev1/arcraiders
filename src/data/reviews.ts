@@ -10,6 +10,12 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
+const reviewOgImage = {
+	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
+	title: 'Fortnite Hacks customer reviews',
+	caption: 'Fortnite Hacks buyer reviews for ESP soft aim, radar, and cloud DMA',
+};
+
 /** English review routes for sitemap.xml — /reviews/ index + one URL per review. */
 export function getReviewSitemapEntries() {
 	const indexLastmod = customerReviews.reduce(
@@ -29,7 +35,7 @@ export function getReviewSitemapEntries() {
 			lastmod: indexLastmod,
 			priority: 0.85,
 			changefreq: 'weekly',
-			images: [],
+			images: [reviewOgImage],
 		},
 	];
 
@@ -39,7 +45,13 @@ export function getReviewSitemapEntries() {
 			lastmod: review.date,
 			priority: 0.75,
 			changefreq: 'monthly',
-			images: [],
+			images: [
+				{
+					url: reviewOgImage.url,
+					title: `Fortnite Hacks review by @${review.handle}`,
+					caption: review.seoDescription,
+				},
+			],
 		});
 	}
 

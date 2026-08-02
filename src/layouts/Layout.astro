@@ -121,7 +121,15 @@ if (breadcrumbs && breadcrumbs.length > 0) {
 }
 
 if (extraGraph.length > 0) {
-	graph.push(...extraGraph);
+	// Nodes must not carry a nested @context inside @graph (invalid JSON-LD).
+	graph.push(
+		...extraGraph.map((node) => {
+			const { ['@context']: _ignored, ...rest } = node as Record<string, unknown> & {
+				'@context'?: unknown;
+			};
+			return rest;
+		}),
+	);
 }
 
 const softwareNode = extraGraph.find((node) => node['@type'] === 'SoftwareApplication');
