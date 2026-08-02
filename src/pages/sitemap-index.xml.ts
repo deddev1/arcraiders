@@ -1,13 +1,16 @@
 import type { APIRoute } from 'astro';
 import { getBlogSitemapEntries } from '../data/blog/helpers';
 import { siteConfig } from '../data/site';
-import { i18nLocaleCodes, localeSitemapUrl } from '../data/sitemap-locale';
 import { latestPageLastmod } from '../data/sitemap-meta';
 import { escapeXml } from '../data/sitemap-xml';
 
 export const prerender = true;
 
-/** Sitemap index: English pages + 21 locale sitemaps + image sitemap. */
+/**
+ * Sitemap index: English pages + image sitemap.
+ * Non-English locale sitemaps are omitted while translations are thin UX-only
+ * (English is the official canonical / x-default language).
+ */
 export const GET: APIRoute = () => {
 	const pageLastmod = latestPageLastmod();
 	// sitemap.xml also contains blog URLs, so its lastmod must cover the newest post update.
@@ -18,10 +21,6 @@ export const GET: APIRoute = () => {
 
 	const subSitemaps: { loc: string; lastmod: string }[] = [
 		{ loc: new URL('/sitemap.xml', siteConfig.url).href, lastmod: englishLastmod },
-		...i18nLocaleCodes.map((locale) => ({
-			loc: localeSitemapUrl(locale),
-			lastmod: pageLastmod,
-		})),
 		{ loc: new URL('/sitemap-images.xml', siteConfig.url).href, lastmod: pageLastmod },
 	];
 

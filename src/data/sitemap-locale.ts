@@ -1,6 +1,11 @@
 import { getPageContent } from './i18n';
-import { getLocalizedPath, hreflangLinksXml, pageIds, type PageId } from './i18n/routing';
-import { defaultLocale, localeCodes, type LocaleCode } from './i18n/locales';
+import { getLocalizedPath, pageIds, type PageId } from './i18n/routing';
+import {
+	defaultLocale,
+	includeLocaleUrlsInSitemap,
+	localeCodes,
+	type LocaleCode,
+} from './i18n/locales';
 import { siteConfig } from './site';
 import { pageSitemapMeta } from './sitemap-meta';
 import { escapeXml } from './sitemap-xml';
@@ -14,7 +19,7 @@ export type LocaleSitemapEntry = {
 	image?: { url: string; title: string; caption: string };
 };
 
-/** Non-English locale codes included in regional sitemaps. */
+/** Non-English locale codes (UI routes). Not SEO peers while translations are thin. */
 export const i18nLocaleCodes = localeCodes.filter((code) => code !== defaultLocale);
 
 export function localeSitemapFilename(locale: LocaleCode): string {
@@ -25,10 +30,17 @@ export function localeSitemapUrl(locale: LocaleCode): string {
 	return new URL(`/${localeSitemapFilename(locale)}`, siteConfig.url).href;
 }
 
-/** Build sitemap entries for one non-English locale (25 pages). */
+/**
+ * Build sitemap entries for one non-English locale.
+ * Returns [] when `includeLocaleUrlsInSitemap` is false (English-only SEO policy).
+ */
 export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntry[] {
 	if (locale === defaultLocale) {
 		throw new Error(`English pages belong in sitemap.xml, not sitemap-${locale}.xml`);
+	}
+
+	if (!includeLocaleUrlsInSitemap) {
+		return [];
 	}
 
 	return pageIds.map((pageId) => {
@@ -55,7 +67,7 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 
 export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
 	const loc = new URL(entry.path, siteConfig.url).href;
-	const hreflangBlock = `\n${hreflangLinksXml(entry.pageId, escapeXml)}`;
+	// No multi-locale hreflang cluster — English sitemap owns en + x-default.
 	const imageBlock = entry.image
 		? `\n    <image:image>
       <image:loc>${escapeXml(entry.image.url)}</image:loc>
@@ -68,11 +80,12 @@ export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${escapeXml(entry.lastmod)}</lastmod>
     <changefreq>${entry.changefreq}</changefreq>
-    <priority>${entry.priority.toFixed(2)}</priority>${hreflangBlock}${imageBlock}
+    <priority>${entry.priority.toFixed(2)}</priority>${imageBlock}
   </url>`;
 }
 
-/** Combined i18n entries (all 21 locales) — used by sitemap-i18n.xml for backward compatibility. */
+/** Combined i18n entries — empty under English-only SEO policy. */
 export function buildAllI18nSitemapEntries(): LocaleSitemapEntry[] {
+	if (!includeLocaleUrlsInSitemap) return [];
 	return i18nLocaleCodes.flatMap((locale) => buildLocaleSitemapEntries(locale));
 }

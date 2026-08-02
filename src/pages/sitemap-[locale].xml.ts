@@ -13,7 +13,11 @@ export const prerender = true;
 export const getStaticPaths = (() =>
 	i18nLocaleCodes.map((locale) => ({ params: { locale } }))) satisfies GetStaticPaths;
 
-/** Per-locale page sitemap (17 URLs each) with hreflang and image extensions. */
+/**
+ * Per-locale sitemap — empty while `includeLocaleUrlsInSitemap` is false.
+ * Files remain so historical sitemap URLs do not 404; they are not listed in
+ * sitemap-index.xml.
+ */
 export const GET: APIRoute = ({ params }) => {
 	const locale = params.locale as LocaleCode;
 	const entries = buildLocaleSitemapEntries(locale);

@@ -1,8 +1,9 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import { getPageContent, type PageId } from '../data/i18n';
-import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
+import { getCanonicalPath, getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
+import { defaultLocale } from '../data/i18n/locales';
 import { seoFaqs, siteConfig } from '../data/site';
 import { rustImages } from '../data/rust';
 
@@ -27,11 +28,11 @@ const galleryPool = [
 ];
 
 const faqSchema =
-	pageId === 'faq' && locale === 'en'
+	pageId === 'faq' && locale === defaultLocale
 		? {
 				'@context': 'https://schema.org',
 				'@type': 'FAQPage',
-				'@id': `${new URL(getLocalizedPath('faq', locale), siteConfig.url).href}#faq`,
+				'@id': `${new URL(getCanonicalPath('faq'), siteConfig.url).href}#faq`,
 				mainEntity: seoFaqs.map((item) => ({
 					'@type': 'Question',
 					name: item.question,
@@ -50,7 +51,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 <PageLayout
 	title={page.title}
 	description={page.description}
-	canonicalPath={getLocalizedPath(pageId, locale)}
+	canonicalPath={getCanonicalPath(pageId, locale)}
 	heading={page.h1}
 	intro={page.intro}
 	heroImage={page.heroImage}

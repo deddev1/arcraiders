@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-# Single submission path: the index covers per-locale + image sitemaps.
-# sitemap.xml (English pages + blog) kept as an explicit hint for crawlers.
+# English is the official language. Primary sitemaps: index + English pages.
+# Non-English UI locales are convenience translations and are not listed in sitemaps.
 Sitemap: https://rusthacks.net/sitemap-index.xml
 Sitemap: https://rusthacks.net/sitemap.xml

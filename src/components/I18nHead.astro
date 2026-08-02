@@ -7,7 +7,8 @@ interface Props {
 	locale?: LocaleCode;
 }
 
-const { pageId, locale = 'en' } = Astro.props;
+const { pageId } = Astro.props;
+/** English + x-default only — thin locales are UX routes, not hreflang peers. */
 const alternates = getHreflangAlternates(pageId);
 ---
 

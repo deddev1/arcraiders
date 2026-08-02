@@ -9,8 +9,9 @@ import { renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 export const prerender = true;
 
 /**
- * Combined localized sitemap (525 URLs) — kept for backward compatibility.
- * Prefer sitemap-index.xml → sitemap-{locale}.xml for regional Search Console submission.
+ * Legacy aggregate locale sitemap — intentionally empty under the English-only
+ * SEO policy (thin translations are UX routes, not index targets).
+ * Kept so old GSC submissions resolve to an empty urlset instead of 404.
  */
 export const GET: APIRoute = () => {
 	const entries = buildAllI18nSitemapEntries();

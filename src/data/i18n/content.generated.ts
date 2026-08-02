@@ -80,7 +80,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					buyNow: "Buy Now",
 					readGuide: "Read guide",
 					language: "Language",
-					officialLanguageNote: "English is the official language. Other locales are translated for global SEO.",
+					officialLanguageNote: "English is the official language. Other languages are convenience UI translations.",
 					relatedPages: "Related pages",
 				},
 				footer: {

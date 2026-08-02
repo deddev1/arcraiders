@@ -32,7 +32,12 @@ export type LocaleMeta = {
 	region: string;
 };
 
-/** 22 locales for global Rust Cheats blog SEO coverage. */
+/**
+ * UI locales (language switcher / `/{lang}/…` routes).
+ * SEO policy: English is the only official indexable language. Non-English
+ * locales are convenience UI translations — not equal hreflang/sitemap peers.
+ * @see `seoIndexableLocales`, `includeLocaleUrlsInSitemap`
+ */
 export const locales: LocaleMeta[] = [
 	{ code: 'en', name: 'English', nativeName: 'English', hreflang: 'en', ogLocale: 'en_US', dir: 'ltr', region: 'Worldwide' },
 	{ code: 'es', name: 'Spanish', nativeName: 'Español', hreflang: 'es', ogLocale: 'es_ES', dir: 'ltr', region: 'Spain & Latin America' },
@@ -58,7 +63,17 @@ export const locales: LocaleMeta[] = [
 	{ code: 'sv', name: 'Swedish', nativeName: 'Svenska', hreflang: 'sv', ogLocale: 'sv_SE', dir: 'ltr', region: 'Sweden & Nordics' },
 ];
 
+/** Official / canonical locale — English global pages at site root. */
 export const defaultLocale: LocaleCode = 'en';
+
+/**
+ * Locales that participate in hreflang + primary sitemaps as SEO peers.
+ * Thin/template translations stay off this list so they do not compete with English.
+ */
+export const seoIndexableLocales: readonly LocaleCode[] = ['en'] as const;
+
+/** When false, non-English locale URLs are omitted from sitemaps (UX routes remain). */
+export const includeLocaleUrlsInSitemap = false;
 
 export const localeCodes = locales.map((l) => l.code);
 

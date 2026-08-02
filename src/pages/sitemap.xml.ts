@@ -7,7 +7,7 @@ import { escapeXml, renderUrlsetXml, sitemapResponseHeaders } from '../data/site
 
 export const prerender = true;
 
-/** Primary English page sitemap with Google image extensions and hreflang alternates. */
+/** Primary English page sitemap with Google image extensions and en + x-default hreflang. */
 export const GET: APIRoute = () => {
 	const blogEntries = getBlogSitemapEntries()
 		.filter((entry) => !entry.path.match(/^\/[a-z]{2}\//))

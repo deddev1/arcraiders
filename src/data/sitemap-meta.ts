@@ -58,9 +58,11 @@ export const SITEMAP_COUNTS = {
 	englishPages: 25,
 	i18nLocales: 21,
 	pagesPerLocale: 25,
-	i18nUrls: 21 * 25,
-	totalIndexablePages: 25 + 21 * 25,
-	hreflangLinksPerUrl: 23,
-	/** sitemap-index.xml: EN + 21 locale sitemaps + images */
-	sitemapIndexEntries: 1 + 21 + 1,
+	/** Locale URLs omitted from sitemaps under English-only SEO policy. */
+	i18nUrls: 0,
+	totalIndexablePages: 25,
+	/** en + x-default only (no thin-locale hreflang cluster). */
+	hreflangLinksPerUrl: 2,
+	/** sitemap-index.xml: English pages + images */
+	sitemapIndexEntries: 2,
 } as const;

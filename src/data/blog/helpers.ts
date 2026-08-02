@@ -86,20 +86,20 @@ export function getPostBySlug(locale: LocaleCode, slug: string): ResolvedBlogPos
 
 /**
  * ⚠️ QUARANTINED — DO NOT USE YET.
- * Builds hreflang alternates pointing at localized blog URLs (`/{lang}/blog/…`)
- * that DO NOT EXIST as routes: only English blog pages are built today.
- * Wiring this into pages would emit hreflang links to 404s (GSC indexing errors).
- * Keep unused until localized blog routes actually ship.
+ * Blog hreflang: English + x-default only (matches site SEO policy).
+ * Localized blog routes (`/{lang}/blog/…`) do not exist yet — do not expand
+ * this to other locales until real translations and routes ship.
  */
 export function getHreflangAlternates(post: BlogPostDefinition) {
+	const enHref = absoluteBlogUrl(defaultLocale, post.translations[defaultLocale].slug);
 	return [
-		...localeCodes.map((code) => ({
-			hreflang: locales.find((l) => l.code === code)!.hreflang,
-			href: absoluteBlogUrl(code, post.translations[code].slug),
-		})),
+		{
+			hreflang: locales.find((l) => l.code === defaultLocale)!.hreflang,
+			href: enHref,
+		},
 		{
 			hreflang: 'x-default',
-			href: absoluteBlogUrl(defaultLocale, post.translations[defaultLocale].slug),
+			href: enHref,
 		},
 	];
 }
