@@ -4,6 +4,16 @@ import { siteConfig } from './site';
  * Simple SEO filenames for rust hacks product UI assets.
  * Visuals are cheat overlay / menu / status UI — not combat scenery.
  */
+
+/** Background gameplay clip — keyworded for rust hacks SEO. */
+export const rustVideo = {
+	src: '/videos/rust-hacks-background.mp4',
+	poster: '/images/rust-hacks-hero.webp',
+	title: 'Rust hacks background video',
+	ariaLabel: 'Rust hacks gameplay background — ESP and aimbot on PC',
+	caption: 'Rust hacks gameplay video with ESP and aimbot',
+} as const;
+
 export const rustImages = {
 	hero: '/images/rust-hacks-hero.webp',
 	cover: '/images/rust-hacks-cover.webp',

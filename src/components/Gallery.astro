@@ -1,5 +1,5 @@
 ---
-import { rustImages } from '../data/rust';
+import { rustImages, rustVideo } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -75,6 +75,23 @@ const tiles = galleryImages.slice(1, 5);
 						decoding="async"
 					/>
 					<figcaption>{featured.alt}</figcaption>
+				</figure>
+
+				<figure class="gallery__video media-frame">
+					<video
+						data-rust-hacks-video="lazy"
+						muted
+						loop
+						playsinline
+						autoplay
+						preload="none"
+						poster={rustVideo.poster}
+						title={rustVideo.title}
+						aria-label={rustVideo.ariaLabel}
+					>
+						<source src={rustVideo.src} type="video/mp4" />
+					</video>
+					<figcaption>{rustVideo.caption}</figcaption>
 				</figure>
 
 				<div class="gallery__grid">
@@ -199,14 +216,30 @@ const tiles = galleryImages.slice(1, 5);
 	}
 
 	.gallery__featured,
+	.gallery__video,
 	.gallery__item {
 		margin: 0;
 	}
 
-	.gallery__featured {
+	.gallery__featured,
+	.gallery__video {
 		aspect-ratio: 16 / 9;
-		border: 1px solid rgba(192, 132, 252, 0.22);
+		border: 1px solid rgba(196, 120, 64, 0.28);
 		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.26);
+	}
+
+	.gallery__video video {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background: #0b0d0f;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.gallery__video {
+			display: none;
+		}
 	}
 
 	.gallery__grid {
@@ -233,13 +266,14 @@ const tiles = galleryImages.slice(1, 5);
 	}
 
 	.gallery__featured figcaption,
+	.gallery__video figcaption,
 	.gallery__item figcaption {
 		position: absolute;
 		inset: auto 0 0;
 		z-index: 2;
 		padding: 1.6rem 0.95rem 0.8rem;
-		background: linear-gradient(transparent, rgba(10, 6, 18, 0.92));
-		color: #ddd4ec;
+		background: linear-gradient(transparent, rgba(11, 13, 15, 0.92));
+		color: #c8beb2;
 		font-size: 0.75rem;
 		font-weight: 600;
 		opacity: 0;
@@ -253,6 +287,11 @@ const tiles = galleryImages.slice(1, 5);
 	.gallery__item:hover figcaption {
 		opacity: 1;
 		transform: translateY(0);
+	}
+
+	.gallery__video figcaption {
+		opacity: 1;
+		transform: none;
 	}
 
 	@media (max-width: 900px) {
@@ -309,7 +348,12 @@ const tiles = galleryImages.slice(1, 5);
 			aspect-ratio: 4 / 3;
 		}
 
+		.gallery__video {
+			aspect-ratio: 16 / 9;
+		}
+
 		.gallery__featured figcaption,
+		.gallery__video figcaption,
 		.gallery__item figcaption {
 			opacity: 1;
 			transform: none;

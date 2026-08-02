@@ -4,6 +4,7 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
+import { rustVideo } from '../data/rust';
 
 interface Props {
 	accent?: string;
@@ -28,6 +29,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
 		{/*
+		  Photo sits under the looping rust-hacks background video (poster + fallback).
 		  Mobile: single 480w candidate (ignores DPR upscaling that would pull 960/1400).
 		  Desktop: full responsive srcset.
 		*/}
@@ -55,9 +57,24 @@ const featuresUrl = getLocalizedPath('features', locale);
 				decoding="async"
 			/>
 		</picture>
+		<video
+			class="hero__video"
+			data-rust-hacks-video="hero"
+			autoplay
+			muted
+			loop
+			playsinline
+			preload="metadata"
+			poster={rustVideo.poster}
+			title={rustVideo.title}
+			aria-label={rustVideo.ariaLabel}
+		>
+			<source src={rustVideo.src} type="video/mp4" />
+		</video>
 		<div class="hero__splash" aria-hidden="true"></div>
 		<div class="hero__veil" aria-hidden="true"></div>
 	</div>
+	<script src="/scripts/rust-hacks-bg-video.js" defer></script>
 
 	<div class="hero__inner">
 		<div class="hero__copy">
@@ -96,7 +113,8 @@ const featuresUrl = getLocalizedPath('features', locale);
 		z-index: 0;
 	}
 
-	.hero__bg {
+	.hero__bg,
+	.hero__video {
 		position: absolute;
 		inset: 0;
 		width: 100%;
@@ -107,6 +125,19 @@ const featuresUrl = getLocalizedPath('features', locale);
 		backface-visibility: hidden;
 	}
 
+	.hero__bg {
+		z-index: 0;
+	}
+
+	.hero__video {
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.hero__video.is-motion-reduced {
+		display: none;
+	}
+
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
 		.hero__bg {
 			will-change: transform;
@@ -114,9 +145,16 @@ const featuresUrl = getLocalizedPath('features', locale);
 		}
 	}
 
+	@media (prefers-reduced-motion: reduce) {
+		.hero__video {
+			display: none;
+		}
+	}
+
 	.hero__splash {
 		position: absolute;
 		inset: 0;
+		z-index: 2;
 		background:
 			radial-gradient(ellipse 50% 70% at 78% 45%, rgba(196, 120, 64, 0.28), transparent 70%),
 			radial-gradient(ellipse 38% 55% at 92% 72%, rgba(90, 110, 120, 0.22), transparent 65%),
@@ -134,6 +172,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 	.hero__veil {
 		position: absolute;
 		inset: 0;
+		z-index: 3;
 		background:
 			linear-gradient(90deg, #0b0d0f 0%, rgba(11, 13, 15, 0.92) 34%, rgba(11, 13, 15, 0.32) 62%, rgba(11, 13, 15, 0.55) 100%),
 			linear-gradient(180deg, rgba(11, 13, 15, 0.35) 0%, transparent 40%, rgba(11, 13, 15, 0.78) 100%);
@@ -315,7 +354,8 @@ const featuresUrl = getLocalizedPath('features', locale);
 			display: block;
 		}
 
-		.hero__bg {
+		.hero__bg,
+		.hero__video {
 			object-position: center 32%;
 			animation: none;
 			transform: none;
