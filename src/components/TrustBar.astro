@@ -10,22 +10,72 @@ const locale = Astro.props.locale ?? defaultLocale;
 const trust = getUi(locale).trust;
 
 const items = [
-	{ key: 'status', label: 'Status', value: trust.status, short: trust.statusShort, live: true },
-	{ key: 'delivery', label: 'Delivery', value: trust.delivery, short: trust.delivery },
-	{ key: 'platform', label: 'Platform', value: trust.platform, short: trust.platform },
-	{ key: 'anticheat', label: 'Anti-cheat', value: trust.antiCheatShort, short: trust.antiCheatShort },
+	{
+		key: 'status',
+		label: 'Status',
+		value: trust.status,
+		live: true,
+		icon: 'signal',
+	},
+	{
+		key: 'delivery',
+		label: 'Delivery',
+		value: trust.delivery,
+		live: false,
+		icon: 'bolt',
+	},
+	{
+		key: 'platform',
+		label: 'Platform',
+		value: trust.platform,
+		live: false,
+		icon: 'monitor',
+	},
+	{
+		key: 'anticheat',
+		label: 'Anti-cheat',
+		value: trust.antiCheatShort,
+		live: false,
+		icon: 'shield',
+	},
 ] as const;
 ---
 
 <section class="trust-bar shell" aria-label="Rust Cheats package status">
-	<ul class="trust-bar__strip">
+	<ul class="trust-bar__panel">
 		{
 			items.map((item) => (
-				<li class:list={['trust-bar__item', { 'trust-bar__item--live': item.live }]}>
-					<span class="trust-bar__label">{item.label}</span>
-					<span class="trust-bar__value">
-						{item.live && <span class="trust-bar__dot" aria-hidden="true" />}
-						{item.value}
+				<li class:list={['trust-bar__cell', { 'trust-bar__cell--live': item.live }]}>
+					<span class="trust-bar__icon" aria-hidden="true" data-icon={item.icon}>
+						{item.icon === 'signal' && (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+								<path d="M4 18v-2M8 18V10M12 18V6M16 18v-5M20 18V8" stroke-linecap="round" />
+							</svg>
+						)}
+						{item.icon === 'bolt' && (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+								<path d="M13 3 5.5 13.5H12l-1 7.5L19.5 10H13l0-7Z" stroke-linejoin="round" />
+							</svg>
+						)}
+						{item.icon === 'monitor' && (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+								<rect x="3.5" y="4.5" width="17" height="12" rx="1.5" />
+								<path d="M8 20h8M12 16.5V20" stroke-linecap="round" />
+							</svg>
+						)}
+						{item.icon === 'shield' && (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+								<path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z" stroke-linejoin="round" />
+								<path d="m9.5 12 1.8 1.8 3.7-3.8" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						)}
+					</span>
+					<span class="trust-bar__copy">
+						<span class="trust-bar__label">{item.label}</span>
+						<span class="trust-bar__value">
+							{item.live && <span class="trust-bar__dot" aria-hidden="true" />}
+							{item.value}
+						</span>
 					</span>
 				</li>
 			))
@@ -35,49 +85,96 @@ const items = [
 
 <style>
 	.trust-bar {
-		padding-block: 0.55rem 0.75rem;
+		padding-block: 0.65rem 0.9rem;
 		content-visibility: auto;
-		contain-intrinsic-size: 1px 56px;
+		contain-intrinsic-size: 1px 88px;
 	}
 
-	.trust-bar__strip {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 0.35rem 0;
+	.trust-bar__panel {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0;
 		margin: 0;
-		padding: 0.55rem 1rem;
+		padding: 0.35rem;
 		list-style: none;
-		border-radius: 999px;
-		border: 1px solid rgba(168, 85, 247, 0.22);
-		background: rgba(26, 22, 38, 0.72);
-		box-shadow: none;
+		border-radius: 1.15rem;
+		border: 1px solid rgba(168, 85, 247, 0.28);
+		background:
+			linear-gradient(180deg, rgba(168, 85, 247, 0.1) 0%, rgba(26, 22, 38, 0.55) 42%, rgba(10, 6, 18, 0.72) 100%),
+			rgba(18, 16, 26, 0.88);
+		box-shadow:
+			0 0 0 1px rgba(192, 132, 252, 0.06) inset,
+			0 12px 36px rgba(0, 0, 0, 0.32),
+			0 0 42px rgba(168, 85, 247, 0.12);
 	}
 
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
-		.trust-bar__strip {
-			animation: trust-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.06s both;
+		.trust-bar__panel {
+			animation: trust-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 		}
 	}
 
-	.trust-bar__item {
-		display: inline-flex;
-		align-items: baseline;
-		flex-wrap: wrap;
-		gap: 0.35rem 0.55rem;
-		padding: 0.2rem 0.95rem;
+	.trust-bar__cell {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
 		min-width: 0;
+		padding: 0.75rem 0.85rem;
+		border-radius: 0.9rem;
+		position: relative;
 	}
 
-	.trust-bar__item:not(:last-child) {
-		border-right: 1px solid rgba(168, 85, 247, 0.18);
+	.trust-bar__cell:not(:last-child)::after {
+		content: '';
+		position: absolute;
+		top: 18%;
+		right: 0;
+		width: 1px;
+		height: 64%;
+		background: linear-gradient(
+			180deg,
+			transparent 0%,
+			rgba(168, 85, 247, 0.35) 50%,
+			transparent 100%
+		);
+	}
+
+	.trust-bar__icon {
+		display: grid;
+		place-items: center;
+		flex-shrink: 0;
+		width: 2.15rem;
+		height: 2.15rem;
+		border-radius: 0.7rem;
+		color: var(--color-orchid);
+		background: linear-gradient(160deg, rgba(168, 85, 247, 0.22), rgba(124, 58, 237, 0.08));
+		border: 1px solid rgba(168, 85, 247, 0.28);
+		box-shadow: 0 0 18px rgba(168, 85, 247, 0.12);
+	}
+
+	.trust-bar__icon svg {
+		width: 1.1rem;
+		height: 1.1rem;
+	}
+
+	.trust-bar__cell--live .trust-bar__icon {
+		color: var(--color-mint);
+		background: linear-gradient(160deg, rgba(52, 211, 153, 0.2), rgba(168, 85, 247, 0.08));
+		border-color: rgba(52, 211, 153, 0.35);
+		box-shadow: 0 0 18px rgba(52, 211, 153, 0.14);
+	}
+
+	.trust-bar__copy {
+		display: flex;
+		flex-direction: column;
+		gap: 0.18rem;
+		min-width: 0;
 	}
 
 	.trust-bar__label {
 		font-size: 0.62rem;
 		font-weight: 700;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.12em;
 		text-transform: uppercase;
 		color: var(--color-faint);
 	}
@@ -86,34 +183,35 @@ const items = [
 		display: inline-flex;
 		align-items: center;
 		gap: 0.4rem;
-		font-size: 0.84rem;
-		font-weight: 600;
-		line-height: 1.3;
+		font-size: 0.86rem;
+		font-weight: 650;
+		line-height: 1.25;
 		color: var(--color-ink);
 	}
 
-	.trust-bar__item--live .trust-bar__value {
+	.trust-bar__cell--live .trust-bar__value {
 		color: var(--color-mint);
 	}
 
 	.trust-bar__dot {
-		width: 0.4rem;
-		height: 0.4rem;
+		width: 0.45rem;
+		height: 0.45rem;
 		border-radius: 999px;
 		background: var(--color-mint);
-		box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45);
+		box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5);
+		flex-shrink: 0;
 	}
 
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
 		.trust-bar__dot {
-			animation: trust-pulse 2.4s ease-in-out infinite;
+			animation: trust-pulse 2.2s ease-in-out infinite;
 		}
 	}
 
-	@keyframes trust-in {
+	@keyframes trust-rise {
 		from {
 			opacity: 0;
-			transform: translateY(6px);
+			transform: translateY(10px);
 		}
 		to {
 			opacity: 1;
@@ -124,37 +222,40 @@ const items = [
 	@keyframes trust-pulse {
 		0%,
 		100% {
-			box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
+			box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45);
+			opacity: 1;
 		}
 		50% {
-			box-shadow: 0 0 0 4px rgba(52, 211, 153, 0);
+			box-shadow: 0 0 0 5px rgba(52, 211, 153, 0);
+			opacity: 0.85;
 		}
 	}
 
-	@media (max-width: 720px) {
-		.trust-bar__strip {
-			border-radius: 1rem;
-			padding: 0.45rem 0.35rem;
-			justify-content: stretch;
+	@media (max-width: 900px) {
+		.trust-bar__panel {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0.25rem;
+			padding: 0.4rem;
 		}
 
-		.trust-bar__item {
-			flex: 1 1 42%;
-			justify-content: center;
-			padding: 0.4rem 0.55rem;
-			border-right: 0 !important;
+		.trust-bar__cell:not(:last-child)::after {
+			display: none;
 		}
 
-		.trust-bar__item:nth-child(odd) {
-			border-right: 1px solid rgba(168, 85, 247, 0.14) !important;
+		.trust-bar__cell {
+			padding: 0.7rem 0.75rem;
+			background: rgba(168, 85, 247, 0.04);
+			border: 1px solid rgba(168, 85, 247, 0.12);
 		}
+	}
 
-		.trust-bar__item:nth-child(-n + 2) {
-			border-bottom: 1px solid rgba(168, 85, 247, 0.14);
+	@media (max-width: 480px) {
+		.trust-bar__panel {
+			grid-template-columns: 1fr;
 		}
 
 		.trust-bar__value {
-			font-size: 0.78rem;
+			font-size: 0.82rem;
 		}
 	}
 </style>
