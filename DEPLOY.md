@@ -1,11 +1,11 @@
-# Deploy fortnitehack.net
+# Deploy rusthacks.net
 
-Step-by-step guide to deploy the Fortnite Hacks static site to **fortnitehack.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Rust Hacks static site to **rusthacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **fortnitehack.net** DNS
+- Cloudflare account with access to **rusthacks.net** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -30,7 +30,7 @@ Expected output: **556** indexable HTML pages (25 English marketing + 15 blog UR
 1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
 2. Select this repository.
 3. Configure build settings:
-   - **Project name:** `fortnitecheats` (existing) or create a new project
+   - **Project name:** `rusthacks` (existing) or create a new project
    - **Production branch:** `main` (or `master`)
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
@@ -44,13 +44,13 @@ npm run build:validate
 npm run pages:deploy
 ```
 
-This runs `wrangler pages deploy dist --project-name=fortnitecheats` (see `wrangler.toml`).
+This runs `wrangler pages deploy dist --project-name=rusthacks` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
-Add **fortnitehack.net** as the primary custom domain on the Pages project.
+Add **rusthacks.net** as the primary custom domain on the Pages project.
 
-### Apex (fortnitehack.net)
+### Apex (rusthacks.net)
 
 In **Cloudflare DNS** for the zone:
 
@@ -64,11 +64,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.fortnitehack.net/*`
-   - **Target:** `https://fortnitehack.net/${1}`
+   - **Source:** `www.rusthacks.net/*`
+   - **Target:** `https://rusthacks.net/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`fortnitecheats.xyz`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`rusthacks.xyz`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -80,33 +80,33 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://fortnitehack.net/`
-- `https://fortnitehack.net/es/`
-- `https://fortnitehack.net/fortnite-hacks/`
-- `https://fortnitehack.net/fortnite-aimbot/`
-- `https://fortnitehack.net/sitemap-index.xml`
-- `https://fortnitehack.net/robots.txt`
+- `https://rusthacks.net/`
+- `https://rusthacks.net/es/`
+- `https://rusthacks.net/rust-hacks/`
+- `https://rusthacks.net/rust-aimbot/`
+- `https://rusthacks.net/sitemap-index.xml`
+- `https://rusthacks.net/robots.txt`
 
 Verify redirects:
 
-- `http://fortnitehack.net` → `https://fortnitehack.net` (301)
-- `https://www.fortnitehack.net` → `https://fortnitehack.net` (301)
-- `https://fortnitecheats.xyz` → `https://fortnitehack.net` (301)
-- Legacy paths (e.g. `/warzone-aimbot/`) → Fortnite equivalents (301)
+- `http://rusthacks.net` → `https://rusthacks.net` (301)
+- `https://www.rusthacks.net` → `https://rusthacks.net` (301)
+- `https://rusthacks.xyz` → `https://rusthacks.net` (301)
+- Legacy paths (e.g. `/warzone-aimbot/`) → Rust equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `fortnitehack.net`.
+2. **Add property** → choose **Domain** → enter `rusthacks.net`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://fortnitehack.net/sitemap-index.xml
+   https://rusthacks.net/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
-   - Pillar page (`/fortnite-hacks/`)
-   - Key landing pages (`/fortnite-aimbot/`, `/fortnite-esp/`, `/fortnite-cheats-2026/`, etc.)
+   - Pillar page (`/rust-hacks/`)
+   - Key landing pages (`/rust-aimbot/`, `/rust-esp/`, `/rust-cheats-2026/`, etc.)
    - A sample of locale homepages (`/es/`, `/de/`, `/fr/`)
 6. Monitor **Pages** (Coverage), **Core Web Vitals**, and **International targeting** (hreflang) over the following weeks.
 
@@ -124,11 +124,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `fortnitehack.net` attached and active
+- [ ] Custom domain `rusthacks.net` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `fortnitehack.net`
+- [ ] Legacy domains 301 to `rusthacks.net`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://fortnitehack.net`
+- [ ] `robots.txt` and sitemaps serve from `https://rusthacks.net`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
-- [ ] Homepage and `/fortnite-hacks/` requested for indexing
+- [ ] Homepage and `/rust-hacks/` requested for indexing

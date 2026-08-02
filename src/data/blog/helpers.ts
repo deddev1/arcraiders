@@ -1,5 +1,5 @@
 import { siteConfig } from '../site';
-import { fortniteImages } from '../fortnite';
+import { rustImages } from '../rust';
 import {
 	defaultLocale,
 	localeCodes,
@@ -10,16 +10,16 @@ import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPos
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: fortniteImages.hero,
-	espWallhack: fortniteImages.espWallhack,
-	aimbotCombat: fortniteImages.aimbotCombat,
-	squadFight: fortniteImages.squadFight,
-	headerArt: fortniteImages.headerArt,
-	cheatsPackage: fortniteImages.cheatsPackage,
-	playerEsp: fortniteImages.playerEsp,
-	rebootFight: fortniteImages.rebootFight,
-	battleRoyaleCombat: fortniteImages.battleRoyaleCombat,
-	battleRoyaleIslandMap: fortniteImages.battleRoyaleIsland,
+	hero: rustImages.hero,
+	espWallhack: rustImages.espWallhack,
+	aimbotCombat: rustImages.aimbotCombat,
+	squadFight: rustImages.squadFight,
+	headerArt: rustImages.headerArt,
+	cheatsPackage: rustImages.cheatsPackage,
+	playerEsp: rustImages.playerEsp,
+	rebootFight: rustImages.rebootFight,
+	battleRoyaleCombat: rustImages.battleRoyaleCombat,
+	battleRoyaleIslandMap: rustImages.battleRoyaleIsland,
 };
 
 function expandTranslations(
@@ -152,8 +152,8 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'Fortnite Hacks Intel blog',
-					caption: 'Fortnite Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+					title: 'Rust Hacks Intel blog',
+					caption: 'Rust Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],
 		},

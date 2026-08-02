@@ -10,22 +10,25 @@ const HERO_WIDTHS = [480, 640, 960, 1400];
 /** Below-fold content images — smaller variants for gallery/product cards */
 const CONTENT_WIDTHS = [480, 960];
 
+const HERO_FILE = 'rust-hacks-hero.webp';
+
 const SKIP_PATTERNS = [
 	/-\d+w\.webp$/i,
 	/zadeyo-logo/i,
 	/favicon/i,
+	/rust-hacks-logo/i,
 ];
 
 async function optimizeHero() {
-	const source = path.join(imagesDir, 'fortnite-cheats-hero.webp');
+	const source = path.join(imagesDir, HERO_FILE);
 	const meta = await sharp(source).metadata();
 	const results = [];
 
 	for (const width of HERO_WIDTHS) {
 		if (meta.width && width > meta.width) continue;
-		const file = `fortnite-cheats-hero-${width}w.webp`;
+		const file = `rust-hacks-hero-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
-		const quality = width <= 480 ? 56 : width <= 640 ? 70 : 78;
+		const quality = width <= 480 ? 62 : width <= 640 ? 72 : 80;
 		const buffer = await sharp(source)
 			.resize({ width, withoutEnlargement: true })
 			.webp({ quality, effort: 6 })
@@ -44,7 +47,7 @@ async function optimizeContentImages() {
 		(file) =>
 			file.endsWith('.webp') &&
 			!SKIP_PATTERNS.some((pattern) => pattern.test(file)) &&
-			file !== 'fortnite-cheats-hero.webp',
+			file !== HERO_FILE,
 	);
 
 	const results = [];

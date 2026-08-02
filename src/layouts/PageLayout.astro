@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
-import { fortniteImages } from '../data/fortnite';
+import { rustImages } from '../data/rust';
 import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 import { englishPaths, pageIds, type PageId } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
@@ -36,10 +36,10 @@ const {
 	heading,
 	intro,
 	eyebrow,
-	heroImage = fortniteImages.hero,
-	heroAlt = 'Fortnite Cheats visual for Fortnite',
-	gallery = fortniteImages.product.slice(0, 3),
-	galleryTitle = 'Fortnite gameplay reference',
+	heroImage = rustImages.hero,
+	heroAlt = 'Rust Hacks product UI',
+	gallery = rustImages.product.slice(0, 3),
+	galleryTitle = 'Rust Hacks UI reference',
 	ctaPrimary,
 	ctaSecondary,
 	showGallery = true,
@@ -66,7 +66,7 @@ const normalizedGallery = gallery
 			return { src: item.src, alt: item.alt };
 		}
 
-		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'fortnite-cheats';
+		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'rust-cheats';
 		const keywordAlt = file
 			.split('-')
 			.map((part) => part.charAt(0).toUpperCase() + part.slice(1))
@@ -84,7 +84,7 @@ const breadcrumbs = [
 	{ label: heading },
 ];
 
-const isHeroLcp = heroImage === fortniteImages.hero;
+const isHeroLcp = heroImage === rustImages.hero;
 const lcpImage = isHeroLcp ? heroPreloadSrc : undefined;
 const lcpImageSrcSet = isHeroLcp ? heroSrcSet : undefined;
 const lcpImageSizes = isHeroLcp ? heroSizes : undefined;

@@ -28,7 +28,7 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://fortnitehack.net';
+const SITE = 'https://rusthacks.net';
 
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
@@ -39,31 +39,31 @@ const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 const HREFLANG_PER_URL = 23;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
-const IMAGE_SITEMAP_ENTRIES = 13; // unique keyword assets in fortniteImages.sitemap
+const IMAGE_SITEMAP_ENTRIES = 13; // unique keyword assets in rustImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',
-	'/fortnite-esp/',
-	'/fortnite-aimbot/',
+	'/rust-esp/',
+	'/rust-aimbot/',
 	'/features/',
 	'/pricing/',
 	'/setup/',
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-fortnite-cheats/',
-	'/fortnite-wallhack/',
-	'/fortnite-radar-hack/',
-	'/eac-bypass-fortnite/',
-	'/fortnite-cheats-2026/',
-	'/fortnite-hacks/',
-	'/fortnite-cheat-download/',
-	'/fortnite-mod-menu/',
-	'/fortnite-soft-aim/',
-	'/best-fortnite-cheats/',
-	'/fortnite-aimbot-hack/',
-	'/fortnite-esp-hack/',
-	'/fortnite-unlock-all/',
+	'/undetected-rust-cheats/',
+	'/rust-wallhack/',
+	'/rust-radar-hack/',
+	'/eac-bypass-rust/',
+	'/rust-cheats-2026/',
+	'/rust-hacks/',
+	'/rust-cheat-download/',
+	'/rust-mod-menu/',
+	'/rust-soft-aim/',
+	'/best-rust-cheats/',
+	'/rust-aimbot-hack/',
+	'/rust-esp-hack/',
+	'/rust-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
@@ -76,26 +76,26 @@ const ENGLISH_PATHS = [
 	'/blog/bugha-settings-pro-setup/',
 	'/blog/creative-warmup-maps-pros-use/',
 	'/blog/patch-notes-buffs-nerfs-vaults/',
-	'/blog/fortnite-hacks-complete-guide-2026/',
-	'/blog/fortnite-cheats-buyers-guide/',
-	'/blog/fortnite-cheats-2026-whats-new/',
-	'/blog/fortnite-aimbot-settings-guide/',
-	'/blog/fortnite-esp-wallhack-explained/',
-	'/blog/undetected-fortnite-hacks-eac/',
-	'/blog/fortnite-hacks-vs-cheatvault-comparison/',
-	'/blog/elitefn-vs-fortnite-hacks-two-week-test/',
-	'/blog/fortnite-hacks-vs-ghostware-features-pricing/',
+	'/blog/rust-hacks-complete-guide-2026/',
+	'/blog/rust-cheats-buyers-guide/',
+	'/blog/rust-cheats-2026-whats-new/',
+	'/blog/rust-aimbot-settings-guide/',
+	'/blog/rust-esp-wallhack-explained/',
+	'/blog/undetected-rust-hacks-eac/',
+	'/blog/rust-hacks-vs-cheatvault-comparison/',
+	'/blog/elitefn-vs-rust-hacks-two-week-test/',
+	'/blog/rust-hacks-vs-ghostware-features-pricing/',
 	'/reviews/',
-	'/reviews/fortnite-soft-aim-review-xkrypt0/',
-	'/reviews/fortnite-esp-zero-build-review-buildsr4k/',
-	'/reviews/fortnite-cloud-dma-review-dma-wizard/',
-	'/reviews/fortnite-controller-soft-aim-review-ctrl-player99/',
-	'/reviews/fortnite-hack-setup-review-stormchaser07/',
-	'/reviews/fortnite-loot-esp-review-lootgoblinx/',
-	'/reviews/fortnite-soft-aim-ranked-review-rankedgrind42/',
-	'/reviews/fortnite-radar-hack-review-vanlifefn/',
-	'/reviews/fortnite-eac-update-review-patchdaymike/',
-	'/reviews/fortnite-sniper-soft-aim-review-snipezonly/',
+	'/reviews/rust-soft-aim-review-xkrypt0/',
+	'/reviews/rust-esp-zero-build-review-buildsr4k/',
+	'/reviews/rust-cloud-dma-review-dma-wizard/',
+	'/reviews/rust-controller-soft-aim-review-ctrl-player99/',
+	'/reviews/rust-hack-setup-review-stormchaser07/',
+	'/reviews/rust-loot-esp-review-lootgoblinx/',
+	'/reviews/rust-soft-aim-ranked-review-rankedgrind42/',
+	'/reviews/rust-radar-hack-review-vanlifefn/',
+	'/reviews/rust-eac-update-review-patchdaymike/',
+	'/reviews/rust-sniper-soft-aim-review-snipezonly/',
 ];
 
 const LOCALE_CODES = [

@@ -6,39 +6,39 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'fortnite-esp', 'fortnite-aimbot', 'features', 'pricing', 'setup',
+	'home', 'rust-esp', 'rust-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page topic — keyword-rich fortnite-cheats paths. */
+/** Hero image per page — simple rust-hacks UI filenames. */
 export const HERO_IMAGES = {
-	home: '/images/fortnite-cheats-hero.webp',
-	'fortnite-esp': '/images/fortnite-cheats-esp-wallhack.webp',
-	'fortnite-aimbot': '/images/fortnite-cheats-aimbot-combat.webp',
-	features: '/images/fortnite-cheats-package.webp',
-	pricing: '/images/fortnite-cheats-cover.webp',
-	setup: '/images/fortnite-loadout-builder.webp',
-	updates: '/images/fortnite-header-art.webp',
-	faq: '/images/fortnite-squad-fight.webp',
-	support: '/images/fortnite-cheats-package.webp',
-	undetected: '/images/fortnite-battle-royale-combat.webp',
-	wallhack: '/images/fortnite-cheats-esp-wallhack.webp',
-	radar: '/images/fortnite-player-esp.webp',
-	'eac-bypass': '/images/fortnite-reboot-van-fight.webp',
-	'cheats-2026': '/images/fortnite-cheats-hero.webp',
-	hacks: '/images/fortnite-battle-royale-combat.webp',
-	'cheat-download': '/images/fortnite-cheats-package.webp',
-	'mod-menu': '/images/fortnite-loadout-builder.webp',
-	'soft-aim': '/images/fortnite-cheats-aimbot-combat.webp',
-	'best-cheats': '/images/fortnite-cheats-hero.webp',
-	'aimbot-hack': '/images/fortnite-cheats-aimbot-combat.webp',
-	'esp-hack': '/images/fortnite-cheats-esp-wallhack.webp',
-	'unlock-all': '/images/fortnite-player-esp.webp',
-	privacy: '/images/fortnite-cheats-aimbot-combat.webp',
-	refund: '/images/fortnite-cheats-cover.webp',
-	terms: '/images/fortnite-cheats-package.webp',
+	home: '/images/rust-hacks-hero.webp',
+	'rust-esp': '/images/rust-esp-overlay.webp',
+	'rust-aimbot': '/images/rust-aimbot-ui.webp',
+	features: '/images/rust-hacks-panel.webp',
+	pricing: '/images/rust-hacks-cover.webp',
+	setup: '/images/rust-cheats-menu.webp',
+	updates: '/images/rust-hacks-status.webp',
+	faq: '/images/rust-cheats-dashboard.webp',
+	support: '/images/rust-hacks-panel.webp',
+	undetected: '/images/rust-hacks-status.webp',
+	wallhack: '/images/rust-wallhack-ui.webp',
+	radar: '/images/rust-radar-ui.webp',
+	'eac-bypass': '/images/rust-hacks-status.webp',
+	'cheats-2026': '/images/rust-hacks-hero.webp',
+	hacks: '/images/rust-hacks-hero.webp',
+	'cheat-download': '/images/rust-cheats-dashboard.webp',
+	'mod-menu': '/images/rust-cheats-menu.webp',
+	'soft-aim': '/images/rust-soft-aim-ui.webp',
+	'best-cheats': '/images/rust-hacks-cover.webp',
+	'aimbot-hack': '/images/rust-aimbot-ui.webp',
+	'esp-hack': '/images/rust-esp-overlay.webp',
+	'unlock-all': '/images/rust-hacks-panel.webp',
+	privacy: '/images/rust-hacks-cover.webp',
+	refund: '/images/rust-hacks-cover.webp',
+	terms: '/images/rust-hacks-cover.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'fortnite-esp' | 'fortnite-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'rust-esp' | 'rust-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -101,7 +101,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Fortnite Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy Rust Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -123,8 +123,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://www.epicgames.com/fortnite" target="_blank" rel="noopener noreferrer">Epic Games Fortnite</a>',
-	fortnite: '<a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Fortnite.com</a>',
-	status: '<a href="https://status.epicgames.com/" target="_blank" rel="noopener noreferrer">Epic Games Status</a>',
+	epic: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
+	rust: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
+	status: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
 	eac: '<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>',
 };

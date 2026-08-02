@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes fortnite-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes rust-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,70 +11,70 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'fortnite-hacks', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'fortnite-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'fortnite-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'fortnite-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-fortnite-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'fortnite-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'fortnite-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'fortnite-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'rust-hacks', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'rust-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'rust-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'rust-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-rust-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'rust-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'rust-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'rust-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
-	[/warzone-warzone/g, 'fortnite'],
-	[/eac-bypass-fortnite-warzone/g, 'eac-bypass-fortnite'],
-	[/Call of Duty: Warzone/g, 'Fortnite'],
-	[/Call of Duty Warzone/g, 'Fortnite'],
-	[/Call of Duty/g, 'Fortnite'],
-	[/Warzone Wallhack/g, 'Fortnite Wallhack'],
-	[/Warzone Radar Hack/g, 'Fortnite Radar Hack'],
-	[/Warzone Cheat Features/g, 'Fortnite Cheat Features'],
-	[/Warzone Cheat Pricing/g, 'Fortnite Cheat Pricing'],
-	[/Warzone Cheat Setup/g, 'Fortnite Cheat Setup'],
-	[/Warzone Cheat Status/g, 'Fortnite Cheat Status'],
-	[/Warzone Cheat Support/g, 'Fortnite Cheat Support'],
-	[/Warzone squad fight/g, 'Fortnite squad fight'],
-	[/Warzone squad builder/g, 'Fortnite loadout builder'],
-	[/Warzone store header/g, 'Fortnite header'],
-	[/Warzone wasteland combat/g, 'Fortnite battle royale combat'],
-	[/Warzone loadout builder/g, 'Fortnite loadout builder'],
-	[/Warzone pricing/g, 'Fortnite pricing'],
-	[/Warzone Easy Anti-Cheat/g, 'Fortnite Easy Anti-Cheat'],
-	[/on Warzone/g, 'on Fortnite'],
-	[/for Warzone/g, 'for Fortnite'],
-	[/Warzone guides/g, 'Fortnite guides'],
-	[/Warzone guide/g, 'Fortnite guide'],
-	[/Warzone hileleri/g, 'Fortnite hileleri'],
-	[/Warzone hile/g, 'Fortnite hile'],
-	[/Warzone hileleri/g, 'Fortnite hileleri'],
-	[/cheatów Warzone/g, 'cheatów Fortnite'],
-	[/cheat Warzone/g, 'cheat Fortnite'],
-	[/cheats Warzone/g, 'cheats Fortnite'],
-	[/trucos Warzone/g, 'trucos Fortnite'],
-	[/triche Warzone/g, 'triche Fortnite'],
-	[/trucchi Warzone/g, 'trucchi Fortnite'],
-	[/Wallhack Warzone/g, 'Fortnite Wallhack'],
-	[/cheat Warzone undetected/g, 'cheat Fortnite undetected'],
-	[/cheats Warzone undetected/g, 'cheats Fortnite undetected'],
+	[/warzone-warzone/g, 'rust'],
+	[/eac-bypass-rust-warzone/g, 'eac-bypass-rust'],
+	[/Call of Duty: Warzone/g, 'Rust'],
+	[/Call of Duty Warzone/g, 'Rust'],
+	[/Call of Duty/g, 'Rust'],
+	[/Warzone Wallhack/g, 'Rust Wallhack'],
+	[/Warzone Radar Hack/g, 'Rust Radar Hack'],
+	[/Warzone Cheat Features/g, 'Rust Cheat Features'],
+	[/Warzone Cheat Pricing/g, 'Rust Cheat Pricing'],
+	[/Warzone Cheat Setup/g, 'Rust Cheat Setup'],
+	[/Warzone Cheat Status/g, 'Rust Cheat Status'],
+	[/Warzone Cheat Support/g, 'Rust Cheat Support'],
+	[/Warzone squad fight/g, 'Rust squad fight'],
+	[/Warzone squad builder/g, 'Rust loadout builder'],
+	[/Warzone store header/g, 'Rust header'],
+	[/Warzone wasteland combat/g, 'Rust survival combat'],
+	[/Warzone loadout builder/g, 'Rust loadout builder'],
+	[/Warzone pricing/g, 'Rust pricing'],
+	[/Warzone Easy Anti-Cheat/g, 'Rust Easy Anti-Cheat'],
+	[/on Warzone/g, 'on Rust'],
+	[/for Warzone/g, 'for Rust'],
+	[/Warzone guides/g, 'Rust guides'],
+	[/Warzone guide/g, 'Rust guide'],
+	[/Warzone hileleri/g, 'Rust hileleri'],
+	[/Warzone hile/g, 'Rust hile'],
+	[/Warzone hileleri/g, 'Rust hileleri'],
+	[/cheatów Warzone/g, 'cheatów Rust'],
+	[/cheat Warzone/g, 'cheat Rust'],
+	[/cheats Warzone/g, 'cheats Rust'],
+	[/trucos Warzone/g, 'trucos Rust'],
+	[/triche Warzone/g, 'triche Rust'],
+	[/trucchi Warzone/g, 'trucchi Rust'],
+	[/Wallhack Warzone/g, 'Rust Wallhack'],
+	[/cheat Warzone undetected/g, 'cheat Rust undetected'],
+	[/cheats Warzone undetected/g, 'cheats Rust undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Battle Royale island and Zero Build'],
-	[/Verdansk, Urzikstan/g, 'Battle Royale island, Zero Build'],
-	[/Battle Royale and Resurgence/g, 'Battle Royale and Zero Build'],
-	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
-	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
-	[/Activision ships/g, 'Epic Games ships'],
-	[/Activision security/g, 'Epic Games security'],
-	[/Activision bans/g, 'Epic Games bans'],
-	[/Activision/g, 'Epic Games'],
+	[/Verdansk and Urzikstan/g, 'the island and monuments'],
+	[/Verdansk, Urzikstan/g, 'the island, monuments'],
+	[/survival and Resurgence/g, 'survival and monuments'],
+	[/Activision's anti-cheat/g, "Facepunch' anti-cheat"],
+	[/Activision anti-cheat/g, 'Facepunch anti-cheat'],
+	[/Activision ships/g, 'Facepunch ships'],
+	[/Activision security/g, 'Facepunch security'],
+	[/Activision bans/g, 'Facepunch bans'],
+	[/Activision/g, 'Facepunch'],
 	[/ricochet/gi, 'eac'],
 	[/Ricochet/g, 'Easy Anti-Cheat (EAC)'],
-	[/call-of-duty-warzone-cheats/g, 'fortnite-cheats'],
-	[/call-of-duty-warzone/g, 'fortnite'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Fortnite'],
+	[/call-of-duty-warzone-cheats/g, 'rust-cheats'],
+	[/call-of-duty-warzone/g, 'rust'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Rust'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Fortnite anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Rust anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Fortnite Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Rust Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Warzone guides/g, 'Fortnite guides');
-	content = content.replace(/Warzone guide/g, 'Fortnite guide');
-	content = content.replace(/Warzone hileleri/g, 'Fortnite hileleri');
-	content = content.replace(/Warzone hile/g, 'Fortnite hile');
-	content = content.replace(/cheat Warzone/g, 'cheat Fortnite');
-	content = content.replace(/cheats Warzone/g, 'cheats Fortnite');
-	content = content.replace(/trucos Warzone/g, 'trucos Fortnite');
-	content = content.replace(/triche Warzone/g, 'triche Fortnite');
-	content = content.replace(/trucchi Warzone/g, 'trucchi Fortnite');
-	content = content.replace(/cheatów Warzone/g, 'cheatów Fortnite');
-	content = content.replace(/читов Warzone/g, 'читов Fortnite');
-	content = content.replace(/читів Warzone/g, 'читів Fortnite');
-	content = content.replace(/Warzoneチート/g, 'Fortniteチート');
-	content = content.replace(/Warzone 치트/g, 'Fortnite 치트');
-	content = content.replace(/Warzone作弊/g, 'Fortnite作弊');
-	content = content.replace(/Warzone rehberleri/g, 'Fortnite rehberleri');
-	content = content.replace(/Warzone gidsen/g, 'Fortnite gidsen');
-	content = content.replace(/Warzone průvodce/g, 'Fortnite průvodce');
-	content = content.replace(/Warzone guider/g, 'Fortnite guider');
-	content = content.replace(/Warzone related/g, 'Fortnite related');
-	content = content.replace(/Warzone ガイド/g, 'Fortnite ガイド');
-	content = content.replace(/Warzone 가이드/g, 'Fortnite 가이드');
-	content = content.replace(/Warzone指南/g, 'Fortnite指南');
-	content = content.replace(/Warzone गाइड/g, 'Fortnite गाइड');
-	content = content.replace(/Warzone panduan/g, 'Fortnite panduan');
-	content = content.replace(/Warzone คู่มือ/g, 'Fortnite คู่มือ');
-	content = content.replace(/Warzone hướng dẫn/g, 'Fortnite hướng dẫn');
+	content = content.replace(/Warzone guides/g, 'Rust guides');
+	content = content.replace(/Warzone guide/g, 'Rust guide');
+	content = content.replace(/Warzone hileleri/g, 'Rust hileleri');
+	content = content.replace(/Warzone hile/g, 'Rust hile');
+	content = content.replace(/cheat Warzone/g, 'cheat Rust');
+	content = content.replace(/cheats Warzone/g, 'cheats Rust');
+	content = content.replace(/trucos Warzone/g, 'trucos Rust');
+	content = content.replace(/triche Warzone/g, 'triche Rust');
+	content = content.replace(/trucchi Warzone/g, 'trucchi Rust');
+	content = content.replace(/cheatów Warzone/g, 'cheatów Rust');
+	content = content.replace(/читов Warzone/g, 'читов Rust');
+	content = content.replace(/читів Warzone/g, 'читів Rust');
+	content = content.replace(/Warzoneチート/g, 'Rustチート');
+	content = content.replace(/Warzone 치트/g, 'Rust 치트');
+	content = content.replace(/Warzone作弊/g, 'Rust作弊');
+	content = content.replace(/Warzone rehberleri/g, 'Rust rehberleri');
+	content = content.replace(/Warzone gidsen/g, 'Rust gidsen');
+	content = content.replace(/Warzone průvodce/g, 'Rust průvodce');
+	content = content.replace(/Warzone guider/g, 'Rust guider');
+	content = content.replace(/Warzone related/g, 'Rust related');
+	content = content.replace(/Warzone ガイド/g, 'Rust ガイド');
+	content = content.replace(/Warzone 가이드/g, 'Rust 가이드');
+	content = content.replace(/Warzone指南/g, 'Rust指南');
+	content = content.replace(/Warzone गाइड/g, 'Rust गाइड');
+	content = content.replace(/Warzone panduan/g, 'Rust panduan');
+	content = content.replace(/Warzone คู่มือ/g, 'Rust คู่มือ');
+	content = content.replace(/Warzone hướng dẫn/g, 'Rust hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Fortnite Cheats SEO completion ===\n');
+console.log('=== Rust Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

@@ -13,17 +13,17 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "patch-notes-buffs-nerfs-vaults",
 		title: "Patch Notes Breakdown: Buffs, Nerfs & Vaults That Matter",
-		metaDescription: "Fortnite patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check fortnite hacks updates.",
+		metaDescription: "Rust patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check rust hacks updates.",
 		h1: "Patch Notes Breakdown: Buffs, Nerfs, and Vaults",
 		intro: "Stop skimming patch notes. Here is how buffs, nerfs, and vaults actually reshuffle the loot pool and your ranked loadout priorities.",
-		keywords: ["fortnite patch notes","buffs","nerfs","vaults","loot pool","fortnite intel"],
-		imageAlt: "Fortnite patch notes breakdown of buffs nerfs and vaults for Chapter 7 Season 3",
+		keywords: ["rust patch notes","buffs","nerfs","vaults","loot pool","rust intel"],
+		imageAlt: "Rust patch notes breakdown of buffs nerfs and vaults for Chapter 7 Season 3",
 		sections: [
 			{
 				h2: "Read patches like a player, not a spectator",
 				paragraphs: [
 					"Most players misread patch notes by chasing the loudest bullet point. A small SMG nerf gets a rant video while a quiet mobility tweak silently rewires mid-game. The best ranked grinders treat patches like accountants — what changed in expected value?",
-					"Official notes publish through <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a> and <a href=\"https://www.epicgames.com/fortnite\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Fortnite</a>. Use those primary sources first, then translate each line into inventory decisions for your playlist.",
+					"Official notes publish through <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a> and <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust</a>. Use those primary sources first, then translate each line into inventory decisions for your playlist.",
 					"Pro Tip — Three-question filter: For every note ask: (1) Does this change my drop path? (2) Does this change my 5-slot priority? (3) Does this change my fight distance? If all three are no, ignore the drama.",
 				],
 			},
@@ -37,7 +37,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "How notes reshuffle loadout priority",
 				paragraphs: [
-					"When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">Zero Build aggression guide</a>.",
+					"When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">monuments aggression guide</a>.",
 					"Also separate balance patches from cosmetic and shop notes. Skin leaks are fun; they do not change TTK. Keep patch-day focus on weapons, healing, movement, and map POI changes.",
 				],
 			},
@@ -45,7 +45,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Late-season checklist and next steps",
 				paragraphs: [
 					"Post-patch checklist: skim official notes for vaults first, update your shotgun/AR/mobility/heals spine, play 10 intentional test games, revisit tier-list assumptions, and adjust drop routes if mobility or loot changed.",
-					"On big update mornings, confirm <a href=\"https://status.epicgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Status</a> is healthy before blaming your settings. If you also use fortnite hacks in-match, check <a href=\"/updates/\">Fortnite Hacks Updates</a> after Easy Anti-Cheat patches.",
+					"On big update mornings, confirm <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust status</a> is healthy before blaming your settings. If you also use rust hacks in-match, check <a href=\"/updates/\">Rust Hacks Updates</a> after Easy Anti-Cheat patches.",
 					"Try This Today: Open the latest official patch notes and highlight vaults. Rewrite your 5-slot priority on paper. Queue a focused 5-game test block and note which fights felt different at 30–60m vs 0–15m.",
 				],
 			}
@@ -64,18 +64,18 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "chapter-7-season-3-skin-leaks-vbucks",
 		title: "Chapter 7 Season 3 Skin Leaks: V-Bucks Worth Buying",
-		metaDescription: "Chapter 7 Season 3 Fortnite skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.",
+		metaDescription: "Chapter 7 Season 3 Rust skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.",
 		h1: "Chapter 7 Season 3 Skin Leaks Worth Your V-Bucks",
 		intro: "Season 4 is coming. Here is which leaked and rotating cosmetics are actually worth buying before the shop resets hard.",
-		keywords: ["fortnite skin leaks","vbucks","cosmetics","item shop","season 4","fortnite intel"],
-		imageAlt: "Fortnite Chapter 7 Season 3 skin leaks and V-Bucks shopping guide",
+		keywords: ["rust skin leaks","vbucks","cosmetics","item shop","season 4","rust intel"],
+		imageAlt: "Rust Chapter 7 Season 3 skin leaks and V-Bucks shopping guide",
 		sections: [
 			{
 				h2: "Stop impulse buying before Season 4",
 				paragraphs: [
 					"Most players blow V-Bucks the week before a new season and then cannot buy the Battle Pass. Controversial take: most Item Shop impulse buys do not improve your win rate or locker happiness a month later.",
-					"Shop rotations and Battle Pass exclusives are official through <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a>. Leaks are entertainment — not a shopping list. Use them to decide what to skip.",
-					"Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic Zero Build endgames. Style is cool; readability wins games.",
+					"Shop rotations and Battle Pass exclusives are official through <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a>. Leaks are entertainment — not a shopping list. Use them to decide what to skip.",
+					"Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic monuments endgames. Style is cool; readability wins games.",
 				],
 			},
 			{
@@ -108,18 +108,18 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "hammer-ar-s-tier-data-analysis",
 		title: "Weapon Tier List: Why Hammer AR Is Actually S-Tier",
-		metaDescription: "Data-backed Fortnite weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for Chapter 7 Season 3 ranked.",
+		metaDescription: "Data-backed Rust weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for Chapter 7 Season 3 ranked.",
 		h1: "Weapon Tier List: Why the Hammer AR Is S-Tier",
 		intro: "Community tier lists underrate the Hammer AR. The damage-per-mag and mid-range TTK numbers say otherwise.",
-		keywords: ["hammer ar","fortnite tier list","weapons","ttk","fortnite intel"],
-		imageAlt: "Fortnite Hammer AR S-tier weapon tier list data analysis Chapter 7 Season 3",
+		keywords: ["hammer ar","rust tier list","weapons","ttk","rust intel"],
+		imageAlt: "Rust Hammer AR S-tier weapon tier list data analysis Chapter 7 Season 3",
 		sections: [
 			{
 				h2: "Why the Hammer AR belongs in S-tier",
 				paragraphs: [
 					"Creator tier lists are entertainment, not science. They rank flashy mythics while the Hammer AR quietly prints mid-range eliminations because damage-per-second consistency beats higher-ceiling guns average players cannot control.",
-					"S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where Zero Build and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.",
-					"Confirm live values after patches on <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a>. Hierarchy logic stays useful even when decimals nudge.",
+					"S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where monuments and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.",
+					"Confirm live values after patches on <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a>. Hierarchy logic stays useful even when decimals nudge.",
 					"Pro Tip — Spray discipline: Pros tap or micro-burst until bloom settles, then commit. Treat Hammer like a laser until the enemy wide-peeks — then dump.",
 				],
 			},
@@ -134,10 +134,10 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Loadout pairings, mistakes, and practice",
 				paragraphs: [
-					"Core: Hammer AR + high-burst shotgun + mobility + heals. In Zero Build, this supports the laddering strategies in our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">aggression guide</a>.",
+					"Core: Hammer AR + high-burst shotgun + mobility + heals. In monuments, this supports the laddering strategies in our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">aggression guide</a>.",
 					"Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to SMG at 40m out of habit, never practicing crouch-spray in Creative.",
 					"Try This Today: Prioritize Hammer for 10 games. Count your first four bullets in every mid fight. If you die inside 15m without shotgun out, fix loadout timing — not the AR.",
-					"Players who also use aim-assist tooling can review <a href=\"/fortnite-aimbot/\">Fortnite Aimbot</a> profiles after they lock a sens — mechanics first, tools second.",
+					"Players who also use aim-assist tooling can review <a href=\"/rust-aimbot/\">Rust Aimbot</a> profiles after they lock a sens — mechanics first, tools second.",
 				],
 			}
 		],
@@ -149,23 +149,23 @@ export const blogPosts: BlogPostDefinition[] = [
 		imageKey: "battleRoyaleCombat",
 		published: "2026-07-22",
 		updated: "2026-08-01",
-		category: "Zero Build",
+		category: "monuments",
 		featured: true,
 		translations: {
 		en: {
 		slug: "zero-build-meta-broken-aggressive-strategies",
-		title: "Zero Build Meta Broken: 5 Aggressive Pro Strategies",
-		metaDescription: "Break the passive Zero Build meta with 5 aggressive Fortnite strategies — timings, damage windows, and fight paths that win ranked in Chapter 7 Season 3.",
-		h1: "The Zero Build Meta Is Broken: 5 Aggressive Strategies",
-		intro: "Passive third-partying is dead weight. These five aggressive Zero Build strategies flip mid-game fights before the lobby even rotates.",
-		keywords: ["zero build","fortnite ranked","aggressive strategies","pro tips","fortnite intel"],
-		imageAlt: "Fortnite Zero Build aggressive fight meta strategies Chapter 7 Season 3",
+		title: "monuments Meta Broken: 5 Aggressive Pro Strategies",
+		metaDescription: "Break the passive monuments meta with 5 aggressive Rust strategies — timings, damage windows, and fight paths that win ranked in Chapter 7 Season 3.",
+		h1: "The monuments Meta Is Broken: 5 Aggressive Strategies",
+		intro: "Passive third-partying is dead weight. These five aggressive monuments strategies flip mid-game fights before the lobby even rotates.",
+		keywords: ["zero build","rust ranked","aggressive strategies","pro tips","rust intel"],
+		imageAlt: "Rust monuments aggressive fight meta strategies Chapter 7 Season 3",
 		sections: [
 			{
-				h2: "Why the Zero Build meta feels soft",
+				h2: "Why the monuments meta feels soft",
 				paragraphs: [
-					"Most Zero Build players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.",
-					"A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href=\"/fortnite-esp/\">Fortnite ESP</a> help — but aggression still needs cover discipline.",
+					"Most monuments players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.",
+					"A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href=\"/rust-esp/\">Rust ESP</a> help — but aggression still needs cover discipline.",
 					"Pro Tip — Decide your exit before you swing. Take a 150+ damage window, then hard disengage with mobility before the usual 4–7 second third-party clock.",
 				],
 			},
@@ -174,7 +174,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"1) Pre-aim rotations — hold upper-chest crosshair on every cover hop; clear angles in 0.4–0.6s. 2) Mobility wedge entries — land 8–12m past the target for a clean shotgun angle, not a panic 180. 3) Double-peek shotgun timing — fake left, finish right when their chamber is weak.",
 					"4) Natural cover laddering — never more than 8–12m from hard cover. 5) Zone edge pressure — spray late rotates silhouetted on storm tint, then hold the angle instead of ego-chasing.",
-					"Mode rules evolve with <a href=\"https://www.epicgames.com/fortnite\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Fortnite</a> seasons; the geometry of first-shot advantage does not.",
+					"Mode rules evolve with <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust</a> seasons; the geometry of first-shot advantage does not.",
 				],
 			},
 			{
@@ -182,7 +182,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Before ranked: 10 minutes aim or peek maps, loadout priority AR + shotgun + mobility + heals, two POIs with strong cover ladders, and a 10-game first-shot aggression block.",
 					"Pair this article with <a href=\"/blog/secret-loot-routes-full-gold/\">loot routes</a>, <a href=\"/blog/hammer-ar-s-tier-data-analysis/\">Hammer AR tiers</a>, and <a href=\"/blog/creative-warmup-maps-pros-use/\">Creative warmups</a>.",
-					"Try This Today: Queue Zero Build and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.",
+					"Try This Today: Queue monuments and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.",
 				],
 			}
 		],
@@ -203,13 +203,13 @@ export const blogPosts: BlogPostDefinition[] = [
 		metaDescription: "FNCS meta watch for Chapter 7 Season 3 — what tournament winners drop, how they loot, and which mid-game habits translate to your ranked climb.",
 		h1: "FNCS Meta Watch: What Tournament Winners Drop and Why",
 		intro: "Tournament winners are not lucky drop gods. Here is what their POIs, loadouts, and mid-game habits actually optimize for.",
-		keywords: ["fncs","fortnite esports","tournament drops","meta","fortnite intel"],
-		imageAlt: "FNCS Fortnite tournament meta watch drop spots Chapter 7 Season 3",
+		keywords: ["fncs","rust esports","tournament drops","meta","rust intel"],
+		imageAlt: "FNCS Rust tournament meta watch drop spots Chapter 7 Season 3",
 		sections: [
 			{
 				h2: "Watch tournament film like a coach",
 				paragraphs: [
-					"Most FNCS drop threads name a POI without contest rate, zone percent, split potential, or exit paths. Pros pick drops like investors pick assets — expected value over vibes. Start with <a href=\"https://www.fortnite.com/competitive\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite Competitive</a> schedules and VODs, then tag habits.",
+					"Most FNCS drop threads name a POI without contest rate, zone percent, split potential, or exit paths. Pros pick drops like investors pick assets — expected value over vibes. Start with <a href=\"https://rust.facepunch.com/competitive\" target=\"_blank\" rel=\"noopener noreferrer\">Rust Competitive</a> schedules and VODs, then tag habits.",
 					"Pro Tip — Tag the VOD: landing plan, first heal, first rotate, first voluntary fight, and endgame key move. Five tags beat a full passive watch.",
 				],
 			},
@@ -224,7 +224,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "What translates to ranked",
 				paragraphs: [
 					"Translate loot-timer discipline, loadout spine, early rotates, and selective fights. Do not blindly mirror a trio drop in solo queue.",
-					"Winners rotate early enough to choose sides. Zone edge pressure from our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">Zero Build guide</a> shows up constantly in endgames.",
+					"Winners rotate early enough to choose sides. Zone edge pressure from our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">monuments guide</a> shows up constantly in endgames.",
 					"Try This Today: Watch 15 minutes of a winner VOD with five timestamps. Steal one mid-game habit only. Run it for a 6-game ranked block.",
 				],
 			}
@@ -237,17 +237,17 @@ export const blogPosts: BlogPostDefinition[] = [
 		imageKey: "battleRoyaleIslandMap",
 		published: "2026-07-18",
 		updated: "2026-08-01",
-		category: "Battle Royale Meta",
+		category: "survival Meta",
 		featured: true,
 		translations: {
 		en: {
 		slug: "secret-loot-routes-full-gold",
 		title: "Secret Loot Routes: Leave Spawn Full Gold Every Game",
-		metaDescription: "High-percentage Fortnite loot routes that leave spawn with gold guns, full shields, and mobility — Chapter 7 Season 3 drop paths that win mid-game.",
+		metaDescription: "High-percentage Rust loot routes that leave spawn with gold guns, full shields, and mobility — Chapter 7 Season 3 drop paths that win mid-game.",
 		h1: "Secret Loot Routes: How to Leave Spawn with Full Gold",
 		intro: "Winning starts before the first fight. These loot routes consistently convert drops into gold loadouts and full heals.",
-		keywords: ["fortnite loot routes","drops","gold loot","ranked","fortnite intel"],
-		imageAlt: "Fortnite secret loot routes full gold spawn guide Chapter 7 Season 3",
+		keywords: ["rust loot routes","drops","gold loot","ranked","rust intel"],
+		imageAlt: "Rust secret loot routes full gold spawn guide Chapter 7 Season 3",
 		sections: [
 			{
 				h2: "The real ranked bottleneck is early inventory",
@@ -262,14 +262,14 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Route A — contested edge POI (3–6 players): land outer roof loot, snake inward, leave before late third parties (~2 minutes). Route B — uncontested three-POI chain: sacrifice early kills for purple/gold inventory by minute three. Route C — mid-map surge: loot vacuum piles 90–150 seconds after hot drops empty.",
 					"Timing targets: 0–20s first gun, 20–50s clear cluster, 50–80s chests + minis, 80–120s upgrade or leave. Slot priority: shotgun, AR, mobility, heals, flex.",
-					"POI names rotate with <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a> seasons — keep the geometry, not the landmark brand.",
+					"POI names rotate with <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a> seasons — keep the geometry, not the landmark brand.",
 				],
 			},
 			{
 				h2: "Convert gold guns into wins",
 				paragraphs: [
-					"Pair these routes with <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">Zero Build aggression</a> and <a href=\"/blog/hammer-ar-s-tier-data-analysis/\">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.",
-					"If you use loot ESP markers in practice, read <a href=\"/fortnite-esp/\">Fortnite ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.",
+					"Pair these routes with <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">monuments aggression</a> and <a href=\"/blog/hammer-ar-s-tier-data-analysis/\">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.",
+					"If you use loot ESP markers in practice, read <a href=\"/rust-esp/\">Rust ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.",
 					"Try This Today: Run one uncontested chain for 8 games. Screenshot inventory at 2:30 and compare rarities before adding a contested edge day.",
 				],
 			}
@@ -288,11 +288,11 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "bugha-settings-pro-setup",
 		title: "Bugha's Settings: Copy a Champion Setup That Works",
-		metaDescription: "Bugha-inspired Fortnite settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in Chapter 7 Season 3 ranked.",
+		metaDescription: "Bugha-inspired Rust settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in Chapter 7 Season 3 ranked.",
 		h1: "Bugha's Sensitivity & Settings: Champion-Inspired Setup",
 		intro: "You do not need exact pro digits — you need champion settings philosophy. Here is a setup you can adapt today.",
-		keywords: ["bugha settings","fortnite sensitivity","binds","pro setup","fortnite intel"],
-		imageAlt: "Bugha Fortnite sensitivity settings pro player setup guide",
+		keywords: ["bugha settings","rust sensitivity","binds","pro setup","rust intel"],
+		imageAlt: "Bugha Rust sensitivity settings pro player setup guide",
 		sections: [
 			{
 				h2: "Settings remove friction — they are not magic",
@@ -306,14 +306,14 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Use an eDPI band that lets you 180 with a controlled swipe without over-flicking shotguns. If you overshoot close targets, lower slightly. If you cannot track strafers at 40m with Hammer AR, raise cautiously — then lock settings for 14 days.",
 					"Put edit, crouch, and mobility on keys you can hit while still aiming. Make slot 1 shotgun and slot 2 AR muscle memory. Prefer performance clarity over cinema settings; motion blur off.",
-					"Hardware and competitive context evolve, but fundamentals stay — see <a href=\"https://www.fortnite.com/competitive\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite Competitive</a> for high-level play standards.",
+					"Hardware and competitive context evolve, but fundamentals stay — see <a href=\"https://rust.facepunch.com/competitive\" target=\"_blank\" rel=\"noopener noreferrer\">Rust Competitive</a> for high-level play standards.",
 				],
 			},
 			{
 				h2: "Champion-style practice routine",
 				paragraphs: [
 					"0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then ranked. Pair with our <a href=\"/blog/creative-warmup-maps-pros-use/\">Creative warmup map categories</a>.",
-					"If you later configure Aimbot smoothness for practice tooling, start from <a href=\"/fortnite-soft-aim/\">soft aim</a> after your raw sens is locked — never chase both variables at once.",
+					"If you later configure Aimbot smoothness for practice tooling, start from <a href=\"/rust-soft-aim/\">soft aim</a> after your raw sens is locked — never chase both variables at once.",
 					"Try This Today: Write dpi + sens, adjust at most once by a small percent, then play 5 games without touching settings again.",
 				],
 			}
@@ -332,33 +332,33 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "creative-warmup-maps-pros-use",
 		title: "10 Creative Warmup Maps Pros Use Before Ranked",
-		metaDescription: "Ten Fortnite Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and Zero Build fight reps now.",
+		metaDescription: "Ten Rust Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and monuments fight reps now.",
 		h1: "10 Creative Mode Maps Pros Use to Warm Up Before Ranked",
 		intro: "Stop freezing in first fight. These Creative warmup categories get your mechanics hot before you touch ranked.",
-		keywords: ["fortnite creative","warmup maps","aim trainers","ranked","fortnite intel"],
-		imageAlt: "Fortnite Creative Mode warmup maps pros use before ranked",
+		keywords: ["rust creative","warmup maps","aim trainers","ranked","rust intel"],
+		imageAlt: "Rust Creative Mode warmup maps pros use before ranked",
 		sections: [
 			{
 				h2: "Warmups win Elo before the queue starts",
 				paragraphs: [
 					"Your first two ranked fights often decide whether a session tilts. Pros arrive sharp from Creative — another 40 pub stomps is a worse warmup than 20 focused minutes.",
-					"Find current island codes in Creative via <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a>. We list durable categories because brittle codes die every season update.",
+					"Find current island codes in Creative via <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a>. We list durable categories because brittle codes die every season update.",
 					"Pro Tip — Keep a sticky core playlist. Swap one map per week, not every day.",
 				],
 			},
 			{
 				h2: "25-minute routine and ten map categories",
 				paragraphs: [
-					"0–8 min aim tracker. 8–15 min edit course or Zero Build peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.",
-					"Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, Zero Build cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.",
-					"Zero Build mains should replace edit courses with double-peek ladders from our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">aggression guide</a>.",
+					"0–8 min aim tracker. 8–15 min edit course or monuments peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.",
+					"Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, monuments cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.",
+					"monuments mains should replace edit courses with double-peek ladders from our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">aggression guide</a>.",
 				],
 			},
 			{
 				h2: "Mistakes that waste warmup time",
 				paragraphs: [
 					"Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.",
-					"After mechanics are hot, information tools like <a href=\"/fortnite-radar-hack/\">radar hack</a> or <a href=\"/fortnite-esp/\">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href=\"/fortnite-hacks/\">Fortnite hacks</a>.",
+					"After mechanics are hot, information tools like <a href=\"/rust-radar-hack/\">radar hack</a> or <a href=\"/rust-esp/\">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href=\"/rust-hacks/\">Rust hacks</a>.",
 					"Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.",
 				],
 			}
@@ -367,49 +367,49 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-hacks-complete-guide",
+		id: "rust-hacks-complete-guide",
 		imageKey: "battleRoyaleCombat",
 		published: "2026-07-31",
 		updated: "2026-08-01",
-		category: "Fortnite Hacks",
+		category: "Rust Hacks",
 		featured: true,
 		translations: {
 		en: {
-		slug: "fortnite-hacks-complete-guide-2026",
-		title: "Fortnite Hacks 2026: Complete Undetected Guide",
-		metaDescription: "Complete fortnite hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.",
-		h1: "Fortnite Hacks 2026: The Complete Undetected Guide",
-		intro: "Searching for Fortnite hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how fortnite cheats searchers map to the same Windows PC package.",
-		keywords: ["fortnite hacks","undetected fortnite hacks","fortnite cheats","esp","aimbot","eac"],
-		imageAlt: "Fortnite hacks complete guide showing ESP wallhack and Aimbot for 2026",
+		slug: "rust-hacks-complete-guide-2026",
+		title: "Rust Hacks 2026: Complete Undetected Guide",
+		metaDescription: "Complete rust hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.",
+		h1: "Rust Hacks 2026: The Complete Undetected Guide",
+		intro: "Searching for Rust hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how rust cheats searchers map to the same Windows PC package.",
+		keywords: ["rust hacks","undetected rust hacks","rust cheats","esp","aimbot","eac"],
+		imageAlt: "Rust hacks complete guide showing ESP wallhack and Aimbot for 2026",
 		sections: [
 			{
-				h2: "What Fortnite hacks actually include",
+				h2: "What Rust hacks actually include",
 				paragraphs: [
-					"Fortnite hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type fortnite cheats are looking for the same stack — different wording, same BR loop.",
-					"Official seasons and client updates publish through <a href=\"https://www.epicgames.com/fortnite\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Fortnite</a> and <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a>. Anti-cheat context lives on Easy Anti-Cheat. Our <a href=\"/fortnite-hacks/\">Fortnite hacks pillar</a> is the commercial landing; this post is the long-form explainer.",
+					"Rust hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type rust cheats are looking for the same stack — different wording, same BR loop.",
+					"Official seasons and client updates publish through <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust</a> and <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a>. Anti-cheat context lives on Easy Anti-Cheat. Our <a href=\"/rust-hacks/\">Rust hacks pillar</a> is the commercial landing; this post is the long-form explainer.",
 					"Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.",
 				],
 			},
 			{
 				h2: "ESP, wallhack, Aimbot, and radar roles",
 				paragraphs: [
-					"ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href=\"/fortnite-soft-aim/\">soft aim</a> and <a href=\"/fortnite-aimbot/\">Aimbot controls</a>.",
-					"Deep pages: <a href=\"/fortnite-esp/\">Fortnite ESP</a>, <a href=\"/fortnite-wallhack/\">wallhack</a>, <a href=\"/fortnite-radar-hack/\">radar hack</a>, <a href=\"/fortnite-aimbot-hack/\">aimbot hack</a>, and <a href=\"/fortnite-esp-hack/\">ESP hack</a>.",
+					"ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href=\"/rust-soft-aim/\">soft aim</a> and <a href=\"/rust-aimbot/\">Aimbot controls</a>.",
+					"Deep pages: <a href=\"/rust-esp/\">Rust ESP</a>, <a href=\"/rust-wallhack/\">wallhack</a>, <a href=\"/rust-radar-hack/\">radar hack</a>, <a href=\"/rust-aimbot-hack/\">aimbot hack</a>, and <a href=\"/rust-esp-hack/\">ESP hack</a>.",
 				],
 			},
 			{
-				h2: "Undetected Fortnite hacks and EAC patches",
+				h2: "Undetected Rust hacks and EAC patches",
 				paragraphs: [
-					"Undetected Fortnite hacks require rebuilds after Easy Anti-Cheat and major Fortnite updates. No vendor can promise permanent undetected status — check <a href=\"/updates/\">Updates</a> before you queue.",
-					"On patch mornings confirm <a href=\"https://status.epicgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Status</a>, then read our <a href=\"/eac-bypass-fortnite/\">EAC bypass guide</a> and <a href=\"/blog/undetected-fortnite-hacks-eac/\">undetected EAC notes</a>.",
+					"Undetected Rust hacks require rebuilds after Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href=\"/updates/\">Updates</a> before you queue.",
+					"On patch mornings confirm <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust status</a>, then read our <a href=\"/eac-bypass-rust/\">EAC bypass guide</a> and <a href=\"/blog/undetected-rust-hacks-eac/\">undetected EAC notes</a>.",
 					"Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.",
 				],
 			},
 			{
 				h2: "Next steps — pricing, setup, and cheats pages",
 				paragraphs: [
-					"Ready to buy? Start at the <a href=\"/fortnite-hacks/\">Fortnite hacks pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/fortnite-cheats-2026/\">fortnite cheats 2026</a> and <a href=\"/blog/fortnite-cheats-buyers-guide/\">cheats buyers guide</a>.",
+					"Ready to buy? Start at the <a href=\"/rust-hacks/\">Rust hacks pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/rust-cheats-2026/\">rust cheats 2026</a> and <a href=\"/blog/rust-cheats-buyers-guide/\">cheats buyers guide</a>.",
 					"Support: include your order ID on the <a href=\"/support/\">Support</a> page after checkout.",
 				],
 			}
@@ -418,41 +418,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-cheats-buyers-guide",
+		id: "rust-cheats-buyers-guide",
 		imageKey: "cheatsPackage",
 		published: "2026-07-30",
 		updated: "2026-08-01",
-		category: "Fortnite Cheats",
+		category: "Rust Cheats",
 		featured: true,
 		translations: {
 		en: {
-		slug: "fortnite-cheats-buyers-guide",
-		title: "Fortnite Cheats Buyers Guide: What to Check",
-		metaDescription: "Fortnite cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.",
-		h1: "Fortnite Cheats Buyers Guide: What Matters in 2026",
-		intro: "Shopping for fortnite cheats? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the Fortnite hacks pillar before checkout.",
-		keywords: ["fortnite cheats","best fortnite cheats","fortnite hacks","buyers guide","undetected"],
-		imageAlt: "Fortnite cheats buyers guide checklist for ESP Aimbot and pricing",
+		slug: "rust-cheats-buyers-guide",
+		title: "Rust Cheats Buyers Guide: What to Check",
+		metaDescription: "Rust cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.",
+		h1: "Rust Cheats Buyers Guide: What Matters in 2026",
+		intro: "Shopping for rust cheats? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the Rust hacks pillar before checkout.",
+		keywords: ["rust cheats","best rust cheats","rust hacks","buyers guide","undetected"],
+		imageAlt: "Rust cheats buyers guide checklist for ESP Aimbot and pricing",
 		sections: [
 			{
 				h2: "Buyer checklist before you pay",
 				paragraphs: [
 					"Confirm Windows PC support, EAC maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.",
-					"Primary commercial pages: <a href=\"/best-fortnite-cheats/\">best Fortnite cheats</a>, <a href=\"/fortnite-cheats-2026/\">cheats 2026</a>, and <a href=\"/fortnite-hacks/\">Fortnite hacks</a> (hacks is the main brand keyword).",
+					"Primary commercial pages: <a href=\"/best-rust-cheats/\">best Rust cheats</a>, <a href=\"/rust-cheats-2026/\">cheats 2026</a>, and <a href=\"/rust-hacks/\">Rust hacks</a> (hacks is the main brand keyword).",
 				],
 			},
 			{
 				h2: "Hacks vs cheats wording",
 				paragraphs: [
-					"Fortnite hacks and fortnite cheats describe the same product category for most searchers. We lead with hacks on fortnitehack.net while keeping cheats pages for buyers who use that query.",
-					"Balance and anti-cheat reality still come from <a href=\"https://www.epicgames.com/fortnite\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Fortnite</a>. Product rebuild timing is on our <a href=\"/updates/\">Updates</a> page.",
+					"Rust hacks and rust cheats describe the same product category for most searchers. We lead with hacks on rusthacks.net while keeping cheats pages for buyers who use that query.",
+					"Balance and anti-cheat reality still come from <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust</a>. Product rebuild timing is on our <a href=\"/updates/\">Updates</a> page.",
 				],
 			},
 			{
 				h2: "Feature pages worth opening",
 				paragraphs: [
-					"Open <a href=\"/fortnite-esp/\">ESP</a>, <a href=\"/fortnite-aimbot/\">Aimbot</a>, <a href=\"/features/\">Features</a>, and <a href=\"/pricing/\">Pricing</a> before you buy. Delivery and activation steps live on <a href=\"/setup/\">Setup</a>.",
-					"Related reading: <a href=\"/blog/fortnite-hacks-complete-guide-2026/\">hacks complete guide</a> and <a href=\"/blog/fortnite-cheats-2026-whats-new/\">cheats 2026 what's new</a>.",
+					"Open <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, <a href=\"/features/\">Features</a>, and <a href=\"/pricing/\">Pricing</a> before you buy. Delivery and activation steps live on <a href=\"/setup/\">Setup</a>.",
+					"Related reading: <a href=\"/blog/rust-hacks-complete-guide-2026/\">hacks complete guide</a> and <a href=\"/blog/rust-cheats-2026-whats-new/\">cheats 2026 what's new</a>.",
 					"Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.",
 				],
 			}
@@ -461,34 +461,34 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-cheats-2026-whats-new",
+		id: "rust-cheats-2026-whats-new",
 		imageKey: "hero",
 		published: "2026-07-28",
 		updated: "2026-08-01",
-		category: "Fortnite Cheats",
+		category: "Rust Cheats",
 		featured: false,
 		translations: {
 		en: {
-		slug: "fortnite-cheats-2026-whats-new",
-		title: "Fortnite Cheats 2026: What Changed This Year",
-		metaDescription: "Fortnite cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with EAC maintenance. Pair with the hacks pillar before buying.",
-		h1: "Fortnite Cheats 2026: What Buyers Need Now",
-		intro: "Fortnite cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Easy Anti-Cheat patches.",
-		keywords: ["fortnite cheats 2026","fortnite hacks","eac","esp","aimbot"],
-		imageAlt: "Fortnite cheats 2026 overview for undetected ESP and Aimbot buyers",
+		slug: "rust-cheats-2026-whats-new",
+		title: "Rust Cheats 2026: What Changed This Year",
+		metaDescription: "Rust cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with EAC maintenance. Pair with the hacks pillar before buying.",
+		h1: "Rust Cheats 2026: What Buyers Need Now",
+		intro: "Rust cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Easy Anti-Cheat patches.",
+		keywords: ["rust cheats 2026","rust hacks","eac","esp","aimbot"],
+		imageAlt: "Rust cheats 2026 overview for undetected ESP and Aimbot buyers",
 		sections: [
 			{
 				h2: "Why 2026 buyers still need maintenance",
 				paragraphs: [
 					"Season maps, weapons, and EAC updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.",
-					"Track official messaging on <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a>, then confirm product status on <a href=\"/updates/\">Updates</a> and <a href=\"/fortnite-cheats-2026/\">the cheats 2026 landing</a>.",
+					"Track official messaging on <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a>, then confirm product status on <a href=\"/updates/\">Updates</a> and <a href=\"/rust-cheats-2026/\">the cheats 2026 landing</a>.",
 				],
 			},
 			{
 				h2: "Keyword map: cheats 2026 ↔ hacks",
 				paragraphs: [
-					"Use the <a href=\"/fortnite-cheats-2026/\">Fortnite cheats 2026 guide</a> for cheats-year intent and the <a href=\"/fortnite-hacks/\">Fortnite hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.",
-					"Also see <a href=\"/blog/fortnite-hacks-complete-guide-2026/\">hacks guide</a> and <a href=\"/undetected-fortnite-cheats/\">undetected status</a>.",
+					"Use the <a href=\"/rust-cheats-2026/\">Rust cheats 2026 guide</a> for cheats-year intent and the <a href=\"/rust-hacks/\">Rust hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.",
+					"Also see <a href=\"/blog/rust-hacks-complete-guide-2026/\">hacks guide</a> and <a href=\"/undetected-rust-cheats/\">undetected status</a>.",
 				],
 			},
 			{
@@ -503,7 +503,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-aimbot-settings-guide",
+		id: "rust-aimbot-settings-guide",
 		imageKey: "aimbotCombat",
 		published: "2026-07-26",
 		updated: "2026-08-01",
@@ -511,32 +511,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "fortnite-aimbot-settings-guide",
-		title: "Fortnite Aimbot Settings: Smooth FOV Guide",
-		metaDescription: "Fortnite aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.",
-		h1: "Fortnite Aimbot Settings: Smoothness, FOV & Soft Aim",
-		intro: "Configure Fortnite Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Fortnite hacks packages.",
-		keywords: ["fortnite aimbot","aimbot settings","soft aim","fortnite hacks","fov"],
-		imageAlt: "Fortnite Aimbot settings guide for smoothness FOV and bone priority",
+		slug: "rust-aimbot-settings-guide",
+		title: "Rust Aimbot Settings: Smooth FOV Guide",
+		metaDescription: "Rust aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.",
+		h1: "Rust Aimbot Settings: Smoothness, FOV & Soft Aim",
+		intro: "Configure Rust Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Rust hacks packages.",
+		keywords: ["rust aimbot","aimbot settings","soft aim","rust hacks","fov"],
+		imageAlt: "Rust Aimbot settings guide for smoothness FOV and bone priority",
 		sections: [
 			{
 				h2: "Start conservative, then tune",
 				paragraphs: [
-					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in Zero Build peeks. Hotkeys let you disable Aimbot mid-match.",
-					"Full control list: <a href=\"/fortnite-aimbot/\">Fortnite Aimbot</a>, <a href=\"/fortnite-aimbot-hack/\">aimbot hack</a>, and <a href=\"/fortnite-soft-aim/\">soft aim</a>.",
+					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in monuments peeks. Hotkeys let you disable Aimbot mid-match.",
+					"Full control list: <a href=\"/rust-aimbot/\">Rust Aimbot</a>, <a href=\"/rust-aimbot-hack/\">aimbot hack</a>, and <a href=\"/rust-soft-aim/\">soft aim</a>.",
 				],
 			},
 			{
 				h2: "Pair Aimbot with ESP and radar",
 				paragraphs: [
-					"Aimbot alone does not solve rotations. Pair with <a href=\"/fortnite-esp/\">ESP</a> and <a href=\"/fortnite-radar-hack/\">radar</a> inside the <a href=\"/fortnite-hacks/\">Fortnite hacks</a> package.",
-					"Weapon balance shifts on <a href=\"https://www.fortnite.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Fortnite.com</a> — revisit FOV after combat patches.",
+					"Aimbot alone does not solve rotations. Pair with <a href=\"/rust-esp/\">ESP</a> and <a href=\"/rust-radar-hack/\">radar</a> inside the <a href=\"/rust-hacks/\">Rust hacks</a> package.",
+					"Weapon balance shifts on <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rust.com</a> — revisit FOV after combat patches.",
 				],
 			},
 			{
 				h2: "EAC notes and next steps",
 				paragraphs: [
-					"After Easy Anti-Cheat patches, confirm Aimbot modules on <a href=\"/updates/\">Updates</a>. Background: <a href=\"/eac-bypass-fortnite/\">EAC guide</a>.",
+					"After Easy Anti-Cheat patches, confirm Aimbot modules on <a href=\"/updates/\">Updates</a>. Background: <a href=\"/eac-bypass-rust/\">EAC guide</a>.",
 					"Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.",
 				],
 			}
@@ -545,7 +545,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-esp-wallhack-explained",
+		id: "rust-esp-wallhack-explained",
 		imageKey: "espWallhack",
 		published: "2026-07-24",
 		updated: "2026-08-01",
@@ -553,32 +553,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "fortnite-esp-wallhack-explained",
-		title: "Fortnite ESP & Wallhack Explained Clearly",
-		metaDescription: "Fortnite ESP and wallhack explained — player boxes, loot markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
-		h1: "Fortnite ESP and Wallhack Explained",
-		intro: "Fortnite ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Fortnite hacks and fortnite cheats packages.",
-		keywords: ["fortnite esp","fortnite wallhack","esp hack","fortnite hacks","loot esp"],
-		imageAlt: "Fortnite ESP wallhack explained with player and loot overlays",
+		slug: "rust-esp-wallhack-explained",
+		title: "Rust ESP & Wallhack Explained Clearly",
+		metaDescription: "Rust ESP and wallhack explained — player boxes, loot markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
+		h1: "Rust ESP and Wallhack Explained",
+		intro: "Rust ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Rust hacks and rust cheats packages.",
+		keywords: ["rust esp","rust wallhack","esp hack","rust hacks","loot esp"],
+		imageAlt: "Rust ESP wallhack explained with player and loot overlays",
 		sections: [
 			{
 				h2: "ESP categories that matter in BR",
 				paragraphs: [
 					"Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep BR-critical categories on during rotations.",
-					"Landings: <a href=\"/fortnite-esp/\">Fortnite ESP</a>, <a href=\"/fortnite-wallhack/\">wallhack</a>, <a href=\"/fortnite-esp-hack/\">ESP hack</a>.",
+					"Landings: <a href=\"/rust-esp/\">Rust ESP</a>, <a href=\"/rust-wallhack/\">wallhack</a>, <a href=\"/rust-esp-hack/\">ESP hack</a>.",
 				],
 			},
 			{
 				h2: "Wallhack vs radar vs Aimbot",
 				paragraphs: [
-					"Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href=\"/fortnite-hacks/\">hacks pillar</a> bundles all three.",
-					"Map and loot systems evolve with <a href=\"https://www.epicgames.com/fortnite\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Fortnite</a> seasons — toggleable categories stay useful when POIs rotate.",
+					"Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href=\"/rust-hacks/\">hacks pillar</a> bundles all three.",
+					"Map and loot systems evolve with <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust</a> seasons — toggleable categories stay useful when POIs rotate.",
 				],
 			},
 			{
 				h2: "Undetected ESP maintenance",
 				paragraphs: [
-					"ESP modules rebuild with the package after EAC patches. Check <a href=\"/updates/\">Updates</a> and <a href=\"/undetected-fortnite-cheats/\">undetected status</a> before ranked blocks.",
+					"ESP modules rebuild with the package after EAC patches. Check <a href=\"/updates/\">Updates</a> and <a href=\"/undetected-rust-cheats/\">undetected status</a> before ranked blocks.",
 					"Try This Today: Enable player + loot ESP only for ten games, then add radar range once your eyes adjust.",
 				],
 			}
@@ -587,7 +587,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-fortnite-hacks-eac",
+		id: "undetected-rust-hacks-eac",
 		imageKey: "rebootFight",
 		published: "2026-07-22",
 		updated: "2026-08-01",
@@ -595,26 +595,26 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-fortnite-hacks-eac",
-		title: "Undetected Fortnite Hacks & EAC Reality",
-		metaDescription: "Undetected fortnite hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.",
-		h1: "Undetected Fortnite Hacks and Easy Anti-Cheat Reality",
-		intro: "Undetected Fortnite hacks mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.",
-		keywords: ["undetected fortnite hacks","eac","fortnite hacks","fortnite cheats","maintenance"],
-		imageAlt: "Undetected Fortnite hacks and Easy Anti-Cheat maintenance workflow",
+		slug: "undetected-rust-hacks-eac",
+		title: "Undetected Rust Hacks & EAC Reality",
+		metaDescription: "Undetected rust hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.",
+		h1: "Undetected Rust Hacks and Easy Anti-Cheat Reality",
+		intro: "Undetected Rust hacks mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.",
+		keywords: ["undetected rust hacks","eac","rust hacks","rust cheats","maintenance"],
+		imageAlt: "Undetected Rust hacks and Easy Anti-Cheat maintenance workflow",
 		sections: [
 			{
 				h2: "What undetected really means",
 				paragraphs: [
-					"Undetected Fortnite hacks are rebuilt when Easy Anti-Cheat or Fortnite client patches change detection surface. Permanent undetected claims are marketing fiction.",
-					"Status pages: <a href=\"/updates/\">Updates</a>, <a href=\"/undetected-fortnite-cheats/\">undetected guide</a>, <a href=\"/eac-bypass-fortnite/\">EAC bypass</a>.",
+					"Undetected Rust hacks are rebuilt when Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.",
+					"Status pages: <a href=\"/updates/\">Updates</a>, <a href=\"/undetected-rust-cheats/\">undetected guide</a>, <a href=\"/eac-bypass-rust/\">EAC bypass</a>.",
 				],
 			},
 			{
 				h2: "Patch-day workflow",
 				paragraphs: [
-					"Check <a href=\"https://status.epicgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Epic Games Status</a> for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.",
-					"Commercial entry points: <a href=\"/fortnite-hacks/\">Fortnite hacks</a> and <a href=\"/fortnite-cheats-2026/\">fortnite cheats 2026</a>.",
+					"Check <a href=\"https://rust.facepunch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Facepunch Rust status</a> for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.",
+					"Commercial entry points: <a href=\"/rust-hacks/\">Rust hacks</a> and <a href=\"/rust-cheats-2026/\">rust cheats 2026</a>.",
 				],
 			},
 			{
@@ -629,7 +629,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-hacks-vs-cheatvault",
+		id: "rust-hacks-vs-cheatvault",
 		imageKey: "cheatsPackage",
 		published: "2026-07-15",
 		updated: "2026-08-01",
@@ -637,36 +637,36 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "fortnite-hacks-vs-cheatvault-comparison",
-		title: "Fortnite Hacks vs CheatVault: Honest 2026 Comparison",
-		metaDescription: "Fortnite Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.",
-		h1: "Fortnite Hacks vs CheatVault: Honest Comparison",
-		intro: "I ran both CheatVault and Fortnite Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.",
-		keywords: ["fortnite hacks vs cheatvault","cheatvault comparison","fortnite cheats","esp","eac","pricing"],
-		imageAlt: "Fortnite Hacks vs CheatVault feature and pricing comparison for 2026",
+		slug: "rust-hacks-vs-cheatvault-comparison",
+		title: "Rust Hacks vs CheatVault: Honest 2026 Comparison",
+		metaDescription: "Rust Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.",
+		h1: "Rust Hacks vs CheatVault: Honest Comparison",
+		intro: "I ran both CheatVault and Rust Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.",
+		keywords: ["rust hacks vs cheatvault","cheatvault comparison","rust cheats","esp","eac","pricing"],
+		imageAlt: "Rust Hacks vs CheatVault feature and pricing comparison for 2026",
 		sections: [
 			{
 				h2: "Why I compared these two in the first place",
 				paragraphs: [
-					"CheatVault shows up in almost every Fortnite cheat thread alongside Fortnite Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.",
-					"I kept CheatVault for about six weeks in Chapter 7 Season 2, then switched to Fortnite Hacks for the back half of the season. Same PC, same sens, mostly Zero Build and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
+					"CheatVault shows up in almost every Rust cheat thread alongside Rust Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.",
+					"I kept CheatVault for about six weeks in Chapter 7 Season 2, then switched to Rust Hacks for the back half of the season. Same PC, same sens, mostly monuments and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
 					"Fair warning: neither tool makes you invincible. Epic's Easy Anti-Cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.",
 				],
 			},
 			{
 				h2: "Price breakdown — monthly, lifetime, and hidden costs",
 				paragraphs: [
-					"Fortnite Hacks lists $35/month and $150 lifetime on the <a href=\"/pricing/\">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.",
-					"CheatVault's lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two EAC patches. Fortnite Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.",
-					"Both deliver digitally. Neither includes hardware. If you want cloud DMA on Fortnite Hacks, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
+					"Rust Hacks lists $35/month and $150 lifetime on the <a href=\"/pricing/\">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.",
+					"CheatVault's lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two EAC patches. Rust Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.",
+					"Both deliver digitally. Neither includes hardware. If you want cloud DMA on Rust Hacks, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
 				],
 			},
 			{
 				h2: "Feature table — ESP, soft aim, radar, and cloud DMA",
 				paragraphs: [
-					"<table><thead><tr><th>Feature</th><th>Fortnite Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
-					"Fortnite Hacks wins on toggles and profile flexibility. I run ESP boxes + loot markers in early game, then drop loot categories after first AR. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.",
-					"Soft aim mattered more than I expected in Zero Build. Fortnite Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
+					"<table><thead><tr><th>Feature</th><th>Rust Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
+					"Rust Hacks wins on toggles and profile flexibility. I run ESP boxes + loot markers in early game, then drop loot categories after first AR. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.",
+					"Soft aim mattered more than I expected in monuments. Rust Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
 				],
 			},
 			{
@@ -674,13 +674,13 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Both brands had public downtime after major EAC updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.",
 					"CheatVault's Discord would go quiet for 48–72 hours after big patches. No ETA, just \"working on it.\" I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could've been coincidence, but it shook my confidence.",
-					"Fortnite Hacks posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-fortnite-hacks-eac/\">EAC reality guide</a> for the workflow I use before queueing.",
+					"Rust Hacks posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-rust-hacks-eac/\">EAC reality guide</a> for the workflow I use before queueing.",
 				],
 			},
 			{
 				h2: "Where CheatVault still wins",
 				paragraphs: [
-					"Credit where it's due: CheatVault's Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Fortnite Hacks support answered faster for me, but the community volume is smaller.",
+					"Credit where it's due: CheatVault's Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Rust Hacks support answered faster for me, but the community volume is smaller.",
 					"CheatVault also bundles a standalone replay-style overlay tool in their premium tier. I did not use it much, but content creators might value the extra capture layer.",
 					"If you only play once or twice a week and just want basic ESP without caring about patch ETAs, CheatVault's feature floor is fine. Casual cadence hides downtime pain.",
 				],
@@ -688,9 +688,9 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Verdict — who should pick which",
 				paragraphs: [
-					"Pick Fortnite Hacks if you play ranked or Zero Build multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.",
+					"Pick Rust Hacks if you play ranked or monuments multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.",
 					"Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.",
-					"Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href=\"/features/\">Features</a> and CheatVault's list side by side, then check both Updates channels before the next Epic patch. For the full Fortnite Hacks stack overview, start at <a href=\"/fortnite-hacks/\">Fortnite hacks</a>.",
+					"Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href=\"/features/\">Features</a> and CheatVault's list side by side, then check both Updates channels before the next Epic patch. For the full Rust Hacks stack overview, start at <a href=\"/rust-hacks/\">Rust hacks</a>.",
 				],
 			}
 		],
@@ -706,18 +706,18 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "elitefn-vs-fortnite-hacks-two-week-test",
+		slug: "elitefn-vs-rust-hacks-two-week-test",
 		title: "I Tried EliteFN for 2 Weeks Before Switching",
-		metaDescription: "EliteFN vs Fortnite Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.",
-		h1: "I Tried EliteFN for 2 Weeks Before Switching to Fortnite Hacks",
-		intro: "EliteFN was the popular pick in my squad's Discord. I gave it fourteen days — same hardware, same playlists — then moved to Fortnite Hacks. This is what actually differed.",
-		keywords: ["elitefn vs fortnite hacks","elitefn review","fortnite cheats comparison","soft aim","esp boxes"],
-		imageAlt: "EliteFN vs Fortnite Hacks two week comparison test for Fortnite cheats",
+		metaDescription: "EliteFN vs Rust Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.",
+		h1: "I Tried EliteFN for 2 Weeks Before Switching to Rust Hacks",
+		intro: "EliteFN was the popular pick in my squad's Discord. I gave it fourteen days — same hardware, same playlists — then moved to Rust Hacks. This is what actually differed.",
+		keywords: ["elitefn vs rust hacks","elitefn review","rust cheats comparison","soft aim","esp boxes"],
+		imageAlt: "EliteFN vs Rust Hacks two week comparison test for Rust cheats",
 		sections: [
 			{
 				h2: "Week one — setup, first impressions, and the menu learning curve",
 				paragraphs: [
-					"EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Fortnite Hacks later.",
+					"EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Rust Hacks later.",
 					"EliteFN's menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.",
 					"First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Loot ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.",
 				],
@@ -725,41 +725,41 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Soft aim, weapons, and controller testing",
 				paragraphs: [
-					"Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in Zero Build. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
-					"I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Fortnite Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.",
+					"Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in monuments. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
+					"I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Rust Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.",
 					"Hammer AR tracking at 40–50m was the benchmark test. EliteFN smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in creative 1v1s with friends.",
 				],
 			},
 			{
 				h2: "The patch that ended my EliteFN trial",
 				paragraphs: [
-					"Day eleven hit a Fortnite + EAC patch. Standard for any cheat user. EliteFN status channel said \"investigating.\" No ETA. I skipped ranked for two days waiting — squad moved on without me.",
+					"Day eleven hit a Rust + EAC patch. Standard for any cheat user. EliteFN status channel said \"investigating.\" No ETA. I skipped ranked for two days waiting — squad moved on without me.",
 					"Day thirteen a rebuild dropped. Loaded in, played two pubs, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on EliteFN after that rebuild. Unverified story, but combined with downtime it was my cue to bail.",
-					"I switched to Fortnite Hacks lifetime partly because of the <a href=\"/updates/\">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.",
+					"I switched to Rust Hacks lifetime partly because of the <a href=\"/updates/\">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.",
 				],
 			},
 			{
 				h2: "Side-by-side after switching — what improved",
 				paragraphs: [
-					"Fortnite Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from EliteFN's fixed widget.",
+					"Rust Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from EliteFN's fixed widget.",
 					"Per-weapon soft aim profiles meant I stopped retuning between AR and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat EliteFN's \"ask sales\" flow.",
-					"Support reply time: EliteFN ticket answered in ~5 hours once. Fortnite Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.",
+					"Support reply time: EliteFN ticket answered in ~5 hours once. Rust Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.",
 				],
 			},
 			{
 				h2: "Price and value snapshot",
 				paragraphs: [
-					"EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Fortnite Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.",
-					"Feature-per-dollar favors Fortnite Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN's brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.",
-					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/fortnite-hacks-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping three-wide.",
+					"EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Rust Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.",
+					"Feature-per-dollar favors Rust Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN's brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.",
+					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/rust-hacks-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping three-wide.",
 				],
 			},
 			{
 				h2: "Would I recommend EliteFN to anyone?",
 				paragraphs: [
 					"Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.",
-					"If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Fortnite Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.",
-					"Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href=\"/fortnite-hacks/\">Fortnite hacks</a> and <a href=\"/setup/\">Setup</a> before checkout.",
+					"If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Rust Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.",
+					"Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href=\"/rust-hacks/\">Rust hacks</a> and <a href=\"/setup/\">Setup</a> before checkout.",
 				],
 			}
 		],
@@ -767,7 +767,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "fortnite-hacks-vs-ghostware",
+		id: "rust-hacks-vs-ghostware",
 		imageKey: "espWallhack",
 		published: "2026-07-05",
 		updated: "2026-08-01",
@@ -775,60 +775,60 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "fortnite-hacks-vs-ghostware-features-pricing",
-		title: "Fortnite Hacks vs GhostWare: Features & Pricing",
-		metaDescription: "Fortnite Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.",
-		h1: "Fortnite Hacks vs GhostWare: Features, Pricing, and Detection Notes",
-		intro: "GhostWare markets hard on \"stealth\" branding. Fortnite Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.",
-		keywords: ["ghostware vs fortnite hacks","ghostware fortnite","cheat comparison","esp boxes","cloud dma"],
-		imageAlt: "Fortnite Hacks vs GhostWare features pricing and EAC comparison",
+		slug: "rust-hacks-vs-ghostware-features-pricing",
+		title: "Rust Hacks vs GhostWare: Features & Pricing",
+		metaDescription: "Rust Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.",
+		h1: "Rust Hacks vs GhostWare: Features, Pricing, and Detection Notes",
+		intro: "GhostWare markets hard on \"stealth\" branding. Rust Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.",
+		keywords: ["ghostware vs rust hacks","ghostware rust","cheat comparison","esp boxes","cloud dma"],
+		imageAlt: "Rust Hacks vs GhostWare features pricing and EAC comparison",
 		sections: [
 			{
 				h2: "Two different philosophies — minimal vs full-stack",
 				paragraphs: [
-					"GhostWare sells a slimmer Fortnite module: ESP-focused with light aim assist, fewer toggles, lower price entry. Fortnite Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.",
+					"GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. Rust Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.",
 					"Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for ranked nights — visibility, flanks, and firefight assist without swapping executables.",
-					"I used GhostWare for ten days on an alt account while keeping Fortnite Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.",
+					"I used GhostWare for ten days on an alt account while keeping Rust Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.",
 				],
 			},
 			{
 				h2: "Feature and pricing comparison table",
 				paragraphs: [
-					"<table><thead><tr><th></th><th>Fortnite Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
-					"GhostWare is cheaper on sticker price. Fortnite Hacks includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare's entry tier covers that.",
-					"Lifetime math: GhostWare $120 vs Fortnite Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.",
+					"<table><thead><tr><th></th><th>Rust Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
+					"GhostWare is cheaper on sticker price. Rust Hacks includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare's entry tier covers that.",
+					"Lifetime math: GhostWare $120 vs Rust Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.",
 				],
 			},
 			{
 				h2: "Detection history — what public signals exist",
 				paragraphs: [
-					"GhostWare fans cite fewer \"mass ban\" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Fortnite Hacks had a visible rebuild cycle after the last major EAC push; GhostWare's Discord announced an update two days later.",
+					"GhostWare fans cite fewer \"mass ban\" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Rust Hacks had a visible rebuild cycle after the last major EAC push; GhostWare's Discord announced an update two days later.",
 					"No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an EAC patch, I do not queue on that tool.",
-					"Fortnite Hacks documents maintenance on <a href=\"/eac-bypass-fortnite/\">EAC bypass workflow</a> and the <a href=\"/undetected-fortnite-cheats/\">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.",
+					"Rust Hacks documents maintenance on <a href=\"/eac-bypass-rust/\">EAC bypass workflow</a> and the <a href=\"/undetected-rust-cheats/\">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.",
 				],
 			},
 			{
-				h2: "Gameplay feel — Zero Build and ranked squads",
+				h2: "Gameplay feel — monuments and ranked squads",
 				paragraphs: [
-					"GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Fortnite Hacks boxes offer more colour and distance data; busier but more informative in squad comms (\"220m west\" calls).",
-					"Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Fortnite Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.",
-					"Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Fortnite Hacks suggested baseline FOV values in support docs; less guesswork.",
+					"GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Rust Hacks boxes offer more colour and distance data; busier but more informative in squad comms (\"220m west\" calls).",
+					"Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Rust Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.",
+					"Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Rust Hacks suggested baseline FOV values in support docs; less guesswork.",
 				],
 			},
 			{
 				h2: "Pros and cons summary",
 				paragraphs: [
-					"<strong>Fortnite Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
+					"<strong>Rust Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
 					"<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited loot ESP, patch status mostly in Discord, no DMA option, lighter aim tools.",
-					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">Zero Build aggression guide</a> and <a href=\"/blog/fortnite-hacks-complete-guide-2026/\">complete hacks guide</a>.",
+					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/zero-build-meta-broken-aggressive-strategies/\">monuments aggression guide</a> and <a href=\"/blog/rust-hacks-complete-guide-2026/\">complete hacks guide</a>.",
 				],
 			},
 			{
 				h2: "Which one should you buy?",
 				paragraphs: [
 					"Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.",
-					"Choose Fortnite Hacks if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.",
-					"Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href=\"/fortnite-esp/\">ESP</a>, <a href=\"/fortnite-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.",
+					"Choose Rust Hacks if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.",
+					"Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.",
 				],
 			}
 		],

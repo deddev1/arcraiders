@@ -1,9 +1,11 @@
-﻿const CANONICAL_ORIGIN = 'https://fortnitehack.net';
-const APEX_HOST = 'fortnitehack.net';
-const WWW_HOST = 'www.fortnitehack.net';
+﻿const CANONICAL_ORIGIN = 'https://rusthacks.net';
+const APEX_HOST = 'rusthacks.net';
+const WWW_HOST = 'www.rusthacks.net';
 
-/** Legacy domains → canonical apex (301). */
+/** Old hosts → canonical apex (301). Never include the apex host itself. */
 const LEGACY_HOSTS = new Set([
+	'fortnitehack.net',
+	'www.fortnitehack.net',
 	'fortnitecheats.xyz',
 	'www.fortnitecheats.xyz',
 	'fortnitecheats.net',
@@ -12,21 +14,34 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.com',
 ]);
 
-// Keep in sync with public/_redirects (which preserves query strings by default, as we do below).
-// All targets are final canonical URLs — no chains/loops (no target is also a key).
+// Keep in sync with public/_redirects (which preserves query strings by default).
+// All targets are final canonical URLs — no chains/loops.
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
+	'/rust-cheats': '/',
+	'/rust-cheats/': '/',
 	'/fortnite-cheats': '/',
 	'/fortnite-cheats/': '/',
-	'/fortnite-cheats-2026': '/fortnite-cheats-2026/',
-	'/warzone-aimbot': '/fortnite-aimbot/',
-	'/warzone-aimbot/': '/fortnite-aimbot/',
-	'/warzone-esp': '/fortnite-esp/',
-	'/warzone-esp/': '/fortnite-esp/',
-	'/eac-bypass': '/eac-bypass-fortnite/',
-	'/eac-bypass/': '/eac-bypass-fortnite/',
-	'/ricochet-bypass': '/eac-bypass-fortnite/',
-	'/ricochet-bypass/': '/eac-bypass-fortnite/',
+	'/fortnite-hacks': '/rust-hacks/',
+	'/fortnite-hacks/': '/rust-hacks/',
+	'/fortnite-aimbot': '/rust-aimbot/',
+	'/fortnite-aimbot/': '/rust-aimbot/',
+	'/fortnite-esp': '/rust-esp/',
+	'/fortnite-esp/': '/rust-esp/',
+	'/fortnite-wallhack': '/rust-wallhack/',
+	'/fortnite-wallhack/': '/rust-wallhack/',
+	'/undetected-fortnite-cheats': '/undetected-rust-cheats/',
+	'/undetected-fortnite-cheats/': '/undetected-rust-cheats/',
+	'/eac-bypass-fortnite': '/eac-bypass-rust/',
+	'/eac-bypass-fortnite/': '/eac-bypass-rust/',
+	'/eac-bypass': '/eac-bypass-rust/',
+	'/eac-bypass/': '/eac-bypass-rust/',
+	'/warzone-aimbot': '/rust-aimbot/',
+	'/warzone-aimbot/': '/rust-aimbot/',
+	'/warzone-esp': '/rust-esp/',
+	'/warzone-esp/': '/rust-esp/',
+	'/ricochet-bypass': '/eac-bypass-rust/',
+	'/ricochet-bypass/': '/eac-bypass-rust/',
 };
 
 const SECURITY_HEADERS = {
@@ -103,7 +118,6 @@ export async function onRequest(context) {
 	const needsHttpsRedirect = isProductionHost && proto === 'http';
 
 	if (needsHostRedirect || needsHttpsRedirect) {
-		// Map legacy paths here too so www/legacy-host + legacy-path resolves in ONE hop.
 		const mappedPath = PATH_REDIRECTS[url.pathname] ?? url.pathname;
 		const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
 		const headers = new Headers({
@@ -119,7 +133,6 @@ export async function onRequest(context) {
 	const pathRedirect = PATH_REDIRECTS[url.pathname];
 	if (pathRedirect) {
 		const headers = new Headers({
-			// Preserve query string, matching public/_redirects behavior.
 			Location: new URL(pathRedirect + url.search, CANONICAL_ORIGIN).toString(),
 			'Cache-Control': 'no-store',
 		});

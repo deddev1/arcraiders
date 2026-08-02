@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { productInfo, siteConfig } from '../data/site';
+import { metaKeywordsContent } from '../data/seo';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
 import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
@@ -17,6 +18,7 @@ interface Props {
 	canonicalPath?: string;
 	ogImage?: string;
 	ogImageAlt?: string;
+	keywords?: string;
 	noindex?: boolean;
 	type?: 'website' | 'article';
 	breadcrumbs?: Crumb[];
@@ -34,6 +36,7 @@ const {
 	canonicalPath = Astro.url.pathname,
 	ogImage = siteConfig.defaultOgImage,
 	ogImageAlt = title,
+	keywords = metaKeywordsContent,
 	noindex = false,
 	type = 'website',
 	breadcrumbs,
@@ -147,10 +150,11 @@ if (softwareNode) {
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<meta name="color-scheme" content="dark" />
-		<meta name="theme-color" content="#0a0612" />
+		<meta name="theme-color" content="#0b0d0f" />
 		<meta name="robots" content={robots} />
 		<meta name="googlebot" content={robots} />
 		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
 		<meta name="author" content={siteConfig.name} />
 		<link rel="canonical" href={canonicalURL} />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}

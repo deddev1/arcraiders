@@ -8,16 +8,16 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'Fortnite Cheats'],
-	['Warzone cheats', 'Fortnite cheats'],
-	['Warzone Cheats', 'Fortnite Cheats'],
-	['Call of Duty: Warzone', 'Fortnite'],
-	['Call of Duty Warzone', 'Fortnite'],
-	['Call of Duty', 'Fortnite'],
-	['Warzone PC', 'Fortnite PC'],
-	['for Warzone', 'for Fortnite'],
-	['Warzone ', 'Fortnite '],
-	['warzone ', 'fortnite '],
+	['Warzone Cheats', 'Rust Cheats'],
+	['Warzone cheats', 'Rust cheats'],
+	['Warzone Cheats', 'Rust Cheats'],
+	['Call of Duty: Warzone', 'Rust'],
+	['Call of Duty Warzone', 'Rust'],
+	['Call of Duty', 'Rust'],
+	['Warzone PC', 'Rust PC'],
+	['for Warzone', 'for Rust'],
+	['Warzone ', 'Rust '],
+	['warzone ', 'rust '],
 	['Ricochet maintenance', 'EAC maintenance'],
 	['Ricochet anti-cheat', 'Easy Anti-Cheat (EAC)'],
 	['Ricochet', 'Easy Anti-Cheat (EAC)'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'Battle Royale island'],
-	['Verdansk', 'Battle Royale island'],
-	['Resurgence', 'Zero Build'],
-	['gulag', 'reboot van'],
-	['warzonescheats.net', 'fortnitehack.net'],
-	['Trucos Warzone', 'Trucos Fortnite'],
-	['Triches Warzone', 'Triches Fortnite'],
-	['Cheats Warzone', 'Cheats Fortnite'],
+	['Al Mazrah', 'the island'],
+	['Verdansk', 'the island'],
+	['Resurgence', 'monuments'],
+	['gulag', 'monument'],
+	['warzonescheats.net', 'rusthacks.net'],
+	['Trucos Warzone', 'Trucos Rust'],
+	['Triches Warzone', 'Triches Rust'],
+	['Cheats Warzone', 'Cheats Rust'],
 ];
 
 function apply(content) {
@@ -55,8 +55,8 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
-pagesEn = pagesEn.replace(/Fortnite Warzone/g, 'Fortnite');
-pagesEn = pagesEn.replace(/for Fortnite Warzone/g, 'for Fortnite');
+pagesEn = pagesEn.replace(/Rust Warzone/g, 'Rust');
+pagesEn = pagesEn.replace(/for Rust Warzone/g, 'for Rust');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

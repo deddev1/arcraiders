@@ -1,5 +1,5 @@
 ---
-import { fortniteImages } from '../data/fortnite';
+import { rustImages } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -20,7 +20,7 @@ const ui = getUi(locale);
 
 const { name = ui.product.title } = Astro.props;
 
-/** Localized alts aligned 1:1 with fortniteImages.product; undefined falls back to data alt. */
+/** Localized alts aligned 1:1 with rustImages.product; undefined falls back to data alt. */
 const productAlts = [
 	ui.images.battleRoyale,
 	ui.images.rebootFight,
@@ -31,7 +31,7 @@ const productAlts = [
 ] as const;
 
 /** Single shared list for main preview + thumbnails (index selection in script). */
-const images = fortniteImages.product.map((image, index) => ({
+const images = rustImages.product.map((image, index) => ({
 	src: image.src,
 	alt: productAlts[index] ?? image.alt,
 	srcset: contentSrcSet(image.src),
@@ -55,7 +55,7 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				loading="lazy"
 				decoding="async"
 			/>
-			<span class="product__credit" aria-hidden="true">Fortnite Preview</span>
+			<span class="product__credit" aria-hidden="true">Rust Preview</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
 			{
@@ -140,8 +140,8 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		<div class="buy-also">
 			<p class="buy-also__label">{ui.common.relatedPages}</p>
 			<div class="buy-also__row">
-				<a href={getLocalizedPath('fortnite-esp', locale)} class="alt-link">{ui.nav.esp}</a>
-				<a href={getLocalizedPath('fortnite-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
+				<a href={getLocalizedPath('rust-esp', locale)} class="alt-link">{ui.nav.esp}</a>
+				<a href={getLocalizedPath('rust-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
 				<a href={getLocalizedPath('features', locale)} class="alt-link">{ui.nav.features}</a>
 				<a href={getLocalizedPath('setup', locale)} class="alt-link">{ui.nav.setup}</a>
 				<a href={getLocalizedPath('pricing', locale)} class="alt-link">{ui.nav.pricing}</a>

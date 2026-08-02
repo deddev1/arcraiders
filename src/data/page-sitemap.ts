@@ -1,5 +1,5 @@
 import { siteConfig } from './site';
-import { fortniteImages } from './fortnite';
+import { rustImages } from './rust';
 import { englishPaths, pageIds, type PageId } from './i18n/routing';
 import { pageSitemapMeta } from './sitemap-meta';
 
@@ -36,240 +36,240 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/',
 		images: [
 			img(
-				fortniteImages.hero,
-				'Fortnite Cheats | Fortnite ESP & Aimbot',
-				'Premium Fortnite cheats homepage hero featuring Fortnite ESP and Aimbot',
+				rustImages.hero,
+				'Rust Cheats | Rust ESP & Aimbot',
+				'Premium Rust cheats homepage hero featuring Rust ESP and Aimbot',
 			),
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite Aimbot combat | Fortnite Cheats',
-				'Fortnite Aimbot squad deck combat preview on Fortnite Cheats',
+				rustImages.aimbotCombat,
+				'Rust Aimbot combat | Rust Cheats',
+				'Rust Aimbot squad deck combat preview on Rust Cheats',
 			),
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite ESP map | Fortnite Wallhack',
-				'Fortnite ESP map visibility showing rivals, squads and loot on Fortnite',
+				rustImages.espWallhack,
+				'Rust ESP map | Rust Wallhack',
+				'Rust ESP map visibility showing rivals, squads and loot on Rust',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite squad fight | Fortnite Cheats',
-				'Fortnite squad fight still for Fortnite cheats ESP and Aimbot',
+				rustImages.squadFight,
+				'Rust squad fight | Rust Cheats',
+				'Rust squad fight still for Rust cheats ESP and Aimbot',
 			),
 			img(
-				fortniteImages.loadoutBuilder,
-				'Fortnite loadout builder | Fortnite Cheats',
-				'Fortnite loadout builder screen for Fortnite cheats packages',
+				rustImages.loadoutBuilder,
+				'Rust loadout builder | Rust Cheats',
+				'Rust loadout builder screen for Rust cheats packages',
 			),
 			img(
-				fortniteImages.cover,
-				'Fortnite Cheats cover',
-				'Cover art for Fortnite cheats product and pricing pages',
+				rustImages.cover,
+				'Rust Cheats cover',
+				'Cover art for Rust cheats product and pricing pages',
 			),
 			img(
-				fortniteImages.headerArt,
-				'Fortnite header art',
-				'Fortnite header art used across Fortnite Cheats',
+				rustImages.headerArt,
+				'Rust header art',
+				'Rust header art used across Rust Cheats',
 			),
 			img(
-				fortniteImages.battleRoyaleCombat,
-				'Fortnite battle royale combat | Fortnite Cheats',
-				'Fortnite battle royale combat preview for Fortnite Cheats Aimbot',
+				rustImages.battleRoyaleCombat,
+				'Rust survival combat | Rust Cheats',
+				'Rust survival combat preview for Rust Cheats Aimbot',
 			),
 		],
 	},
 	{
-		path: '/fortnite-aimbot/',
+		path: '/rust-aimbot/',
 		images: [
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite Aimbot | Fortnite Cheats',
-				'Lock onto targets with Fortnite Aimbot combat preview for Fortnite',
+				rustImages.aimbotCombat,
+				'Rust Aimbot | Rust Cheats',
+				'Lock onto targets with Rust Aimbot combat preview for Rust',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite Aimbot squad fight | Fortnite',
-				'Fortnite Aimbot squad fight reference with customizable smoothness and hotkeys',
+				rustImages.squadFight,
+				'Rust Aimbot squad fight | Rust',
+				'Rust Aimbot squad fight reference with customizable smoothness and hotkeys',
 			),
 			img(
-				fortniteImages.headerArt,
-				'Fortnite Aimbot header | Fortnite Cheats',
-				'Fortnite Aimbot supporting visual for Fortnite Cheats',
+				rustImages.headerArt,
+				'Rust Aimbot header | Rust Cheats',
+				'Rust Aimbot supporting visual for Rust Cheats',
 			),
 		],
 	},
 	{
-		path: '/fortnite-esp/',
+		path: '/rust-esp/',
 		images: [
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite ESP | Fortnite Wallhack',
-				'Fortnite ESP map preview displaying rival players, squads, loot and distances',
+				rustImages.espWallhack,
+				'Rust ESP | Rust Wallhack',
+				'Rust ESP map preview displaying rival players, squads, loot and distances',
 			),
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite ESP player visibility | Fortnite',
-				'Fortnite ESP player visibility support visual for Fortnite wallhack',
+				rustImages.aimbotCombat,
+				'Rust ESP player visibility | Rust',
+				'Rust ESP player visibility support visual for Rust wallhack',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite ESP squad context | Fortnite',
-				'Fortnite ESP squad and loot context for Fortnite Cheats',
-			),
-		],
-	},
-	{
-		path: '/undetected-fortnite-cheats/',
-		images: [
-			img(
-				fortniteImages.espWallhack,
-				'Undetected Fortnite Cheats 2026 | ESP & Aimbot',
-				'Undetected Fortnite cheats ESP wallhack preview for Fortnite on Windows PC',
-			),
-			img(
-				fortniteImages.aimbotCombat,
-				'Undetected Fortnite Aimbot | Fortnite Cheats',
-				'Undetected Fortnite Aimbot combat preview bundled with ESP and radar',
+				rustImages.squadFight,
+				'Rust ESP squad context | Rust',
+				'Rust ESP squad and loot context for Rust Cheats',
 			),
 		],
 	},
 	{
-		path: '/fortnite-wallhack/',
+		path: '/undetected-rust-cheats/',
 		images: [
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite Wallhack 2026 | Fortnite ESP',
-				'Fortnite wallhack ESP showing enemy players and loot through walls',
+				rustImages.espWallhack,
+				'Undetected Rust Cheats 2026 | ESP & Aimbot',
+				'Undetected Rust cheats ESP wallhack preview for Rust on Windows PC',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite wallhack squad fight | Fortnite Cheats',
-				'Fortnite wallhack reference during Fortnite squad fight',
-			),
-		],
-	},
-	{
-		path: '/fortnite-radar-hack/',
-		images: [
-			img(
-				fortniteImages.squadFight,
-				'Fortnite Radar Hack 2026 | 2D Threat Overlay',
-				'Fortnite radar hack 2D overlay for nearby player awareness',
-			),
-			img(
-				fortniteImages.espWallhack,
-				'Fortnite radar and ESP | Fortnite Cheats',
-				'Fortnite radar hack paired with ESP wallhack on Fortnite Cheats',
+				rustImages.aimbotCombat,
+				'Undetected Rust Aimbot | Rust Cheats',
+				'Undetected Rust Aimbot combat preview bundled with ESP and radar',
 			),
 		],
 	},
 	{
-		path: '/eac-bypass-fortnite/',
+		path: '/rust-wallhack/',
 		images: [
 			img(
-				fortniteImages.headerArt,
-				'EAC Bypass Guide 2026 | Fortnite Cheats',
-				'Easy Anti-Cheat (EAC) maintenance guide for undetected Fortnite cheats',
+				rustImages.espWallhack,
+				'Rust Wallhack 2026 | Rust ESP',
+				'Rust wallhack ESP showing enemy players and loot through walls',
 			),
 			img(
-				fortniteImages.hero,
-				'Fortnite Easy Anti-Cheat (EAC) update hero | Fortnite Cheats',
-				'Fortnite cheats hero for EAC bypass and patch maintenance',
-			),
-		],
-	},
-	{
-		path: '/fortnite-cheats-2026/',
-		images: [
-			img(
-				fortniteImages.hero,
-				'Fortnite Cheats 2026 | ESP, Wallhack, Radar & Aimbot',
-				'Fortnite cheats 2026 buyer guide hero for Fortnite',
-			),
-			img(
-				fortniteImages.cheatsPackage,
-				'Fortnite Cheats 2026 package | Fortnite',
-				'Fortnite cheats 2026 package with ESP wallhack radar and Aimbot',
+				rustImages.squadFight,
+				'Rust wallhack squad fight | Rust Cheats',
+				'Rust wallhack reference during Rust squad fight',
 			),
 		],
 	},
 	{
-		path: '/fortnite-hacks/',
+		path: '/rust-radar-hack/',
 		images: [
-			img(fortniteImages.battleRoyaleCombat, 'Fortnite Hacks 2026 | ESP & Aimbot', 'Fortnite hacks battle royale combat preview for undetected PC package'),
-			img(fortniteImages.espWallhack, 'Fortnite Hacks ESP | Fortnite Cheats', 'Fortnite hacks ESP wallhack overlay for Fortnite'),
+			img(
+				rustImages.squadFight,
+				'Rust Radar Hack 2026 | 2D Threat Overlay',
+				'Rust radar hack 2D overlay for nearby player awareness',
+			),
+			img(
+				rustImages.espWallhack,
+				'Rust radar and ESP | Rust Cheats',
+				'Rust radar hack paired with ESP wallhack on Rust Cheats',
+			),
 		],
 	},
 	{
-		path: '/fortnite-cheat-download/',
+		path: '/eac-bypass-rust/',
 		images: [
-			img(fortniteImages.cheatsPackage, 'Fortnite Cheat Download 2026 | Instant Delivery', 'Fortnite cheat download package with ESP wallhack and Aimbot'),
-			img(fortniteImages.cover, 'Fortnite Cheat Download cover | Fortnite', 'Fortnite cheat download license delivery visual'),
+			img(
+				rustImages.headerArt,
+				'EAC Bypass Guide 2026 | Rust Cheats',
+				'Easy Anti-Cheat (EAC) maintenance guide for undetected Rust cheats',
+			),
+			img(
+				rustImages.hero,
+				'Rust Easy Anti-Cheat (EAC) update hero | Rust Cheats',
+				'Rust cheats hero for EAC bypass and patch maintenance',
+			),
 		],
 	},
 	{
-		path: '/fortnite-mod-menu/',
+		path: '/rust-cheats-2026/',
 		images: [
-			img(fortniteImages.loadoutBuilder, 'Fortnite Mod Menu 2026 | In-Client Toggles', 'Fortnite mod menu loadout builder for ESP and Aimbot toggles'),
-			img(fortniteImages.aimbotCombat, 'Fortnite Mod Menu Aimbot | Fortnite Cheats', 'Fortnite mod menu Aimbot controls preview'),
+			img(
+				rustImages.hero,
+				'Rust Cheats 2026 | ESP, Wallhack, Radar & Aimbot',
+				'Rust cheats 2026 buyer guide hero for Rust',
+			),
+			img(
+				rustImages.cheatsPackage,
+				'Rust Cheats 2026 package | Rust',
+				'Rust cheats 2026 package with ESP wallhack radar and Aimbot',
+			),
 		],
 	},
 	{
-		path: '/fortnite-soft-aim/',
+		path: '/rust-hacks/',
 		images: [
-			img(fortniteImages.aimbotCombat, 'Fortnite Soft Aim 2026 | Smooth Aimbot', 'Fortnite soft aim combat preview with smooth Aimbot settings'),
-			img(fortniteImages.squadFight, 'Fortnite Soft Aim squad fight | Fortnite', 'Fortnite soft aim squad fight reference'),
+			img(rustImages.battleRoyaleCombat, 'Rust Hacks 2026 | ESP & Aimbot', 'Rust hacks survival combat preview for undetected PC package'),
+			img(rustImages.espWallhack, 'Rust Hacks ESP | Rust Cheats', 'Rust hacks ESP wallhack overlay for Rust'),
 		],
 	},
 	{
-		path: '/best-fortnite-cheats/',
+		path: '/rust-cheat-download/',
 		images: [
-			img(fortniteImages.hero, 'Best Fortnite Cheats 2026 | ESP & Aimbot', 'Best Fortnite cheats 2026 buyer guide hero'),
-			img(fortniteImages.cheatsPackage, 'Best Fortnite Cheats package | Fortnite', 'Best Fortnite cheats package with full feature stack'),
+			img(rustImages.cheatsPackage, 'Rust Cheat Download 2026 | Instant Delivery', 'Rust cheat download package with ESP wallhack and Aimbot'),
+			img(rustImages.cover, 'Rust Cheat Download cover | Rust', 'Rust cheat download license delivery visual'),
 		],
 	},
 	{
-		path: '/fortnite-aimbot-hack/',
+		path: '/rust-mod-menu/',
 		images: [
-			img(fortniteImages.aimbotCombat, 'Fortnite Aimbot Hack 2026 | Undetected', 'Fortnite aimbot hack combat preview for undetected aim assist'),
-			img(fortniteImages.headerArt, 'Fortnite Aimbot Hack header | Fortnite Cheats', 'Fortnite aimbot hack supporting visual'),
+			img(rustImages.loadoutBuilder, 'Rust Mod Menu 2026 | In-Client Toggles', 'Rust mod menu loadout builder for ESP and Aimbot toggles'),
+			img(rustImages.aimbotCombat, 'Rust Mod Menu Aimbot | Rust Cheats', 'Rust mod menu Aimbot controls preview'),
 		],
 	},
 	{
-		path: '/fortnite-esp-hack/',
+		path: '/rust-soft-aim/',
 		images: [
-			img(fortniteImages.espWallhack, 'Fortnite ESP Hack 2026 | Player Wallhack', 'Fortnite ESP hack wallhack showing player visibility'),
-			img(fortniteImages.playerEsp, 'Fortnite ESP Hack player overlay | Fortnite', 'Fortnite ESP hack player overlay preview'),
+			img(rustImages.aimbotCombat, 'Rust Soft Aim 2026 | Smooth Aimbot', 'Rust soft aim combat preview with smooth Aimbot settings'),
+			img(rustImages.squadFight, 'Rust Soft Aim squad fight | Rust', 'Rust soft aim squad fight reference'),
 		],
 	},
 	{
-		path: '/fortnite-unlock-all/',
+		path: '/best-rust-cheats/',
 		images: [
-			img(fortniteImages.playerEsp, 'Fortnite Unlock All 2026 | Loadout Guide', 'Fortnite unlock all player ESP loadout guide visual'),
-			img(fortniteImages.loadoutBuilder, 'Fortnite Unlock All loadout | Fortnite Cheats', 'Fortnite unlock all loadout builder reference'),
+			img(rustImages.hero, 'Best Rust Cheats 2026 | ESP & Aimbot', 'Best Rust cheats 2026 buyer guide hero'),
+			img(rustImages.cheatsPackage, 'Best Rust Cheats package | Rust', 'Best Rust cheats package with full feature stack'),
+		],
+	},
+	{
+		path: '/rust-aimbot-hack/',
+		images: [
+			img(rustImages.aimbotCombat, 'Rust Aimbot Hack 2026 | Undetected', 'Rust aimbot hack combat preview for undetected aim assist'),
+			img(rustImages.headerArt, 'Rust Aimbot Hack header | Rust Cheats', 'Rust aimbot hack supporting visual'),
+		],
+	},
+	{
+		path: '/rust-esp-hack/',
+		images: [
+			img(rustImages.espWallhack, 'Rust ESP Hack 2026 | Player Wallhack', 'Rust ESP hack wallhack showing player visibility'),
+			img(rustImages.playerEsp, 'Rust ESP Hack player overlay | Rust', 'Rust ESP hack player overlay preview'),
+		],
+	},
+	{
+		path: '/rust-unlock-all/',
+		images: [
+			img(rustImages.playerEsp, 'Rust Unlock All 2026 | Loadout Guide', 'Rust unlock all player ESP loadout guide visual'),
+			img(rustImages.loadoutBuilder, 'Rust Unlock All loadout | Rust Cheats', 'Rust unlock all loadout builder reference'),
 		],
 	},
 	{
 		path: '/features/',
 		images: [
 			img(
-				fortniteImages.hero,
-				'Fortnite Cheat Features | ESP & Aimbot for Fortnite',
-				'Explore Fortnite cheat features: advanced Fortnite ESP and precise Aimbot',
+				rustImages.hero,
+				'Rust Cheat Features | ESP & Aimbot for Rust',
+				'Explore Rust cheat features: advanced Rust ESP and precise Aimbot',
 			),
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite Aimbot feature | Fortnite Cheats',
-				'Fortnite Aimbot feature still with customizable settings for Fortnite',
+				rustImages.aimbotCombat,
+				'Rust Aimbot feature | Rust Cheats',
+				'Rust Aimbot feature still with customizable settings for Rust',
 			),
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite ESP feature | Fortnite Cheats',
-				'Fortnite ESP feature still with item filters and distance display',
+				rustImages.espWallhack,
+				'Rust ESP feature | Rust Cheats',
+				'Rust ESP feature still with item filters and distance display',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite cheat features squad | Fortnite',
-				'Fortnite Cheats feature still for ESP wallhack and Aimbot overview',
+				rustImages.squadFight,
+				'Rust cheat features squad | Rust',
+				'Rust Cheats feature still for ESP wallhack and Aimbot overview',
 			),
 		],
 	},
@@ -277,24 +277,24 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/pricing/',
 		images: [
 			img(
-				fortniteImages.cover,
-				'Fortnite Cheat Pricing | Monthly & Lifetime Plans',
-				'Fortnite cheats pricing cover for monthly $35 and lifetime $150 plans',
+				rustImages.cover,
+				'Rust Cheat Pricing | Monthly & Lifetime Plans',
+				'Rust cheats pricing cover for monthly $35 and lifetime $150 plans',
 			),
 			img(
-				fortniteImages.cheatsPackage,
-				'Fortnite Cheats package pricing',
-				'Fortnite ESP and Aimbot package visual for Fortnite cheats pricing',
+				rustImages.cheatsPackage,
+				'Rust Cheats package pricing',
+				'Rust ESP and Aimbot package visual for Rust cheats pricing',
 			),
 			img(
-				fortniteImages.loadoutBuilder,
-				'Fortnite pricing squad builder | Fortnite',
-				'Fortnite loadout builder still on Fortnite cheats pricing page',
+				rustImages.loadoutBuilder,
+				'Rust pricing squad builder | Rust',
+				'Rust loadout builder still on Rust cheats pricing page',
 			),
 			img(
-				fortniteImages.squadFight,
-				'Fortnite pricing combat | Fortnite Cheats',
-				'Combat still supporting Fortnite cheats pricing plans',
+				rustImages.squadFight,
+				'Rust pricing combat | Rust Cheats',
+				'Combat still supporting Rust cheats pricing plans',
 			),
 		],
 	},
@@ -302,19 +302,19 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/setup/',
 		images: [
 			img(
-				fortniteImages.squadFight,
-				'Fortnite Cheat Setup | Install Guide for Windows',
-				'Setup guide main image for installing Fortnite cheats on Windows PC',
+				rustImages.squadFight,
+				'Rust Cheat Setup | Install Guide for Windows',
+				'Setup guide main image for installing Rust cheats on Windows PC',
 			),
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite cheat setup Aimbot | Fortnite',
-				'Setup guide Aimbot configuration visual for Fortnite cheats',
+				rustImages.aimbotCombat,
+				'Rust cheat setup Aimbot | Rust',
+				'Setup guide Aimbot configuration visual for Rust cheats',
 			),
 			img(
-				fortniteImages.cover,
-				'Fortnite cheat setup cover | Fortnite Cheats',
-				'Setup guide cover for quick Fortnite ESP and Aimbot configuration',
+				rustImages.cover,
+				'Rust cheat setup cover | Rust Cheats',
+				'Setup guide cover for quick Rust ESP and Aimbot configuration',
 			),
 		],
 	},
@@ -322,19 +322,19 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/updates/',
 		images: [
 			img(
-				fortniteImages.squadFight,
-				'Fortnite Cheat Status | Update Log & Patches',
-				'Fortnite cheat status and update log visual for Fortnite compatibility',
+				rustImages.squadFight,
+				'Rust Cheat Status | Update Log & Patches',
+				'Rust cheat status and update log visual for Rust compatibility',
 			),
 			img(
-				fortniteImages.hero,
-				'Fortnite cheat updates hero | Fortnite Cheats',
-				'Fortnite ESP and Aimbot patch status hero for Fortnite cheats',
+				rustImages.hero,
+				'Rust cheat updates hero | Rust Cheats',
+				'Rust ESP and Aimbot patch status hero for Rust cheats',
 			),
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite cheat updates ESP | Fortnite',
-				'Fortnite ESP maintenance still for Fortnite cheat update log',
+				rustImages.espWallhack,
+				'Rust cheat updates ESP | Rust',
+				'Rust ESP maintenance still for Rust cheat update log',
 			),
 		],
 	},
@@ -342,19 +342,19 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/faq/',
 		images: [
 			img(
-				fortniteImages.loadoutBuilder,
-				'Fortnite Cheats FAQ | Common Questions Answered',
-				'FAQ visual for Fortnite cheats setup, delivery and refund questions',
+				rustImages.loadoutBuilder,
+				'Rust Cheats FAQ | Common Questions Answered',
+				'FAQ visual for Rust cheats setup, delivery and refund questions',
 			),
 			img(
-				fortniteImages.espWallhack,
-				'Fortnite Cheats FAQ ESP | Fortnite',
-				'FAQ ESP support visual explaining how Fortnite ESP works on Fortnite',
+				rustImages.espWallhack,
+				'Rust Cheats FAQ ESP | Rust',
+				'FAQ ESP support visual explaining how Rust ESP works on Rust',
 			),
 			img(
-				fortniteImages.headerArt,
-				'Fortnite Cheats FAQ header | Fortnite Cheats',
-				'FAQ support context art for Fortnite Cheats',
+				rustImages.headerArt,
+				'Rust Cheats FAQ header | Rust Cheats',
+				'FAQ support context art for Rust Cheats',
 			),
 		],
 	},
@@ -362,19 +362,19 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/support/',
 		images: [
 			img(
-				fortniteImages.headerArt,
-				'Fortnite Cheat Support | Help Center & Contact',
-				'Support page visual for Fortnite cheats help center and contact',
+				rustImages.headerArt,
+				'Rust Cheat Support | Help Center & Contact',
+				'Support page visual for Rust cheats help center and contact',
 			),
 			img(
-				fortniteImages.aimbotCombat,
-				'Fortnite Cheat Support Aimbot help | Fortnite',
-				'Support visual for Fortnite Aimbot help, license and billing questions',
+				rustImages.aimbotCombat,
+				'Rust Cheat Support Aimbot help | Rust',
+				'Support visual for Rust Aimbot help, license and billing questions',
 			),
 			img(
-				fortniteImages.cover,
-				'Fortnite Cheat Support cover | Fortnite Cheats',
-				'Support cover for Fortnite cheats technical help',
+				rustImages.cover,
+				'Rust Cheat Support cover | Rust Cheats',
+				'Support cover for Rust cheats technical help',
 			),
 		],
 	},
@@ -382,14 +382,14 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/refund-policy/',
 		images: [
 			img(
-				fortniteImages.cover,
-				'Refund Policy | Fortnite Cheats',
-				'Refund policy image for Fortnite cheats eligibility and license terms',
+				rustImages.cover,
+				'Refund Policy | Rust Cheats',
+				'Refund policy image for Rust cheats eligibility and license terms',
 			),
 			img(
-				fortniteImages.cheatsPackage,
-				'Fortnite Cheats refund package',
-				'Package visual for Fortnite cheats refund policy instructions',
+				rustImages.cheatsPackage,
+				'Rust Cheats refund package',
+				'Package visual for Rust cheats refund policy instructions',
 			),
 		],
 	},
@@ -397,14 +397,14 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/privacy-policy/',
 		images: [
 			img(
-				fortniteImages.aimbotCombat,
-				'Privacy Policy | Fortnite Cheats',
-				'Privacy policy image for Fortnite cheats data and order handling',
+				rustImages.aimbotCombat,
+				'Privacy Policy | Rust Cheats',
+				'Privacy policy image for Rust cheats data and order handling',
 			),
 			img(
-				fortniteImages.hero,
-				'Fortnite Cheats privacy policy hero',
-				'Privacy policy hero for Fortnite cheats site usage details',
+				rustImages.hero,
+				'Rust Cheats privacy policy hero',
+				'Privacy policy hero for Rust cheats site usage details',
 			),
 		],
 	},
@@ -412,19 +412,19 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/terms/',
 		images: [
 			img(
-				fortniteImages.squadFight,
-				'Terms of Use | Fortnite Cheats',
-				'Terms of use image for Fortnite cheats license agreement',
+				rustImages.squadFight,
+				'Terms of Use | Rust Cheats',
+				'Terms of use image for Rust cheats license agreement',
 			),
 			img(
-				fortniteImages.headerArt,
-				'Fortnite Cheats terms header',
-				'Terms support visual for Fortnite ESP and Aimbot purchase conditions',
+				rustImages.headerArt,
+				'Rust Cheats terms header',
+				'Terms support visual for Rust ESP and Aimbot purchase conditions',
 			),
 			img(
-				fortniteImages.cover,
-				'Fortnite Cheats terms cover',
-				'Terms cover for Fortnite cheats usage guidelines',
+				rustImages.cover,
+				'Rust Cheats terms cover',
+				'Terms cover for Rust cheats usage guidelines',
 			),
 		],
 	},
@@ -468,7 +468,7 @@ export const pageSitemapEntries: PageSitemapEntry[] = pageIds.map((pageId) => {
 });
 
 /** Unique keyword images for the dedicated image sitemap. */
-export const imageSitemapEntries: SitemapImage[] = fortniteImages.sitemap.map((entry) =>
+export const imageSitemapEntries: SitemapImage[] = rustImages.sitemap.map((entry) =>
 	img(entry.src, entry.title, entry.caption),
 );
 
