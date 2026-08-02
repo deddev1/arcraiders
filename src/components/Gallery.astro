@@ -17,15 +17,14 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
-// Only images NOT already shown in the hero or product card — the gallery must not
-// repeat visuals from earlier homepage sections. Never pair cheatsPackage with the
-// old island-map path (identical bytes); rustImages.gallery is the source list.
+// Gallery stills — five uniques in a different order than product thumbs.
+// Hero uses a short video + hero poster; product main is the full video.
 const galleryAlts = [
+	undefined,
 	ui.images.cheatsPackage,
 	ui.images.battleRoyaleIsland,
 	ui.images.headerArt,
 	ui.images.squadFight,
-	undefined,
 ] as const;
 
 const galleryImages = rustImages.gallery.map((image, index) => ({
@@ -224,7 +223,7 @@ const tiles = galleryImages.slice(1, 5);
 	.gallery__featured,
 	.gallery__video {
 		aspect-ratio: 16 / 9;
-		border: 1px solid rgba(196, 120, 64, 0.28);
+		border: 1px solid rgba(192, 132, 252, 0.22);
 		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.26);
 	}
 
@@ -233,7 +232,7 @@ const tiles = galleryImages.slice(1, 5);
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		background: #0b0d0f;
+		background: #0a0612;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
@@ -272,8 +271,8 @@ const tiles = galleryImages.slice(1, 5);
 		inset: auto 0 0;
 		z-index: 2;
 		padding: 1.6rem 0.95rem 0.8rem;
-		background: linear-gradient(transparent, rgba(11, 13, 15, 0.92));
-		color: #c8beb2;
+		background: linear-gradient(transparent, rgba(10, 6, 18, 0.92));
+		color: #ddd4ec;
 		font-size: 0.75rem;
 		font-weight: 600;
 		opacity: 0;

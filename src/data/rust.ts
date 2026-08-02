@@ -1,139 +1,120 @@
 import { siteConfig } from './site';
 
 /**
- * Simple SEO filenames for rust hacks product UI assets.
- * Visuals are cheat overlay / menu / status UI — not combat scenery.
+ * Five distinct real screenshots (unique bytes):
+ * rust-hacks-hero, rust-esp-overlay, rust-esp-bots, rust-esp-hitbox, rust-aimbot-menu.
+ * Alias paths that share bytes with these (cover/dashboard/aimbot-ui) are avoided.
  */
 
-/** Background gameplay clip — keyworded for rust hacks SEO. */
+/** Trimmed hero loop — first ~6s of the background clip. */
+export const rustHeroVideo = {
+	src: '/videos/rust-hacks-hero-6s.mp4',
+	poster: '/images/rust-hacks-hero.webp',
+	title: 'Rust hacks hero background',
+	ariaLabel: 'Rust hacks gameplay background — short loop',
+} as const;
+
+/** Full gameplay clip for product preview + gallery. */
 export const rustVideo = {
 	src: '/videos/rust-hacks-background.mp4',
-	poster: '/images/rust-hacks-hero.webp',
+	/** Hitbox still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
+	poster: '/images/rust-esp-hitbox.webp',
 	title: 'Rust hacks background video',
-	ariaLabel: 'Rust hacks gameplay background — ESP and aimbot on PC',
+	ariaLabel: 'Rust hacks gameplay preview — ESP and aimbot on PC',
 	caption: 'Rust hacks gameplay video with ESP and aimbot',
 } as const;
 
 export const rustImages = {
 	hero: '/images/rust-hacks-hero.webp',
-	cover: '/images/rust-hacks-cover.webp',
+	cover: '/images/rust-esp-overlay.webp',
 	logo: siteConfig.logo,
-	loadoutBuilder: '/images/rust-cheats-menu.webp',
-	aimbotCombat: '/images/rust-aimbot-ui.webp',
-	squadFight: '/images/rust-cheats-dashboard.webp',
-	espWallhack: '/images/rust-esp-overlay.webp',
-	cheatsPackage: '/images/rust-cheats-menu.webp',
-	headerArt: '/images/rust-hacks-panel.webp',
-	battleRoyaleCombat: '/images/rust-hacks-status.webp',
-	rebootFight: '/images/rust-hacks-status.webp',
+	loadoutBuilder: '/images/rust-aimbot-menu.webp',
+	aimbotCombat: '/images/rust-aimbot-menu.webp',
+	squadFight: '/images/rust-esp-bots.webp',
+	espWallhack: '/images/rust-esp-hitbox.webp',
+	cheatsPackage: '/images/rust-esp-overlay.webp',
+	headerArt: '/images/rust-esp-hitbox.webp',
+	battleRoyaleCombat: '/images/rust-esp-hitbox.webp',
+	rebootFight: '/images/rust-esp-bots.webp',
 	playerEsp: '/images/rust-esp-overlay.webp',
-	zeroBuildCombat: '/images/rust-wallhack-ui.webp',
-	zeroBuildMode: '/images/rust-soft-aim-ui.webp',
-	battleRoyaleIsland: '/images/rust-radar-ui.webp',
+	zeroBuildCombat: '/images/rust-hacks-hero.webp',
+	zeroBuildMode: '/images/rust-esp-bots.webp',
+	battleRoyaleIsland: '/images/rust-aimbot-menu.webp',
+	/** Product thumbs — five unique stills; main media is video (see ProductCard). */
 	product: [
 		{
 			src: '/images/rust-esp-overlay.webp',
-			alt: 'Rust ESP overlay UI with player and loot boxes',
+			alt: 'Rust ESP with green skeleton, bounding box, and loot inventory labels',
 		},
 		{
-			src: '/images/rust-aimbot-ui.webp',
-			alt: 'Rust aimbot UI with FOV and smoothness controls',
+			src: '/images/rust-esp-bots.webp',
+			alt: 'Rust ESP boxes and distance labels on UKN practice bots',
 		},
 		{
-			src: '/images/rust-wallhack-ui.webp',
-			alt: 'Rust wallhack UI boxes for players through walls',
+			src: '/images/rust-esp-hitbox.webp',
+			alt: 'Rust wallhack ESP green hitbox around a hazmat-suited player',
 		},
 		{
-			src: '/images/rust-radar-ui.webp',
-			alt: 'Rust radar UI showing nearby player pings',
+			src: '/images/rust-aimbot-menu.webp',
+			alt: 'Rust aimbot menu overlay with red skeleton ESP and feature toggles',
 		},
-		{
-			src: '/images/rust-cheats-menu.webp',
-			alt: 'Rust cheats in-client menu for ESP and aimbot',
-		},
-		{
-			src: '/images/rust-hacks-status.webp',
-			alt: 'Rust hacks status panel for EAC maintenance',
-		},
-	],
-	gallery: [
 		{
 			src: '/images/rust-hacks-hero.webp',
-			alt: 'Rust Hacks hero showing ESP aimbot product UI',
+			alt: 'Rust aimbot holographic sight with ESP skeleton and red head lock',
+		},
+	],
+	/**
+	 * Gallery order — lead with aimbot (not hero poster). Same five uniques,
+	 * different sequence from product thumbs to reduce same-scroll sameness.
+	 */
+	gallery: [
+		{
+			src: '/images/rust-aimbot-menu.webp',
+			alt: 'Rust aimbot cheats menu with red skeleton ESP lock',
 			featured: true,
 		},
 		{
 			src: '/images/rust-esp-overlay.webp',
-			alt: 'Rust ESP overlay product UI',
+			alt: 'Rust ESP overlay with skeleton ESP and inventory labels',
 		},
 		{
-			src: '/images/rust-aimbot-ui.webp',
-			alt: 'Rust aimbot product UI',
+			src: '/images/rust-esp-bots.webp',
+			alt: 'Rust ESP boxes, weapon labels, and distances on UKN practice bots',
 		},
 		{
-			src: '/images/rust-cheats-menu.webp',
-			alt: 'Rust cheats menu product UI',
+			src: '/images/rust-esp-hitbox.webp',
+			alt: 'Rust ESP green hitbox wallhack on a hazmat suit player',
 		},
 		{
-			src: '/images/rust-hacks-panel.webp',
-			alt: 'Rust hacks feature panel UI',
+			src: '/images/rust-hacks-hero.webp',
+			alt: 'Rust hacks aimbot view with ESP skeleton and red head lock',
 		},
 	],
 	sitemap: [
 		{
 			src: '/images/rust-hacks-hero.webp',
 			title: 'Rust Hacks | ESP & Aimbot',
-			caption: 'Primary rust hacks product UI for ESP and aimbot',
-		},
-		{
-			src: '/images/rust-hacks-cover.webp',
-			title: 'Rust Hacks cover',
-			caption: 'Package cover for rust hacks pricing pages',
+			caption: 'Rust hacks aimbot sight with ESP skeleton and head lock',
 		},
 		{
 			src: '/images/rust-esp-overlay.webp',
 			title: 'Rust ESP overlay',
-			caption: 'ESP overlay UI for rust hacks',
+			caption: 'Rust ESP hack with skeletons, loot labels, and distances',
 		},
 		{
-			src: '/images/rust-aimbot-ui.webp',
-			title: 'Rust Aimbot UI',
-			caption: 'Aimbot controls UI for rust hacks',
+			src: '/images/rust-esp-bots.webp',
+			title: 'Rust ESP practice bots',
+			caption: 'Rust ESP boxes and distance markers on UKN practice bots',
 		},
 		{
-			src: '/images/rust-wallhack-ui.webp',
-			title: 'Rust wallhack UI',
-			caption: 'Wallhack-style ESP boxes for rust hacks',
+			src: '/images/rust-esp-hitbox.webp',
+			title: 'Rust ESP hitbox',
+			caption: 'Rust wallhack green hitbox ESP on a hazmat player',
 		},
 		{
-			src: '/images/rust-cheats-menu.webp',
-			title: 'Rust cheats menu',
-			caption: 'In-client rust cheats menu',
-		},
-		{
-			src: '/images/rust-hacks-status.webp',
-			title: 'Rust hacks status',
-			caption: 'Maintenance status panel for rust hacks',
-		},
-		{
-			src: '/images/rust-radar-ui.webp',
-			title: 'Rust radar UI',
-			caption: '2D radar UI for rust hacks',
-		},
-		{
-			src: '/images/rust-soft-aim-ui.webp',
-			title: 'Rust soft aim UI',
-			caption: 'Soft aim curve UI for rust hacks',
-		},
-		{
-			src: '/images/rust-hacks-panel.webp',
-			title: 'Rust hacks panel',
-			caption: 'Feature panel UI for rust hacks',
-		},
-		{
-			src: '/images/rust-cheats-dashboard.webp',
-			title: 'Rust cheats dashboard',
-			caption: 'License dashboard for rust cheats',
+			src: '/images/rust-aimbot-menu.webp',
+			title: 'Rust Aimbot menu',
+			caption: 'Rust aimbot menu with red skeleton ESP and silent aim toggles',
 		},
 	],
 } as const;

@@ -9,7 +9,7 @@ export const enPages = {
 		h1: 'Rust Hacks — ESP, Aimbot & Wallhack for PC',
 		intro:
 			'A focused Windows PC package for Rust: player ESP, aimbot controls, and wallhack overlays with EAC maintenance after major patches.',
-		imageAlt: 'Rust hacks atmosphere art for undetected ESP and aimbot on PC',
+		imageAlt: 'Rust hacks aimbot holographic sight with ESP skeleton and red head lock',
 		galleryTitle: 'Rust Hacks visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'See all features',
@@ -38,7 +38,7 @@ export const enPages = {
 		h1: 'Rust ESP — Player Boxes & Wallhack',
 		intro:
 			'Visibility tools for Rust. Read enemy squads, vehicles, loot, chests, and distance before you commit to a fight — with toggleable ESP wallhack overlays for PVE and PVP.',
-		imageAlt: 'Rust ESP wallhack overlay showing enemy players and loot markers through walls',
+		imageAlt: 'Rust ESP with green skeleton, bounding box, loot labels, and distances',
 		galleryTitle: 'Rust ESP overlay visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Rust wallhack guide',
@@ -83,7 +83,7 @@ export const enPages = {
 		h1: 'Rust Aimbot — Soft Aim for PC & Controllers',
 		intro:
 			'Configurable Aimbot tools for Rust firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'Rust Aimbot combat preview with smooth aim assist on Windows PC',
+		imageAlt: 'Rust aimbot menu with red skeleton ESP, silent aim, and feature toggles',
 		galleryTitle: 'Rust Aimbot combat previews',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'See ESP wallhack',
@@ -128,7 +128,7 @@ export const enPages = {
 		h1: 'Rust Hacks Features — Full Control List',
 		intro:
 			'Every ESP wallhack, radar hack, and Aimbot control included in the Rust Cheats package for Rust on Windows PC — with EAC maintenance after major patches.',
-		imageAlt: 'Rust Cheats feature package showing ESP wallhack and Aimbot controls',
+		imageAlt: 'Rust ESP boxes, weapon labels, and distances on UKN practice bots',
 		galleryTitle: 'Rust Cheats feature gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'View pricing',
@@ -161,7 +161,7 @@ export const enPages = {
 		h1: 'Rust Hacks Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Rust Cheats — ESP wallhack, radar hack, and Aimbot for Rust on Windows PC. Instant digital delivery after payment.',
-		imageAlt: 'Rust Cheats pricing options for monthly and lifetime ESP Aimbot licenses',
+		imageAlt: 'Rust ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Rust Cheats package visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Read setup guide',
@@ -194,7 +194,7 @@ export const enPages = {
 		h1: 'Rust Hacks Setup — PC & Controller Guide',
 		intro:
 			'Install and configure Rust Cheats for Rust on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify EAC maintenance status before queueing.',
-		imageAlt: 'Rust Cheats setup guide for Windows PC license activation',
+		imageAlt: 'Rust aimbot cheats menu with red skeleton ESP and hotkey toggles',
 		galleryTitle: 'Rust Cheats setup visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Contact support',
@@ -227,7 +227,7 @@ export const enPages = {
 		h1: 'Rust Hacks Updates — Maintenance Log',
 		intro:
 			'Track EAC maintenance and Rust patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
-		imageAlt: 'Rust Cheats updates and EAC maintenance log header',
+		imageAlt: 'Rust ESP green hitbox wallhack on a hazmat-suited player',
 		galleryTitle: 'Rust patch and maintenance visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Undetected status guide',
@@ -260,7 +260,7 @@ export const enPages = {
 		h1: 'Rust Hacks FAQ — Common Questions',
 		intro:
 			'Answers about undetected Rust Cheats — ESP wallhack, radar hack, Aimbot, EAC maintenance, checkout, and Rust compatibility on Windows PC.',
-		imageAlt: 'Rust Cheats FAQ covering ESP Aimbot and EAC questions',
+		imageAlt: 'Rust ESP boxes and distance labels on UKN practice bots',
 		galleryTitle: 'Rust Cheats FAQ visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Contact support',
@@ -293,7 +293,7 @@ export const enPages = {
 		h1: 'Rust Hacks Support — Contact Us',
 		intro:
 			'Get help with Rust Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and EAC maintenance for Rust on Windows PC.',
-		imageAlt: 'Rust Cheats support and contact help for license issues',
+		imageAlt: 'Rust hacks aimbot sight with ESP skeleton and red head lock',
 		galleryTitle: 'Rust Cheats support resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read setup guide',
@@ -326,7 +326,7 @@ export const enPages = {
 		h1: 'Undetected Rust Hacks — EAC Maintenance',
 		intro:
 			'How Rust Cheats stays maintained for Rust after Easy Anti-Cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
-		imageAlt: 'Undetected Rust cheats status with ESP wallhack for survival',
+		imageAlt: 'Rust wallhack green hitbox ESP on a hazmat suit player',
 		galleryTitle: 'Undetected Rust Cheats visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'EAC bypass guide',
@@ -359,7 +359,7 @@ export const enPages = {
 		h1: 'Rust Wallhack — ESP Boxes & Visibility',
 		intro:
 			'Rust wallhack ESP for Rust — see players, loot, vehicles, and chests through toggleable wallhack overlays built for PVE and PVP.',
-		imageAlt: 'Rust wallhack ESP preview with player visibility through terrain',
+		imageAlt: 'Rust wallhack ESP green hitbox around a hazmat-suited player',
 		galleryTitle: 'Rust wallhack ESP gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Rust ESP page',
@@ -392,7 +392,7 @@ export const enPages = {
 		h1: 'Rust Radar Hack — 2D Threat Awareness',
 		intro:
 			'2D radar-style overlay for Rust — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
-		imageAlt: 'Rust radar hack 2D threat overlay showing nearby player directions',
+		imageAlt: 'Rust ESP distance markers and weapon labels on UKN practice bots',
 		galleryTitle: 'Rust radar hack visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'See ESP wallhack',
@@ -425,7 +425,7 @@ export const enPages = {
 		h1: 'EAC Bypass — Rust Hacks Maintenance',
 		intro:
 			'Understand Easy Anti-Cheat maintenance for Rust Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Rust security updates.',
-		imageAlt: 'EAC bypass Rust maintenance guide for ESP and Aimbot rebuilds',
+		imageAlt: 'Rust ESP green hitbox wallhack used for EAC maintenance status pages',
 		galleryTitle: 'EAC maintenance visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Check updates',
@@ -458,7 +458,7 @@ export const enPages = {
 		h1: 'Rust Cheats 2026 — ESP, Soft Aim & Cloud DMA',
 		intro:
 			'The 2026 Rust Cheats package for Rust — undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance, instant delivery, and Windows PC support.',
-		imageAlt: 'Rust cheats 2026 package with ESP wallhack and Aimbot',
+		imageAlt: 'Rust hacks aimbot holographic sight with ESP skeleton and red head lock',
 		galleryTitle: 'Rust Cheats 2026 gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Compare features',
@@ -491,7 +491,7 @@ export const enPages = {
 		h1: 'Rust Hacks — Undetected ESP, Aimbot & Wallhack',
 		intro:
 			'Rust hacks for survival and monuments combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for rust hacks in 2026.',
-		imageAlt: 'Rust hacks package with ESP wallhack and Aimbot for survival',
+		imageAlt: 'Rust hacks aimbot sight with ESP skeleton and red head lock',
 		galleryTitle: 'Rust hacks gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'See undetected guide',
@@ -530,7 +530,7 @@ export const enPages = {
 		h1: 'Rust Hack Download — Instant License Delivery',
 		intro:
 			'How Rust cheat download works for Rust — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
-		imageAlt: 'Rust cheat download package for ESP wallhack and Aimbot license',
+		imageAlt: 'Rust ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Rust cheat download visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Setup guide',
@@ -563,7 +563,7 @@ export const enPages = {
 		h1: 'Rust Mod Menu — In-Client Control Panel',
 		intro:
 			'Rust mod menu controls for Rust — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Rust session on Windows PC.',
-		imageAlt: 'Rust mod menu in-client toggles for ESP wallhack and Aimbot',
+		imageAlt: 'Rust mod menu / aimbot overlay with red skeleton ESP and hotkeys',
 		galleryTitle: 'Rust mod menu gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Full feature list',
@@ -596,7 +596,7 @@ export const enPages = {
 		h1: 'Rust Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Rust soft aim settings for Rust — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'Rust soft aim smooth Aimbot settings preview for BR fights',
+		imageAlt: 'Rust soft aim ESP boxes and FOV circle on UKN practice bots',
 		galleryTitle: 'Rust soft aim gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Aimbot controls',
@@ -629,7 +629,7 @@ export const enPages = {
 		h1: 'Best Rust Hacks — 2026 Buyer Guide',
 		intro:
 			'Compare the best Rust cheats for Rust in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Easy Anti-Cheat rebuilds and instant delivery.',
-		imageAlt: 'Best Rust cheats 2026 buyer guide for ESP wallhack and Aimbot',
+		imageAlt: 'Rust ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Best Rust cheats gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Compare pricing',
@@ -662,7 +662,7 @@ export const enPages = {
 		h1: 'Rust Aimbot Hack — Soft Aim Assist',
 		intro:
 			'Rust aimbot hack tools for Rust — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'Rust aimbot hack undetected aim assist combat preview',
+		imageAlt: 'Rust aimbot hack menu with red skeleton ESP and silent aim toggles',
 		galleryTitle: 'Rust aimbot hack gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'Aimbot settings',
@@ -695,7 +695,7 @@ export const enPages = {
 		h1: 'Rust ESP Hack — Player Boxes Guide',
 		intro:
 			'Rust ESP hack overlays for Rust — player outlines, vehicle threat cues, loot and chest markers with distance readouts across survival and monuments.',
-		imageAlt: 'Rust ESP hack wallhack showing player and loot visibility',
+		imageAlt: 'Rust ESP hack with green skeleton, box, and loot visibility labels',
 		galleryTitle: 'Rust ESP hack gallery',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'ESP controls',
@@ -728,7 +728,7 @@ export const enPages = {
 		h1: 'Rust Unlock All — What Players Search For',
 		intro:
 			'Rust unlock all is a common search term for Rust — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Rust Cheats actually provides on Windows PC.',
-		imageAlt: 'Rust unlock all guide clarifying ESP Aimbot tools versus cosmetic unlocks',
+		imageAlt: 'Rust ESP boxes and distances on UKN bots for unlock-all context',
 		galleryTitle: 'Rust unlock all guide visuals',
 		ctaPrimary: 'Buy Rust Hacks',
 		ctaSecondary: 'See features',
@@ -760,7 +760,7 @@ export const enPages = {
 			'Privacy policy for Rust Hacks. How we handle support emails, order data, and checkout for rust cheats licenses on rusthacks.net.',
 		h1: 'Privacy Policy',
 		intro: 'How Rust Hacks handles information when you browse rusthacks.net or contact support about a Rust license.',
-		imageAlt: 'Rust Cheats privacy policy legal page',
+		imageAlt: 'Rust ESP overlay visual for privacy policy page',
 		galleryTitle: 'Rust Cheats legal resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read terms of use',
@@ -791,7 +791,7 @@ export const enPages = {
 		h1: 'Refund Policy',
 		intro:
 			'Refund terms for Rust Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Rust.',
-		imageAlt: 'Rust Cheats refund policy billing terms',
+		imageAlt: 'Rust ESP overlay visual for refund policy page',
 		galleryTitle: 'Rust Cheats billing resources',
 		ctaPrimary: 'Contact support',
 		ctaSecondary: 'Read privacy policy',
@@ -820,7 +820,7 @@ export const enPages = {
 			'Terms of use for rusthacks.net and Rust Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
 		h1: 'Terms of Use',
 		intro: 'Terms governing use of rusthacks.net and Rust Hacks licenses for Rust on Windows PC.',
-		imageAlt: 'Rust Cheats terms of use legal agreement',
+		imageAlt: 'Rust ESP overlay visual for terms of use page',
 		galleryTitle: 'Rust Cheats legal pages',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read privacy policy',

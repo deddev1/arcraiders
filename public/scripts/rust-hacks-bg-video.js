@@ -1,28 +1,43 @@
 /**
- * Keeps muted rust-hacks background clips playing when autoplay is allowed.
- * Honors prefers-reduced-motion; lazy clips wait until near the viewport.
+ * Plays muted rust-hacks background clips. Hero always attempts playback;
+ * gallery lazy clips wait until near the viewport.
  */
 (function () {
-	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-		document.querySelectorAll('[data-rust-hacks-video]').forEach(function (el) {
-			if (el instanceof HTMLVideoElement) {
-				el.removeAttribute('autoplay');
-				el.pause();
-				el.classList.add('is-motion-reduced');
-			}
-		});
-		return;
+	function armMuted(video) {
+		if (!(video instanceof HTMLVideoElement)) return;
+		video.muted = true;
+		video.defaultMuted = true;
+		video.setAttribute('muted', '');
+		video.playsInline = true;
 	}
 
 	function tryPlay(video) {
 		if (!(video instanceof HTMLVideoElement)) return;
+		armMuted(video);
 		var playPromise = video.play();
 		if (playPromise && typeof playPromise.catch === 'function') {
-			playPromise.catch(function () {});
+			playPromise.catch(function () {
+				// Retry once after a short delay (some browsers block the first gesture-less play).
+				window.setTimeout(function () {
+					armMuted(video);
+					video.play().catch(function () {});
+				}, 250);
+			});
 		}
 	}
 
-	document.querySelectorAll('[data-rust-hacks-video="hero"]').forEach(tryPlay);
+	document.querySelectorAll('[data-rust-hacks-video="hero"]').forEach(function (video) {
+		armMuted(video);
+		if (video.readyState >= 2) {
+			tryPlay(video);
+		} else {
+			video.addEventListener('loadeddata', function () {
+				tryPlay(video);
+			}, { once: true });
+			video.load();
+			tryPlay(video);
+		}
+	});
 
 	var lazyVideos = document.querySelectorAll('[data-rust-hacks-video="lazy"]');
 	if (!lazyVideos.length) return;

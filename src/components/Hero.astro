@@ -4,7 +4,7 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
-import { rustVideo } from '../data/rust';
+import { rustHeroVideo } from '../data/rust';
 
 interface Props {
 	accent?: string;
@@ -60,17 +60,17 @@ const featuresUrl = getLocalizedPath('features', locale);
 		<video
 			class="hero__video"
 			data-rust-hacks-video="hero"
+			src={rustHeroVideo.src}
 			autoplay
 			muted
 			loop
 			playsinline
-			preload="metadata"
-			poster={rustVideo.poster}
-			title={rustVideo.title}
-			aria-label={rustVideo.ariaLabel}
-		>
-			<source src={rustVideo.src} type="video/mp4" />
-		</video>
+			webkit-playsinline
+			preload="auto"
+			poster={rustHeroVideo.poster}
+			title={rustHeroVideo.title}
+			aria-label={rustHeroVideo.ariaLabel}
+		></video>
 		<div class="hero__splash" aria-hidden="true"></div>
 		<div class="hero__veil" aria-hidden="true"></div>
 	</div>
@@ -132,10 +132,8 @@ const featuresUrl = getLocalizedPath('features', locale);
 	.hero__video {
 		z-index: 1;
 		pointer-events: none;
-	}
-
-	.hero__video.is-motion-reduced {
-		display: none;
+		opacity: 1;
+		background: #0a0612;
 	}
 
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
@@ -145,22 +143,16 @@ const featuresUrl = getLocalizedPath('features', locale);
 		}
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		.hero__video {
-			display: none;
-		}
-	}
-
 	.hero__splash {
 		position: absolute;
 		inset: 0;
 		z-index: 2;
 		background:
-			radial-gradient(ellipse 50% 70% at 78% 45%, rgba(196, 120, 64, 0.28), transparent 70%),
-			radial-gradient(ellipse 38% 55% at 92% 72%, rgba(90, 110, 120, 0.22), transparent 65%),
-			radial-gradient(ellipse 32% 48% at 58% 18%, rgba(143, 69, 32, 0.2), transparent 70%);
+			radial-gradient(ellipse 50% 70% at 78% 45%, rgba(168, 85, 247, 0.22), transparent 70%),
+			radial-gradient(ellipse 38% 55% at 92% 72%, rgba(217, 70, 239, 0.12), transparent 65%),
+			radial-gradient(ellipse 32% 48% at 58% 18%, rgba(124, 58, 237, 0.14), transparent 70%);
 		pointer-events: none;
-		opacity: 0.85;
+		opacity: 0.55;
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
@@ -174,14 +166,14 @@ const featuresUrl = getLocalizedPath('features', locale);
 		inset: 0;
 		z-index: 3;
 		background:
-			linear-gradient(90deg, #0b0d0f 0%, rgba(11, 13, 15, 0.92) 34%, rgba(11, 13, 15, 0.32) 62%, rgba(11, 13, 15, 0.55) 100%),
-			linear-gradient(180deg, rgba(11, 13, 15, 0.35) 0%, transparent 40%, rgba(11, 13, 15, 0.78) 100%);
+			linear-gradient(90deg, #0a0612 0%, rgba(10, 6, 18, 0.88) 28%, rgba(10, 6, 18, 0.18) 58%, rgba(10, 6, 18, 0.35) 100%),
+			linear-gradient(180deg, rgba(10, 6, 18, 0.25) 0%, transparent 38%, rgba(10, 6, 18, 0.65) 100%);
 		pointer-events: none;
 	}
 
 	.hero__inner {
 		position: relative;
-		z-index: 1;
+		z-index: 4;
 		display: flex;
 		align-items: center;
 		width: min(100% - (var(--page-gutter) * 2), var(--page-max));
@@ -251,7 +243,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 		max-width: 28rem;
 		font-size: clamp(0.95rem, 1.5vw, 1.05rem);
 		line-height: 1.65;
-		color: #c8beb2;
+		color: #cfc3e3;
 		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 	}
 
@@ -280,21 +272,21 @@ const featuresUrl = getLocalizedPath('features', locale);
 	}
 
 	.hero__btn--ghost {
-		border: 1px solid rgba(196, 120, 64, 0.35);
-		background: rgba(20, 24, 28, 0.85);
+		border: 1px solid rgba(168, 85, 247, 0.35);
+		background: rgba(18, 16, 26, 0.85);
 		color: var(--color-ink);
 	}
 
 	@media (min-width: 761px) {
 		.hero__btn--ghost {
-			background: rgba(20, 24, 28, 0.55);
+			background: rgba(18, 16, 26, 0.55);
 			backdrop-filter: blur(8px);
 		}
 	}
 
 	.hero__btn--ghost:hover {
-		border-color: rgba(224, 140, 72, 0.55);
-		background: rgba(38, 46, 54, 0.7);
+		border-color: rgba(192, 132, 252, 0.55);
+		background: rgba(34, 28, 48, 0.7);
 	}
 
 	@keyframes rise-in {

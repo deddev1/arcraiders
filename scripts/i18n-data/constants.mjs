@@ -12,33 +12,36 @@ export const PAGE_IDS = [
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page — simple rust-hacks UI filenames. */
+/**
+ * Hero image per page — rotate the five distinct screenshots.
+ * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
+ */
 export const HERO_IMAGES = {
 	home: '/images/rust-hacks-hero.webp',
 	'rust-esp': '/images/rust-esp-overlay.webp',
-	'rust-aimbot': '/images/rust-aimbot-ui.webp',
-	features: '/images/rust-hacks-panel.webp',
-	pricing: '/images/rust-hacks-cover.webp',
-	setup: '/images/rust-cheats-menu.webp',
-	updates: '/images/rust-hacks-status.webp',
-	faq: '/images/rust-cheats-dashboard.webp',
-	support: '/images/rust-hacks-panel.webp',
-	undetected: '/images/rust-hacks-status.webp',
-	wallhack: '/images/rust-wallhack-ui.webp',
-	radar: '/images/rust-radar-ui.webp',
-	'eac-bypass': '/images/rust-hacks-status.webp',
+	'rust-aimbot': '/images/rust-aimbot-menu.webp',
+	features: '/images/rust-esp-bots.webp',
+	pricing: '/images/rust-esp-hitbox.webp',
+	setup: '/images/rust-aimbot-menu.webp',
+	updates: '/images/rust-esp-overlay.webp',
+	faq: '/images/rust-esp-bots.webp',
+	support: '/images/rust-aimbot-menu.webp',
+	undetected: '/images/rust-hacks-hero.webp',
+	wallhack: '/images/rust-esp-hitbox.webp',
+	radar: '/images/rust-esp-bots.webp',
+	'eac-bypass': '/images/rust-esp-overlay.webp',
 	'cheats-2026': '/images/rust-hacks-hero.webp',
-	hacks: '/images/rust-hacks-hero.webp',
-	'cheat-download': '/images/rust-cheats-dashboard.webp',
-	'mod-menu': '/images/rust-cheats-menu.webp',
-	'soft-aim': '/images/rust-soft-aim-ui.webp',
-	'best-cheats': '/images/rust-hacks-cover.webp',
-	'aimbot-hack': '/images/rust-aimbot-ui.webp',
+	hacks: '/images/rust-esp-bots.webp',
+	'cheat-download': '/images/rust-esp-overlay.webp',
+	'mod-menu': '/images/rust-aimbot-menu.webp',
+	'soft-aim': '/images/rust-hacks-hero.webp',
+	'best-cheats': '/images/rust-esp-hitbox.webp',
+	'aimbot-hack': '/images/rust-aimbot-menu.webp',
 	'esp-hack': '/images/rust-esp-overlay.webp',
-	'unlock-all': '/images/rust-hacks-panel.webp',
-	privacy: '/images/rust-hacks-cover.webp',
-	refund: '/images/rust-hacks-cover.webp',
-	terms: '/images/rust-hacks-cover.webp',
+	'unlock-all': '/images/rust-esp-bots.webp',
+	privacy: '/images/rust-esp-hitbox.webp',
+	refund: '/images/rust-aimbot-menu.webp',
+	terms: '/images/rust-esp-bots.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';

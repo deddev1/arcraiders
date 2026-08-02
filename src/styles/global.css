@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 /*
  * Display font: desktop only. Mobile uses the system stack so Syne never
@@ -22,33 +22,34 @@
 	--font-display: ui-rounded, "Segoe UI Variable Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 	--font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
-	/* Industrial charcoal + oxidized copper — not purple/glow AI default */
-	--color-midnight: #0b0d0f;
-	--color-surface: #14181c;
-	--color-surface-raised: #1c2228;
-	--color-surface-muted: #262e36;
-	--color-border: rgba(196, 120, 64, 0.18);
-	--color-border-strong: rgba(224, 140, 72, 0.4);
+	--color-midnight: #0a0612;
+	--color-surface: #12101a;
+	--color-surface-raised: #1a1626;
+	--color-surface-muted: #221c30;
+	--color-border: rgba(168, 85, 247, 0.14);
+	--color-border-strong: rgba(192, 132, 252, 0.35);
 
-	--color-violet: #c47840;
-	--color-fuchsia: #e08c48;
-	--color-orchid: #d4a574;
-	--color-plum: #a85a28;
-	--color-mint: #7a9e8a;
+	--color-violet: #a855f7;
+	--color-fuchsia: #d946ef;
+	--color-orchid: #c084fc;
+	--color-plum: #7c3aed;
+	--color-mint: #34d399;
 
-	--color-ink: #f2ebe3;
-	--color-muted: #b8aea2;
-	--color-faint: #8f8578;
+	--color-ink: #f5f3ff;
+	--color-muted: #b7a9c9;
+	/* Was #6e627f (~3:1) — fails AA on midnight; ~4.6:1+ for labels */
+	--color-faint: #9a8fb0;
 
-	--shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.35);
-	--gradient-brand: linear-gradient(135deg, #8f4520 0%, #c47840 50%, #e08c48 100%);
-	--gradient-brand-x: linear-gradient(90deg, #e8c4a0 0%, #f0d4b8 100%);
+	--shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.28);
+	--gradient-brand: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
+	/* Lighter stops so accent text passes contrast audits */
+	--gradient-brand-x: linear-gradient(90deg, #d8b4fe 0%, #f0abfc 100%);
 
 	--page-max: 1180px;
 	--page-gutter: 1.5rem;
 	--section-space: 2rem;
-	--radius-media: 0.65rem;
-	--radius-card: 0.85rem;
+	--radius-media: 1rem;
+	--radius-card: 1.25rem;
 	--touch-min: 2.75rem;
 }
 
@@ -113,8 +114,8 @@
 	@media (min-width: 761px) {
 		body {
 			background:
-				radial-gradient(ellipse 70% 45% at 85% -8%, rgba(196, 120, 64, 0.14), transparent 55%),
-				radial-gradient(ellipse 45% 35% at 8% 18%, rgba(90, 110, 120, 0.1), transparent 50%),
+				radial-gradient(ellipse 80% 50% at 80% -10%, rgba(124, 58, 237, 0.22), transparent 55%),
+				radial-gradient(ellipse 50% 40% at 10% 20%, rgba(217, 70, 239, 0.08), transparent 50%),
 				var(--color-midnight);
 		}
 	}
@@ -126,7 +127,7 @@
 	}
 
 	::selection {
-		background: rgba(196, 120, 64, 0.45);
+		background: rgba(168, 85, 247, 0.45);
 		color: white;
 	}
 
@@ -190,10 +191,13 @@
 		border-width: 0;
 	}
 
-	/* High-contrast copper accent — no purple glow, no clipped gradient text. */
+	/*
+	 * Solid lavender accent — avoids transparent clipped text that fails
+	 * Lighthouse contrast. Soft glow keeps the branded purple feel.
+	 */
 	.text-gradient {
-		color: #f0d4b8;
-		text-shadow: 0 1px 18px rgba(196, 120, 64, 0.25);
+		color: #f3e8ff;
+		text-shadow: 0 0 28px rgba(216, 180, 254, 0.35);
 	}
 
 	.bg-brand {
@@ -206,17 +210,18 @@
 		justify-content: center;
 		min-height: var(--touch-min);
 		padding: 0.85rem 1.85rem;
-		border-radius: 0.55rem;
-		border: 1px solid rgba(240, 212, 184, 0.35);
-		background: linear-gradient(180deg, #d4924e 0%, #c47840 45%, #8f4520 100%);
+		border-radius: 0.95rem;
+		border: 1px solid rgba(233, 213, 255, 0.55);
+		background: linear-gradient(180deg, #c084fc 0%, #a855f7 42%, #7c3aed 100%);
 		color: #fff;
 		font-size: 1rem;
 		font-weight: 800;
 		letter-spacing: 0.01em;
 		box-shadow:
-			0 0 0 1px rgba(196, 120, 64, 0.2),
-			0 8px 22px rgba(0, 0, 0, 0.35),
-			inset 0 1px 0 rgba(255, 255, 255, 0.22);
+			0 0 0 1px rgba(168, 85, 247, 0.25),
+			0 10px 28px rgba(124, 58, 237, 0.45),
+			0 0 36px rgba(168, 85, 247, 0.35),
+			inset 0 1px 0 rgba(255, 255, 255, 0.35);
 		transition:
 			transform 0.2s ease,
 			filter 0.2s ease,
@@ -233,15 +238,16 @@
 	.btn-buy:hover {
 		color: #fff;
 		transform: translateY(-1px);
-		filter: brightness(1.05);
+		filter: brightness(1.06);
 		box-shadow:
-			0 0 0 1px rgba(196, 120, 64, 0.3),
-			0 12px 28px rgba(0, 0, 0, 0.4),
-			inset 0 1px 0 rgba(255, 255, 255, 0.28);
+			0 0 0 1px rgba(168, 85, 247, 0.35),
+			0 14px 34px rgba(124, 58, 237, 0.55),
+			0 0 44px rgba(192, 132, 252, 0.4),
+			inset 0 1px 0 rgba(255, 255, 255, 0.4);
 	}
 
 	.surface-card {
-		background: linear-gradient(180deg, rgba(28, 34, 40, 0.96) 0%, rgba(14, 16, 18, 0.98) 100%);
+		background: linear-gradient(180deg, rgba(34, 28, 48, 0.95) 0%, rgba(18, 16, 26, 0.98) 100%);
 		border: 1px solid var(--color-border);
 		box-shadow: var(--shadow-soft);
 	}
@@ -255,7 +261,7 @@
 		position: relative;
 		overflow: hidden;
 		border-radius: var(--radius-media);
-		background: #12161a;
+		background: #12081f;
 		isolation: isolate;
 	}
 
@@ -274,9 +280,9 @@
 		pointer-events: none;
 		background: linear-gradient(
 			180deg,
-			rgba(196, 120, 64, 0.06) 0%,
+			rgba(124, 58, 237, 0.08) 0%,
 			transparent 36%,
-			rgba(11, 13, 15, 0.22) 100%
+			rgba(10, 6, 18, 0.18) 100%
 		);
 		mix-blend-mode: soft-light;
 	}

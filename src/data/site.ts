@@ -9,9 +9,9 @@ export const siteConfig = {
 	logoRaster: '/images/zadeyo-logo.png',
 	logoRasterWidth: 453,
 	logoRasterHeight: 551,
-	logoAlt: 'Rust Hacks logo',
+	logoAlt: 'Zadeyo Rust Hacks logo',
 	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Frust',
-	defaultOgImage: '/images/rust-hacks-cover.webp',
+	defaultOgImage: '/images/rust-esp-overlay.webp',
 } as const;
 
 export const productInfo = {

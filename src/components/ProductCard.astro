@@ -1,5 +1,5 @@
 ---
-import { rustImages } from '../data/rust';
+import { rustImages, rustVideo } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -23,48 +23,60 @@ const { name = ui.product.title } = Astro.props;
 /** Localized alts aligned 1:1 with rustImages.product; undefined falls back to data alt. */
 const productAlts = [
 	ui.images.battleRoyale,
-	ui.images.rebootFight,
-	undefined,
 	ui.images.playerEsp,
 	ui.images.espWallhack,
 	undefined,
+	ui.images.rebootFight,
 ] as const;
 
-/** Single shared list for main preview + thumbnails (index selection in script). */
+/** Screenshot thumbs only — main media is the full gameplay video. */
 const images = rustImages.product.map((image, index) => ({
 	src: image.src,
 	alt: productAlts[index] ?? image.alt,
 	srcset: contentSrcSet(image.src),
 }));
-const main = images[0];
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
 ---
 
 <section class="product surface-card" id="product" data-product aria-label="Product details">
 	<div class="product__media">
 		<figure class="product__figure media-frame">
+			<video
+				class="product__video"
+				data-main-video
+				data-rust-hacks-video="lazy"
+				src={rustVideo.src}
+				poster={rustVideo.poster}
+				muted
+				loop
+				playsinline
+				autoplay
+				preload="metadata"
+				title={rustVideo.title}
+				aria-label={rustVideo.ariaLabel}
+			></video>
 			<img
-				src={main.src}
-				srcset={main.srcset}
+				src={images[0].src}
+				srcset={images[0].srcset}
 				sizes={productMainSizes}
-				alt={main.alt}
+				alt={images[0].alt}
 				width="1280"
 				height="720"
-				class="product__image"
+				class="product__image is-hidden"
 				data-main-image
 				loading="lazy"
 				decoding="async"
 			/>
-			<span class="product__credit" aria-hidden="true">Rust Preview</span>
+			<span class="product__credit" aria-hidden="true">Preview</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
 			{
 				images.map((image, index) => (
 					<button
 						type="button"
-						class:list={['product__thumb media-frame', { 'is-active': index === 0 }]}
+						class:list={['product__thumb media-frame']}
 						aria-label={`Show ${image.alt}`}
-						aria-pressed={index === 0 ? 'true' : 'false'}
+						aria-pressed="false"
 						data-thumb
 						data-index={String(index)}
 						data-src={image.src}
@@ -164,8 +176,22 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 
 	document.querySelectorAll('[data-product]').forEach((root) => {
 		const mainImage = root.querySelector('[data-main-image]');
+		const mainVideo = root.querySelector('[data-main-video]');
 		const thumbs = Array.from(root.querySelectorAll('[data-thumb]'));
 		if (!(mainImage instanceof HTMLImageElement) || thumbs.length === 0) return;
+
+		const showVideo = () => {
+			thumbs.forEach((btn) => {
+				btn.classList.remove('is-active');
+				btn.setAttribute('aria-pressed', 'false');
+			});
+			mainImage.classList.add('is-hidden');
+			if (mainVideo instanceof HTMLVideoElement) {
+				mainVideo.classList.remove('is-hidden');
+				mainVideo.muted = true;
+				mainVideo.play().catch(() => {});
+			}
+		};
 
 		const select = (index: number) => {
 			const thumb = thumbs[index];
@@ -182,9 +208,14 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				btn.setAttribute('aria-pressed', on ? 'true' : 'false');
 			});
 
+			if (mainVideo instanceof HTMLVideoElement) {
+				mainVideo.pause();
+				mainVideo.classList.add('is-hidden');
+			}
+
 			mainImage.style.opacity = '0';
+			mainImage.classList.remove('is-hidden');
 			window.setTimeout(() => {
-				// Browsers prefer srcset over src — both must change or the preview stays put.
 				mainImage.src = src;
 				if (srcset) mainImage.srcset = srcset;
 				else mainImage.removeAttribute('srcset');
@@ -194,7 +225,13 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		};
 
 		thumbs.forEach((thumb, index) => {
-			thumb.addEventListener('click', () => select(index));
+			thumb.addEventListener('click', () => {
+				if (thumb.classList.contains('is-active')) {
+					showVideo();
+					return;
+				}
+				select(index);
+			});
 		});
 	});
 </script>
@@ -231,36 +268,60 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 	}
 
+	.product__video,
 	.product__image {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		transition:
 			transform 0.45s ease,
 			opacity 0.14s ease;
 	}
 
-	.product__figure:hover .product__image {
+	.product__video {
+		z-index: 1;
+		pointer-events: none;
+		background: #0a0612;
+	}
+
+	.product__image {
+		z-index: 1;
+	}
+
+	.product__video.is-hidden,
+	.product__image.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.product__figure:hover .product__image:not(.is-hidden),
+	.product__figure:hover .product__video:not(.is-hidden) {
 		transform: scale(1.025);
 	}
 
 	.product__credit {
 		position: absolute;
-		right: 0.7rem;
+		right: 0.75rem;
 		bottom: 0.7rem;
 		z-index: 2;
-		padding: 0.28rem 0.55rem;
-		border-radius: 999px;
-		background: rgba(10, 6, 18, 0.72);
-		border: 1px solid rgba(192, 132, 252, 0.25);
-		color: #d8c9ef;
-		font-size: 0.68rem;
-		font-weight: 700;
-		letter-spacing: 0.04em;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		color: rgba(232, 222, 248, 0.72);
+		font-size: 0.65rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
 		text-transform: uppercase;
-		backdrop-filter: blur(6px);
+		text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
 	}
 
 	.product__thumbs {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(5, minmax(0, 1fr));
 		gap: 0.55rem;
 	}
 
