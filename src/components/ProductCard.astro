@@ -55,6 +55,7 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 						aria-pressed={index === 0 ? 'true' : 'false'}
 						data-thumb
 						data-src={image.src}
+						data-srcset={contentSrcSet(image.src)}
 						data-alt={image.alt}
 					>
 						<img
@@ -137,32 +138,54 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 </section>
 
 <script>
-	const root = document.querySelector('[data-product]');
-	if (root) {
-		const mainImage = root.querySelector('[data-main-image]') as HTMLImageElement | null;
-		const thumbs = root.querySelectorAll('[data-thumb]');
+	/** Match `contentSrcSet` widths (480 / 960) when data-srcset is missing. */
+	function toContentSrcSet(baseSrc: string): string | undefined {
+		const match = baseSrc.match(/^(.+\/)(.+)\.webp$/i);
+		if (!match) return undefined;
+		const [, dir, name] = match;
+		if (name.endsWith('-640w') || name.endsWith('-960w') || name.endsWith('-1400w')) {
+			return undefined;
+		}
+		return [480, 960].map((width) => `${dir}${name}-${width}w.webp ${width}w`).join(', ');
+	}
+
+	document.querySelectorAll('[data-product]').forEach((root) => {
+		const mainImage = root.querySelector<HTMLImageElement>('[data-main-image]');
+		const thumbs = root.querySelectorAll<HTMLButtonElement>('[data-thumb]');
+		if (!mainImage || thumbs.length === 0) return;
+
+		const activate = (thumb: HTMLButtonElement) => {
+			const src = thumb.getAttribute('data-src');
+			const alt = thumb.getAttribute('data-alt');
+			const srcsetAttr = thumb.getAttribute('data-srcset');
+			const srcset = srcsetAttr || (src ? toContentSrcSet(src) : undefined);
+			if (!src) return;
+
+			mainImage.style.opacity = '0';
+			window.setTimeout(() => {
+				// Browsers prefer srcset over src — both must change or the preview stays put.
+				mainImage.src = src;
+				if (srcset) {
+					mainImage.srcset = srcset;
+				} else {
+					mainImage.removeAttribute('srcset');
+				}
+				if (alt) mainImage.alt = alt;
+				mainImage.style.opacity = '1';
+			}, 140);
+
+			thumbs.forEach((other) => {
+				other.classList.remove('is-active');
+				other.setAttribute('aria-pressed', 'false');
+			});
+			thumb.classList.add('is-active');
+			thumb.setAttribute('aria-pressed', 'true');
+		};
 
 		thumbs.forEach((thumb) => {
-			thumb.addEventListener('click', () => {
-				const src = thumb.getAttribute('data-src');
-				const alt = thumb.getAttribute('data-alt');
-				if (mainImage && src) {
-					mainImage.style.opacity = '0';
-					window.setTimeout(() => {
-						mainImage.src = src;
-						if (alt) mainImage.alt = alt;
-						mainImage.style.opacity = '1';
-					}, 140);
-				}
-				thumbs.forEach((other) => {
-					other.classList.remove('is-active');
-					other.setAttribute('aria-pressed', 'false');
-				});
-				thumb.classList.add('is-active');
-				thumb.setAttribute('aria-pressed', 'true');
-			});
+			thumb.addEventListener('click', () => activate(thumb));
 		});
-	}
+	});
 </script>
 
 <style>
@@ -243,9 +266,14 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 			transform 0.2s ease;
 	}
 
-	.product__thumb.is-active,
 	.product__thumb:hover {
+		border-color: rgba(192, 132, 252, 0.45);
+		transform: translateY(-1px);
+	}
+
+	.product__thumb.is-active {
 		border-color: var(--color-orchid);
+		box-shadow: 0 0 0 1px rgba(192, 132, 252, 0.55);
 		transform: translateY(-1px);
 	}
 
