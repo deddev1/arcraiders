@@ -53,10 +53,20 @@ function localizeParagraphHtml(html: string): string {
 		return `href="${path}"`;
 	});
 }
+
+/** Keep document titles within ~60 chars without cutting mid-word. */
+function pageTitle(headline: string): string {
+	const suffix = ' | Fortnite Intel';
+	if (headline.length + suffix.length <= 60) return `${headline}${suffix}`;
+	if (headline.length <= 60) return headline;
+	const trimmed = headline.slice(0, 57);
+	const cut = trimmed.lastIndexOf(' ');
+	return `${(cut > 40 ? trimmed.slice(0, cut) : trimmed).replace(/[|:–—-]+$/, '').trim()}…`;
+}
 ---
 
 <Layout
-	title={`${t.title} | Fortnite Intel`}
+	title={pageTitle(t.title)}
 	description={t.metaDescription}
 	canonicalPath={post.canonicalPath}
 	ogImage={post.imageSrc}

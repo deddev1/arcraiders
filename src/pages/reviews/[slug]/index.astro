@@ -61,7 +61,7 @@ const extraGraph: Record<string, unknown>[] = [
 				ratingValue: customerReviewStats.averageRating.toFixed(1),
 				reviewCount: customerReviewStats.totalCount,
 				bestRating: '5',
-				worstRating: '3',
+				worstRating: '1',
 			},
 		},
 		publisher: { '@id': `${siteConfig.url}/#organization` },
@@ -73,6 +73,8 @@ const extraGraph: Record<string, unknown>[] = [
 	title={review.seoTitle}
 	description={review.seoDescription}
 	canonicalPath={canonicalPath}
+	ogImage={siteConfig.defaultOgImage}
+	ogImageAlt={`Fortnite Hacks review by @${review.handle}`}
 	type="article"
 	locale="en"
 	breadcrumbs={[

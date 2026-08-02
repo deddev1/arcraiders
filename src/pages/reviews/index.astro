@@ -5,9 +5,9 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../data/site';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
 
-const title = 'Fortnite Hacks Reviews — Real ESP, Soft Aim & Cloud DMA Feedback';
+const title = 'Fortnite Hacks Reviews | ESP Soft Aim Feedback';
 const description =
-	'Read real Fortnite hacks reviews from verified buyers: ESP wallhack boxes, soft aim, radar, controller support, and cloud DMA feedback — rated 4.4/5 across 10 reviews.';
+	'Real Fortnite hacks reviews from buyers: ESP boxes, soft aim, radar, controllers, and cloud DMA — rated 4.4/5 across 10 reviews.';
 
 function stars(rating: number): string {
 	return '★'.repeat(rating) + '☆'.repeat(5 - rating);
@@ -34,6 +34,7 @@ const extraGraph: Record<string, unknown>[] = [
 		'@id': `${siteConfig.url}/#product`,
 		name: productInfo.name,
 		description: productInfo.summary,
+		image: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
 		brand: { '@type': 'Brand', name: productInfo.brand },
 		url: `${siteConfig.url}/`,
 		aggregateRating: {
@@ -41,7 +42,7 @@ const extraGraph: Record<string, unknown>[] = [
 			ratingValue: customerReviewStats.averageRating.toFixed(1),
 			reviewCount: customerReviewStats.totalCount,
 			bestRating: '5',
-			worstRating: '3',
+			worstRating: '1',
 		},
 		review: customerReviews.map((review) => ({
 			'@type': 'Review',
@@ -74,6 +75,8 @@ const extraGraph: Record<string, unknown>[] = [
 	title={title}
 	description={description}
 	canonicalPath={reviewsBasePath}
+	ogImage={siteConfig.defaultOgImage}
+	ogImageAlt="Fortnite Hacks customer reviews for ESP soft aim and cloud DMA"
 	locale="en"
 	breadcrumbs={[
 		{ label: 'Home', href: '/' },

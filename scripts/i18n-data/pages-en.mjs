@@ -815,7 +815,7 @@ export const enPages = {
 		],
 	},
 	terms: {
-		title: 'Terms of Use | Fortnite Hacks',
+		title: 'Terms of Use 2026 | Fortnite Hacks Rules',
 		description:
 			'Terms of use for fortnitehack.net and Fortnite Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
 		h1: 'Terms of Use',

@@ -203,7 +203,7 @@ export const customerReviews = [
 		text: 'soft aim on hammer ar feels cracked ngl. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
 		short: 'soft aim on hammer ar feels cracked ngl. once u get the menu its smooth',
 		slug: 'fortnite-soft-aim-review-xkrypt0',
-		seoTitle: 'Fortnite Soft Aim Review by @xKrypt0_FN — 5/5 Hammer AR | Fortnite Hacks',
+		seoTitle: 'Soft Aim Review by @xKrypt0_FN — 5/5 | Fortnite Hacks',
 		seoDescription:
 			'Real Fortnite soft aim review from @xKrypt0_FN: 5/5 for the hammer AR soft aim in Fortnite Hacks. How the aimbot menu feels after setup on Windows PC.',
 		date: '2026-07-24',
@@ -215,7 +215,7 @@ export const customerReviews = [
 		text: "esp boxes in zero build are actually useful, can see who's holding height before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
 		short: "esp boxes in zero build are actually useful, can see who's holding height before u push. still worth it for the price",
 		slug: 'fortnite-esp-zero-build-review-buildsr4k',
-		seoTitle: 'Fortnite ESP Review by @buildsR4K — 4/5 Zero Build Boxes | Fortnite Hacks',
+		seoTitle: 'ESP Zero Build Review by @buildsR4K — 4/5 | Fortnite Hacks',
 		seoDescription:
 			'Fortnite ESP review from @buildsR4K: 4/5 for ESP player boxes in Zero Build with radar feedback. Honest take on undetected Fortnite hacks pricing and value.',
 		date: '2026-07-19',
@@ -227,7 +227,7 @@ export const customerReviews = [
 		text: 'switched from a kernel only tool last season. cloud dma setup was easier than i expected, support walked me through the dma part on discord. survived the last eac update while my old sub got flagged. lifetime was the move',
 		short: 'cloud dma setup was easier than i expected. survived the last eac update while my old sub got flagged',
 		slug: 'fortnite-cloud-dma-review-dma-wizard',
-		seoTitle: 'Fortnite Cloud DMA Review by @dma_wizard — 5/5 Undetected | Fortnite Hacks',
+		seoTitle: 'Cloud DMA Review by @dma_wizard — 5/5 | Fortnite Hacks',
 		seoDescription:
 			'Cloud DMA Fortnite hacks review from @dma_wizard: 5/5 after surviving an EAC update that flagged a kernel-only cheat. Setup help and lifetime license experience.',
 		date: '2026-06-27',
@@ -239,7 +239,7 @@ export const customerReviews = [
 		text: "finally a fn cheat that doesn't feel like garbage on controller. soft aim with xbox pad works, had to tweak fov a bit. menu navigation with pad is kinda awkward but doable",
 		short: "finally a fn cheat that doesn't feel like garbage on controller. soft aim with xbox pad works",
 		slug: 'fortnite-controller-soft-aim-review-ctrl-player99',
-		seoTitle: 'Fortnite Controller Soft Aim Review by @ctrl_player99 — 4/5 | Fortnite Hacks',
+		seoTitle: 'Controller Soft Aim by @ctrl_player99 — 4/5 | Fortnite Hacks',
 		seoDescription:
 			'Controller Fortnite cheats review from @ctrl_player99: 4/5 for soft aim on an Xbox pad, FOV tweaks, and menu navigation in the Fortnite Hacks package.',
 		date: '2026-07-11',
@@ -251,7 +251,7 @@ export const customerReviews = [
 		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
 		short: 'features are good when it works. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
 		slug: 'fortnite-hack-setup-review-stormchaser07',
-		seoTitle: 'Fortnite Hack Setup Review by @stormChaser_07 — 3/5 Honest Take | Fortnite Hacks',
+		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | Fortnite Hacks',
 		seoDescription:
 			'Honest 3/5 Fortnite hacks review from @stormChaser_07: ESP and loot markers solid in ranked, but first launch and setup docs needed support help.',
 		date: '2026-06-15',
@@ -263,7 +263,7 @@ export const customerReviews = [
 		text: 'loot esp alone pays for monthly imo. chest markers + distance readouts = way faster off spawn',
 		short: 'loot esp alone pays for monthly imo. chest markers + distance readouts = way faster off spawn',
 		slug: 'fortnite-loot-esp-review-lootgoblinx',
-		seoTitle: 'Fortnite Loot ESP Review by @lootGoblinx — 5/5 Chest Markers | Fortnite Hacks',
+		seoTitle: 'Loot ESP Review by @lootGoblinx — 5/5 | Fortnite Hacks',
 		seoDescription:
 			'Fortnite loot ESP review from @lootGoblinx: 5/5 for chest markers and distance readouts off spawn. Why loot ESP alone justifies the monthly Fortnite hacks license.',
 		date: '2026-08-01',
@@ -274,7 +274,7 @@ export const customerReviews = [
 		text: 'been using since chapter 7 s2. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when eac patches hit, had to wait a day once',
 		short: 'soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights',
 		slug: 'fortnite-soft-aim-ranked-review-rankedgrind42',
-		seoTitle: 'Fortnite Ranked Soft Aim Review by @rankedGrind42 — 4/5 | Fortnite Hacks',
+		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | Fortnite Hacks',
 		seoDescription:
 			'Ranked Fortnite soft aim review from @rankedGrind42: 4/5 for per-weapon aimbot profiles since Chapter 7 Season 2, with feedback on EAC patch-day updates.',
 		date: '2026-07-07',
@@ -286,7 +286,7 @@ export const customerReviews = [
 		text: 'radar saved me so many times during reboot van rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
 		short: 'radar saved me so many times during reboot van rotations. boxes + radar combo is clean',
 		slug: 'fortnite-radar-hack-review-vanlifefn',
-		seoTitle: 'Fortnite Radar Hack Review by @vanLifeFN — 5/5 Squads | Fortnite Hacks',
+		seoTitle: 'Radar Hack Review by @vanLifeFN — 5/5 | Fortnite Hacks',
 		seoDescription:
 			'Fortnite radar hack review from @vanLifeFN: 5/5 for 2D radar during reboot van rotations and spotting third parties in squads with ESP boxes.',
 		date: '2026-07-28',
@@ -298,7 +298,7 @@ export const customerReviews = [
 		text: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours last patch. was back online next morning. elitefn left me hanging for 4 days once so yeah',
 		short: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours',
 		slug: 'fortnite-eac-update-review-patchdaymike',
-		seoTitle: 'Fortnite EAC Update Review by @patchDayMike — 4/5 Patch Days | Fortnite Hacks',
+		seoTitle: 'EAC Patch Review by @patchDayMike — 4/5 | Fortnite Hacks',
 		seoDescription:
 			'EAC patch-day review from @patchDayMike: 4/5 for how fast Fortnite Hacks posts maintenance updates and gets the undetected cheat back online after patches.',
 		date: '2026-06-09',
@@ -310,7 +310,7 @@ export const customerReviews = [
 		text: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		short: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		slug: 'fortnite-sniper-soft-aim-review-snipezonly',
-		seoTitle: 'Fortnite Sniper Soft Aim Review by @snipezOnly_ — 5/5 ESP Combo | Fortnite Hacks',
+		seoTitle: 'Sniper Soft Aim by @snipezOnly_ — 5/5 | Fortnite Hacks',
 		seoDescription:
 			'Fortnite sniper soft aim review from @snipezOnly_: 5/5 for the sniper aimbot profile paired with ESP tagging in the Fortnite Hacks package.',
 		date: '2026-08-01',

@@ -47,18 +47,52 @@ function buildHome(locale) {
 	};
 }
 
+/** Unique English title/desc tails per page — avoids identical "| ESP wallhack & Aimbot" across locales. */
+const PAGE_META_TAILS = {
+	'fortnite-esp': { suffix: 'Player Boxes & Wallhack', focus: 'player boxes, loot markers, and wallhack overlays' },
+	'fortnite-aimbot': { suffix: 'Soft Aim Controls', focus: 'soft aim, FOV, and per-weapon Aimbot profiles' },
+	features: { suffix: 'Full Feature List', focus: 'ESP, soft aim, radar, and cloud DMA controls' },
+	pricing: { suffix: 'Monthly & Lifetime', focus: '$35 monthly or $150 lifetime licenses' },
+	setup: { suffix: 'PC Setup Guide', focus: 'Windows PC activation and first-launch setup' },
+	updates: { suffix: 'EAC Maintenance Log', focus: 'EAC patch status and rebuild notes' },
+	faq: { suffix: 'Common Answers', focus: 'ESP, soft aim, delivery, and EAC questions' },
+	support: { suffix: 'Help & Contact', focus: 'order help and license support contact' },
+	undetected: { suffix: 'EAC Safe Status', focus: 'undetected maintenance after Easy Anti-Cheat patches' },
+	wallhack: { suffix: 'ESP Visibility', focus: 'wallhack ESP for players, loot, and distance' },
+	radar: { suffix: '2D Threat Overlay', focus: '2D radar cues for flanks and rotations' },
+	'eac-bypass': { suffix: 'Patch Maintenance', focus: 'how EAC updates are handled for Fortnite hacks' },
+	'cheats-2026': { suffix: 'Buyer Guide', focus: '2026 Fortnite cheats checklist before checkout' },
+	hacks: { suffix: 'ESP Aimbot Guide', focus: 'the Fortnite hacks pillar for ESP and Aimbot' },
+	'cheat-download': { suffix: 'Instant Access', focus: 'digital license download after payment' },
+	'mod-menu': { suffix: 'In-Game Toggles', focus: 'in-client ESP and soft aim toggles' },
+	'soft-aim': { suffix: 'Smooth Aim Settings', focus: 'smooth soft aim settings for PC and controllers' },
+	'best-cheats': { suffix: 'Buyer Checklist', focus: 'what to compare before buying Fortnite cheats' },
+	'aimbot-hack': { suffix: 'Soft Aim Assist', focus: 'undetected Aimbot hack assist for Fortnite' },
+	'esp-hack': { suffix: 'Boxes & Loot', focus: 'ESP hack boxes, loot pins, and distance' },
+	'unlock-all': { suffix: 'What It Means', focus: 'unlock-all searches vs real ESP and Aimbot tools' },
+};
+
 function productPage(locale, pageKey, topicName, cta2href) {
 	const p = phrases[locale];
 	const home = PAGE_META_HOME[locale];
-	const titleBase = topicName.includes('2026')
-		? `${topicName} | ESP wallhack & Aimbot`
-		: `${topicName} 2026 | ESP wallhack & Aimbot`;
+	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Fortnite Hacks', focus: 'ESP wallhack, radar, and Aimbot' };
+	let titleBase = topicName.includes('2026')
+		? `${topicName} | ${meta.suffix}`
+		: `${topicName} 2026 | ${meta.suffix}`;
+	// Short topic labels (FAQ, Support, etc.) need brand context for usable SERP titles.
+	if (titleBase.length < 35) {
+		titleBase = `${topicName} 2026 | Fortnite Hacks ${meta.suffix}`;
+	}
 	return {
 		title: clampTitle(stripZadeyoFromMeta(titleBase)),
-		description: clampDesc(stripZadeyoFromMeta(`${topicName} — undetected ESP wallhack, radar hack, Aimbot for Fortnite. ${p.delivery}. EAC maintenance.`)),
-		h1: `${topicName} — ESP wallhack & Aimbot`,
-		intro: p.s1(`${topicName} for ${p.maps}.`),
-		imageAlt: `fortnite-cheats ${pageKey} ESP wallhack Aimbot undetected preview`,
+		description: clampDesc(
+			stripZadeyoFromMeta(
+				`${topicName}: ${meta.focus} for Fortnite. ${p.delivery}. EAC maintenance included.`,
+			),
+		),
+		h1: `${topicName} — ${meta.suffix}`,
+		intro: p.s1(`${topicName} for ${p.maps}: ${meta.focus}.`),
+		imageAlt: `fortnite-cheats ${pageKey} ${meta.focus} preview`,
 		galleryTitle: `Fortnite Cheats ${topicName} gallery`,
 		heroImage: HERO_IMAGES[pageKey],
 		ctaPrimary: p.buy,

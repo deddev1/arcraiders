@@ -37,13 +37,15 @@ const extraGraph: Record<string, unknown>[] = [
 		'@id': `${canonicalURL}#product`,
 		name: productInfo.name,
 		description: productInfo.summary,
+		image: heroImage,
 		brand: { '@type': 'Brand', name: productInfo.brand },
+		url: canonicalURL,
 		aggregateRating: {
 			'@type': 'AggregateRating',
 			ratingValue: customerReviewStats.averageRating.toFixed(1),
 			reviewCount: customerReviewStats.totalCount,
 			bestRating: '5',
-			worstRating: '3',
+			worstRating: '1',
 		},
 		review: customerReviews.map((review) => ({
 			'@type': 'Review',
@@ -106,7 +108,7 @@ const extraGraph: Record<string, unknown>[] = [
 	description={description}
 	canonicalPath={canonicalPath}
 	ogImage={siteConfig.defaultOgImage}
-	ogImageAlt={siteConfig.logoAlt}
+	ogImageAlt={home.imageAlt}
 	locale={locale}
 	pageId="home"
 	breadcrumbs={[{ label: ui.nav.home }]}
