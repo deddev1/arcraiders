@@ -16,26 +16,17 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
-// Featured media = full gameplay video. Grid stills below; large filler still under grid.
-const galleryAlts = [
-	ui.images.squadFight,
-	ui.images.cheatsPackage,
-	ui.images.battleRoyaleIsland,
-	ui.images.headerArt,
-	ui.images.espWallhack,
-	undefined,
-] as const;
-
-const tiles = rustImages.gallery.map((image, index) => ({
+// Featured media = full gameplay video; optional grid; large hero still under video.
+const tiles = rustImages.gallery.map((image) => ({
 	src: image.src,
-	alt: galleryAlts[index] ?? image.alt,
+	alt: image.alt,
 }));
 
-/** Large still under the grid — fills leftover media-column height. Not the last grid tile. */
+/** Hero still — only in gallery (not in product thumbs). */
 const featuredStill = {
-	src: '/images/rust-aimbot-menu.webp',
-	alt: ui.images.aimbotCombat,
-} as const;
+	src: rustImages.galleryFeaturedStill.src,
+	alt: ui.images.battleRoyale,
+};
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
@@ -72,15 +63,16 @@ const featuredStill = {
 				</aside>
 			</div>
 
-			<div class="gallery__media">
+			<div class:list={['gallery__media', { 'gallery__media--with-grid': tiles.length > 0 }]}>
 				<figure class="gallery__featured gallery__video media-frame">
 					<video
 						data-rust-hacks-video="lazy"
-						muted
+						muted={true}
 						loop
 						playsinline
+						webkit-playsinline
 						autoplay
-						preload="metadata"
+						preload="auto"
 						title={rustVideo.title}
 						aria-label={rustVideo.ariaLabel}
 					>
@@ -89,25 +81,27 @@ const featuredStill = {
 					<figcaption>{rustVideo.caption}</figcaption>
 				</figure>
 
-				<div class="gallery__grid">
-					{
-						tiles.map((image) => (
-							<figure class="gallery__item media-frame">
-								<img
-									src={image.src}
-									srcset={contentSrcSet(image.src)}
-									sizes={galleryTileSizes}
-									alt={image.alt}
-									width="1280"
-									height="720"
-									loading="lazy"
-									decoding="async"
-								/>
-								<figcaption>{image.alt}</figcaption>
-							</figure>
-						))
-					}
-				</div>
+				{
+					tiles.length > 0 && (
+						<div class="gallery__grid">
+							{tiles.map((image) => (
+								<figure class="gallery__item media-frame">
+									<img
+										src={image.src}
+										srcset={contentSrcSet(image.src)}
+										sizes={galleryTileSizes}
+										alt={image.alt}
+										width="1280"
+										height="720"
+										loading="lazy"
+										decoding="async"
+									/>
+									<figcaption>{image.alt}</figcaption>
+								</figure>
+							))}
+						</div>
+					)
+				}
 
 				<figure class="gallery__still media-frame">
 					<img
@@ -275,9 +269,13 @@ const featuredStill = {
 	.gallery__media {
 		display: grid;
 		gap: 0.45rem;
-		grid-template-rows: auto auto minmax(11rem, 1fr);
+		grid-template-rows: auto minmax(11rem, 1fr);
 		align-self: stretch;
 		min-height: 100%;
+	}
+
+	.gallery__media--with-grid {
+		grid-template-rows: auto auto minmax(11rem, 1fr);
 	}
 
 	.gallery__featured,

@@ -1,6 +1,7 @@
 /**
- * Plays muted rust-hacks background clips. Hero always attempts playback;
- * gallery lazy clips wait until near the viewport.
+ * Plays muted rust-hacks background clips.
+ * - hero / product: attempt playback immediately
+ * - lazy (gallery): wait until near the viewport
  */
 (function () {
 	function armMuted(video) {
@@ -8,36 +9,61 @@
 		video.muted = true;
 		video.defaultMuted = true;
 		video.setAttribute('muted', '');
+		video.setAttribute('playsinline', '');
+		video.setAttribute('webkit-playsinline', '');
 		video.playsInline = true;
 	}
 
 	function tryPlay(video) {
 		if (!(video instanceof HTMLVideoElement)) return;
+		if (video.classList.contains('is-hidden')) return;
 		armMuted(video);
-		var playPromise = video.play();
-		if (playPromise && typeof playPromise.catch === 'function') {
-			playPromise.catch(function () {
-				// Retry once after a short delay (some browsers block the first gesture-less play).
-				window.setTimeout(function () {
-					armMuted(video);
-					video.play().catch(function () {});
-				}, 250);
-			});
+
+		function attempt() {
+			armMuted(video);
+			var playPromise = video.play();
+			if (playPromise && typeof playPromise.catch === 'function') {
+				playPromise.catch(function () {
+					window.setTimeout(function () {
+						armMuted(video);
+						video.play().catch(function () {});
+					}, 200);
+				});
+			}
 		}
+
+		if (video.readyState >= 2) {
+			attempt();
+			return;
+		}
+
+		video.addEventListener('loadeddata', attempt, { once: true });
+		video.addEventListener('canplay', attempt, { once: true });
+		try {
+			video.load();
+		} catch (_) {
+			/* ignore */
+		}
+		attempt();
 	}
 
-	document.querySelectorAll('[data-rust-hacks-video="hero"]').forEach(function (video) {
-		armMuted(video);
-		if (video.readyState >= 2) {
+	function bindEager(selector) {
+		document.querySelectorAll(selector).forEach(function (video) {
 			tryPlay(video);
-		} else {
-			video.addEventListener('loadeddata', function () {
-				tryPlay(video);
-			}, { once: true });
-			video.load();
-			tryPlay(video);
-		}
-	});
+			video.addEventListener(
+				'pause',
+				function () {
+					if (video.classList.contains('is-hidden')) return;
+					if (document.visibilityState === 'hidden') return;
+					tryPlay(video);
+				},
+				{ passive: true },
+			);
+		});
+	}
+
+	bindEager('[data-rust-hacks-video="hero"]');
+	bindEager('[data-rust-hacks-video="product"]');
 
 	var lazyVideos = document.querySelectorAll('[data-rust-hacks-video="lazy"]');
 	if (!lazyVideos.length) return;
@@ -56,7 +82,7 @@
 				observer.unobserve(video);
 			});
 		},
-		{ rootMargin: '120px 0px', threshold: 0.15 },
+		{ rootMargin: '240px 0px', threshold: 0.01 },
 	);
 
 	lazyVideos.forEach(function (video) {

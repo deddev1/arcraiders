@@ -22,11 +22,11 @@ const { name = ui.product.title } = Astro.props;
 
 /** Localized alts aligned 1:1 with rustImages.product; undefined falls back to data alt. */
 const productAlts = [
-	ui.images.battleRoyale,
 	ui.images.playerEsp,
+	ui.images.squadFight,
 	ui.images.espWallhack,
 	undefined,
-	ui.images.rebootFight,
+	ui.images.aimbotCombat,
 ] as const;
 
 /** Screenshot thumbs only — main media is the full gameplay video. */
@@ -44,16 +44,19 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 			<video
 				class="product__video"
 				data-main-video
-				data-rust-hacks-video="lazy"
-				src={rustVideo.src}
-				muted
+				data-rust-hacks-video="product"
+				poster={rustVideo.poster}
+				muted={true}
 				loop
 				playsinline
+				webkit-playsinline
 				autoplay
-				preload="metadata"
+				preload="auto"
 				title={rustVideo.title}
 				aria-label={rustVideo.ariaLabel}
-			></video>
+			>
+				<source src={rustVideo.src} type="video/mp4" />
+			</video>
 			<img
 				src={images[0].src}
 				srcset={images[0].srcset}
@@ -179,6 +182,25 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		const thumbs = Array.from(root.querySelectorAll('[data-thumb]'));
 		if (!(mainImage instanceof HTMLImageElement) || thumbs.length === 0) return;
 
+		const armAndPlay = (video: HTMLVideoElement) => {
+			video.muted = true;
+			video.defaultMuted = true;
+			video.setAttribute('muted', '');
+			video.playsInline = true;
+			const play = () => video.play().catch(() => {});
+			if (video.readyState >= 2) play();
+			else {
+				video.addEventListener('loadeddata', play, { once: true });
+				video.addEventListener('canplay', play, { once: true });
+				try {
+					video.load();
+				} catch {
+					/* ignore */
+				}
+				play();
+			}
+		};
+
 		const showVideo = () => {
 			thumbs.forEach((btn) => {
 				btn.classList.remove('is-active');
@@ -187,10 +209,14 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 			mainImage.classList.add('is-hidden');
 			if (mainVideo instanceof HTMLVideoElement) {
 				mainVideo.classList.remove('is-hidden');
-				mainVideo.muted = true;
-				mainVideo.play().catch(() => {});
+				armAndPlay(mainVideo);
 			}
 		};
+
+		// Ensure preview clip starts on load (not only after a thumb click).
+		if (mainVideo instanceof HTMLVideoElement) {
+			armAndPlay(mainVideo);
+		}
 
 		const select = (index: number) => {
 			const thumb = thumbs[index];
