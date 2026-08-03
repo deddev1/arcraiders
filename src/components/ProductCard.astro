@@ -22,11 +22,11 @@ const { name = ui.product.title } = Astro.props;
 
 /** Localized alts aligned 1:1 with rustImages.product; undefined falls back to data alt. */
 const productAlts = [
+	ui.images.battleRoyale,
 	ui.images.playerEsp,
-	ui.images.squadFight,
 	ui.images.espWallhack,
 	undefined,
-	ui.images.aimbotCombat,
+	ui.images.rebootFight,
 ] as const;
 
 /** Screenshot thumbs only — main media is the full gameplay video. */
@@ -89,7 +89,7 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 							src={image.src}
 							srcset={image.srcset}
 							sizes={productThumbSizes}
-							alt=""
+							alt={image.alt}
 							width="320"
 							height="200"
 							loading="lazy"

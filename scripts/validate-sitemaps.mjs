@@ -42,7 +42,7 @@ const LOCALE_UI_PAGES = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_HTML_PAGES = ENGLISH_PAGES + LOCALE_UI_PAGES;
 const HREFLANG_PER_URL = 2; // en + x-default
 const SITEMAP_INDEX_ENTRIES = 2; // EN + images
-const IMAGE_SITEMAP_ENTRIES = 11; // unique keyword assets in rustImages.sitemap
+const IMAGE_SITEMAP_ENTRIES = 6; // unique keyword assets in rustImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',

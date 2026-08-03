@@ -18,7 +18,7 @@ export const rustHeroVideo = {
 /** Full gameplay clip for product preview + gallery. */
 export const rustVideo = {
 	src: '/videos/rust-hacks-background.mp4',
-	/** First-frame fallback while the full clip buffers — not the gallery hero still. */
+	/** Hitbox still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
 	poster: '/images/rust-esp-hitbox.webp',
 	title: 'Rust hacks background video',
 	ariaLabel: 'Rust hacks gameplay preview — ESP and aimbot on PC',
@@ -41,10 +41,7 @@ export const rustImages = {
 	zeroBuildCombat: '/images/rust-hacks-hero.webp',
 	zeroBuildMode: '/images/rust-esp-bots.webp',
 	battleRoyaleIsland: '/images/rust-aimbot-menu.webp',
-	/**
-	 * Product thumbs — five distinct cheat stills (no file twice).
-	 * Omits rust-hacks-hero so it can appear only in the gallery still below.
-	 */
+	/** Product thumbs — five unique stills; main media is video (see ProductCard). */
 	product: [
 		{
 			src: '/images/rust-esp-overlay.webp',
@@ -59,21 +56,45 @@ export const rustImages = {
 			alt: 'Rust wallhack ESP green hitbox around a hazmat-suited player',
 		},
 		{
-			src: '/images/rust-recoil-trainer.webp',
-			alt: 'Rust recoil trainer assault rifle holographic sight practice',
-		},
-		{
 			src: '/images/rust-aimbot-menu.webp',
 			alt: 'Rust aimbot menu overlay with red skeleton ESP and feature toggles',
 		},
+		{
+			src: '/images/rust-hacks-hero.webp',
+			alt: 'Rust aimbot holographic sight with ESP skeleton and red head lock',
+		},
 	],
-	/** Gallery grid — empty; the sixth distinct still lives in `galleryFeaturedStill` only. */
-	gallery: [] as const,
-	/** Large still under gallery video — hero frame, not used in product thumbs. */
-	galleryFeaturedStill: {
-		src: '/images/rust-hacks-hero.webp',
-		alt: 'Rust hacks aimbot view with ESP skeleton and red head lock',
-	},
+	/**
+	 * Gallery stills (grid only) — featured slot above is video; a large still
+	 * under the grid fills leftover media-column height (see Gallery.astro).
+	 * Six uniques (even grid rows); order differs from product thumbs.
+	 */
+	gallery: [
+		{
+			src: '/images/rust-aimbot-menu.webp',
+			alt: 'Rust aimbot cheats menu with red skeleton ESP lock',
+		},
+		{
+			src: '/images/rust-esp-overlay.webp',
+			alt: 'Rust ESP overlay with skeleton ESP and inventory labels',
+		},
+		{
+			src: '/images/rust-esp-bots.webp',
+			alt: 'Rust ESP boxes, weapon labels, and distances on UKN practice bots',
+		},
+		{
+			src: '/images/rust-esp-hitbox.webp',
+			alt: 'Rust ESP green hitbox wallhack on a hazmat suit player',
+		},
+		{
+			src: '/images/rust-hacks-hero.webp',
+			alt: 'Rust hacks aimbot view with ESP skeleton and red head lock',
+		},
+		{
+			src: '/images/rust-recoil-trainer.webp',
+			alt: 'Rust recoil trainer assault rifle holographic sight practice',
+		},
+	],
 	sitemap: [
 		{
 			src: '/images/rust-hacks-hero.webp',
@@ -99,6 +120,11 @@ export const rustImages = {
 			src: '/images/rust-aimbot-menu.webp',
 			title: 'Rust Aimbot menu',
 			caption: 'Rust aimbot menu with red skeleton ESP and silent aim toggles',
+		},
+		{
+			src: '/images/rust-recoil-trainer.webp',
+			title: 'Rust recoil trainer',
+			caption: 'Rust recoil trainer assault rifle holographic sight practice',
 		},
 	],
 } as const;

@@ -9,6 +9,7 @@ interface Props {
 	accent?: string;
 	subtitle?: string;
 	subtitleShort?: string;
+	heading?: string;
 	locale?: LocaleCode;
 }
 
@@ -19,7 +20,13 @@ const {
 	accent = ui.hero.accent,
 	subtitle = ui.hero.subtitle,
 	subtitleShort = ui.hero.subtitleShort,
+	heading = 'Rust Hacks — ESP, Aimbot & Wallhack for PC',
 } = Astro.props;
+
+/** Visible H1 detail line — portion after the em dash in `heading`. */
+const headingDetail = heading.includes('—')
+	? heading.split('—').slice(1).join('—').trim()
+	: accent;
 
 const buyUrl = siteConfig.checkoutUrl;
 const featuresUrl = getLocalizedPath('features', locale);
@@ -54,8 +61,9 @@ const featuresUrl = getLocalizedPath('features', locale);
 					<span class="hero__word">Rust</span>
 					<span class="hero__word">Hacks</span>
 				</span>
-				<span class="text-gradient hero__accent">{accent}</span>
+				<span class="text-gradient hero__accent">{headingDetail}</span>
 			</h1>
+			<p class="hero__badge">{accent}</p>
 			<p class="hero__subtitle hero__subtitle--full">{subtitle}</p>
 			<p class="hero__subtitle hero__subtitle--short">{subtitleShort}</p>
 			<div class="hero__cta">
@@ -200,6 +208,15 @@ const featuresUrl = getLocalizedPath('features', locale);
 		max-width: 100%;
 		width: fit-content;
 		padding-bottom: 0.06em;
+	}
+
+	.hero__badge {
+		margin: 0.55rem 0 0;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
 	}
 
 	.hero__subtitle {

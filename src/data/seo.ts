@@ -19,4 +19,4 @@ export const metaKeywordsContent = metaKeywords.join(', ');
 
 export const defaultTitle = 'Rust Hacks 2026 | Undetected ESP & Aimbot';
 export const defaultDescription =
-	'Undetected rust hacks for PC with ESP, aimbot, and wallhack. Compare plans, features, and anti-cheat updates before you buy.';
+	'Undetected rust hacks for PC with ESP, aimbot, and wallhack overlays. Compare monthly and lifetime plans, features, setup, and EAC update status before you buy.';

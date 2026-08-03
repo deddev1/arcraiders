@@ -5,7 +5,7 @@ export const enPages = {
 	home: {
 		title: 'Rust Hacks 2026 | Undetected ESP & Aimbot',
 		description:
-			'Undetected rust hacks for PC with ESP, aimbot, and wallhack. Compare plans, features, and anti-cheat updates before you buy.',
+			'Undetected rust hacks for PC with ESP, aimbot, and wallhack overlays. Compare monthly and lifetime plans, features, setup, and EAC update status before you buy.',
 		h1: 'Rust Hacks — ESP, Aimbot & Wallhack for PC',
 		intro:
 			'A focused Windows PC package for Rust: player ESP, aimbot controls, and wallhack overlays with EAC maintenance after major patches.',
