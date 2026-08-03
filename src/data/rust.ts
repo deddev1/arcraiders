@@ -1,8 +1,9 @@
 import { siteConfig } from './site';
 
 /**
- * Five distinct real screenshots (unique bytes):
- * rust-hacks-hero, rust-esp-overlay, rust-esp-bots, rust-esp-hitbox, rust-aimbot-menu.
+ * Distinct real screenshots (unique bytes):
+ * rust-hacks-hero, rust-esp-overlay, rust-esp-bots, rust-esp-hitbox, rust-aimbot-menu,
+ * rust-recoil-trainer.
  * Alias paths that share bytes with these (cover/dashboard/aimbot-ui) are avoided.
  */
 
@@ -65,7 +66,7 @@ export const rustImages = {
 	],
 	/**
 	 * Gallery stills (grid only) — featured slot is the full gameplay video.
-	 * Same five uniques, order differs from product thumbs.
+	 * Six uniques (even grid rows); order differs from product thumbs.
 	 */
 	gallery: [
 		{
@@ -87,6 +88,10 @@ export const rustImages = {
 		{
 			src: '/images/rust-hacks-hero.webp',
 			alt: 'Rust hacks aimbot view with ESP skeleton and red head lock',
+		},
+		{
+			src: '/images/rust-recoil-trainer.webp',
+			alt: 'Rust recoil trainer assault rifle holographic sight practice',
 		},
 	],
 	sitemap: [
