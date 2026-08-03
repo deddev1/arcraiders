@@ -65,7 +65,8 @@ export const rustImages = {
 		},
 	],
 	/**
-	 * Gallery stills (grid only) — featured slot is the full gameplay video.
+	 * Gallery stills (grid only) — featured slot above is video; a large still
+	 * under the grid fills leftover media-column height (see Gallery.astro).
 	 * Six uniques (even grid rows); order differs from product thumbs.
 	 */
 	gallery: [
