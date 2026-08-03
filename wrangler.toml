@@ -1,3 +1,9 @@
 name = "rusthacks"
 compatibility_date = "2026-01-01"
-pages_build_output_dir = "dist"
+
+# Cloudflare Git deploy runs `wrangler deploy` (Workers + static assets).
+# Old Pages-only key `pages_build_output_dir` is ignored there and caused:
+# "Missing entry-point to Worker script or to assets directory"
+[assets]
+directory = "./dist"
+not_found_handling = "404-page"
