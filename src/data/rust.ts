@@ -64,14 +64,13 @@ export const rustImages = {
 		},
 	],
 	/**
-	 * Gallery order — lead with aimbot (not hero poster). Same five uniques,
-	 * different sequence from product thumbs to reduce same-scroll sameness.
+	 * Gallery stills (grid only) — featured slot is the full gameplay video.
+	 * Same five uniques, order differs from product thumbs.
 	 */
 	gallery: [
 		{
 			src: '/images/rust-aimbot-menu.webp',
 			alt: 'Rust aimbot cheats menu with red skeleton ESP lock',
-			featured: true,
 		},
 		{
 			src: '/images/rust-esp-overlay.webp',

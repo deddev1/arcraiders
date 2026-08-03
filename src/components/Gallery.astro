@@ -5,7 +5,6 @@ import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import {
 	contentSrcSet,
-	galleryFeaturedSizes,
 	galleryTileSizes,
 } from '../lib/responsive-images';
 
@@ -17,24 +16,19 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
-// Gallery stills — five uniques in a different order than product thumbs.
-// Hero uses a short video + hero poster; product main is the full video.
+// Featured media = full gameplay video. All stills sit in the grid below.
 const galleryAlts = [
-	undefined,
+	ui.images.squadFight,
 	ui.images.cheatsPackage,
 	ui.images.battleRoyaleIsland,
 	ui.images.headerArt,
-	ui.images.squadFight,
+	ui.images.espWallhack,
 ] as const;
 
-const galleryImages = rustImages.gallery.map((image, index) => ({
+const tiles = rustImages.gallery.map((image, index) => ({
 	src: image.src,
 	alt: galleryAlts[index] ?? image.alt,
-	featured: index === 0,
 }));
-
-const featured = galleryImages[0];
-const tiles = galleryImages.slice(1, 5);
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
@@ -59,31 +53,27 @@ const tiles = galleryImages.slice(1, 5);
 						))
 					}
 				</div>
+
+				<aside class="gallery__advantages" aria-label="Rust hacks advantages">
+					<p class="gallery__advantages-label">Cheat advantages</p>
+					<ul class="gallery__advantages-list">
+						<li>Undetected-focused builds with public EAC status after patches</li>
+						<li>Full ESP + soft aim + radar in one package — no feature upsell maze</li>
+						<li>Instant license delivery for Windows 10 &amp; 11</li>
+						<li>Real in-game previews so you see boxes, skeletons, and aim menu before checkout</li>
+					</ul>
+				</aside>
 			</div>
 
 			<div class="gallery__media">
-				<figure class="gallery__featured media-frame">
-					<img
-						src={featured.src}
-						srcset={contentSrcSet(featured.src)}
-						sizes={galleryFeaturedSizes}
-						alt={featured.alt}
-						width="1400"
-						height="788"
-						loading="lazy"
-						decoding="async"
-					/>
-					<figcaption>{featured.alt}</figcaption>
-				</figure>
-
-				<figure class="gallery__video media-frame">
+				<figure class="gallery__featured gallery__video media-frame">
 					<video
 						data-rust-hacks-video="lazy"
 						muted
 						loop
 						playsinline
 						autoplay
-						preload="none"
+						preload="metadata"
 						poster={rustVideo.poster}
 						title={rustVideo.title}
 						aria-label={rustVideo.ariaLabel}
@@ -162,7 +152,7 @@ const tiles = galleryImages.slice(1, 5);
 	.gallery__content {
 		display: grid;
 		grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.35fr);
-		align-items: start;
+		align-items: stretch;
 		gap: 1rem;
 		padding: 1rem;
 	}
@@ -171,8 +161,7 @@ const tiles = galleryImages.slice(1, 5);
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
-		align-self: start;
-		height: fit-content;
+		align-self: stretch;
 		min-height: 0;
 	}
 
@@ -191,6 +180,7 @@ const tiles = galleryImages.slice(1, 5);
 		flex-direction: column;
 		gap: 0.75rem;
 		min-height: 0;
+		flex: 1 1 auto;
 	}
 
 	.gallery__info-card {
@@ -198,6 +188,54 @@ const tiles = galleryImages.slice(1, 5);
 		border-radius: 0.9rem;
 		border: 1px solid rgba(168, 85, 247, 0.14);
 		background: rgba(10, 6, 18, 0.34);
+	}
+
+	.gallery__advantages {
+		margin-top: auto;
+		padding: 1rem 1.05rem;
+		border-radius: 0.95rem;
+		border: 1px solid rgba(192, 132, 252, 0.28);
+		background:
+			linear-gradient(145deg, rgba(124, 58, 237, 0.18), transparent 55%),
+			rgba(26, 22, 38, 0.88);
+	}
+
+	.gallery__advantages-label {
+		margin: 0 0 0.65rem;
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.gallery__advantages-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.gallery__advantages-list li {
+		position: relative;
+		padding-left: 1.05rem;
+		color: #e2d9ef;
+		font-size: 0.9rem;
+		line-height: 1.55;
+		font-weight: 600;
+	}
+
+	.gallery__advantages-list li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.45em;
+		width: 0.45rem;
+		height: 0.45rem;
+		border-radius: 999px;
+		background: var(--color-violet);
+		box-shadow: 0 0 10px rgba(168, 85, 247, 0.55);
 	}
 
 	.gallery__info-card h3 {
@@ -364,6 +402,14 @@ const tiles = galleryImages.slice(1, 5);
 		}
 
 		.gallery__info-card p {
+			font-size: 0.86rem;
+		}
+
+		.gallery__advantages {
+			padding: 0.85rem;
+		}
+
+		.gallery__advantages-list li {
 			font-size: 0.86rem;
 		}
 
