@@ -136,7 +136,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				"rust-esp": {
 					title: "Rust ESP 2026 | Player Boxes & Wallhack",
-					description: "Rust ESP for PC and controllers — player boxes, loot markers, and distance readouts. Part of our undetected rust hacks with cloud DMA support.",
+					description: "Rust ESP for PC with player boxes, loot markers, and wallhack distance readouts. Undetected rust hacks with EAC maintenance — compare ESP, aimbot, and pricing.",
 					h1: "Rust ESP — Player Boxes & Wallhack",
 					intro: "Visibility tools for Rust. Read enemy squads, vehicles, loot, chests, and distance before you commit to a fight — with toggleable ESP wallhack overlays for PVE and PVP.",
 					imageAlt: "Rust ESP with green skeleton, bounding box, loot labels, and distances",
@@ -188,7 +188,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				"rust-aimbot": {
 					title: "Rust Aimbot 2026 | Soft Aim for PC & Controllers",
-					description: "Rust aimbot with soft aim tuning for PC and controllers. FOV, bone priority, and hotkeys bundled with ESP boxes in our rust hacks package.",
+					description: "Rust aimbot with soft aim for PC and controllers. Tune FOV, bone priority, and hotkeys — bundled with ESP in our undetected rust hacks. Compare plans and setup.",
 					h1: "Rust Aimbot — Soft Aim for PC & Controllers",
 					intro: "Configurable Aimbot tools for Rust firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.",
 					imageAlt: "Rust aimbot menu with red skeleton ESP, silent aim, and feature toggles",
@@ -240,7 +240,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				features: {
 					title: "Rust Hacks Features | ESP, Soft Aim, Cloud DMA",
-					description: "Full rust hacks feature list: ESP boxes, soft aim, radar, cloud DMA, and toggles for PC and controllers. Review controls before checkout.",
+					description: "Full rust hacks feature list: ESP boxes, soft aim, radar, cloud DMA, and in-match toggles for PC. Review every control before checkout on rusthacks.net.",
 					h1: "Rust Hacks Features — Full Control List",
 					intro: "Every ESP wallhack, radar hack, and Aimbot control included in the Rust Cheats package for Rust on Windows PC — with EAC maintenance after major patches.",
 					imageAlt: "Rust ESP boxes, weapon labels, and distances on UKN practice bots",
@@ -278,7 +278,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				pricing: {
 					title: "Rust Hacks Pricing | $35/mo or $150 Life",
-					description: "Rust hacks pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and cloud DMA on PC and controllers. Instant delivery — pick a plan.",
+					description: "Rust hacks pricing: $35/month or $150 lifetime for ESP, soft aim, radar, and cloud DMA on Windows PC. Instant digital delivery — pick monthly or lifetime today.",
 					h1: "Rust Hacks Pricing — Monthly & Lifetime",
 					intro: "Choose monthly or lifetime access to undetected Rust Cheats — ESP wallhack, radar hack, and Aimbot for Rust on Windows PC. Instant digital delivery after payment.",
 					imageAlt: "Rust ESP overlay with skeleton ESP and loot inventory labels",

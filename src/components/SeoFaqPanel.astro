@@ -1,0 +1,53 @@
+---
+interface FaqItem {
+	question: string;
+	answer: string;
+}
+
+interface Props {
+	items: ReadonlyArray<FaqItem>;
+	title?: string;
+}
+
+const { items, title = 'Common questions' } = Astro.props;
+---
+
+{
+	items.length > 0 && (
+		<section class="card-panel seo-faq" aria-labelledby="seo-faq-heading">
+			<h2 id="seo-faq-heading">{title}</h2>
+			<div class="seo-faq__list">
+				{items.map((item) => (
+					<details class="seo-faq__item">
+						<summary>{item.question}</summary>
+						<p>{item.answer}</p>
+					</details>
+				))}
+			</div>
+		</section>
+	)
+}
+
+<style>
+	.seo-faq__list {
+		display: grid;
+		gap: 0;
+	}
+
+	.seo-faq__item {
+		border-top: 1px solid rgba(168, 85, 247, 0.14);
+		padding: 0.75rem 0;
+	}
+
+	.seo-faq__item summary {
+		cursor: pointer;
+		font-weight: 650;
+		color: var(--color-ink);
+	}
+
+	.seo-faq__item p {
+		margin: 0.55rem 0 0;
+		color: var(--color-muted);
+		line-height: 1.65;
+	}
+</style>

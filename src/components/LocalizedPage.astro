@@ -6,6 +6,8 @@ import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { seoFaqs, siteConfig } from '../data/site';
 import { rustImages } from '../data/rust';
+import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
+import SeoFaqPanel from '../components/SeoFaqPanel.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -27,19 +29,14 @@ const galleryPool = [
 	rustImages.product[2],
 ];
 
-const faqSchema =
-	pageId === 'faq' && locale === defaultLocale
-		? {
-				'@context': 'https://schema.org',
-				'@type': 'FAQPage',
-				'@id': `${new URL(getCanonicalPath('faq'), siteConfig.url).href}#faq`,
-				mainEntity: seoFaqs.map((item) => ({
-					'@type': 'Question',
-					name: item.question,
-					acceptedAnswer: { '@type': 'Answer', text: item.answer },
-				})),
-			}
-		: null;
+const canonicalPath = getCanonicalPath(pageId, locale);
+const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
+const heroImageUrl = new URL(page.heroImage ?? rustImages.hero, siteConfig.url).href;
+
+const extraGraph =
+	locale === defaultLocale
+		? buildPageExtraGraph(pageId, canonicalURL, heroImageUrl, seoFaqs)
+		: [];
 
 const ctaSecondaryHref = page.ctaSecondaryHref
 	? localizeInternalHref(page.ctaSecondaryHref, locale)
@@ -51,7 +48,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 <PageLayout
 	title={page.title}
 	description={page.description}
-	canonicalPath={getCanonicalPath(pageId, locale)}
+	canonicalPath={canonicalPath}
 	heading={page.h1}
 	intro={page.intro}
 	heroImage={page.heroImage}
@@ -63,6 +60,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	galleryTitle={page.galleryTitle}
 	locale={locale}
 	pageId={pageId}
+	extraGraph={extraGraph}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
 	ctaSecondary={
 		page.ctaSecondary
@@ -70,7 +68,6 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 			: undefined
 	}
 >
-	{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 	{
 		page.sections.map((section) => (
 			<section class="card-panel">
@@ -87,5 +84,15 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 				)}
 			</section>
 		))
+	}
+	{
+		locale === defaultLocale && pageId === 'faq' && (
+			<SeoFaqPanel items={seoFaqs} title="All questions" />
+		)
+	}
+	{
+		locale === defaultLocale && pageId !== 'faq' && pageFaqClusters[pageId] && (
+			<SeoFaqPanel items={pageFaqClusters[pageId]!} />
+		)
 	}
 </PageLayout>

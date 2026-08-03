@@ -27,6 +27,7 @@ interface Props {
 	showGallery?: boolean;
 	locale?: import('../data/i18n/locales').LocaleCode;
 	pageId?: import('../data/i18n/content.generated').PageId;
+	extraGraph?: Record<string, unknown>[];
 }
 
 const {
@@ -45,6 +46,7 @@ const {
 	showGallery = true,
 	locale = defaultLocale,
 	pageId: pageIdProp,
+	extraGraph = [],
 } = Astro.props;
 
 function resolvePageId(path: string): PageId | undefined {
@@ -99,6 +101,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	breadcrumbs={breadcrumbs}
 	locale={locale}
 	pageId={pageId}
+	extraGraph={extraGraph}
 	lcpImage={lcpImage}
 	lcpImageSrcSet={lcpImageSrcSet}
 	lcpImageSizes={lcpImageSizes}
