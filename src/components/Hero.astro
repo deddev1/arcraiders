@@ -1,5 +1,4 @@
 ---
-import { heroSizes, heroSrc, heroSrcSet } from '../lib/responsive-images';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -29,34 +28,8 @@ const featuresUrl = getLocalizedPath('features', locale);
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
 		{/*
-		  Photo sits under the looping rust-hacks background video (poster + fallback).
-		  Mobile: single 480w candidate (ignores DPR upscaling that would pull 960/1400).
-		  Desktop: full responsive srcset.
+		  Video-only media — solid #0a0612 until the ~6s clip can play (no poster / still flash).
 		*/}
-		<picture>
-			<source
-				media="(max-width: 760px)"
-				srcset={heroSrc}
-				type="image/webp"
-				width="480"
-				height="270"
-			/>
-			<source
-				media="(min-width: 761px)"
-				srcset={heroSrcSet}
-				sizes={heroSizes}
-				type="image/webp"
-			/>
-			<img
-				src={heroSrc}
-				alt={ui.images.hero}
-				class="hero__bg"
-				width="1400"
-				height="788"
-				fetchpriority="high"
-				decoding="async"
-			/>
-		</picture>
 		<video
 			class="hero__video"
 			data-rust-hacks-video="hero"
@@ -67,7 +40,6 @@ const featuresUrl = getLocalizedPath('features', locale);
 			playsinline
 			webkit-playsinline
 			preload="auto"
-			poster={rustHeroVideo.poster}
 			title={rustHeroVideo.title}
 			aria-label={rustHeroVideo.ariaLabel}
 		></video>
@@ -111,33 +83,26 @@ const featuresUrl = getLocalizedPath('features', locale);
 		position: absolute;
 		inset: 0;
 		z-index: 0;
+		background: #0a0612;
 	}
 
-	.hero__bg,
 	.hero__video {
 		position: absolute;
 		inset: 0;
+		z-index: 1;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		object-position: 70% 40%;
 		transform: translateZ(0) scale(1.03);
 		backface-visibility: hidden;
-	}
-
-	.hero__bg {
-		z-index: 0;
-	}
-
-	.hero__video {
-		z-index: 1;
 		pointer-events: none;
 		opacity: 1;
 		background: #0a0612;
 	}
 
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
-		.hero__bg {
+		.hero__video {
 			will-change: transform;
 			animation: kenburns 18s ease-in-out infinite alternate;
 		}
@@ -323,7 +288,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 		.hero__copy,
 		.hero__subtitle,
 		.hero__cta,
-		.hero__bg,
+		.hero__video,
 		.hero__splash {
 			animation: none;
 		}
@@ -346,7 +311,6 @@ const featuresUrl = getLocalizedPath('features', locale);
 			display: block;
 		}
 
-		.hero__bg,
 		.hero__video {
 			object-position: center 32%;
 			animation: none;

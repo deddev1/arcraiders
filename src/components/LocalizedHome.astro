@@ -15,7 +15,6 @@ import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { homeFaqs, productInfo, siteConfig, customerReviewStats, customerReviews } from '../data/site';
 import { rustImages } from '../data/rust';
-import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
 
 interface Props {
 	locale: LocaleCode;
@@ -118,9 +117,6 @@ const extraGraph: Record<string, unknown>[] =
 	pageId="home"
 	breadcrumbs={[{ label: ui.nav.home }]}
 	extraGraph={extraGraph}
-	lcpImage={heroPreloadSrc}
-	lcpImageSrcSet={heroSrcSet}
-	lcpImageSizes={heroSizes}
 >
 	<Navbar locale={locale} pageId="home" />
 	<main class="site">
