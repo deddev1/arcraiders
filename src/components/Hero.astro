@@ -36,8 +36,8 @@ const featuresUrl = getLocalizedPath('features', locale);
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
 		{/*
-		  Poster is the LCP element (especially mobile). Video hydrates later from
-		  data-src — desktop only — so mobile never pays decode/bandwidth for motion.
+		  Poster paints first (LCP / fallback). Hero MP4 uses a real src + autoplay
+		  so desktop and mobile get the muted loop like the old site — not poster-only.
 		*/}
 		<picture class="hero__poster">
 			<source media="(max-width: 760px)" srcset={heroPreloadSrc} type="image/webp" />
@@ -61,12 +61,14 @@ const featuresUrl = getLocalizedPath('features', locale);
 		<video
 			class="hero__video"
 			data-rust-hacks-video="hero"
+			src={rustHeroVideo.src}
 			data-src={rustHeroVideo.src}
+			autoplay
 			muted
 			loop
 			playsinline
 			webkit-playsinline
-			preload="none"
+			preload="metadata"
 			title={rustHeroVideo.title}
 			aria-label={rustHeroVideo.ariaLabel}
 		></video>
@@ -376,9 +378,11 @@ const featuresUrl = getLocalizedPath('features', locale);
 			object-position: center 32%;
 		}
 
-		/* Mobile: still poster only — skip video bandwidth + decode for LCP. */
 		.hero__video {
-			display: none;
+			object-position: center 32%;
+			animation: none;
+			transform: none;
+			will-change: auto;
 		}
 
 		.hero__splash {

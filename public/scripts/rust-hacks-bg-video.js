@@ -1,10 +1,9 @@
 /**
- * Plays muted IsleCheat background clips without blocking LCP.
- * - hero: desktop only, after idle (poster is the LCP element)
- * - product / lazy: hydrate src only when near the viewport
+ * Plays muted IsleCheat background clips without blocking interaction.
+ * - hero: eager muted autoplay (real src in HTML; poster is first paint)
+ * - product / lazy: hydrate data-src only when near the viewport
  */
 (function () {
-	var mobileMq = window.matchMedia('(max-width: 760px)');
 	var reduceMq = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 	function armMuted(video) {
@@ -75,6 +74,13 @@
 
 		video.addEventListener('loadeddata', attempt, { once: true });
 		video.addEventListener('canplay', attempt, { once: true });
+		video.addEventListener(
+			'playing',
+			function () {
+				markReady(video);
+			},
+			{ once: true },
+		);
 		try {
 			video.load();
 		} catch (_) {
@@ -109,39 +115,25 @@
 	}
 
 	function bindHero() {
-		if (mobileMq.matches || reduceMq.matches) return;
+		if (reduceMq.matches) return;
 
 		var heroes = Array.prototype.slice.call(
 			document.querySelectorAll('[data-rust-hacks-video="hero"]'),
 		);
 		if (!heroes.length) return;
 
-		function start() {
-			heroes.forEach(function (video) {
-				tryPlay(video);
-				video.addEventListener(
-					'pause',
-					function () {
-						if (video.classList.contains('is-hidden')) return;
-						if (document.visibilityState === 'hidden') return;
-						tryPlay(video);
-					},
-					{ passive: true },
-				);
-			});
-		}
-
-		if ('requestIdleCallback' in window) {
-			window.requestIdleCallback(start, { timeout: 1800 });
-		} else {
-			window.addEventListener(
-				'load',
+		heroes.forEach(function (video) {
+			tryPlay(video);
+			video.addEventListener(
+				'pause',
 				function () {
-					window.setTimeout(start, 350);
+					if (video.classList.contains('is-hidden')) return;
+					if (document.visibilityState === 'hidden') return;
+					tryPlay(video);
 				},
-				{ once: true },
+				{ passive: true },
 			);
-		}
+		});
 	}
 
 	bindHero();
