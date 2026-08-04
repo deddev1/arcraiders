@@ -178,28 +178,38 @@ if (softwareNode) {
 		<link rel="sitemap" type="application/xml" title="Page Sitemap" href="/sitemap.xml" />
 		<link rel="sitemap" type="application/xml" title="Image Sitemap" href="/sitemap-images.xml" />
 		{
-			lcpImage && (
+			lcpImage && !lcpImageSrcSet && (
 				<link
 					rel="preload"
 					as="image"
 					href={lcpImage}
 					type="image/webp"
 					fetchpriority="high"
-					media="(max-width: 760px)"
 				/>
 			)
 		}
 		{
-			lcpImageSrcSet && (
-				<link
-					rel="preload"
-					as="image"
-					href={lcpImageSrcSet.split(' ')[0]}
-					type="image/webp"
-					imagesrcset={lcpImageSrcSet}
-					imagesizes={lcpImageSizes}
-					media="(min-width: 761px)"
-				/>
+			lcpImage && lcpImageSrcSet && (
+				<>
+					<link
+						rel="preload"
+						as="image"
+						href={lcpImage}
+						type="image/webp"
+						fetchpriority="high"
+						media="(max-width: 760px)"
+					/>
+					<link
+						rel="preload"
+						as="image"
+						href={lcpImageSrcSet.split(',')[0].trim().split(' ')[0]}
+						type="image/webp"
+						imagesrcset={lcpImageSrcSet}
+						imagesizes={lcpImageSizes}
+						fetchpriority="high"
+						media="(min-width: 761px)"
+					/>
+				</>
 			)
 		}
 

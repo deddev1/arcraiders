@@ -4,6 +4,7 @@ import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import {
+	contentSrc,
 	contentSrcSet,
 	galleryTileSizes,
 } from '../lib/responsive-images';
@@ -27,15 +28,19 @@ const galleryAlts = [
 ] as const;
 
 const tiles = rustImages.gallery.map((image, index) => ({
-	src: image.src,
+	src: contentSrc(image.src),
+	srcset: contentSrcSet(image.src),
 	alt: galleryAlts[index] ?? image.alt,
 }));
 
 /** Large still under the grid — fills leftover media-column height. Not the last grid tile. */
+const featuredStillSrc = '/images/rust-aimbot-menu.webp';
 const featuredStill = {
-	src: '/images/rust-aimbot-menu.webp',
+	src: contentSrc(featuredStillSrc),
+	srcset: contentSrcSet(featuredStillSrc),
 	alt: ui.images.aimbotCombat,
 } as const;
+const galleryPoster = contentSrc(rustVideo.poster);
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
@@ -76,17 +81,16 @@ const featuredStill = {
 				<figure class="gallery__featured gallery__video media-frame">
 					<video
 						data-rust-hacks-video="lazy"
+						data-src={rustVideo.src}
+						poster={galleryPoster}
 						muted={true}
 						loop
 						playsinline
 						webkit-playsinline
-						autoplay
-						preload="auto"
+						preload="none"
 						title={rustVideo.title}
 						aria-label={rustVideo.ariaLabel}
-					>
-						<source src={rustVideo.src} type="video/mp4" />
-					</video>
+					></video>
 					<figcaption>{rustVideo.caption}</figcaption>
 				</figure>
 
@@ -96,7 +100,7 @@ const featuredStill = {
 							<figure class="gallery__item media-frame">
 								<img
 									src={image.src}
-									srcset={contentSrcSet(image.src)}
+									srcset={image.srcset}
 									sizes={galleryTileSizes}
 									alt={image.alt}
 									width="1280"
@@ -113,7 +117,7 @@ const featuredStill = {
 				<figure class="gallery__still media-frame">
 					<img
 						src={featuredStill.src}
-						srcset={contentSrcSet(featuredStill.src)}
+						srcset={featuredStill.srcset}
 						sizes="(max-width: 560px) 100vw, (max-width: 900px) 100vw, 52vw"
 						alt={featuredStill.alt}
 						width="1280"

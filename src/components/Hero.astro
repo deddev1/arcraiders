@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
 import { rustHeroVideo } from '../data/rust';
+import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
 
 interface Props {
 	accent?: string;
@@ -35,18 +36,37 @@ const featuresUrl = getLocalizedPath('features', locale);
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
 		{/*
-		  Video-only media — solid #0a0612 until the ~6s clip can play (no poster / still flash).
+		  Poster is the LCP element (especially mobile). Video hydrates later from
+		  data-src — desktop only — so mobile never pays decode/bandwidth for motion.
 		*/}
+		<picture class="hero__poster">
+			<source media="(max-width: 760px)" srcset={heroPreloadSrc} type="image/webp" />
+			<source
+				media="(min-width: 761px)"
+				srcset={heroSrcSet}
+				sizes={heroSizes}
+				type="image/webp"
+			/>
+			<img
+				src={heroPreloadSrc}
+				alt=""
+				width="1600"
+				height="900"
+				class="hero__poster-img"
+				fetchpriority="high"
+				decoding="async"
+				aria-hidden="true"
+			/>
+		</picture>
 		<video
 			class="hero__video"
 			data-rust-hacks-video="hero"
-			src={rustHeroVideo.src}
-			autoplay
+			data-src={rustHeroVideo.src}
 			muted
 			loop
 			playsinline
 			webkit-playsinline
-			preload="auto"
+			preload="none"
 			title={rustHeroVideo.title}
 			aria-label={rustHeroVideo.ariaLabel}
 		></video>
@@ -92,23 +112,45 @@ const featuresUrl = getLocalizedPath('features', locale);
 		background: #0a0612;
 	}
 
+	.hero__poster,
+	.hero__poster-img,
 	.hero__video {
 		position: absolute;
 		inset: 0;
-		z-index: 1;
 		width: 100%;
 		height: 100%;
+	}
+
+	.hero__poster {
+		z-index: 1;
+		margin: 0;
+		display: block;
+	}
+
+	.hero__poster-img {
+		object-fit: cover;
+		object-position: 70% 40%;
+		background: #0a0612;
+	}
+
+	.hero__video {
+		z-index: 1;
 		object-fit: cover;
 		object-position: 70% 40%;
 		transform: translateZ(0) scale(1.03);
 		backface-visibility: hidden;
 		pointer-events: none;
+		opacity: 0;
+		background: transparent;
+		transition: opacity 0.45s ease;
+	}
+
+	.hero__video.is-ready {
 		opacity: 1;
-		background: #0a0612;
 	}
 
 	@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
-		.hero__video {
+		.hero__video.is-ready {
 			will-change: transform;
 			animation: kenburns 18s ease-in-out infinite alternate;
 		}
@@ -307,6 +349,10 @@ const featuresUrl = getLocalizedPath('features', locale);
 		.hero__splash {
 			animation: none;
 		}
+
+		.hero__video {
+			display: none;
+		}
 	}
 
 	.hero__subtitle--short {
@@ -326,11 +372,13 @@ const featuresUrl = getLocalizedPath('features', locale);
 			display: block;
 		}
 
-		.hero__video {
+		.hero__poster-img {
 			object-position: center 32%;
-			animation: none;
-			transform: none;
-			will-change: auto;
+		}
+
+		/* Mobile: still poster only — skip video bandwidth + decode for LCP. */
+		.hero__video {
+			display: none;
 		}
 
 		.hero__splash {

@@ -8,22 +8,45 @@ export function buildSrcSet(widths: ResponsiveWidth[]): string {
 	return widths.map(({ src, width }) => `${src} ${width}w`).join(', ');
 }
 
-/** Build srcset for content images that have -480w / -960w variants. */
-export function contentSrcSet(baseSrc: string): string | undefined {
+function parseWebpBase(baseSrc: string): { dir: string; name: string } | undefined {
 	const match = baseSrc.match(/^(.+\/)(.+)\.webp$/i);
 	if (!match) return undefined;
 
 	const [, dir, name] = match;
-	if (name.endsWith('-640w') || name.endsWith('-960w') || name.endsWith('-1400w')) {
+	if (
+		name.endsWith('-480w') ||
+		name.endsWith('-640w') ||
+		name.endsWith('-960w') ||
+		name.endsWith('-1400w')
+	) {
 		return undefined;
 	}
 
+	return { dir, name };
+}
+
+/** Build srcset for content images that have -480w / -960w variants. */
+export function contentSrcSet(baseSrc: string): string | undefined {
+	const parsed = parseWebpBase(baseSrc);
+	if (!parsed) return undefined;
+
+	const { dir, name } = parsed;
 	return buildSrcSet(
 		contentWidths.map((width) => ({
 			src: `${dir}${name}-${width}w.webp`,
 			width,
 		})),
 	);
+}
+
+/**
+ * Fallback `src` for responsive stills — prefer 960w (~70KB) over full masters
+ * (often 280–520KB) so slow networks never pull the huge file as a fallback.
+ */
+export function contentSrc(baseSrc: string): string {
+	const parsed = parseWebpBase(baseSrc);
+	if (!parsed) return baseSrc;
+	return `${parsed.dir}${parsed.name}-960w.webp`;
 }
 
 export const heroResponsive: ResponsiveWidth[] = [

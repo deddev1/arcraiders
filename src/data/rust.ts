@@ -13,9 +13,13 @@ export const rustHeroVideo = {
 	ariaLabel: 'IsleCheat gameplay background — short loop',
 } as const;
 
-/** Full gameplay clip for product preview + gallery. */
+/**
+ * Product / gallery preview loop.
+ * Uses the trimmed ~6s clip (~260KB) — the full background MP4 is ~15MB and
+ * destroyed mobile Lighthouse when autoplayed with preload=auto.
+ */
 export const rustVideo = {
-	src: '/videos/rust-hacks-background.mp4',
+	src: '/videos/rust-hacks-hero-6s.mp4',
 	/** Distinct still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
 	poster: '/images/rust-esp-hitbox.webp',
 	title: 'IsleCheat background video',

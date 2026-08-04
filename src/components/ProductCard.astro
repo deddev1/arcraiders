@@ -5,6 +5,7 @@ import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import {
+	contentSrc,
 	contentSrcSet,
 	productMainSizes,
 	productThumbSizes,
@@ -29,13 +30,15 @@ const productAlts = [
 	ui.images.rebootFight,
 ] as const;
 
-/** Screenshot thumbs only — main media is the full gameplay video. */
+/** Screenshot thumbs only — main media is the lightweight preview loop. */
 const images = rustImages.product.map((image, index) => ({
-	src: image.src,
+	src: contentSrc(image.src),
+	fullSrc: image.src,
 	alt: productAlts[index] ?? image.alt,
 	srcset: contentSrcSet(image.src),
 }));
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
+const posterSrc = contentSrc(rustVideo.poster);
 ---
 
 <section class="product surface-card" id="product" data-product aria-label="Product details">
@@ -45,18 +48,16 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				class="product__video"
 				data-main-video
 				data-rust-hacks-video="product"
-				poster={rustVideo.poster}
+				data-src={rustVideo.src}
+				poster={posterSrc}
 				muted={true}
 				loop
 				playsinline
 				webkit-playsinline
-				autoplay
-				preload="auto"
+				preload="none"
 				title={rustVideo.title}
 				aria-label={rustVideo.ariaLabel}
-			>
-				<source src={rustVideo.src} type="video/mp4" />
-			</video>
+			></video>
 			<img
 				src={images[0].src}
 				srcset={images[0].srcset}
@@ -183,6 +184,10 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		if (!(mainImage instanceof HTMLImageElement) || thumbs.length === 0) return;
 
 		const armAndPlay = (video: HTMLVideoElement) => {
+			const dataSrc = video.getAttribute('data-src');
+			if (dataSrc && video.getAttribute('src') !== dataSrc) {
+				video.setAttribute('src', dataSrc);
+			}
 			video.muted = true;
 			video.defaultMuted = true;
 			video.setAttribute('muted', '');
@@ -212,11 +217,6 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				armAndPlay(mainVideo);
 			}
 		};
-
-		// Ensure preview clip starts on load (not only after a thumb click).
-		if (mainVideo instanceof HTMLVideoElement) {
-			armAndPlay(mainVideo);
-		}
 
 		const select = (index: number) => {
 			const thumb = thumbs[index];

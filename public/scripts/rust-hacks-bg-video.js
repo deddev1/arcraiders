@@ -1,9 +1,12 @@
 /**
- * Plays muted rust-hacks background clips.
- * - hero / product: attempt playback immediately
- * - lazy (gallery): wait until near the viewport
+ * Plays muted IsleCheat background clips without blocking LCP.
+ * - hero: desktop only, after idle (poster is the LCP element)
+ * - product / lazy: hydrate src only when near the viewport
  */
 (function () {
+	var mobileMq = window.matchMedia('(max-width: 760px)');
+	var reduceMq = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 	function armMuted(video) {
 		if (!(video instanceof HTMLVideoElement)) return;
 		video.muted = true;
@@ -14,21 +17,54 @@
 		video.playsInline = true;
 	}
 
+	function hydrateSrc(video) {
+		if (!(video instanceof HTMLVideoElement)) return false;
+		var dataSrc = video.getAttribute('data-src');
+		if (!dataSrc) return Boolean(video.getAttribute('src') || video.querySelector('source'));
+
+		if (video.getAttribute('src') !== dataSrc) {
+			video.setAttribute('src', dataSrc);
+		}
+
+		var sources = video.querySelectorAll('source[data-src]');
+		for (var i = 0; i < sources.length; i++) {
+			var source = sources[i];
+			var sourceSrc = source.getAttribute('data-src');
+			if (sourceSrc && source.getAttribute('src') !== sourceSrc) {
+				source.setAttribute('src', sourceSrc);
+			}
+		}
+		return true;
+	}
+
+	function markReady(video) {
+		video.classList.add('is-ready');
+	}
+
 	function tryPlay(video) {
 		if (!(video instanceof HTMLVideoElement)) return;
 		if (video.classList.contains('is-hidden')) return;
+		if (!hydrateSrc(video)) return;
 		armMuted(video);
 
 		function attempt() {
 			armMuted(video);
 			var playPromise = video.play();
-			if (playPromise && typeof playPromise.catch === 'function') {
-				playPromise.catch(function () {
-					window.setTimeout(function () {
-						armMuted(video);
-						video.play().catch(function () {});
-					}, 200);
-				});
+			if (playPromise && typeof playPromise.then === 'function') {
+				playPromise
+					.then(function () {
+						markReady(video);
+					})
+					.catch(function () {
+						window.setTimeout(function () {
+							armMuted(video);
+							video.play().then(function () {
+								markReady(video);
+							}).catch(function () {});
+						}, 200);
+					});
+			} else {
+				markReady(video);
 			}
 		}
 
@@ -47,45 +83,73 @@
 		attempt();
 	}
 
-	function bindEager(selector) {
-		document.querySelectorAll(selector).forEach(function (video) {
-			tryPlay(video);
-			video.addEventListener(
-				'pause',
-				function () {
-					if (video.classList.contains('is-hidden')) return;
-					if (document.visibilityState === 'hidden') return;
+	function observeLazy(videos) {
+		if (!videos.length) return;
+
+		if (!('IntersectionObserver' in window)) {
+			videos.forEach(tryPlay);
+			return;
+		}
+
+		var observer = new IntersectionObserver(
+			function (entries) {
+				entries.forEach(function (entry) {
+					if (!entry.isIntersecting) return;
+					var video = entry.target;
 					tryPlay(video);
-				},
-				{ passive: true },
-			);
+					observer.unobserve(video);
+				});
+			},
+			{ rootMargin: '160px 0px', threshold: 0.01 },
+		);
+
+		videos.forEach(function (video) {
+			observer.observe(video);
 		});
 	}
 
-	bindEager('[data-rust-hacks-video="hero"]');
-	bindEager('[data-rust-hacks-video="product"]');
+	function bindHero() {
+		if (mobileMq.matches || reduceMq.matches) return;
 
-	var lazyVideos = document.querySelectorAll('[data-rust-hacks-video="lazy"]');
-	if (!lazyVideos.length) return;
+		var heroes = Array.prototype.slice.call(
+			document.querySelectorAll('[data-rust-hacks-video="hero"]'),
+		);
+		if (!heroes.length) return;
 
-	if (!('IntersectionObserver' in window)) {
-		lazyVideos.forEach(tryPlay);
-		return;
+		function start() {
+			heroes.forEach(function (video) {
+				tryPlay(video);
+				video.addEventListener(
+					'pause',
+					function () {
+						if (video.classList.contains('is-hidden')) return;
+						if (document.visibilityState === 'hidden') return;
+						tryPlay(video);
+					},
+					{ passive: true },
+				);
+			});
+		}
+
+		if ('requestIdleCallback' in window) {
+			window.requestIdleCallback(start, { timeout: 1800 });
+		} else {
+			window.addEventListener(
+				'load',
+				function () {
+					window.setTimeout(start, 350);
+				},
+				{ once: true },
+			);
+		}
 	}
 
-	var observer = new IntersectionObserver(
-		function (entries) {
-			entries.forEach(function (entry) {
-				if (!entry.isIntersecting) return;
-				var video = entry.target;
-				tryPlay(video);
-				observer.unobserve(video);
-			});
-		},
-		{ rootMargin: '240px 0px', threshold: 0.01 },
+	bindHero();
+	observeLazy(
+		Array.prototype.slice.call(
+			document.querySelectorAll(
+				'[data-rust-hacks-video="product"], [data-rust-hacks-video="lazy"]',
+			),
+		),
 	);
-
-	lazyVideos.forEach(function (video) {
-		observer.observe(video);
-	});
 })();

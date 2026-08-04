@@ -5,7 +5,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { rustImages } from '../data/rust';
-import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
+import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 import { englishPaths, pageIds, type PageId } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
 
@@ -65,7 +65,11 @@ const resolvedEyebrow = eyebrow ?? ui.product.title;
 const normalizedGallery = gallery
 	.map((item) => {
 		if (typeof item !== 'string') {
-			return { src: item.src, alt: item.alt };
+			return {
+				src: contentSrc(item.src),
+				srcset: contentSrcSet(item.src),
+				alt: item.alt,
+			};
 		}
 
 		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'rust-cheats';
@@ -75,7 +79,8 @@ const normalizedGallery = gallery
 			.join(' ');
 
 		return {
-			src: item,
+			src: contentSrc(item),
+			srcset: contentSrcSet(item),
 			alt: heroAlt || `${keywordAlt} - ${ui.product.title}`,
 		};
 	})
@@ -201,7 +206,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 								<figure class="gallery-block__item">
 									<img
 										src={image.src}
-										srcset={contentSrcSet(image.src)}
+										srcset={image.srcset}
 										sizes={galleryTileSizes}
 										alt={image.alt}
 										width="800"
