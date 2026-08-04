@@ -34,7 +34,7 @@ const sources = [
 		slug: 'patch-notes-buffs-nerfs-vaults',
 		title: 'Patch Notes Breakdown: Buffs, Nerfs & Vaults That Matter',
 		metaDescription:
-			'Rust patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check rust hacks updates.',
+			'Rust patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check IsleCheat updates.',
 		h1: 'Patch Notes Breakdown: Buffs, Nerfs, and Vaults',
 		intro:
 			'Stop skimming patch notes. Here is how buffs, nerfs, and vaults actually reshuffle the loot pool and your ranked loadout priorities.',
@@ -67,7 +67,7 @@ const sources = [
 				h2: 'Late-season checklist and next steps',
 				paragraphs: [
 					'Post-patch checklist: skim official notes for vaults first, update your shotgun/AR/mobility/heals spine, play 10 intentional test games, revisit tier-list assumptions, and adjust drop routes if mobility or loot changed.',
-					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use rust hacks in-match, check <a href="/updates/">Rust Hacks Updates</a> after Easy Anti-Cheat patches.`,
+					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use IsleCheat in-match, check <a href="/updates/">IsleCheat Updates</a> after Easy Anti-Cheat patches.`,
 					'Try This Today: Open the latest official patch notes and highlight vaults. Rewrite your 5-slot priority on paper. Queue a focused 5-game test block and note which fights felt different at 30–60m vs 0–15m.',
 				],
 			},
@@ -366,7 +366,7 @@ const sources = [
 				h2: 'Mistakes that waste warmup time',
 				paragraphs: [
 					'Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.',
-					'After mechanics are hot, information tools like <a href="/rust-radar-hack/">radar hack</a> or <a href="/rust-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/rust-hacks/">Rust hacks</a>.',
+					'After mechanics are hot, information tools like <a href="/rust-radar-hack/">radar hack</a> or <a href="/rust-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/rust-hacks/">IsleCheat</a>.',
 					'Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.',
 				],
 			},
@@ -377,23 +377,23 @@ const sources = [
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-31',
 		updated: '2026-08-01',
-		category: 'Rust Hacks',
+		category: 'IsleCheat',
 		featured: true,
 		slug: 'rust-hacks-complete-guide-2026',
-		title: 'Rust Hacks 2026: Complete Undetected Guide',
+		title: 'IsleCheat 2026: Complete Undetected Guide',
 		metaDescription:
-			'Complete rust hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.',
-		h1: 'Rust Hacks 2026: The Complete Undetected Guide',
+			'Complete IsleCheat guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.',
+		h1: 'IsleCheat 2026: The Complete Undetected Guide',
 		intro:
-			'Searching for Rust hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how rust cheats searchers map to the same Windows PC package.',
-		keywords: ['rust hacks', 'undetected rust hacks', 'rust cheats', 'esp', 'aimbot', 'eac'],
-		imageAlt: 'Rust hacks complete guide showing ESP wallhack and Aimbot for 2026',
+			'Searching for IsleCheat in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how rust cheats searchers map to the same Windows PC package.',
+		keywords: ['IsleCheat', 'undetected IsleCheat', 'rust cheats', 'esp', 'aimbot', 'eac'],
+		imageAlt: 'IsleCheat complete guide showing ESP wallhack and Aimbot for 2026',
 		sections: [
 			{
-				h2: 'What Rust hacks actually include',
+				h2: 'What IsleCheat actually include',
 				paragraphs: [
-					'Rust hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type rust cheats are looking for the same stack — different wording, same BR loop.',
-					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/rust-hacks/">Rust hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
+					'IsleCheat usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type rust cheats are looking for the same stack — different wording, same BR loop.',
+					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/rust-hacks/">IsleCheat pillar</a> is the commercial landing; this post is the long-form explainer.`,
 					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
 				],
 			},
@@ -405,9 +405,9 @@ const sources = [
 				],
 			},
 			{
-				h2: 'Undetected Rust hacks and EAC patches',
+				h2: 'Undetected IsleCheat and EAC patches',
 				paragraphs: [
-					'Undetected Rust hacks require rebuilds after Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
+					'Undetected IsleCheat require rebuilds after Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
 					`On patch mornings confirm ${EXT.status}, then read our <a href="/eac-bypass-rust/">EAC bypass guide</a> and <a href="/blog/undetected-rust-hacks-eac/">undetected EAC notes</a>.`,
 					'Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.',
 				],
@@ -415,7 +415,7 @@ const sources = [
 			{
 				h2: 'Next steps — pricing, setup, and cheats pages',
 				paragraphs: [
-					'Ready to buy? Start at the <a href="/rust-hacks/">Rust hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/rust-cheats-2026/">rust cheats 2026</a> and <a href="/blog/rust-cheats-buyers-guide/">cheats buyers guide</a>.',
+					'Ready to buy? Start at the <a href="/rust-hacks/">IsleCheat pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/rust-cheats-2026/">rust cheats 2026</a> and <a href="/blog/rust-cheats-buyers-guide/">cheats buyers guide</a>.',
 					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
 				],
 			},
@@ -434,21 +434,21 @@ const sources = [
 			'Rust cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.',
 		h1: 'Rust Cheats Buyers Guide: What Matters in 2026',
 		intro:
-			'Shopping for rust cheats? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the Rust hacks pillar before checkout.',
-		keywords: ['rust cheats', 'best rust cheats', 'rust hacks', 'buyers guide', 'undetected'],
+			'Shopping for rust cheats? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the IsleCheat pillar before checkout.',
+		keywords: ['rust cheats', 'best rust cheats', 'IsleCheat', 'buyers guide', 'undetected'],
 		imageAlt: 'Rust cheats buyers guide checklist for ESP Aimbot and pricing',
 		sections: [
 			{
 				h2: 'Buyer checklist before you pay',
 				paragraphs: [
 					'Confirm Windows PC support, EAC maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
-					'Primary commercial pages: <a href="/best-rust-cheats/">best Rust cheats</a>, <a href="/rust-cheats-2026/">cheats 2026</a>, and <a href="/rust-hacks/">Rust hacks</a> (hacks is the main brand keyword).',
+					'Primary commercial pages: <a href="/best-rust-cheats/">best Rust cheats</a>, <a href="/rust-cheats-2026/">cheats 2026</a>, and <a href="/rust-hacks/">IsleCheat</a> (hacks is the main brand keyword).',
 				],
 			},
 			{
 				h2: 'Hacks vs cheats wording',
 				paragraphs: [
-					'Rust hacks and rust cheats describe the same product category for most searchers. We lead with hacks on rusthacks.net while keeping cheats pages for buyers who use that query.',
+					'IsleCheat and rust cheats describe the same product category for most searchers. We lead with hacks on islecheat.net while keeping cheats pages for buyers who use that query.',
 					`Balance and anti-cheat reality still come from ${EXT.epic}. Product rebuild timing is on our <a href="/updates/">Updates</a> page.`,
 				],
 			},
@@ -476,7 +476,7 @@ const sources = [
 		h1: 'Rust Cheats 2026: What Buyers Need Now',
 		intro:
 			'Rust cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Easy Anti-Cheat patches.',
-		keywords: ['rust cheats 2026', 'rust hacks', 'eac', 'esp', 'aimbot'],
+		keywords: ['rust cheats 2026', 'IsleCheat', 'eac', 'esp', 'aimbot'],
 		imageAlt: 'Rust cheats 2026 overview for undetected ESP and Aimbot buyers',
 		sections: [
 			{
@@ -489,7 +489,7 @@ const sources = [
 			{
 				h2: 'Keyword map: cheats 2026 ↔ hacks',
 				paragraphs: [
-					'Use the <a href="/rust-cheats-2026/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/rust-hacks/">Rust hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
+					'Use the <a href="/rust-cheats-2026/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/rust-hacks/">IsleCheat pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
 					'Also see <a href="/blog/rust-hacks-complete-guide-2026/">hacks guide</a> and <a href="/undetected-rust-cheats/">undetected status</a>.',
 				],
 			},
@@ -515,8 +515,8 @@ const sources = [
 			'Rust aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.',
 		h1: 'Rust Aimbot Settings: Smoothness, FOV & Soft Aim',
 		intro:
-			'Configure Rust Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Rust hacks packages.',
-		keywords: ['rust aimbot', 'aimbot settings', 'soft aim', 'rust hacks', 'fov'],
+			'Configure Rust Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into IsleCheat packages.',
+		keywords: ['rust aimbot', 'aimbot settings', 'soft aim', 'IsleCheat', 'fov'],
 		imageAlt: 'Rust Aimbot settings guide for smoothness FOV and bone priority',
 		sections: [
 			{
@@ -529,7 +529,7 @@ const sources = [
 			{
 				h2: 'Pair Aimbot with ESP and radar',
 				paragraphs: [
-					'Aimbot alone does not solve rotations. Pair with <a href="/rust-esp/">ESP</a> and <a href="/rust-radar-hack/">radar</a> inside the <a href="/rust-hacks/">Rust hacks</a> package.',
+					'Aimbot alone does not solve rotations. Pair with <a href="/rust-esp/">ESP</a> and <a href="/rust-radar-hack/">radar</a> inside the <a href="/rust-hacks/">IsleCheat</a> package.',
 					`Weapon balance shifts on ${EXT.rust} — revisit FOV after combat patches.`,
 				],
 			},
@@ -555,8 +555,8 @@ const sources = [
 			'Rust ESP and wallhack explained — player boxes, loot markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
 		h1: 'Rust ESP and Wallhack Explained',
 		intro:
-			'Rust ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Rust hacks and rust cheats packages.',
-		keywords: ['rust esp', 'rust wallhack', 'esp hack', 'rust hacks', 'loot esp'],
+			'Rust ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into IsleCheat and rust cheats packages.',
+		keywords: ['rust esp', 'rust wallhack', 'esp hack', 'IsleCheat', 'loot esp'],
 		imageAlt: 'Rust ESP wallhack explained with player and loot overlays',
 		sections: [
 			{
@@ -590,19 +590,19 @@ const sources = [
 		category: 'Undetected & EAC',
 		featured: true,
 		slug: 'undetected-rust-hacks-eac',
-		title: 'Undetected Rust Hacks & EAC Reality',
+		title: 'Undetected IsleCheat & EAC Reality',
 		metaDescription:
-			'Undetected rust hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
-		h1: 'Undetected Rust Hacks and Easy Anti-Cheat Reality',
+			'Undetected IsleCheat and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
+		h1: 'Undetected IsleCheat and Easy Anti-Cheat Reality',
 		intro:
-			'Undetected Rust hacks mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
-		keywords: ['undetected rust hacks', 'eac', 'rust hacks', 'rust cheats', 'maintenance'],
-		imageAlt: 'Undetected Rust hacks and Easy Anti-Cheat maintenance workflow',
+			'Undetected IsleCheat mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
+		keywords: ['undetected IsleCheat', 'eac', 'IsleCheat', 'rust cheats', 'maintenance'],
+		imageAlt: 'Undetected IsleCheat and Easy Anti-Cheat maintenance workflow',
 		sections: [
 			{
 				h2: 'What undetected really means',
 				paragraphs: [
-					'Undetected Rust hacks are rebuilt when Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
+					'Undetected IsleCheat are rebuilt when Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
 					'Status pages: <a href="/updates/">Updates</a>, <a href="/undetected-rust-cheats/">undetected guide</a>, <a href="/eac-bypass-rust/">EAC bypass</a>.',
 				],
 			},
@@ -610,7 +610,7 @@ const sources = [
 				h2: 'Patch-day workflow',
 				paragraphs: [
 					`Check ${EXT.status} for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.`,
-					'Commercial entry points: <a href="/rust-hacks/">Rust hacks</a> and <a href="/rust-cheats-2026/">rust cheats 2026</a>.',
+					'Commercial entry points: <a href="/rust-hacks/">IsleCheat</a> and <a href="/rust-cheats-2026/">rust cheats 2026</a>.',
 				],
 			},
 			{
@@ -630,37 +630,37 @@ const sources = [
 		category: 'Comparisons',
 		featured: true,
 		slug: 'rust-hacks-vs-cheatvault-comparison',
-		title: 'Rust Hacks vs CheatVault: Honest 2026 Comparison',
+		title: 'IsleCheat vs CheatVault: Honest 2026 Comparison',
 		metaDescription:
-			'Rust Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.',
-		h1: 'Rust Hacks vs CheatVault: Honest Comparison',
+			'IsleCheat vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.',
+		h1: 'IsleCheat vs CheatVault: Honest Comparison',
 		intro:
-			'I ran both CheatVault and Rust Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
-		keywords: ['rust hacks vs cheatvault', 'cheatvault comparison', 'rust cheats', 'esp', 'eac', 'pricing'],
-		imageAlt: 'Rust Hacks vs CheatVault feature and pricing comparison for 2026',
+			'I ran both CheatVault and IsleCheat through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
+		keywords: ['IsleCheat vs cheatvault', 'cheatvault comparison', 'rust cheats', 'esp', 'eac', 'pricing'],
+		imageAlt: 'IsleCheat vs CheatVault feature and pricing comparison for 2026',
 		sections: [
 			{
 				h2: 'Why I compared these two in the first place',
 				paragraphs: [
-					'CheatVault shows up in almost every Rust cheat thread alongside Rust Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
-					'I kept CheatVault for about six weeks in Chapter 7 Season 2, then switched to Rust Hacks for the back half of the season. Same PC, same sens, mostly monuments and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
+					'CheatVault shows up in almost every Rust cheat thread alongside IsleCheat. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
+					'I kept CheatVault for about six weeks in Chapter 7 Season 2, then switched to IsleCheat for the back half of the season. Same PC, same sens, mostly monuments and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
 					'Fair warning: neither tool makes you invincible. Epic\'s Easy Anti-Cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.',
 				],
 			},
 			{
 				h2: 'Price breakdown — monthly, lifetime, and hidden costs',
 				paragraphs: [
-					'Rust Hacks lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
-					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two EAC patches. Rust Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
-					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on Rust Hacks, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
+					'IsleCheat lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
+					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two EAC patches. IsleCheat had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
+					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on IsleCheat, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
 				],
 			},
 			{
 				h2: 'Feature table — ESP, soft aim, radar, and cloud DMA',
 				paragraphs: [
-					'<table><thead><tr><th>Feature</th><th>Rust Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
-					'Rust Hacks wins on toggles and profile flexibility. I run ESP boxes + loot markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
-					'Soft aim mattered more than I expected in monuments. Rust Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
+					'<table><thead><tr><th>Feature</th><th>IsleCheat</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
+					'IsleCheat wins on toggles and profile flexibility. I run ESP boxes + loot markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
+					'Soft aim mattered more than I expected in monuments. IsleCheat let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
 				],
 			},
 			{
@@ -668,13 +668,13 @@ const sources = [
 				paragraphs: [
 					'Both brands had public downtime after major EAC updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.',
 					'CheatVault\'s Discord would go quiet for 48–72 hours after big patches. No ETA, just "working on it." I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could\'ve been coincidence, but it shook my confidence.',
-					'Rust Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-rust-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
+					'IsleCheat posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-rust-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
 				],
 			},
 			{
 				h2: 'Where CheatVault still wins',
 				paragraphs: [
-					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Rust Hacks support answered faster for me, but the community volume is smaller.',
+					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — IsleCheat support answered faster for me, but the community volume is smaller.',
 					'CheatVault also bundles a standalone replay-style overlay tool in their premium tier. I did not use it much, but content creators might value the extra capture layer.',
 					'If you only play once or twice a week and just want basic ESP without caring about patch ETAs, CheatVault\'s feature floor is fine. Casual cadence hides downtime pain.',
 				],
@@ -682,9 +682,9 @@ const sources = [
 			{
 				h2: 'Verdict — who should pick which',
 				paragraphs: [
-					'Pick Rust Hacks if you play ranked or monuments multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
+					'Pick IsleCheat if you play ranked or monuments multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
 					'Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.',
-					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Rust Hacks stack overview, start at <a href="/rust-hacks/">Rust hacks</a>.',
+					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full IsleCheat stack overview, start at <a href="/rust-hacks/">IsleCheat</a>.',
 				],
 			},
 		],
@@ -699,17 +699,17 @@ const sources = [
 		slug: 'elitefn-vs-rust-hacks-two-week-test',
 		title: 'I Tried EliteFN for 2 Weeks Before Switching',
 		metaDescription:
-			'EliteFN vs Rust Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.',
-		h1: 'I Tried EliteFN for 2 Weeks Before Switching to Rust Hacks',
+			'EliteFN vs IsleCheat — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.',
+		h1: 'I Tried EliteFN for 2 Weeks Before Switching to IsleCheat',
 		intro:
-			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to Rust Hacks. This is what actually differed.',
-		keywords: ['elitefn vs rust hacks', 'elitefn review', 'rust cheats comparison', 'soft aim', 'esp boxes'],
-		imageAlt: 'EliteFN vs Rust Hacks two week comparison test for Rust cheats',
+			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to IsleCheat. This is what actually differed.',
+		keywords: ['elitefn vs IsleCheat', 'elitefn review', 'rust cheats comparison', 'soft aim', 'esp boxes'],
+		imageAlt: 'EliteFN vs IsleCheat two week comparison test for Rust cheats',
 		sections: [
 			{
 				h2: 'Week one — setup, first impressions, and the menu learning curve',
 				paragraphs: [
-					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Rust Hacks later.',
+					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as IsleCheat later.',
 					'EliteFN\'s menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.',
 					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Loot ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
 				],
@@ -718,7 +718,7 @@ const sources = [
 				h2: 'Soft aim, weapons, and controller testing',
 				paragraphs: [
 					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in monuments. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
-					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Rust Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
+					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. IsleCheat later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
 					'Hammer AR tracking at 40–50m was the benchmark test. EliteFN smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in creative 1v1s with friends.',
 				],
 			},
@@ -727,22 +727,22 @@ const sources = [
 				paragraphs: [
 					'Day eleven hit a Rust + EAC patch. Standard for any cheat user. EliteFN status channel said "investigating." No ETA. I skipped ranked for two days waiting — squad moved on without me.',
 					'Day thirteen a rebuild dropped. Loaded in, played two pubs, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on EliteFN after that rebuild. Unverified story, but combined with downtime it was my cue to bail.',
-					'I switched to Rust Hacks lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
+					'I switched to IsleCheat lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
 				],
 			},
 			{
 				h2: 'Side-by-side after switching — what improved',
 				paragraphs: [
-					'Rust Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
+					'IsleCheat ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
 					'Per-weapon soft aim profiles meant I stopped retuning between AR and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat EliteFN\'s "ask sales" flow.',
-					'Support reply time: EliteFN ticket answered in ~5 hours once. Rust Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
+					'Support reply time: EliteFN ticket answered in ~5 hours once. IsleCheat support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
 				],
 			},
 			{
 				h2: 'Price and value snapshot',
 				paragraphs: [
-					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Rust Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
-					'Feature-per-dollar favors Rust Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
+					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). IsleCheat monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
+					'Feature-per-dollar favors IsleCheat for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
 					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/rust-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
 				],
 			},
@@ -750,8 +750,8 @@ const sources = [
 				h2: 'Would I recommend EliteFN to anyone?',
 				paragraphs: [
 					'Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.',
-					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Rust Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
-					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/rust-hacks/">Rust hacks</a> and <a href="/setup/">Setup</a> before checkout.',
+					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, IsleCheat fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
+					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/rust-hacks/">IsleCheat</a> and <a href="/setup/">Setup</a> before checkout.',
 				],
 			},
 		],
@@ -764,51 +764,51 @@ const sources = [
 		category: 'Comparisons',
 		featured: false,
 		slug: 'rust-hacks-vs-ghostware-features-pricing',
-		title: 'Rust Hacks vs GhostWare: Features & Pricing',
+		title: 'IsleCheat vs GhostWare: Features & Pricing',
 		metaDescription:
-			'Rust Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
-		h1: 'Rust Hacks vs GhostWare: Features, Pricing, and Detection Notes',
+			'IsleCheat vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
+		h1: 'IsleCheat vs GhostWare: Features, Pricing, and Detection Notes',
 		intro:
-			'GhostWare markets hard on "stealth" branding. Rust Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
-		keywords: ['ghostware vs rust hacks', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
-		imageAlt: 'Rust Hacks vs GhostWare features pricing and EAC comparison',
+			'GhostWare markets hard on "stealth" branding. IsleCheat markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
+		keywords: ['ghostware vs IsleCheat', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
+		imageAlt: 'IsleCheat vs GhostWare features pricing and EAC comparison',
 		sections: [
 			{
 				h2: 'Two different philosophies — minimal vs full-stack',
 				paragraphs: [
-					'GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. Rust Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
+					'GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. IsleCheat bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
 					'Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for ranked nights — visibility, flanks, and firefight assist without swapping executables.',
-					'I used GhostWare for ten days on an alt account while keeping Rust Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
+					'I used GhostWare for ten days on an alt account while keeping IsleCheat on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
 				],
 			},
 			{
 				h2: 'Feature and pricing comparison table',
 				paragraphs: [
-					'<table><thead><tr><th></th><th>Rust Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
-					'GhostWare is cheaper on sticker price. Rust Hacks includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
-					'Lifetime math: GhostWare $120 vs Rust Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
+					'<table><thead><tr><th></th><th>IsleCheat</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
+					'GhostWare is cheaper on sticker price. IsleCheat includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
+					'Lifetime math: GhostWare $120 vs IsleCheat $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
 				],
 			},
 			{
 				h2: 'Detection history — what public signals exist',
 				paragraphs: [
-					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Rust Hacks had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
+					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. IsleCheat had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
 					'No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an EAC patch, I do not queue on that tool.',
-					'Rust Hacks documents maintenance on <a href="/eac-bypass-rust/">EAC bypass workflow</a> and the <a href="/undetected-rust-cheats/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
+					'IsleCheat documents maintenance on <a href="/eac-bypass-rust/">EAC bypass workflow</a> and the <a href="/undetected-rust-cheats/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
 				],
 			},
 			{
 				h2: 'Gameplay feel — monuments and ranked squads',
 				paragraphs: [
-					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Rust Hacks boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
-					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Rust Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.',
-					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Rust Hacks suggested baseline FOV values in support docs; less guesswork.',
+					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. IsleCheat boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
+					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. IsleCheat soft aim took tuning time but held Hammer AR fights better once profiles were set.',
+					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. IsleCheat suggested baseline FOV values in support docs; less guesswork.',
 				],
 			},
 			{
 				h2: 'Pros and cons summary',
 				paragraphs: [
-					'<strong>Rust Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
+					'<strong>IsleCheat pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
 					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited loot ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
 					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression guide</a> and <a href="/blog/rust-hacks-complete-guide-2026/">complete hacks guide</a>.',
 				],
@@ -817,7 +817,7 @@ const sources = [
 				h2: 'Which one should you buy?',
 				paragraphs: [
 					'Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.',
-					'Choose Rust Hacks if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
+					'Choose IsleCheat if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
 					'Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href="/rust-esp/">ESP</a>, <a href="/rust-radar-hack/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
 				],
 			},

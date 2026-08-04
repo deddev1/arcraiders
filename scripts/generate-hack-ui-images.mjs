@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate dark tactical cheat-UI mockups (ESP / aimbot / menu / status).
- * Not combat stock photos — product/HUD visuals for rust hacks SEO filenames.
+ * Not combat stock photos — product/HUD visuals for IsleCheat SEO filenames.
  */
 import { mkdir, readdir, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -60,13 +60,13 @@ function frame(title, body) {
 
 function heroSvg() {
 	return frame(
-		'RUST HACKS',
+		'IsleCheat',
 		`
   <rect x="48" y="100" width="720" height="720" rx="12" fill="url(#panel)" stroke="#c4784033" stroke-width="2"/>
   <text x="80" y="160" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">ESP · AIMBOT · WALLHACK</text>
   <text x="80" y="210" fill="#b8aea2" font-family="Segoe UI, Arial, sans-serif" font-size="24">Undetected package UI for Windows PC</text>
   <rect x="80" y="260" width="280" height="48" rx="8" fill="#c47840"/>
-  <text x="120" y="292" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">BUY RUST HACKS</text>
+  <text x="120" y="292" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">BUY IsleCheat</text>
   <g transform="translate(860,140)">
     <rect width="680" height="620" rx="14" fill="#0f1317" stroke="#c4784044" stroke-width="2"/>
     <text x="28" y="44" fill="#e08c48" font-family="Consolas, monospace" font-size="18">overlay.esp</text>
@@ -85,10 +85,10 @@ function heroSvg() {
 
 function coverSvg() {
 	return frame(
-		'RUST HACKS PACKAGE',
+		'IsleCheat PACKAGE',
 		`
   <rect x="200" y="180" width="1200" height="520" rx="16" fill="url(#panel)" stroke="#c4784055" stroke-width="2"/>
-  <text x="260" y="300" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">RUST HACKS</text>
+  <text x="260" y="300" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">IsleCheat</text>
   <text x="260" y="370" fill="#d4a574" font-family="Segoe UI, Arial, sans-serif" font-size="32">ESP · Aimbot · Wallhack · Radar</text>
   <rect x="260" y="420" width="180" height="36" rx="6" fill="#243028"/>
   <text x="285" y="444" fill="#7a9e8a" font-family="Consolas, monospace" font-size="16">STATUS: ONLINE</text>
@@ -177,7 +177,7 @@ function menuSvg() {
 
 function statusSvg() {
 	return frame(
-		'RUST HACKS STATUS',
+		'IsleCheat STATUS',
 		`
   <rect x="360" y="220" width="880" height="420" rx="16" fill="url(#panel)" stroke="#7a9e8a66" stroke-width="2"/>
   <circle cx="480" cy="360" r="48" fill="#1a2a22" stroke="#7a9e8a" stroke-width="3"/>
@@ -185,7 +185,7 @@ function statusSvg() {
   <text x="560" y="340" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">MAINTAINED</text>
   <text x="560" y="390" fill="#b8aea2" font-family="Segoe UI, Arial, sans-serif" font-size="22">EAC rebuild posted · check Updates</text>
   <text x="560" y="460" fill="#8f8578" font-family="Consolas, monospace" font-size="16">No permanent undetected guarantee</text>
-  <text x="560" y="520" fill="#d4a574" font-family="Consolas, monospace" font-size="16">rust hacks · status panel</text>`,
+  <text x="560" y="520" fill="#d4a574" font-family="Consolas, monospace" font-size="16">IsleCheat · status panel</text>`,
 	);
 }
 
@@ -220,7 +220,7 @@ function softAimSvg() {
 
 function panelSvg() {
 	return frame(
-		'RUST HACKS PANEL',
+		'IsleCheat PANEL',
 		`
   <rect x="120" y="160" width="420" height="560" rx="12" fill="url(#panel)" stroke="#c4784044"/>
   <rect x="580" y="160" width="420" height="560" rx="12" fill="url(#panel)" stroke="#c4784044"/>
@@ -239,7 +239,7 @@ function dashboardSvg() {
 		'RUST CHEATS DASHBOARD',
 		`
   <rect x="80" y="120" width="1440" height="120" rx="10" fill="url(#panel)" stroke="#c4784033"/>
-  <text x="120" y="190" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Rust Hacks dashboard</text>
+  <text x="120" y="190" fill="#f2ebe3" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">IsleCheat dashboard</text>
   <text x="1100" y="190" fill="#7a9e8a" font-family="Consolas, monospace" font-size="18">ONLINE</text>
   <rect x="80" y="280" width="460" height="480" rx="12" fill="url(#panel)" stroke="#c4784033"/>
   <rect x="580" y="280" width="460" height="480" rx="12" fill="url(#panel)" stroke="#c4784033"/>

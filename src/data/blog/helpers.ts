@@ -152,7 +152,7 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'Rust Hacks Intel blog',
+					title: 'IsleCheat Intel blog',
 					caption: 'Rust Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],

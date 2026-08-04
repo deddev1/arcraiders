@@ -12,23 +12,23 @@ export type GalleryUi = {
 
 export const galleryUi: Record<LocaleCode, GalleryUi> = {
 	en: {
-		eyebrow: 'Rust Cheats',
-		title: 'Rust gallery',
+		eyebrow: 'IsleCheat',
+		title: 'Isle gallery',
 		subtitle:
-			'In-game stills from compound holds, monument runs, and wipe-day fights — shown with the ESP, loot, and aimbot tools players actually use.',
+			'In-game stills from The Isle — hunts, dens, and open-map fights — shown with the ESP, loot, and aimbot tools players actually use.',
 		lead:
-			'Rust Cheats is built for wipe-to-raid play: read players through walls, mark crates before you push, keep a 2D radar on flanks, and tune aim assist before you buy a seat.',
+			'IsleCheat is built for hunt-to-survive play: read players through terrain, mark threats before you push, keep a 2D radar on flanks, and tune aim assist before you buy a seat.',
 		highlights: [
-			{ title: 'Player & Squad ESP', copy: 'Box, skeleton, and distance readouts on enemy players through terrain and buildings so you pick fights at oil, Launch Site, and compounds with real intel.' },
-			{ title: 'Loot & Chest Markers', copy: 'Pin crates, locked boxes, and high-tier loot without burying your screen mid-raid or mid-roam.' },
-			{ title: 'Radar & Threat Status', copy: 'Compact 2D radar and status cues for flanks, neighbors, and vehicle pushes while you hold a base or rotate between monuments.' },
-			{ title: 'Rust Aimbot Controls', copy: 'Tune smoothness, FOV, target priority, and hotkeys for AKs, SMGs, and bolt rifles before you commit to a license.' },
+			{ title: 'Player & Squad ESP', copy: 'Box, skeleton, and distance readouts on enemy players through terrain and dens so you pick fights with real intel.' },
+			{ title: 'Loot & Chest Markers', copy: 'Pin crates, locked boxes, and high-tier loot without burying your screen mid-hunt or mid-roam.' },
+			{ title: 'Radar & Threat Status', copy: 'Compact 2D radar and status cues for flanks, neighbors, and nearby threats while you hold a den or rotate the map.' },
+			{ title: 'Isle Aimbot Controls', copy: 'Tune smoothness, FOV, target priority, and hotkeys before you commit to a license.' },
 			{ title: 'Why players pick this package', copy: 'One license covers ESP, wallhack-style boxes, soft aim, and radar — so you are not stacking three tools or paying for features you never open.' },
-			{ title: 'EAC maintenance edge', copy: 'After Easy Anti-Cheat patches we rebuild and post status on Updates before you queue. Less guesswork on wipe morning and major Rust Tuesdays.' },
-			{ title: 'PC + controller ready', copy: 'Profiles and hotkeys for mouse/keyboard plus pad support, so the same seat works whether you roam or hold a compound on controller.' },
+			{ title: 'EAC maintenance edge', copy: 'After Easy Anti-Cheat patches we rebuild and post status on Updates before you queue. Less guesswork on patch day.' },
+			{ title: 'PC + controller ready', copy: 'Profiles and hotkeys for mouse/keyboard plus pad support, so the same seat works whether you roam or hold ground on controller.' },
 			{ title: 'Clear buy advantages', copy: 'Instant digital delivery, public pricing ($35/mo or $150 life), and a support path with your order ID — built for players who want the cheat online fast, not a mystery Discord wait.' },
 		],
-		updatesLabel: 'Rust cheat updates',
+		updatesLabel: 'IsleCheat updates',
 		updatesShort: 'Updates',
 	},
 	es: {

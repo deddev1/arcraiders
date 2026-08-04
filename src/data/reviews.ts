@@ -12,8 +12,8 @@ export function absoluteReviewUrl(slug?: string): string {
 
 const reviewOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-	title: 'Rust Hacks customer reviews',
-	caption: 'Rust Hacks buyer reviews for ESP soft aim, radar, and cloud DMA',
+	title: 'IsleCheat customer reviews',
+	caption: 'IsleCheat buyer reviews for ESP soft aim, radar, and cloud DMA',
 };
 
 /** English review routes for sitemap.xml — /reviews/ index + one URL per review. */
@@ -48,7 +48,7 @@ export function getReviewSitemapEntries() {
 			images: [
 				{
 					url: reviewOgImage.url,
-					title: `Rust Hacks review by @${review.handle}`,
+					title: `IsleCheat review by @${review.handle}`,
 					caption: review.seoDescription,
 				},
 			],

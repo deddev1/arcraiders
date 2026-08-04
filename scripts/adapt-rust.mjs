@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * One-time migration: Fortnite Hacks site → Rust Hacks.
+ * One-time migration: Fortnite Hacks site → IsleCheat.
  * Run from project root: node scripts/adapt-rust.mjs
  */
 import { readFile, writeFile, readdir, rm, rename } from 'node:fs/promises';
@@ -29,8 +29,8 @@ const RENAME_PAGE_DIRS = [
 
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
-	['fortnitehack.net', 'rusthacks.net'],
-	['support@fortnitehack.net', 'support@rusthacks.net'],
+	['fortnitehack.net', 'islecheat.net'],
+	['support@fortnitehack.net', 'support@islecheat.net'],
 	['/products/fortnite', '/products/rust'],
 	['fortnite-esp-wallhack', 'rust-esp-wallhack'],
 	['fortnite-esp-hack', 'rust-esp-hack'],
@@ -78,8 +78,8 @@ const REPLACEMENTS = [
 	['reboot van rotations', 'monument rotations'],
 	['reboot van fight', 'oil rig fight'],
 	['reboot van', 'monument'],
-	['Fortnite Hacks', 'Rust Hacks'],
-	['Fortnite hacks', 'Rust hacks'],
+	['Fortnite Hacks', 'IsleCheat'],
+	['Fortnite hacks', 'IsleCheat'],
 	['Fortnite Cheats', 'Rust Cheats'],
 	['Fortnite cheats', 'Rust cheats'],
 	['Fortnite cheat', 'Rust cheat'],
@@ -87,14 +87,14 @@ const REPLACEMENTS = [
 	['Fortnite ESP', 'Rust ESP'],
 	['Fortnite Intel', 'Rust Intel'],
 	['Fortnite', 'Rust'],
-	['fortnite hacks', 'rust hacks'],
+	['fortnite hacks', 'IsleCheat'],
 	['fortnite cheats', 'rust cheats'],
 	['fortnite cheat', 'rust cheat'],
 	['fortnite aimbot', 'rust aimbot'],
 	['fortnite esp', 'rust esp'],
 	['fortnite', 'rust'],
 	['FortniteCheatsSite', 'RustHacksSite'],
-	['Buy Fortnite Hacks', 'Buy Rust Hacks'],
+	['Buy Fortnite Hacks', 'Buy IsleCheat'],
 ];
 
 const TEXT_EXTENSIONS = new Set([
@@ -224,7 +224,7 @@ async function renameImages() {
 }
 
 async function main() {
-	console.log('Adapting Fortnite template → Rust Hacks...\n');
+	console.log('Adapting Fortnite template → IsleCheat...\n');
 	await renamePageDirs();
 	await renameDataFile();
 	await transformTextFiles();

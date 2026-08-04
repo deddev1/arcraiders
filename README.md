@@ -1,6 +1,6 @@
-# Rust Hacks — Marketing Site
+# IsleCheat — Marketing Site
 
-Static Astro 7 site for [rusthacks.net](https://rusthacks.net). Primary SEO focus: **rust hacks** (supporting: rust cheats, rust esp, rust aimbot).
+Static Astro 7 site for [islecheat.net](https://islecheat.net). Primary SEO focus: **IsleCheat** (supporting: rust cheats, rust esp, rust aimbot).
 
 ## Stack
 
@@ -35,7 +35,7 @@ npm run optimize:images
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Custom domain **rusthacks.net** (apex) and redirect **www** → apex
+5. Custom domain **islecheat.net** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -48,8 +48,8 @@ npm run pages:deploy
 
 - Node.js >= 22.12.0
 - Checkout URL in `src/data/site.ts` (`siteConfig.checkoutUrl`)
-- Canonical site URL: `https://rusthacks.net`
+- Canonical site URL: `https://islecheat.net`
 
 ## License
 
-Private — for rusthacks.net deployment only.
+Private — for islecheat.net deployment only.

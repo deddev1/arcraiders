@@ -2,21 +2,21 @@
  * Site-wide SEO keyword cluster — keep this tight and single-intent.
  * One product angle: Rust (survival game) hacks for Windows PC.
  */
-export const primaryKeyword = 'rust hacks';
+export const primaryKeyword = 'IsleCheat';
 
 /** ~7 phrases max — no synonym stuffing. */
 export const metaKeywords = [
-	'rust hacks',
-	'rust cheats',
-	'rust esp',
-	'rust aimbot',
-	'undetected rust hacks',
-	'rust wallhack',
-	'rust hacks 2026',
+	'IsleCheat',
+	'isle cheats',
+	'isle esp',
+	'isle aimbot',
+	'undetected IsleCheat',
+	'isle wallhack',
+	'IsleCheat 2026',
 ] as const;
 
 export const metaKeywordsContent = metaKeywords.join(', ');
 
-export const defaultTitle = 'Rust Hacks 2026 | Undetected ESP & Aimbot';
+export const defaultTitle = 'IsleCheat 2026 | Undetected ESP & Aimbot';
 export const defaultDescription =
-	'Undetected rust hacks for PC with ESP, aimbot, and wallhack overlays. Compare monthly and lifetime plans, features, setup, and EAC update status before you buy.';
+	'Undetected IsleCheat for PC with ESP, aimbot, and wallhack overlays. Compare monthly and lifetime plans, features, setup, and EAC update status before you buy.';

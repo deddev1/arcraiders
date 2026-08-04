@@ -74,7 +74,7 @@ const extraGraph: Record<string, unknown>[] = [
 	description={review.seoDescription}
 	canonicalPath={canonicalPath}
 	ogImage={siteConfig.defaultOgImage}
-	ogImageAlt={`Rust Hacks review by @${review.handle}`}
+	ogImageAlt={`IsleCheat review by @${review.handle}`}
 	type="article"
 	locale="en"
 	breadcrumbs={[
@@ -99,7 +99,7 @@ const extraGraph: Record<string, unknown>[] = [
 				<header class="review-detail__head">
 					<span class="review-detail__avatar" aria-hidden="true">{review.handle.charAt(0).toUpperCase()}</span>
 					<div class="review-detail__meta">
-						<h1 class="review-detail__title">Rust Hacks review by @{review.handle}</h1>
+						<h1 class="review-detail__title">IsleCheat review by @{review.handle}</h1>
 						<p class="review-detail__stars" aria-label={`${review.rating} out of 5 stars`}>
 							<span aria-hidden="true">{stars(review.rating)}</span>
 							<span class="review-detail__rating">{review.rating}/5</span>
@@ -118,15 +118,15 @@ const extraGraph: Record<string, unknown>[] = [
 
 				<div class="review-detail__ctas">
 					<a href={siteConfig.checkoutUrl} class="review-detail__buy" rel="noopener noreferrer">
-						Buy Rust Hacks — ${productInfo.plans[0].price}
+						Buy IsleCheat — ${productInfo.plans[0].price}
 					</a>
 					<a href="/pricing/" class="review-detail__link-btn">Compare pricing</a>
-					<a href="/" class="review-detail__link-btn">Rust Hacks home</a>
+					<a href="/" class="review-detail__link-btn">IsleCheat home</a>
 				</div>
 			</article>
 
 			<section class="review-detail__more" aria-labelledby="more-reviews-title">
-				<h2 id="more-reviews-title">More Rust hacks reviews</h2>
+				<h2 id="more-reviews-title">More IsleCheat reviews</h2>
 				<div class="review-detail__more-grid">
 					{
 						moreReviews.map((other) => (
@@ -143,7 +143,7 @@ const extraGraph: Record<string, unknown>[] = [
 					}
 				</div>
 				<p class="review-detail__all-link">
-					<a href={reviewsBasePath}>All {customerReviewStats.totalCount} Rust Hacks reviews</a>
+					<a href={reviewsBasePath}>All {customerReviewStats.totalCount} IsleCheat reviews</a>
 				</p>
 			</section>
 		</div>

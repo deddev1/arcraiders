@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['Ricochet Bypass', 'EAC Bypass'],
 	['Ricochet', 'Easy Anti-Cheat (EAC)'],
 	['ricochet', 'eac'],
-	['support@warzonescheats.net', 'support@rusthacks.net'],
+	['support@warzonescheats.net', 'support@islecheat.net'],
 	['Verdansk, Urzikstan, and Rebirth Island', 'monuments, oil rigs, and wipe-cycle raids'],
 	['Verdansk, Urzikstan and Rebirth Island', 'monuments, oil rigs and wipe-cycle raids'],
 	['gulag fights', 'monument rotations'],

@@ -1,28 +1,26 @@
 import { siteConfig } from './site';
 
 /**
- * Distinct real screenshots (unique bytes):
- * rust-hacks-hero, rust-esp-overlay, rust-esp-bots, rust-esp-hitbox, rust-aimbot-menu,
- * rust-recoil-trainer.
- * Alias paths that share bytes with these (cover/dashboard/aimbot-ui) are avoided.
+ * Distinct stills (unique bytes) — The Isle Steam screenshots mapped onto
+ * existing SEO filenames so hero/gallery/OG paths stay stable.
  */
 
 /** Trimmed hero loop — first ~6s of the background clip. */
 export const rustHeroVideo = {
 	src: '/videos/rust-hacks-hero-6s.mp4',
 	poster: '/images/rust-hacks-hero.webp',
-	title: 'Rust hacks hero background',
-	ariaLabel: 'Rust hacks gameplay background — short loop',
+	title: 'IsleCheat hero background',
+	ariaLabel: 'IsleCheat gameplay background — short loop',
 } as const;
 
 /** Full gameplay clip for product preview + gallery. */
 export const rustVideo = {
 	src: '/videos/rust-hacks-background.mp4',
-	/** Hitbox still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
+	/** Distinct still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
 	poster: '/images/rust-esp-hitbox.webp',
-	title: 'Rust hacks background video',
-	ariaLabel: 'Rust hacks gameplay preview — ESP and aimbot on PC',
-	caption: 'Rust hacks gameplay video with ESP and aimbot',
+	title: 'IsleCheat background video',
+	ariaLabel: 'IsleCheat gameplay preview — ESP and aimbot on PC',
+	caption: 'IsleCheat gameplay video with ESP and aimbot',
 } as const;
 
 export const rustImages = {
@@ -45,23 +43,23 @@ export const rustImages = {
 	product: [
 		{
 			src: '/images/rust-esp-overlay.webp',
-			alt: 'Rust ESP with green skeleton, bounding box, and loot inventory labels',
+			alt: 'The Isle gameplay — dense jungle and dinosaur hunt view',
 		},
 		{
 			src: '/images/rust-esp-bots.webp',
-			alt: 'Rust ESP boxes and distance labels on UKN practice bots',
+			alt: 'The Isle open-world survival landscape with dinosaurs',
 		},
 		{
 			src: '/images/rust-esp-hitbox.webp',
-			alt: 'Rust wallhack ESP green hitbox around a hazmat-suited player',
+			alt: 'The Isle predator encounter in prehistoric terrain',
 		},
 		{
 			src: '/images/rust-aimbot-menu.webp',
-			alt: 'Rust aimbot menu overlay with red skeleton ESP and feature toggles',
+			alt: 'The Isle dinosaur pack roaming the island',
 		},
 		{
 			src: '/images/rust-hacks-hero.webp',
-			alt: 'Rust aimbot holographic sight with ESP skeleton and red head lock',
+			alt: 'The Isle cinematic island survival scene',
 		},
 	],
 	/**
@@ -72,59 +70,59 @@ export const rustImages = {
 	gallery: [
 		{
 			src: '/images/rust-aimbot-menu.webp',
-			alt: 'Rust aimbot cheats menu with red skeleton ESP lock',
+			alt: 'The Isle dinosaur pack roaming the island',
 		},
 		{
 			src: '/images/rust-esp-overlay.webp',
-			alt: 'Rust ESP overlay with skeleton ESP and inventory labels',
+			alt: 'The Isle gameplay — dense jungle and dinosaur hunt view',
 		},
 		{
 			src: '/images/rust-esp-bots.webp',
-			alt: 'Rust ESP boxes, weapon labels, and distances on UKN practice bots',
+			alt: 'The Isle open-world survival landscape with dinosaurs',
 		},
 		{
 			src: '/images/rust-esp-hitbox.webp',
-			alt: 'Rust ESP green hitbox wallhack on a hazmat suit player',
+			alt: 'The Isle predator encounter in prehistoric terrain',
 		},
 		{
 			src: '/images/rust-hacks-hero.webp',
-			alt: 'Rust hacks aimbot view with ESP skeleton and red head lock',
+			alt: 'The Isle cinematic island survival scene',
 		},
 		{
 			src: '/images/rust-recoil-trainer.webp',
-			alt: 'Rust recoil trainer assault rifle holographic sight practice',
+			alt: 'The Isle shoreline and wilderness atmosphere',
 		},
 	],
 	sitemap: [
 		{
 			src: '/images/rust-hacks-hero.webp',
-			title: 'Rust Hacks | ESP & Aimbot',
-			caption: 'Rust hacks aimbot sight with ESP skeleton and head lock',
+			title: 'IsleCheat | ESP & Aimbot',
+			caption: 'The Isle cinematic island survival scene',
 		},
 		{
 			src: '/images/rust-esp-overlay.webp',
-			title: 'Rust ESP overlay',
-			caption: 'Rust ESP hack with skeletons, loot labels, and distances',
+			title: 'Isle ESP overlay',
+			caption: 'The Isle gameplay — dense jungle and dinosaur hunt view',
 		},
 		{
 			src: '/images/rust-esp-bots.webp',
-			title: 'Rust ESP practice bots',
-			caption: 'Rust ESP boxes and distance markers on UKN practice bots',
+			title: 'Isle survival landscape',
+			caption: 'The Isle open-world survival landscape with dinosaurs',
 		},
 		{
 			src: '/images/rust-esp-hitbox.webp',
-			title: 'Rust ESP hitbox',
-			caption: 'Rust wallhack green hitbox ESP on a hazmat player',
+			title: 'Isle predator view',
+			caption: 'The Isle predator encounter in prehistoric terrain',
 		},
 		{
 			src: '/images/rust-aimbot-menu.webp',
-			title: 'Rust Aimbot menu',
-			caption: 'Rust aimbot menu with red skeleton ESP and silent aim toggles',
+			title: 'Isle pack roam',
+			caption: 'The Isle dinosaur pack roaming the island',
 		},
 		{
 			src: '/images/rust-recoil-trainer.webp',
-			title: 'Rust recoil trainer',
-			caption: 'Rust recoil trainer assault rifle holographic sight practice',
+			title: 'Isle wilderness',
+			caption: 'The Isle shoreline and wilderness atmosphere',
 		},
 	],
 } as const;

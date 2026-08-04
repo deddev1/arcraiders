@@ -60,9 +60,9 @@ const PAGE_META_TAILS = {
 	undetected: { suffix: 'EAC Safe Status', focus: 'undetected maintenance after Easy Anti-Cheat patches' },
 	wallhack: { suffix: 'ESP Visibility', focus: 'wallhack ESP for players, loot, and distance' },
 	radar: { suffix: '2D Threat Overlay', focus: '2D radar cues for flanks and rotations' },
-	'eac-bypass': { suffix: 'Patch Maintenance', focus: 'how EAC updates are handled for Rust hacks' },
+	'eac-bypass': { suffix: 'Patch Maintenance', focus: 'how EAC updates are handled for IsleCheat' },
 	'cheats-2026': { suffix: 'Buyer Guide', focus: '2026 Rust cheats checklist before checkout' },
-	hacks: { suffix: 'ESP Aimbot Guide', focus: 'the Rust hacks pillar for ESP and Aimbot' },
+	hacks: { suffix: 'ESP Aimbot Guide', focus: 'the IsleCheat pillar for ESP and Aimbot' },
 	'cheat-download': { suffix: 'Instant Access', focus: 'digital license download after payment' },
 	'mod-menu': { suffix: 'In-Game Toggles', focus: 'in-client ESP and soft aim toggles' },
 	'soft-aim': { suffix: 'Smooth Aim Settings', focus: 'smooth soft aim settings for PC and controllers' },
@@ -75,13 +75,13 @@ const PAGE_META_TAILS = {
 function productPage(locale, pageKey, topicName, cta2href) {
 	const p = phrases[locale];
 	const home = PAGE_META_HOME[locale];
-	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Rust Hacks', focus: 'ESP wallhack, radar, and Aimbot' };
+	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'IsleCheat', focus: 'ESP wallhack, radar, and Aimbot' };
 	let titleBase = topicName.includes('2026')
 		? `${topicName} | ${meta.suffix}`
 		: `${topicName} 2026 | ${meta.suffix}`;
 	// Short topic labels (FAQ, Support, etc.) need brand context for usable SERP titles.
 	if (titleBase.length < 35) {
-		titleBase = `${topicName} 2026 | Rust Hacks ${meta.suffix}`;
+		titleBase = `${topicName} 2026 | IsleCheat ${meta.suffix}`;
 	}
 	return {
 		title: clampTitle(stripZadeyoFromMeta(titleBase)),
@@ -120,7 +120,7 @@ const TOPIC_NAMES = {
 	radar: { en: 'Radar Hack', es: 'Radar hack', fr: 'Radar hack', de: 'Radar Hack', pt: 'Radar hack', it: 'Radar hack', nl: 'Radar Hack', pl: 'Radar hack', ru: 'Radar hack', tr: 'Radar hack', ar: 'Radar hack', ja: 'Radar Hack', ko: 'Radar Hack', zh: 'Radar Hack', hi: 'Radar Hack', id: 'Radar hack', th: 'Radar Hack', vi: 'Radar hack', uk: 'Radar hack', cs: 'Radar Hack', ro: 'Radar hack', sv: 'Radar Hack' },
 	'eac-bypass': { en: 'EAC Bypass', es: 'Bypass Easy Anti-Cheat (EAC)', fr: 'Bypass Easy Anti-Cheat (EAC)', de: 'EAC Bypass', pt: 'Bypass Easy Anti-Cheat (EAC)', it: 'Bypass Easy Anti-Cheat (EAC)', nl: 'EAC Bypass', pl: 'Bypass Easy Anti-Cheat (EAC)', ru: 'Bypass Easy Anti-Cheat (EAC)', tr: 'EAC bypass', ar: 'Bypass Easy Anti-Cheat (EAC)', ja: 'EAC Bypass', ko: 'EAC Bypass', zh: 'EAC Bypass', hi: 'EAC Bypass', id: 'Bypass Easy Anti-Cheat (EAC)', th: 'EAC Bypass', vi: 'Bypass Easy Anti-Cheat (EAC)', uk: 'Bypass Easy Anti-Cheat (EAC)', cs: 'EAC Bypass', ro: 'Bypass Easy Anti-Cheat (EAC)', sv: 'EAC Bypass' },
 	'cheats-2026': { en: 'Rust Cheats 2026', es: 'Rust Cheats 2026', fr: 'Rust Cheats 2026', de: 'Rust Cheats 2026', pt: 'Rust Cheats 2026', it: 'Rust Cheats 2026', nl: 'Rust Cheats 2026', pl: 'Rust Cheats 2026', ru: 'Rust Cheats 2026', tr: 'Rust Cheats 2026', ar: 'Rust Cheats 2026', ja: 'Rust Cheats 2026', ko: 'Rust Cheats 2026', zh: 'Rust Cheats 2026', hi: 'Rust Cheats 2026', id: 'Rust Cheats 2026', th: 'Rust Cheats 2026', vi: 'Rust Cheats 2026', uk: 'Rust Cheats 2026', cs: 'Rust Cheats 2026', ro: 'Rust Cheats 2026', sv: 'Rust Cheats 2026' },
-	hacks: { en: 'Rust Hacks', es: 'Rust Hacks', fr: 'Rust Hacks', de: 'Rust Hacks', pt: 'Rust Hacks', it: 'Rust Hacks', nl: 'Rust Hacks', pl: 'Rust Hacks', ru: 'Rust Hacks', tr: 'Rust Hacks', ar: 'Rust Hacks', ja: 'Rust Hacks', ko: 'Rust Hacks', zh: 'Rust Hacks', hi: 'Rust Hacks', id: 'Rust Hacks', th: 'Rust Hacks', vi: 'Rust Hacks', uk: 'Rust Hacks', cs: 'Rust Hacks', ro: 'Rust Hacks', sv: 'Rust Hacks' },
+	hacks: { en: 'IsleCheat', es: 'IsleCheat', fr: 'IsleCheat', de: 'IsleCheat', pt: 'IsleCheat', it: 'IsleCheat', nl: 'IsleCheat', pl: 'IsleCheat', ru: 'IsleCheat', tr: 'IsleCheat', ar: 'IsleCheat', ja: 'IsleCheat', ko: 'IsleCheat', zh: 'IsleCheat', hi: 'IsleCheat', id: 'IsleCheat', th: 'IsleCheat', vi: 'IsleCheat', uk: 'IsleCheat', cs: 'IsleCheat', ro: 'IsleCheat', sv: 'IsleCheat' },
 	'cheat-download': { en: 'Rust Cheat Download', es: 'Descarga Rust Cheats', fr: 'Téléchargement Rust Cheats', de: 'Rust Cheat Download', pt: 'Download Rust Cheats', it: 'Download Rust Cheats', nl: 'Rust Cheat Download', pl: 'Pobieranie Rust Cheats', ru: 'Скачать Rust Cheats', tr: 'Rust Hile İndir', ar: 'Rust Cheat Download', ja: 'Rust Cheat Download', ko: 'Rust Cheat Download', zh: 'Rust Cheat Download', hi: 'Rust Cheat Download', id: 'Rust Cheat Download', th: 'Rust Cheat Download', vi: 'Rust Cheat Download', uk: 'Завантаження Rust Cheats', cs: 'Rust Cheat Download', ro: 'Descărcare Rust Cheats', sv: 'Rust Cheat Download' },
 	'mod-menu': { en: 'Rust Mod Menu', es: 'Rust Mod Menu', fr: 'Rust Mod Menu', de: 'Rust Mod Menu', pt: 'Rust Mod Menu', it: 'Rust Mod Menu', nl: 'Rust Mod Menu', pl: 'Rust Mod Menu', ru: 'Rust Mod Menu', tr: 'Rust Mod Menu', ar: 'Rust Mod Menu', ja: 'Rust Mod Menu', ko: 'Rust Mod Menu', zh: 'Rust Mod Menu', hi: 'Rust Mod Menu', id: 'Rust Mod Menu', th: 'Rust Mod Menu', vi: 'Rust Mod Menu', uk: 'Rust Mod Menu', cs: 'Rust Mod Menu', ro: 'Rust Mod Menu', sv: 'Rust Mod Menu' },
 	'soft-aim': { en: 'Rust Soft Aim', es: 'Rust Soft Aim', fr: 'Rust Soft Aim', de: 'Rust Soft Aim', pt: 'Rust Soft Aim', it: 'Rust Soft Aim', nl: 'Rust Soft Aim', pl: 'Rust Soft Aim', ru: 'Rust Soft Aim', tr: 'Rust Soft Aim', ar: 'Rust Soft Aim', ja: 'Rust Soft Aim', ko: 'Rust Soft Aim', zh: 'Rust Soft Aim', hi: 'Rust Soft Aim', id: 'Rust Soft Aim', th: 'Rust Soft Aim', vi: 'Rust Soft Aim', uk: 'Rust Soft Aim', cs: 'Rust Soft Aim', ro: 'Rust Soft Aim', sv: 'Rust Soft Aim' },
@@ -163,10 +163,10 @@ function buildLegal(locale, pageKey, kind) {
 	};
 	const h1 = titles[kind][locale] ?? (kind === 'privacy' ? 'Privacy Policy' : kind === 'refund' ? 'Refund Policy' : 'Terms of Use');
 	return {
-		title: clampTitle(stripZadeyoFromMeta(`${h1} | Rust Hacks`)),
-		description: clampDesc(stripZadeyoFromMeta(`${h1} for Rust Hacks — ESP wallhack, Aimbot, ${p.win}.`)),
+		title: clampTitle(stripZadeyoFromMeta(`${h1} | IsleCheat`)),
+		description: clampDesc(stripZadeyoFromMeta(`${h1} for IsleCheat — ESP wallhack, Aimbot, ${p.win}.`)),
 		h1,
-		intro: p.s1(`${h1} for rusthacks.net and Rust licenses.`),
+		intro: p.s1(`${h1} for islecheat.net and Rust licenses.`),
 		imageAlt: `rust-cheats ${kind} ESP wallhack Aimbot legal page`,
 		galleryTitle: `Rust Cheats ${kind} resources`,
 		heroImage: HERO_IMAGES[pageKey],
@@ -179,7 +179,7 @@ function buildLegal(locale, pageKey, kind) {
 				kind === 'refund' ? (locale === 'es' ? 'Entrega digital' : locale === 'fr' ? 'Livraison numérique' : locale === 'de' ? 'Digitale Lieferung' : locale === 'ar' ? 'التسليم الرقمي' : locale === 'ja' ? 'デジタル配信' : 'Digital delivery') :
 				(locale === 'es' ? 'Aceptación de términos' : locale === 'fr' ? 'Acceptation' : locale === 'de' ? 'Annahme' : locale === 'ar' ? 'قبول الشروط' : locale === 'ja' ? '規約への同意' : 'Acceptance of terms'),
 				p.s1('Contact email, Zadeyo order references, and basic site security data.'),
-				kind === 'privacy' ? 'Payment details are processed by Zadeyo checkout — not stored on rusthacks.net.' : p.s2(),
+				kind === 'privacy' ? 'Payment details are processed by Zadeyo checkout — not stored on islecheat.net.' : p.s2(),
 			),
 			section(
 				kind === 'privacy' ? (locale === 'es' ? 'Uso de la información' : locale === 'fr' ? 'Utilisation' : locale === 'de' ? 'Datennutzung' : locale === 'ar' ? 'استخدام المعلومات' : locale === 'ja' ? '情報の利用' : 'How we use data') :
@@ -193,7 +193,7 @@ function buildLegal(locale, pageKey, kind) {
 				kind === 'refund' ? (locale === 'es' ? 'Cómo solicitar' : locale === 'fr' ? 'Comment demander' : locale === 'de' ? 'Anfrage stellen' : locale === 'ar' ? 'كيفية الطلب' : locale === 'ja' ? '申請方法' : 'How to request') :
 				(locale === 'es' ? 'Cambios' : locale === 'fr' ? 'Modifications' : locale === 'de' ? 'Änderungen' : locale === 'ar' ? 'التغييرات' : locale === 'ja' ? '変更' : 'Policy changes'),
 				p.legal(),
-				'Email: support@rusthacks.net',
+				'Email: support@islecheat.net',
 			),
 		],
 	};
