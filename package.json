@@ -6,12 +6,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host 0.0.0.0 --port 3000",
+    "start": "astro preview --host 0.0.0.0 --port 3000",
     "build": "astro build",
     "build:validate": "astro build && node scripts/validate-sitemaps.mjs",
     "optimize:images": "node scripts/optimize-responsive-images.mjs",
     "fetch:images": "node scripts/generate-hack-ui-images.mjs",
-    "preview": "astro preview",
+    "preview": "astro preview --host 0.0.0.0 --port 3000",
     "validate:sitemaps": "node scripts/validate-sitemaps.mjs",
     "generate:i18n": "node scripts/generate-i18n-content.mjs",
     "deploy": "npm run build && wrangler deploy",
