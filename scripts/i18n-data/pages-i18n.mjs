@@ -166,7 +166,7 @@ function buildLegal(locale, pageKey, kind) {
 		title: clampTitle(stripZadeyoFromMeta(`${h1} | ArcRaiders Hacks`)),
 		description: clampDesc(stripZadeyoFromMeta(`${h1} for ArcRaiders Hacks — ESP wallhack, Aimbot, ${p.win}.`)),
 		h1,
-		intro: p.s1(`${h1} for islecheat.net and Arc Raiders licenses.`),
+		intro: p.s1(`${h1} for arcraidershacks.net and Arc Raiders licenses.`),
 		imageAlt: `arc-raiders-hacks ${kind} ESP wallhack Aimbot legal page`,
 		galleryTitle: `Arc Raiders Hacks ${kind} resources`,
 		heroImage: HERO_IMAGES[pageKey],
@@ -179,21 +179,21 @@ function buildLegal(locale, pageKey, kind) {
 				kind === 'refund' ? (locale === 'es' ? 'Entrega digital' : locale === 'fr' ? 'Livraison numérique' : locale === 'de' ? 'Digitale Lieferung' : locale === 'ar' ? 'التسليم الرقمي' : locale === 'ja' ? 'デジタル配信' : 'Digital delivery') :
 				(locale === 'es' ? 'Aceptación de términos' : locale === 'fr' ? 'Acceptation' : locale === 'de' ? 'Annahme' : locale === 'ar' ? 'قبول الشروط' : locale === 'ja' ? '規約への同意' : 'Acceptance of terms'),
 				p.s1('Contact email, Zadeyo order references, and basic site security data.'),
-				kind === 'privacy' ? 'Payment details are processed by Zadeyo checkout — not stored on islecheat.net.' : p.s2(),
+				kind === 'privacy' ? 'Payment details are processed by Zadeyo checkout — not stored on arcraidershacks.net.' : p.s2(),
 			),
 			section(
 				kind === 'privacy' ? (locale === 'es' ? 'Uso de la información' : locale === 'fr' ? 'Utilisation' : locale === 'de' ? 'Datennutzung' : locale === 'ar' ? 'استخدام المعلومات' : locale === 'ja' ? '情報の利用' : 'How we use data') :
 				kind === 'refund' ? (locale === 'es' ? 'Cuándo se aprueba' : locale === 'fr' ? 'Approbation' : locale === 'de' ? 'Genehmigung' : locale === 'ar' ? 'موافقة الاسترداد' : locale === 'ja' ? '返金承認' : 'Refund approval') :
 				(locale === 'es' ? 'Riesgos y anti-cheat' : locale === 'fr' ? 'Risques' : locale === 'de' ? 'Risiko' : locale === 'ar' ? 'المخاطر' : locale === 'ja' ? 'リスク' : 'Risk disclaimer'),
 				p.s1('Support responses, order resolution, and legal compliance when required.'),
-				kind === 'terms' ? 'Using cheats may violate Facepunch terms — you assume all ban risk.' : p.s3(),
+				kind === 'terms' ? 'Using cheats may violate Arc Raiders terms — you assume all ban risk.' : p.s3(),
 			),
 			section(
 				kind === 'privacy' ? (locale === 'es' ? 'Tus derechos' : locale === 'fr' ? 'Vos droits' : locale === 'de' ? 'Ihre Rechte' : locale === 'ar' ? 'حقوقك' : locale === 'ja' ? 'あなたの権利' : 'Your rights') :
 				kind === 'refund' ? (locale === 'es' ? 'Cómo solicitar' : locale === 'fr' ? 'Comment demander' : locale === 'de' ? 'Anfrage stellen' : locale === 'ar' ? 'كيفية الطلب' : locale === 'ja' ? '申請方法' : 'How to request') :
 				(locale === 'es' ? 'Cambios' : locale === 'fr' ? 'Modifications' : locale === 'de' ? 'Änderungen' : locale === 'ar' ? 'التغييرات' : locale === 'ja' ? '変更' : 'Policy changes'),
 				p.legal(),
-				'Email: support@islecheat.net',
+				'Email: support@arcraidershacks.net',
 			),
 		],
 	};

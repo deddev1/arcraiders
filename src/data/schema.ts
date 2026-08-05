@@ -1,3 +1,94 @@
+/** Page-specific FAQ clusters for FAQ rich results on pillar landing pages. */
+export const pageFaqClusters: Partial<
+	Record<import('./i18n/routing').PageId, ReadonlyArray<{ question: string; answer: string }>>
+> = {
+	hacks: [
+		{
+			question: 'What are Arc Raiders hacks?',
+			answer:
+				'Arc Raiders hacks are Windows PC tools for Arc Raiders with ESP, wallhack, and aimbot controls. ArcRaiders Hacks licenses include anti-cheat maintenance updates and setup support.',
+		},
+		{
+			question: 'Are Arc Raiders hacks permanently undetected?',
+			answer:
+				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
+		},
+		{
+			question: 'What is included in the ArcRaiders Hacks package?',
+			answer:
+				'Raider ESP, loot markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+		},
+	],
+	'rust-esp': [
+		{
+			question: 'What is an Arc Raiders wallhack?',
+			answer:
+				'An Arc Raiders wallhack is an ESP overlay that shows enemy raiders, ARC machines, and loot through cover. ArcRaiders Hacks wallhack includes distance readouts, team colours, and toggleable categories for extraction and PvP.',
+		},
+		{
+			question: 'Does ArcRaiders Hacks include a radar hack?',
+			answer:
+				'Yes. ArcRaiders Hacks includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during extraction pushes.',
+		},
+		{
+			question: 'Does this fit extraction and PvP runs?',
+			answer:
+				'Yes. ESP and radar help you read nearby raiders and loot; aimbot covers the firefight. Tuned for solo and squad extraction play.',
+		},
+	],
+	'rust-aimbot': [
+		{
+			question: 'What is Arc Raiders soft aim?',
+			answer:
+				'Arc Raiders soft aim is configurable aim assist with smoothness, FOV, and bone priority controls. It ships bundled with ESP and radar in the ArcRaiders Hacks license for Windows PC.',
+		},
+		{
+			question: 'Can I use Arc Raiders aimbot with a controller?',
+			answer:
+				'Yes. ArcRaiders Hacks supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
+		},
+		{
+			question: 'Are Arc Raiders hacks permanently undetected?',
+			answer:
+				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
+		},
+	],
+	pricing: [
+		{
+			question: 'How are ArcRaiders Hacks licenses delivered?',
+			answer:
+				'Digitally after payment confirmation. Timing can vary by payment method — keep your order confirmation if you contact support.',
+		},
+		{
+			question: 'What does the $35/month plan include?',
+			answer:
+				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with anti-cheat maintenance updates for Arc Raiders on Windows PC.',
+		},
+		{
+			question: 'Is the $150 lifetime license worth it?',
+			answer:
+				'Lifetime pays off if you play Arc Raiders across multiple seasons. It includes the same feature stack as monthly with long-term maintenance after patches.',
+		},
+	],
+	features: [
+		{
+			question: 'What is included in ArcRaiders Hacks?',
+			answer:
+				'Raider ESP, loot markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+		},
+		{
+			question: 'Does ArcRaiders Hacks work on Windows PC?',
+			answer:
+				'Yes — ArcRaiders Hacks is built for Arc Raiders on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
+		},
+		{
+			question: 'How does anti-cheat affect ArcRaiders Hacks?',
+			answer:
+				'Anti-cheat monitors Arc Raiders on Windows PC. ArcRaiders Hacks publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
+		},
+	],
+};
+
 import { productInfo, siteConfig } from './site';
 import type { PageId } from './i18n/routing';
 
@@ -54,97 +145,6 @@ export function buildFaqSchemaNode(
 	};
 }
 
-/** Page-specific FAQ clusters for FAQ rich results on pillar landing pages. */
-export const pageFaqClusters: Partial<
-	Record<PageId, ReadonlyArray<{ question: string; answer: string }>>
-> = {
-	hacks: [
-		{
-			question: 'What are IsleCheat?',
-			answer:
-				'IsleCheat is a Windows PC package for Rust with ESP, wallhack, and aimbot controls. Licenses include EAC maintenance updates and setup support.',
-		},
-		{
-			question: 'Are IsleCheat permanently undetected?',
-			answer:
-				'No package can promise that. We rebuild after Easy Anti-Cheat and game patches and post status on Updates. Check there before you load in.',
-		},
-		{
-			question: 'What is included in the IsleCheat package?',
-			answer:
-				'Player ESP, loot markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
-		},
-	],
-	'rust-esp': [
-		{
-			question: 'What is a Rust wallhack?',
-			answer:
-				'A Rust wallhack is an ESP overlay that shows enemy players, vehicles, and loot through walls and terrain. IsleCheat wallhack includes distance readouts, team colours, and toggleable categories for PVE and PVP.',
-		},
-		{
-			question: 'Does IsleCheat include a radar hack?',
-			answer:
-				'Yes. IsleCheat includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during building fights and final-circle rotations.',
-		},
-		{
-			question: 'Does this fit monument and raid play?',
-			answer:
-				'Yes. ESP and radar help you read nearby players and loot; aimbot covers the firefight. Tuned for PVE and PVP on the island.',
-		},
-	],
-	'rust-aimbot': [
-		{
-			question: 'What is Rust soft aim?',
-			answer:
-				'Rust soft aim is configurable aim assist with smoothness, FOV, and bone priority controls. It ships bundled with ESP and radar in the IsleCheat license for Windows PC.',
-		},
-		{
-			question: 'Can I use Rust aimbot with a controller?',
-			answer:
-				'Yes. IsleCheat supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
-		},
-		{
-			question: 'Are IsleCheat permanently undetected?',
-			answer:
-				'No package can promise that. We rebuild after Easy Anti-Cheat and game patches and post status on Updates. Check there before you load in.',
-		},
-	],
-	pricing: [
-		{
-			question: 'How are IsleCheat licenses delivered?',
-			answer:
-				'Digitally after payment confirmation. Timing can vary by payment method — keep your order confirmation if you contact support.',
-		},
-		{
-			question: 'What does the $35/month plan include?',
-			answer:
-				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with EAC maintenance updates for Rust on Windows PC.',
-		},
-		{
-			question: 'Is the $150 lifetime license worth it?',
-			answer:
-				'Lifetime pays off if you play Rust across multiple wipe cycles. It includes the same feature stack as monthly with long-term maintenance after EAC patches.',
-		},
-	],
-	features: [
-		{
-			question: 'What is included in IsleCheat?',
-			answer:
-				'Player ESP, loot markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
-		},
-		{
-			question: 'Does IsleCheat work on Windows PC?',
-			answer:
-				'Yes — IsleCheat is built for Rust on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
-		},
-		{
-			question: 'How does Easy Anti-Cheat (EAC) affect IsleCheat?',
-			answer:
-				'Facepunch Easy Anti-Cheat (EAC) monitors Rust on Windows PC. IsleCheat publishes maintenance notes after patches that may require a rebuild. Read the EAC bypass guide page for how updates are handled.',
-		},
-	],
-};
-
 const schemaRichPages = new Set<PageId>([
 	'hacks',
 	'rust-esp',
@@ -168,8 +168,7 @@ export function buildPageExtraGraph(
 		nodes.push(buildSoftwareApplicationSchema(canonicalURL, heroImage));
 	}
 
-	const faqs =
-		pageId === 'faq' ? allFaqs : (pageFaqClusters[pageId] ?? []);
+	const faqs = pageId === 'faq' ? allFaqs : (pageFaqClusters[pageId] ?? []);
 	if (faqs.length > 0) {
 		nodes.push(buildFaqSchemaNode(canonicalURL, faqs));
 	}

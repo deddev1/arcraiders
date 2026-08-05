@@ -1,4 +1,4 @@
-name = "theislehacks"
+name = "arcraidershacks"
 compatibility_date = "2026-01-01"
 
 # Cloudflare Git deploy runs `wrangler deploy` (Workers + static assets).

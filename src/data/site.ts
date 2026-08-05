@@ -1,9 +1,9 @@
 export const siteConfig = {
 	name: 'ArcRaiders Hacks',
-	url: 'https://arcraidershacks.com',
+	url: 'https://arcraidershacks.net',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@arcraidershacks.com',
+	supportEmail: 'support@arcraidershacks.net',
 	logo: '/images/zadeyo-logo.webp',
 	logoRaster: '/images/zadeyo-logo.png',
 	logoRasterWidth: 453,
@@ -142,7 +142,7 @@ export const homeFaqs = [
 	{
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email support@arcraidershacks.com with your order details and a clear description of the issue.',
+			'Use the Support page or email support@arcraidershacks.net with your order details and a clear description of the issue.',
 	},
 ] as const;
 

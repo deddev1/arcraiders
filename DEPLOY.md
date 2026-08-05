@@ -1,11 +1,11 @@
-# Deploy islecheat.net
+# Deploy arcraidershacks.net
 
-Step-by-step guide to deploy the IsleCheat static site to **islecheat.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the ArcRaiders Hacks static site to **arcraidershacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **islecheat.net** DNS
+- Cloudflare account with access to **arcraidershacks.net** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -48,9 +48,9 @@ This runs `wrangler pages deploy dist --project-name=rusthacks` (see `wrangler.t
 
 ## 3. Custom domain and DNS
 
-Add **islecheat.net** as the primary custom domain on the Pages project.
+Add **arcraidershacks.net** as the primary custom domain on the Pages project.
 
-### Apex (islecheat.net)
+### Apex (arcraidershacks.net)
 
 In **Cloudflare DNS** for the zone:
 
@@ -64,8 +64,8 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.islecheat.net/*`
-   - **Target:** `https://islecheat.net/${1}`
+   - **Source:** `www.arcraidershacks.net/*`
+   - **Target:** `https://arcraidershacks.net/${1}`
    - **Status:** 301
 
 The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`rusthacks.xyz`, `.net`, `.com`), and legacy path redirects.
@@ -80,28 +80,28 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://islecheat.net/`
-- `https://islecheat.net/es/`
-- `https://islecheat.net/rust-hacks/`
-- `https://islecheat.net/rust-aimbot/`
-- `https://islecheat.net/sitemap-index.xml`
-- `https://islecheat.net/robots.txt`
+- `https://arcraidershacks.net/`
+- `https://arcraidershacks.net/es/`
+- `https://arcraidershacks.net/rust-hacks/`
+- `https://arcraidershacks.net/rust-aimbot/`
+- `https://arcraidershacks.net/sitemap-index.xml`
+- `https://arcraidershacks.net/robots.txt`
 
 Verify redirects:
 
-- `http://islecheat.net` → `https://islecheat.net` (301)
-- `https://www.islecheat.net` → `https://islecheat.net` (301)
-- `https://rusthacks.xyz` → `https://islecheat.net` (301)
+- `http://arcraidershacks.net` → `https://arcraidershacks.net` (301)
+- `https://www.arcraidershacks.net` → `https://arcraidershacks.net` (301)
+- `https://rusthacks.xyz` → `https://arcraidershacks.net` (301)
 - Legacy paths (e.g. `/warzone-aimbot/`) → Rust equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `islecheat.net`.
+2. **Add property** → choose **Domain** → enter `arcraidershacks.net`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://islecheat.net/sitemap-index.xml
+   https://arcraidershacks.net/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
@@ -124,11 +124,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `islecheat.net` attached and active
+- [ ] Custom domain `arcraidershacks.net` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `islecheat.net`
+- [ ] Legacy domains 301 to `arcraidershacks.net`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://islecheat.net`
+- [ ] `robots.txt` and sitemaps serve from `https://arcraidershacks.net`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
 - [ ] Homepage and `/rust-hacks/` requested for indexing

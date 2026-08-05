@@ -149,7 +149,7 @@ export const enPages = {
 			section(
 				'Licensing, delivery, and EAC maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery. EAC maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
-				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@arcraidershacks.com.`,
+				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@arcraidershacks.net.`,
 				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/undetected-rust-cheats/">how undetected maintenance works</a>.',
 			),
 		],
@@ -281,7 +281,7 @@ export const enPages = {
 			section(
 				'Delivery, pricing, and support',
 				'Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href="/pricing/">Pricing</a>.',
-				'Contact support@arcraidershacks.com or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
+				'Contact support@arcraidershacks.net or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
 				'Refund eligibility is covered in the <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
@@ -314,7 +314,7 @@ export const enPages = {
 			section(
 				'Self-service resources',
 				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href="/eac-bypass-rust/">Easy Anti-Cheat page</a>.',
-				'Email: support@arcraidershacks.com',
+				'Email: support@arcraidershacks.net',
 				'Ready to purchase or renew? Open <a href="/pricing/">Pricing</a>. Need feature detail first? See <a href="/features/">Features</a>.',
 			),
 		],
@@ -335,13 +335,13 @@ export const enPages = {
 			section(
 				'What undetected means for Arc Raiders Hacks',
 				'Undetected Arc Raiders Hacks means the package is actively maintained against Easy Anti-Cheat and major Arc Raiders patches — not that detection is impossible forever.',
-				'Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after Facepunch security updates.',
+				'Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after Embark anti-cheat updates.',
 				`Anti-cheat technology is documented by ${EXT.eac}; Arc Raiders client updates ship through ${EXT.epic}. Undetected status is an ongoing process tied to those releases.`,
 			),
 			section(
 				'EAC maintenance workflow',
 				'When Easy Anti-Cheat or Arc Raiders updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href="/updates/">Updates page</a>, and delivers rebuilt builds to active licenses.',
-				`On patch mornings, also check ${EXT.status} for Epic outages that can look like product failures.`,
+				`On patch mornings, also check ${EXT.status} for Arc Raiders outages that can look like product failures.`,
 				'Deep technical workflow: <a href="/eac-bypass-rust/">EAC bypass Arc Raiders guide</a>. Feature stack: <a href="/features/">Features</a>.',
 			),
 			section(
@@ -355,7 +355,7 @@ export const enPages = {
 	wallhack: {
 		title: 'Arc Raiders Wallhack 2026 | ESP Boxes & Visibility',
 		description:
-			'Arc Raiders wallhack ESP with player boxes and loot markers for PC and controllers. Undetected rust cheats with cloud DMA — learn overlays and buy.',
+			'Arc Raiders wallhack ESP with player boxes and loot markers for PC and controllers. Undetected Arc Raiders hacks with cloud DMA — learn overlays and buy.',
 		h1: 'Arc Raiders Wallhack — ESP Boxes & Visibility',
 		intro:
 			'Arc Raiders wallhack ESP for Arc Raiders — see players, loot, vehicles, and chests through toggleable wallhack overlays built for PVE and PVP.',
@@ -440,7 +440,7 @@ export const enPages = {
 			section(
 				'What happens after an EAC patch',
 				'The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href="/updates/">Updates</a>, and ships rebuilt packages to active licenses.',
-				`Confirm Epic service health on ${EXT.status} if the launcher or matchmaking fails during the same window.`,
+				`Confirm Arc Raiders service health on ${EXT.status} if the launcher or matchmaking fails during the same window.`,
 				'Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href="/undetected-rust-cheats/">undetected Arc Raiders hacks</a>.',
 			),
 			section(
@@ -454,7 +454,7 @@ export const enPages = {
 	'cheats-2026': {
 		title: 'Arc Raiders Hacks 2026 | Hacks with ESP & Cloud DMA',
 		description:
-			'Best rust cheats 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected ArcRaiders Hacks with EAC maintenance — compare and buy.',
+			'Best Arc Raiders hacks 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected ArcRaiders Hacks with EAC maintenance — compare and buy.',
 		h1: 'Arc Raiders Hacks 2026 — ESP, Soft Aim & Cloud DMA',
 		intro:
 			'The 2026 Arc Raiders Hacks package for Arc Raiders — undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance, instant delivery, and Windows PC support.',
@@ -480,14 +480,14 @@ export const enPages = {
 				'Before you buy in 2026',
 				'Read the <a href="/rust-hacks/">ArcRaiders Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
 				'Also compare the <a href="/best-rust-cheats/">best Arc Raiders hacks</a> checklist, <a href="/blog/rust-cheats-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
-				'Support is available at support@arcraidershacks.com via the <a href="/support/">Support page</a>.',
+				'Support is available at support@arcraidershacks.net via the <a href="/support/">Support page</a>.',
 			),
 		],
 	},
 	hacks: {
 		title: 'ArcRaiders Hacks 2026 | Undetected ESP Aimbot Guide',
 		description:
-			'ArcRaiders Hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance. Compare rust cheats options and buy the full package.',
+			'ArcRaiders Hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance. Compare Arc Raiders hacks options and buy the full package.',
 		h1: 'ArcRaiders Hacks — Undetected ESP, Aimbot & Wallhack',
 		intro:
 			'ArcRaiders Hacks for survival and extraction zones combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for ArcRaiders Hacks in 2026.',
@@ -499,19 +499,19 @@ export const enPages = {
 		sections: [
 			section(
 				'What ArcRaiders Hacks include in 2026',
-				'Players searching for ArcRaiders Hacks usually want visibility and combat tools without stacking separate downloads. ArcRaiders Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called rust cheats.',
+				'Players searching for ArcRaiders Hacks usually want visibility and combat tools without stacking separate downloads. ArcRaiders Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Arc Raiders hacks.',
 				'Coverage spans survival and extraction zones with in-client toggles for live matches. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
 				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>. Cross-check platform health on ${EXT.status} before patch-day queues.`,
 			),
 			section(
-				'ArcRaiders Hacks vs rust cheats — same stack, clear pages',
-				'Searchers use ArcRaiders Hacks and rust cheats interchangeably. This pillar focuses on hacks language; the <a href="/rust-cheats-2026/">rust cheats 2026</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.',
+				'ArcRaiders Hacks vs Arc Raiders hacks — same stack, clear pages',
+				'Searchers use ArcRaiders Hacks and Arc Raiders hacks interchangeably. This pillar focuses on hacks language; the <a href="/rust-cheats-2026/">Arc Raiders hacks 2026</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.',
 				'Deep-dive modules: <a href="/rust-esp/">Arc Raiders ESP</a>, <a href="/rust-aimbot/">Arc Raiders Aimbot</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-radar-hack/">radar hack</a>, and <a href="/rust-soft-aim/">soft aim</a>.',
 				'Blog guides expand each keyword: <a href="/blog/rust-hacks-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/rust-cheats-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-rust-hacks-eac/">undetected EAC notes</a>.',
 			),
 			section(
 				'ArcRaiders Hacks vs single-feature tools',
-				'Standalone hacks often cover only wallhack or only aim assist. ArcRaiders Hacks maps the full BR loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
+				'Standalone hacks often cover only wallhack or only aim assist. ArcRaiders Hacks maps the full extraction loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
 				'Compare the <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
 				'Related landings: <a href="/rust-cheat-download/">cheat download</a>, <a href="/rust-mod-menu/">mod menu</a>, <a href="/rust-aimbot-hack/">aimbot hack</a>, <a href="/rust-esp-hack/">ESP hack</a>.',
 			),
@@ -691,7 +691,7 @@ export const enPages = {
 	'esp-hack': {
 		title: 'Arc Raiders ESP Hack 2026 | Player Boxes & Loot',
 		description:
-			'Arc Raiders ESP hack with player boxes and loot markers for PC and controllers. Undetected rust cheats with cloud DMA — see overlays and buy.',
+			'Arc Raiders ESP hack with player boxes and loot markers for PC and controllers. Undetected Arc Raiders hacks with cloud DMA — see overlays and buy.',
 		h1: 'Arc Raiders ESP Hack — Player Boxes Guide',
 		intro:
 			'Arc Raiders ESP hack overlays for Arc Raiders — player outlines, vehicle threat cues, loot and chest markers with distance readouts across survival and extraction zones.',
@@ -757,9 +757,9 @@ export const enPages = {
 	privacy: {
 		title: 'Privacy Policy | ArcRaiders Hacks',
 		description:
-			'Privacy policy for ArcRaiders Hacks. How we handle support emails, order data, and checkout for rust cheats licenses on arcraidershacks.com.',
+			'Privacy policy for ArcRaiders Hacks. How we handle support emails, order data, and checkout for Arc Raiders hacks licenses on arcraidershacks.net.',
 		h1: 'Privacy Policy',
-		intro: 'How ArcRaiders Hacks handles information when you browse arcraidershacks.com or contact support about a Arc Raiders license.',
+		intro: 'How ArcRaiders Hacks handles information when you browse arcraidershacks.net or contact support about a Arc Raiders license.',
 		imageAlt: 'Arc Raiders ESP overlay visual for privacy policy page',
 		galleryTitle: 'Arc Raiders Hacks legal resources',
 		ctaPrimary: 'Email support',
@@ -779,8 +779,8 @@ export const enPages = {
 			),
 			section(
 				'Your choices and contact',
-				'You may request correction or deletion of support email data by contacting support@arcraidershacks.com with your request details.',
-				'Policy updates publish on this page. Continued use of arcraidershacks.com after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
+				'You may request correction or deletion of support email data by contacting support@arcraidershacks.net with your request details.',
+				'Policy updates publish on this page. Continued use of arcraidershacks.net after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
 	},
@@ -809,7 +809,7 @@ export const enPages = {
 			),
 			section(
 				'How to request a refund',
-				'Email support@arcraidershacks.com with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
+				'Email support@arcraidershacks.net with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
 				'Approved refunds process back to the original payment method when possible. Pricing details live on <a href="/pricing/">Pricing</a>.',
 			),
 		],
@@ -817,9 +817,9 @@ export const enPages = {
 	terms: {
 		title: 'Terms of Use 2026 | ArcRaiders Hacks Rules',
 		description:
-			'Terms of use for arcraidershacks.com and ArcRaiders Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
+			'Terms of use for arcraidershacks.net and ArcRaiders Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
 		h1: 'Terms of Use',
-		intro: 'Terms governing use of arcraidershacks.com and ArcRaiders Hacks licenses for Arc Raiders on Windows PC.',
+		intro: 'Terms governing use of arcraidershacks.net and ArcRaiders Hacks licenses for Arc Raiders on Windows PC.',
 		imageAlt: 'Arc Raiders ESP overlay visual for terms of use page',
 		galleryTitle: 'Arc Raiders Hacks legal pages',
 		ctaPrimary: 'Email support',
@@ -839,7 +839,7 @@ export const enPages = {
 			section(
 				'Changes and governing law',
 				'We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.',
-				'Contact support@arcraidershacks.com for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
+				'Contact support@arcraidershacks.net for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
 			),
 		],
 	},
