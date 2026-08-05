@@ -9,7 +9,7 @@ export const siteConfig = {
 	logoRasterWidth: 453,
 	logoRasterHeight: 551,
 	logoAlt: 'Arc Raiders Hacks logo',
-	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Frust',
+	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Frust',
 	defaultOgImage: '/images/rust-esp-overlay.webp',
 } as const;
 
