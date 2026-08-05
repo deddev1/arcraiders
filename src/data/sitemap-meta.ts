@@ -55,12 +55,12 @@ export function latestPageLastmod(): string {
 
 /** Expected URL counts for sitemap validation. */
 export const SITEMAP_COUNTS = {
-	englishPages: 25,
+	englishPages: 15,
 	i18nLocales: 21,
 	pagesPerLocale: 25,
 	/** Locale URLs omitted from sitemaps under English-only SEO policy. */
 	i18nUrls: 0,
-	totalIndexablePages: 25,
+	totalIndexablePages: 15,
 	/** en + x-default only (no thin-locale hreflang cluster). */
 	hreflangLinksPerUrl: 2,
 	/** sitemap-index.xml: English pages + images */

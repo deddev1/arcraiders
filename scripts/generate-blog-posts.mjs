@@ -155,7 +155,7 @@ const sources = [
 					'Core: Hammer AR + high-burst shotgun + mobility + heals. In monuments, this supports the laddering strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
 					'Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to SMG at 40m out of habit, never practicing crouch-spray in Creative.',
 					'Try This Today: Prioritize Hammer for 10 games. Count your first four bullets in every mid fight. If you die inside 15m without shotgun out, fix loadout timing — not the AR.',
-					'Players who also use aim-assist tooling can review <a href="/rust-aimbot/">Rust Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
+					'Players who also use aim-assist tooling can review <a href="/arc-raiders-aimbot/">Rust Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
 				],
 			},
 		],
@@ -181,7 +181,7 @@ const sources = [
 				h2: 'Why the monuments meta feels soft',
 				paragraphs: [
 					'Most monuments players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.',
-					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/rust-esp/">Rust ESP</a> help — but aggression still needs cover discipline.',
+					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/arc-raiders-esp/">Rust ESP</a> help — but aggression still needs cover discipline.',
 					'Pro Tip — Decide your exit before you swing. Take a 150+ damage window, then hard disengage with mobility before the usual 4–7 second third-party clock.',
 				],
 			},
@@ -281,7 +281,7 @@ const sources = [
 				h2: 'Convert gold guns into wins',
 				paragraphs: [
 					'Pair these routes with <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
-					'If you use loot ESP markers in practice, read <a href="/rust-esp/">Rust ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
+					'If you use loot ESP markers in practice, read <a href="/arc-raiders-esp/">Rust ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
 					'Try This Today: Run one uncontested chain for 8 games. Screenshot inventory at 2:30 and compare rarities before adding a contested edge day.',
 				],
 			},
@@ -323,7 +323,7 @@ const sources = [
 				h2: 'Champion-style practice routine',
 				paragraphs: [
 					'0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then ranked. Pair with our <a href="/blog/creative-warmup-maps-pros-use/">Creative warmup map categories</a>.',
-					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/rust-soft-aim/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
+					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/arc-raiders-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
 					'Try This Today: Write dpi + sens, adjust at most once by a small percent, then play 5 games without touching settings again.',
 				],
 			},
@@ -366,7 +366,7 @@ const sources = [
 				h2: 'Mistakes that waste warmup time',
 				paragraphs: [
 					'Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.',
-					'After mechanics are hot, information tools like <a href="/rust-radar-hack/">radar hack</a> or <a href="/rust-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/rust-hacks/">Arc Raiders Hacks</a>.',
+					'After mechanics are hot, information tools like <a href="/arc-raiders-radar/">radar hack</a> or <a href="/arc-raiders-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a>.',
 					'Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.',
 				],
 			},
@@ -393,29 +393,29 @@ const sources = [
 				h2: 'What Arc Raiders Hacks actually include',
 				paragraphs: [
 					'Arc Raiders Hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Arc Raiders hacks are looking for the same stack — different wording, same BR loop.',
-					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/rust-hacks/">Arc Raiders Hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
+					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
 					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
 				],
 			},
 			{
 				h2: 'ESP, wallhack, Aimbot, and radar roles',
 				paragraphs: [
-					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/rust-soft-aim/">soft aim</a> and <a href="/rust-aimbot/">Aimbot controls</a>.',
-					'Deep pages: <a href="/rust-esp/">Rust ESP</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-radar-hack/">radar hack</a>, <a href="/rust-aimbot-hack/">aimbot hack</a>, and <a href="/rust-esp-hack/">ESP hack</a>.',
+					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/arc-raiders-aimbot/">soft aim</a> and <a href="/arc-raiders-aimbot/">Aimbot controls</a>.',
+					'Deep pages: <a href="/arc-raiders-esp/">Rust ESP</a>, <a href="/arc-raiders-wallhack/">wallhack</a>, <a href="/arc-raiders-radar/">radar hack</a>, <a href="/arc-raiders-aimbot/">aimbot hack</a>, and <a href="/arc-raiders-esp/">ESP hack</a>.',
 				],
 			},
 			{
 				h2: 'Undetected Arc Raiders Hacks and EAC patches',
 				paragraphs: [
 					'Undetected Arc Raiders Hacks require rebuilds after Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
-					`On patch mornings confirm ${EXT.status}, then read our <a href="/eac-bypass-rust/">EAC bypass guide</a> and <a href="/blog/undetected-rust-hacks-eac/">undetected EAC notes</a>.`,
+					`On patch mornings confirm ${EXT.status}, then read our <a href="/arc-raiders-hacks/">EAC bypass guide</a> and <a href="/blog/undetected-arc-raiders-hacks-eac/">undetected EAC notes</a>.`,
 					'Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.',
 				],
 			},
 			{
 				h2: 'Next steps — pricing, setup, and cheats pages',
 				paragraphs: [
-					'Ready to buy? Start at the <a href="/rust-hacks/">Arc Raiders Hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/rust-cheats-2026/">Arc Raiders hacks 2026</a> and <a href="/blog/rust-cheats-buyers-guide/">cheats buyers guide</a>.',
+					'Ready to buy? Start at the <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/arc-raiders-hacks/">Arc Raiders hacks 2026</a> and <a href="/blog/arc-raiders-hacks-buyers-guide/">cheats buyers guide</a>.',
 					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
 				],
 			},
@@ -442,7 +442,7 @@ const sources = [
 				h2: 'Buyer checklist before you pay',
 				paragraphs: [
 					'Confirm Windows PC support, EAC maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
-					'Primary commercial pages: <a href="/best-rust-cheats/">best Rust cheats</a>, <a href="/rust-cheats-2026/">cheats 2026</a>, and <a href="/rust-hacks/">Arc Raiders Hacks</a> (hacks is the main brand keyword).',
+					'Primary commercial pages: <a href="/arc-raiders-hacks/">best Rust cheats</a>, <a href="/arc-raiders-hacks/">cheats 2026</a>, and <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> (hacks is the main brand keyword).',
 				],
 			},
 			{
@@ -455,8 +455,8 @@ const sources = [
 			{
 				h2: 'Feature pages worth opening',
 				paragraphs: [
-					'Open <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
-					'Related reading: <a href="/blog/rust-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/rust-cheats-2026-whats-new/">cheats 2026 what\'s new</a>.',
+					'Open <a href="/arc-raiders-esp/">ESP</a>, <a href="/arc-raiders-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
+					'Related reading: <a href="/blog/arc-raiders-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/arc-raiders-hacks-2026-whats-new/">cheats 2026 what\'s new</a>.',
 					'Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.',
 				],
 			},
@@ -483,14 +483,14 @@ const sources = [
 				h2: 'Why 2026 buyers still need maintenance',
 				paragraphs: [
 					'Season maps, weapons, and EAC updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.',
-					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/rust-cheats-2026/">the cheats 2026 landing</a>.`,
+					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/arc-raiders-hacks/">the cheats 2026 landing</a>.`,
 				],
 			},
 			{
 				h2: 'Keyword map: cheats 2026 ↔ hacks',
 				paragraphs: [
-					'Use the <a href="/rust-cheats-2026/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/rust-hacks/">Arc Raiders Hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
-					'Also see <a href="/blog/rust-hacks-complete-guide-2026/">hacks guide</a> and <a href="/undetected-rust-cheats/">undetected status</a>.',
+					'Use the <a href="/arc-raiders-hacks/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
+					'Also see <a href="/blog/arc-raiders-hacks-complete-guide-2026/">hacks guide</a> and <a href="/arc-raiders-hacks/">undetected status</a>.',
 				],
 			},
 			{
@@ -523,20 +523,20 @@ const sources = [
 				h2: 'Start conservative, then tune',
 				paragraphs: [
 					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in monuments peeks. Hotkeys let you disable Aimbot mid-match.',
-					'Full control list: <a href="/rust-aimbot/">Rust Aimbot</a>, <a href="/rust-aimbot-hack/">aimbot hack</a>, and <a href="/rust-soft-aim/">soft aim</a>.',
+					'Full control list: <a href="/arc-raiders-aimbot/">Rust Aimbot</a>, <a href="/arc-raiders-aimbot/">aimbot hack</a>, and <a href="/arc-raiders-aimbot/">soft aim</a>.',
 				],
 			},
 			{
 				h2: 'Pair Aimbot with ESP and radar',
 				paragraphs: [
-					'Aimbot alone does not solve rotations. Pair with <a href="/rust-esp/">ESP</a> and <a href="/rust-radar-hack/">radar</a> inside the <a href="/rust-hacks/">Arc Raiders Hacks</a> package.',
+					'Aimbot alone does not solve rotations. Pair with <a href="/arc-raiders-esp/">ESP</a> and <a href="/arc-raiders-radar/">radar</a> inside the <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> package.',
 					`Weapon balance shifts on ${EXT.rust} — revisit FOV after combat patches.`,
 				],
 			},
 			{
 				h2: 'EAC notes and next steps',
 				paragraphs: [
-					'After Easy Anti-Cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/eac-bypass-rust/">EAC guide</a>.',
+					'After Easy Anti-Cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/arc-raiders-hacks/">EAC guide</a>.',
 					'Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.',
 				],
 			},
@@ -563,20 +563,20 @@ const sources = [
 				h2: 'ESP categories that matter in BR',
 				paragraphs: [
 					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep BR-critical categories on during rotations.',
-					'Landings: <a href="/rust-esp/">Rust ESP</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-esp-hack/">ESP hack</a>.',
+					'Landings: <a href="/arc-raiders-esp/">Rust ESP</a>, <a href="/arc-raiders-wallhack/">wallhack</a>, <a href="/arc-raiders-esp/">ESP hack</a>.',
 				],
 			},
 			{
 				h2: 'Wallhack vs radar vs Aimbot',
 				paragraphs: [
-					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/rust-hacks/">hacks pillar</a> bundles all three.',
+					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/arc-raiders-hacks/">hacks pillar</a> bundles all three.',
 					`Map and loot systems evolve with ${EXT.epic} seasons — toggleable categories stay useful when POIs rotate.`,
 				],
 			},
 			{
 				h2: 'Undetected ESP maintenance',
 				paragraphs: [
-					'ESP modules rebuild with the package after EAC patches. Check <a href="/updates/">Updates</a> and <a href="/undetected-rust-cheats/">undetected status</a> before ranked blocks.',
+					'ESP modules rebuild with the package after EAC patches. Check <a href="/updates/">Updates</a> and <a href="/arc-raiders-hacks/">undetected status</a> before ranked blocks.',
 					'Try This Today: Enable player + loot ESP only for ten games, then add radar range once your eyes adjust.',
 				],
 			},
@@ -603,14 +603,14 @@ const sources = [
 				h2: 'What undetected really means',
 				paragraphs: [
 					'Undetected Arc Raiders Hacks are rebuilt when Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
-					'Status pages: <a href="/updates/">Updates</a>, <a href="/undetected-rust-cheats/">undetected guide</a>, <a href="/eac-bypass-rust/">EAC bypass</a>.',
+					'Status pages: <a href="/updates/">Updates</a>, <a href="/arc-raiders-hacks/">undetected guide</a>, <a href="/arc-raiders-hacks/">EAC bypass</a>.',
 				],
 			},
 			{
 				h2: 'Patch-day workflow',
 				paragraphs: [
 					`Check ${EXT.status} for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.`,
-					'Commercial entry points: <a href="/rust-hacks/">Arc Raiders Hacks</a> and <a href="/rust-cheats-2026/">Arc Raiders hacks 2026</a>.',
+					'Commercial entry points: <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> and <a href="/arc-raiders-hacks/">Arc Raiders hacks 2026</a>.',
 				],
 			},
 			{
@@ -668,7 +668,7 @@ const sources = [
 				paragraphs: [
 					'Both brands had public downtime after major EAC updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.',
 					'CheatVault\'s Discord would go quiet for 48–72 hours after big patches. No ETA, just "working on it." I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could\'ve been coincidence, but it shook my confidence.',
-					'Arc Raiders Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-rust-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
+					'Arc Raiders Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-arc-raiders-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
 				],
 			},
 			{
@@ -684,7 +684,7 @@ const sources = [
 				paragraphs: [
 					'Pick Arc Raiders Hacks if you play ranked or monuments multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
 					'Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.',
-					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Arc Raiders Hacks stack overview, start at <a href="/rust-hacks/">Arc Raiders Hacks</a>.',
+					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Arc Raiders Hacks stack overview, start at <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a>.',
 				],
 			},
 		],
@@ -743,7 +743,7 @@ const sources = [
 				paragraphs: [
 					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Arc Raiders Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
 					'Feature-per-dollar favors Arc Raiders Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
-					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/rust-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
+					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/arc-raiders-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
 				],
 			},
 			{
@@ -751,7 +751,7 @@ const sources = [
 				paragraphs: [
 					'Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.',
 					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Arc Raiders Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
-					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/rust-hacks/">Arc Raiders Hacks</a> and <a href="/setup/">Setup</a> before checkout.',
+					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> and <a href="/setup/">Setup</a> before checkout.',
 				],
 			},
 		],
@@ -794,7 +794,7 @@ const sources = [
 				paragraphs: [
 					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Arc Raiders Hacks had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
 					'No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an EAC patch, I do not queue on that tool.',
-					'Arc Raiders Hacks documents maintenance on <a href="/eac-bypass-rust/">EAC bypass workflow</a> and the <a href="/undetected-rust-cheats/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
+					'Arc Raiders Hacks documents maintenance on <a href="/arc-raiders-hacks/">EAC bypass workflow</a> and the <a href="/arc-raiders-hacks/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
 				],
 			},
 			{
@@ -810,7 +810,7 @@ const sources = [
 				paragraphs: [
 					'<strong>Arc Raiders Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
 					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited loot ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
-					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression guide</a> and <a href="/blog/rust-hacks-complete-guide-2026/">complete hacks guide</a>.',
+					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression guide</a> and <a href="/blog/arc-raiders-hacks-complete-guide-2026/">complete hacks guide</a>.',
 				],
 			},
 			{
@@ -818,7 +818,7 @@ const sources = [
 				paragraphs: [
 					'Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.',
 					'Choose Arc Raiders Hacks if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
-					'Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href="/rust-esp/">ESP</a>, <a href="/rust-radar-hack/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
+					'Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href="/arc-raiders-esp/">ESP</a>, <a href="/arc-raiders-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
 				],
 			},
 		],

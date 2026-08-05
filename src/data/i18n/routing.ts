@@ -37,31 +37,53 @@ export type PageId =
 /** English (official) paths — served at site root without /en/ prefix. */
 export const englishPaths: Record<PageId, string> = {
 	home: '/',
-	'rust-esp': '/rust-esp/',
-	'rust-aimbot': '/rust-aimbot/',
+	'rust-esp': '/arc-raiders-esp/',
+	'rust-aimbot': '/arc-raiders-aimbot/',
 	features: '/features/',
 	pricing: '/pricing/',
 	setup: '/setup/',
 	updates: '/updates/',
 	faq: '/faq/',
 	support: '/support/',
-	undetected: '/undetected-rust-cheats/',
-	wallhack: '/rust-wallhack/',
-	radar: '/rust-radar-hack/',
-	'eac-bypass': '/eac-bypass-rust/',
-	'cheats-2026': '/rust-cheats-2026/',
-	hacks: '/rust-hacks/',
-	'cheat-download': '/rust-cheat-download/',
-	'mod-menu': '/rust-mod-menu/',
-	'soft-aim': '/rust-soft-aim/',
-	'best-cheats': '/best-rust-cheats/',
-	'aimbot-hack': '/rust-aimbot-hack/',
-	'esp-hack': '/rust-esp-hack/',
+	undetected: '/arc-raiders-hacks/',
+	wallhack: '/arc-raiders-wallhack/',
+	radar: '/arc-raiders-radar/',
+	'eac-bypass': '/arc-raiders-hacks/',
+	'cheats-2026': '/arc-raiders-hacks/',
+	hacks: '/arc-raiders-hacks/',
+	'cheat-download': '/pricing/',
+	'mod-menu': '/features/',
+	'soft-aim': '/arc-raiders-aimbot/',
+	'best-cheats': '/arc-raiders-hacks/',
+	'aimbot-hack': '/arc-raiders-aimbot/',
+	'esp-hack': '/arc-raiders-esp/',
 	'unlock-all': '/rust-unlock-all/',
 	privacy: '/privacy-policy/',
 	refund: '/refund-policy/',
 	terms: '/terms/',
 };
+
+/**
+ * Core English pages for sitemap.xml — focused arc-raiders-hacks URLs only.
+ * Thin keyword-duplicate landings redirect to these canonical pages.
+ */
+export const sitemapPageIds: PageId[] = [
+	'home',
+	'hacks',
+	'rust-esp',
+	'rust-aimbot',
+	'wallhack',
+	'radar',
+	'features',
+	'pricing',
+	'setup',
+	'updates',
+	'faq',
+	'support',
+	'privacy',
+	'refund',
+	'terms',
+];
 
 /**
  * Localized URL slugs (path after /{lang}/).

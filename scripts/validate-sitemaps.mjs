@@ -33,40 +33,34 @@ async function resolveDistRoot() {
 }
 const SITE = 'https://arcraidershacks.net';
 
+const MARKETING_SITEMAP_PAGES = 15;
+const BUILT_MARKETING_PAGES = 25; // thin landings still built; 301 to canonical URLs
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
-const ENGLISH_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES;
+const SITEMAP_ENGLISH_PAGES = MARKETING_SITEMAP_PAGES + BLOG_PAGES + REVIEW_PAGES;
+const BUILT_ENGLISH_PAGES = BUILT_MARKETING_PAGES + BLOG_PAGES + REVIEW_PAGES;
+const ENGLISH_PAGES = SITEMAP_ENGLISH_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
 const LOCALE_UI_PAGES = I18N_LOCALES * PAGES_PER_LOCALE;
-const TOTAL_HTML_PAGES = ENGLISH_PAGES + LOCALE_UI_PAGES;
+const TOTAL_HTML_PAGES = BUILT_ENGLISH_PAGES + LOCALE_UI_PAGES;
 const HREFLANG_PER_URL = 2; // en + x-default
 const SITEMAP_INDEX_ENTRIES = 2; // EN + images
 const IMAGE_SITEMAP_ENTRIES = 6; // unique keyword assets in rustImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',
-	'/rust-esp/',
-	'/rust-aimbot/',
+	'/arc-raiders-hacks/',
+	'/arc-raiders-esp/',
+	'/arc-raiders-aimbot/',
+	'/arc-raiders-wallhack/',
+	'/arc-raiders-radar/',
 	'/features/',
 	'/pricing/',
 	'/setup/',
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-rust-cheats/',
-	'/rust-wallhack/',
-	'/rust-radar-hack/',
-	'/eac-bypass-rust/',
-	'/rust-cheats-2026/',
-	'/rust-hacks/',
-	'/rust-cheat-download/',
-	'/rust-mod-menu/',
-	'/rust-soft-aim/',
-	'/best-rust-cheats/',
-	'/rust-aimbot-hack/',
-	'/rust-esp-hack/',
-	'/rust-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',

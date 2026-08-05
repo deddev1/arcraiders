@@ -119,14 +119,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Arc Raiders punishes incomplete information. Arc Raiders Hacks puts ESP, wallhack, and aimbot in one license so you can read extraction zones, ARC patrol pushes, and squad extractions before you commit.",
 								"Client and anti-cheat updates come from <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> and <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a>. When a patch needs a rebuild, we post status on the <a href=\"/updates/\">Updates page</a> — no permanent “undetected forever” promises.",
 								"Monthly ($35) and lifetime ($150) licenses ship digitally after payment confirmation, with maintenance rebuilds when EAC or game updates require them.",
-								"Compare the <a href=\"/rust-hacks/\">Arc Raiders Hacks guide</a>, <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, and <a href=\"/undetected-rust-cheats/\">undetected status</a> pages before checkout.",
+								"Compare the <a href=\"/arc-raiders-hacks/\">Arc Raiders Hacks guide</a>, <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, and <a href=\"/arc-raiders-hacks/\">undetected status</a> pages before checkout.",
 							],
 						},
 						{
 							h2: "One license, clear controls",
 							paragraphs: [
 								"Instead of stacking separate tools, you get player ESP, loot markers, radar cues, and aimbot profiles in a single package aimed at PVE and PVP play.",
-								"Details live on the <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, <a href=\"/rust-wallhack/\">wallhack</a>, and <a href=\"/features/\">features</a> pages — or jump to <a href=\"/pricing/\">Pricing</a> for plans.",
+								"Details live on the <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, <a href=\"/arc-raiders-wallhack/\">wallhack</a>, and <a href=\"/features/\">features</a> pages — or jump to <a href=\"/pricing/\">Pricing</a> for plans.",
 								"On patch mornings, check <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a>, then confirm our maintenance notes so you are not loading an outdated build.",
 								"Ready? Open <a href=\"/pricing/\">Pricing</a>, follow <a href=\"/setup/\">Setup</a> after delivery, and keep <a href=\"/faq/\">FAQ</a> / <a href=\"/support/\">Support</a> handy.",
 							],
@@ -143,7 +143,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders ESP overlay visuals",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "Arc Raiders wallhack guide",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "What Arc Raiders ESP solves in survival",
@@ -158,7 +158,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Toggle enemy player outlines, vehicle threat cues, supply-drop awareness markers, and loot or chest pins so only BR-critical ESP wallhack overlays stay active during rotations.",
 								"Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports extraction zones and raids lobbies alike.",
-								"Compare category detail on the <a href=\"/rust-wallhack/\">wallhack page</a> and pair visibility with the <a href=\"/rust-radar-hack/\">radar hack</a> for flanks outside your FOV.",
+								"Compare category detail on the <a href=\"/arc-raiders-wallhack/\">wallhack page</a> and pair visibility with the <a href=\"/arc-raiders-radar/\">radar hack</a> for flanks outside your FOV.",
 							],
 							list: [
 								"Enemy player ESP outlines with distance",
@@ -171,16 +171,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected ESP with EAC maintenance",
 							paragraphs: [
 								"Arc Raiders Hacks ESP wallhack is maintained for Arc Raiders with rebuilds after Easy Anti-Cheat patches. Check the <a href=\"/updates/\">Updates page</a> before you queue — no cheat guarantees permanent undetected status.",
-								"Read <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/eac-bypass-rust/\">EAC bypass maintenance guide</a> after major patches.",
+								"Read <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/arc-raiders-hacks/\">EAC bypass maintenance guide</a> after major patches.",
 								"Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href=\"/setup/\">Setup guide</a> and tune overlays before your first ranked block.",
 							],
 						},
 						{
 							h2: "ESP next steps — Aimbot, pricing, and support",
 							paragraphs: [
-								"ESP alone wins information wars; Aimbot covers the firefight. Review <a href=\"/rust-aimbot/\">Aimbot controls</a> if you want one license for visibility and assist.",
+								"ESP alone wins information wars; Aimbot covers the firefight. Review <a href=\"/arc-raiders-aimbot/\">Aimbot controls</a> if you want one license for visibility and assist.",
 								"Compare monthly ($35) and lifetime ($150) on <a href=\"/pricing/\">Pricing</a>, then keep <a href=\"/support/\">Support</a> ready if activation needs a human reply.",
-								"Still researching? The <a href=\"/best-rust-cheats/\">best Arc Raiders hacks guide</a> and <a href=\"/rust-cheats-2026/\">2026 buyer guide</a> summarize the full stack.",
+								"Still researching? The <a href=\"/arc-raiders-hacks/\">best Arc Raiders hacks guide</a> and <a href=\"/arc-raiders-hacks/\">2026 buyer guide</a> summarize the full stack.",
 							],
 						},
 					],
@@ -195,7 +195,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders Aimbot combat previews",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "See ESP wallhack",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Aimbot tuned for Arc Raiders combat pace",
@@ -209,8 +209,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Per-weapon Aimbot profiles",
 							paragraphs: [
 								"Save separate Aimbot profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears without reopening menus every spawn.",
-								"Prefer softer tracking? Read the <a href=\"/rust-soft-aim/\">soft aim guide</a>. Want the search term most players use? See <a href=\"/rust-aimbot-hack/\">aimbot hack</a>.",
-								"Aimbot ships alongside <a href=\"/rust-esp/\">ESP wallhack</a> and <a href=\"/rust-radar-hack/\">2D radar</a> in the same Arc Raiders Hacks license.",
+								"Prefer softer tracking? Read the <a href=\"/arc-raiders-aimbot/\">soft aim guide</a>. Want the search term most players use? See <a href=\"/arc-raiders-aimbot/\">aimbot hack</a>.",
+								"Aimbot ships alongside <a href=\"/arc-raiders-esp/\">ESP wallhack</a> and <a href=\"/arc-raiders-radar/\">2D radar</a> in the same Arc Raiders Hacks license.",
 							],
 							list: [
 								"Smoothness, FOV, and sensitivity sliders",
@@ -223,7 +223,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "EAC maintenance for undetected Aimbot",
 							paragraphs: [
 								"Arc Raiders Hacks rebuilds Aimbot behavior when Easy Anti-Cheat or major Arc Raiders patches land. Maintenance notes appear on the <a href=\"/updates/\">Updates page</a> so you know when a new build is live.",
-								"Cross-check service health on <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> and anti-cheat context on <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a>, then follow our <a href=\"/eac-bypass-rust/\">EAC maintenance guide</a> before queueing on patch day.",
+								"Cross-check service health on <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> and anti-cheat context on <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a>, then follow our <a href=\"/arc-raiders-hacks/\">EAC maintenance guide</a> before queueing on patch day.",
 								"Responsible settings matter — undetected status requires ongoing maintenance, not set-and-forget configs. Start with conservative smoothness, then tune.",
 							],
 						},
@@ -253,7 +253,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "ESP wallhack and visibility features",
 							paragraphs: [
 								"Enemy player ESP wallhack, vehicle and supply-drop threat cues, loot and chest markers, distance readouts, snaplines, and toggleable ESP categories for BR-critical overlays only.",
-								"Team and enemy colour coding supports extraction zones and raids. Deep-dive the <a href=\"/rust-esp/\">ESP page</a> and <a href=\"/rust-wallhack/\">wallhack guide</a> for category-level detail.",
+								"Team and enemy colour coding supports extraction zones and raids. Deep-dive the <a href=\"/arc-raiders-esp/\">ESP page</a> and <a href=\"/arc-raiders-wallhack/\">wallhack guide</a> for category-level detail.",
 								"Map and loot systems evolve with <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> season updates — toggleable ESP categories keep overlays useful when POIs rotate.",
 							],
 						},
@@ -261,8 +261,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Radar hack and Aimbot controls",
 							paragraphs: [
 								"2D radar overlay with directional threat cues, configurable range for rotations and final circles, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.",
-								"All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Arc Raiders sessions. See <a href=\"/rust-radar-hack/\">radar</a> and <a href=\"/rust-aimbot/\">Aimbot</a> for settings walkthroughs.",
-								"Prefer a menu-first workflow? The <a href=\"/rust-mod-menu/\">mod menu page</a> explains mid-match toggles without alt-tabbing.",
+								"All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Arc Raiders sessions. See <a href=\"/arc-raiders-radar/\">radar</a> and <a href=\"/arc-raiders-aimbot/\">Aimbot</a> for settings walkthroughs.",
+								"Prefer a menu-first workflow? The <a href=\"/features/\">mod menu page</a> explains mid-match toggles without alt-tabbing.",
 							],
 						},
 						{
@@ -270,7 +270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. EAC maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
 								"Monitor <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@arcraidershacks.net.",
-								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/undetected-rust-cheats/\">how undetected maintenance works</a>.",
+								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/arc-raiders-hacks/\">how undetected maintenance works</a>.",
 							],
 						},
 					],
@@ -308,7 +308,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Review the <a href=\"/refund-policy/\">Refund Policy</a> before purchase. For billing or delivery issues, contact Support with your order details.",
 								"Prices are listed in USD. Availability is worldwide for Windows 10 and 11 PCs.",
-								"Still comparing tools? Read <a href=\"/best-rust-cheats/\">best Arc Raiders hacks</a>, <a href=\"/undetected-rust-cheats/\">undetected status</a>, and <a href=\"/faq/\">FAQ</a> before you checkout.",
+								"Still comparing tools? Read <a href=\"/arc-raiders-hacks/\">best Arc Raiders hacks</a>, <a href=\"/arc-raiders-hacks/\">undetected status</a>, and <a href=\"/faq/\">FAQ</a> before you checkout.",
 							],
 						},
 					],
@@ -337,15 +337,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Activate ESP wallhack and Aimbot profiles",
 							paragraphs: [
 								"Follow the delivery instructions in your license email. Load default ESP wallhack categories for players, loot, and vehicles — then tune radar range and Aimbot smoothness to your playstyle.",
-								"Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for each module live on <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, and <a href=\"/rust-mod-menu/\">mod menu</a>.",
-								"Prefer a soft tracking feel? Start with the <a href=\"/rust-soft-aim/\">soft aim</a> recommendations before raising aggressiveness.",
+								"Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for each module live on <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, and <a href=\"/features/\">mod menu</a>.",
+								"Prefer a soft tracking feel? Start with the <a href=\"/arc-raiders-aimbot/\">soft aim</a> recommendations before raising aggressiveness.",
 							],
 						},
 						{
 							h2: "After Arc Raiders or Easy Anti-Cheat patches",
 							paragraphs: [
 								"When Embark ships a major Arc Raiders update or Easy Anti-Cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.",
-								"Official anti-cheat background: <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a>. Our practical workflow is documented on the <a href=\"/eac-bypass-rust/\">EAC bypass page</a> and <a href=\"/undetected-rust-cheats/\">undetected guide</a>.",
+								"Official anti-cheat background: <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a>. Our practical workflow is documented on the <a href=\"/arc-raiders-hacks/\">EAC bypass page</a> and <a href=\"/arc-raiders-hacks/\">undetected guide</a>.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.",
 							],
 						},
@@ -361,7 +361,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders patch and maintenance visuals",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "Undetected status guide",
-					ctaSecondaryHref: "/undetected-rust-cheats/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Why the Updates page matters",
@@ -376,7 +376,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Entries note Easy Anti-Cheat compatibility status, rebuilt ESP wallhack overlays, radar range fixes, Aimbot tuning after weapon balance changes, and digital delivery of new builds to active licenses.",
 								"Lifetime and monthly subscribers receive rebuild access during active license terms. See <a href=\"/pricing/\">Pricing</a> if you need to renew.",
-								"For context on why rebuilds happen, read the <a href=\"/eac-bypass-rust/\">EAC bypass guide</a> and <a href=\"/undetected-rust-cheats/\">undetected Arc Raiders hacks</a> explainer.",
+								"For context on why rebuilds happen, read the <a href=\"/arc-raiders-hacks/\">EAC bypass guide</a> and <a href=\"/arc-raiders-hacks/\">undetected Arc Raiders hacks</a> explainer.",
 							],
 						},
 						{
@@ -405,7 +405,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What is Arc Raiders Hacks?",
 							paragraphs: [
 								"Arc Raiders Hacks is an undetected cheat package for Arc Raiders on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with EAC maintenance updates.",
-								"Packages cover survival and extraction zones. Explore <a href=\"/features/\">Features</a> for the full control list and <a href=\"/rust-esp/\">ESP</a> / <a href=\"/rust-aimbot/\">Aimbot</a> for module detail.",
+								"Packages cover survival and extraction zones. Explore <a href=\"/features/\">Features</a> for the full control list and <a href=\"/arc-raiders-esp/\">ESP</a> / <a href=\"/arc-raiders-aimbot/\">Aimbot</a> for module detail.",
 								"Arc Raiders itself is published by <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a>. Cheats are third-party tools and may violate Epic’s rules — use is at your own risk.",
 							],
 						},
@@ -413,7 +413,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Are Arc Raiders Hacks undetected in 2026?",
 							paragraphs: [
 								"Arc Raiders Hacks is maintained with rebuilds after Easy Anti-Cheat and game patches. Check the <a href=\"/updates/\">Updates page</a> for current status — no cheat can guarantee permanent undetected operation.",
-								"Read <a href=\"/undetected-rust-cheats/\">undetected Arc Raiders hacks</a> and the <a href=\"/eac-bypass-rust/\">EAC guide</a> for the maintenance workflow.",
+								"Read <a href=\"/arc-raiders-hacks/\">undetected Arc Raiders hacks</a> and the <a href=\"/arc-raiders-hacks/\">EAC guide</a> for the maintenance workflow.",
 								"Responsible settings and reading maintenance notes before queueing are essential.",
 							],
 						},
@@ -458,7 +458,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Self-service resources",
 							paragraphs: [
-								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href=\"/eac-bypass-rust/\">Easy Anti-Cheat page</a>.",
+								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href=\"/arc-raiders-hacks/\">Easy Anti-Cheat page</a>.",
 								"Email: support@arcraidershacks.net",
 								"Ready to purchase or renew? Open <a href=\"/pricing/\">Pricing</a>. Need feature detail first? See <a href=\"/features/\">Features</a>.",
 							],
@@ -475,7 +475,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Undetected Arc Raiders Hacks visuals",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "EAC bypass guide",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "What undetected means for Arc Raiders Hacks",
@@ -490,7 +490,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"When Easy Anti-Cheat or Arc Raiders updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Updates page</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> for Arc Raiders outages that can look like product failures.",
-								"Deep technical workflow: <a href=\"/eac-bypass-rust/\">EAC bypass Arc Raiders guide</a>. Feature stack: <a href=\"/features/\">Features</a>.",
+								"Deep technical workflow: <a href=\"/arc-raiders-hacks/\">EAC bypass Arc Raiders guide</a>. Feature stack: <a href=\"/features/\">Features</a>.",
 							],
 						},
 						{
@@ -498,7 +498,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">Pricing</a>.",
-								"New buyers should also read <a href=\"/rust-cheats-2026/\">Arc Raiders hacks 2026</a> and complete <a href=\"/setup/\">Setup</a> after delivery.",
+								"New buyers should also read <a href=\"/arc-raiders-hacks/\">Arc Raiders hacks 2026</a> and complete <a href=\"/setup/\">Setup</a> after delivery.",
 							],
 						},
 					],
@@ -513,14 +513,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders wallhack ESP gallery",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "Arc Raiders ESP page",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Wallhack ESP vs raw aim tools",
 							paragraphs: [
 								"A Arc Raiders wallhack focuses on information — player outlines, loot pins, vehicle threat cues — rather than automatic aiming. Arc Raiders Hacks bundles wallhack ESP with radar and optional Aimbot in one license.",
 								"Toggle categories so only the wallhack overlays you need stay active during rotations and endgame circles.",
-								"For the broader ESP keyword page see <a href=\"/rust-esp/\">Arc Raiders ESP</a>; for combat assist see <a href=\"/rust-aimbot/\">Aimbot</a>.",
+								"For the broader ESP keyword page see <a href=\"/arc-raiders-esp/\">Arc Raiders ESP</a>; for combat assist see <a href=\"/arc-raiders-aimbot/\">Aimbot</a>.",
 							],
 						},
 						{
@@ -528,15 +528,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Wallhack overlays support survival, extraction zones, and competitive lobbies with distance readouts and snaplines for engagement control.",
 								"Season maps and POI changes are announced via <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
-								"Pair wallhack awareness with <a href=\"/rust-radar-hack/\">radar hack</a> cues for flanks during building and rooftop fights.",
+								"Pair wallhack awareness with <a href=\"/arc-raiders-radar/\">radar hack</a> cues for flanks during building and rooftop fights.",
 							],
 						},
 						{
 							h2: "Undetected wallhack maintenance",
 							paragraphs: [
 								"ESP wallhack modules rebuild after Easy Anti-Cheat patches. Follow the <a href=\"/updates/\">Updates page</a> and complete checkout for instant license delivery on Windows PC.",
-								"Learn the full maintenance story on <a href=\"/undetected-rust-cheats/\">undetected Arc Raiders hacks</a> and <a href=\"/eac-bypass-rust/\">EAC bypass</a>.",
-								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/rust-esp-hack/\">ESP hack</a> landing for alternate search wording.",
+								"Learn the full maintenance story on <a href=\"/arc-raiders-hacks/\">undetected Arc Raiders hacks</a> and <a href=\"/arc-raiders-hacks/\">EAC bypass</a>.",
+								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/arc-raiders-esp/\">ESP hack</a> landing for alternate search wording.",
 							],
 						},
 					],
@@ -551,13 +551,13 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders radar hack visuals",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "See ESP wallhack",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Why radar hack matters in Arc Raiders",
 							paragraphs: [
 								"Battle royale fights happen in three dimensions — rooftops, windows, and flanks. A 2D radar overlay shows nearby player threats outside direct line of sight so you can reposition before a third party.",
-								"Arc Raiders Hacks radar complements <a href=\"/rust-esp/\">ESP wallhack</a> markers during squad pushes and final-circle scrims.",
+								"Arc Raiders Hacks radar complements <a href=\"/arc-raiders-esp/\">ESP wallhack</a> markers during squad pushes and final-circle scrims.",
 								"Mode rules and seasonal changes come from <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a>. Radar range remains configurable when map scale or mobility meta shifts.",
 							],
 						},
@@ -565,8 +565,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Configurable radar range",
 							paragraphs: [
 								"Adjust radar range for early rotations versus tight endgame circles. Directional cues highlight flanks during building clears and vehicle pushes across survival and extraction zones.",
-								"Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href=\"/rust-mod-menu/\">mod menu</a> page.",
-								"Combat follow-up lives on <a href=\"/rust-aimbot/\">Aimbot</a> when you convert radar info into a fight.",
+								"Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href=\"/features/\">mod menu</a> page.",
+								"Combat follow-up lives on <a href=\"/arc-raiders-aimbot/\">Aimbot</a> when you convert radar info into a fight.",
 							],
 						},
 						{
@@ -574,7 +574,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Radar hack modules receive EAC maintenance rebuilds with the full Arc Raiders Hacks package. Monthly and lifetime licenses include digital delivery — see <a href=\"/pricing/\">Pricing</a>.",
 								"Check <a href=\"/updates/\">Updates</a> after major Arc Raiders patches before relying on previous radar configs.",
-								"New to the stack? Start at <a href=\"/features/\">Features</a> or <a href=\"/undetected-rust-cheats/\">undetected status</a>.",
+								"New to the stack? Start at <a href=\"/features/\">Features</a> or <a href=\"/arc-raiders-hacks/\">undetected status</a>.",
 							],
 						},
 					],
@@ -604,7 +604,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Updates</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Arc Raiders service health on <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> if the launcher or matchmaking fails during the same window.",
-								"Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/undetected-rust-cheats/\">undetected Arc Raiders hacks</a>.",
+								"Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/arc-raiders-hacks/\">undetected Arc Raiders hacks</a>.",
 							],
 						},
 						{
@@ -641,15 +641,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Full feature stack for 2026 buyers",
 							paragraphs: [
 								"Player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.",
-								"Deep links: <a href=\"/rust-hacks/\">Arc Raiders Hacks pillar</a>, <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, <a href=\"/rust-wallhack/\">wallhack</a>, <a href=\"/rust-radar-hack/\">radar</a>, <a href=\"/undetected-rust-cheats/\">undetected</a>.",
+								"Deep links: <a href=\"/arc-raiders-hacks/\">Arc Raiders Hacks pillar</a>, <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, <a href=\"/arc-raiders-wallhack/\">wallhack</a>, <a href=\"/arc-raiders-radar/\">radar</a>, <a href=\"/arc-raiders-hacks/\">undetected</a>.",
 								"Instant digital delivery after checkout confirmation worldwide.",
 							],
 						},
 						{
 							h2: "Before you buy in 2026",
 							paragraphs: [
-								"Read the <a href=\"/rust-hacks/\">Arc Raiders Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
-								"Also compare the <a href=\"/best-rust-cheats/\">best Arc Raiders hacks</a> checklist, <a href=\"/blog/rust-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
+								"Read the <a href=\"/arc-raiders-hacks/\">Arc Raiders Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
+								"Also compare the <a href=\"/arc-raiders-hacks/\">best Arc Raiders hacks</a> checklist, <a href=\"/blog/arc-raiders-hacks-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@arcraidershacks.net via the <a href=\"/support/\">Support page</a>.",
 							],
 						},
@@ -665,7 +665,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders Hacks gallery — ESP, Aimbot, wallhack",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "See undetected guide",
-					ctaSecondaryHref: "/undetected-rust-cheats/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "What Arc Raiders Hacks include in 2026",
@@ -678,24 +678,24 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Arc Raiders Hacks vs Arc Raiders hacks — same stack, clear pages",
 							paragraphs: [
-								"Searchers use Arc Raiders Hacks and Arc Raiders hacks interchangeably. This pillar focuses on hacks language; the <a href=\"/rust-cheats-2026/\">Arc Raiders hacks 2026</a> and <a href=\"/best-rust-cheats/\">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.",
-								"Deep-dive modules: <a href=\"/rust-esp/\">Arc Raiders ESP</a>, <a href=\"/rust-aimbot/\">Arc Raiders Aimbot</a>, <a href=\"/rust-wallhack/\">wallhack</a>, <a href=\"/rust-radar-hack/\">radar hack</a>, and <a href=\"/rust-soft-aim/\">soft aim</a>.",
-								"Blog guides expand each keyword: <a href=\"/blog/rust-hacks-complete-guide-2026/\">hacks complete guide</a>, <a href=\"/blog/rust-cheats-buyers-guide/\">cheats buyers guide</a>, and <a href=\"/blog/undetected-rust-hacks-eac/\">undetected EAC notes</a>.",
+								"Searchers use Arc Raiders Hacks and Arc Raiders hacks interchangeably. This pillar focuses on hacks language; the <a href=\"/arc-raiders-hacks/\">Arc Raiders hacks 2026</a> and <a href=\"/arc-raiders-hacks/\">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.",
+								"Deep-dive modules: <a href=\"/arc-raiders-esp/\">Arc Raiders ESP</a>, <a href=\"/arc-raiders-aimbot/\">Arc Raiders Aimbot</a>, <a href=\"/arc-raiders-wallhack/\">wallhack</a>, <a href=\"/arc-raiders-radar/\">radar hack</a>, and <a href=\"/arc-raiders-aimbot/\">soft aim</a>.",
+								"Blog guides expand each keyword: <a href=\"/blog/arc-raiders-hacks-complete-guide-2026/\">hacks complete guide</a>, <a href=\"/blog/arc-raiders-hacks-buyers-guide/\">cheats buyers guide</a>, and <a href=\"/blog/undetected-arc-raiders-hacks-eac/\">undetected EAC notes</a>.",
 							],
 						},
 						{
 							h2: "Arc Raiders Hacks vs single-feature tools",
 							paragraphs: [
 								"Standalone hacks often cover only wallhack or only aim assist. Arc Raiders Hacks maps the full extraction loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.",
-								"Compare the <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, and <a href=\"/features/\">Features</a> pages — or review <a href=\"/pricing/\">Pricing</a> for monthly and lifetime licenses.",
-								"Related landings: <a href=\"/rust-cheat-download/\">cheat download</a>, <a href=\"/rust-mod-menu/\">mod menu</a>, <a href=\"/rust-aimbot-hack/\">aimbot hack</a>, <a href=\"/rust-esp-hack/\">ESP hack</a>.",
+								"Compare the <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, and <a href=\"/features/\">Features</a> pages — or review <a href=\"/pricing/\">Pricing</a> for monthly and lifetime licenses.",
+								"Related landings: <a href=\"/pricing/\">cheat download</a>, <a href=\"/features/\">mod menu</a>, <a href=\"/arc-raiders-aimbot/\">aimbot hack</a>, <a href=\"/arc-raiders-esp/\">ESP hack</a>.",
 							],
 						},
 						{
 							h2: "Undetected Arc Raiders Hacks with EAC maintenance",
 							paragraphs: [
 								"Undetected Arc Raiders Hacks require rebuilds after Easy Anti-Cheat and major Arc Raiders patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.",
-								"See <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a> for anti-cheat background and our <a href=\"/eac-bypass-rust/\">EAC bypass guide</a> for the practical workflow. Pair with <a href=\"/undetected-rust-cheats/\">undetected Arc Raiders hacks</a> for status language buyers expect.",
+								"See <a href=\"https://www.easy.ac/\" target=\"_blank\" rel=\"noopener noreferrer\">Easy Anti-Cheat</a> for anti-cheat background and our <a href=\"/arc-raiders-hacks/\">EAC bypass guide</a> for the practical workflow. Pair with <a href=\"/arc-raiders-hacks/\">undetected Arc Raiders hacks</a> for status language buyers expect.",
 								"Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href=\"/setup/\">Setup</a> and keep <a href=\"/support/\">Support</a> ready with your order ID.",
 							],
 						},
@@ -726,7 +726,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Every Arc Raiders cheat download includes player ESP wallhack, loot and chest markers, 2D radar overlays, Aimbot profiles, and in-client toggles for PVE and PVP.",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">Pricing page</a>.",
-								"Feature detail: <a href=\"/features/\">Features</a>. Module pages: <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>.",
+								"Feature detail: <a href=\"/features/\">Features</a>. Module pages: <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>.",
 							],
 						},
 						{
@@ -734,7 +734,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Arc Raiders or Easy Anti-Cheat patches ship, check the <a href=\"/updates/\">Updates page</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
-								"Also read <a href=\"/undetected-rust-cheats/\">undetected status</a> so you know what “download ready” means after a patch.",
+								"Also read <a href=\"/arc-raiders-hacks/\">undetected status</a> so you know what “download ready” means after a patch.",
 							],
 						},
 					],
@@ -756,7 +756,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"A Arc Raiders mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live matches. Arc Raiders Hacks keeps those toggles accessible with hotkeys.",
 								"Toggle player outlines, loot markers, vehicle cues, and per-weapon Aimbot settings without alt-tabbing out of Arc Raiders.",
-								"Control deep-dives: <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, <a href=\"/rust-radar-hack/\">radar</a>.",
+								"Control deep-dives: <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, <a href=\"/arc-raiders-radar/\">radar</a>.",
 							],
 						},
 						{
@@ -764,13 +764,13 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Separate ESP wallhack categories for players, loot, chests, and vehicles let you reduce overlay noise during rotations and endgame circles.",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when ${EXT.rust} seasons change fight distances and mobility.",
-								"Soft tracking players should start with <a href=\"/rust-soft-aim/\">soft aim</a> profiles before aggressive FOV.",
+								"Soft tracking players should start with <a href=\"/arc-raiders-aimbot/\">soft aim</a> profiles before aggressive FOV.",
 							],
 						},
 						{
 							h2: "Maintained mod menu after EAC patches",
 							paragraphs: [
-								"Arc Raiders mod menu behavior is rebuilt when Easy Anti-Cheat or major Arc Raiders updates land. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/eac-bypass-rust/\">EAC bypass guide</a> before queueing on patch days.",
+								"Arc Raiders mod menu behavior is rebuilt when Easy Anti-Cheat or major Arc Raiders updates land. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/arc-raiders-hacks/\">EAC bypass guide</a> before queueing on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">Pricing</a>.",
 								"Need install steps? Open <a href=\"/setup/\">Setup</a> after your license email arrives.",
 							],
@@ -787,14 +787,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders soft aim gallery",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "Aimbot controls",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "What Arc Raiders soft aim means",
 							paragraphs: [
 								"Arc Raiders soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. Arc Raiders Hacks exposes smoothness, FOV, and sensitivity sliders so you control how assist feels in BR firefights.",
 								"Bone priority and target selection cover closest player, lowest health, or highest-threat targets during squad fights.",
-								"Full Aimbot documentation: <a href=\"/rust-aimbot/\">Arc Raiders Aimbot</a>. Alternate wording: <a href=\"/rust-aimbot-hack/\">aimbot hack</a>.",
+								"Full Aimbot documentation: <a href=\"/arc-raiders-aimbot/\">Arc Raiders Aimbot</a>. Alternate wording: <a href=\"/arc-raiders-aimbot/\">aimbot hack</a>.",
 							],
 						},
 						{
@@ -802,7 +802,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Save separate soft aim profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-match.",
 								"Weapon TTKs shift with <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> balance patches — retune smoothness after major combat updates.",
-								"Soft aim ships alongside <a href=\"/rust-esp/\">ESP wallhack</a> and <a href=\"/rust-radar-hack/\">2D radar</a> overlays.",
+								"Soft aim ships alongside <a href=\"/arc-raiders-esp/\">ESP wallhack</a> and <a href=\"/arc-raiders-radar/\">2D radar</a> overlays.",
 							],
 						},
 						{
@@ -839,8 +839,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Best Arc Raiders hacks feature checklist",
 							paragraphs: [
 								"Look for player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Arc Raiders patches.",
-								"Review <a href=\"/features/\">Features</a>, <a href=\"/undetected-rust-cheats/\">undetected status</a>, and <a href=\"/rust-cheats-2026/\">Arc Raiders hacks 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
-								"Module pages worth opening: <a href=\"/rust-esp/\">ESP</a>, <a href=\"/rust-aimbot/\">Aimbot</a>, <a href=\"/rust-hacks/\">hacks</a>.",
+								"Review <a href=\"/features/\">Features</a>, <a href=\"/arc-raiders-hacks/\">undetected status</a>, and <a href=\"/arc-raiders-hacks/\">Arc Raiders hacks 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
+								"Module pages worth opening: <a href=\"/arc-raiders-esp/\">ESP</a>, <a href=\"/arc-raiders-aimbot/\">Aimbot</a>, <a href=\"/arc-raiders-hacks/\">hacks</a>.",
 							],
 						},
 						{
@@ -863,14 +863,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders aimbot hack gallery",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "Aimbot settings",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders aimbot hack vs visibility tools",
 							paragraphs: [
 								"A Arc Raiders aimbot hack focuses on assisted targeting during firefights — while ESP wallhack and radar handle map awareness. Arc Raiders Hacks bundles aimbot hack modules with visibility overlays in one license.",
 								"Smoothness, FOV, and sensitivity controls tune assist for Arc Raiders combat pace across PVE and PVP.",
-								"Prefer softer tracking language? See <a href=\"/rust-soft-aim/\">soft aim</a>. Full settings: <a href=\"/rust-aimbot/\">Aimbot page</a>.",
+								"Prefer softer tracking language? See <a href=\"/arc-raiders-aimbot/\">soft aim</a>. Full settings: <a href=\"/arc-raiders-aimbot/\">Aimbot page</a>.",
 							],
 						},
 						{
@@ -884,9 +884,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected aimbot hack maintenance",
 							paragraphs: [
-								"Aimbot hack signatures rebuild after Easy Anti-Cheat updates. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/eac-bypass-rust/\">EAC bypass guide</a> before queueing after patch days.",
+								"Aimbot hack signatures rebuild after Easy Anti-Cheat updates. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/arc-raiders-hacks/\">EAC bypass guide</a> before queueing after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">Pricing</a>.",
-								"Pair with <a href=\"/rust-esp/\">ESP</a> for the full information + assist loop.",
+								"Pair with <a href=\"/arc-raiders-esp/\">ESP</a> for the full information + assist loop.",
 							],
 						},
 					],
@@ -901,14 +901,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					galleryTitle: "Arc Raiders ESP hack gallery",
 					ctaPrimary: "Buy Arc Raiders Hacks",
 					ctaSecondary: "ESP controls",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "What a Arc Raiders ESP hack shows",
 							paragraphs: [
 								"A Arc Raiders ESP hack renders enemy player outlines, vehicle positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.",
 								"Distance readouts and snapline options help control engagement range during squad pushes and third-party scenarios.",
-								"Canonical visibility guide: <a href=\"/rust-esp/\">Arc Raiders ESP</a>. Wallhack wording: <a href=\"/rust-wallhack/\">wallhack</a>.",
+								"Canonical visibility guide: <a href=\"/arc-raiders-esp/\">Arc Raiders ESP</a>. Wallhack wording: <a href=\"/arc-raiders-wallhack/\">wallhack</a>.",
 							],
 						},
 						{
@@ -922,9 +922,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected ESP hack with EAC maintenance",
 							paragraphs: [
-								"ESP hack modules rebuild after Easy Anti-Cheat and Arc Raiders patches. Check the <a href=\"/updates/\">Updates page</a> before queueing — pair ESP hack awareness with <a href=\"/rust-radar-hack/\">radar hack</a> for flank reads.",
+								"ESP hack modules rebuild after Easy Anti-Cheat and Arc Raiders patches. Check the <a href=\"/updates/\">Updates page</a> before queueing — pair ESP hack awareness with <a href=\"/arc-raiders-radar/\">radar hack</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">Pricing</a>.",
-								"Install steps: <a href=\"/setup/\">Setup</a>. Status questions: <a href=\"/undetected-rust-cheats/\">undetected guide</a>.",
+								"Install steps: <a href=\"/setup/\">Setup</a>. Status questions: <a href=\"/arc-raiders-hacks/\">undetected guide</a>.",
 							],
 						},
 					],
@@ -953,8 +953,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Visibility tools vs unlock-all claims",
 							paragraphs: [
 								"ESP wallhack helps you spot enemy squads, vehicles, and loot chests during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.",
-								"For loadout planning during a match, loot and chest markers speed BR rotations — see the <a href=\"/rust-esp/\">ESP</a> and <a href=\"/features/\">Features</a> pages for the full tool list.",
-								"Related: <a href=\"/rust-hacks/\">Arc Raiders Hacks</a> and <a href=\"/best-rust-cheats/\">best Arc Raiders hacks</a>.",
+								"For loadout planning during a match, loot and chest markers speed BR rotations — see the <a href=\"/arc-raiders-esp/\">ESP</a> and <a href=\"/features/\">Features</a> pages for the full tool list.",
+								"Related: <a href=\"/arc-raiders-hacks/\">Arc Raiders Hacks</a> and <a href=\"/arc-raiders-hacks/\">best Arc Raiders hacks</a>.",
 							],
 						},
 						{
@@ -1065,7 +1065,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Risk and anti-cheat disclaimer",
 							paragraphs: [
 								"Using cheats in Arc Raiders may violate <a href=\"https://www.arcraiders.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Arc Raiders</a> terms and result in account penalties. Arc Raiders Hacks provides maintenance but does not guarantee undetected status or account safety.",
-								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/undetected-rust-cheats/\">undetected status</a>.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/arc-raiders-hacks/\">undetected status</a>.",
 							],
 						},
 						{
@@ -1190,7 +1190,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1225,7 +1225,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1470,7 +1470,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Trucos indetectables — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1505,7 +1505,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1540,7 +1540,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1750,7 +1750,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1820,7 +1820,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -1855,7 +1855,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver funciones",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2132,7 +2132,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2167,7 +2167,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2412,7 +2412,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Triches indétectables — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2447,7 +2447,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2482,7 +2482,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2692,7 +2692,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2762,7 +2762,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -2797,7 +2797,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Acheter Arc Raiders Hacks",
 					ctaSecondary: "Voir les fonctions",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3074,7 +3074,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3109,7 +3109,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3354,7 +3354,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected Cheats — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3389,7 +3389,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3424,7 +3424,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3634,7 +3634,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3704,7 +3704,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -3739,7 +3739,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks kaufen",
 					ctaSecondary: "Features ansehen",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4016,7 +4016,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4051,7 +4051,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4296,7 +4296,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheats indetectáveis — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4331,7 +4331,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4366,7 +4366,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4576,7 +4576,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4646,7 +4646,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4681,7 +4681,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Comprar Arc Raiders Hacks",
 					ctaSecondary: "Ver recursos",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4958,7 +4958,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -4993,7 +4993,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5238,7 +5238,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheat indetectable — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5273,7 +5273,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5308,7 +5308,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5518,7 +5518,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5588,7 +5588,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5623,7 +5623,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Acquista Arc Raiders Hacks",
 					ctaSecondary: "Vedi funzioni",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5900,7 +5900,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -5935,7 +5935,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6180,7 +6180,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected Cheats — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6215,7 +6215,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6250,7 +6250,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6460,7 +6460,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6530,7 +6530,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6565,7 +6565,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks kopen",
 					ctaSecondary: "Bekijk functies",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6842,7 +6842,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -6877,7 +6877,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7122,7 +7122,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheaty undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7157,7 +7157,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7192,7 +7192,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7402,7 +7402,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7472,7 +7472,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7507,7 +7507,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Kup Arc Raiders Hacks",
 					ctaSecondary: "Zobacz funkcje",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7784,7 +7784,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -7819,7 +7819,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8064,7 +8064,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected читы — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8099,7 +8099,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8134,7 +8134,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8344,7 +8344,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8414,7 +8414,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8449,7 +8449,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Купить Arc Raiders Hacks",
 					ctaSecondary: "Смотреть функции",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8726,7 +8726,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -8761,7 +8761,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9006,7 +9006,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected hileler — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9041,7 +9041,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9076,7 +9076,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9286,7 +9286,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9356,7 +9356,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9391,7 +9391,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks satın al",
 					ctaSecondary: "Özellikleri gör",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9668,7 +9668,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9703,7 +9703,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9948,7 +9948,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "غش undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -9983,7 +9983,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10018,7 +10018,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10228,7 +10228,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10298,7 +10298,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10333,7 +10333,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "اشترِ Arc Raiders Hacks",
 					ctaSecondary: "عرض الميزات",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10610,7 +10610,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10645,7 +10645,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10890,7 +10890,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetectedチート — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10925,7 +10925,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -10960,7 +10960,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11170,7 +11170,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11240,7 +11240,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11275,7 +11275,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacksを購入",
 					ctaSecondary: "機能を見る",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11552,7 +11552,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11587,7 +11587,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11832,7 +11832,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected 치트 — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11867,7 +11867,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -11902,7 +11902,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12112,7 +12112,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12182,7 +12182,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12217,7 +12217,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks 구매",
 					ctaSecondary: "기능 보기",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12494,7 +12494,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12529,7 +12529,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12774,7 +12774,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected作弊 — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12809,7 +12809,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -12844,7 +12844,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13054,7 +13054,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13124,7 +13124,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13159,7 +13159,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "购买 Arc Raiders Hacks",
 					ctaSecondary: "查看功能",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13436,7 +13436,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13471,7 +13471,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13716,7 +13716,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected cheats — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13751,7 +13751,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13786,7 +13786,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -13996,7 +13996,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14066,7 +14066,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14101,7 +14101,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Arc Raiders Hacks खरीदें",
 					ctaSecondary: "फ़ीचर्स देखें",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14378,7 +14378,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14413,7 +14413,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14658,7 +14658,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheat undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14693,7 +14693,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14728,7 +14728,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -14938,7 +14938,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15008,7 +15008,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15043,7 +15043,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Beli Arc Raiders Hacks",
 					ctaSecondary: "Lihat fitur",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15320,7 +15320,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15355,7 +15355,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15600,7 +15600,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheats undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15635,7 +15635,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15670,7 +15670,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15880,7 +15880,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15950,7 +15950,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -15985,7 +15985,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "ซื้อ Arc Raiders Hacks",
 					ctaSecondary: "ดูฟีเจอร์",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16262,7 +16262,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16297,7 +16297,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16542,7 +16542,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheat undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16577,7 +16577,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16612,7 +16612,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16822,7 +16822,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16892,7 +16892,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -16927,7 +16927,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Mua Arc Raiders Hacks",
 					ctaSecondary: "Xem tính năng",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17204,7 +17204,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17239,7 +17239,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17484,7 +17484,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected чіти — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17519,7 +17519,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17554,7 +17554,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17764,7 +17764,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17834,7 +17834,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -17869,7 +17869,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Купити Arc Raiders Hacks",
 					ctaSecondary: "Дивитися функції",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18146,7 +18146,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18181,7 +18181,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18426,7 +18426,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected cheaty — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18461,7 +18461,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18496,7 +18496,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18706,7 +18706,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18776,7 +18776,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -18811,7 +18811,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Koupit Arc Raiders Hacks",
 					ctaSecondary: "Zobrazit funkce",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19088,7 +19088,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19123,7 +19123,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19368,7 +19368,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Cheats undetected — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19403,7 +19403,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19438,7 +19438,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19648,7 +19648,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19718,7 +19718,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -19753,7 +19753,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Cumpără Arc Raiders Hacks",
 					ctaSecondary: "Vezi funcții",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20030,7 +20030,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-wallhack/",
+					ctaSecondaryHref: "/arc-raiders-wallhack/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20065,7 +20065,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20310,7 +20310,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/eac-bypass-rust/",
+					ctaSecondaryHref: "/arc-raiders-hacks/",
 					sections: [
 						{
 							h2: "Undetected cheats — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20345,7 +20345,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-hitbox.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders Wallhack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20380,7 +20380,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-bots.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Radar Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20590,7 +20590,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-hacks-hero.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Soft Aim — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20660,7 +20660,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-aimbot-menu.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-aimbot/",
+					ctaSecondaryHref: "/arc-raiders-aimbot/",
 					sections: [
 						{
 							h2: "Arc Raiders Aimbot Hack — extraction zones, ARC patrol routes, and collapsed districts",
@@ -20695,7 +20695,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/rust-esp-overlay.webp",
 					ctaPrimary: "Köp Arc Raiders Hacks",
 					ctaSecondary: "Se funktioner",
-					ctaSecondaryHref: "/rust-esp/",
+					ctaSecondaryHref: "/arc-raiders-esp/",
 					sections: [
 						{
 							h2: "Arc Raiders ESP Hack — extraction zones, ARC patrol routes, and collapsed districts",

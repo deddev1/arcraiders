@@ -69,19 +69,19 @@ export const trustSignals = {
 } as const;
 
 export const seoLandingPages = [
-	{ label: 'Arc Raiders Hacks', href: '/rust-hacks/' },
-	{ label: 'Arc Raiders ESP', href: '/rust-esp/' },
-	{ label: 'Arc Raiders Aimbot', href: '/rust-aimbot/' },
-	{ label: 'Arc Raiders wallhack', href: '/rust-wallhack/' },
-	{ label: 'Undetected status', href: '/undetected-rust-cheats/' },
+	{ label: 'Arc Raiders Hacks', href: '/arc-raiders-hacks/' },
+	{ label: 'Arc Raiders ESP', href: '/arc-raiders-esp/' },
+	{ label: 'Arc Raiders Aimbot', href: '/arc-raiders-aimbot/' },
+	{ label: 'Arc Raiders wallhack', href: '/arc-raiders-wallhack/' },
+	{ label: 'Undetected status', href: '/arc-raiders-hacks/' },
 	{ label: 'Pricing', href: '/pricing/' },
 ] as const;
 
 export const mainNav = [
 	{ label: 'Home', href: '/' },
-	{ label: 'Hacks', href: '/rust-hacks/' },
-	{ label: 'Aimbot', href: '/rust-aimbot/' },
-	{ label: 'ESP', href: '/rust-esp/' },
+	{ label: 'Hacks', href: '/arc-raiders-hacks/' },
+	{ label: 'Aimbot', href: '/arc-raiders-aimbot/' },
+	{ label: 'ESP', href: '/arc-raiders-esp/' },
 	{ label: 'Features', href: '/features/' },
 	{ label: 'Pricing', href: '/pricing/' },
 	{ label: 'Setup', href: '/setup/' },
@@ -99,9 +99,9 @@ export const footerNav = [
 
 export const footerExplore = [
 	{ label: 'Home', href: '/' },
-	{ label: 'Arc Raiders Hacks', href: '/rust-hacks/' },
-	{ label: 'ESP', href: '/rust-esp/' },
-	{ label: 'Aimbot', href: '/rust-aimbot/' },
+	{ label: 'Arc Raiders Hacks', href: '/arc-raiders-hacks/' },
+	{ label: 'ESP', href: '/arc-raiders-esp/' },
+	{ label: 'Aimbot', href: '/arc-raiders-aimbot/' },
 	{ label: 'Features', href: '/features/' },
 	{ label: 'Pricing', href: '/pricing/' },
 	{ label: 'Setup', href: '/setup/' },
@@ -188,7 +188,7 @@ export const customerReviews = [
 		rating: 5,
 		text: 'soft aim feels clean on smgs in arc raids. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
 		short: 'soft aim feels clean on smgs in arc raids. once u get the menu its smooth',
-		slug: 'rust-soft-aim-review-xkrypt0',
+		slug: 'arc-raiders-soft-aim-review-xkrypt0',
 		seoTitle: 'Soft Aim Review by @xKrypt0_ARC — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Real Arc Raiders soft aim review from @xKrypt0_ARC: 5/5 for soft aim feel after setup on Windows PC.',
@@ -200,7 +200,7 @@ export const customerReviews = [
 		rating: 4,
 		text: "esp boxes in extraction zones are actually useful, can see who's holding rooftops before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
 		short: "esp boxes in extraction zones are actually useful, can see who's holding rooftops before u push. still worth it for the price",
-		slug: 'rust-esp-zero-build-review-buildsr4k',
+		slug: 'arc-raiders-esp-zero-build-review-buildsr4k',
 		seoTitle: 'ESP Extraction Review by @extractR4K — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders ESP review from @extractR4K: 4/5 for ESP player boxes in extraction zones with radar feedback.',
@@ -212,7 +212,7 @@ export const customerReviews = [
 		rating: 5,
 		text: 'switched from a kernel only tool last season. cloud dma setup was easier than i expected, support walked me through the dma part on discord. survived the last patch while my old sub got flagged. lifetime was the move',
 		short: 'cloud dma setup was easier than i expected. survived the last patch while my old sub got flagged',
-		slug: 'rust-cloud-dma-review-dma-wizard',
+		slug: 'arc-raiders-cloud-dma-review-dma-wizard',
 		seoTitle: 'Cloud DMA Review by @dma_wizard — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Cloud DMA Arc Raiders Hacks review from @dma_wizard: 5/5 after surviving a patch that flagged a kernel-only cheat.',
@@ -224,7 +224,7 @@ export const customerReviews = [
 		rating: 4,
 		text: "finally arc raiders hacks that don't feel like garbage on controller. soft aim with xbox pad works, had to tweak fov a bit. menu navigation with pad is kinda awkward but doable",
 		short: "finally arc raiders hacks that don't feel like garbage on controller. soft aim with xbox pad works",
-		slug: 'rust-controller-soft-aim-review-ctrl-player99',
+		slug: 'arc-raiders-controller-soft-aim-review-ctrl-player99',
 		seoTitle: 'Controller Soft Aim by @ctrl_player99 — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Controller Arc Raiders hacks review from @ctrl_player99: 4/5 for soft aim on an Xbox pad with FOV tweaks.',
@@ -236,7 +236,7 @@ export const customerReviews = [
 		rating: 3,
 		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
 		short: 'features are good when it works. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
-		slug: 'rust-hack-setup-review-stormchaser07',
+		slug: 'arc-raiders-hack-setup-review-stormchaser07',
 		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Honest 3/5 Arc Raiders Hacks review from @stormChaser_07: ESP and loot markers solid in ranked, but setup docs needed support help.',
@@ -248,7 +248,7 @@ export const customerReviews = [
 		rating: 5,
 		text: 'loot esp alone pays for monthly imo. container markers + distance readouts = way faster extractions',
 		short: 'loot esp alone pays for monthly imo. container markers + distance readouts = way faster extractions',
-		slug: 'rust-loot-esp-review-lootgoblinx',
+		slug: 'arc-raiders-loot-esp-review-lootgoblinx',
 		seoTitle: 'Loot ESP Review by @lootGoblinx — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders loot ESP review from @lootGoblinx: 5/5 for container markers and distance readouts on extraction runs.',
@@ -259,7 +259,7 @@ export const customerReviews = [
 		rating: 4,
 		text: 'been using since early access. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when patches hit, had to wait a day once',
 		short: 'soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights',
-		slug: 'rust-soft-aim-ranked-review-rankedgrind42',
+		slug: 'arc-raiders-soft-aim-ranked-review-rankedgrind42',
 		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Ranked Arc Raiders soft aim review from @rankedGrind42: 4/5 for per-weapon aimbot profiles with patch-day update feedback.',
@@ -271,7 +271,7 @@ export const customerReviews = [
 		rating: 5,
 		text: 'radar saved me so many times during extraction rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
 		short: 'radar saved me so many times during extraction rotations. boxes + radar combo is clean',
-		slug: 'rust-radar-hack-review-vanlifefn',
+		slug: 'arc-raiders-radar-hack-review-vanlifefn',
 		seoTitle: 'Radar Hack Review by @vanLifeARC — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders radar hack review from @vanLifeARC: 5/5 for 2D radar during extraction rotations and spotting third parties in squads.',
@@ -283,7 +283,7 @@ export const customerReviews = [
 		rating: 4,
 		text: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours last patch. was back online next morning.',
 		short: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours',
-		slug: 'rust-eac-update-review-patchdaymike',
+		slug: 'arc-raiders-eac-update-review-patchdaymike',
 		seoTitle: 'Patch Day Review by @patchDayMike — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Patch-day review from @patchDayMike: 4/5 for how fast Arc Raiders Hacks posts maintenance updates after Arc Raiders patches.',
@@ -295,7 +295,7 @@ export const customerReviews = [
 		rating: 5,
 		text: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		short: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
-		slug: 'rust-sniper-soft-aim-review-snipezonly',
+		slug: 'arc-raiders-sniper-soft-aim-review-snipezonly',
 		seoTitle: 'Sniper Soft Aim by @snipezOnly_ — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders sniper soft aim review from @snipezOnly_: 5/5 for the sniper aimbot profile paired with ESP tagging.',
