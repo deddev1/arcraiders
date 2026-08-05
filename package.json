@@ -10,6 +10,7 @@
     "start": "astro preview --host 0.0.0.0 --port 8080",
     "dev:ip": "node scripts/dev-with-ip.mjs",
     "build": "astro build",
+    "build:cf": "node scripts/cloudflare-build.mjs",
     "seo:audit": "node scripts/seo-audit.mjs",
     "build:validate": "astro build && node scripts/validate-sitemaps.mjs && node scripts/seo-audit.mjs",
     "optimize:images": "node scripts/optimize-responsive-images.mjs",
@@ -18,6 +19,7 @@
     "validate:sitemaps": "node scripts/validate-sitemaps.mjs",
     "generate:i18n": "node scripts/generate-i18n-content.mjs",
     "deploy": "npm run build && wrangler deploy",
+    "cf:deploy": "npm run build:cf && wrangler deploy",
     "pages:deploy": "wrangler pages deploy dist --project-name=arcraidershacks",
     "astro": "astro"
   },
