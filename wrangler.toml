@@ -1,7 +1,11 @@
 name = "arcraidershacks"
 compatibility_date = "2026-01-01"
 
-# Cloudflare Git deploy runs `wrangler deploy` (Workers + static assets).
+# Cloudflare Git deploy runs `npx wrangler deploy` without a separate build step.
+# This custom build runs before deploy so `./dist` exists for static assets.
+[build]
+command = "npm ci && npm run build"
+
 # Old Pages-only key `pages_build_output_dir` is ignored there and caused:
 # "Missing entry-point to Worker script or to assets directory"
 [assets]

@@ -23,28 +23,45 @@ npm run build:validate
 
 Expected output: **556** indexable HTML pages (25 English marketing + 15 blog URLs + 21 locales × 25 pages each).
 
-## 2. Cloudflare Pages project
+## 2. Cloudflare deployment
 
-### Option A — Git-connected (recommended)
+### Option A — Workers Git deploy (current setup)
+
+If your Cloudflare project runs **`npx wrangler deploy`** on push, the repo is configured to build automatically via `wrangler.toml`:
+
+```toml
+[build]
+command = "npm ci && npm run build"
+```
+
+No separate dashboard build command is required. Set these environment variables on the Worker if needed:
+
+| Variable | Value |
+|----------|-------|
+| `NODE_VERSION` | `22` |
+
+Redeploy by pushing to the connected branch.
+
+### Option B — Cloudflare Pages (Git-connected)
 
 1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
 2. Select this repository.
 3. Configure build settings:
-   - **Project name:** `rusthacks` (existing) or create a new project
-   - **Production branch:** `main` (or `master`)
-   - **Build command:** `npm run build`
+   - **Project name:** `arcraidershacks`
+   - **Production branch:** `main`
+   - **Build command:** `npm ci && npm run build`
    - **Build output directory:** `dist`
    - **Node.js version:** 22 (set via environment variable `NODE_VERSION=22` if needed)
 4. Save and deploy. Cloudflare runs the build on each push.
 
-### Option B — Direct upload / Wrangler CLI
+### Option C — Direct upload / Wrangler CLI
 
 ```bash
 npm run build:validate
-npm run pages:deploy
+npm run deploy
 ```
 
-This runs `wrangler pages deploy dist --project-name=rusthacks` (see `wrangler.toml`).
+Or for Pages: `npm run pages:deploy` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
