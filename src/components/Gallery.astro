@@ -1,5 +1,5 @@
 ---
-import { rustImages, rustVideo } from '../data/rust';
+import { rustImages } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -27,20 +27,20 @@ const galleryAlts = [
 	undefined,
 ] as const;
 
-const tiles = rustImages.gallery.map((image, index) => ({
-	src: contentSrc(image.src),
-	srcset: contentSrcSet(image.src),
-	alt: galleryAlts[index] ?? image.alt,
-}));
-
-/** Large still under the grid — fills leftover media-column height. Not the last grid tile. */
-const featuredStillSrc = '/images/rust-aimbot-menu.webp';
+/** Large featured still — first gallery image, unique from grid below. */
+const featuredStillSrc = rustImages.gallery[0].src;
 const featuredStill = {
 	src: contentSrc(featuredStillSrc),
 	srcset: contentSrcSet(featuredStillSrc),
-	alt: ui.images.aimbotCombat,
+	alt: rustImages.gallery[0].alt,
 } as const;
-const galleryPoster = contentSrc(rustVideo.poster);
+
+/** Grid uses images 2–6 so each of the six assets appears once on the page. */
+const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
+	src: contentSrc(image.src),
+	srcset: contentSrcSet(image.src),
+	alt: galleryAlts[index + 1] ?? image.alt,
+}));
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
@@ -67,36 +67,35 @@ const galleryPoster = contentSrc(rustVideo.poster);
 				</div>
 
 				<aside class="gallery__advantages" aria-labelledby="gallery-advantages-title">
-					<h3 id="gallery-advantages-title" class="gallery__advantages-label">Cheat advantages</h3>
+					<h3 id="gallery-advantages-title" class="gallery__advantages-label">Arc Raiders hack advantages</h3>
 					<ul class="gallery__advantages-list">
-						<li>Undetected-focused builds with public EAC status after patches</li>
-						<li>Full ESP + soft aim + radar in one package — no feature upsell maze</li>
+						<li>Undetected-focused builds with public anti-cheat status after patches</li>
+						<li>Full Arc Raiders ESP + soft aim + radar in one package — no feature upsell maze</li>
 						<li>Instant license delivery for Windows 10 &amp; 11</li>
-						<li>Real in-game previews so you see boxes, skeletons, and aim menu before checkout</li>
+						<li>Real in-game Arc Raiders previews so you see ESP, aimbot menu, and wallhack before checkout</li>
 					</ul>
 				</aside>
 			</div>
 
 			<div class="gallery__media">
-				<figure class="gallery__featured gallery__video media-frame">
-					<video
-						data-rust-hacks-video="lazy"
-						data-src={rustVideo.src}
-						poster={galleryPoster}
-						muted={true}
-						loop
-						playsinline
-						webkit-playsinline
-						preload="none"
-						title={rustVideo.title}
-						aria-label={rustVideo.ariaLabel}
-					></video>
-					<figcaption>{rustVideo.caption}</figcaption>
+				<figure class="gallery__featured gallery__still media-frame">
+					<img
+						src={featuredStill.src}
+						srcset={featuredStill.srcset}
+						sizes="(max-width: 560px) 100vw, (max-width: 900px) 100vw, 52vw"
+						alt={featuredStill.alt}
+						width="1280"
+						height="720"
+						loading="eager"
+						fetchpriority="high"
+						decoding="async"
+					/>
+					<figcaption>{featuredStill.alt}</figcaption>
 				</figure>
 
 				<div class="gallery__grid">
 					{
-						tiles.map((image) => (
+						gridTiles.map((image) => (
 							<figure class="gallery__item media-frame">
 								<img
 									src={image.src}
@@ -113,20 +112,6 @@ const galleryPoster = contentSrc(rustVideo.poster);
 						))
 					}
 				</div>
-
-				<figure class="gallery__still media-frame">
-					<img
-						src={featuredStill.src}
-						srcset={featuredStill.srcset}
-						sizes="(max-width: 560px) 100vw, (max-width: 900px) 100vw, 52vw"
-						alt={featuredStill.alt}
-						width="1280"
-						height="720"
-						loading="lazy"
-						decoding="async"
-					/>
-					<figcaption>{featuredStill.alt}</figcaption>
-				</figure>
 			</div>
 		</div>
 	</div>
@@ -280,7 +265,7 @@ const galleryPoster = contentSrc(rustVideo.poster);
 	.gallery__media {
 		display: grid;
 		gap: 0.45rem;
-		grid-template-rows: auto auto minmax(11rem, 1fr);
+		grid-template-rows: auto auto;
 		align-self: stretch;
 		min-height: 100%;
 	}
@@ -340,9 +325,8 @@ const galleryPoster = contentSrc(rustVideo.poster);
 	}
 
 	.gallery__featured:hover img,
-	.gallery__still:hover img,
 	.gallery__item:hover img {
-		transform: scale(1.03);
+		transform: scale(1.33);
 	}
 
 	.gallery__featured figcaption,

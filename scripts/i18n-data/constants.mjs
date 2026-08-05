@@ -104,7 +104,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy IsleCheat')
+		.replace(/Buy ArcRaiders Hacks/g, 'Buy ArcRaiders Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -126,8 +126,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
-	rust: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
-	status: '<a href="https://rust.facepunch.com/" target="_blank" rel="noopener noreferrer">Facepunch Rust</a>',
+	epic: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
+	rust: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
+	status: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
 	eac: '<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>',
 };

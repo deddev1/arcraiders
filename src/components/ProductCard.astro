@@ -1,5 +1,5 @@
 ---
-import { rustImages, rustVideo } from '../data/rust';
+import { rustImages } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -30,7 +30,15 @@ const productAlts = [
 	ui.images.rebootFight,
 ] as const;
 
-/** Screenshot thumbs only — main media is the lightweight preview loop. */
+/** Hero still + five unique product thumbs — six Arc Raiders images, no repeats. */
+const heroPreview = {
+	src: contentSrc(rustImages.hero),
+	fullSrc: rustImages.hero,
+	srcset: contentSrcSet(rustImages.hero),
+	alt: 'Arc Raiders hacks gameplay — extraction combat overview',
+};
+
+/** Screenshot thumbs only — each unique Arc Raiders still. */
 const images = rustImages.product.map((image, index) => ({
 	src: contentSrc(image.src),
 	fullSrc: image.src,
@@ -38,39 +46,25 @@ const images = rustImages.product.map((image, index) => ({
 	srcset: contentSrcSet(image.src),
 }));
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
-const posterSrc = contentSrc(rustVideo.poster);
 ---
 
 <section class="product surface-card" id="product" data-product aria-label="Product details">
 	<div class="product__media">
 		<figure class="product__figure media-frame">
-			<video
-				class="product__video"
-				data-main-video
-				data-rust-hacks-video="product"
-				data-src={rustVideo.src}
-				poster={posterSrc}
-				muted={true}
-				loop
-				playsinline
-				webkit-playsinline
-				preload="none"
-				title={rustVideo.title}
-				aria-label={rustVideo.ariaLabel}
-			></video>
 			<img
-				src={images[0].src}
-				srcset={images[0].srcset}
+				src={heroPreview.src}
+				srcset={heroPreview.srcset}
 				sizes={productMainSizes}
-				alt={images[0].alt}
+				alt={heroPreview.alt}
 				width="1280"
 				height="720"
-				class="product__image is-hidden"
+				class="product__image"
 				data-main-image
-				loading="lazy"
+				loading="eager"
+				fetchpriority="high"
 				decoding="async"
 			/>
-			<span class="product__credit" aria-hidden="true">Preview</span>
+			<span class="product__credit" aria-hidden="true">Arc Raiders</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
 			{

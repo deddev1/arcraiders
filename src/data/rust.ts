@@ -1,132 +1,68 @@
 import { siteConfig } from './site';
 
-/**
- * Distinct stills (unique bytes) — The Isle Steam screenshots mapped onto
- * existing SEO filenames so hero/gallery/OG paths stay stable.
- */
+/** Six unique Arc Raiders screenshots — each used once per on-page gallery/product grid. */
 
-/** Trimmed hero loop — first ~6s of the background clip. */
 export const rustHeroVideo = {
-	src: '/videos/rust-hacks-hero-6s.mp4',
+	src: '/images/rust-hacks-hero.webp',
 	poster: '/images/rust-hacks-hero.webp',
-	title: 'IsleCheat hero background',
-	ariaLabel: 'IsleCheat gameplay background — short loop',
+	title: 'Arc Raiders hacks hero preview',
+	ariaLabel: 'Arc Raiders hacks gameplay preview — ESP and aimbot on PC',
 } as const;
 
-/**
- * Product / gallery preview loop.
- * Uses the trimmed ~6s clip (~260KB) — the full background MP4 is ~15MB and
- * destroyed mobile Lighthouse when autoplayed with preload=auto.
- */
 export const rustVideo = {
-	src: '/videos/rust-hacks-hero-6s.mp4',
-	/** Distinct still — not the hero poster, so preview doesn't reuse the hero frame nearby. */
-	poster: '/images/rust-esp-hitbox.webp',
-	title: 'IsleCheat background video',
-	ariaLabel: 'IsleCheat gameplay preview — ESP and aimbot on PC',
-	caption: 'IsleCheat gameplay video with ESP and aimbot',
+	src: '/images/rust-recoil-trainer.webp',
+	poster: '/images/rust-recoil-trainer.webp',
+	title: 'Arc Raiders hacks combat preview',
+	ariaLabel: 'Arc Raiders hacks preview — squad extraction push',
+	caption: 'Arc Raiders hacks gameplay with ESP and aimbot overlays',
 } as const;
+
+const arc1 = '/images/rust-hacks-hero.webp';
+const arc2 = '/images/rust-esp-overlay.webp';
+const arc3 = '/images/rust-esp-bots.webp';
+const arc4 = '/images/rust-esp-hitbox.webp';
+const arc5 = '/images/rust-aimbot-menu.webp';
+const arc6 = '/images/rust-recoil-trainer.webp';
 
 export const rustImages = {
-	hero: '/images/rust-hacks-hero.webp',
-	cover: '/images/rust-esp-overlay.webp',
+	hero: arc1,
+	cover: arc2,
 	logo: siteConfig.logo,
-	loadoutBuilder: '/images/rust-aimbot-menu.webp',
-	aimbotCombat: '/images/rust-aimbot-menu.webp',
-	squadFight: '/images/rust-esp-bots.webp',
-	espWallhack: '/images/rust-esp-hitbox.webp',
-	cheatsPackage: '/images/rust-esp-overlay.webp',
-	headerArt: '/images/rust-esp-hitbox.webp',
-	battleRoyaleCombat: '/images/rust-esp-hitbox.webp',
-	rebootFight: '/images/rust-esp-bots.webp',
-	playerEsp: '/images/rust-esp-overlay.webp',
-	zeroBuildCombat: '/images/rust-hacks-hero.webp',
-	zeroBuildMode: '/images/rust-esp-bots.webp',
-	battleRoyaleIsland: '/images/rust-aimbot-menu.webp',
-	/** Product thumbs — five unique stills; main media is video (see ProductCard). */
+	loadoutBuilder: arc5,
+	aimbotCombat: arc4,
+	squadFight: arc3,
+	espWallhack: arc4,
+	cheatsPackage: arc2,
+	headerArt: arc4,
+	battleRoyaleCombat: arc6,
+	rebootFight: arc3,
+	playerEsp: arc2,
+	zeroBuildCombat: arc1,
+	zeroBuildMode: arc3,
+	battleRoyaleIsland: arc5,
+	/** Product thumbs — five unique stills; main media is the hero still. */
 	product: [
-		{
-			src: '/images/rust-esp-overlay.webp',
-			alt: 'The Isle gameplay — dense jungle and dinosaur hunt view',
-		},
-		{
-			src: '/images/rust-esp-bots.webp',
-			alt: 'The Isle open-world survival landscape with dinosaurs',
-		},
-		{
-			src: '/images/rust-esp-hitbox.webp',
-			alt: 'The Isle predator encounter in prehistoric terrain',
-		},
-		{
-			src: '/images/rust-aimbot-menu.webp',
-			alt: 'The Isle dinosaur pack roaming the island',
-		},
-		{
-			src: '/images/rust-hacks-hero.webp',
-			alt: 'The Isle cinematic island survival scene',
-		},
+		{ src: arc2, alt: 'Arc Raiders ESP overlay showing enemy ARC units and raiders' },
+		{ src: arc3, alt: 'Arc Raiders wallhack view through industrial ruins' },
+		{ src: arc4, alt: 'Arc Raiders aimbot targeting ARC machines in combat' },
+		{ src: arc5, alt: 'Arc Raiders cheat menu with ESP and aimbot toggles' },
+		{ src: arc6, alt: 'Arc Raiders hacks squad push through collapsed city zone' },
 	],
-	/**
-	 * Gallery stills (grid only) — featured slot above is video; a large still
-	 * under the grid fills leftover media-column height (see Gallery.astro).
-	 * Six uniques (even grid rows); order differs from product thumbs.
-	 */
+	/** Gallery grid — six unique Arc Raiders stills, no duplicates. */
 	gallery: [
-		{
-			src: '/images/rust-aimbot-menu.webp',
-			alt: 'The Isle dinosaur pack roaming the island',
-		},
-		{
-			src: '/images/rust-esp-overlay.webp',
-			alt: 'The Isle gameplay — dense jungle and dinosaur hunt view',
-		},
-		{
-			src: '/images/rust-esp-bots.webp',
-			alt: 'The Isle open-world survival landscape with dinosaurs',
-		},
-		{
-			src: '/images/rust-esp-hitbox.webp',
-			alt: 'The Isle predator encounter in prehistoric terrain',
-		},
-		{
-			src: '/images/rust-hacks-hero.webp',
-			alt: 'The Isle cinematic island survival scene',
-		},
-		{
-			src: '/images/rust-recoil-trainer.webp',
-			alt: 'The Isle shoreline and wilderness atmosphere',
-		},
+		{ src: arc1, alt: 'Arc Raiders hacks gameplay — extraction combat overview' },
+		{ src: arc2, alt: 'Arc Raiders ESP overlay showing enemy ARC units and raiders' },
+		{ src: arc3, alt: 'Arc Raiders wallhack view through industrial ruins' },
+		{ src: arc4, alt: 'Arc Raiders aimbot targeting ARC machines in combat' },
+		{ src: arc5, alt: 'Arc Raiders cheat menu with ESP and aimbot toggles' },
+		{ src: arc6, alt: 'Arc Raiders hacks squad push through collapsed city zone' },
 	],
 	sitemap: [
-		{
-			src: '/images/rust-hacks-hero.webp',
-			title: 'IsleCheat | ESP & Aimbot',
-			caption: 'The Isle cinematic island survival scene',
-		},
-		{
-			src: '/images/rust-esp-overlay.webp',
-			title: 'Isle ESP overlay',
-			caption: 'The Isle gameplay — dense jungle and dinosaur hunt view',
-		},
-		{
-			src: '/images/rust-esp-bots.webp',
-			title: 'Isle survival landscape',
-			caption: 'The Isle open-world survival landscape with dinosaurs',
-		},
-		{
-			src: '/images/rust-esp-hitbox.webp',
-			title: 'Isle predator view',
-			caption: 'The Isle predator encounter in prehistoric terrain',
-		},
-		{
-			src: '/images/rust-aimbot-menu.webp',
-			title: 'Isle pack roam',
-			caption: 'The Isle dinosaur pack roaming the island',
-		},
-		{
-			src: '/images/rust-recoil-trainer.webp',
-			title: 'Isle wilderness',
-			caption: 'The Isle shoreline and wilderness atmosphere',
-		},
+		{ src: arc1, title: 'Arc Raiders Hacks | ESP & Aimbot', caption: 'Arc Raiders hacks extraction combat overview' },
+		{ src: arc2, title: 'Arc Raiders ESP overlay', caption: 'Arc Raiders ESP showing ARC units and raiders' },
+		{ src: arc3, title: 'Arc Raiders wallhack', caption: 'Arc Raiders wallhack through industrial ruins' },
+		{ src: arc4, title: 'Arc Raiders aimbot', caption: 'Arc Raiders aimbot on ARC machines' },
+		{ src: arc5, title: 'Arc Raiders cheat menu', caption: 'Arc Raiders hacks menu with ESP toggles' },
+		{ src: arc6, title: 'Arc Raiders squad push', caption: 'Arc Raiders hacks squad extraction push' },
 	],
 } as const;

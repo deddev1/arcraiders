@@ -1,6 +1,6 @@
-# IsleCheat — Marketing Site
+# ArcRaiders Hacks — Marketing Site
 
-Static Astro 7 site for [islecheat.net](https://islecheat.net). Primary SEO focus: **IsleCheat** (supporting: rust cheats, rust esp, rust aimbot).
+Static Astro 7 site for [arcraidershacks.com](https://arcraidershacks.com). Primary SEO focus: **ArcRaiders Hacks** (supporting: rust cheats, rust esp, rust aimbot).
 
 ## Stack
 
@@ -22,7 +22,7 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-Refresh Rust atmosphere images (optional):
+Refresh Arc Raiders atmosphere images (optional):
 
 ```bash
 npm run fetch:images
@@ -35,7 +35,7 @@ npm run optimize:images
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Custom domain **islecheat.net** (apex) and redirect **www** → apex
+5. Custom domain **arcraidershacks.com** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -48,8 +48,8 @@ npm run pages:deploy
 
 - Node.js >= 22.12.0
 - Checkout URL in `src/data/site.ts` (`siteConfig.checkoutUrl`)
-- Canonical site URL: `https://islecheat.net`
+- Canonical site URL: `https://arcraidershacks.com`
 
 ## License
 
-Private — for islecheat.net deployment only.
+Private — for arcraidershacks.com deployment only.

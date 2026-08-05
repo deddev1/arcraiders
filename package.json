@@ -1,5 +1,5 @@
 {
-	"name": "islecheat",
+	"name": "arcraiders-hacks",
   "type": "module",
   "version": "1.0.0",
   "engines": {
@@ -12,7 +12,7 @@
     "build": "astro build",
     "build:validate": "astro build && node scripts/validate-sitemaps.mjs",
     "optimize:images": "node scripts/optimize-responsive-images.mjs",
-    "fetch:images": "node scripts/generate-hack-ui-images.mjs",
+    "fetch:images": "node scripts/fetch-arc-raiders-images.mjs",
     "preview": "astro preview --host 0.0.0.0 --port 8080",
     "validate:sitemaps": "node scripts/validate-sitemaps.mjs",
     "generate:i18n": "node scripts/generate-i18n-content.mjs",
