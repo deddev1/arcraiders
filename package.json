@@ -15,6 +15,7 @@
     "build:validate": "astro build && node scripts/validate-sitemaps.mjs && node scripts/seo-audit.mjs",
     "optimize:images": "node scripts/optimize-responsive-images.mjs",
     "fetch:images": "node scripts/fetch-arc-raiders-images.mjs",
+    "fetch:logo": "node scripts/fetch-zadeyo-logo.mjs",
     "preview": "astro preview --host 0.0.0.0 --port 8080",
     "validate:sitemaps": "node scripts/validate-sitemaps.mjs",
     "generate:i18n": "node scripts/generate-i18n-content.mjs",
