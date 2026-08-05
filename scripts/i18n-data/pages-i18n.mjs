@@ -60,9 +60,9 @@ const PAGE_META_TAILS = {
 	undetected: { suffix: 'EAC Safe Status', focus: 'undetected maintenance after Easy Anti-Cheat patches' },
 	wallhack: { suffix: 'ESP Visibility', focus: 'wallhack ESP for players, loot, and distance' },
 	radar: { suffix: '2D Threat Overlay', focus: '2D radar cues for flanks and rotations' },
-	'eac-bypass': { suffix: 'Patch Maintenance', focus: 'how EAC updates are handled for ArcRaiders Hacks' },
+	'eac-bypass': { suffix: 'Patch Maintenance', focus: 'how EAC updates are handled for Arc Raiders Hacks' },
 	'cheats-2026': { suffix: 'Buyer Guide', focus: '2026 Arc Raiders hacks checklist before checkout' },
-	hacks: { suffix: 'ESP Aimbot Guide', focus: 'the ArcRaiders Hacks pillar for ESP and Aimbot' },
+	hacks: { suffix: 'ESP Aimbot Guide', focus: 'the Arc Raiders Hacks pillar for ESP and Aimbot' },
 	'cheat-download': { suffix: 'Instant Access', focus: 'digital license download after payment' },
 	'mod-menu': { suffix: 'In-Game Toggles', focus: 'in-client ESP and soft aim toggles' },
 	'soft-aim': { suffix: 'Smooth Aim Settings', focus: 'smooth soft aim settings for PC and controllers' },
@@ -75,13 +75,13 @@ const PAGE_META_TAILS = {
 function productPage(locale, pageKey, topicName, cta2href) {
 	const p = phrases[locale];
 	const home = PAGE_META_HOME[locale];
-	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'ArcRaiders Hacks', focus: 'ESP wallhack, radar, and Aimbot' };
+	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Arc Raiders Hacks', focus: 'ESP wallhack, radar, and Aimbot' };
 	let titleBase = topicName.includes('2026')
 		? `${topicName} | ${meta.suffix}`
 		: `${topicName} 2026 | ${meta.suffix}`;
 	// Short topic labels (FAQ, Support, etc.) need brand context for usable SERP titles.
 	if (titleBase.length < 35) {
-		titleBase = `${topicName} 2026 | ArcRaiders Hacks ${meta.suffix}`;
+		titleBase = `${topicName} 2026 | Arc Raiders Hacks ${meta.suffix}`;
 	}
 	return {
 		title: clampTitle(stripZadeyoFromMeta(titleBase)),
@@ -120,7 +120,7 @@ const TOPIC_NAMES = {
 	radar: { en: 'Radar Hack', es: 'Radar hack', fr: 'Radar hack', de: 'Radar Hack', pt: 'Radar hack', it: 'Radar hack', nl: 'Radar Hack', pl: 'Radar hack', ru: 'Radar hack', tr: 'Radar hack', ar: 'Radar hack', ja: 'Radar Hack', ko: 'Radar Hack', zh: 'Radar Hack', hi: 'Radar Hack', id: 'Radar hack', th: 'Radar Hack', vi: 'Radar hack', uk: 'Radar hack', cs: 'Radar Hack', ro: 'Radar hack', sv: 'Radar Hack' },
 	'eac-bypass': { en: 'EAC Bypass', es: 'Bypass Easy Anti-Cheat (EAC)', fr: 'Bypass Easy Anti-Cheat (EAC)', de: 'EAC Bypass', pt: 'Bypass Easy Anti-Cheat (EAC)', it: 'Bypass Easy Anti-Cheat (EAC)', nl: 'EAC Bypass', pl: 'Bypass Easy Anti-Cheat (EAC)', ru: 'Bypass Easy Anti-Cheat (EAC)', tr: 'EAC bypass', ar: 'Bypass Easy Anti-Cheat (EAC)', ja: 'EAC Bypass', ko: 'EAC Bypass', zh: 'EAC Bypass', hi: 'EAC Bypass', id: 'Bypass Easy Anti-Cheat (EAC)', th: 'EAC Bypass', vi: 'Bypass Easy Anti-Cheat (EAC)', uk: 'Bypass Easy Anti-Cheat (EAC)', cs: 'EAC Bypass', ro: 'Bypass Easy Anti-Cheat (EAC)', sv: 'EAC Bypass' },
 	'cheats-2026': { en: 'Arc Raiders Hacks 2026', es: 'Arc Raiders Hacks 2026', fr: 'Arc Raiders Hacks 2026', de: 'Arc Raiders Hacks 2026', pt: 'Arc Raiders Hacks 2026', it: 'Arc Raiders Hacks 2026', nl: 'Arc Raiders Hacks 2026', pl: 'Arc Raiders Hacks 2026', ru: 'Arc Raiders Hacks 2026', tr: 'Arc Raiders Hacks 2026', ar: 'Arc Raiders Hacks 2026', ja: 'Arc Raiders Hacks 2026', ko: 'Arc Raiders Hacks 2026', zh: 'Arc Raiders Hacks 2026', hi: 'Arc Raiders Hacks 2026', id: 'Arc Raiders Hacks 2026', th: 'Arc Raiders Hacks 2026', vi: 'Arc Raiders Hacks 2026', uk: 'Arc Raiders Hacks 2026', cs: 'Arc Raiders Hacks 2026', ro: 'Arc Raiders Hacks 2026', sv: 'Arc Raiders Hacks 2026' },
-	hacks: { en: 'ArcRaiders Hacks', es: 'ArcRaiders Hacks', fr: 'ArcRaiders Hacks', de: 'ArcRaiders Hacks', pt: 'ArcRaiders Hacks', it: 'ArcRaiders Hacks', nl: 'ArcRaiders Hacks', pl: 'ArcRaiders Hacks', ru: 'ArcRaiders Hacks', tr: 'ArcRaiders Hacks', ar: 'ArcRaiders Hacks', ja: 'ArcRaiders Hacks', ko: 'ArcRaiders Hacks', zh: 'ArcRaiders Hacks', hi: 'ArcRaiders Hacks', id: 'ArcRaiders Hacks', th: 'ArcRaiders Hacks', vi: 'ArcRaiders Hacks', uk: 'ArcRaiders Hacks', cs: 'ArcRaiders Hacks', ro: 'ArcRaiders Hacks', sv: 'ArcRaiders Hacks' },
+	hacks: { en: 'Arc Raiders Hacks', es: 'Arc Raiders Hacks', fr: 'Arc Raiders Hacks', de: 'Arc Raiders Hacks', pt: 'Arc Raiders Hacks', it: 'Arc Raiders Hacks', nl: 'Arc Raiders Hacks', pl: 'Arc Raiders Hacks', ru: 'Arc Raiders Hacks', tr: 'Arc Raiders Hacks', ar: 'Arc Raiders Hacks', ja: 'Arc Raiders Hacks', ko: 'Arc Raiders Hacks', zh: 'Arc Raiders Hacks', hi: 'Arc Raiders Hacks', id: 'Arc Raiders Hacks', th: 'Arc Raiders Hacks', vi: 'Arc Raiders Hacks', uk: 'Arc Raiders Hacks', cs: 'Arc Raiders Hacks', ro: 'Arc Raiders Hacks', sv: 'Arc Raiders Hacks' },
 	'cheat-download': { en: 'Arc Raiders Hacks Download', es: 'Descarga Arc Raiders Hacks', fr: 'Téléchargement Arc Raiders Hacks', de: 'Arc Raiders Hacks Download', pt: 'Download Arc Raiders Hacks', it: 'Download Arc Raiders Hacks', nl: 'Arc Raiders Hacks Download', pl: 'Pobieranie Arc Raiders Hacks', ru: 'Скачать Arc Raiders Hacks', tr: 'Arc Raiders Hile İndir', ar: 'Arc Raiders Hacks Download', ja: 'Arc Raiders Hacks Download', ko: 'Arc Raiders Hacks Download', zh: 'Arc Raiders Hacks Download', hi: 'Arc Raiders Hacks Download', id: 'Arc Raiders Hacks Download', th: 'Arc Raiders Hacks Download', vi: 'Arc Raiders Hacks Download', uk: 'Завантаження Arc Raiders Hacks', cs: 'Arc Raiders Hacks Download', ro: 'Descărcare Arc Raiders Hacks', sv: 'Arc Raiders Hacks Download' },
 	'mod-menu': { en: 'Arc Raiders Mod Menu', es: 'Arc Raiders Mod Menu', fr: 'Arc Raiders Mod Menu', de: 'Arc Raiders Mod Menu', pt: 'Arc Raiders Mod Menu', it: 'Arc Raiders Mod Menu', nl: 'Arc Raiders Mod Menu', pl: 'Arc Raiders Mod Menu', ru: 'Arc Raiders Mod Menu', tr: 'Arc Raiders Mod Menu', ar: 'Arc Raiders Mod Menu', ja: 'Arc Raiders Mod Menu', ko: 'Arc Raiders Mod Menu', zh: 'Arc Raiders Mod Menu', hi: 'Arc Raiders Mod Menu', id: 'Arc Raiders Mod Menu', th: 'Arc Raiders Mod Menu', vi: 'Arc Raiders Mod Menu', uk: 'Arc Raiders Mod Menu', cs: 'Arc Raiders Mod Menu', ro: 'Arc Raiders Mod Menu', sv: 'Arc Raiders Mod Menu' },
 	'soft-aim': { en: 'Arc Raiders Soft Aim', es: 'Arc Raiders Soft Aim', fr: 'Arc Raiders Soft Aim', de: 'Arc Raiders Soft Aim', pt: 'Arc Raiders Soft Aim', it: 'Arc Raiders Soft Aim', nl: 'Arc Raiders Soft Aim', pl: 'Arc Raiders Soft Aim', ru: 'Arc Raiders Soft Aim', tr: 'Arc Raiders Soft Aim', ar: 'Arc Raiders Soft Aim', ja: 'Arc Raiders Soft Aim', ko: 'Arc Raiders Soft Aim', zh: 'Arc Raiders Soft Aim', hi: 'Arc Raiders Soft Aim', id: 'Arc Raiders Soft Aim', th: 'Arc Raiders Soft Aim', vi: 'Arc Raiders Soft Aim', uk: 'Arc Raiders Soft Aim', cs: 'Arc Raiders Soft Aim', ro: 'Arc Raiders Soft Aim', sv: 'Arc Raiders Soft Aim' },
@@ -163,8 +163,8 @@ function buildLegal(locale, pageKey, kind) {
 	};
 	const h1 = titles[kind][locale] ?? (kind === 'privacy' ? 'Privacy Policy' : kind === 'refund' ? 'Refund Policy' : 'Terms of Use');
 	return {
-		title: clampTitle(stripZadeyoFromMeta(`${h1} | ArcRaiders Hacks`)),
-		description: clampDesc(stripZadeyoFromMeta(`${h1} for ArcRaiders Hacks — ESP wallhack, Aimbot, ${p.win}.`)),
+		title: clampTitle(stripZadeyoFromMeta(`${h1} | Arc Raiders Hacks`)),
+		description: clampDesc(stripZadeyoFromMeta(`${h1} for Arc Raiders Hacks — ESP wallhack, Aimbot, ${p.win}.`)),
 		h1,
 		intro: p.s1(`${h1} for arcraidershacks.net and Arc Raiders licenses.`),
 		imageAlt: `arc-raiders-hacks ${kind} ESP wallhack Aimbot legal page`,

@@ -37,13 +37,13 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.hero,
-				'Rust Cheats | Rust ESP & Aimbot',
+				'Arc Raiders Hacks | Rust ESP & Aimbot',
 				'Premium Rust cheats homepage hero featuring Rust ESP and Aimbot',
 			),
 			img(
 				rustImages.aimbotCombat,
-				'Rust Aimbot combat | Rust Cheats',
-				'Rust Aimbot squad deck combat preview on Rust Cheats',
+				'Rust Aimbot combat | Arc Raiders Hacks',
+				'Rust Aimbot squad deck combat preview on Arc Raiders Hacks',
 			),
 			img(
 				rustImages.espWallhack,
@@ -52,28 +52,28 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.squadFight,
-				'Rust squad fight | Rust Cheats',
-				'Rust squad fight still for Rust cheats ESP and Aimbot',
+				'Rust squad fight | Arc Raiders Hacks',
+				'Rust squad fight still for Arc Raiders cheats ESP and Aimbot',
 			),
 			img(
 				rustImages.loadoutBuilder,
-				'Rust loadout builder | Rust Cheats',
-				'Rust loadout builder screen for Rust cheats packages',
+				'Rust loadout builder | Arc Raiders Hacks',
+				'Rust loadout builder screen for Arc Raiders cheats packages',
 			),
 			img(
 				rustImages.cover,
-				'Rust Cheats cover',
-				'Cover art for Rust cheats product and pricing pages',
+				'Arc Raiders Hacks cover',
+				'Cover art for Arc Raiders cheats product and pricing pages',
 			),
 			img(
 				rustImages.headerArt,
 				'Rust header art',
-				'Rust header art used across Rust Cheats',
+				'Rust header art used across Arc Raiders Hacks',
 			),
 			img(
 				rustImages.battleRoyaleCombat,
-				'Rust survival combat | Rust Cheats',
-				'Rust survival combat preview for Rust Cheats Aimbot',
+				'Rust survival combat | Arc Raiders Hacks',
+				'Rust survival combat preview for Arc Raiders Cheats Aimbot',
 			),
 		],
 	},
@@ -82,8 +82,8 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.aimbotCombat,
-				'Rust Aimbot | Rust Cheats',
-				'Lock onto targets with Rust Aimbot combat preview for Rust',
+				'Rust Aimbot | Arc Raiders Hacks',
+				'Lock onto targets with Rust Aimbot combat preview for Arc Raiders',
 			),
 			img(
 				rustImages.squadFight,
@@ -92,8 +92,8 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.headerArt,
-				'Rust Aimbot header | Rust Cheats',
-				'Rust Aimbot supporting visual for Rust Cheats',
+				'Rust Aimbot header | Arc Raiders Hacks',
+				'Rust Aimbot supporting visual for Arc Raiders Cheats',
 			),
 		],
 	},
@@ -108,12 +108,12 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			img(
 				rustImages.aimbotCombat,
 				'Rust ESP player visibility | Rust',
-				'Rust ESP player visibility support visual for Rust wallhack',
+				'Rust ESP player visibility support visual for Arc Raiders wallhack',
 			),
 			img(
 				rustImages.squadFight,
 				'Rust ESP squad context | Rust',
-				'Rust ESP squad and loot context for Rust Cheats',
+				'Rust ESP squad and loot context for Arc Raiders Cheats',
 			),
 		],
 	},
@@ -122,12 +122,12 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.espWallhack,
-				'Undetected Rust Cheats 2026 | ESP & Aimbot',
-				'Undetected Rust cheats ESP wallhack preview for Rust on Windows PC',
+				'Undetected Arc Raiders Hacks 2026 | ESP & Aimbot',
+				'Undetected Rust cheats ESP wallhack preview for Arc Raiders on Windows PC',
 			),
 			img(
 				rustImages.aimbotCombat,
-				'Undetected Rust Aimbot | Rust Cheats',
+				'Undetected Rust Aimbot | Arc Raiders Hacks',
 				'Undetected Rust Aimbot combat preview bundled with ESP and radar',
 			),
 		],
@@ -142,7 +142,7 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.squadFight,
-				'Rust wallhack squad fight | Rust Cheats',
+				'Rust wallhack squad fight | Arc Raiders Hacks',
 				'Rust wallhack reference during Rust squad fight',
 			),
 		],
@@ -157,8 +157,8 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.espWallhack,
-				'Rust radar and ESP | Rust Cheats',
-				'Rust radar hack paired with ESP wallhack on Rust Cheats',
+				'Rust radar and ESP | Arc Raiders Hacks',
+				'Rust radar hack paired with ESP wallhack on Arc Raiders Hacks',
 			),
 		],
 	},
@@ -167,12 +167,12 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.headerArt,
-				'EAC Bypass Guide 2026 | Rust Cheats',
+				'EAC Bypass Guide 2026 | Arc Raiders Hacks',
 				'Easy Anti-Cheat (EAC) maintenance guide for undetected Rust cheats',
 			),
 			img(
 				rustImages.hero,
-				'Rust Easy Anti-Cheat (EAC) update hero | Rust Cheats',
+				'Rust Easy Anti-Cheat (EAC) update hero | Arc Raiders Hacks',
 				'Rust cheats hero for EAC bypass and patch maintenance',
 			),
 		],
@@ -182,12 +182,12 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.hero,
-				'Rust Cheats 2026 | ESP, Wallhack, Radar & Aimbot',
-				'Rust cheats 2026 buyer guide hero for Rust',
+				'Arc Raiders Hacks 2026 | ESP, Wallhack, Radar & Aimbot',
+				'Rust cheats 2026 buyer guide hero for Arc Raiders',
 			),
 			img(
 				rustImages.cheatsPackage,
-				'Rust Cheats 2026 package | Rust',
+				'Arc Raiders Hacks 2026 package | Rust',
 				'Rust cheats 2026 package with ESP wallhack radar and Aimbot',
 			),
 		],
@@ -195,8 +195,8 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 	{
 		path: '/rust-hacks/',
 		images: [
-			img(rustImages.battleRoyaleCombat, 'IsleCheat 2026 | ESP & Aimbot', 'IsleCheat survival combat preview for undetected PC package'),
-			img(rustImages.espWallhack, 'IsleCheat ESP | Rust Cheats', 'IsleCheat ESP wallhack overlay for Rust'),
+			img(rustImages.battleRoyaleCombat, 'Arc Raiders Hacks 2026 | ESP & Aimbot', 'Arc Raiders Hacks survival combat preview for undetected PC package'),
+			img(rustImages.espWallhack, 'Arc Raiders Hacks ESP | Arc Raiders Hacks', 'Arc Raiders Hacks ESP wallhack overlay for Arc Raiders'),
 		],
 	},
 	{
@@ -210,7 +210,7 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/rust-mod-menu/',
 		images: [
 			img(rustImages.loadoutBuilder, 'Rust Mod Menu 2026 | In-Client Toggles', 'Rust mod menu loadout builder for ESP and Aimbot toggles'),
-			img(rustImages.aimbotCombat, 'Rust Mod Menu Aimbot | Rust Cheats', 'Rust mod menu Aimbot controls preview'),
+			img(rustImages.aimbotCombat, 'Rust Mod Menu Aimbot | Arc Raiders Hacks', 'Rust mod menu Aimbot controls preview'),
 		],
 	},
 	{
@@ -223,15 +223,15 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 	{
 		path: '/best-rust-cheats/',
 		images: [
-			img(rustImages.hero, 'Best Rust Cheats 2026 | ESP & Aimbot', 'Best Rust cheats 2026 buyer guide hero'),
-			img(rustImages.cheatsPackage, 'Best Rust Cheats package | Rust', 'Best Rust cheats package with full feature stack'),
+			img(rustImages.hero, 'Best Arc Raiders Hacks 2026 | ESP & Aimbot', 'Best Rust cheats 2026 buyer guide hero'),
+			img(rustImages.cheatsPackage, 'Best Arc Raiders Hacks package | Rust', 'Best Rust cheats package with full feature stack'),
 		],
 	},
 	{
 		path: '/rust-aimbot-hack/',
 		images: [
 			img(rustImages.aimbotCombat, 'Rust Aimbot Hack 2026 | Undetected', 'Rust aimbot hack combat preview for undetected aim assist'),
-			img(rustImages.headerArt, 'Rust Aimbot Hack header | Rust Cheats', 'Rust aimbot hack supporting visual'),
+			img(rustImages.headerArt, 'Rust Aimbot Hack header | Arc Raiders Hacks', 'Rust aimbot hack supporting visual'),
 		],
 	},
 	{
@@ -245,7 +245,7 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		path: '/rust-unlock-all/',
 		images: [
 			img(rustImages.playerEsp, 'Rust Unlock All 2026 | Loadout Guide', 'Rust unlock all player ESP loadout guide visual'),
-			img(rustImages.loadoutBuilder, 'Rust Unlock All loadout | Rust Cheats', 'Rust unlock all loadout builder reference'),
+			img(rustImages.loadoutBuilder, 'Rust Unlock All loadout | Arc Raiders Hacks', 'Rust unlock all loadout builder reference'),
 		],
 	},
 	{
@@ -253,23 +253,23 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.hero,
-				'Rust Cheat Features | ESP & Aimbot for Rust',
+				'Rust Cheat Features | ESP & Aimbot for Arc Raiders',
 				'Explore Rust cheat features: advanced Rust ESP and precise Aimbot',
 			),
 			img(
 				rustImages.aimbotCombat,
-				'Rust Aimbot feature | Rust Cheats',
-				'Rust Aimbot feature still with customizable settings for Rust',
+				'Rust Aimbot feature | Arc Raiders Hacks',
+				'Rust Aimbot feature still with customizable settings for Arc Raiders',
 			),
 			img(
 				rustImages.espWallhack,
-				'Rust ESP feature | Rust Cheats',
+				'Rust ESP feature | Arc Raiders Hacks',
 				'Rust ESP feature still with item filters and distance display',
 			),
 			img(
 				rustImages.squadFight,
 				'Rust cheat features squad | Rust',
-				'Rust Cheats feature still for ESP wallhack and Aimbot overview',
+				'Arc Raiders Hacks feature still for ESP wallhack and Aimbot overview',
 			),
 		],
 	},
@@ -283,8 +283,8 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.cheatsPackage,
-				'Rust Cheats package pricing',
-				'Rust ESP and Aimbot package visual for Rust cheats pricing',
+				'Arc Raiders Hacks package pricing',
+				'Rust ESP and Aimbot package visual for Arc Raiders cheats pricing',
 			),
 			img(
 				rustImages.loadoutBuilder,
@@ -293,7 +293,7 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			),
 			img(
 				rustImages.squadFight,
-				'Rust pricing combat | Rust Cheats',
+				'Rust pricing combat | Arc Raiders Hacks',
 				'Combat still supporting Rust cheats pricing plans',
 			),
 		],
@@ -309,11 +309,11 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			img(
 				rustImages.aimbotCombat,
 				'Rust cheat setup Aimbot | Rust',
-				'Setup guide Aimbot configuration visual for Rust cheats',
+				'Setup guide Aimbot configuration visual for Arc Raiders cheats',
 			),
 			img(
 				rustImages.cover,
-				'Rust cheat setup cover | Rust Cheats',
+				'Rust cheat setup cover | Arc Raiders Hacks',
 				'Setup guide cover for quick Rust ESP and Aimbot configuration',
 			),
 		],
@@ -324,17 +324,17 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			img(
 				rustImages.squadFight,
 				'Rust Cheat Status | Update Log & Patches',
-				'Rust cheat status and update log visual for Rust compatibility',
+				'Rust cheat status and update log visual for Arc Raiders compatibility',
 			),
 			img(
 				rustImages.hero,
-				'Rust cheat updates hero | Rust Cheats',
-				'Rust ESP and Aimbot patch status hero for Rust cheats',
+				'Rust cheat updates hero | Arc Raiders Hacks',
+				'Rust ESP and Aimbot patch status hero for Arc Raiders cheats',
 			),
 			img(
 				rustImages.espWallhack,
 				'Rust cheat updates ESP | Rust',
-				'Rust ESP maintenance still for Rust cheat update log',
+				'Rust ESP maintenance still for Arc Raiders cheat update log',
 			),
 		],
 	},
@@ -343,18 +343,18 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.loadoutBuilder,
-				'Rust Cheats FAQ | Common Questions Answered',
-				'FAQ visual for Rust cheats setup, delivery and refund questions',
+				'Arc Raiders Hacks FAQ | Common Questions Answered',
+				'FAQ visual for Arc Raiders cheats setup, delivery and refund questions',
 			),
 			img(
 				rustImages.espWallhack,
-				'Rust Cheats FAQ ESP | Rust',
+				'Arc Raiders Hacks FAQ ESP | Rust',
 				'FAQ ESP support visual explaining how Rust ESP works on Rust',
 			),
 			img(
 				rustImages.headerArt,
-				'Rust Cheats FAQ header | Rust Cheats',
-				'FAQ support context art for Rust Cheats',
+				'Arc Raiders Hacks FAQ header | Arc Raiders Hacks',
+				'FAQ support context art for Arc Raiders Cheats',
 			),
 		],
 	},
@@ -364,17 +364,17 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 			img(
 				rustImages.headerArt,
 				'Rust Cheat Support | Help Center & Contact',
-				'Support page visual for Rust cheats help center and contact',
+				'Support page visual for Arc Raiders cheats help center and contact',
 			),
 			img(
 				rustImages.aimbotCombat,
 				'Rust Cheat Support Aimbot help | Rust',
-				'Support visual for Rust Aimbot help, license and billing questions',
+				'Support visual for Arc Raiders Aimbot help, license and billing questions',
 			),
 			img(
 				rustImages.cover,
-				'Rust Cheat Support cover | Rust Cheats',
-				'Support cover for Rust cheats technical help',
+				'Rust Cheat Support cover | Arc Raiders Hacks',
+				'Support cover for Arc Raiders cheats technical help',
 			),
 		],
 	},
@@ -383,13 +383,13 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.cover,
-				'Refund Policy | Rust Cheats',
-				'Refund policy image for Rust cheats eligibility and license terms',
+				'Refund Policy | Arc Raiders Hacks',
+				'Refund policy image for Arc Raiders cheats eligibility and license terms',
 			),
 			img(
 				rustImages.cheatsPackage,
-				'Rust Cheats refund package',
-				'Package visual for Rust cheats refund policy instructions',
+				'Arc Raiders Hacks refund package',
+				'Package visual for Arc Raiders cheats refund policy instructions',
 			),
 		],
 	},
@@ -398,13 +398,13 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.aimbotCombat,
-				'Privacy Policy | Rust Cheats',
-				'Privacy policy image for Rust cheats data and order handling',
+				'Privacy Policy | Arc Raiders Hacks',
+				'Privacy policy image for Arc Raiders cheats data and order handling',
 			),
 			img(
 				rustImages.hero,
-				'Rust Cheats privacy policy hero',
-				'Privacy policy hero for Rust cheats site usage details',
+				'Arc Raiders Hacks privacy policy hero',
+				'Privacy policy hero for Arc Raiders cheats site usage details',
 			),
 		],
 	},
@@ -413,18 +413,18 @@ const manualPageSitemapEntries: { path: string; images: SitemapImage[] }[] = [
 		images: [
 			img(
 				rustImages.squadFight,
-				'Terms of Use | Rust Cheats',
-				'Terms of use image for Rust cheats license agreement',
+				'Terms of Use | Arc Raiders Hacks',
+				'Terms of use image for Arc Raiders cheats license agreement',
 			),
 			img(
 				rustImages.headerArt,
-				'Rust Cheats terms header',
-				'Terms support visual for Rust ESP and Aimbot purchase conditions',
+				'Arc Raiders Hacks terms header',
+				'Terms support visual for Arc Raiders ESP and Aimbot purchase conditions',
 			),
 			img(
 				rustImages.cover,
-				'Rust Cheats terms cover',
-				'Terms cover for Rust cheats usage guidelines',
+				'Arc Raiders Hacks terms cover',
+				'Terms cover for Arc Raiders cheats usage guidelines',
 			),
 		],
 	},

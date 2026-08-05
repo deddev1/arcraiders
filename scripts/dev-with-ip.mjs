@@ -16,7 +16,7 @@ function getLanIp() {
 
 const ip = getLanIp();
 console.log('');
-console.log('  IsleCheat dev server');
+console.log('  Arc Raiders Hacks dev server');
 console.log('  --------------------');
 console.log(`  Local:   http://localhost:${PORT}/`);
 console.log(`  Network: http://${ip}:${PORT}/`);

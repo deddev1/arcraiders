@@ -3,7 +3,7 @@
  */
 export const primaryKeyword = 'Arc Raiders Hacks';
 
-export const siteBrand = 'ArcRaiders Hacks';
+export const siteBrand = 'Arc Raiders Hacks';
 export const siteDomain = 'arcraidershacks.net';
 export const siteOrigin = `https://${siteDomain}`;
 

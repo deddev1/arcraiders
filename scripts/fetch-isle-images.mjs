@@ -47,7 +47,7 @@ const TARGETS = [
 
 async function fetchBuffer(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; IsleCheatSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Arc Raiders HacksSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed ${url}: ${res.status}`);
 	return Buffer.from(await res.arrayBuffer());

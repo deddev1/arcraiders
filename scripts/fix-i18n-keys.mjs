@@ -8,14 +8,14 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'Rust Cheats'],
+	['Warzone Cheats', 'Arc Raiders Hacks'],
 	['Warzone cheats', 'Rust cheats'],
-	['Warzone Cheats', 'Rust Cheats'],
+	['Warzone Cheats', 'Arc Raiders Hacks'],
 	['Call of Duty: Warzone', 'Rust'],
 	['Call of Duty Warzone', 'Rust'],
 	['Call of Duty', 'Rust'],
 	['Warzone PC', 'Rust PC'],
-	['for Warzone', 'for Rust'],
+	['for Warzone', 'for Arc Raiders'],
 	['Warzone ', 'Rust '],
 	['warzone ', 'rust '],
 	['Ricochet maintenance', 'EAC maintenance'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'the island'],
-	['Verdansk', 'the island'],
+	['Al Mazrah', 'Arc Raiders'],
+	['Verdansk', 'Arc Raiders'],
 	['Resurgence', 'monuments'],
 	['gulag', 'monument'],
-	['warzonescheats.net', 'islecheat.net'],
+	['warzonescheats.net', 'arcraidershacks.net'],
 	['Trucos Warzone', 'Trucos Rust'],
 	['Triches Warzone', 'Triches Rust'],
-	['Cheats Warzone', 'Cheats Rust'],
+	['Cheats Warzone', 'Cheats Arc Raiders'],
 ];
 
 function apply(content) {
@@ -56,7 +56,7 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
 pagesEn = pagesEn.replace(/Rust Warzone/g, 'Rust');
-pagesEn = pagesEn.replace(/for Rust Warzone/g, 'for Rust');
+pagesEn = pagesEn.replace(/for Arc Raiders Warzone/g, 'for Arc Raiders');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

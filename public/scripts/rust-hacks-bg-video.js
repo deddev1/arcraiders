@@ -1,5 +1,5 @@
 /**
- * Plays muted IsleCheat background clips without blocking interaction.
+ * Plays muted Arc Raiders Hacks background clips without blocking interaction.
  * - hero: eager muted autoplay (real src in HTML; poster is first paint)
  * - product / lazy: hydrate data-src only when near the viewport
  */

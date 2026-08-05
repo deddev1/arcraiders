@@ -42,7 +42,7 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone pricing/g, 'Rust pricing'],
 	[/Warzone Easy Anti-Cheat/g, 'Rust Easy Anti-Cheat'],
 	[/on Warzone/g, 'on Rust'],
-	[/for Warzone/g, 'for Rust'],
+	[/for Warzone/g, 'for Arc Raiders'],
 	[/Warzone guides/g, 'Rust guides'],
 	[/Warzone guide/g, 'Rust guide'],
 	[/Warzone hileleri/g, 'Rust hileleri'],
@@ -50,29 +50,29 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone hileleri/g, 'Rust hileleri'],
 	[/cheatów Warzone/g, 'cheatów Rust'],
 	[/cheat Warzone/g, 'cheat Rust'],
-	[/cheats Warzone/g, 'cheats Rust'],
-	[/trucos Warzone/g, 'trucos Rust'],
+	[/cheats Warzone/g, 'cheats Arc Raiders'],
+	[/trucos Warzone/g, 'trucos Arc Raiders'],
 	[/triche Warzone/g, 'triche Rust'],
 	[/trucchi Warzone/g, 'trucchi Rust'],
 	[/Wallhack Warzone/g, 'Rust Wallhack'],
 	[/cheat Warzone undetected/g, 'cheat Rust undetected'],
-	[/cheats Warzone undetected/g, 'cheats Rust undetected'],
+	[/cheats Warzone undetected/g, 'cheats Arc Raiders undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'the island and monuments'],
-	[/Verdansk, Urzikstan/g, 'the island, monuments'],
+	[/Verdansk and Urzikstan/g, 'Arc Raiders and monuments'],
+	[/Verdansk, Urzikstan/g, 'Arc Raiders, monuments'],
 	[/survival and Resurgence/g, 'survival and monuments'],
-	[/Activision's anti-cheat/g, "Facepunch' anti-cheat"],
-	[/Activision anti-cheat/g, 'Facepunch anti-cheat'],
-	[/Activision ships/g, 'Facepunch ships'],
-	[/Activision security/g, 'Facepunch security'],
-	[/Activision bans/g, 'Facepunch bans'],
-	[/Activision/g, 'Facepunch'],
+	[/Activision's anti-cheat/g, "Embark' anti-cheat"],
+	[/Activision anti-cheat/g, 'Embark anti-cheat'],
+	[/Activision ships/g, 'Embark ships'],
+	[/Activision security/g, 'Embark security'],
+	[/Activision bans/g, 'Embark bans'],
+	[/Activision/g, 'Embark'],
 	[/ricochet/gi, 'eac'],
 	[/Ricochet/g, 'Easy Anti-Cheat (EAC)'],
 	[/call-of-duty-warzone-cheats/g, 'rust-cheats'],
 	[/call-of-duty-warzone/g, 'rust'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Rust'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Arc Raiders'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
 		'How ESP wallhack, radar, and Aimbot rebuild after Rust anti-cheat'],
 ];
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Rust Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Arc Raiders Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -174,8 +174,8 @@ async function fixLocalesBlogUi() {
 	content = content.replace(/Warzone hileleri/g, 'Rust hileleri');
 	content = content.replace(/Warzone hile/g, 'Rust hile');
 	content = content.replace(/cheat Warzone/g, 'cheat Rust');
-	content = content.replace(/cheats Warzone/g, 'cheats Rust');
-	content = content.replace(/trucos Warzone/g, 'trucos Rust');
+	content = content.replace(/cheats Warzone/g, 'cheats Arc Raiders');
+	content = content.replace(/trucos Warzone/g, 'trucos Arc Raiders');
 	content = content.replace(/triche Warzone/g, 'triche Rust');
 	content = content.replace(/trucchi Warzone/g, 'trucchi Rust');
 	content = content.replace(/cheatów Warzone/g, 'cheatów Rust');
@@ -200,7 +200,7 @@ async function fixLocalesBlogUi() {
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Rust Cheats SEO completion ===\n');
+console.log('=== Arc Raiders Hacks SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

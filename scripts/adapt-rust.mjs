@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * One-time migration: Fortnite Hacks site → IsleCheat.
+ * One-time migration: Fortnite Hacks site → Arc Raiders Hacks.
  * Run from project root: node scripts/adapt-rust.mjs
  */
 import { readFile, writeFile, readdir, rm, rename } from 'node:fs/promises';
@@ -29,8 +29,8 @@ const RENAME_PAGE_DIRS = [
 
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
-	['fortnitehack.net', 'islecheat.net'],
-	['support@fortnitehack.net', 'support@islecheat.net'],
+	['fortnitehack.net', 'arcraidershacks.net'],
+	['support@fortnitehack.net', 'support@arcraidershacks.net'],
 	['/products/fortnite', '/products/rust'],
 	['fortnite-esp-wallhack', 'rust-esp-wallhack'],
 	['fortnite-esp-hack', 'rust-esp-hack'],
@@ -59,42 +59,42 @@ const REPLACEMENTS = [
 	['project-name=fortnitecheats', 'project-name=rusthacks'],
 	['name = "fortnitecheats"', 'name = "rusthacks"'],
 	['"fortnite-cheats"', '"rusthacks"'],
-	['https://www.epicgames.com/fortnite', 'https://rust.facepunch.com/'],
-	['https://www.fortnite.com/', 'https://rust.facepunch.com/'],
-	['https://status.epicgames.com/', 'https://rust.facepunch.com/'],
-	['Epic Games Fortnite', 'Facepunch Rust'],
-	['Epic Games Status', 'Facepunch Rust status'],
+	['https://www.epicgames.com/fortnite', 'https://rust.arcraiders.com/'],
+	['https://www.fortnite.com/', 'https://rust.arcraiders.com/'],
+	['https://status.epicgames.com/', 'https://rust.arcraiders.com/'],
+	['Epic Games Fortnite', 'Embark Rust'],
+	['Epic Games Status', 'Embark Rust status'],
 	['Fortnite.com', 'Rust.com'],
-	['Epic Games', 'Facepunch'],
+	['Epic Games', 'Embark'],
 	['Battle Royale island, Zero Build, and competitive lobbies', 'monuments, oil rigs, and wipe-cycle raids'],
 	['Battle Royale island, Zero Build and competitive lobbies', 'monuments, oil rigs and wipe-cycle raids'],
 	['BR and Zero Build', 'PVE and PVP'],
 	['BR & Zero Build', 'PVE & PVP'],
 	['Zero Build and Battle Royale', 'monuments and raids'],
 	['Zero Build', 'monuments'],
-	['Battle Royale island', 'the island'],
+	['Battle Royale island', 'Arc Raiders'],
 	['battle royale', 'survival'],
 	['Battle Royale', 'survival'],
 	['reboot van rotations', 'monument rotations'],
 	['reboot van fight', 'oil rig fight'],
 	['reboot van', 'monument'],
-	['Fortnite Hacks', 'IsleCheat'],
-	['Fortnite hacks', 'IsleCheat'],
-	['Fortnite Cheats', 'Rust Cheats'],
+	['Fortnite Hacks', 'Arc Raiders Hacks'],
+	['Fortnite hacks', 'Arc Raiders Hacks'],
+	['Fortnite Cheats', 'Arc Raiders Hacks'],
 	['Fortnite cheats', 'Rust cheats'],
 	['Fortnite cheat', 'Rust cheat'],
 	['Fortnite Aimbot', 'Rust Aimbot'],
 	['Fortnite ESP', 'Rust ESP'],
 	['Fortnite Intel', 'Rust Intel'],
 	['Fortnite', 'Rust'],
-	['fortnite hacks', 'IsleCheat'],
-	['fortnite cheats', 'rust cheats'],
+	['fortnite hacks', 'Arc Raiders Hacks'],
+	['fortnite cheats', 'Arc Raiders hacks'],
 	['fortnite cheat', 'rust cheat'],
 	['fortnite aimbot', 'rust aimbot'],
 	['fortnite esp', 'rust esp'],
 	['fortnite', 'rust'],
 	['FortniteCheatsSite', 'RustHacksSite'],
-	['Buy Fortnite Hacks', 'Buy IsleCheat'],
+	['Buy Fortnite Hacks', 'Buy Arc Raiders Hacks'],
 ];
 
 const TEXT_EXTENSIONS = new Set([
@@ -224,7 +224,7 @@ async function renameImages() {
 }
 
 async function main() {
-	console.log('Adapting Fortnite template → IsleCheat...\n');
+	console.log('Adapting Fortnite template → Arc Raiders Hacks...\n');
 	await renamePageDirs();
 	await renameDataFile();
 	await transformTextFiles();

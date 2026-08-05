@@ -1,5 +1,5 @@
 export const siteConfig = {
-	name: 'ArcRaiders Hacks',
+	name: 'Arc Raiders Hacks',
 	url: 'https://arcraidershacks.net',
 	locale: 'en',
 	market: 'Worldwide',
@@ -8,18 +8,18 @@ export const siteConfig = {
 	logoRaster: '/images/zadeyo-logo.png',
 	logoRasterWidth: 453,
 	logoRasterHeight: 551,
-	logoAlt: 'ArcRaiders Hacks logo',
+	logoAlt: 'Arc Raiders Hacks logo',
 	checkoutUrl: 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Frust',
 	defaultOgImage: '/images/rust-esp-overlay.webp',
 } as const;
 
 export const productInfo = {
-	name: 'ArcRaiders Hacks',
+	name: 'Arc Raiders Hacks',
 	shortName: 'Arc',
-	brand: 'ArcRaiders Hacks',
+	brand: 'Arc Raiders Hacks',
 	tagline: 'Undetected Arc Raiders hacks for PC — ESP, aimbot, and wallhack with anti-cheat updates',
 	summary:
-		'ArcRaiders Hacks is a Windows PC package for ESP, aimbot, and wallhack in Arc Raiders. Built for extraction runs, ARC machine fights, and squad pushes with maintenance after anti-cheat patches.',
+		'Arc Raiders Hacks is a Windows PC package for ESP, aimbot, and wallhack in Arc Raiders. Built for extraction runs, ARC machine fights, and squad pushes with maintenance after anti-cheat patches.',
 	game: 'Arc Raiders',
 	delivery: 'Digital license delivery after purchase confirmation',
 	platforms: ['Windows PC', 'Controllers'],
@@ -62,7 +62,7 @@ export const productInfo = {
 
 export const trustSignals = {
 	status: 'Online',
-	statusNote: 'ArcRaiders Hacks is live for Arc Raiders on Windows PC.',
+	statusNote: 'Arc Raiders Hacks is live for Arc Raiders on Windows PC.',
 	delivery: 'Instant digital delivery',
 	platform: 'Windows 10 & 11',
 	antiCheat: 'Anti-cheat maintenance supported',
@@ -110,12 +110,12 @@ export const footerExplore = [
 
 export const homeFaqs = [
 	{
-		question: 'What is ArcRaiders Hacks?',
+		question: 'What is Arc Raiders Hacks?',
 		answer:
-			'ArcRaiders Hacks is a Windows PC package for Arc Raiders with ESP, wallhack, and aimbot controls. Licenses include anti-cheat maintenance updates and setup support.',
+			'Arc Raiders Hacks is a Windows PC package for Arc Raiders with ESP, wallhack, and aimbot controls. Licenses include anti-cheat maintenance updates and setup support.',
 	},
 	{
-		question: 'Is ArcRaiders Hacks permanently undetected?',
+		question: 'Is Arc Raiders Hacks permanently undetected?',
 		answer:
 			'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
 	},
@@ -151,22 +151,22 @@ export const seoFaqs = [
 	{
 		question: 'What is an Arc Raiders wallhack?',
 		answer:
-			'An Arc Raiders wallhack is an ESP overlay that shows enemy raiders and ARC threats through cover. ArcRaiders Hacks wallhack includes distance readouts, team colours, and toggleable categories for extraction and PvP.',
+			'An Arc Raiders wallhack is an ESP overlay that shows enemy raiders and ARC threats through cover. Arc Raiders Hacks wallhack includes distance readouts, team colours, and toggleable categories for extraction and PvP.',
 	},
 	{
-		question: 'Does ArcRaiders Hacks include a radar hack?',
+		question: 'Does Arc Raiders Hacks include a radar hack?',
 		answer:
-			'Yes. ArcRaiders Hacks includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during extraction pushes.',
+			'Yes. Arc Raiders Hacks includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during extraction pushes.',
 	},
 	{
-		question: 'How does anti-cheat affect ArcRaiders Hacks?',
+		question: 'How does anti-cheat affect Arc Raiders Hacks?',
 		answer:
-			'Anti-cheat monitors Arc Raiders on Windows PC. ArcRaiders Hacks publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
+			'Anti-cheat monitors Arc Raiders on Windows PC. Arc Raiders Hacks publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
 	},
 	{
 		question: 'Can I buy undetected Arc Raiders hacks for Windows PC?',
 		answer:
-			'Yes — ArcRaiders Hacks sells monthly and lifetime licenses for Arc Raiders on Windows PC with ESP, radar, and aimbot. Compare plans on Pricing and review the undetected guide before checkout.',
+			'Yes — Arc Raiders Hacks sells monthly and lifetime licenses for Arc Raiders on Windows PC with ESP, radar, and aimbot. Compare plans on Pricing and review the undetected guide before checkout.',
 	},
 ] as const;
 
@@ -189,7 +189,7 @@ export const customerReviews = [
 		text: 'soft aim feels clean on smgs in arc raids. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
 		short: 'soft aim feels clean on smgs in arc raids. once u get the menu its smooth',
 		slug: 'rust-soft-aim-review-xkrypt0',
-		seoTitle: 'Soft Aim Review by @xKrypt0_ARC — 5/5 | ArcRaiders Hacks',
+		seoTitle: 'Soft Aim Review by @xKrypt0_ARC — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Real Arc Raiders soft aim review from @xKrypt0_ARC: 5/5 for soft aim feel after setup on Windows PC.',
 		date: '2026-07-24',
@@ -201,7 +201,7 @@ export const customerReviews = [
 		text: "esp boxes in extraction zones are actually useful, can see who's holding rooftops before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
 		short: "esp boxes in extraction zones are actually useful, can see who's holding rooftops before u push. still worth it for the price",
 		slug: 'rust-esp-zero-build-review-buildsr4k',
-		seoTitle: 'ESP Extraction Review by @extractR4K — 4/5 | ArcRaiders Hacks',
+		seoTitle: 'ESP Extraction Review by @extractR4K — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders ESP review from @extractR4K: 4/5 for ESP player boxes in extraction zones with radar feedback.',
 		date: '2026-07-19',
@@ -213,9 +213,9 @@ export const customerReviews = [
 		text: 'switched from a kernel only tool last season. cloud dma setup was easier than i expected, support walked me through the dma part on discord. survived the last patch while my old sub got flagged. lifetime was the move',
 		short: 'cloud dma setup was easier than i expected. survived the last patch while my old sub got flagged',
 		slug: 'rust-cloud-dma-review-dma-wizard',
-		seoTitle: 'Cloud DMA Review by @dma_wizard — 5/5 | ArcRaiders Hacks',
+		seoTitle: 'Cloud DMA Review by @dma_wizard — 5/5 | Arc Raiders Hacks',
 		seoDescription:
-			'Cloud DMA ArcRaiders Hacks review from @dma_wizard: 5/5 after surviving a patch that flagged a kernel-only cheat.',
+			'Cloud DMA Arc Raiders Hacks review from @dma_wizard: 5/5 after surviving a patch that flagged a kernel-only cheat.',
 		date: '2026-06-27',
 		tag: 'Cloud DMA',
 	},
@@ -225,7 +225,7 @@ export const customerReviews = [
 		text: "finally arc raiders hacks that don't feel like garbage on controller. soft aim with xbox pad works, had to tweak fov a bit. menu navigation with pad is kinda awkward but doable",
 		short: "finally arc raiders hacks that don't feel like garbage on controller. soft aim with xbox pad works",
 		slug: 'rust-controller-soft-aim-review-ctrl-player99',
-		seoTitle: 'Controller Soft Aim by @ctrl_player99 — 4/5 | ArcRaiders Hacks',
+		seoTitle: 'Controller Soft Aim by @ctrl_player99 — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Controller Arc Raiders hacks review from @ctrl_player99: 4/5 for soft aim on an Xbox pad with FOV tweaks.',
 		date: '2026-07-11',
@@ -237,9 +237,9 @@ export const customerReviews = [
 		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
 		short: 'features are good when it works. esp and loot markers solid in ranked, just wish setup docs were clearer upfront',
 		slug: 'rust-hack-setup-review-stormchaser07',
-		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | ArcRaiders Hacks',
+		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | Arc Raiders Hacks',
 		seoDescription:
-			'Honest 3/5 ArcRaiders Hacks review from @stormChaser_07: ESP and loot markers solid in ranked, but setup docs needed support help.',
+			'Honest 3/5 Arc Raiders Hacks review from @stormChaser_07: ESP and loot markers solid in ranked, but setup docs needed support help.',
 		date: '2026-06-15',
 		tag: 'Setup',
 	},
@@ -249,7 +249,7 @@ export const customerReviews = [
 		text: 'loot esp alone pays for monthly imo. container markers + distance readouts = way faster extractions',
 		short: 'loot esp alone pays for monthly imo. container markers + distance readouts = way faster extractions',
 		slug: 'rust-loot-esp-review-lootgoblinx',
-		seoTitle: 'Loot ESP Review by @lootGoblinx — 5/5 | ArcRaiders Hacks',
+		seoTitle: 'Loot ESP Review by @lootGoblinx — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders loot ESP review from @lootGoblinx: 5/5 for container markers and distance readouts on extraction runs.',
 		date: '2026-08-01',
@@ -260,7 +260,7 @@ export const customerReviews = [
 		text: 'been using since early access. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when patches hit, had to wait a day once',
 		short: 'soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights',
 		slug: 'rust-soft-aim-ranked-review-rankedgrind42',
-		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | ArcRaiders Hacks',
+		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Ranked Arc Raiders soft aim review from @rankedGrind42: 4/5 for per-weapon aimbot profiles with patch-day update feedback.',
 		date: '2026-07-07',
@@ -272,7 +272,7 @@ export const customerReviews = [
 		text: 'radar saved me so many times during extraction rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
 		short: 'radar saved me so many times during extraction rotations. boxes + radar combo is clean',
 		slug: 'rust-radar-hack-review-vanlifefn',
-		seoTitle: 'Radar Hack Review by @vanLifeARC — 5/5 | ArcRaiders Hacks',
+		seoTitle: 'Radar Hack Review by @vanLifeARC — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders radar hack review from @vanLifeARC: 5/5 for 2D radar during extraction rotations and spotting third parties in squads.',
 		date: '2026-07-28',
@@ -284,9 +284,9 @@ export const customerReviews = [
 		text: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours last patch. was back online next morning.',
 		short: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours',
 		slug: 'rust-eac-update-review-patchdaymike',
-		seoTitle: 'Patch Day Review by @patchDayMike — 4/5 | ArcRaiders Hacks',
+		seoTitle: 'Patch Day Review by @patchDayMike — 4/5 | Arc Raiders Hacks',
 		seoDescription:
-			'Patch-day review from @patchDayMike: 4/5 for how fast ArcRaiders Hacks posts maintenance updates after Arc Raiders patches.',
+			'Patch-day review from @patchDayMike: 4/5 for how fast Arc Raiders Hacks posts maintenance updates after Arc Raiders patches.',
 		date: '2026-06-09',
 		tag: 'Updates',
 	},
@@ -296,7 +296,7 @@ export const customerReviews = [
 		text: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		short: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		slug: 'rust-sniper-soft-aim-review-snipezonly',
-		seoTitle: 'Sniper Soft Aim by @snipezOnly_ — 5/5 | ArcRaiders Hacks',
+		seoTitle: 'Sniper Soft Aim by @snipezOnly_ — 5/5 | Arc Raiders Hacks',
 		seoDescription:
 			'Arc Raiders sniper soft aim review from @snipezOnly_: 5/5 for the sniper aimbot profile paired with ESP tagging.',
 		date: '2026-08-01',

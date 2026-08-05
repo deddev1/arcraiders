@@ -1,6 +1,6 @@
 # Deploy arcraidershacks.net
 
-Step-by-step guide to deploy the ArcRaiders Hacks static site to **arcraidershacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Arc Raiders Hacks static site to **arcraidershacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 

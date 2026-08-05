@@ -4,8 +4,8 @@ const WWW_HOST = 'www.arcraidershacks.net';
 
 /** Old hosts → canonical apex (301). Never include the apex host itself. */
 const LEGACY_HOSTS = new Set([
-	'islecheat.net',
-	'www.islecheat.net',
+	'arcraidershacks.net',
+	'www.arcraidershacks.net',
 	'arcraidershacks.com',
 	'www.arcraidershacks.com',
 	'fortnitehack.net',

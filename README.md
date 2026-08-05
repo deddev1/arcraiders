@@ -1,6 +1,6 @@
-# ArcRaiders Hacks — Marketing Site
+# Arc Raiders Hacks — Marketing Site
 
-Static Astro 7 site for [arcraidershacks.net](https://arcraidershacks.net). Primary SEO focus: **ArcRaiders Hacks** (supporting: Arc Raiders hacks, rust esp, rust aimbot).
+Static Astro 7 site for [arcraidershacks.net](https://arcraidershacks.net). Primary SEO focus: **Arc Raiders Hacks** (supporting: Arc Raiders hacks, rust esp, rust aimbot).
 
 ## Stack
 

@@ -3,24 +3,24 @@ import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT }
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
 	home: {
-		title: 'ArcRaiders Hacks 2026 | Undetected ESP & Aimbot',
+		title: 'Arc Raiders Hacks 2026 | Undetected ESP & Aimbot',
 		description:
-			'Undetected ArcRaiders Hacks for PC with ESP, aimbot, and wallhack overlays. Compare monthly and lifetime plans, features, setup, and EAC update status before you buy.',
-		h1: 'ArcRaiders Hacks — ESP, Aimbot & Wallhack for PC',
+			'Arc Raiders hacks for PC — undetected ESP, aimbot, and wallhack at arcraidershacks.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.',
+		h1: 'Arc Raiders Hacks — ESP, Aimbot & Wallhack for PC',
 		intro:
 			'A focused Windows PC package for Arc Raiders: player ESP, aimbot controls, and wallhack overlays with EAC maintenance after major patches.',
-		imageAlt: 'ArcRaiders Hacks aimbot holographic sight with ESP skeleton and red head lock',
-		galleryTitle: 'ArcRaiders Hacks visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		imageAlt: 'Arc Raiders Hacks aimbot holographic sight with ESP skeleton and red head lock',
+		galleryTitle: 'Arc Raiders Hacks visuals',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'See all features',
 		ctaSecondaryHref: '/features/',
 		sections: [
 			section(
 				'Built for extraction pressure',
-				'Arc Raiders punishes incomplete information. ArcRaiders Hacks puts ESP, wallhack, and aimbot in one license so you can read extraction zones, ARC patrol pushes, and squad extractions before you commit.',
+				'Arc Raiders punishes incomplete information. Arc Raiders Hacks puts ESP, wallhack, and aimbot in one license so you can read extraction zones, ARC patrol pushes, and squad extractions before you commit.',
 				`Client and anti-cheat updates come from ${EXT.epic} and ${EXT.eac}. When a patch needs a rebuild, we post status on the <a href="/updates/">Updates page</a> — no permanent “undetected forever” promises.`,
 				'Monthly ($35) and lifetime ($150) licenses ship digitally after payment confirmation, with maintenance rebuilds when EAC or game updates require them.',
-				'Compare the <a href="/rust-hacks/">ArcRaiders Hacks guide</a>, <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, and <a href="/undetected-rust-cheats/">undetected status</a> pages before checkout.',
+				'Compare the <a href="/rust-hacks/">Arc Raiders Hacks guide</a>, <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, and <a href="/undetected-rust-cheats/">undetected status</a> pages before checkout.',
 			),
 			section(
 				'One license, clear controls',
@@ -34,13 +34,13 @@ export const enPages = {
 	'rust-esp': {
 		title: 'Arc Raiders ESP 2026 | Player Boxes & Wallhack',
 		description:
-			'Arc Raiders ESP for PC and controllers — player boxes, loot markers, and distance readouts. Part of our undetected ArcRaiders Hacks with cloud DMA support.',
+			'Arc Raiders ESP for PC and controllers — player boxes, loot markers, and distance readouts. Part of our undetected Arc Raiders Hacks with cloud DMA support.',
 		h1: 'Arc Raiders ESP — Player Boxes & Wallhack',
 		intro:
 			'Visibility tools for Arc Raiders. Read enemy squads, vehicles, loot, chests, and distance before you commit to a fight — with toggleable ESP wallhack overlays for PVE and PVP.',
 		imageAlt: 'Arc Raiders ESP with green skeleton, bounding box, loot labels, and distances',
 		galleryTitle: 'Arc Raiders ESP overlay visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Arc Raiders wallhack guide',
 		ctaSecondaryHref: '/rust-wallhack/',
 		sections: [
@@ -79,13 +79,13 @@ export const enPages = {
 	'rust-aimbot': {
 		title: 'Arc Raiders Aimbot 2026 | Soft Aim for PC & Controllers',
 		description:
-			'Arc Raiders aimbot with soft aim tuning for PC and controllers. FOV, bone priority, and hotkeys bundled with ESP boxes in our ArcRaiders Hacks package.',
+			'Arc Raiders aimbot with soft aim tuning for PC and controllers. FOV, bone priority, and hotkeys bundled with ESP boxes in our Arc Raiders Hacks package.',
 		h1: 'Arc Raiders Aimbot — Soft Aim for PC & Controllers',
 		intro:
 			'Configurable Aimbot tools for Arc Raiders firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Arc Raiders aimbot menu with red skeleton ESP, silent aim, and feature toggles',
 		galleryTitle: 'Arc Raiders Aimbot combat previews',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'See ESP wallhack',
 		ctaSecondaryHref: '/rust-esp/',
 		sections: [
@@ -122,15 +122,15 @@ export const enPages = {
 		],
 	},
 	features: {
-		title: 'ArcRaiders Hacks Features | ESP, Soft Aim, Cloud DMA',
+		title: 'Arc Raiders Hacks Features | ESP, Soft Aim, Cloud DMA',
 		description:
-			'Full ArcRaiders Hacks feature list: ESP boxes, soft aim, radar, cloud DMA, and toggles for PC and controllers. Review controls before checkout.',
-		h1: 'ArcRaiders Hacks Features — Full Control List',
+			'Full Arc Raiders Hacks feature list: ESP boxes, soft aim, radar, cloud DMA, and toggles for PC and controllers. Review controls before checkout.',
+		h1: 'Arc Raiders Hacks Features — Full Control List',
 		intro:
 			'Every ESP wallhack, radar hack, and Aimbot control included in the Arc Raiders Hacks package for Arc Raiders on Windows PC — with EAC maintenance after major patches.',
 		imageAlt: 'Arc Raiders ESP boxes, weapon labels, and distances on UKN practice bots',
 		galleryTitle: 'Arc Raiders Hacks feature gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'View pricing',
 		ctaSecondaryHref: '/pricing/',
 		sections: [
@@ -155,15 +155,15 @@ export const enPages = {
 		],
 	},
 	pricing: {
-		title: 'ArcRaiders Hacks Pricing | $35/mo or $150 Life',
+		title: 'Arc Raiders Hacks Pricing | $35/mo or $150 Life',
 		description:
-			'ArcRaiders Hacks pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and cloud DMA on PC and controllers. Instant delivery — pick a plan.',
-		h1: 'ArcRaiders Hacks Pricing — Monthly & Lifetime',
+			'Arc Raiders Hacks pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and cloud DMA on PC and controllers. Instant delivery — pick a plan.',
+		h1: 'Arc Raiders Hacks Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Arc Raiders Hacks — ESP wallhack, radar hack, and Aimbot for Arc Raiders on Windows PC. Instant digital delivery after payment.',
 		imageAlt: 'Arc Raiders ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Arc Raiders Hacks package visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Read setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -188,15 +188,15 @@ export const enPages = {
 		],
 	},
 	setup: {
-		title: 'ArcRaiders Hacks Setup | PC & Controller Guide',
+		title: 'Arc Raiders Hacks Setup | PC & Controller Guide',
 		description:
-			'Set up ArcRaiders Hacks on PC and controllers — activate ESP boxes, soft aim profiles, and cloud DMA. Check EAC updates before your first queue.',
-		h1: 'ArcRaiders Hacks Setup — PC & Controller Guide',
+			'Set up Arc Raiders Hacks on PC and controllers — activate ESP boxes, soft aim profiles, and cloud DMA. Check EAC updates before your first queue.',
+		h1: 'Arc Raiders Hacks Setup — PC & Controller Guide',
 		intro:
 			'Install and configure Arc Raiders Hacks for Arc Raiders on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify EAC maintenance status before queueing.',
 		imageAlt: 'Arc Raiders aimbot cheats menu with red skeleton ESP and hotkey toggles',
 		galleryTitle: 'Arc Raiders Hacks setup visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Contact support',
 		ctaSecondaryHref: '/support/',
 		sections: [
@@ -214,22 +214,22 @@ export const enPages = {
 			),
 			section(
 				'After Arc Raiders or Easy Anti-Cheat patches',
-				'When Facepunch ships a major Arc Raiders update or Easy Anti-Cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.',
+				'When Embark ships a major Arc Raiders update or Easy Anti-Cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.',
 				`Official anti-cheat background: ${EXT.eac}. Our practical workflow is documented on the <a href="/eac-bypass-rust/">EAC bypass page</a> and <a href="/undetected-rust-cheats/">undetected guide</a>.`,
 				'Contact <a href="/support/">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.',
 			),
 		],
 	},
 	updates: {
-		title: 'ArcRaiders Hacks Updates | EAC Maintenance Log',
+		title: 'Arc Raiders Hacks Updates | EAC Maintenance Log',
 		description:
-			'ArcRaiders Hacks update log: EAC rebuilds for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before queueing after patches.',
-		h1: 'ArcRaiders Hacks Updates — Maintenance Log',
+			'Arc Raiders Hacks update log: EAC rebuilds for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before queueing after patches.',
+		h1: 'Arc Raiders Hacks Updates — Maintenance Log',
 		intro:
 			'Track EAC maintenance and Arc Raiders patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
 		imageAlt: 'Arc Raiders ESP green hitbox wallhack on a hazmat-suited player',
 		galleryTitle: 'Arc Raiders patch and maintenance visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Undetected status guide',
 		ctaSecondaryHref: '/undetected-rust-cheats/',
 		sections: [
@@ -254,15 +254,15 @@ export const enPages = {
 		],
 	},
 	faq: {
-		title: 'ArcRaiders Hacks FAQ | ESP, Soft Aim & EAC Answers',
+		title: 'Arc Raiders Hacks FAQ | ESP, Soft Aim & EAC Answers',
 		description:
-			'ArcRaiders Hacks FAQ: ESP boxes, soft aim, cloud DMA, controller support, EAC maintenance, and pricing for PC. Clear answers before you buy.',
-		h1: 'ArcRaiders Hacks FAQ — Common Questions',
+			'Arc Raiders Hacks FAQ: ESP boxes, soft aim, cloud DMA, controller support, EAC maintenance, and pricing for PC. Clear answers before you buy.',
+		h1: 'Arc Raiders Hacks FAQ — Common Questions',
 		intro:
 			'Answers about undetected Arc Raiders Hacks — ESP wallhack, radar hack, Aimbot, EAC maintenance, checkout, and Arc Raiders compatibility on Windows PC.',
 		imageAlt: 'Arc Raiders ESP boxes and distance labels on UKN practice bots',
 		galleryTitle: 'Arc Raiders Hacks FAQ visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Contact support',
 		ctaSecondaryHref: '/support/',
 		sections: [
@@ -287,13 +287,13 @@ export const enPages = {
 		],
 	},
 	support: {
-		title: 'ArcRaiders Hacks Support | Help & Contact',
+		title: 'Arc Raiders Hacks Support | Help & Contact',
 		description:
-			'Contact ArcRaiders Hacks support for licenses, ESP setup, soft aim profiles, and cloud DMA on PC and controllers. Include your order ID for faster help.',
-		h1: 'ArcRaiders Hacks Support — Contact Us',
+			'Contact Arc Raiders Hacks support for licenses, ESP setup, soft aim profiles, and cloud DMA on PC and controllers. Include your order ID for faster help.',
+		h1: 'Arc Raiders Hacks Support — Contact Us',
 		intro:
 			'Get help with Arc Raiders Hacks licenses, checkout, ESP wallhack setup, Aimbot profiles, and EAC maintenance for Arc Raiders on Windows PC.',
-		imageAlt: 'ArcRaiders Hacks aimbot sight with ESP skeleton and red head lock',
+		imageAlt: 'Arc Raiders Hacks aimbot sight with ESP skeleton and red head lock',
 		galleryTitle: 'Arc Raiders Hacks support resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read setup guide',
@@ -307,7 +307,7 @@ export const enPages = {
 			),
 			section(
 				'Response times and scope',
-				'Support requests are reviewed daily. Arc Raiders Hacks support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Facepunch bans.',
+				'Support requests are reviewed daily. Arc Raiders Hacks support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Embark bans.',
 				`Account and game policy questions belong with ${EXT.epic}. We can help with license delivery and product configuration only.`,
 				'Check the Updates page and FAQ before opening a ticket — many post-patch questions are answered there.',
 			),
@@ -320,15 +320,15 @@ export const enPages = {
 		],
 	},
 	undetected: {
-		title: 'Undetected ArcRaiders Hacks 2026 | EAC Safe',
+		title: 'Undetected Arc Raiders Hacks 2026 | EAC Safe',
 		description:
-			'Undetected ArcRaiders Hacks with EAC maintenance for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before you queue.',
-		h1: 'Undetected ArcRaiders Hacks — EAC Maintenance',
+			'Undetected Arc Raiders Hacks with EAC maintenance for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before you queue.',
+		h1: 'Undetected Arc Raiders Hacks — EAC Maintenance',
 		intro:
 			'How Arc Raiders Hacks stays maintained for Arc Raiders after Easy Anti-Cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
 		imageAlt: 'Arc Raiders wallhack green hitbox ESP on a hazmat suit player',
 		galleryTitle: 'Undetected Arc Raiders Hacks visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'EAC bypass guide',
 		ctaSecondaryHref: '/eac-bypass-rust/',
 		sections: [
@@ -361,7 +361,7 @@ export const enPages = {
 			'Arc Raiders wallhack ESP for Arc Raiders — see players, loot, vehicles, and chests through toggleable wallhack overlays built for PVE and PVP.',
 		imageAlt: 'Arc Raiders wallhack ESP green hitbox around a hazmat-suited player',
 		galleryTitle: 'Arc Raiders wallhack ESP gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Arc Raiders ESP page',
 		ctaSecondaryHref: '/rust-esp/',
 		sections: [
@@ -388,13 +388,13 @@ export const enPages = {
 	radar: {
 		title: 'Arc Raiders Radar Hack 2026 | 2D Threat Overlay',
 		description:
-			'Arc Raiders radar hack for flank awareness on PC and controllers. Bundled with ESP boxes, soft aim, and cloud DMA in our ArcRaiders Hacks package.',
+			'Arc Raiders radar hack for flank awareness on PC and controllers. Bundled with ESP boxes, soft aim, and cloud DMA in our Arc Raiders Hacks package.',
 		h1: 'Arc Raiders Radar Hack — 2D Threat Awareness',
 		intro:
 			'2D radar-style overlay for Arc Raiders — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
 		imageAlt: 'Arc Raiders ESP distance markers and weapon labels on UKN practice bots',
 		galleryTitle: 'Arc Raiders radar hack visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'See ESP wallhack',
 		ctaSecondaryHref: '/rust-esp/',
 		sections: [
@@ -421,19 +421,19 @@ export const enPages = {
 	'eac-bypass': {
 		title: 'EAC Bypass Arc Raiders | Hack Maintenance Guide',
 		description:
-			'How ArcRaiders Hacks rebuild after EAC patches — ESP boxes, soft aim, and cloud DMA maintenance for PC and controllers. Read before queueing.',
-		h1: 'EAC Bypass — ArcRaiders Hacks Maintenance',
+			'How Arc Raiders Hacks rebuild after EAC patches — ESP boxes, soft aim, and cloud DMA maintenance for PC and controllers. Read before queueing.',
+		h1: 'EAC Bypass — Arc Raiders Hacks Maintenance',
 		intro:
 			'Understand Easy Anti-Cheat maintenance for Arc Raiders Hacks — how ESP wallhack, radar hack, and Aimbot rebuild after Arc Raiders security updates.',
 		imageAlt: 'Arc Raiders ESP green hitbox wallhack used for EAC maintenance status pages',
 		galleryTitle: 'EAC maintenance visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Check updates',
 		ctaSecondaryHref: '/updates/',
 		sections: [
 			section(
 				'Easy Anti-Cheat overview',
-				`Easy Anti-Cheat is Facepunch’ anti-cheat for Arc Raiders on PC (see ${EXT.eac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
+				`Easy Anti-Cheat is Embark’ anti-cheat for Arc Raiders on PC (see ${EXT.eac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
 				`Arc Raiders Hacks monitors EAC patch notes and Arc Raiders seasonal updates from ${EXT.epic} to schedule module reviews.`,
 				'“EAC bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.',
 			),
@@ -454,13 +454,13 @@ export const enPages = {
 	'cheats-2026': {
 		title: 'Arc Raiders Hacks 2026 | Hacks with ESP & Cloud DMA',
 		description:
-			'Best Arc Raiders hacks 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected ArcRaiders Hacks with EAC maintenance — compare and buy.',
+			'Best Arc Raiders hacks 2026: ESP boxes, soft aim, and cloud DMA for PC and controllers. Undetected Arc Raiders Hacks with EAC maintenance — compare and buy.',
 		h1: 'Arc Raiders Hacks 2026 — ESP, Soft Aim & Cloud DMA',
 		intro:
 			'The 2026 Arc Raiders Hacks package for Arc Raiders — undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance, instant delivery, and Windows PC support.',
-		imageAlt: 'ArcRaiders Hacks aimbot holographic sight with ESP skeleton and red head lock',
+		imageAlt: 'Arc Raiders Hacks aimbot holographic sight with ESP skeleton and red head lock',
 		galleryTitle: 'Arc Raiders Hacks 2026 gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Compare features',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -473,51 +473,51 @@ export const enPages = {
 			section(
 				'Full feature stack for 2026 buyers',
 				'Player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.',
-				'Deep links: <a href="/rust-hacks/">ArcRaiders Hacks pillar</a>, <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-radar-hack/">radar</a>, <a href="/undetected-rust-cheats/">undetected</a>.',
+				'Deep links: <a href="/rust-hacks/">Arc Raiders Hacks pillar</a>, <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-radar-hack/">radar</a>, <a href="/undetected-rust-cheats/">undetected</a>.',
 				'Instant digital delivery after checkout confirmation worldwide.',
 			),
 			section(
 				'Before you buy in 2026',
-				'Read the <a href="/rust-hacks/">ArcRaiders Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
+				'Read the <a href="/rust-hacks/">Arc Raiders Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
 				'Also compare the <a href="/best-rust-cheats/">best Arc Raiders hacks</a> checklist, <a href="/blog/rust-cheats-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
 				'Support is available at support@arcraidershacks.net via the <a href="/support/">Support page</a>.',
 			),
 		],
 	},
 	hacks: {
-		title: 'ArcRaiders Hacks 2026 | Undetected ESP Aimbot Guide',
+		title: 'Arc Raiders Hacks 2026 | Undetected ESP Aimbot Guide',
 		description:
-			'ArcRaiders Hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance. Compare Arc Raiders hacks options and buy the full package.',
-		h1: 'ArcRaiders Hacks — Undetected ESP, Aimbot & Wallhack',
+			'Arc Raiders Hacks for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with EAC maintenance. Compare Arc Raiders hacks options and buy the full package.',
+		h1: 'Arc Raiders Hacks — Undetected ESP, Aimbot & Wallhack',
 		intro:
-			'ArcRaiders Hacks for survival and extraction zones combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for ArcRaiders Hacks in 2026.',
-		imageAlt: 'ArcRaiders Hacks aimbot sight with ESP skeleton and red head lock',
-		galleryTitle: 'ArcRaiders Hacks gallery — ESP, Aimbot, wallhack',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+			'Arc Raiders Hacks for survival and extraction zones combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for Arc Raiders Hacks in 2026.',
+		imageAlt: 'Arc Raiders Hacks aimbot sight with ESP skeleton and red head lock',
+		galleryTitle: 'Arc Raiders Hacks gallery — ESP, Aimbot, wallhack',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'See undetected guide',
 		ctaSecondaryHref: '/undetected-rust-cheats/',
 		sections: [
 			section(
-				'What ArcRaiders Hacks include in 2026',
-				'Players searching for ArcRaiders Hacks usually want visibility and combat tools without stacking separate downloads. ArcRaiders Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Arc Raiders hacks.',
+				'What Arc Raiders Hacks include in 2026',
+				'Players searching for Arc Raiders Hacks usually want visibility and combat tools without stacking separate downloads. Arc Raiders Hacks bundles player ESP wallhack, loot markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Arc Raiders hacks.',
 				'Coverage spans survival and extraction zones with in-client toggles for live matches. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
 				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>. Cross-check platform health on ${EXT.status} before patch-day queues.`,
 			),
 			section(
-				'ArcRaiders Hacks vs Arc Raiders hacks — same stack, clear pages',
-				'Searchers use ArcRaiders Hacks and Arc Raiders hacks interchangeably. This pillar focuses on hacks language; the <a href="/rust-cheats-2026/">Arc Raiders hacks 2026</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.',
+				'Arc Raiders Hacks vs Arc Raiders hacks — same stack, clear pages',
+				'Searchers use Arc Raiders Hacks and Arc Raiders hacks interchangeably. This pillar focuses on hacks language; the <a href="/rust-cheats-2026/">Arc Raiders hacks 2026</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a> pages cover buyer comparisons in cheats wording.',
 				'Deep-dive modules: <a href="/rust-esp/">Arc Raiders ESP</a>, <a href="/rust-aimbot/">Arc Raiders Aimbot</a>, <a href="/rust-wallhack/">wallhack</a>, <a href="/rust-radar-hack/">radar hack</a>, and <a href="/rust-soft-aim/">soft aim</a>.',
 				'Blog guides expand each keyword: <a href="/blog/rust-hacks-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/rust-cheats-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-rust-hacks-eac/">undetected EAC notes</a>.',
 			),
 			section(
-				'ArcRaiders Hacks vs single-feature tools',
-				'Standalone hacks often cover only wallhack or only aim assist. ArcRaiders Hacks maps the full extraction loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
+				'Arc Raiders Hacks vs single-feature tools',
+				'Standalone hacks often cover only wallhack or only aim assist. Arc Raiders Hacks maps the full extraction loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
 				'Compare the <a href="/rust-esp/">ESP</a>, <a href="/rust-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
 				'Related landings: <a href="/rust-cheat-download/">cheat download</a>, <a href="/rust-mod-menu/">mod menu</a>, <a href="/rust-aimbot-hack/">aimbot hack</a>, <a href="/rust-esp-hack/">ESP hack</a>.',
 			),
 			section(
-				'Undetected ArcRaiders Hacks with EAC maintenance',
-				'Undetected ArcRaiders Hacks require rebuilds after Easy Anti-Cheat and major Arc Raiders patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.',
+				'Undetected Arc Raiders Hacks with EAC maintenance',
+				'Undetected Arc Raiders Hacks require rebuilds after Easy Anti-Cheat and major Arc Raiders patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.',
 				`See ${EXT.eac} for anti-cheat background and our <a href="/eac-bypass-rust/">EAC bypass guide</a> for the practical workflow. Pair with <a href="/undetected-rust-cheats/">undetected Arc Raiders hacks</a> for status language buyers expect.`,
 				'Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href="/setup/">Setup</a> and keep <a href="/support/">Support</a> ready with your order ID.',
 			),
@@ -532,7 +532,7 @@ export const enPages = {
 			'How Arc Raiders cheat download works for Arc Raiders — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
 		imageAlt: 'Arc Raiders ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Arc Raiders cheat download visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Setup guide',
 		ctaSecondaryHref: '/setup/',
 		sections: [
@@ -559,13 +559,13 @@ export const enPages = {
 	'mod-menu': {
 		title: 'Arc Raiders Mod Menu 2026 | ESP & Soft Aim Toggles',
 		description:
-			'Arc Raiders mod menu for in-match toggles — ESP boxes, soft aim, radar, and cloud DMA on PC and controllers. Undetected ArcRaiders Hacks package.',
+			'Arc Raiders mod menu for in-match toggles — ESP boxes, soft aim, radar, and cloud DMA on PC and controllers. Undetected Arc Raiders Hacks package.',
 		h1: 'Arc Raiders Mod Menu — In-Client Control Panel',
 		intro:
 			'Arc Raiders mod menu controls for Arc Raiders — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Arc Raiders session on Windows PC.',
 		imageAlt: 'Arc Raiders mod menu / aimbot overlay with red skeleton ESP and hotkeys',
 		galleryTitle: 'Arc Raiders mod menu gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Full feature list',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -592,13 +592,13 @@ export const enPages = {
 	'soft-aim': {
 		title: 'Arc Raiders Soft Aim 2026 | Smooth Aimbot Settings',
 		description:
-			'Arc Raiders soft aim settings for natural tracking on PC and controllers. Smoothness, FOV, and bone priority — included in our ArcRaiders Hacks with ESP boxes.',
+			'Arc Raiders soft aim settings for natural tracking on PC and controllers. Smoothness, FOV, and bone priority — included in our Arc Raiders Hacks with ESP boxes.',
 		h1: 'Arc Raiders Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Arc Raiders soft aim settings for Arc Raiders — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Arc Raiders soft aim ESP boxes and FOV circle on UKN practice bots',
 		galleryTitle: 'Arc Raiders soft aim gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Aimbot controls',
 		ctaSecondaryHref: '/rust-aimbot/',
 		sections: [
@@ -623,15 +623,15 @@ export const enPages = {
 		],
 	},
 	'best-cheats': {
-		title: 'Best ArcRaiders Hacks 2026 | Buyer Guide',
+		title: 'Best Arc Raiders Hacks 2026 | Buyer Guide',
 		description:
-			'Best ArcRaiders Hacks for 2026: ESP boxes, soft aim, cloud DMA, and EAC maintenance on PC and controllers. Use this checklist before checkout.',
-		h1: 'Best ArcRaiders Hacks — 2026 Buyer Guide',
+			'Best Arc Raiders Hacks for 2026: ESP boxes, soft aim, cloud DMA, and EAC maintenance on PC and controllers. Use this checklist before checkout.',
+		h1: 'Best Arc Raiders Hacks — 2026 Buyer Guide',
 		intro:
 			'Compare the best Arc Raiders hacks for Arc Raiders in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Easy Anti-Cheat rebuilds and instant delivery.',
 		imageAlt: 'Arc Raiders ESP overlay with skeleton ESP and loot inventory labels',
 		galleryTitle: 'Best Arc Raiders hacks gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Compare pricing',
 		ctaSecondaryHref: '/pricing/',
 		sections: [
@@ -658,13 +658,13 @@ export const enPages = {
 	'aimbot-hack': {
 		title: 'Arc Raiders Aimbot Hack 2026 | Soft Aim Assist',
 		description:
-			'Arc Raiders aimbot hack with soft aim for PC and controllers. FOV, bone priority, and hotkeys — bundled with ESP boxes in our ArcRaiders Hacks package.',
+			'Arc Raiders aimbot hack with soft aim for PC and controllers. FOV, bone priority, and hotkeys — bundled with ESP boxes in our Arc Raiders Hacks package.',
 		h1: 'Arc Raiders Aimbot Hack — Soft Aim Assist',
 		intro:
 			'Arc Raiders aimbot hack tools for Arc Raiders — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: 'Arc Raiders aimbot hack menu with red skeleton ESP and silent aim toggles',
 		galleryTitle: 'Arc Raiders aimbot hack gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'Aimbot settings',
 		ctaSecondaryHref: '/rust-aimbot/',
 		sections: [
@@ -697,7 +697,7 @@ export const enPages = {
 			'Arc Raiders ESP hack overlays for Arc Raiders — player outlines, vehicle threat cues, loot and chest markers with distance readouts across survival and extraction zones.',
 		imageAlt: 'Arc Raiders ESP hack with green skeleton, box, and loot visibility labels',
 		galleryTitle: 'Arc Raiders ESP hack gallery',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'ESP controls',
 		ctaSecondaryHref: '/rust-esp/',
 		sections: [
@@ -724,13 +724,13 @@ export const enPages = {
 	'unlock-all': {
 		title: 'Arc Raiders Unlock All 2026 | What It Really Means',
 		description:
-			'Arc Raiders unlock all explained vs real ArcRaiders Hacks — ESP boxes, soft aim, and cloud DMA for PC and controllers. Know what you are buying.',
+			'Arc Raiders unlock all explained vs real Arc Raiders Hacks — ESP boxes, soft aim, and cloud DMA for PC and controllers. Know what you are buying.',
 		h1: 'Arc Raiders Unlock All — What Players Search For',
 		intro:
 			'Arc Raiders unlock all is a common search term for Arc Raiders — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Arc Raiders Hacks actually provides on Windows PC.',
 		imageAlt: 'Arc Raiders ESP boxes and distances on UKN bots for unlock-all context',
 		galleryTitle: 'Arc Raiders unlock all guide visuals',
-		ctaPrimary: 'Buy ArcRaiders Hacks',
+		ctaPrimary: 'Buy Arc Raiders Hacks',
 		ctaSecondary: 'See features',
 		ctaSecondaryHref: '/features/',
 		sections: [
@@ -744,7 +744,7 @@ export const enPages = {
 				'Visibility tools vs unlock-all claims',
 				'ESP wallhack helps you spot enemy squads, vehicles, and loot chests during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.',
 				'For loadout planning during a match, loot and chest markers speed BR rotations — see the <a href="/rust-esp/">ESP</a> and <a href="/features/">Features</a> pages for the full tool list.',
-				'Related: <a href="/rust-hacks/">ArcRaiders Hacks</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a>.',
+				'Related: <a href="/rust-hacks/">Arc Raiders Hacks</a> and <a href="/best-rust-cheats/">best Arc Raiders hacks</a>.',
 			),
 			section(
 				'Buying Arc Raiders Hacks for the right reasons',
@@ -755,11 +755,11 @@ export const enPages = {
 		],
 	},
 	privacy: {
-		title: 'Privacy Policy | ArcRaiders Hacks',
+		title: 'Privacy Policy | Arc Raiders Hacks',
 		description:
-			'Privacy policy for ArcRaiders Hacks. How we handle support emails, order data, and checkout for Arc Raiders hacks licenses on arcraidershacks.net.',
-		h1: 'Privacy Policy',
-		intro: 'How ArcRaiders Hacks handles information when you browse arcraidershacks.net or contact support about a Arc Raiders license.',
+			'Privacy policy for Arc Raiders Hacks. How we handle support emails, order data, and checkout for Arc Raiders hacks licenses on arcraidershacks.net.',
+		h1: 'Arc Raiders Hacks Privacy Policy',
+		intro: 'How Arc Raiders Hacks handles information when you browse arcraidershacks.net or contact support about a Arc Raiders license.',
 		imageAlt: 'Arc Raiders ESP overlay visual for privacy policy page',
 		galleryTitle: 'Arc Raiders Hacks legal resources',
 		ctaPrimary: 'Email support',
@@ -785,10 +785,10 @@ export const enPages = {
 		],
 	},
 	refund: {
-		title: 'Refund Policy | ArcRaiders Hacks',
+		title: 'Refund Policy | Arc Raiders Hacks',
 		description:
-			'Refund policy for ArcRaiders Hacks. Digital delivery terms and eligibility for ArcRaiders Hacks packages with ESP, soft aim, and cloud DMA.',
-		h1: 'Refund Policy',
+			'Refund policy for Arc Raiders Hacks. Digital delivery terms and eligibility for Arc Raiders Hacks packages with ESP, soft aim, and cloud DMA.',
+		h1: 'Arc Raiders Hacks Refund Policy',
 		intro:
 			'Refund terms for Arc Raiders Hacks licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Arc Raiders.',
 		imageAlt: 'Arc Raiders ESP overlay visual for refund policy page',
@@ -815,11 +815,11 @@ export const enPages = {
 		],
 	},
 	terms: {
-		title: 'Terms of Use 2026 | ArcRaiders Hacks Rules',
+		title: 'Terms of Use 2026 | Arc Raiders Hacks Rules',
 		description:
-			'Terms of use for arcraidershacks.net and ArcRaiders Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
-		h1: 'Terms of Use',
-		intro: 'Terms governing use of arcraidershacks.net and ArcRaiders Hacks licenses for Arc Raiders on Windows PC.',
+			'Terms of use for arcraidershacks.net and Arc Raiders Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
+		h1: 'Arc Raiders Hacks Terms of Use',
+		intro: 'Terms governing use of arcraidershacks.net and Arc Raiders Hacks licenses for Arc Raiders on Windows PC.',
 		imageAlt: 'Arc Raiders ESP overlay visual for terms of use page',
 		galleryTitle: 'Arc Raiders Hacks legal pages',
 		ctaPrimary: 'Email support',
