@@ -31,10 +31,16 @@ If your Cloudflare project runs **`npx wrangler deploy`** on push, the repo is c
 
 ```toml
 [build]
-command = "npm ci && npm run build"
+command = "node scripts/cloudflare-build.mjs"
 ```
 
-No separate dashboard build command is required. Set these environment variables on the Worker if needed:
+Or set the dashboard **Build command** to:
+
+```
+npm run build:cf
+```
+
+**Root directory** must be blank (repo root). Set these environment variables if needed:
 
 | Variable | Value |
 |----------|-------|
@@ -49,7 +55,7 @@ Redeploy by pushing to the connected branch.
 3. Configure build settings:
    - **Project name:** `arcraidershacks`
    - **Production branch:** `main`
-   - **Build command:** `npm ci && npm run build`
+   - **Build command:** `npm run build:cf`
    - **Build output directory:** `dist`
    - **Node.js version:** 22 (set via environment variable `NODE_VERSION=22` if needed)
 4. Save and deploy. Cloudflare runs the build on each push.
