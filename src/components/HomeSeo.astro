@@ -65,16 +65,15 @@ const shareText = encodeURIComponent('Arc Raiders Hacks — undetected ESP & aim
 	</div>
 
 	<div class="home-seo__panel card-surface">
-		<h2>What the package includes</h2>
+		<h2>{productInfo.packageIncludesTitle}</h2>
 		<p>
-			Sold for Arc Raiders on Windows PC. ESP covers players, loot, and distance. Aimbot adds assisted targeting
-			with smoothness and hotkeys. General options include in-client toggles, monthly and lifetime plans,
-			patch notices, and support.
+			Every monthly and lifetime license unlocks the full Arc Raiders Hacks toolkit for Windows PC —
+			ESP, wallhack, radar, and aimbot in one maintained package.
 		</p>
 		<ul>
-			{productInfo.features.esp.slice(0, 3).map((item) => <li>{item}</li>)}
-			{productInfo.features.aimbot.slice(0, 2).map((item) => <li>{item}</li>)}
-			{productInfo.features.general.slice(0, 2).map((item) => <li>{item}</li>)}
+			{productInfo.packageIncludes.map((item) => (
+				<li>{item}</li>
+			))}
 		</ul>
 		<p>
 			Compare plans on <a href="/pricing/">Pricing</a>. Watch

@@ -58,6 +58,20 @@ export const productInfo = {
 			'Setup, delivery, and billing support',
 		],
 	},
+	/** Homepage / product card — what every license includes. */
+	packageIncludesTitle: 'Package includes',
+	packageIncludes: [
+		'Player ESP — enemy raiders, ARC machines & threat outlines',
+		'Loot & container markers with distance readouts',
+		'Wallhack overlays with toggleable ESP categories',
+		'2D radar for threats outside your line of sight',
+		'Aimbot — smoothness, FOV, bone priority & hotkeys',
+		'In-client menu toggles for ESP, radar & aimbot',
+		'Windows 10 & 11 · keyboard & controller support',
+		'Instant digital delivery after purchase',
+		'EAC maintenance rebuilds after major patches',
+		'Setup guide & email support included',
+	],
 } as const;
 
 export const trustSignals = {
