@@ -103,8 +103,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			},
 			pages: {
 				home: {
-					title: "Arc Raiders Hacks 2026 | Undetected ESP & Aimbot",
-					description: "Arc Raiders hacks for PC — undetected ESP, aimbot, and wallhack at arcraidershacks.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
+					title: "Arc Raiders Hacks 2026 | ESP, Aimbot & Wallhack PC",
+					description: "Arc Raiders Hacks for Windows PC — ESP, aimbot, wallhack & 2D radar in one package. Instant delivery, EAC maintenance & plans from $35/mo.",
 					h1: "Arc Raiders Hacks — ESP, Aimbot & Wallhack for PC",
 					intro: "A focused Windows PC package for Arc Raiders: player ESP, aimbot controls, and wallhack overlays with EAC maintenance after major patches.",
 					imageAlt: "Arc Raiders Hacks aimbot holographic sight with ESP skeleton and red head lock",
