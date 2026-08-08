@@ -13,35 +13,35 @@ export const PAGE_IDS = [
 ];
 
 /**
- * Hero image per page — rotate the five distinct screenshots.
- * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
+ * Hero image per page — each path is a unique `/images/arc-raiders-*` URL where possible.
+ * Topic pages use thematic matches; utility/legal pages use UI mockups.
  */
 export const HERO_IMAGES = {
-	home: '/images/rust-hacks-hero.webp',
-	'rust-esp': '/images/rust-esp-overlay.webp',
-	'rust-aimbot': '/images/rust-aimbot-menu.webp',
-	features: '/images/rust-esp-bots.webp',
-	pricing: '/images/rust-esp-hitbox.webp',
-	setup: '/images/rust-aimbot-menu.webp',
-	updates: '/images/rust-esp-overlay.webp',
-	faq: '/images/rust-esp-bots.webp',
-	support: '/images/rust-aimbot-menu.webp',
-	undetected: '/images/rust-hacks-hero.webp',
-	wallhack: '/images/rust-esp-hitbox.webp',
-	radar: '/images/rust-esp-bots.webp',
-	'eac-bypass': '/images/rust-esp-overlay.webp',
-	'cheats-2026': '/images/rust-hacks-hero.webp',
-	hacks: '/images/rust-esp-bots.webp',
-	'cheat-download': '/images/rust-esp-overlay.webp',
-	'mod-menu': '/images/rust-aimbot-menu.webp',
-	'soft-aim': '/images/rust-hacks-hero.webp',
-	'best-cheats': '/images/rust-esp-hitbox.webp',
-	'aimbot-hack': '/images/rust-aimbot-menu.webp',
-	'esp-hack': '/images/rust-esp-overlay.webp',
-	'unlock-all': '/images/rust-esp-bots.webp',
-	privacy: '/images/rust-esp-hitbox.webp',
-	refund: '/images/rust-aimbot-menu.webp',
-	terms: '/images/rust-esp-bots.webp',
+	home: '/images/arc-raiders-hero.webp',
+	'rust-esp': '/images/arc-raiders-esp-overlay.webp',
+	'rust-aimbot': '/images/arc-raiders-aimbot.webp',
+	features: '/images/arc-raiders-menu.webp',
+	pricing: '/images/arc-raiders-cover.webp',
+	setup: '/images/arc-raiders-panel.webp',
+	updates: '/images/arc-raiders-status.webp',
+	faq: '/images/arc-raiders-cheats-menu.webp',
+	support: '/images/arc-raiders-wallhack-ui.webp',
+	undetected: '/images/arc-raiders-combat.webp',
+	wallhack: '/images/arc-raiders-wallhack.webp',
+	radar: '/images/arc-raiders-radar-ui.webp',
+	'eac-bypass': '/images/arc-raiders-soft-aim-ui.webp',
+	'cheats-2026': '/images/arc-raiders-aimbot-ui.webp',
+	hacks: '/images/arc-raiders-wallhack.webp',
+	'cheat-download': '/images/arc-raiders-cover.webp',
+	'mod-menu': '/images/arc-raiders-menu.webp',
+	'soft-aim': '/images/arc-raiders-soft-aim-ui.webp',
+	'best-cheats': '/images/arc-raiders-combat.webp',
+	'aimbot-hack': '/images/arc-raiders-aimbot-ui.webp',
+	'esp-hack': '/images/arc-raiders-esp-overlay.webp',
+	'unlock-all': '/images/arc-raiders-radar-ui.webp',
+	privacy: '/images/arc-raiders-panel.webp',
+	refund: '/images/arc-raiders-status.webp',
+	terms: '/images/arc-raiders-cheats-menu.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';

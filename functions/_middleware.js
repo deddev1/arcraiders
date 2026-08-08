@@ -18,8 +18,6 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.com',
 ]);
 
-// Keep in sync with public/_redirects (which preserves query strings by default).
-// All targets are final canonical URLs — no chains/loops.
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
 	'/rust-cheats': '/',
@@ -79,6 +77,54 @@ const PATH_REDIRECTS = {
 	'/rust-unlock-all': '/features/',
 	'/rust-unlock-all/': '/features/',
 };
+
+/** Legacy rust-* asset URLs → arc-raiders-* (301, separate canonical image URLs). */
+const IMAGE_REDIRECTS = {
+	'/images/rust-hacks-hero.webp': '/images/arc-raiders-hero.webp',
+	'/images/rust-esp-overlay.webp': '/images/arc-raiders-esp-overlay.webp',
+	'/images/rust-esp-bots.webp': '/images/arc-raiders-wallhack.webp',
+	'/images/rust-esp-hitbox.webp': '/images/arc-raiders-aimbot.webp',
+	'/images/rust-aimbot-menu.webp': '/images/arc-raiders-menu.webp',
+	'/images/rust-recoil-trainer.webp': '/images/arc-raiders-combat.webp',
+	'/images/rust-aimbot-ui.webp': '/images/arc-raiders-aimbot-ui.webp',
+	'/images/rust-wallhack-ui.webp': '/images/arc-raiders-wallhack-ui.webp',
+	'/images/rust-soft-aim-ui.webp': '/images/arc-raiders-soft-aim-ui.webp',
+	'/images/rust-radar-ui.webp': '/images/arc-raiders-radar-ui.webp',
+	'/images/rust-cheats-menu.webp': '/images/arc-raiders-cheats-menu.webp',
+	'/images/rust-hacks-cover.webp': '/images/arc-raiders-cover.webp',
+	'/images/rust-hacks-panel.webp': '/images/arc-raiders-panel.webp',
+	'/images/rust-hacks-status.webp': '/images/arc-raiders-status.webp',
+	'/videos/rust-hacks-hero-6s.mp4': '/videos/arc-raiders-hero-6s.mp4',
+	'/videos/rust-hacks-background.mp4': '/videos/arc-raiders-background.mp4',
+};
+
+function resolveImageRedirect(pathname) {
+	const exact = IMAGE_REDIRECTS[pathname];
+	if (exact) return exact;
+
+	const variant = pathname.match(
+		/^\/images\/(rust-hacks-hero|rust-esp-overlay|rust-esp-bots|rust-esp-hitbox|rust-aimbot-menu|rust-recoil-trainer|rust-aimbot-ui|rust-wallhack-ui|rust-soft-aim-ui|rust-radar-ui|rust-cheats-menu|rust-hacks-cover|rust-hacks-panel|rust-hacks-status)-(\d+w)\.webp$/,
+	);
+	if (!variant) return null;
+
+	const stemMap = {
+		'rust-hacks-hero': 'arc-raiders-hero',
+		'rust-esp-overlay': 'arc-raiders-esp-overlay',
+		'rust-esp-bots': 'arc-raiders-wallhack',
+		'rust-esp-hitbox': 'arc-raiders-aimbot',
+		'rust-aimbot-menu': 'arc-raiders-menu',
+		'rust-recoil-trainer': 'arc-raiders-combat',
+		'rust-aimbot-ui': 'arc-raiders-aimbot-ui',
+		'rust-wallhack-ui': 'arc-raiders-wallhack-ui',
+		'rust-soft-aim-ui': 'arc-raiders-soft-aim-ui',
+		'rust-radar-ui': 'arc-raiders-radar-ui',
+		'rust-cheats-menu': 'arc-raiders-cheats-menu',
+		'rust-hacks-cover': 'arc-raiders-cover',
+		'rust-hacks-panel': 'arc-raiders-panel',
+		'rust-hacks-status': 'arc-raiders-status',
+	};
+	return `/images/${stemMap[variant[1]]}-${variant[2]}.webp`;
+}
 
 const SECURITY_HEADERS = {
 	'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
@@ -171,6 +217,16 @@ export async function onRequest(context) {
 		const headers = new Headers({
 			Location: new URL(pathRedirect + url.search, CANONICAL_ORIGIN).toString(),
 			'Cache-Control': 'no-store',
+		});
+		applySecurityHeaders(headers);
+		return new Response(null, { status: 301, headers });
+	}
+
+	const imageRedirect = resolveImageRedirect(url.pathname);
+	if (imageRedirect) {
+		const headers = new Headers({
+			Location: new URL(imageRedirect + url.search, CANONICAL_ORIGIN).toString(),
+			'Cache-Control': 'public, max-age=31536000, immutable',
 		});
 		applySecurityHeaders(headers);
 		return new Response(null, { status: 301, headers });

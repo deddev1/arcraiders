@@ -10,7 +10,7 @@ export const siteConfig = {
 	logoRasterHeight: 551,
 	logoAlt: 'Arc Raiders Hacks logo',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Farc-raiders-cheats',
-	defaultOgImage: '/images/rust-esp-overlay.webp',
+	defaultOgImage: '/images/arc-raiders-esp-overlay.webp',
 } as const;
 
 export const productInfo = {
