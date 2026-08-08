@@ -51,7 +51,7 @@ if (!projectRoot) {
 		'[cloudflare-build] Fix: Cloudflare Settings > Build > Root directory must be blank (repo root).',
 	);
 	console.error(
-		'[cloudflare-build] Also verify the connected Git repo is notfaadi/theislehacks on branch main.',
+		'[cloudflare-build] Also verify the connected Git repo is deddev1/arcraiders on branch main.',
 	);
 	process.exit(1);
 }
@@ -64,6 +64,9 @@ if (projectRoot !== startDir) {
 console.log(`[cloudflare-build] Project root: ${projectRoot}`);
 console.log('[cloudflare-build] Installing dependencies...');
 execSync('npm install', { stdio: 'inherit' });
+
+console.log('[cloudflare-build] Syncing redirects...');
+execSync('node scripts/sync-redirects.mjs', { stdio: 'inherit' });
 
 console.log('[cloudflare-build] Building site...');
 execSync('npm run build', { stdio: 'inherit' });

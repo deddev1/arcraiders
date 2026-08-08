@@ -9,7 +9,7 @@
     "dev": "astro dev --host 0.0.0.0 --port 8080",
     "start": "astro preview --host 0.0.0.0 --port 8080",
     "dev:ip": "node scripts/dev-with-ip.mjs",
-    "build": "astro build",
+    "build": "node scripts/sync-redirects.mjs && astro build",
     "build:cf": "node scripts/cloudflare-build.mjs",
     "seo:audit": "node scripts/seo-audit.mjs",
     "build:validate": "astro build && node scripts/validate-images.mjs && node scripts/validate-sitemaps.mjs && node scripts/seo-audit.mjs",

@@ -7,8 +7,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and validate
+        run: npm run build:validate
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && vars.CLOUDFLARE_DEPLOY_ENABLED == 'true') }}
     permissions:
       contents: read
       deployments: write
@@ -25,8 +45,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build for Cloudflare
+        run: npm run build:cf
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
