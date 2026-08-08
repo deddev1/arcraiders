@@ -104,7 +104,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			pages: {
 				home: {
 					title: "Arc Raiders Hacks 2026 | ESP, Aimbot & Wallhack PC",
-					description: "Arc Raiders Hacks & cheats for PC — ESP, aimbot, wallhack & 2D radar in one license. Windows 10/11, instant delivery, setup guide & EAC maintenance.",
+					description: "Arc Raiders Hacks 2026 — ESP, aimbot, wallhack & radar for Windows PC. Loot markers, player ESP, aim assist, instant license delivery & anti-cheat maintenance.",
 					h1: "Arc Raiders Hacks — ESP, Aimbot & Wallhack for PC",
 					intro: "A focused Windows PC package for Arc Raiders: player ESP, aimbot controls, and wallhack overlays with EAC maintenance after major patches.",
 					imageAlt: "Arc Raiders Hacks aimbot holographic sight with ESP skeleton and red head lock",
