@@ -1,0 +1,222 @@
+---
+import PackageIncludes from './PackageIncludes.astro';
+import { getUi } from '../data/i18n';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { productInfo, siteConfig } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+	showIncludes?: boolean;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const showIncludes = Astro.props.showIncludes ?? true;
+const ui = getUi(locale);
+
+const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
+const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime') ?? productInfo.plans[1];
+---
+
+<section class="pricing-plans" aria-label="Arc Raiders Hacks pricing plans">
+	<div class="pricing-plans__grid">
+		<article class="pricing-plans__card">
+			<p class="pricing-plans__label">{monthlyPlan.label}</p>
+			<p class="pricing-plans__price">
+				<span class="pricing-plans__currency">$</span>
+				{monthlyPlan.price}
+			</p>
+			<p class="pricing-plans__meta">30 days · full access</p>
+			<ul class="pricing-plans__highlights">
+				<li>All ESP, radar &amp; aimbot features</li>
+				<li>EAC maintenance during your term</li>
+				<li>Instant digital delivery</li>
+			</ul>
+			<a
+				href={siteConfig.checkoutUrl}
+				class="btn-buy pricing-plans__cta"
+				rel="noopener noreferrer"
+			>
+				{ui.common.buyNow} — ${monthlyPlan.price}
+			</a>
+		</article>
+
+		<article class="pricing-plans__card pricing-plans__card--featured">
+			<p class="pricing-plans__badge">Best value</p>
+			<p class="pricing-plans__label">{lifetimePlan.label}</p>
+			<p class="pricing-plans__price">
+				<span class="pricing-plans__currency">$</span>
+				{lifetimePlan.price}
+			</p>
+			<p class="pricing-plans__meta">One-time · long-term access</p>
+			<ul class="pricing-plans__highlights">
+				<li>Same full feature stack as monthly</li>
+				<li>Maintenance rebuilds after patches</li>
+				<li>Best for regular Arc Raiders players</li>
+			</ul>
+			<a
+				href={siteConfig.checkoutUrl}
+				class="btn-buy pricing-plans__cta"
+				rel="noopener noreferrer"
+			>
+				Get Access — ${lifetimePlan.price}
+			</a>
+		</article>
+	</div>
+
+	{showIncludes && (
+		<div class="pricing-plans__includes">
+			<PackageIncludes title="What every plan includes" />
+		</div>
+	)}
+</section>
+
+<style>
+	.pricing-plans {
+		display: grid;
+		gap: 1.15rem;
+		width: 100%;
+	}
+
+	.pricing-plans__grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.85rem;
+		align-items: stretch;
+	}
+
+	.pricing-plans__card {
+		display: grid;
+		grid-template-rows: auto auto auto 1fr auto;
+		align-content: start;
+		gap: 0.45rem;
+		min-height: 100%;
+		padding: 1.35rem 1.2rem 1.2rem;
+		border-radius: 1rem;
+		border: 1px solid rgba(192, 132, 252, 0.2);
+		background: rgba(14, 12, 22, 0.88);
+		text-align: center;
+	}
+
+	.pricing-plans__card--featured {
+		position: relative;
+		border-color: transparent;
+		background: linear-gradient(165deg, #6d28d9 0%, #9333ea 52%, #a21caf 100%);
+		box-shadow:
+			0 0 0 1px rgba(233, 213, 255, 0.15),
+			0 16px 36px rgba(109, 40, 217, 0.35);
+	}
+
+	.pricing-plans__badge {
+		position: absolute;
+		top: 0.85rem;
+		right: 0.85rem;
+		margin: 0;
+		padding: 0.28rem 0.55rem;
+		border-radius: 999px;
+		background: rgba(255, 255, 255, 0.16);
+		color: white;
+		font-size: 0.62rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.pricing-plans__label {
+		margin: 0;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.pricing-plans__card--featured .pricing-plans__label,
+	.pricing-plans__card--featured .pricing-plans__meta,
+	.pricing-plans__card--featured .pricing-plans__highlights li {
+		color: rgba(255, 255, 255, 0.92);
+	}
+
+	.pricing-plans__price {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 0.1rem;
+		margin: 0.15rem 0 0;
+		font-family: var(--font-display);
+		font-size: clamp(2.1rem, 4vw, 2.75rem);
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: -0.03em;
+		color: var(--color-ink);
+	}
+
+	.pricing-plans__card--featured .pricing-plans__price {
+		color: white;
+	}
+
+	.pricing-plans__currency {
+		font-size: 0.55em;
+		margin-top: 0.2em;
+		opacity: 0.85;
+	}
+
+	.pricing-plans__meta {
+		margin: 0;
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--color-muted);
+	}
+
+	.pricing-plans__highlights {
+		margin: 0.35rem 0 0.85rem;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.45rem;
+		text-align: left;
+	}
+
+	.pricing-plans__highlights li {
+		position: relative;
+		padding-left: 1rem;
+		font-size: 0.84rem;
+		line-height: 1.4;
+		color: #d4cae6;
+	}
+
+	.pricing-plans__highlights li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.55em;
+		width: 0.35rem;
+		height: 0.35rem;
+		border-radius: 999px;
+		background: var(--color-orchid);
+	}
+
+	.pricing-plans__card--featured .pricing-plans__highlights li::before {
+		background: rgba(255, 255, 255, 0.85);
+	}
+
+	.pricing-plans__cta {
+		width: 100%;
+		margin-top: auto;
+		padding-inline: 1rem;
+		font-size: 0.92rem;
+	}
+
+	.pricing-plans__includes {
+		width: 100%;
+	}
+
+	@media (max-width: 720px) {
+		.pricing-plans__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-plans__card {
+			padding: 1.15rem 1rem 1rem;
+		}
+	}
+</style>

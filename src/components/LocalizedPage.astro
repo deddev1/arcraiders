@@ -8,6 +8,7 @@ import { seoFaqs, siteConfig } from '../data/site';
 import { rustImages } from '../data/rust';
 import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
 import SeoFaqPanel from '../components/SeoFaqPanel.astro';
+import PricingPlans from '../components/PricingPlans.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -68,8 +69,15 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 			: undefined
 	}
 >
+	{pageId === 'pricing' && (
+		<section class="card-panel pricing-page__plans">
+			<PricingPlans locale={locale} />
+		</section>
+	)}
 	{
-		page.sections.map((section) => (
+		page.sections
+			.filter((section) => !(pageId === 'pricing' && section.h2 === 'What every plan includes'))
+			.map((section) => (
 			<section class="card-panel">
 				<h2>{section.h2}</h2>
 				{section.paragraphs.map((p) => (
@@ -96,3 +104,17 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 		)
 	}
 </PageLayout>
+
+<style>
+	:global(.pricing-page__plans) {
+		padding: 1.1rem;
+		width: min(100%, 860px);
+		margin-inline: auto;
+	}
+
+	@media (max-width: 640px) {
+		:global(.pricing-page__plans) {
+			padding: 0.85rem;
+		}
+	}
+</style>
