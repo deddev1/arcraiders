@@ -8,6 +8,7 @@ import { rustImages } from '../data/rust';
 import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 import { englishPaths, pageIds, type PageId } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
+import { siteConfig } from '../data/site';
 
 type GalleryInput = string | { src: string; alt: string };
 
@@ -91,6 +92,11 @@ const breadcrumbs = [
 	{ label: heading },
 ];
 
+function isCheckoutCta(href: string | undefined): boolean {
+	if (!href) return false;
+	return href === siteConfig.checkoutUrl || href.startsWith('https://zadeyo.com/go/');
+}
+
 const isHeroLcp = heroImage === rustImages.hero;
 const lcpImage = isHeroLcp ? heroPreloadSrc : undefined;
 const lcpImageSrcSet = isHeroLcp ? heroSrcSet : undefined;
@@ -163,9 +169,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 						<div class="banner__actions">
 							{ctaPrimary && (
 								<a
-									class:list={[
-										ctaPrimary.label === 'Buy Now' ? 'btn-buy' : 'btn btn--primary',
-									]}
+									class:list={[isCheckoutCta(ctaPrimary.href) ? 'btn-buy' : 'btn btn--primary']}
 									href={ctaPrimary.href}
 									rel={ctaPrimary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
 								>

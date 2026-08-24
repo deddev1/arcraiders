@@ -1,0 +1,99 @@
+---
+import { productInfo } from '../data/site';
+
+interface Props {
+	title?: string;
+	compact?: boolean;
+}
+
+const { title = productInfo.packageIncludesTitle, compact = false } = Astro.props;
+---
+
+<div class:list={['package-includes', compact && 'package-includes--compact']}>
+	<p class="package-includes__title">{title}</p>
+	<ul class="package-includes__list">
+		{productInfo.packageIncludes.map((item) => (
+			<li>
+				<span class="package-includes__check" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M5 12.5l4.5 4.5L19 7.5"
+							stroke="currentColor"
+							stroke-width="2.2"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+				</span>
+				<span class="package-includes__text">{item}</span>
+			</li>
+		))}
+	</ul>
+</div>
+
+<style>
+	.package-includes {
+		padding: 1.1rem 1.15rem;
+		border: 1px solid rgba(168, 85, 247, 0.2);
+		border-radius: 0.9rem;
+		background: linear-gradient(160deg, rgba(28, 22, 42, 0.92) 0%, rgba(14, 12, 22, 0.95) 100%);
+	}
+
+	.package-includes__title {
+		margin: 0 0 0.85rem;
+		font-size: 0.8rem;
+		font-weight: 800;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.package-includes__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.55rem 1rem;
+		align-items: start;
+	}
+
+	.package-includes__list li {
+		display: grid;
+		grid-template-columns: 1.15rem minmax(0, 1fr);
+		gap: 0.55rem;
+		align-items: start;
+		padding: 0.55rem 0.65rem;
+		border-radius: 0.6rem;
+		background: rgba(10, 6, 18, 0.45);
+		border: 1px solid rgba(168, 85, 247, 0.1);
+	}
+
+	.package-includes__check {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.15rem;
+		height: 1.15rem;
+		margin-top: 0.1rem;
+		border-radius: 999px;
+		background: rgba(168, 85, 247, 0.18);
+		color: var(--color-orchid);
+		flex-shrink: 0;
+	}
+
+	.package-includes__text {
+		font-size: 0.86rem;
+		line-height: 1.45;
+		color: #d8cfea;
+	}
+
+	.package-includes--compact .package-includes__list {
+		grid-template-columns: 1fr;
+	}
+
+	@media (max-width: 720px) {
+		.package-includes__list {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

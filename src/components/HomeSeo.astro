@@ -1,5 +1,6 @@
 ---
 import { homeFaqs, productInfo, siteConfig } from '../data/site';
+import PackageIncludes from './PackageIncludes.astro';
 
 const shareUrl = encodeURIComponent(siteConfig.url + '/');
 const shareText = encodeURIComponent('Arc Raiders Hacks — undetected ESP & aimbot for PC');
@@ -65,19 +66,11 @@ const shareText = encodeURIComponent('Arc Raiders Hacks — undetected ESP & aim
 	</div>
 
 	<div class="home-seo__panel card-surface">
-		<h2>{productInfo.packageIncludesTitle}</h2>
-		<p>
+		<PackageIncludes title={productInfo.packageIncludesTitle} />
+		<p class="home-seo__includes-note">
 			Every monthly and lifetime license unlocks the full Arc Raiders Hacks toolkit for Windows PC —
-			ESP, wallhack, radar, and aimbot in one maintained package.
-		</p>
-		<ul>
-			{productInfo.packageIncludes.map((item) => (
-				<li>{item}</li>
-			))}
-		</ul>
-		<p>
-			Compare plans on <a href="/pricing/">Pricing</a>. Watch
-			<a href="/updates/">Updates</a> after game patches. Policies live in the footer.
+			ESP, wallhack, radar, and aimbot in one maintained package. Compare plans on
+			<a href="/pricing/">Pricing</a>. Watch <a href="/updates/">Updates</a> after game patches.
 		</p>
 	</div>
 
@@ -141,6 +134,19 @@ const shareText = encodeURIComponent('Arc Raiders Hacks — undetected ESP & aim
 	}
 
 	.home-seo__panel a {
+		color: var(--color-orchid);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	.home-seo__includes-note {
+		margin: 1rem 0 0;
+		color: var(--color-muted);
+		line-height: 1.65;
+		font-size: 0.95rem;
+	}
+
+	.home-seo__includes-note a {
 		color: var(--color-orchid);
 		text-decoration: underline;
 		text-underline-offset: 0.15em;
