@@ -4,10 +4,15 @@ const WWW_HOST = 'www.arcraidershacks.net';
 
 /** Old hosts → canonical apex (301). Never include the apex host itself. */
 const LEGACY_HOSTS = new Set([
-	'arcraidershacks.net',
 	'www.arcraidershacks.net',
 	'arcraidershacks.com',
 	'www.arcraidershacks.com',
+	'rusthacks.xyz',
+	'www.rusthacks.xyz',
+	'rusthacks.net',
+	'www.rusthacks.net',
+	'rusthacks.com',
+	'www.rusthacks.com',
 	'fortnitehack.net',
 	'www.fortnitehack.net',
 	'fortnitecheats.xyz',
@@ -16,6 +21,12 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.net',
 	'fortnitecheats.com',
 	'www.fortnitecheats.com',
+]);
+
+/** Non-English UI locale codes — used for blog path consolidation. */
+const LOCALE_CODES = new Set([
+	'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr', 'ar', 'ja', 'ko', 'zh',
+	'hi', 'id', 'th', 'vi', 'uk', 'cs', 'ro', 'sv',
 ]);
 
 const PATH_REDIRECTS = {
@@ -44,6 +55,18 @@ const PATH_REDIRECTS = {
 	'/warzone-esp/': '/arc-raiders-esp/',
 	'/ricochet-bypass': '/arc-raiders-hacks/',
 	'/ricochet-bypass/': '/arc-raiders-hacks/',
+	'/warzone-hacks': '/arc-raiders-hacks/',
+	'/warzone-hacks/': '/arc-raiders-hacks/',
+	'/warzone-cheats': '/',
+	'/warzone-cheats/': '/',
+	'/warzone-wallhack': '/arc-raiders-wallhack/',
+	'/warzone-wallhack/': '/arc-raiders-wallhack/',
+	'/call-of-duty-warzone-cheats': '/',
+	'/call-of-duty-warzone-cheats/': '/',
+	'/arc-raiders-cheats': '/arc-raiders-hacks/',
+	'/arc-raiders-cheats/': '/arc-raiders-hacks/',
+	'/undetected-rust-hacks': '/arc-raiders-hacks/',
+	'/undetected-rust-hacks/': '/arc-raiders-hacks/',
 	// Legacy rust-* URLs → focused arc-raiders-* pattern
 	'/rust-hacks': '/arc-raiders-hacks/',
 	'/rust-hacks/': '/arc-raiders-hacks/',
@@ -154,6 +177,24 @@ const SECURITY_HEADERS = {
 	].join('; '),
 };
 
+/** Strip /en prefix and consolidate non-English blog URLs to English /blog/. */
+function resolveDynamicPathRedirect(pathname) {
+	if (pathname === '/en' || pathname === '/en/') return '/';
+
+	if (pathname.startsWith('/en/')) {
+		const rest = pathname.slice(3);
+		return rest.endsWith('/') ? rest : `${rest}/`;
+	}
+
+	const blogMatch = pathname.match(/^\/([a-z]{2})\/blog(\/.*)?$/);
+	if (blogMatch && LOCALE_CODES.has(blogMatch[1])) {
+		const suffix = blogMatch[2] ?? '/';
+		return `/blog${suffix.endsWith('/') ? suffix : `${suffix}/`}`;
+	}
+
+	return null;
+}
+
 function getClientProtocol(request) {
 	const visitor = request.headers.get('cf-visitor');
 	if (visitor) {
@@ -207,6 +248,16 @@ export async function onRequest(context) {
 			'Cache-Control': 'no-store',
 			'CDN-Cache-Control': 'no-store',
 			'Cloudflare-CDN-Cache-Control': 'no-store',
+		});
+		applySecurityHeaders(headers);
+		return new Response(null, { status: 301, headers });
+	}
+
+	const dynamicRedirect = resolveDynamicPathRedirect(url.pathname);
+	if (dynamicRedirect) {
+		const headers = new Headers({
+			Location: new URL(dynamicRedirect + url.search, CANONICAL_ORIGIN).toString(),
+			'Cache-Control': 'no-store',
 		});
 		applySecurityHeaders(headers);
 		return new Response(null, { status: 301, headers });

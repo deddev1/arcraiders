@@ -57,7 +57,7 @@ export const englishPaths: Record<PageId, string> = {
 	'best-cheats': '/arc-raiders-hacks/',
 	'aimbot-hack': '/arc-raiders-aimbot/',
 	'esp-hack': '/arc-raiders-esp/',
-	'unlock-all': '/rust-unlock-all/',
+	'unlock-all': '/features/',
 	privacy: '/privacy-policy/',
 	refund: '/refund-policy/',
 	terms: '/terms/',
