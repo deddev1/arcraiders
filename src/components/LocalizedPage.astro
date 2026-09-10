@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import { getPageContent, type PageId } from '../data/i18n';
-import { getCanonicalPath, getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
+import { getCanonicalPath, getLocalizedPath, localizeInternalHref, sitemapPageIds } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { seoFaqs, siteConfig } from '../data/site';
@@ -31,6 +31,8 @@ const galleryPool = [
 
 const canonicalPath = getCanonicalPath(pageId, locale);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
+/** Thin keyword landings consolidate to canonical English URLs — keep out of the index. */
+const isThinLanding = locale === defaultLocale && !sitemapPageIds.includes(pageId);
 const heroImageUrl = new URL(page.heroImage ?? rustImages.hero, siteConfig.url).href;
 
 const extraGraph =
@@ -49,6 +51,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	title={page.title}
 	description={page.description}
 	canonicalPath={canonicalPath}
+	noindex={isThinLanding}
 	heading={page.h1}
 	intro={page.intro}
 	heroImage={page.heroImage}

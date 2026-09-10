@@ -9,7 +9,7 @@ const description =
 	'That Arc Raiders Hacks page is missing. Return home or browse ESP, Aimbot, pricing, setup, reviews, and the blog.';
 ---
 
-<Layout title={title} description={description} canonicalPath="/" noindex={true}>
+<Layout title={title} description={description} canonicalPath={Astro.url.pathname} noindex={true}>
 	<Navbar />
 	<main class="missing">
 		<div class="shell missing__inner">
